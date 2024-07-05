@@ -1,0 +1,2095 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>48.静态资源和Ajax请求 · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="49.Cookie和Session.html" />
+    
+    
+    <link rel="prev" href="47.深入模型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
+            
+                <a href="../Day36-45/37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
+            
+                <a href="../Day36-45/38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
+            
+                <a href="../Day36-45/39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
+            
+                <a href="../Day36-45/40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
+            
+                <a href="../Day36-45/41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
+            
+                <a href="../Day36-45/42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
+            
+                <a href="../Day36-45/43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                <a href="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="46.Django快速上手.html">
+            
+                <a href="46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="47.深入模型.html">
+            
+                <a href="47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="48.静态资源和Ajax请求.html">
+            
+                <a href="48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="49.Cookie和Session.html">
+            
+                <a href="49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="50.制作报表.html">
+            
+                <a href="50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="51.日志和调试工具栏.html">
+            
+                <a href="51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="52.中间件的应用.html">
+            
+                <a href="52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="53.前后端分离开发入门.html">
+            
+                <a href="53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="54.RESTful架构和DRF入门.html">
+            
+                <a href="54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="55.RESTful架构和DRF进阶.html">
+            
+                <a href="55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="56.使用缓存.html">
+            
+                <a href="56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="57.接入三方平台.html">
+            
+                <a href="57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="58.异步任务和定时任务.html">
+            
+                <a href="58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="59.单元测试.html">
+            
+                <a href="59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="60.项目上线.html">
+            
+                <a href="60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
+            
+                <a href="../Day91-100/100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
+            
+                <a href="../Day91-100/92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
+            
+                <a href="../Day91-100/93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
+            
+                <a href="../Day91-100/94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
+            
+                <a href="../Day91-100/95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
+            
+                <a href="../Day91-100/96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                <a href="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                <a href="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
+            
+                <a href="../Day91-100/99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >48.静态资源和Ajax请求</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x9759;&#x6001;&#x8D44;&#x6E90;&#x548C;ajax&#x8BF7;&#x6C42;">&#x9759;&#x6001;&#x8D44;&#x6E90;&#x548C;Ajax&#x8BF7;&#x6C42;</h2>
+<h3 id="&#x52A0;&#x8F7D;&#x9759;&#x6001;&#x8D44;&#x6E90;">&#x52A0;&#x8F7D;&#x9759;&#x6001;&#x8D44;&#x6E90;</h3>
+<p>&#x5982;&#x679C;&#x8981;&#x5728;Django&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5728;<code>vote</code>&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7F6E;&#x4E8E;&#x540D;&#x4E3A;<code>static</code>&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x5305;&#x542B;&#x4E86;&#x4E09;&#x4E2A;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#xFF1A;css&#x3001;js&#x548C;images&#xFF0C;&#x5206;&#x522B;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x5916;&#x90E8;CSS&#x6587;&#x4EF6;&#x3001;&#x5916;&#x90E8;JavaScript&#x6587;&#x4EF6;&#x548C;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="res/pycharm-django-static.png" alt=""></p>
+<p>&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x627E;&#x5230;&#x4FDD;&#x5B58;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x4FEE;&#x6539;Django&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>settings.py</code>&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Python">STATICFILES_DIRS = [os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>), ]
+STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x597D;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4E4B;&#x540E;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x7136;&#x540E;&#x770B;&#x770B;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5199;&#x7684;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x56FE;&#x7247;&#x662F;&#x5426;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x52A0;&#x8F7D;&#x51FA;&#x6765;&#x3002;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;&#x5728;&#x9879;&#x76EE;&#x6B63;&#x5F0F;&#x90E8;&#x7F72;&#x5230;&#x7EBF;&#x4E0A;&#x73AF;&#x5883;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x4F1A;&#x628A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4EA4;&#x7ED9;&#x4E13;&#x95E8;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x5982;Nginx&#x3001;Apache&#xFF09;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6709;&#x8FD0;&#x884C;Python&#x4EE3;&#x7801;&#x7684;&#x670D;&#x52A1;&#x5668;&#x6765;&#x7BA1;&#x7406;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x5E76;&#x4E0D;&#x9002;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF0C;&#x4EC5;&#x4F9B;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;&#x3002;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x6B63;&#x786E;&#x59FF;&#x52BF;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x540E;&#x7EED;&#x7684;&#x7AE0;&#x8282;&#x4E3A;&#x5927;&#x5BB6;&#x8BB2;&#x89E3;&#x3002;</p>
+<h3 id="ajax&#x6982;&#x8FF0;">Ajax&#x6982;&#x8FF0;</h3>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x201C;&#x597D;&#x8BC4;&#x201D;&#x548C;&#x201C;&#x5DEE;&#x8BC4;&#x201D;&#x7684;&#x529F;&#x80FD;&#x4E86;&#xFF0C;&#x5F88;&#x660E;&#x663E;&#x5982;&#x679C;&#x80FD;&#x591F;&#x5728;&#x4E0D;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B9E;&#x73B0;&#x8FD9;&#x4E24;&#x4E2A;&#x529F;&#x80FD;&#x4F1A;&#x5E26;&#x6765;&#x66F4;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4F7F;&#x7528;<a href="https://zh.wikipedia.org/wiki/AJAX" target="_blank">Ajax</a>&#x6280;&#x672F;&#x6765;&#x5B9E;&#x73B0;&#x201C;&#x597D;&#x8BC4;&#x201D;&#x548C;&#x201C;&#x5DEE;&#x8BC4;&#x201D;&#x3002;Ajax&#x662F;Asynchronous Javascript And XML&#x7684;&#x7F29;&#x5199; , &#x7B80;&#x5355;&#x7684;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;Ajax&#x6280;&#x672F;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5BF9;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x5C40;&#x90E8;&#x5237;&#x65B0;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4F20;&#x7EDF;&#x7684;Web&#x5E94;&#x7528;&#xFF0C;&#x6BCF;&#x6B21;&#x9875;&#x9762;&#x4E0A;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x65B0;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8BF7;&#x6C42;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x5237;&#x65B0;&#x6574;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x65E0;&#x6CD5;&#x7ED9;&#x4E88;&#x54CD;&#x5E94;&#x6216;&#x8005;&#x7F51;&#x7EDC;&#x72B6;&#x51B5;&#x5E76;&#x4E0D;&#x7406;&#x60F3;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x6D4F;&#x89C8;&#x5668;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x7A7A;&#x767D;&#x5E76;&#x4F7F;&#x5F97;&#x7528;&#x6237;&#x5904;&#x4E8E;&#x7B49;&#x5F85;&#x72B6;&#x6001;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x671F;&#x95F4;&#x7528;&#x6237;&#x4EC0;&#x4E48;&#x90FD;&#x505A;&#x4E0D;&#x4E86;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;&#x5F88;&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x6837;&#x7684;Web&#x5E94;&#x7528;&#x5E76;&#x4E0D;&#x80FD;&#x5E26;&#x6765;&#x5F88;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;</p>
+<p><img src="res/synchronous-web-request.png" alt=""></p>
+<p>&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;Ajax&#x6280;&#x672F;&#x7684;Web&#x5E94;&#x7528;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x8D77;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x6765;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x4E0D;&#x4F1A;&#x4E2D;&#x65AD;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x5F53;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x4E86;&#x65B0;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;JavaScript&#x4EE3;&#x7801;&#x8FDB;&#x884C;DOM&#x64CD;&#x4F5C;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x9875;&#x9762;&#x7684;&#x5C40;&#x90E8;&#x5237;&#x65B0;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x4E0D;&#x5237;&#x65B0;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x66F4;&#x65B0;&#x4E86;&#x9875;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="res/asynchronous-web-request.png" alt=""></p>
+<p>&#x5728;&#x4F7F;&#x7528;Ajax&#x6280;&#x672F;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x8DDF;&#x670D;&#x52A1;&#x5668;&#x901A;&#x5E38;&#x4F1A;&#x4EA4;&#x6362;XML&#x6216;JSON&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;XML&#x662F;&#x4EE5;&#x524D;&#x4F7F;&#x7528;&#x5F97;&#x975E;&#x5E38;&#x591A;&#x7684;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF0C;&#x8FD1;&#x5E74;&#x6765;&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x5B8C;&#x5168;&#x88AB;JSON&#x53D6;&#x4EE3;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x7684;&#x5BF9;&#x6BD4;&#x3002;</p>
+<p>XML&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-XML"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">message</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">from</span>&gt;</span>Alice<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">to</span>&gt;</span>Bob<span class="hljs-tag">&lt;/<span class="hljs-name">to</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>Dinner is on me!<span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">message</span>&gt;</span>
+</code></pre>
+<p>JSON&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-JSON">{
+    <span class="hljs-string">&quot;from&quot;</span>: <span class="hljs-string">&quot;Alice&quot;</span>,
+    <span class="hljs-string">&quot;to&quot;</span>: <span class="hljs-string">&quot;Bob&quot;</span>,
+    <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;Dinner is on me!&quot;</span>
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x660E;&#x663E;JSON&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x8981;&#x7D27;&#x51D1;&#x5F97;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x4F20;&#x8F93;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;JSON&#x672C;&#x8EAB;&#x4E5F;&#x662F;JavaScript&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;&#xFF0C;&#x5728;JavaScript&#x4EE3;&#x7801;&#x4E2D;&#x5904;&#x7406;JSON&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#x3002;</p>
+<h3 id="&#x7528;ajax&#x5B9E;&#x73B0;&#x6295;&#x7968;&#x529F;&#x80FD;">&#x7528;Ajax&#x5B9E;&#x73B0;&#x6295;&#x7968;&#x529F;&#x80FD;</h3>
+<p>&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Ajax&#x6280;&#x672F;&#x6765;&#x5B9E;&#x73B0;&#x6295;&#x7968;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9996;&#x5148;&#x4FEE;&#x6539;&#x9879;&#x76EE;&#x7684;<code>urls.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x4E3A;&#x201C;&#x597D;&#x8BC4;&#x201D;&#x548C;&#x201C;&#x5DEE;&#x8BC4;&#x201D;&#x529F;&#x80FD;&#x6620;&#x5C04;&#x5BF9;&#x5E94;&#x7684;URL&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+
+<span class="hljs-keyword">from</span> vote <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.show_subjects),
+    path(<span class="hljs-string">&apos;teachers/&apos;</span>, views.show_teachers),
+    path(<span class="hljs-string">&apos;praise/&apos;</span>, views.praise_or_criticize),
+    path(<span class="hljs-string">&apos;criticize/&apos;</span>, views.praise_or_criticize),
+    path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
+]
+</code></pre>
+<p>&#x8BBE;&#x8BA1;&#x89C6;&#x56FE;&#x51FD;&#x6570;<code>praise_or_criticize</code>&#x6765;&#x652F;&#x6301;&#x201C;&#x597D;&#x8BC4;&#x201D;&#x548C;&#x201C;&#x5DEE;&#x8BC4;&#x201D;&#x529F;&#x80FD;&#xFF0C;&#x8BE5;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x901A;&#x8FC7;Django&#x5C01;&#x88C5;&#x7684;JsonResponse&#x7C7B;&#x5C06;&#x5B57;&#x5178;&#x5E8F;&#x5217;&#x5316;&#x6210;JSON&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x8FD4;&#x56DE;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">praise_or_criticize</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x597D;&#x8BC4;&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">try</span>:
+        tno = int(request.GET.get(<span class="hljs-string">&apos;tno&apos;</span>))
+        teacher = Teacher.objects.get(no=tno)
+        <span class="hljs-keyword">if</span> request.path.startswith(<span class="hljs-string">&apos;/praise&apos;</span>):
+            teacher.good_count += <span class="hljs-number">1</span>
+            count = teacher.good_count
+        <span class="hljs-keyword">else</span>:
+            teacher.bad_count += <span class="hljs-number">1</span>
+            count = teacher.bad_count
+        teacher.save()
+        data = {<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">20000</span>, <span class="hljs-string">&apos;mesg&apos;</span>: <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x6210;&#x529F;&apos;</span>, <span class="hljs-string">&apos;count&apos;</span>: count}
+    <span class="hljs-keyword">except</span> (ValueError, Teacher.DoseNotExist):
+        data = {<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">20001</span>, <span class="hljs-string">&apos;mesg&apos;</span>: <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&apos;</span>}
+    <span class="hljs-keyword">return</span> JsonResponse(data)
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x663E;&#x793A;&#x8001;&#x5E08;&#x4FE1;&#x606F;&#x7684;&#x6A21;&#x677F;&#x9875;&#xFF0C;&#x5F15;&#x5165;jQuery&#x5E93;&#x6765;&#x5B9E;&#x73B0;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x3001;Ajax&#x8BF7;&#x6C42;&#x548C;DOM&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-id">#container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
+        }
+        <span class="hljs-selector-class">.teacher</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> dashed gray;
+            <span class="hljs-attribute">overflow</span>: auto;
+        }
+        <span class="hljs-selector-class">.teacher</span>&gt;<span class="hljs-selector-tag">div</span> {
+            <span class="hljs-attribute">float</span>: left;
+        }
+        <span class="hljs-selector-class">.photo</span> {
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">140px</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">75px</span>;
+            <span class="hljs-attribute">overflow</span>: hidden;
+            <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">20px</span>;
+        }
+        <span class="hljs-selector-class">.info</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+            <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">30px</span>;
+        }
+        <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">div</span> {
+            <span class="hljs-attribute">clear</span>: both;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+        }
+        <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">25px</span>;
+        }
+        <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">text-decoration</span>: none;
+            <span class="hljs-attribute">color</span>: darkcyan;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5B66;&#x79D1;&#x7684;&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x6682;&#x65E0;&#x8BE5;&#x5B66;&#x79D1;&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>&#x8FD4;&#x56DE;&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        $(() =&gt; {
+            $(<span class="hljs-string">&apos;.comment&gt;a&apos;</span>).on(<span class="hljs-string">&apos;click&apos;</span>, (evt) =&gt; {
+                evt.preventDefault()
+                <span class="hljs-keyword">let</span> url = $(evt.target).attr(<span class="hljs-string">&apos;href&apos;</span>)
+                $.getJSON(url, (json) =&gt; {
+                    <span class="hljs-keyword">if</span> (json.code == <span class="hljs-number">20000</span>) {
+                        $(evt.target).next().text(json.count)
+                    } <span class="hljs-keyword">else</span> {
+                        alert(json.mesg)
+                    }
+                })
+            })
+        })
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;jQuery&#x5E93;&#x5C01;&#x88C5;&#x7684;<code>getJSON</code>&#x65B9;&#x6CD5;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;&#x524D;&#x7AEF;&#x7684;jQuery&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="https://www.runoob.com/manual/jquery/" target="_blank">&#x300A;jQuery API&#x624B;&#x518C;&#x300B;</a>&#x3002;</p>
+<h3 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h3>
+<p>&#x5230;&#x6B64;&#x4E3A;&#x6B62;&#xFF0C;&#x8FD9;&#x4E2A;&#x6295;&#x7968;&#x9879;&#x76EE;&#x7684;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5DF2;&#x7136;&#x5B8C;&#x6210;&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#x6211;&#x4EEC;&#x4F1A;&#x8981;&#x6C42;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x767B;&#x5F55;&#x624D;&#x80FD;&#x6295;&#x7968;&#xFF0C;&#x6CA1;&#x6709;&#x8D26;&#x53F7;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6CE8;&#x518C;&#x529F;&#x80FD;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x8D26;&#x53F7;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="47.深入模型.html" class="navigation navigation-prev " aria-label="Previous page: 47.深入模型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="49.Cookie和Session.html" class="navigation navigation-next " aria-label="Next page: 49.Cookie和Session">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"48.静态资源和Ajax请求","level":"1.7.3","depth":2,"next":{"title":"49.Cookie和Session","level":"1.7.4","depth":2,"path":"Day46-60/49.Cookie和Session.md","ref":"Day46-60/49.Cookie和Session.md","articles":[]},"previous":{"title":"47.深入模型","level":"1.7.2","depth":2,"path":"Day46-60/47.深入模型.md","ref":"Day46-60/47.深入模型.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day46-60/48.静态资源和Ajax请求.md","mtime":"2024-07-05T04:07:58.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

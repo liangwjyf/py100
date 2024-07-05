@@ -1,0 +1,2309 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>37.SQL详解之DDL · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="38.SQL详解之DML.html" />
+    
+    
+    <link rel="prev" href="36.关系型数据库和MySQL概述.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="36.关系型数据库和MySQL概述.html">
+            
+                <a href="36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="37.SQL详解之DDL.html">
+            
+                <a href="37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="38.SQL详解之DML.html">
+            
+                <a href="38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="39.SQL详解之DQL.html">
+            
+                <a href="39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="40.SQL详解之DCL.html">
+            
+                <a href="40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="41.MySQL新特性.html">
+            
+                <a href="41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="42.视图、函数和过程.html">
+            
+                <a href="42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="43.索引.html">
+            
+                <a href="43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="44.Python接入MySQL数据库.html">
+            
+                <a href="44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="45.大数据平台和HiveSQL.html">
+            
+                <a href="45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
+            
+                <a href="../Day46-60/46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
+            
+                <a href="../Day46-60/47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                <a href="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
+            
+                <a href="../Day46-60/49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
+            
+                <a href="../Day46-60/50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
+            
+                <a href="../Day46-60/51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
+            
+                <a href="../Day46-60/52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
+            
+                <a href="../Day46-60/53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
+            
+                <a href="../Day46-60/56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
+            
+                <a href="../Day46-60/57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
+            
+                <a href="../Day46-60/58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
+            
+                <a href="../Day46-60/59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
+            
+                <a href="../Day46-60/60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
+            
+                <a href="../Day91-100/100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
+            
+                <a href="../Day91-100/92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
+            
+                <a href="../Day91-100/93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
+            
+                <a href="../Day91-100/94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
+            
+                <a href="../Day91-100/95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
+            
+                <a href="../Day91-100/96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                <a href="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                <a href="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
+            
+                <a href="../Day91-100/99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >37.SQL详解之DDL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="sql&#x8BE6;&#x89E3;&#x4E4B;ddl">SQL&#x8BE6;&#x89E3;&#x4E4B;DDL</h2>
+<p>&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x5C06; SQL &#x5206;&#x4E3A;&#x56DB;&#x7C7B;&#xFF0C;&#x5206;&#x522B;&#x662F; DDL&#xFF08;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF09;&#x3001;DML&#xFF08;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x8BED;&#x8A00;&#xFF09;&#x3001; DCL&#xFF08;&#x6570;&#x636E;&#x63A7;&#x5236;&#x8BED;&#x8A00;&#xFF09;&#x548C; TCL&#xFF08;&#x4E8B;&#x52A1;&#x63A7;&#x5236;&#x8BED;&#x8A00;&#xFF09;&#x3002;DDL &#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x521B;&#x5EFA;&#x3001;&#x5220;&#x9664;&#x548C;&#x4FEE;&#x6539;&#x4E8C;&#x7EF4;&#x8868;&#xFF0C;&#x6838;&#x5FC3;&#x7684;&#x5173;&#x952E;&#x5B57;&#x5305;&#x62EC;<code>create</code>&#x3001;<code>drop</code>&#x548C;<code>alter</code>&#xFF1B;DML &#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6570;&#x636E;&#x7684;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x3001;&#x66F4;&#x65B0;&#x548C;&#x67E5;&#x8BE2;&#xFF0C;&#x5173;&#x952E;&#x8BCD;&#x5305;&#x62EC;<code>insert</code>&#x3001;<code>delete</code>&#x3001;<code>update</code>&#x548C;<code>select</code>&#xFF1B;DCL &#x7528;&#x4E8E;&#x6388;&#x4E88;&#x548C;&#x53EC;&#x56DE;&#x6743;&#x9650;&#xFF0C;&#x6838;&#x5FC3;&#x5173;&#x952E;&#x8BCD;&#x662F;<code>grant</code>&#x548C;<code>revoke</code>&#xFF1B;TCL &#x901A;&#x5E38;&#x7528;&#x4E8E;&#x4E8B;&#x52A1;&#x63A7;&#x5236;&#x3002;</p>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;SQL &#x662F;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6709;&#x4EBA;&#x4F1A;&#x5EFA;&#x8BAE;&#x5C06;&#x5173;&#x952E;&#x5B57;&#x5927;&#x5199;&#xFF0C;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5C0F;&#x5199;&#x3002;&#x4E3A;&#x4E86;&#x4E66;&#x5199;&#x548C;&#x8BC6;&#x522B;&#x65B9;&#x4FBF;&#xFF0C;&#x4E0B;&#x9762;&#x7684; SQL &#x6211;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x8FDB;&#x884C;&#x4E66;&#x5199;&#x7684;&#x3002; &#x5982;&#x679C;&#x516C;&#x53F8;&#x7684; SQL &#x7F16;&#x7A0B;&#x89C4;&#x8303;&#x6709;&#x5F3A;&#x5236;&#x89C4;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x6309;&#x7167;&#x516C;&#x53F8;&#x7684;&#x8981;&#x6C42;&#x6765;&#xFF0C;&#x4E2A;&#x4EBA;&#x7684;&#x559C;&#x597D;&#x4E0D;&#x5E94;&#x8BE5;&#x51CC;&#x9A7E;&#x4E8E;&#x516C;&#x53F8;&#x7684;&#x7F16;&#x7A0B;&#x89C4;&#x8303;&#x4E4B;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x5BF9;&#x804C;&#x4E1A;&#x4EBA;&#x6765;&#x8BF4;&#x5E94;&#x8BE5;&#x662F;&#x5E38;&#x8BC6;&#x3002;</p>
+</blockquote>
+<h3 id="&#x5EFA;&#x5E93;&#x5EFA;&#x8868;">&#x5EFA;&#x5E93;&#x5EFA;&#x8868;</h3>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x5B66;&#x6821;&#x9009;&#x8BFE;&#x7CFB;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x547D;&#x540D;&#x4E3A;<code>school</code>&#xFF0C;&#x56DB;&#x4E2A;&#x5173;&#x952E;&#x7684;&#x5B9E;&#x4F53;&#x5206;&#x522B;&#x662F;&#x5B66;&#x9662;&#x3001;&#x8001;&#x5E08;&#x3001;&#x5B66;&#x751F;&#x548C;&#x8BFE;&#x7A0B;&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;&#x5B66;&#x751F;&#x8DDF;&#x5B66;&#x9662;&#x662F;&#x4ECE;&#x5C5E;&#x5173;&#x7CFB;&#xFF0C;&#x8FD9;&#x4E2A;&#x5173;&#x7CFB;&#x4ECE;&#x6570;&#x91CF;&#x4E0A;&#x6765;&#x8BB2;&#x662F;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B66;&#x9662;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x540D;&#x5B66;&#x751F;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x901A;&#x5E38;&#x53EA;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x5B66;&#x9662;&#xFF1B;&#x540C;&#x7406;&#xFF0C;&#x8001;&#x5E08;&#x8DDF;&#x5B66;&#x9662;&#x7684;&#x4ECE;&#x5C5E;&#x5173;&#x7CFB;&#x4E5F;&#x662F;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x3002;&#x4E00;&#x540D;&#x8001;&#x5E08;&#x53EF;&#x4EE5;&#x8BB2;&#x6388;&#x591A;&#x95E8;&#x8BFE;&#x7A0B;&#xFF0C;&#x4E00;&#x95E8;&#x8BFE;&#x7A0B;&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6388;&#x8BFE;&#x8001;&#x5E08;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x8BFE;&#x7A0B;&#x8DDF;&#x8001;&#x5E08;&#x4E5F;&#x662F;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xFF1B;&#x5982;&#x679C;&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x8001;&#x5E08;&#x5408;&#x4F5C;&#x8BB2;&#x6388;&#x4E00;&#x95E8;&#x8BFE;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x8BFE;&#x7A0B;&#x548C;&#x8001;&#x5E08;&#x5C31;&#x662F;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x3002;&#x7B80;&#x5355;&#x8D77;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8BFE;&#x7A0B;&#x548C;&#x8001;&#x5E08;&#x8BBE;&#x8BA1;&#x4E3A;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x3002;&#x5B66;&#x751F;&#x548C;&#x8BFE;&#x7A0B;&#x662F;&#x5178;&#x578B;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x591A;&#x95E8;&#x8BFE;&#x7A0B;&#xFF0C;&#x4E00;&#x95E8;&#x8BFE;&#x7A0B;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x591A;&#x4E2A;&#x5B66;&#x751F;&#x9009;&#x62E9;&#xFF0C;&#x800C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x9700;&#x8981;&#x501F;&#x52A9;&#x4E2D;&#x95F4;&#x8868;&#x624D;&#x80FD;&#x7EF4;&#x6301;&#x7EF4;&#x6301;&#x4E24;&#x4E2A;&#x5B9E;&#x4F53;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x3002;&#x6700;&#x7EC8;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5B66;&#x6821;&#x9009;&#x8BFE;&#x7CFB;&#x7EDF;&#x4E00;&#x5171;&#x6709;&#x4E94;&#x5F20;&#x8868;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x5B66;&#x9662;&#x8868;&#xFF08;<code>tb_college</code>&#xFF09;&#x3001;&#x5B66;&#x751F;&#x8868;&#xFF08;<code>tb_student</code>&#xFF09;&#x3001;&#x6559;&#x5E08;&#x8868;&#xFF08;<code>tb_teacher</code>&#xFF09;&#x3001;&#x8BFE;&#x7A0B;&#x8868;&#xFF08;<code>tb_course</code>&#xFF09;&#x548C;&#x9009;&#x8BFE;&#x8BB0;&#x5F55;&#x8868;&#xFF08;<code>tb_record</code>&#xFF09;&#xFF0C;&#x5176;&#x4E2D;&#x9009;&#x8BFE;&#x8BB0;&#x5F55;&#x8868;&#x5C31;&#x662F;&#x7EF4;&#x6301;&#x5B66;&#x751F;&#x8DDF;&#x8BFE;&#x7A0B;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x7684;&#x4E2D;&#x95F4;&#x8868;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-comment">-- &#x5982;&#x679C;&#x5B58;&#x5728;&#x540D;&#x4E3A;school&#x7684;&#x6570;&#x636E;&#x5E93;&#x5C31;&#x5220;&#x9664;&#x5B83;</span>
+<span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">exists</span> <span class="hljs-string">`school`</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x540D;&#x4E3A;school&#x7684;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x548C;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> <span class="hljs-string">`school`</span> <span class="hljs-keyword">default</span> <span class="hljs-built_in">character</span> <span class="hljs-keyword">set</span> utf8mb4 <span class="hljs-keyword">collate</span> utf8mb4_general_ci;
+
+<span class="hljs-comment">-- &#x5207;&#x6362;&#x5230;school&#x6570;&#x636E;&#x5E93;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;</span>
+<span class="hljs-keyword">use</span> <span class="hljs-string">`school`</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x5B66;&#x9662;&#x8868;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_college`</span>
+(
+<span class="hljs-string">`col_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x7F16;&#x53F7;&apos;</span>,
+<span class="hljs-string">`col_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>,
+<span class="hljs-string">`col_intro`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">500</span>) <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x4ECB;&#x7ECD;&apos;</span>,
+primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`col_id`</span>)
+) <span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> auto_increment=<span class="hljs-number">1</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x9662;&#x8868;&apos;</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x5B66;&#x751F;&#x8868;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span>
+(
+<span class="hljs-string">`stu_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x53F7;&apos;</span>,
+<span class="hljs-string">`stu_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>,
+<span class="hljs-string">`stu_sex`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">default</span> <span class="hljs-number">1</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6027;&#x522B;&apos;</span>,
+<span class="hljs-string">`stu_birth`</span> <span class="hljs-built_in">date</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x51FA;&#x751F;&#x65E5;&#x671F;&apos;</span>,
+<span class="hljs-string">`stu_addr`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x7C4D;&#x8D2F;&apos;</span>,
+<span class="hljs-string">`col_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6240;&#x5C5E;&#x5B66;&#x9662;&apos;</span>,
+primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`stu_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_student_col_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`col_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_college`</span> (<span class="hljs-string">`col_id`</span>)
+) <span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x751F;&#x8868;&apos;</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x6559;&#x5E08;&#x8868;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_teacher`</span>
+(
+<span class="hljs-string">`tea_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5DE5;&#x53F7;&apos;</span>,
+<span class="hljs-string">`tea_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>,
+<span class="hljs-string">`tea_title`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&#x52A9;&#x6559;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x804C;&#x79F0;&apos;</span>,
+<span class="hljs-string">`col_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6240;&#x5C5E;&#x5B66;&#x9662;&apos;</span>,
+primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`tea_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_teacher_col_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`col_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_college`</span> (<span class="hljs-string">`col_id`</span>)
+) <span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x8868;&apos;</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x8BFE;&#x7A0B;&#x8868;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_course`</span>
+(
+<span class="hljs-string">`cou_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x7F16;&#x53F7;&apos;</span>,
+<span class="hljs-string">`cou_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>,
+<span class="hljs-string">`cou_credit`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x5206;&apos;</span>,
+<span class="hljs-string">`tea_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6388;&#x8BFE;&#x8001;&#x5E08;&apos;</span>,
+primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`cou_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_course_tea_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`tea_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_teacher`</span> (<span class="hljs-string">`tea_id`</span>)
+) <span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8BFE;&#x7A0B;&#x8868;&apos;</span>;
+
+<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x9009;&#x8BFE;&#x8BB0;&#x5F55;&#x8868;</span>
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_record`</span>
+(
+<span class="hljs-string">`rec_id`</span> <span class="hljs-built_in">bigint</span> <span class="hljs-keyword">unsigned</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x9009;&#x8BFE;&#x8BB0;&#x5F55;&#x53F7;&apos;</span>,
+<span class="hljs-string">`stu_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x53F7;&apos;</span>,
+<span class="hljs-string">`cou_id`</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8BFE;&#x7A0B;&#x7F16;&#x53F7;&apos;</span>,
+<span class="hljs-string">`sel_date`</span> <span class="hljs-built_in">date</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x9009;&#x8BFE;&#x65E5;&#x671F;&apos;</span>,
+<span class="hljs-string">`score`</span> <span class="hljs-built_in">decimal</span>(<span class="hljs-number">4</span>,<span class="hljs-number">1</span>) <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&apos;</span>,
+primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`rec_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_record_stu_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`stu_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_student`</span> (<span class="hljs-string">`stu_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_record_cou_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`cou_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_course`</span> (<span class="hljs-string">`cou_id`</span>),
+<span class="hljs-keyword">constraint</span> <span class="hljs-string">`uk_record_stu_cou`</span> <span class="hljs-keyword">unique</span> (<span class="hljs-string">`stu_id`</span>, <span class="hljs-string">`cou_id`</span>)
+) <span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x9009;&#x8BFE;&#x8BB0;&#x5F55;&#x8868;&apos;</span>;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;DDL&#x6709;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x9700;&#x8981;&#x5F3A;&#x8C03;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>&#x9996;&#x5148;&#xFF0C;&#x4E0A;&#x9762; SQL &#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#x3001;&#x8868;&#x540D;&#x3001;&#x5B57;&#x6BB5;&#x540D;&#x90FD;&#x88AB;&#x53CD;&#x5F15;&#x53F7;&#xFF08;`&#xFF09;&#x5305;&#x88F9;&#x8D77;&#x6765;&#xFF0C;&#x53CD;&#x5F15;&#x53F7;&#x5E76;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8868;&#x540D;&#x3001;&#x5B57;&#x6BB5;&#x540D;&#x7B49;&#x8DDF; SQL &#x5173;&#x952E;&#x5B57;&#xFF08;SQL &#x4E2D;&#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x7684;&#x5355;&#x8BCD;&#xFF09;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>default character set utf8mb4</code>&#x6307;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x4E3A;<code>utf8mb4</code>&#xFF08;&#x6700;&#x5927;<code>4</code>&#x5B57;&#x8282;&#x7684;<code>utf-8</code>&#x7F16;&#x7801;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x5B83;&#x4E5F;&#x662F; MySQL 8.x &#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x591F;&#x652F;&#x6301;&#x56FD;&#x9645;&#x5316;&#x7F16;&#x7801;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5B58;&#x50A8; Emoji &#x5B57;&#x7B26;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x67E5;&#x770B; MySQL &#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x4EE5;&#x53CA;&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-built_in">character</span> <span class="hljs-keyword">set</span>;
+</code></pre>
+<pre><code>+----------+---------------------------------+---------------------+--------+
+| Charset  | Description                     | Default collation   | Maxlen |
++----------+---------------------------------+---------------------+--------+
+| big5     | Big5 Traditional Chinese        | big5_chinese_ci     |      2 |
+| dec8     | DEC West European               | dec8_swedish_ci     |      1 |
+| cp850    | DOS West European               | cp850_general_ci    |      1 |
+| hp8      | HP West European                | hp8_english_ci      |      1 |
+| koi8r    | KOI8-R Relcom Russian           | koi8r_general_ci    |      1 |
+| latin1   | cp1252 West European            | latin1_swedish_ci   |      1 |
+| latin2   | ISO 8859-2 Central European     | latin2_general_ci   |      1 |
+| swe7     | 7bit Swedish                    | swe7_swedish_ci     |      1 |
+| ascii    | US ASCII                        | ascii_general_ci    |      1 |
+| ujis     | EUC-JP Japanese                 | ujis_japanese_ci    |      3 |
+| sjis     | Shift-JIS Japanese              | sjis_japanese_ci    |      2 |
+| hebrew   | ISO 8859-8 Hebrew               | hebrew_general_ci   |      1 |
+| tis620   | TIS620 Thai                     | tis620_thai_ci      |      1 |
+| euckr    | EUC-KR Korean                   | euckr_korean_ci     |      2 |
+| koi8u    | KOI8-U Ukrainian                | koi8u_general_ci    |      1 |
+| gb2312   | GB2312 Simplified Chinese       | gb2312_chinese_ci   |      2 |
+| greek    | ISO 8859-7 Greek                | greek_general_ci    |      1 |
+| cp1250   | Windows Central European        | cp1250_general_ci   |      1 |
+| gbk      | GBK Simplified Chinese          | gbk_chinese_ci      |      2 |
+| latin5   | ISO 8859-9 Turkish              | latin5_turkish_ci   |      1 |
+| armscii8 | ARMSCII-8 Armenian              | armscii8_general_ci |      1 |
+| utf8     | UTF-8 Unicode                   | utf8_general_ci     |      3 |
+| ucs2     | UCS-2 Unicode                   | ucs2_general_ci     |      2 |
+| cp866    | DOS Russian                     | cp866_general_ci    |      1 |
+| keybcs2  | DOS Kamenicky Czech-Slovak      | keybcs2_general_ci  |      1 |
+| macce    | Mac Central European            | macce_general_ci    |      1 |
+| macroman | Mac West European               | macroman_general_ci |      1 |
+| cp852    | DOS Central European            | cp852_general_ci    |      1 |
+| latin7   | ISO 8859-13 Baltic              | latin7_general_ci   |      1 |
+| utf8mb4  | UTF-8 Unicode                   | utf8mb4_general_ci  |      4 |
+| cp1251   | Windows Cyrillic                | cp1251_general_ci   |      1 |
+| utf16    | UTF-16 Unicode                  | utf16_general_ci    |      4 |
+| utf16le  | UTF-16LE Unicode                | utf16le_general_ci  |      4 |
+| cp1256   | Windows Arabic                  | cp1256_general_ci   |      1 |
+| cp1257   | Windows Baltic                  | cp1257_general_ci   |      1 |
+| utf32    | UTF-32 Unicode                  | utf32_general_ci    |      4 |
+| binary   | Binary pseudo charset           | binary              |      1 |
+| geostd8  | GEOSTD8 Georgian                | geostd8_general_ci  |      1 |
+| cp932    | SJIS for Windows Japanese       | cp932_japanese_ci   |      2 |
+| eucjpms  | UJIS for Windows Japanese       | eucjpms_japanese_ci |      3 |
+| gb18030  | China National Standard GB18030 | gb18030_chinese_ci  |      4 |
++----------+---------------------------------+---------------------+--------+
+41 rows in set (0.00 sec)
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x8BBE;&#x7F6E; MySQL &#x670D;&#x52A1;&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;MySQL&#x7684;&#x914D;&#x7F6E;&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-INI"><span class="hljs-section">[mysqld]</span>
+<span class="hljs-attr">character-set-server</span>=utf8
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x5982;&#x4F55;&#x4FEE;&#x6539; MySQL &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5C31;&#x5148;&#x4E0D;&#x8981;&#x7BA1;&#x5B83;&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x65F6;&#xFF0C;&#x5173;&#x952E;&#x5B57;<code>database</code>&#x4E5F;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x4E3A;<code>schema</code>&#xFF0C;&#x4E8C;&#x8005;&#x4F5C;&#x7528;&#x76F8;&#x540C;&#x3002;</p>
+</li>
+<li><p>&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x4E2D;&#x7684;<code>not null</code>&#x662F;&#x975E;&#x7A7A;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x9650;&#x5B9A;&#x4E86;&#x5B57;&#x6BB5;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF1B;<code>default</code>&#x7528;&#x4E8E;&#x4E3A;&#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x7EA6;&#x675F;&#xFF1B;<code>primary key</code>&#x662F;&#x4E3B;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x8BBE;&#x5B9A;&#x4E86;&#x80FD;&#x591F;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x5217;&#xFF0C;&#x4E5F;&#x786E;&#x4FDD;&#x4E86;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x90FD;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E3B;&#x952E;&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#xFF1B;<code>foreign key</code>&#x662F;&#x5916;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x7EF4;&#x6301;&#x4E86;&#x4E24;&#x5F20;&#x8868;&#x7684;&#x53C2;&#x7167;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x7531;&#x4E8E;&#x5B66;&#x751F;&#x8868;&#x4E2D;&#x4E3A; col_id &#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x4E86;&#x5916;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x9650;&#x5B9A;&#x5176;&#x5FC5;&#x987B;&#x5F15;&#x7528;&#xFF08;<code>references</code>&#xFF09;&#x5B66;&#x9662;&#x8868;&#x4E2D;&#x7684; col_id&#xFF0C;&#x56E0;&#x6B64;&#x5B66;&#x751F;&#x8868;&#x4E2D;&#x7684;&#x5B66;&#x9662;&#x7F16;&#x53F7;&#x5FC5;&#x987B;&#x6765;&#x81EA;&#x4E8E;&#x5B66;&#x9662;&#x8868;&#x4E2D;&#x7684;&#x5B66;&#x9662;&#x7F16;&#x53F7;&#xFF0C;&#x4E0D;&#x80FD;&#x591F;&#x968F;&#x610F;&#x4E3A;&#x8BE5;&#x5B57;&#x6BB5;&#x8D4B;&#x503C;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x7ED9;&#x4E3B;&#x952E;&#x7EA6;&#x675F;&#x3001;&#x5916;&#x952E;&#x7EA6;&#x675F;&#x7B49;&#x8D77;&#x540D;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>constriant</code>&#x5173;&#x952E;&#x5B57;&#x5E76;&#x5728;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7EA6;&#x675F;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+</li>
+<li><p>&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x4E2D;&#x7684;<code>comment</code> &#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x7ED9;&#x5217;&#x548C;&#x8868;&#x6DFB;&#x52A0;&#x6CE8;&#x91CA;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x5728;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x9009;&#x62E9;&#x5E95;&#x5C42;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;MySQL &#x652F;&#x6301;&#x591A;&#x79CD;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>show engines</code>&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x67E5;&#x770B;&#x3002;MySQL 5.5 &#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x662F; InnoDB&#xFF0C;&#x5B83;&#x662F;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF08;&#x56E0;&#x4E3A;&#x66F4;&#x9002;&#x5408;&#x5F53;&#x4E0B;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#x5BF9;&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x6027;&#x80FD;&#x4EE5;&#x53CA;&#x4E8B;&#x52A1;&#x652F;&#x6301;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x9700;&#x6C42;&#xFF09;&#xFF0C;&#x4E3A;&#x4E86; SQL &#x8BED;&#x53E5;&#x7684;&#x5411;&#x4E0B;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x5904;&#x53F3;&#x5706;&#x62EC;&#x53F7;&#x7684;&#x540E;&#x9762;&#x901A;&#x8FC7;<code>engine=innodb</code>&#x6765;&#x6307;&#x5B9A;&#x4F7F;&#x7528; InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">engines</span>\G
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684; \G &#x662F;&#x4E3A;&#x4E86;&#x6362;&#x4E00;&#x79CD;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x5F88;&#x591A;&#x4E00;&#x884C;&#x663E;&#x793A;&#x4E0D;&#x5B8C;&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x4E0D;&#x8212;&#x670D;&#xFF0C;&#x4F7F;&#x7528; \G &#x53EF;&#x4EE5;&#x5C06;&#x8BB0;&#x5F55;&#x7684;&#x6BCF;&#x4E2A;&#x5217;&#x4EE5;&#x72EC;&#x5360;&#x6574;&#x884C;&#x7684;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&#xFF0C;&#x8FD9;&#x79CD;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x8212;&#x670D;&#x5F88;&#x591A;&#x3002;</p>
+</blockquote>
+<pre><code>*************************** 1. row ***************************
+      Engine: InnoDB
+     Support: DEFAULT
+     Comment: Supports transactions, row-level locking, and foreign keys
+Transactions: YES
+          XA: YES
+  Savepoints: YES
+*************************** 2. row ***************************
+      Engine: MRG_MYISAM
+     Support: YES
+     Comment: Collection of identical MyISAM tables
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 3. row ***************************
+      Engine: MEMORY
+     Support: YES
+     Comment: Hash based, stored in memory, useful for temporary tables
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 4. row ***************************
+      Engine: BLACKHOLE
+     Support: YES
+     Comment: /dev/null storage engine (anything you write to it disappears)
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 5. row ***************************
+      Engine: MyISAM
+     Support: YES
+     Comment: MyISAM storage engine
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 6. row ***************************
+      Engine: CSV
+     Support: YES
+     Comment: CSV storage engine
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 7. row ***************************
+      Engine: ARCHIVE
+     Support: YES
+     Comment: Archive storage engine
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 8. row ***************************
+      Engine: PERFORMANCE_SCHEMA
+     Support: YES
+     Comment: Performance Schema
+Transactions: NO
+          XA: NO
+  Savepoints: NO
+*************************** 9. row ***************************
+      Engine: FEDERATED
+     Support: NO
+     Comment: Federated MySQL storage engine
+Transactions: NULL
+          XA: NULL
+  Savepoints: NULL
+9 rows in set (0.00 sec)
+</code></pre><p>&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x5BF9;MySQL&#x51E0;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x6570;&#x636E;&#x5F15;&#x64CE;&#x8FDB;&#x884C;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x5BF9;&#x6BD4;&#x3002;</p>
+<p>| &#x7279;&#x6027;         | InnoDB       | MRG_MYISAM | MEMORY | MyISAM |
+| ------------ | ------------ | ---------- | ------ | ------ |
+| &#x5B58;&#x50A8;&#x9650;&#x5236;     | &#x6709;           | &#x6CA1;&#x6709;       | &#x6709;     | &#x6709;     |
+| &#x4E8B;&#x52A1;         | &#x652F;&#x6301;         |            |        |        |
+| &#x9501;&#x673A;&#x5236;       | &#x884C;&#x9501;         | &#x8868;&#x9501;       | &#x8868;&#x9501;   | &#x8868;&#x9501;   |
+| B&#x6811;&#x7D22;&#x5F15;      | &#x652F;&#x6301;         | &#x652F;&#x6301;       | &#x652F;&#x6301;   | &#x652F;&#x6301;   |
+| &#x54C8;&#x5E0C;&#x7D22;&#x5F15;     |              |            | &#x652F;&#x6301;   |        |
+| &#x5168;&#x6587;&#x68C0;&#x7D22;     | &#x652F;&#x6301;&#xFF08;5.6+&#xFF09; |            |        | &#x652F;&#x6301;   |
+| &#x96C6;&#x7FA4;&#x7D22;&#x5F15;     | &#x652F;&#x6301;         |            |        |        |
+| &#x6570;&#x636E;&#x7F13;&#x5B58;     | &#x652F;&#x6301;         |            | &#x652F;&#x6301;   |        |
+| &#x7D22;&#x5F15;&#x7F13;&#x5B58;     | &#x652F;&#x6301;         | &#x652F;&#x6301;       | &#x652F;&#x6301;   | &#x652F;&#x6301;   |
+| &#x6570;&#x636E;&#x53EF;&#x538B;&#x7F29;   |              |            |        | &#x652F;&#x6301;   |
+| &#x5185;&#x5B58;&#x4F7F;&#x7528;     | &#x9AD8;           | &#x4F4E;         | &#x4E2D;     | &#x4F4E;     |
+| &#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4F7F;&#x7528; | &#x9AD8;           | &#x4F4E;         |        | &#x4F4E;     |
+| &#x6279;&#x91CF;&#x63D2;&#x5165;&#x6027;&#x80FD; | &#x4F4E;           | &#x9AD8;         | &#x9AD8;     | &#x9AD8;     |
+| &#x662F;&#x5426;&#x652F;&#x6301;&#x5916;&#x952E; | &#x652F;&#x6301;         |            |        |        |</p>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6BD4;&#x8F83;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#xFF0C;InnoDB &#x662F;&#x552F;&#x4E00;&#x80FD;&#x591F;&#x652F;&#x6301;&#x5916;&#x952E;&#x3001;&#x4E8B;&#x52A1;&#x4EE5;&#x53CA;&#x884C;&#x9501;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BF4;&#x5B83;&#x66F4;&#x9002;&#x5408;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x8F83;&#x65B0;&#x7248;&#x672C;&#x7684; MySQL &#x4E2D;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
+</li>
+<li><p>&#x5728;&#x5B9A;&#x4E49;&#x8868;&#x7ED3;&#x6784;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x9009;&#x62E9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x66F4;&#x5408;&#x9002;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; MySQL &#x7684;&#x5E2E;&#x52A9;&#x7CFB;&#x7EDF;&#x6765;&#x4E86;&#x89E3;&#x6BCF;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x6027;&#x3001;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x548C;&#x7CBE;&#x5EA6;&#x7B49;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-SQL">? data types
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5728; MySQLWorkbench &#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>?</code>&#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#xFF0C;&#x8981;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4;<code>help</code>&#x3002;</p>
+</blockquote>
+<pre><code>You asked for help about help category: &quot;Data Types&quot;
+For more information, type &apos;help &lt;item&gt;&apos;, where &lt;item&gt; is one of the following
+topics:
+   AUTO_INCREMENT
+   BIGINT
+   BINARY
+   BIT
+   BLOB
+   BLOB DATA TYPE
+   BOOLEAN
+   CHAR
+   CHAR BYTE
+   DATE
+   DATETIME
+   DEC
+   DECIMAL
+   DOUBLE
+   DOUBLE PRECISION
+   ENUM
+   FLOAT
+   INT
+   INTEGER
+   LONGBLOB
+   LONGTEXT
+   MEDIUMBLOB
+   MEDIUMINT
+   MEDIUMTEXT
+   SET DATA TYPE
+   SMALLINT
+   TEXT
+   TIME
+   TIMESTAMP
+   TINYBLOB
+   TINYINT
+   TINYTEXT
+   VARBINARY
+   VARCHAR
+   YEAR DATA TYPE
+</code></pre><p>&#x83B7;&#x53D6; varchar &#x7C7B;&#x578B;&#x7684;&#x5E2E;&#x52A9;&#xFF1A;</p>
+<pre><code class="lang-SQL">? varchar
+</code></pre>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>Name: &apos;VARCHAR&apos;
+Description:
+[NATIONAL] VARCHAR(M) [CHARACTER SET charset_name] [COLLATE
+collation_name]
+
+A variable-length string. M represents the maximum column length in
+characters. The range of M is 0 to 65,535. The effective maximum length
+of a VARCHAR is subject to the maximum row size (65,535 bytes, which is
+shared among all columns) and the character set used. For example, utf8
+characters can require up to three bytes per character, so a VARCHAR
+column that uses the utf8 character set can be declared to be a maximum
+of 21,844 characters. See
+http://dev.mysql.com/doc/refman/5.7/en/column-count-limit.html.
+
+MySQL stores VARCHAR values as a 1-byte or 2-byte length prefix plus
+data. The length prefix indicates the number of bytes in the value. A
+VARCHAR column uses one length byte if values require no more than 255
+bytes, two length bytes if values may require more than 255 bytes.
+
+*Note*:
+
+MySQL follows the standard SQL specification, and does not remove
+trailing spaces from VARCHAR values.
+
+VARCHAR is shorthand for CHARACTER VARYING. NATIONAL VARCHAR is the
+standard SQL way to define that a VARCHAR column should use some
+predefined character set. MySQL uses utf8 as this predefined character
+set. http://dev.mysql.com/doc/refman/5.7/en/charset-national.html.
+NVARCHAR is shorthand for NATIONAL VARCHAR.
+
+URL: http://dev.mysql.com/doc/refman/5.7/en/string-type-overview.html
+</code></pre><p>&#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x9009;&#x62E9;&#x4E0A;&#xFF0C;&#x4FDD;&#x5B58;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x901A;&#x5E38;&#x90FD;&#x4F7F;&#x7528; VARCHAR &#x548C; CHAR &#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x524D;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x540E;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x5B9A;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5BF9;&#x4E8E; InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x884C;&#x5B58;&#x50A8;&#x683C;&#x5F0F;&#x6CA1;&#x6709;&#x533A;&#x5206;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x548C;&#x53EF;&#x53D8;&#x957F;&#x5EA6;&#x5217;&#xFF0C;&#x56E0;&#x6B64; VARCHAR &#x7C7B;&#x578B;&#x548C; CHAR &#x7C7B;&#x578B;&#x6CA1;&#x6709;&#x672C;&#x8D28;&#x533A;&#x522B;&#xFF0C;&#x540E;&#x8005;&#x4E0D;&#x4E00;&#x5B9A;&#x6BD4;&#x524D;&#x8005;&#x6027;&#x80FD;&#x66F4;&#x597D;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x5F88;&#x5927;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; TEXT &#x7C7B;&#x578B;&#xFF1B;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x5F88;&#x5927;&#x7684;&#x5B57;&#x8282;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; BLOB&#xFF08;&#x4E8C;&#x8FDB;&#x5236;&#x5927;&#x5BF9;&#x8C61;&#xFF09;&#x7C7B;&#x578B;&#x3002;&#x5728; MySQL &#x4E2D;&#xFF0C;TEXT &#x548C; BLOB&#x53C8;&#x5206;&#x522B;&#x5305;&#x62EC; TEXT&#x3001;MEDIUMTEXT&#x3001;LONGTEXT &#x548C; BLOB&#x3001;MEDIUMBLOB&#x3001;LONGBLOB &#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3B;&#x8981;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x5927;&#x5C0F;&#x4E0D;&#x540C;&#x3002;&#x4FDD;&#x5B58;&#x6D6E;&#x70B9;&#x6570;&#x53EF;&#x4EE5;&#x7528; FLOAT &#x6216; DOUBLE &#x7C7B;&#x578B;&#xFF0C;FLOAT &#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x5728; MySQL &#x540E;&#x7EED;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#x6389;&#x3002;&#x800C;&#x4FDD;&#x5B58;&#x5B9A;&#x70B9;&#x6570;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; DECIMAL &#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5C0F;&#x6570;&#x70B9;&#x524D;&#x540E;&#x6709;&#x6548;&#x6570;&#x5B57;&#x7684;&#x4F4D;&#x6570;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#xFF0C;DATETIME &#x7C7B;&#x578B;&#x4F18;&#x4E8E; TIMESTAMP &#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x524D;&#x8005;&#x80FD;&#x8868;&#x793A;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x8303;&#x56F4;&#x66F4;&#x5927;&#xFF0C;&#x540E;&#x8005;&#x5E95;&#x5C42;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x548C; 1970-01-01 00:00:00 &#x76F8;&#x5DEE;&#x591A;&#x5C11;&#x4E2A;&#x6BEB;&#x79D2;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x5728; 2038-01-19 03:14:07 &#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x6EA2;&#x51FA;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x81EA;&#x589E;&#x5B57;&#x6BB5; AUTO_INCREMENT&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528; MySQL 5.x &#x7248;&#x672C;&#x8981;&#x6CE8;&#x610F;&#x81EA;&#x589E;&#x5B57;&#x6BB5;&#x7684;&#x56DE;&#x6EAF;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5728; MySQL 8.x &#x4E2D;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;MySQL 8.x &#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x597D;&#x5904;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x529F;&#x80FD;&#x8FD8;&#x662F;&#x6027;&#x80FD;&#x4E0A;&#x90FD;&#x6709;&#x5F88;&#x591A;&#x7684;&#x4F18;&#x5316;&#x548C;&#x8C03;&#x6574;&#xFF0C;&#x56E0;&#x6B64;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528; MySQL 8.x &#x7248;&#x672C;&#x3002;&#x5BF9;&#x4E8E;&#x9AD8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x573A;&#x666F;&#xFF0C;AUTO_INCREMENT &#x4E0D;&#x4EC5;&#x5B58;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x5728;&#x591A;&#x673A;&#x7ED3;&#x6784;&#x4E0A;&#x4EA7;&#x751F;&#x91CD;&#x590D;&#x7684; ID &#x503C;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#x5F0F; ID &#x751F;&#x6210;&#x7B97;&#x6CD5;&#xFF08;SnowFlake&#x3001;TinyID&#x7B49;&#xFF09;&#x624D;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x7814;&#x7A76;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;">&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;</h3>
+<p>&#x4E0B;&#x9762;&#x4EE5;&#x5B66;&#x751F;&#x8868;&#x4E3A;&#x4F8B;&#xFF0C;&#x4E3A;&#x5927;&#x5BB6;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;&#x3002;&#x5220;&#x9664;&#x8868;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>drop table</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span>;
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">exists</span> <span class="hljs-string">`tb_student`</span>;
+</code></pre>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5B66;&#x751F;&#x8868;&#x5DF2;&#x7ECF;&#x5F55;&#x5165;&#x4E86;&#x6570;&#x636E;&#x800C;&#x4E14;&#x8BE5;&#x6570;&#x636E;&#x88AB;&#x5176;&#x4ED6;&#x8868;&#x5F15;&#x7528;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x80FD;&#x5220;&#x9664;&#x5B66;&#x751F;&#x8868;&#xFF0C;&#x5426;&#x5219;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x8BFE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5411;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x5230;&#x65F6;&#x5019;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x8BD5;&#x4E00;&#x8BD5;&#xFF0C;&#x80FD;&#x5426;&#x987A;&#x5229;&#x5220;&#x9664;&#x5B66;&#x751F;&#x8868;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x5B66;&#x751F;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>alter table</code>&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x5217;&#xFF0C;&#x4F8B;&#x5982;&#x7ED9;&#x5B66;&#x751F;&#x8868;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8054;&#x7CFB;&#x7535;&#x8BDD;&#x7684;&#x5217;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">add</span> <span class="hljs-keyword">column</span> <span class="hljs-string">`stu_tel`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8054;&#x7CFB;&#x7535;&#x8BDD;&apos;</span>;
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5982;&#x679C;&#x65B0;&#x589E;&#x5217;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x4E86;&#x975E;&#x7A7A;&#x7EA6;&#x675F;&#xFF08;<code>not null</code>&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x5B66;&#x751F;&#x8868;&#x4E0D;&#x80FD;&#x591F;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x5426;&#x5219;&#x539F;&#x6765;&#x7684;&#x6570;&#x636E;&#x589E;&#x52A0;&#x4E86; stu_tel &#x5217;&#x4E4B;&#x540E;&#x662F;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x7684;&#xFF0C;&#x8FD9;&#x5C31;&#x8FDD;&#x53CD;&#x4E86;&#x975E;&#x7A7A;&#x7EA6;&#x675F;&#x7684;&#x8981;&#x6C42;&#xFF1B;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x6DFB;&#x52A0;&#x5217;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#x7EA6;&#x675F;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x5217;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x4E0A;&#x9762;&#x6DFB;&#x52A0;&#x7684;&#x8054;&#x7CFB;&#x7535;&#x8BDD;&#x5217;&#x5220;&#x9664;&#x6389;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">drop</span> <span class="hljs-keyword">column</span> <span class="hljs-string">`stu_tel`</span>;
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x4FEE;&#x6539;&#x5217;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x5B66;&#x751F;&#x8868;&#x7684; stu_sex &#x4FEE;&#x6539;&#x4E3A;&#x5B57;&#x7B26;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">modify</span> <span class="hljs-keyword">column</span> <span class="hljs-string">`stu_sex`</span> <span class="hljs-built_in">char</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;M&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6027;&#x522B;&apos;</span>;
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x4FEE;&#x6539;&#x5217;&#x7684;&#x547D;&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x5B66;&#x751F;&#x8868;&#x7684; stu_sex &#x4FEE;&#x6539;&#x4E3A; stu_gender&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">change</span> <span class="hljs-keyword">column</span> <span class="hljs-string">`stu_sex`</span> <span class="hljs-string">`stu_gender`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">default</span> <span class="hljs-number">1</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6027;&#x522B;&apos;</span>;
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x5220;&#x9664;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x5220;&#x9664;&#x5B66;&#x751F;&#x8868;&#x7684; col_id &#x5217;&#x7684;&#x5916;&#x952E;&#x7EA6;&#x675F;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> <span class="hljs-string">`fk_student_col_id`</span>;
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x8868;&#xFF0C;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x7ED9;&#x5B66;&#x751F;&#x8868;&#x7684; col_id &#x5217;&#x52A0;&#x4E0A;&#x5916;&#x952E;&#x7EA6;&#x675F;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">add</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`col_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_college`</span> (<span class="hljs-string">`col_id`</span>);
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> <span class="hljs-string">`fk_student_col_id`</span> foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`col_id`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_college`</span> (<span class="hljs-string">`col_id`</span>);
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5728;&#x6DFB;&#x52A0;&#x5916;&#x952E;&#x7EA6;&#x675F;&#x65F6;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>on update</code>&#x548C;<code>on delete</code>&#x6765;&#x6307;&#x5B9A;&#x5728;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x8868;&#x53D1;&#x751F;&#x5220;&#x9664;&#x548C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x8FDB;&#x884C;&#x4F55;&#x79CD;&#x5904;&#x7406;&#xFF0C;&#x4E8C;&#x8005;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x662F;<code>restrict</code>&#xFF0C;&#x8868;&#x793A;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5916;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x5219;&#x4E0D;&#x5141;&#x8BB8;&#x66F4;&#x65B0;&#x548C;&#x5220;&#x9664;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x6570;&#x636E;&#x3002;&#x9664;&#x4E86;<code>restrict</code>&#x4E4B;&#x5916;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x80FD;&#x7684;&#x53D6;&#x503C;&#x8FD8;&#x6709;<code>cascade</code>&#xFF08;&#x7EA7;&#x8054;&#x64CD;&#x4F5C;&#xFF09;&#x548C;<code>set null</code>&#xFF08;&#x8BBE;&#x7F6E;&#x4E3A;&#x7A7A;&#xFF09;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x7814;&#x7A76;&#x3002;</p>
+</blockquote>
+<p>&#x4FEE;&#x6539;&#x8868;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x5B66;&#x751F;&#x8868;&#x7684;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x4E3A; tb_stu_info&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span> <span class="hljs-keyword">rename</span> <span class="hljs-keyword">to</span> <span class="hljs-string">`tb_stu_info`</span>;
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x8F7B;&#x6613;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x6216;&#x8868;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="36.关系型数据库和MySQL概述.html" class="navigation navigation-prev " aria-label="Previous page: 36.关系型数据库和MySQL概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="38.SQL详解之DML.html" class="navigation navigation-next " aria-label="Next page: 38.SQL详解之DML">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"37.SQL详解之DDL","level":"1.6.2","depth":2,"next":{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},"previous":{"title":"36.关系型数据库和MySQL概述","level":"1.6.1","depth":2,"path":"Day36-45/36.关系型数据库和MySQL概述.md","ref":"Day36-45/36.关系型数据库和MySQL概述.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day36-45/37.SQL详解之DDL.md","mtime":"2024-07-05T03:42:45.006Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,2370 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>91.团队项目开发的问题和解决方案 · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="92.Docker容器技术详解.html" />
+    
+    
+    <link rel="prev" href="100.Python面试题实录.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
+            
+                <a href="../Day36-45/37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
+            
+                <a href="../Day36-45/38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
+            
+                <a href="../Day36-45/39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
+            
+                <a href="../Day36-45/40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
+            
+                <a href="../Day36-45/41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
+            
+                <a href="../Day36-45/42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
+            
+                <a href="../Day36-45/43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                <a href="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
+            
+                <a href="../Day46-60/46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
+            
+                <a href="../Day46-60/47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                <a href="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
+            
+                <a href="../Day46-60/49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
+            
+                <a href="../Day46-60/50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
+            
+                <a href="../Day46-60/51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
+            
+                <a href="../Day46-60/52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
+            
+                <a href="../Day46-60/53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
+            
+                <a href="../Day46-60/56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
+            
+                <a href="../Day46-60/57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
+            
+                <a href="../Day46-60/58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
+            
+                <a href="../Day46-60/59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
+            
+                <a href="../Day46-60/60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="100.Python面试题实录.html">
+            
+                <a href="100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="91.团队项目开发的问题和解决方案.html">
+            
+                <a href="91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="92.Docker容器技术详解.html">
+            
+                <a href="92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="93.MySQL性能优化.html">
+            
+                <a href="93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="94.网络API接口设计.html">
+            
+                <a href="94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="95.使用Django开发商业项目.html">
+            
+                <a href="95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="96.软件测试和自动化测试.html">
+            
+                <a href="96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="97.电商网站技术要点剖析.html">
+            
+                <a href="97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="98.项目部署上线和性能调优.html">
+            
+                <a href="98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="99.面试中的公共问题.html">
+            
+                <a href="99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >91.团队项目开发的问题和解决方案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x56E2;&#x961F;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x7684;&#x95EE;&#x9898;&#x548C;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x56E2;&#x961F;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x7684;&#x95EE;&#x9898;&#x548C;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<p>&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#x548C;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x8FD9;&#x4E24;&#x4E2A;&#x8BCD;&#x76F8;&#x4FE1;&#x5BF9;&#x5927;&#x5BB6;&#x6765;&#x8BF4;&#x5E76;&#x4E0D;&#x964C;&#x751F;&#x3002;&#x6240;&#x8C13;&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x628A;&#x63A7;&#x4EA7;&#x54C1;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF1B;&#x800C;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x5219;&#x662F;&#x7531;&#x591A;&#x4E2A;&#x4EBA;&#x7EC4;&#x56E2;&#x5E76;&#x5B8C;&#x6210;&#x4EA7;&#x54C1;&#x7684;&#x5F00;&#x53D1;&#x3002;&#x8981;&#x5B9E;&#x65BD;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#x662F;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#xFF1A;</p>
+<ol>
+<li>&#x5BF9;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5404;&#x79CD;&#x4E8B;&#x4EF6;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;&#x8C01;&#x5230;&#x4EC0;&#x4E48;&#x65F6;&#x95F4;&#x5B8C;&#x6210;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#xFF09;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x548C;&#x5171;&#x4EAB;&#x3002;</li>
+<li>&#x5728;&#x56E2;&#x961F;&#x5185;&#x90E8;&#x5171;&#x4EAB;&#x5404;&#x7C7B;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x4EE5;&#x53CA;&#x65B0;&#x7684;&#x77E5;&#x8BC6;&#x6280;&#x5DE7;&#x7B49;&#x3002;</li>
+<li>&#x7BA1;&#x7406;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x7684;&#x53D8;&#x66F4;&#xFF0C;&#x65E2;&#x8981;&#x9632;&#x6B62;&#x6210;&#x679C;&#x88AB;&#x7834;&#x574F;&#xFF0C;&#x53C8;&#x8981;&#x4FDD;&#x8BC1;&#x5404;&#x4E2A;&#x6210;&#x5458;&#x5229;&#x7528;&#x73B0;&#x6709;&#x6210;&#x679C;&#x5E76;&#x884C;&#x4F5C;&#x4E1A;&#x3002;</li>
+<li>&#x8BC1;&#x660E;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x51FA;&#x7684;&#x8F6F;&#x4EF6;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x7684;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x8BA9;&#x56E2;&#x961F;&#x6210;&#x5458;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x7684;&#x5B9E;&#x65BD;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x548C;&#x90E8;&#x7F72;&#x3002;</li>
+</ol>
+<h3 id="&#x56E2;&#x961F;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x56E2;&#x961F;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5E38;&#x89C1;&#x95EE;&#x9898;</h3>
+<p>&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x76F8;&#x8F83;&#x4E8E;&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#xFF0C;&#x5BB9;&#x6613;&#x9047;&#x5230;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;1&#xFF1A;&#x4F20;&#x7EDF;&#x7684;&#x6C9F;&#x901A;&#x65B9;&#x5F0F;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x5904;&#x7406;&#x7684;&#x4F18;&#x5148;&#x7EA7;">&#x95EE;&#x9898;1&#xFF1A;&#x4F20;&#x7EDF;&#x7684;&#x6C9F;&#x901A;&#x65B9;&#x5F0F;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x5904;&#x7406;&#x7684;&#x4F18;&#x5148;&#x7EA7;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x4F7F;&#x7528;&#x90AE;&#x4EF6;&#x8FDB;&#x884C;&#x6C9F;&#x901A;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x90AE;&#x4EF6;&#x6570;&#x91CF;&#x592A;&#x591A;&#x5BFC;&#x81F4;&#x91CD;&#x8981;&#x7684;&#x90AE;&#x4EF6;&#x88AB;&#x57CB;&#x6CA1;&#xFF0C;&#x65E0;&#x6CD5;&#x7BA1;&#x7406;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#xFF0C;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x5C1A;&#x672A;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x5168;&#x6587;&#x68C0;&#x7D22;&#x90AE;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x67E5;&#x8BE2;&#x76F8;&#x5173;&#x95EE;&#x9898;&#x6548;&#x7387;&#x8FC7;&#x4E8E;&#x4F4E;&#x4E0B;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x4F7F;&#x7528;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;2&#xFF1A;&#x6CA1;&#x6709;&#x80FD;&#x591F;&#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x7684;&#x73AF;&#x5883;">&#x95EE;&#x9898;2&#xFF1A;&#x6CA1;&#x6709;&#x80FD;&#x591F;&#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x7684;&#x73AF;&#x5883;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x6536;&#x5230;&#x9879;&#x76EE;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x6545;&#x969C;&#x62A5;&#x544A;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x8FD8;&#x539F;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x5F88;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;3&#xFF1A;&#x7528;&#x522B;&#x540D;&#x76EE;&#x5F55;&#x7BA1;&#x7406;&#x9879;&#x76EE;&#x5206;&#x652F;">&#x95EE;&#x9898;3&#xFF1A;&#x7528;&#x522B;&#x540D;&#x76EE;&#x5F55;&#x7BA1;&#x7406;&#x9879;&#x76EE;&#x5206;&#x652F;</h4>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;4&#xFF1A;&#x91CD;&#x65B0;&#x5236;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x975E;&#x5E38;&#x56F0;&#x96BE;">&#x95EE;&#x9898;4&#xFF1A;&#x91CD;&#x65B0;&#x5236;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x975E;&#x5E38;&#x56F0;&#x96BE;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x548C;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;&#x6570;&#x636E;&#x5E93;&#x8868;&#x7ED3;&#x6784;&#x4E0D;&#x4E00;&#x81F4;&#x6216;&#x8005;&#x67D0;&#x4E2A;&#x8868;&#x5217;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;5&#xFF1A;&#x4E0D;&#x8FD0;&#x884C;&#x7CFB;&#x7EDF;&#x5C31;&#x65E0;&#x6CD5;&#x5BDF;&#x89C9;&#x95EE;&#x9898;">&#x95EE;&#x9898;5&#xFF1A;&#x4E0D;&#x8FD0;&#x884C;&#x7CFB;&#x7EDF;&#x5C31;&#x65E0;&#x6CD5;&#x5BDF;&#x89C9;&#x95EE;&#x9898;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x89E3;&#x51B3;&#x4E00;&#x4E2A;bug&#x53EF;&#x80FD;&#x5F15;&#x5165;&#x5176;&#x4ED6;&#x7684;bug&#x6216;&#x8005;&#x9020;&#x6210;&#x7CFB;&#x7EDF;&#x9000;&#x5316;&#xFF0C;&#x4E0D;&#x6B63;&#x786E;&#x7684;&#x4F7F;&#x7528;&#x7248;&#x672C;&#x7CFB;&#x7EDF;&#x8986;&#x76D6;&#x4E86;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4FEE;&#x6539;&#x7684;&#x5185;&#x5BB9;&#x76F8;&#x4E92;&#x53D1;&#x751F;&#x4E86;&#x5E72;&#x6270;&#xFF0C;&#x5982;&#x679C;&#x95EE;&#x9898;&#x4E0D;&#x80FD;&#x5C3D;&#x65E9;&#x53D1;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x7B49;&#x8FC7;&#x53BB;&#x51E0;&#x4E2A;&#x6708;&#x540E;&#x518D;&#x60F3;&#x8FFD;&#x6EAF;&#x95EE;&#x9898;&#x5C31;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x4E86;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x6301;&#x7EED;&#x96C6;&#x6210;&#xFF0C;&#x5C06;&#x56E2;&#x961F;&#x6210;&#x5458;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x7ECF;&#x5E38;&#x3001;&#x6301;&#x7EED;&#x7684;&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#x548C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;6&#xFF1A;&#x8986;&#x76D6;&#x4E86;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x4FEE;&#x6B63;&#x7684;&#x4EE3;&#x7801;">&#x95EE;&#x9898;6&#xFF1A;&#x8986;&#x76D6;&#x4E86;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x4FEE;&#x6B63;&#x7684;&#x4EE3;&#x7801;</h4>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;7&#xFF1A;&#x65E0;&#x6CD5;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;&#x91CD;&#x6784;">&#x95EE;&#x9898;7&#xFF1A;&#x65E0;&#x6CD5;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;&#x91CD;&#x6784;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x5728;&#x5B9E;&#x65BD;&#x4EE3;&#x7801;&#x91CD;&#x6784;&#xFF08;&#x5728;&#x4E0D;&#x5F71;&#x54CD;&#x4EE3;&#x7801;&#x4EA7;&#x751F;&#x7684;&#x7ED3;&#x679C;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x5BF9;&#x4EE3;&#x7801;&#x5185;&#x90E8;&#x7684;&#x6784;&#x9020;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF09;&#x65F6;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x9000;&#x5316;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5927;&#x91CF;&#x7684;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x6D4B;&#x8BD5;&#x5E76;&#x5B9E;&#x65BD;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;8&#xFF1A;&#x4E0D;&#x77E5;&#x9053;bug&#x7684;&#x4FEE;&#x6B63;&#x65E5;&#x671F;&#x65E0;&#x6CD5;&#x8FFD;&#x8E2A;&#x9000;&#x5316;">&#x95EE;&#x9898;8&#xFF1A;&#x4E0D;&#x77E5;&#x9053;bug&#x7684;&#x4FEE;&#x6B63;&#x65E5;&#x671F;&#x65E0;&#x6CD5;&#x8FFD;&#x8E2A;&#x9000;&#x5316;</h4>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x3001;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x548C;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x4E4B;&#x95F4;&#x9700;&#x8981;&#x4EA4;&#x4E92;&#xFF0C;&#x6700;&#x597D;&#x80FD;&#x591F;&#x548C;&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;&#x5DE5;&#x5177;&#x96C6;&#x6210;&#x5230;&#x4E00;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="&#x95EE;&#x9898;9&#xFF1A;&#x53D1;&#x5E03;&#x8FC7;&#x7A0B;&#x592A;&#x590D;&#x6742;">&#x95EE;&#x9898;9&#xFF1A;&#x53D1;&#x5E03;&#x8FC7;&#x7A0B;&#x592A;&#x590D;&#x6742;</h4>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x65BD;&#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;&#x5BF9;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;&#x7684;&#x9610;&#x8FF0;&#x548C;&#x5206;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x57FA;&#x672C;&#x4E0A;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4EE5;&#x4E0B;&#x7684;&#x7ED3;&#x8BBA;&#xFF0C;&#x5728;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x4E2D;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3001;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x548C;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x4E14;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x3002;</p>
+<h3 id="&#x7248;&#x672C;&#x63A7;&#x5236;">&#x7248;&#x672C;&#x63A7;&#x5236;</h3>
+<p>&#x9488;&#x5BF9;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7ED3;&#x8BBA;&#xFF0C;&#x7248;&#x672C;&#x63A7;&#x5236;&#x662F;&#x5B9E;&#x65BD;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;&#x9996;&#x8981;&#x524D;&#x63D0;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5BF9;&#x4EA7;&#x54C1;&#x7814;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4EA7;&#x751F;&#x7684;&#x5404;&#x79CD;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#xFF0C;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#xFF1A;</p>
+<ol>
+<li>&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x9700;&#x6C42;&#x548C;&#x8BBE;&#x8BA1;&#x7684;&#x76F8;&#x5173;&#x6587;&#x6863;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x6A21;&#x5F0F;&#x548C;&#x521D;&#x59CB;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x5E93;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x5B9A;&#x4E49;&#x3002;</li>
+</ol>
+<h4 id="git&#x7B80;&#x4ECB;">Git&#x7B80;&#x4ECB;</h4>
+<p><img src="res/git-logo.png" alt=""></p>
+<p>Git&#x662F;&#x8BDE;&#x751F;&#x4E8E;2005&#x5E74;&#x7684;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x5206;&#x5E03;&#x5F0F;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#xFF0C;&#x6700;&#x521D;&#x662F;Linus Torvalds&#xFF08;Linux&#x4E4B;&#x7236;&#xFF09; &#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x7BA1;&#x7406;Linux&#x5185;&#x6838;&#x5F00;&#x53D1;&#x800C;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x63A7;&#x5236;&#x8F6F;&#x4EF6;&#x3002;Git&#x4E0E;&#x5E38;&#x7528;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5DE5;&#x5177;Subversion&#x7B49;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x91C7;&#x7528;&#x4E86;&#x5206;&#x5E03;&#x5F0F;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x4E2D;&#x592E;&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#x4E5F;&#x80FD;&#x591F;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6709;&#x4F7F;&#x7528;Subversion&#xFF08;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0;&#x4E3A;SVN&#xFF09;&#x7ECF;&#x9A8C;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;Git&#x548C;SVN&#x7684;&#x5171;&#x540C;&#x70B9;&#x662F;&#x6452;&#x5F03;&#x4E86;&#x4F20;&#x7EDF;&#x7684;&#x57FA;&#x4E8E;&#x9501;&#x5B9A;&#x6A21;&#x5F0F;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF08;&#x65E9;&#x671F;&#x7684;CVS&#x548C;VSS&#x4F7F;&#x7528;&#x4E86;&#x9501;&#x5B9A;&#x6A21;&#x5F0F;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x7F16;&#x8F91;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#x4F1A;&#x9501;&#x5B9A;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x6B64;&#x671F;&#x95F4;&#x65E0;&#x6CD5;&#x7F16;&#x8F91;&#x8BE5;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x91C7;&#x7528;&#x4E86;&#x66F4;&#x6709;&#x6548;&#x7387;&#x7684;&#x57FA;&#x4E8E;&#x5408;&#x5E76;&#x6A21;&#x5F0F;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF0C;&#x800C;&#x4E8C;&#x8005;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF1A;</p>
+<ol>
+<li>Git&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#xFF0C;SVN&#x662F;&#x96C6;&#x4E2D;&#x5F0F;&#x7684;&#xFF0C;SVN&#x9700;&#x8981;&#x4E2D;&#x592E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x652F;&#x6301;&#x624D;&#x80FD;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>Git&#x628A;&#x5185;&#x5BB9;&#x6309;&#x5143;&#x6570;&#x636E;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x800C;SVN&#x662F;&#x6309;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x628A;&#x6587;&#x4EF6;&#x7684;&#x5143;&#x4FE1;&#x606F;&#x9690;&#x85CF;&#x5728;&#x4E00;&#x4E2A;.svn&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x3002;</li>
+<li>Git&#x5206;&#x652F;&#x548C;SVN&#x7684;&#x5206;&#x652F;&#x4E0D;&#x540C;&#xFF0C;SVN&#x5BF9;&#x5206;&#x652F;&#x7684;&#x5904;&#x7406;&#x662F;&#x76F8;&#x5F53;&#x201C;&#x72D7;&#x8840;&#x201D;&#x7684;&#x3002;</li>
+<li>Git&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x6807;&#x7B7E;&#x3002;</li>
+<li>Git&#x7684;&#x5185;&#x5BB9;&#x5B8C;&#x6574;&#x6027;&#x8981;&#x4F18;&#x4E8E;SVN&#xFF0C;Git&#x7684;&#x5185;&#x5BB9;&#x5B58;&#x50A8;&#x4F7F;&#x7528;&#x7684;&#x662F;SHA-1&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x3002;&#x8FD9;&#x80FD;&#x786E;&#x4FDD;&#x4EE3;&#x7801;&#x5185;&#x5BB9;&#x7684;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x9047;&#x5230;&#x78C1;&#x76D8;&#x6545;&#x969C;&#x548C;&#x7F51;&#x7EDC;&#x95EE;&#x9898;&#x65F6;&#x964D;&#x4F4E;&#x5BF9;&#x7248;&#x672C;&#x5E93;&#x7684;&#x7834;&#x574F;&#x3002;  </li>
+</ol>
+<p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;<strong>Git&#x771F;&#x7684;&#x975E;&#x5E38;&#x68D2;&#xFF01;&#xFF01;&#xFF01;</strong></p>
+<h4 id="&#x5B89;&#x88C5;git">&#x5B89;&#x88C5;Git</h4>
+<p>&#x53EF;&#x4EE5;&#x5728;<a href="http://git-scm.com/" target="_blank">Git&#x5B98;&#x65B9;&#x7F51;&#x7AD9;</a>&#x627E;&#x5230;&#x9002;&#x5408;&#x81EA;&#x5DF1;&#x7CFB;&#x7EDF;&#x7684;Git&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;&#x5E76;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;macOS&#x548C;Windows&#x5E73;&#x53F0;&#x4E0B;&#x5B89;&#x88C5;Git&#x90FD;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;Linux&#x4E0B;&#x5982;&#x679C;&#x8981;&#x5B89;&#x88C5;&#x5B98;&#x65B9;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5EFA;&#x8BAE;&#x901A;&#x8FC7;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;Git&#x6E90;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#x5B89;&#x88C5;&#xFF0C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF08;&#x4EE5;CentOS&#x4E3A;&#x4F8B;&#xFF09;&#x3002;</p>
+<p>&#x4E0B;&#x8F7D;Git&#x6E90;&#x4EE3;&#x7801;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.23.0.tar.xz
+</code></pre>
+<p>&#x89E3;&#x538B;&#x7F29;&#x548C;&#x89E3;&#x5F52;&#x6863;&#x3002;</p>
+<pre><code class="lang-Shell">xz -d git-2.23.0.tar.xz
+tar -xvf git-2.23.0.tar
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5E95;&#x5C42;&#x4F9D;&#x8D56;&#x5E93;&#x3002;</p>
+<pre><code class="lang-Shell">yum -y install libcurl-devel
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x4F9D;&#x8D56;&#x5E93;&#xFF0C;git&#x7684;&#x7F51;&#x7EDC;&#x529F;&#x80FD;&#x5C06;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x3002;</p>
+</blockquote>
+<p>&#x5B89;&#x88C5;&#x524D;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-Shell">cd git-2.23.0
+./configure --prefix=/usr/local
+</code></pre>
+<p>&#x6784;&#x5EFA;&#x548C;&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-Shell">make &amp;&amp; make install
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x6210;&#x529F;&#x540E;&#x53EF;&#x4EE5;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x952E;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x68C0;&#x67E5;&#x81EA;&#x5DF1;&#x7684;Git&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-Shell">git --version
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E4B;&#x524D;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x63A5;&#x89E6;&#x8FC7;Git&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x9605;&#x8BFB;<a href="http://www.bootcss.com/p/git-guide/" target="_blank">&#x300A;git - &#x7B80;&#x6613;&#x6307;&#x5357;&#x300B;</a>&#x6765;&#x5BF9;Git&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x81F4;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+<h4 id="git&#x672C;&#x5730;&#x64CD;&#x4F5C;">Git&#x672C;&#x5730;&#x64CD;&#x4F5C;</h4>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x53D8;&#x6210;Git&#x4ED3;&#x5E93;&#x3002;</p>
+<pre><code class="lang-Shell">git init
+</code></pre>
+<p>&#x5F53;&#x4F60;&#x5B8C;&#x6210;&#x4E86;&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x76EE;&#x5F55;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x6837;&#x5B50;&#xFF0C;&#x4E0B;&#x56FE;&#x5DE6;&#x8FB9;&#x662F;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x533A;&#xFF08;&#x6B63;&#x5728;&#x64CD;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF09;&#xFF0C;&#x800C;&#x53F3;&#x8FB9;&#x662F;&#x4F60;&#x7684;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF0C;&#x4E2D;&#x95F4;&#x662F;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E4B;&#x95F4;&#x7684;&#x6682;&#x5B58;&#x533A;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x7F13;&#x5B58;&#x533A;&#xFF09;&#x3002;</p>
+<p><img src="res/git_repository.png" alt=""></p>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x7528;<code>ls -la</code>&#x67E5;&#x770B;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4F1A;&#x53D1;&#x73B0;&#x5728;&#x6267;&#x884C;&#x5B8C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>.git</code>&#x7684;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x672C;&#x5730;&#x7684;Git&#x7248;&#x672C;&#x4ED3;&#x5E93;&#x3002;</p>
+</blockquote>
+<p>&#x901A;&#x8FC7;<code>git add</code>&#x53EF;&#x4EE5;&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#x3002;</p>
+<pre><code class="lang-Shell">git add &lt;file&gt;
+git add .
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x3001;&#x6682;&#x5B58;&#x533A;&#x548C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<pre><code class="lang-Shell">git status
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x5C06;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x63D0;&#x793A;&#xFF0C;&#x4F7F;&#x7528;<code>git rm --cached &lt;file&gt;</code>&#x547D;&#x4EE4;&#x5C06;&#x6587;&#x4EF6;&#x4ECE;&#x6682;&#x5B58;&#x533A;&#x653E;&#x56DE;&#x5230;&#x5DE5;&#x4F5C;&#x533A;&#x3002;</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5BF9;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x53C8;&#x8FDB;&#x884C;&#x4E86;&#x4FEE;&#x6539;&#x4F7F;&#x5F97;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x76F8;&#x540C;&#x4E86;&#xFF0C;&#x518D;&#x6B21;&#x6267;&#x884C;<code>git status</code>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x54EA;&#x4E2A;&#x6216;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x88AB;&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7528;&#x6682;&#x5B58;&#x533A;&#x7684;&#x5185;&#x5BB9;&#x6062;&#x590D;&#x5DE5;&#x4F5C;&#x533A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">git restore &lt;file&gt;
+git restore .
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x76EE;&#x524D;&#x4ECD;&#x7136;&#x5904;&#x4E8E;&#x8BD5;&#x9A8C;&#x6027;&#x9636;&#x6BB5;&#xFF0C;&#x5728;Git&#x8F83;&#x65E9;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4;&#x662F;<code>git checkout -- &lt;file&gt;</code>&#x3002;&#x7531;&#x4E8E;<code>git checkout</code>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5207;&#x6362;&#x5206;&#x652F;&#xFF0C;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x6DF7;&#x6DC6;&#xFF0C;&#x6240;&#x4EE5;Git&#x6700;&#x65B0;&#x7248;&#x672C;&#x4E2D;&#x5C06;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x4E24;&#x9879;&#x529F;&#x80FD;&#x5206;&#x522B;&#x8D4B;&#x4E88;&#x4E24;&#x4E2A;&#x65B0;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4E00;&#x4E2A;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7684;<code>git restore</code>&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;<code>git switch</code>&#x3002;</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;Git&#xFF0C;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x7528;&#x6237;&#x540D;&#x548C;&#x90AE;&#x7BB1;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x80FD;&#x5C06;&#x4EE3;&#x7801;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;&#x3002;</p>
+<pre><code class="lang-Shell">git config --global user.name &quot;jackfrued&quot;
+git config --global user.email &quot;jackfrued@126.com&quot;
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x7528;<code>git config --list</code>&#x6765;&#x67E5;&#x770B;Git&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;</p>
+</blockquote>
+<p>&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x6682;&#x5B58;&#x533A;&#x7684;&#x5185;&#x5BB9;&#x7EB3;&#x5165;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF0C;</p>
+<pre><code class="lang-Shell">git commit -m &apos;&#x672C;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x8BF4;&#x660E;&apos;
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>git log</code>&#x67E5;&#x770B;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x5BF9;&#x5E94;&#x7684;&#x65E5;&#x5FD7;&#x3002;</p>
+<pre><code class="lang-Shell">git log
+git log --graph --oneline --abbrev-commit
+</code></pre>
+<h4 id="git&#x670D;&#x52A1;&#x5668;&#x6982;&#x8FF0;">Git&#x670D;&#x52A1;&#x5668;&#x6982;&#x8FF0;</h4>
+<p>Git&#x4E0D;&#x50CF;SVN&#x90A3;&#x6837;&#x4E00;&#x5B9A;&#x9700;&#x8981;&#x4E2D;&#x592E;&#x670D;&#x52A1;&#x5668;&#x624D;&#x80FD;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x6F14;&#x793A;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x5728;&#x672C;&#x5730;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x8FD9;&#x6837;&#x7684;&#x573A;&#x666F;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x4E2D;&#x592E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x652F;&#x6301;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x4F01;&#x4E1A;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#xFF08;&#x5982;<a href="https://github.com" target="_blank">GitHub</a>&#xFF09;&#x6216;&#x81EA;&#x5DF1;&#x642D;&#x5EFA;Git&#x79C1;&#x670D;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5EFA;&#x7ACB;&#x4E2D;&#x592E;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x7248;&#x672C;&#x4ED3;&#x5E93;&#xFF09;&#xFF0C;&#x5F53;&#x7136;&#x5927;&#x591A;&#x6570;&#x7684;&#x4F01;&#x4E1A;&#x66F4;&#x503E;&#x5411;&#x4E8E;&#x540E;&#x8005;&#x3002;Github&#x521B;&#x529E;&#x4E8E;2008&#x5E74;4&#x6708;&#xFF0C;&#x76EE;&#x524D;&#x662F;&#x5168;&#x4E16;&#x754C;&#x6700;&#x5927;&#x7684;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#xFF0C;&#x652F;&#x6301;&#x4F01;&#x4E1A;&#x7528;&#x6237;&#xFF08;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x5185;&#x5BB9;&#x4E0D;&#x5BF9;&#x5916;&#x754C;&#x516C;&#x5F00;&#xFF09;&#x548C;&#x666E;&#x901A;&#x7528;&#x6237;&#xFF08;&#x53D7;&#x9650;&#x7684;&#x4F7F;&#x7528;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x4E0D;&#x53D7;&#x9650;&#x7684;&#x4F7F;&#x7528;&#x516C;&#x5F00;&#x4ED3;&#x5E93;&#xFF0C;&#x516C;&#x5F00;&#x4ED3;&#x5E93;&#x5185;&#x5BB9;&#x5BF9;&#x4ED6;&#x4EBA;&#x53EF;&#x89C1;&#xFF09;&#x3002;Github&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5E93;&#x60CA;&#x4EBA;&#x7684;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x8BC1;&#x660E;&#x4E86;&#x5B83;&#x662F;&#x975E;&#x5E38;&#x6210;&#x529F;&#x7684;&#xFF0C;&#x5728;2018&#x5E74;6&#x6708;&#x88AB;&#x5FAE;&#x8F6F;&#x4EE5;75&#x4EBF;&#x7F8E;&#x5143;&#x7684;&#x5929;&#x4EF7;&#x6536;&#x8D2D;&#x3002;</p>
+<p>&#x56FD;&#x5185;&#x4E5F;&#x6709;&#x4E0D;&#x5C11;&#x7C7B;&#x4F3C;Github&#x7684;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#xFF0C;&#x6700;&#x6709;&#x540D;&#x7684;&#x5F53;&#x5C5E;<a href="https://gitee.com/" target="_blank">&#x7801;&#x4E91;</a>&#x548C;<a href="https://coding.net/" target="_blank">CODING</a>&#xFF0C;&#x76EE;&#x524D;&#x7801;&#x4E91;&#x548C;CODING&#x5BF9;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x53D7;&#x9650;&#x7684;&#x4F7F;&#x7528;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x652F;&#x6301;<strong>Pull Request</strong>&#xFF08;&#x4E00;&#x79CD;&#x5BF9;&#x8BDD;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x63D0;&#x4EA4;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x65F6;&#x8BA9;&#x76F8;&#x5173;&#x4EBA;&#x5458;&#x6216;&#x56E2;&#x961F;&#x6CE8;&#x610F;&#x5230;&#x8FD9;&#x4EF6;&#x4E8B;&#x60C5;&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;<strong>&#x7F3A;&#x9677;&#x7BA1;&#x7406;</strong>&#x3001;<strong>Webhook</strong>&#x7B49;&#x529F;&#x80FD;&#x652F;&#x6301;&#xFF0C;&#x8FD9;&#x4E9B;&#x4F7F;&#x5F97;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x8FD8;&#x5177;&#x5907;&#x4E86;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x548C;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5F88;&#x591A;&#x516C;&#x53F8;&#x90FD;&#x4E0D;&#x613F;&#x610F;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x5546;&#x4E1A;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x4E8E;&#x522B;&#x4EBA;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x516C;&#x53F8;&#x53EF;&#x4EE5;&#x7528;<a href="https://about.gitlab.com/" target="_blank">Gitlab</a>&#x6765;&#x642D;&#x5EFA;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;Git&#x79C1;&#x670D;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x505A;&#x6CD5;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p><img src="res/gitlab-about.png" alt=""></p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4EE5;&#x7801;&#x4E91;&#x4E3A;&#x4F8B;&#x6765;&#x8BF4;&#x660E;&#x4F7F;&#x7528;Git&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E00;&#x4E9B;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3002;&#x9996;&#x5148;&#x9700;&#x8981;&#x5728;&#x7801;&#x4E91;&#x4E0A;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#xFF0C;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#xFF08;github&#x8D26;&#x53F7;&#x3001;&#x5FAE;&#x4FE1;&#x8D26;&#x53F7;&#x3001;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x8D26;&#x53F7;&#x3001;CSDN&#x8D26;&#x53F7;&#x7B49;&#xFF09;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x51E0;&#x4E4E;&#x662F;&#x201C;&#x50BB;&#x74DC;&#x5F0F;&#x201D;&#x7684;&#xFF0C;&#x65E0;&#x9700;&#x8D58;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x5BF9;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x52A0;&#x4EE5;&#x8BF4;&#x660E;&#x3002;</p>
+<ol>
+<li><p>&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x65F6;&#x4E0D;&#x5EFA;&#x8BAE;&#x52FE;&#x9009;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x7684;&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#xFF0C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x53EF;&#x4EE5;&#x6682;&#x65F6;&#x4E0D;&#x505A;&#x9009;&#x62E9;&#xFF0C;&#x800C;<code>.gitignore</code>&#x6A21;&#x677F;&#x4E5F;&#x53EF;&#x4EE5;&#x7A0D;&#x540E;&#x81EA;&#x5DF1;&#x7F16;&#x5199;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x66F4;&#x4E13;&#x4E1A;&#x7684;&#x5DE5;&#x5177;&#xFF08;&#x5982;&#xFF1A;<a href="http://gitignore.io/" target="_blank">http://gitignore.io/</a>&#x7F51;&#x7AD9;&#xFF09;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x3002;</p>
+<p><img src="res/gitee-create-project.png" alt=""></p>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x6210;&#x5458;&#x3002;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x7684;&#x201C;&#x8BBE;&#x7F6E;&#x201D;&#x6216;&#x201C;&#x7BA1;&#x7406;&#x201D;&#x4E2D;&#x627E;&#x5230;&#x201C;&#x6210;&#x5458;&#x7BA1;&#x7406;&#x201D;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x7F6E;&#x4E3A;&#x9879;&#x76EE;&#x56E2;&#x961F;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9879;&#x76EE;&#x6210;&#x5458;&#x901A;&#x5E38;&#x5206;&#x4E3A;&#x201C;&#x6240;&#x6709;&#x8005;&#x201D;&#x3001;&#x201C;&#x7BA1;&#x7406;&#x8005;&#x201D;&#x3001;&#x201C;&#x666E;&#x901A;&#x6210;&#x5458;&#x201D;&#x548C;&#x201C;&#x53D7;&#x9650;&#x6210;&#x5458;&#x201D;&#x51E0;&#x79CD;&#x89D2;&#x8272;&#x3002;</p>
+<p><img src="res/gitee-add-members.png" alt=""></p>
+</li>
+<li><p>&#x9879;&#x76EE;&#x7684;&#x5206;&#x652F;&#x3002;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x9879;&#x76EE;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;<strong>master</strong>&#x5206;&#x652F;&#xFF0C;&#x5E94;&#x8BE5;&#x5C06;&#x8BE5;&#x5206;&#x652F;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;&#x4FDD;&#x62A4;&#x5206;&#x652F;&#x201D;&#x6765;&#x907F;&#x514D;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x8005;&#x4E4B;&#x5916;&#x7684;&#x6210;&#x5458;&#x4FEE;&#x6539;&#x8BE5;&#x5206;&#x652F;&#xFF08;&#x4E0D;&#x53EF;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#xFF09;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x5206;&#x652F;&#x3002;</p>
+</li>
+<li><p>&#x8BBE;&#x7F6E;&#x516C;&#x94A5;&#x5B9E;&#x73B0;&#x514D;&#x5BC6;&#x8BBF;&#x95EE;&#x3002;&#x5728;&#x9879;&#x76EE;&#x7684;&#x201C;&#x8BBE;&#x7F6E;&#x201D;&#x6216;&#x201C;&#x7BA1;&#x7406;&#x201D;&#x4E2D;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x201C;&#x90E8;&#x7F72;&#x516C;&#x94A5;&#x7BA1;&#x7406;&#x201D;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x90E8;&#x7F72;&#x516C;&#x94A5;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;SSH&#xFF08;&#x5B89;&#x5168;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#x800C;&#x4E0D;&#x7528;&#x6BCF;&#x6B21;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x548C;&#x53E3;&#x4EE4;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>ssh-keygen</code>&#x547D;&#x4EE4;&#x6765;&#x521B;&#x5EFA;&#x5BC6;&#x94A5;&#x5BF9;&#x3002;</p>
+<pre><code class="lang-Shell">ssh-keygen -t rsa -b 2048 -C &quot;your_email@example.com&quot;
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&#x5728;<code>~/.ssh</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x7684;&#x540D;&#x5B57;&#x4E3A;<code>id_rsa.pub</code>&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cat id_rsa.pub</code>&#x6765;&#x67E5;&#x770B;&#x81EA;&#x5DF1;&#x7684;&#x516C;&#x94A5;&#x3002;Windows&#x7528;&#x6237;&#x5728;&#x5B89;&#x88C5;Git&#x5DE5;&#x5177;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong>Git Bash</strong>&#x6765;&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="git&#x8FDC;&#x7A0B;&#x64CD;&#x4F5C;">Git&#x8FDC;&#x7A0B;&#x64CD;&#x4F5C;</h4>
+<p>&#x62E5;&#x6709;&#x4E86;Git&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Git&#x7684;&#x8FDC;&#x7A0B;&#x64CD;&#x4F5C;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x63A8;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x4ED6;&#x4EBA;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4ED3;&#x5E93;&#x66F4;&#x65B0;&#x5230;&#x672C;&#x5730;&#x3002;&#x6211;&#x4EEC;&#x4EE5;&#x521A;&#x624D;&#x5728;&#x7801;&#x4E91;&#x4E0A;&#x521B;&#x5EFA;&#x7684;&#x4ED3;&#x5E93;&#xFF08;&#x4ED3;&#x5E93;&#x540D;&#x4E3A;<code>python</code>&#xFF09;&#x4E3A;&#x4F8B;&#x6765;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x64CD;&#x4F5C;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x9875;&#x9762;&#x4E0A;&#x627E;&#x5230;&#x4ED3;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF08;URL&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x4E86;<strong>SSH Key</strong>&#x5C31;&#x4F7F;&#x7528;SSH&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x4ED3;&#x5E93;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x7528;HTTPS&#x65B9;&#x5F0F;&#xFF0C;&#x540E;&#x8005;&#x9700;&#x8981;&#x5728;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x64CD;&#x4F5C;&#x65F6;&#x63D0;&#x4F9B;&#x7528;&#x6237;&#x540D;&#x548C;&#x53E3;&#x4EE4;&#x3002;</p>
+<p><img src="res/gitee-project-index.png" alt=""></p>
+<ol>
+<li><p>&#x6DFB;&#x52A0;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF08;Git&#x670D;&#x52A1;&#x5668;&#xFF09;&#x3002;</p>
+<pre><code class="lang-Shell">git remote add origin git@gitee.com:jackfrued/python.git
+</code></pre>
+<p>&#x5176;&#x4E2D;<code>git@gitee.com:jackfrued/python.git</code>&#x662F;&#x4E0A;&#x56FE;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x4ED3;&#x5E93;&#x7684;URL&#xFF0C;&#x800C;&#x524D;&#x9762;&#x7684;<code>origin</code>&#x662F;&#x66FF;&#x4EE3;&#x8FD9;&#x4E2A;&#x5197;&#x957F;&#x7684;URL&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;<code>origin</code>&#x5C31;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4ED3;&#x5E93;&#x7684;&#x522B;&#x540D;&#xFF08;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;Git&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B80;&#x77ED;&#x7684;&#x540D;&#x5B57;&#x4E5F;&#x4F1A;&#x6709;&#x591A;&#x4E2A;&#xFF09;&#x3002;&#x53EF;&#x4EE5;&#x7528;<code>git remote -v</code>&#x6765;&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6307;&#x5B9A;&#x7684;Git&#x670D;&#x52A1;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>git remote remove</code>&#x6765;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;Git&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</li>
+<li><p>&#x5C06;&#x672C;&#x5730;&#x4EE3;&#x7801;&#xFF08;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#xFF09;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x3002;</p>
+<pre><code class="lang-Shell">git push -u origin master:master
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>-u</code>&#x662F;<code>--set-upstream</code>&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x63A8;&#x9001;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4ED3;&#x5E93;&#xFF0C;&#x540E;&#x9762;&#x7684;<code>origin</code>&#x5C31;&#x662F;&#x521A;&#x624D;&#x7ED9;&#x4ED3;&#x5E93;&#x8D77;&#x7684;&#x7B80;&#x77ED;&#x7684;&#x522B;&#x540D;&#xFF0C;&#x5192;&#x53F7;&#x524D;&#x9762;&#x7684;<code>master</code>&#x662F;&#x672C;&#x5730;&#x5206;&#x652F;&#x540D;&#xFF0C;&#x5192;&#x53F7;&#x540E;&#x9762;&#x7684;<code>master</code>&#x662F;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x540D;&#xFF0C;&#x5982;&#x679C;&#x672C;&#x5730;&#x5206;&#x652F;<code>master</code>&#x5DF2;&#x7ECF;&#x548C;&#x8FDC;&#x7A0B;&#x5206;&#x652F;<code>master</code>&#x5EFA;&#x7ACB;&#x8FC7;&#x5173;&#x8054;&#xFF0C;&#x5219;&#x5192;&#x53F7;&#x4EE5;&#x53CA;&#x540E;&#x9762;&#x7684;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x3002;</p>
+</li>
+<li><p>&#x4ECE;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x53D6;&#x56DE;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-Shell">git pull origin master
+</code></pre>
+</li>
+</ol>
+<h4 id="git&#x5206;&#x652F;&#x64CD;&#x4F5C;">Git&#x5206;&#x652F;&#x64CD;&#x4F5C;</h4>
+<ol>
+<li><p><strong>&#x521B;&#x5EFA;</strong>&#x548C;<strong>&#x5207;&#x6362;</strong>&#x5206;&#x652F;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x4E86;&#x540D;&#x4E3A;<code>dev</code> &#x7684;&#x5206;&#x652F;&#x5E76;&#x5207;&#x6362;&#x5230;&#x8BE5;&#x5206;&#x652F;&#x3002;</p>
+<pre><code class="lang-Shell">git branch &lt;branch-name&gt;
+git switch &lt;branch-name&gt;
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Shell">git switch -c &lt;branch-name&gt;
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5728;&#x4E4B;&#x524D;&#x7684;Git&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5207;&#x6362;&#x5206;&#x652F;&#x4F7F;&#x7528;<code>git checkout &lt;branch-name&gt;</code>&#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>git checkout -b &lt;branch-name&gt;</code>&#x6765;&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5206;&#x652F;&#x3002;<code>git switch</code>&#x547D;&#x4EE4;&#x76EE;&#x524D;&#x4ECD;&#x7136;&#x5904;&#x4E8E;&#x8BD5;&#x9A8C;&#x6027;&#x9636;&#x6BB5;&#xFF0C;&#x4F46;&#x5F88;&#x660E;&#x663E;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#x7684;&#x8868;&#x8FBE;&#x4E86;&#x5B83;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+</blockquote>
+</li>
+<li><p><strong>&#x5173;&#x8054;&#x8FDC;&#x7A0B;</strong>&#x5206;&#x652F;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6240;&#x5728;&#x7684;&#x5206;&#x652F;&#x8FD8;&#x6CA1;&#x6709;&#x5173;&#x8054;&#x5230;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E3A;&#x5B83;&#x4EEC;&#x5EFA;&#x7ACB;&#x5173;&#x8054;&#x3002;</p>
+<pre><code class="lang-Shell">git branch --set-upstream-to origin/develop
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x4E3A;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x652F;&#x5173;&#x8054;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Shell">git branch --set-upstream-to origin/develop &lt;branch-name&gt;
+</code></pre>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x5047;&#x8BBE;Git&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B58;&#x5728;&#x540D;&#x4E3A;<code>develop</code>&#x7684;&#x5206;&#x652F;&#xFF0C;<code>--set-upstream-to</code>&#x53EF;&#x4EE5;&#x7F29;&#x5199;&#x4E3A;<code>-u</code>&#x3002;</p>
+</blockquote>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x5206;&#x652F;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;<code>--track</code>&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x4E0E;&#x672C;&#x5730;&#x5206;&#x652F;&#x5173;&#x8054;&#x7684;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">git branch --track &lt;branch-name&gt; origin/develop
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x89E3;&#x9664;&#x672C;&#x5730;&#x5206;&#x652F;&#x4E0E;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x5173;&#x8054;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">git branch --unset-upstream &lt;branch-name&gt;
+</code></pre>
+</li>
+<li><p>&#x5206;&#x652F;<strong>&#x5408;&#x5E76;</strong>&#x3002;&#x4F8B;&#x5982;&#x5728;<code>dev</code>&#x5206;&#x652F;&#x4E0A;&#x5B8C;&#x6210;&#x5F00;&#x53D1;&#x4EFB;&#x52A1;&#x4E4B;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5C06;<code>dev</code>&#x5206;&#x652F;&#x4E0A;&#x7684;&#x6210;&#x679C;&#x5408;&#x5E76;&#x5230;<code>master</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5207;&#x56DE;&#x5230;<code>master</code>&#x5206;&#x652F;&#x7136;&#x540E;&#x4F7F;&#x7528;<code>git merge</code>&#x6765;&#x505A;&#x5206;&#x652F;&#x5408;&#x5E76;&#xFF0C;&#x5408;&#x5E76;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x53F3;&#x4E0A;&#x65B9;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">git switch master
+git merge --no-ff dev
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>git merge</code>&#x5408;&#x5E76;&#x5206;&#x652F;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;<code>Fast Forward</code>&#x5408;&#x5E76;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x5220;&#x9664;&#x4E86;&#x5206;&#x652F;&#xFF0C;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x5168;&#x90FD;&#x4E22;&#x6389;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5C06;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>--no-ff</code>&#x53C2;&#x6570;&#x6765;&#x7981;&#x7528;<code>Fast Forward</code>&#x3002;</p>
+<p>&#x5728;&#x5408;&#x5E76;&#x5206;&#x652F;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x90E8;&#x5206;Git&#x4F1A;&#x505A;&#x81EA;&#x52A8;&#x5408;&#x5E76;&#x3002;&#x5982;&#x679C;&#x53D1;&#x751F;&#x4E86;&#x51B2;&#x7A81;&#xFF08;&#x5982;<code>dev</code>&#x548C;<code>master</code>&#x5206;&#x652F;&#x4E0A;&#x90FD;&#x4FEE;&#x6539;&#x4E86;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x4F1A;&#x770B;&#x5230;<code>CONFLICT (content): Merge conflict in &lt;filename&gt;. Automatic merge failed; fix conflicts and then commit the result</code>&#xFF08;&#x81EA;&#x52A8;&#x5408;&#x5E76;&#x5931;&#x8D25;&#xFF0C;&#x4FEE;&#x590D;&#x51B2;&#x7A81;&#x4E4B;&#x540E;&#x518D;&#x6B21;&#x63D0;&#x4EA4;&#xFF09;&#x7684;&#x63D0;&#x793A;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;<code>git diff</code>&#x6765;&#x67E5;&#x770B;&#x4EA7;&#x751F;&#x51B2;&#x7A81;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x901A;&#x5E38;&#x9700;&#x8981;&#x5F53;&#x4E8B;&#x4EBA;&#x5F53;&#x9762;&#x6C9F;&#x901A;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x51B3;&#x5B9A;&#x4FDD;&#x7559;&#x8C01;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x51B2;&#x7A81;&#x89E3;&#x51B3;&#x540E;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x3002;</p>
+</li>
+<li><p>&#x5206;&#x652F;<strong>&#x53D8;&#x57FA;</strong>&#x3002;&#x5206;&#x652F;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x6700;&#x7EC8;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#xFF0C;&#x4F46;&#x662F;&#x518D;&#x591A;&#x6B21;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;&#x5206;&#x652F;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7684;&#x6DF7;&#x4E71;&#x548C;&#x590D;&#x6742;&#xFF0C;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git rebase</code>&#x64CD;&#x4F5C;&#x6765;&#x5B9E;&#x73B0;&#x5206;&#x652F;&#x53D8;&#x57FA;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5C06;<code>master</code>&#x548C;<code>dev</code>&#x4E0A;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x7EDF;&#x4E00;&#x5230;&#x4E00;&#x8D77;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53D8;&#x57FA;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><img src="res/git-rebase.png" alt=""></p>
+<pre><code class="lang-Shell">git rebase master
+git switch master
+git merge dev
+</code></pre>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5728;<code>dev</code>&#x5206;&#x652F;&#x6267;&#x884C;<code>git rebase</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x5C06;&#x9996;&#x5148;&#x8BA1;&#x7B97;<code>dev</code>&#x5206;&#x652F;&#x548C;<code>master</code>&#x5206;&#x652F;&#x7684;&#x5DEE;&#x96C6;&#xFF0C;&#x7136;&#x540E;&#x5E94;&#x7528;&#x8BE5;&#x5DEE;&#x96C6;&#x5230;<code>dev</code>&#x5206;&#x652F;&#xFF0C;&#x6700;&#x540E;&#x6211;&#x4EEC;&#x5207;&#x56DE;&#x5230;<code>master</code>&#x5206;&#x652F;&#x5E76;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x5408;&#x5E76;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x770B;&#x5230;&#x4E86;&#x5982;&#x4E0A;&#x56FE;&#x53F3;&#x4E0B;&#x65B9;&#x6240;&#x793A;&#x7684;&#x5E72;&#x51C0;&#x7684;&#x5206;&#x652F;&#x3002;</p>
+</li>
+<li><p><strong>&#x5220;&#x9664;</strong>&#x5206;&#x652F;&#x3002;&#x5220;&#x9664;&#x5206;&#x652F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git branch</code>&#x52A0;&#x4E0A;<code>-d</code>&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x8FD8;&#x6CA1;&#x6709;&#x5408;&#x5E76;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5220;&#x9664;&#x5206;&#x652F;&#x65F6;&#x4F1A;&#x770B;&#x5230;<code>error: The branch &apos;&lt;branch-name&gt;&apos; is not fully merged.</code>&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x3002;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5F3A;&#x884C;&#x5220;&#x9664;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>-D</code>&#x53C2;&#x6570;&#x3002;&#x5220;&#x9664;&#x5206;&#x652F;&#x7684;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">git branch -d &lt;branch-name&gt;
+error: The branch &apos;&lt;branch-name&gt;&apos; is not fully merged.
+If you are sure you want to delete it, run &apos;git branch -D &lt;branch-name&gt;&apos;.
+git branch -D &lt;branch-name&gt;
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;&#x662F;&#x8BF7;&#x614E;&#x91CD;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Shell">git branch -r -d origin/develop
+git push origin :develop
+</code></pre>
+<p>&#x6216;&#x8005;</p>
+<pre><code class="lang-Shell">git push origin --delete develop
+</code></pre>
+</li>
+</ol>
+<h4 id="git&#x5176;&#x4ED6;&#x64CD;&#x4F5C;">Git&#x5176;&#x4ED6;&#x64CD;&#x4F5C;</h4>
+<ol>
+<li><p><code>git fetch</code>&#xFF1A;&#x4E0B;&#x8F7D;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x6240;&#x6709;&#x53D8;&#x52A8;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x4E0B;&#x8F7D;&#x5230;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#xFF0C;<code>git fetch</code>&#x547D;&#x4EE4;&#x548C;<code>git merge</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x4E4B;&#x524D;&#x8BB2;&#x7684;<code>git pull</code>&#x547D;&#x4EE4;&#x7684;&#x5206;&#x89E3;&#x52A8;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Shell">git fetch origin master:temp
+git merge temp
+</code></pre>
+</li>
+<li><p><code>git diff</code>&#xFF1A;&#x5E38;&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x4ED3;&#x5E93;&#x3001;&#x6682;&#x5B58;&#x533A;&#x4E0E;&#x4ED3;&#x5E93;&#x3001;&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x4E4B;&#x95F4;&#x6709;&#x4EC0;&#x4E48;&#x5DEE;&#x522B;&#x3002;</p>
+</li>
+<li><p><code>git stash</code>&#xFF1A;&#x5C06;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x53D1;&#x751F;&#x7684;&#x53D8;&#x52A8;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x8BA9;&#x5DE5;&#x4F5C;&#x533A;&#x53D8;&#x5E72;&#x51C0;&#x3002;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x9002;&#x7528;&#x4E8E;&#x624B;&#x5934;&#x5DE5;&#x4F5C;&#x8FD8;&#x6CA1;&#x6709;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x662F;&#x7A81;&#x7136;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x4E3A;&#x7D27;&#x6025;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x5982;&#x7EBF;&#x4E0A;bug&#x9700;&#x8981;&#x4FEE;&#x6B63;&#xFF09;&#x9700;&#x8981;&#x53BB;&#x5904;&#x7406;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<pre><code class="lang-Shell">git stash
+git stash list
+git stash pop
+</code></pre>
+</li>
+<li><p><code>git reset</code>&#xFF1A;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x7248;&#x672C;&#x3002;&#x8BE5;&#x547D;&#x4EE4;&#x4E3B;&#x8981;&#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="res/git-reset.png" alt=""></p>
+</li>
+<li><p><code>git cherry-pick</code>&#xFF1A;&#x6311;&#x9009;&#x67D0;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x5355;&#x6B21;&#x63D0;&#x4EA4;&#x5E76;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#x5F15;&#x5165;&#x5230;&#x4F60;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E0A;&#x3002;</p>
+</li>
+<li><p><code>git revert</code>&#xFF1A;&#x64A4;&#x56DE;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;</p>
+</li>
+<li><p><code>git tag</code>&#xFF1A;&#x7ECF;&#x5E38;&#x7528;&#x4E8E;&#x67E5;&#x770B;&#x6216;&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#x3002;</p>
+</li>
+</ol>
+<h4 id="git&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF08;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#xFF09;">Git&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF08;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#xFF09;</h4>
+<p>&#x65E2;&#x7136;Git&#x662F;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x5FC5;&#x5907;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x56E2;&#x961F;&#x534F;&#x4F5C;&#x65F6;&#x5C31;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x89C4;&#x8303;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x8BA9;&#x56E2;&#x961F;&#x9AD8;&#x6548;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x8BA9;&#x9879;&#x76EE;&#x987A;&#x5229;&#x7684;&#x8FDB;&#x5C55;&#x4E0B;&#x53BB;&#xFF0C;&#x5426;&#x5219;&#x5DE5;&#x5177;&#x518D;&#x5389;&#x5BB3;&#x4F46;&#x56E2;&#x961F;&#x6210;&#x5458;&#x5404;&#x81EA;&#x4E3A;&#x6218;&#xFF0C;&#x51B2;&#x7A81;&#x5C31;&#x4F1A;&#x65E0;&#x5904;&#x4E0D;&#x5728;&#xFF0C;&#x534F;&#x4F5C;&#x66F4;&#x52A0;&#x65E0;&#x4ECE;&#x8C08;&#x8D77;&#x3002;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x4EE5;&#x521A;&#x624D;&#x7801;&#x4E91;&#x4E0A;&#x521B;&#x5EFA;&#x7684;<code>python</code>&#x9879;&#x76EE;&#x4E3A;&#x4F8B;&#xFF0C;&#x6765;&#x8BF4;&#x660E;Git&#x7684;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#x3002;</p>
+<h5 id="github-flow">Github-flow</h5>
+<ol>
+<li><p>&#x514B;&#x9686;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x5230;&#x672C;&#x5730;&#x3002;</p>
+<pre><code class="lang-Shell">git clone git@gitee.com:jackfrued/python.git
+</code></pre>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#x3002;</p>
+<pre><code class="lang-Shell">git switch -c &lt;branch-name&gt;
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Shell">git checkout -b &lt;branch-name&gt;
+</code></pre>
+</li>
+<li><p>&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x5F00;&#x53D1;&#x5E76;&#x5728;&#x672C;&#x5730;&#x505A;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;</p>
+</li>
+<li><p>&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#xFF08;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#xFF09;&#x63A8;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">git push origin &lt;branch-name&gt;
+</code></pre>
+</li>
+<li><p>&#x5728;&#x7EBF;&#x53D1;&#x8D77;&#x4E00;&#x6B21;&#x5408;&#x5E76;&#x8BF7;&#x6C42;&#xFF08;&#x901A;&#x5E38;&#x79F0;&#x4E4B;&#x4E3A;<strong>Pull Request</strong>&#xFF0C;&#x6709;&#x7684;&#x5730;&#x65B9;&#x79F0;&#x4E3A;<strong>Merge Request</strong>&#xFF09;&#xFF0C;&#x8BF7;&#x6C42;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x5408;&#x5E76;&#x5230;<code>master</code>&#x5206;&#x652F;&#xFF0C;&#x5408;&#x5E76;&#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x8BE5;&#x5206;&#x652F;&#x3002;</p>
+<p><img src="res/gitee-pull-request.png" alt=""></p>
+</li>
+</ol>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x79CD;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#x5C31;&#x662F;&#x88AB;&#x79F0;&#x4E3A;<strong>github-flow</strong>&#x6216;<strong>PR</strong>&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x5B83;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ol>
+<li><code>master</code>&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#xFF08;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5728;<code>master</code>&#x4E0A;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF09;&#x3002;</li>
+<li>&#x5F00;&#x53D1;&#x65F6;&#x5E94;&#x8BE5;&#x4EE5;<code>master</code>&#x4E3A;&#x57FA;&#x7840;&#x5EFA;&#x7ACB;&#x65B0;&#x5206;&#x652F;&#xFF08;&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x4EFB;&#x52A1;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x8FDB;&#x884C;&#xFF09;&#x3002;</li>
+<li>&#x5206;&#x652F;&#x5148;&#x5728;&#x672C;&#x5730;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF0C;&#x7136;&#x540E;&#x4EE5;&#x540C;&#x540D;&#x5206;&#x652F;&#x5B9A;&#x671F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;push&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x5F00;&#x53D1;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x540E;&#x5411;<code>master</code>&#x53D1;&#x9001;&#x5408;&#x5E76;&#x8BF7;&#x6C42;&#x3002;</li>
+<li>&#x5408;&#x5E76;&#x8BF7;&#x6C42;&#x901A;&#x8FC7;&#x5BA1;&#x67E5;&#x4E4B;&#x540E;&#x5408;&#x5E76;&#x5230;<code>master</code>&#xFF0C;&#x5E76;&#x4ECE;<code>master</code>&#x5411;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x53D1;&#x5E03;&#x3002;</li>
+</ol>
+<p>&#x5F53;&#x7136;&#xFF0C;github-flow&#x7684;&#x7F3A;&#x70B9;&#x4E5F;&#x5F88;&#x660E;&#x663E;&#xFF0C;<code>master</code>&#x5206;&#x652F;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x7684;&#x7EBF;&#x4E0A;&#x4EE3;&#x7801;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x7684;&#x65F6;&#x5019;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x5408;&#x5E76;&#x5230;<code>master</code>&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x5B83;&#x5C31;&#x80FD;&#x7ACB;&#x523B;&#x53D1;&#x5E03;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x7EBF;&#x4E0A;&#x7248;&#x672C;&#x843D;&#x540E;&#x4E8E;<code>master</code>&#x5206;&#x652F;&#x3002;</p>
+<h5 id="git-flow">Git-flow</h5>
+<p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x7684;github-flow&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x540D;&#x4E3A;git-flow&#x7684;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x5927;&#x591A;&#x6570;&#x516C;&#x53F8;&#x613F;&#x610F;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x5957;&#x6D41;&#x7A0B;&#x3002;Git-flow&#x501F;&#x9274;&#x4E86;&#x4E2D;&#x592E;&#x96C6;&#x6743;&#x578B;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x7684;&#x957F;&#x5904;&#xFF0C;&#x4E3A;&#x56E2;&#x961F;&#x5185;&#x90E8;&#x7EDF;&#x4E00;&#x5EFA;&#x7ACB;&#x3001;&#x5408;&#x5E76;&#x548C;&#x5173;&#x95ED;&#x5206;&#x652F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="res/git-flow.png" alt=""></p>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x9879;&#x76EE;&#x6709;&#x4E24;&#x4E2A;&#x957F;&#x7EBF;&#x5206;&#x652F;&#xFF0C;&#x5206;&#x522B;&#x662F;<code>master</code>&#x548C;<code>develop</code>&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x662F;&#x4E34;&#x65F6;&#x7684;&#x7684;&#x8F85;&#x52A9;&#x5206;&#x652F;&#xFF0C;&#x5305;&#x62EC;<code>feature</code>&#xFF08;&#x5F00;&#x53D1;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5F00;&#x53D1;&#x7ED3;&#x675F;&#x540E;&#x5408;&#x5E76;&#x5230;<code>develop</code>&#xFF09;&#x3001;<code>release</code>&#xFF08;&#x4ECE;<code>develop</code>&#x5206;&#x79BB;&#x51FA;&#x6765;&#x7684;&#x4E3A;&#x53D1;&#x5E03;&#x505A;&#x51C6;&#x5907;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x53D1;&#x5E03;&#x7ED3;&#x675F;&#x540E;&#x5408;&#x5E76;&#x5230;<code>master</code>&#x548C;<code>develop</code>&#xFF09;&#x548C;<code>hotfix</code>&#xFF08;&#x4EA7;&#x54C1;&#x53D1;&#x5E03;&#x540E;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x65F6;&#x7D27;&#x6025;&#x5EFA;&#x7ACB;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x76F4;&#x63A5;&#x4ECE;<code>master</code>&#x5206;&#x79BB;&#xFF0C;&#x95EE;&#x9898;&#x4FEE;&#x590D;&#x540E;&#x5408;&#x5E76;&#x5230;<code>master</code>&#x5E76;&#x6253;&#x4E0A;&#x6807;&#x7B7E;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x8981;&#x5408;&#x5E76;&#x5230;<code>develop</code>&#x6765;&#x907F;&#x514D;&#x5C06;&#x6765;&#x7684;&#x7248;&#x672C;&#x9057;&#x6F0F;&#x4E86;&#x8FD9;&#x4E2A;&#x4FEE;&#x590D;&#x5DE5;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x65F6;&#x6709;&#x6B63;&#x5728;&#x53D1;&#x5E03;&#x4E2D;&#x7684;<code>release</code>&#x5206;&#x652F;&#xFF0C;&#x8FD8;&#x8981;&#x5408;&#x5E76;&#x5230;<code>release</code>&#x5206;&#x652F;&#xFF09;&#x3002;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x65BD;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="res/git-flow-detail.png" alt=""></p>
+<ol>
+<li><p>&#x6700;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x6709;<code>master</code>&#x548C;<code>develop</code>&#x5206;&#x652F;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;&#x5DE6;&#x4FA7;&#x6240;&#x793A;&#x3002;</p>
+</li>
+<li><p>&#x4ECE;<code>develop</code>&#x5206;&#x652F;&#x521B;&#x5EFA;<code>feature</code>&#x5206;&#x652F;&#xFF08;&#x4E0A;&#x56FE;&#x53F3;&#x4E0A;&#xFF09;&#xFF0C;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#x5C06;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x5408;&#x5E76;&#x5230;<code>develop</code>&#x5206;&#x652F;&#xFF08;&#x4E0A;&#x56FE;&#x53F3;&#x4E2D;&#xFF09;&#x3002;</p>
+<p>&#x521B;&#x5EFA;<code>feature</code>&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-Shell">git switch -c feature/user develop
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Shell">git checkout -b feature/user develop
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5728;<code>feature</code>&#x5206;&#x652F;&#x4E0A;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x5E76;&#x5B9E;&#x65BD;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF0C;&#x8FD9;&#x4E00;&#x6BB5;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x4E86;&#x3002;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5C06;<code>feature</code>&#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;<code>develop</code>&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-Shell">git checkout develop
+git merge --no-ff feature/user
+git branch -d feature/user
+git push origin develop
+</code></pre>
+</li>
+<li><p>&#x4ECE;<code>develop</code>&#x5206;&#x652F;&#x521B;&#x5EFA;<code>release</code>&#x5206;&#x652F;&#xFF0C;&#x53D1;&#x5E03;&#x7ED3;&#x675F;&#x540E;&#x5408;&#x5E76;&#x56DE;<code>master</code>&#x548C;<code>develop</code>&#x5206;&#x652F;&#x3002;</p>
+<p>&#x521B;&#x5EFA;<code>release</code>&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-Shell">git checkout -b release-0.1 develop
+git push -u origin release-0.1
+... ... ...
+git pull
+git commit -a -m &quot;............&quot;
+</code></pre>
+<p>&#x5C06;<code>release</code>&#x5206;&#x652F;&#x5408;&#x5E76;&#x56DE;<code>master</code>&#x548C;<code>develop</code>&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-Shell">git checkout master
+git merge --no-ff release-0.1
+git push
+
+git checkout develop
+git merge --no-ff release-0.1
+git push
+
+git branch -d release-0.1
+git push --delete release-0.1
+git tag v0.1 master
+git push --tags
+</code></pre>
+</li>
+<li><p>&#x4ECE;<code>master</code>&#x5206;&#x652F;&#x521B;&#x5EFA;<code>hotfix</code>&#x5206;&#x652F;&#xFF0C;&#x5728;&#x4FEE;&#x590D;bug&#x540E;&#x5408;&#x5E76;&#x5230;<code>develop</code>&#x548C;<code>master</code>&#x5206;&#x652F;&#xFF08;&#x4E0A;&#x56FE;&#x53F3;&#x4E0B;&#xFF09;&#x3002;</p>
+<p>&#x521B;&#x5EFA;<code>hotfix</code>&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-Shell">git checkout -b hotfix-0.1.1 master
+git push -u origin hotfix-0.1.1
+... ... ...
+git pull
+git commit -a -m &quot;............&quot;
+</code></pre>
+<p>&#x5C06;<code>hotfix</code>&#x5206;&#x652F;&#x5408;&#x5E76;&#x56DE;<code>develop</code>&#x548C;<code>master</code>&#x5206;&#x652F;&#x3002;</p>
+<pre><code class="lang-Shell">git checkout master
+git merge --no-ff hotfix-0.1.1
+git push
+
+git checkout develop
+git merge --no-ff hotfix-0.1.1
+git push
+
+git branch -d hotfix-0.1.1
+git push --delete hotfix-0.1.1
+git tag v0.1.1 master
+git push --tags
+</code></pre>
+</li>
+</ol>
+<p>Git-flow&#x6D41;&#x7A0B;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#x63A7;&#x5236;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x72B6;&#x51B5;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8FD0;&#x7528;&#x4E0A;github-flow&#x8981;&#x590D;&#x6742;&#x5F97;&#x591A;&#xFF0C;&#x56E0;&#x6B64;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x901A;&#x5E38;&#x4F1A;&#x5B89;&#x88C5;&#x540D;&#x4E3A;<code>gitflow</code>&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF08;Windows&#x73AF;&#x5883;&#x7684;Git&#x81EA;&#x5E26;&#x4E86;&#x8BE5;&#x5DE5;&#x5177;&#xFF09;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x56FE;&#x5F62;&#x5316;&#x7684;Git&#x5DE5;&#x5177;&#xFF08;&#x5982;&#xFF1A;SmartGit&#x3001;SourceTree&#x7B49;&#xFF09;&#x6765;&#x7B80;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow" target="_blank">&#x300A;git-flow &#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x300B;</a>&#x4E00;&#x6587;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5199;&#x5F97;&#x5DF2;&#x7ECF;&#x5F88;&#x597D;&#x4E86;&#xFF0C;&#x672C;&#x6587;&#x4E0D;&#x518D;&#x8FDB;&#x884C;&#x8D58;&#x8FF0;&#x3002;</p>
+<h3 id="&#x7F3A;&#x9677;&#x7BA1;&#x7406;">&#x7F3A;&#x9677;&#x7BA1;&#x7406;</h3>
+<p>&#x6CA1;&#x6709;&#x597D;&#x7684;&#x56E2;&#x961F;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x5FC5;&#x7136;&#x5BFC;&#x81F4;&#x9879;&#x76EE;&#x8FDB;&#x5C55;&#x4E0D;&#x987A;&#x5229;&#xFF0C;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x56F0;&#x96BE;&#xFF0C;&#x800C;&#x5F15;&#x5165;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x6B63;&#x597D;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x901A;&#x5E38;&#x4E00;&#x4E2A;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x90FD;&#x5305;&#x542B;&#x4E86;&#x4EE5;&#x4E0B;&#x7684;&#x529F;&#x80FD;&#xFF1A;</p>
+<ol>
+<li>&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#xFF08;&#x5305;&#x62EC;&#x5FC5;&#x987B;&#x505A;&#x4EC0;&#x4E48;&#x3001;&#x8C01;&#x6765;&#x505A;&#x3001;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x5B8C;&#x6210;&#x3001;&#x73B0;&#x5728;&#x5904;&#x4E8E;&#x4EC0;&#x4E48;&#x72B6;&#x6001;&#x7B49;&#xFF09;&#x3002;</li>
+<li>&#x76F4;&#x89C2;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x68C0;&#x7D22;&#x8FC7;&#x53BB;&#x53D1;&#x751F;&#x7684;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x80FD;&#x591F;&#x5BF9;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x7EDF;&#x4E00;&#x7684;&#x7BA1;&#x7406;&#x548C;&#x5171;&#x4EAB;&#x3002;</li>
+<li>&#x80FD;&#x591F;&#x751F;&#x6210;&#x5404;&#x7C7B;&#x62A5;&#x8868;&#x3002;</li>
+<li>&#x80FD;&#x591F;&#x5173;&#x8054;&#x5230;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5177;&#x6709;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3002;</li>
+</ol>
+<h4 id="&#x7985;&#x9053;">&#x7985;&#x9053;</h4>
+<p><a href="https://www.zentao.net/" target="_blank">&#x7985;&#x9053;</a>&#x662F;&#x56FD;&#x4EA7;&#x7684;&#x4E13;&#x4E1A;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#xFF0C;&#x5B83;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5B8C;&#x6574;&#x8F6F;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#xFF0C;&#x652F;&#x6301;<a href="http://www.scrumcn.com/agile/scrum-knowledge-library/scrum.html" target="_blank">Scrum&#x654F;&#x6377;&#x5F00;&#x53D1;</a>&#xFF0C;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x9700;&#x6C42;&#x7BA1;&#x7406;&#x3001;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x3001;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x62E5;&#x6709;&#x5F3A;&#x5927;&#x7684;&#x6269;&#x5C55;&#x673A;&#x5236;&#x548C;&#x4E30;&#x5BCC;&#x7684;&#x529F;&#x80FD;&#x63D2;&#x4EF6;&#x3002;&#x53EF;&#x4EE5;&#x4ECE;&#x7985;&#x9053;&#x7684;&#x5B98;&#x65B9;&#x7F51;&#x7AD9;&#x63D0;&#x4F9B;&#x7684;<a href="https://www.zentao.net/download.html" target="_blank">&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;</a>&#x6765;&#x4E0B;&#x8F7D;&#x7985;&#x9053;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4ECD;&#x7136;&#x4EE5;CentOS Linux&#x4E3A;&#x4F8B;&#xFF0C;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5229;&#x7528;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;&#x6765;&#x5B89;&#x88C5;&#x7985;&#x9053;&#x3002;</p>
+<pre><code class="lang-Shell">cd /opt
+wget http://dl.cnezsoft.com/zentao/pro8.5.2/ZenTaoPMS.pro8.5.2.zbox_64.tar.gz
+gunzip ZenTaoPMS.pro8.5.2.zbox_64.tar.gz
+tar -xvf ZenTaoPMS.pro8.5.2.zbox_64.tar
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5728;<code>/opt</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF08;&#x5B98;&#x65B9;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#xFF09;&#x4E0B;&#x8F7D;&#x4E86;&#x7985;&#x9053;&#x7684;&#x5F52;&#x6863;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x4E86;&#x89E3;&#x538B;&#x7F29;&#x548C;&#x89E3;&#x5F52;&#x6863;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5B8C;&#x6210;&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x540E;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>zbox</code>&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;&#x4E2D;&#x5185;&#x7F6E;&#x4E86;Apache&#x3001;MySQL&#x3001;PHP&#x7B49;&#x5E94;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x4E9B;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x5355;&#x72EC;&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x542F;&#x52A8;&#x7985;&#x9053;&#x3002;</p>
+<pre><code class="lang-Shell">/opt/zbox/zbox -ap 8080 -mp 3307
+/opt/zbox/zbox start
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0A;&#x9762;&#x4F7F;&#x7528;<code>zbox</code>&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;<code>zbox</code>&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x4E2D;<code>-ap</code>&#x662F;&#x4E3A;&#x4E86;&#x6307;&#x5B9A;Apache&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;<code>-mp</code>&#x662F;&#x4E3A;&#x4E86;&#x6307;&#x5B9A;MySQL&#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;3307&#x7AEF;&#x53E3;&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x5F00;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;MySQL&#x670D;&#x52A1;&#x7684;3306&#x7AEF;&#x53E3;&#xFF1B;<code>start</code>&#x8868;&#x793A;&#x542F;&#x52A8;&#x670D;&#x52A1;&#xFF0C;<code>stop</code>&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x505C;&#x6B62;&#x670D;&#x52A1;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x9700;&#x8981;&#x6253;&#x5F00;&#x9632;&#x706B;&#x5899;8080&#x7AEF;&#x53E3;&#x4EE5;&#x4FBF;&#x8BBF;&#x95EE;&#x7985;&#x9053;&#xFF0C;&#x6CE8;&#x610F;<strong>&#x6570;&#x636E;&#x5E93;&#x7684;&#x7AEF;&#x53E3;&#x51B3;&#x4E0D;&#x80FD;&#x66B4;&#x9732;&#x7ED9;&#x516C;&#x7F51;</strong>&#x3002;</p>
+</blockquote>
+<p>&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8F93;&#x5165;&#x670D;&#x52A1;&#x5668;&#x7684;&#x516C;&#x7F51;IP&#x5730;&#x5740;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7985;&#x9053;&#xFF0C;&#x5982;&#x679C;&#x613F;&#x610F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;DNS&#x89E3;&#x6790;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x6765;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x7985;&#x9053;&#x7684;&#x9996;&#x9875;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x662F;<code>admin</code>&#xFF0C;&#x53E3;&#x4EE4;&#x662F;<code>123456</code>&#x3002;</p>
+<p><img src="res/zentao-login.png" alt=""></p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x7985;&#x9053;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x201C;&#x5E2E;&#x52A9;&#x201D;&#x83DC;&#x5355;&#x7684;&#x201C;&#x65B0;&#x624B;&#x6559;&#x7A0B;&#x201D;&#x6765;&#x8FC5;&#x901F;&#x4E86;&#x89E3;&#x7985;&#x9053;&#x3002;&#x5B98;&#x65B9;&#x7F51;&#x7AD9;&#x7684;&#x6587;&#x6863;&#x94FE;&#x63A5;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;<a href="https://www.zentao.net/video/c1454.html" target="_blank">&#x89C6;&#x9891;&#x6559;&#x7A0B;</a>&#xFF0C;&#x521D;&#x5B66;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x6765;&#x4E0A;&#x624B;&#x3002;</p>
+<p><img src="res/zentao-index.png" alt=""></p>
+<p>&#x5BF9;&#x654F;&#x6377;&#x5F00;&#x53D1;&#x4EE5;&#x53CA;&#x654F;&#x6377;&#x95ED;&#x73AF;&#x5DE5;&#x5177;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x4E86;&#x89E3;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="https://blog.51cto.com/newthink/1775427" target="_blank">&#x300A;&#x57FA;&#x4E8E;JIRA&#x7684;Scrum&#x654F;&#x6377;&#x5F00;&#x53D1;&#x7684;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x300B;</a>&#x4E00;&#x6587;&#x3002;</p>
+<h4 id="gitlab">GitLab</h4>
+<p>&#x5E38;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#x548C;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x7684;Git&#x79C1;&#x670D;Gitlab&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8981;&#x62A5;&#x544A;&#x4E00;&#x4E2A;bug&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x7684;&#x754C;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x7968;&#xFF08;issue ticket&#xFF09;&#x3002;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#xFF1A;</p>
+<ol>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x53F7;&#x3001;&#x5177;&#x4F53;&#x7684;&#x4F7F;&#x7528;&#x73AF;&#x5883;&#xFF08;&#x5982;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF09;&#x7B49;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x80FD;&#x591F;&#x7A33;&#x5B9A;&#x91CD;&#x73B0;&#x8BE5;&#x95EE;&#x9898;&#x7684;&#x76F8;&#x5173;&#x6B65;&#x9AA4;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x63CF;&#x8FF0;&#x6B64;&#x5904;&#x671F;&#x5F85;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x5B9E;&#x9645;&#x7684;&#x884C;&#x4E3A;&#x3002;</li>
+<li><strong>[&#x53EF;&#x9009;]</strong>&#x4F60;&#x5BF9;&#x8FD9;&#x4E2A;bug&#x7684;&#x770B;&#x6CD5;&#xFF08;&#x4EA7;&#x751F;bug&#x7684;&#x539F;&#x56E0;&#x662F;&#x4EC0;&#x4E48;&#xFF09;&#x3002;</li>
+</ol>
+<p><img src="res/gitlab-new-issue.png" alt=""></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x521B;&#x5EFA;&#x95EE;&#x9898;&#x7968;&#x65F6;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5C06;&#x95EE;&#x9898;&#x6307;&#x6D3E;&#x7ED9;&#x5904;&#x7406;&#x95EE;&#x9898;&#x7684;&#x4EBA;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x5E94;&#x8BE5;&#x7531;&#x8C01;&#x6765;&#x4FEE;&#x590D;&#x8FD9;&#x4E2A;bug&#xFF0C;&#x5C31;&#x6307;&#x6D3E;&#x7ED9;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x8005;&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#x8FD8;&#x8981;&#x6307;&#x5B9A;&#x95EE;&#x9898;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF08;&#x5341;&#x5206;&#x7D27;&#x6025;&#x3001;&#x7D27;&#x6025;&#x3001;&#x666E;&#x901A;&#x3001;&#x4E0D;&#x7D27;&#x6025;&#x7B49;&#xFF09;&#x3001;&#x95EE;&#x9898;&#x7684;&#x6807;&#x7B7E;&#xFF08;&#x529F;&#x80FD;&#x7F3A;&#x9677;&#x3001;&#x65B0;&#x7279;&#x6027;&#x3001;&#x6539;&#x8FDB;&#x589E;&#x5F3A;&#x3001;&#x524D;&#x77BB;&#x7814;&#x7A76;&#x7B49;&#xFF09;&#x3001;&#x91CC;&#x7A0B;&#x7891;&#xFF08;&#x901A;&#x8FC7;&#x91CC;&#x7A0B;&#x7891;&#x53EF;&#x4EE5;&#x5C06;&#x95EE;&#x9898;&#x4E0E;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x9879;&#x76EE;&#x8282;&#x70B9;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF0C;&#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6BCF;&#x4E00;&#x4E2A;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x8FDB;&#x5C55;&#xFF0C;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x53F7;&#x6765;&#x5EFA;&#x7ACB;&#x91CC;&#x7A0B;&#x7891;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x8FED;&#x4EE3;&#x5468;&#x671F;&#x6765;&#x5EFA;&#x7ACB;&#x91CC;&#x7A0B;&#x7891;&#xFF09;&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x5728;&#x54EA;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x4EE5;&#x524D;&#x4FEE;&#x590D;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x6709;&#x4E9B;&#x654F;&#x6377;&#x56E2;&#x961F;&#x4F7F;&#x7528;&#x95EE;&#x9898;&#x7968;&#x6765;&#x7BA1;&#x7406;&#x4EA7;&#x54C1;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;&#x95EE;&#x9898;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x201D;&#xFF08;TiDD&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x65B0;&#x529F;&#x80FD;&#x7684;&#x5F00;&#x53D1;&#x662F;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x95EE;&#x9898;&#x7968;&#x6765;&#x9A71;&#x52A8;&#x7684;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x6B65;&#x9AA4;&#x5305;&#x62EC;&#xFF1A;&#x5EFA;&#x7ACB;&#x95EE;&#x9898;&#x7968;&#x3001;&#x6307;&#x5B9A;&#x8D23;&#x4EFB;&#x4EBA;&#x3001;&#x5F00;&#x53D1;&#x3001;&#x63D0;&#x4EA4;&#x3001;Push&#x5230;&#x4EE3;&#x7801;&#x5E93;&#x3002;&#x5982;&#x679C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x548C;&#x9700;&#x6C42;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x7968;&#xFF0C;&#x5E94;&#x8BE5;&#x8981;&#x586B;&#x5199;&#x4EE5;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ol>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x7B80;&#x77ED;&#x7684;&#x63CF;&#x8FF0;&#x9700;&#x6C42;&#xFF0C;&#x5E76;&#x7528;&#x5B83;&#x4F5C;&#x4E3A;&#x6807;&#x9898;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x662F;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x7684;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x5BF9;&#x8F6F;&#x4EF6;&#x73B0;&#x6709;&#x529F;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x4EC0;&#x4E48;&#x5F71;&#x54CD;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x5E94;&#x8BE5;&#x5B9E;&#x73B0;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+<li><strong>[&#x5FC5;&#x586B;]</strong>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x662F;&#x5426;&#x4F9D;&#x8D56;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x76F8;&#x5173;&#x652F;&#x6301;&#x3002;</li>
+<li><strong>[&#x53EF;&#x9009;]</strong>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x6709;&#x54EA;&#x4E9B;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x3002;</li>
+<li><strong>[&#x53EF;&#x9009;]</strong>&#x8FD9;&#x4E9B;&#x53EF;&#x9009;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5206;&#x522B;&#x6709;&#x54EA;&#x4E9B;&#x4F18;&#x7F3A;&#x70B9;&#x3002;</li>
+</ol>
+<h4 id="&#x5176;&#x4ED6;&#x4EA7;&#x54C1;">&#x5176;&#x4ED6;&#x4EA7;&#x54C1;</h4>
+<p>&#x9664;&#x4E86;&#x7985;&#x9053;&#x548C;GitLab&#x4E4B;&#x5916;&#xFF0C;<a href="https://www.atlassian.com/zh/software/jira" target="_blank">JIRA</a>&#x3001;<a href="https://www.redmine.org/" target="_blank">Redmine</a>&#x3001;Backlog&#x7B49;&#x4E5F;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7CFB;&#x7EDF;&#x5927;&#x90FD;&#x4E0D;&#x4EC5;&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x7F3A;&#x9677;&#x7BA1;&#x7406;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x5019;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x654F;&#x6377;&#x95ED;&#x73AF;&#x5DE5;&#x5177;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x5173;&#x4E8E;&#x654F;&#x6377;&#x95ED;&#x73AF;&#x5DE5;&#x5177;&#x8FD9;&#x4E2A;&#x8BDD;&#x9898;&#xFF0C;&#x8BF7;&#x5927;&#x5BB6;&#x53C2;&#x8003;<a href="https://blog.51cto.com/newthink/1775427" target="_blank">&#x300A;&#x57FA;&#x4E8E;JIRA&#x7684;Scrum&#x654F;&#x6377;&#x5F00;&#x53D1;&#x7684;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x300B;</a>&#x4E00;&#x6587;&#x3002;</p>
+<h3 id="&#x6301;&#x7EED;&#x96C6;&#x6210;">&#x6301;&#x7EED;&#x96C6;&#x6210;</h3>
+<p>&#x4E3A;&#x4E86;&#x5FEB;&#x901F;&#x7684;&#x4EA7;&#x51FA;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x4E2D;&#x6301;&#x7EED;&#x96C6;&#x6210;&#xFF08;CI&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x73AF;&#x8282;&#x3002;&#x6240;&#x8C13;CI&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x8BA9;&#x8BA1;&#x7B97;&#x673A;&#x81EA;&#x52A8;&#x4EFB;&#x610F;&#x6B21;&#x91CD;&#x590D;&#x7F16;&#x8BD1;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x6C47;&#x62A5;&#x7B49;&#x5DE5;&#x4F5C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;CI&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x65E9;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x964D;&#x4F4E;&#x5404;&#x79CD;&#x4EBA;&#x4E3A;&#x5931;&#x8BEF;&#x7ED9;&#x9879;&#x76EE;&#x5E26;&#x6765;&#x7684;&#x98CE;&#x9669;&#x3002;&#x6309;&#x7167;&#x7ECF;&#x5178;&#x7684;&#x8F6F;&#x4EF6;&#x8FC7;&#x7A0B;&#x6A21;&#x578B;&#xFF08;&#x7011;&#x5E03;&#x6A21;&#x578B;&#xFF09;&#xFF0C;&#x96C6;&#x6210;&#x7684;&#x5DE5;&#x4F5C;&#x4E00;&#x822C;&#x8981;&#x7B49;&#x5230;&#x6240;&#x6709;&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;&#x90FD;&#x7ED3;&#x675F;&#x540E;&#x624D;&#x80FD;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x4FEE;&#x590D;&#x95EE;&#x9898;&#x7684;&#x4EE3;&#x4EF7;&#x662F;&#x975E;&#x5E38;&#x5177;&#x4F53;&#x7684;&#x3002;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x96C6;&#x6210;&#x5B9E;&#x65BD;&#x5F97;&#x8D8A;&#x665A;&#xFF0C;&#x4EE3;&#x7801;&#x91CF;&#x8D8A;&#x5927;&#xFF0C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x5C31;&#x8D8A;&#x56F0;&#x96BE;&#x3002;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x5C06;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3001;&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#x3001;&#x4EE3;&#x7801;&#x6D4B;&#x8BD5;&#x878D;&#x5165;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x8BA9;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x53D8;&#x5F97;&#x81EA;&#x52A8;&#x5316;&#x548C;&#x53EF;&#x534F;&#x4F5C;&#x3002;&#x7531;&#x4E8E;&#x5176;&#x9891;&#x7E41;&#x91CD;&#x590D;&#x6574;&#x4E2A;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;&#xFF08;&#x5728;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x591A;&#x6B21;pull&#x6E90;&#x4EE3;&#x7801;&#x5E76;&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x80FD;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x65E9;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5728;&#x6240;&#x6709;&#x7684;CI&#x5DE5;&#x5177;&#x4E2D;&#xFF0C;Jenkins&#x548C;<a href="https://www.travis-ci.org/" target="_blank">TravisCI</a>&#x662F;&#x6700;&#x5177;&#x6709;&#x4EE3;&#x8868;&#x6027;&#x7684;&#xFF0C;&#x524D;&#x8005;&#x662F;&#x57FA;&#x4E8E; Java&#x7684;&#x5F00;&#x6E90;CI&#x5DE5;&#x5177;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x65B0;&#x664B;&#x7684;&#x5728;&#x7EBF;CI&#x5DE5;&#x5177;&#xFF0C;&#x4E0B;&#x56FE;&#x662F;Jenkins&#x7684;&#x5DE5;&#x4F5C;&#x9762;&#x677F;&#x3002;</p>
+<p><img src="res/jenkins_new_project.png" alt=""></p>
+<p>&#x6301;&#x7EED;&#x96C6;&#x6210;&#x5BF9;&#x4E8E;&#x7F16;&#x8BD1;&#x578B;&#x8BED;&#x8A00;&#x7684;&#x610F;&#x4E49;&#x66F4;&#x5927;&#xFF0C;&#x5BF9;&#x4E8E;Python&#x8FD9;&#x6837;&#x7684;&#x89E3;&#x91CA;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x5019;&#x662F;&#x7528;&#x4E8E;&#x5BF9;&#x63A5;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x89E6;&#x53D1;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5E76;&#x4EA7;&#x751F;&#x76F8;&#x5E94;&#x7684;&#x62A5;&#x544A;&#xFF0C;&#x7C7B;&#x4F3C;&#x7684;&#x529F;&#x80FD;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;<strong>Webhook</strong>&#x6765;&#x5B8C;&#x6210;&#x3002;&#x5982;&#x679C;&#x8981;&#x901A;&#x8FC7;Docker&#x8FD9;&#x6837;&#x7684;&#x865A;&#x62DF;&#x5316;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x9879;&#x76EE;&#x6253;&#x5305;&#x90E8;&#x7F72;&#x6216;&#x8005;&#x901A;&#x8FC7;K8S&#x8FDB;&#x884C;&#x5BB9;&#x5668;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x5E73;&#x53F0;&#x5B89;&#x88C5;&#x5BF9;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x7801;&#x4E91;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5BF9;&#x63A5;<a href="https://ding-doc.dingtalk.com/" target="_blank">&#x9489;&#x9489;&#x5F00;&#x653E;&#x5E73;&#x53F0;</a>&#x4F7F;&#x7528;&#x9489;&#x9489;&#x673A;&#x5668;&#x4EBA;&#x6765;&#x5411;&#x9879;&#x76EE;&#x76F8;&#x5173;&#x4EBA;&#x5458;&#x53D1;&#x9001;&#x5373;&#x65F6;&#x6D88;&#x606F;&#x3002;GitLab&#x4E5F;&#x5BF9;CI&#x548C;CD&#xFF08;&#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#xFF09;&#x63D0;&#x4F9B;&#x4E86;&#x652F;&#x6301;&#xFF0C;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x8BF7;&#x5927;&#x5BB6;&#x53C2;&#x8003;<a href="https://blog.stdioa.com/2018/06/gitlab-cicd-fundmental/" target="_blank">&#x300A;GitLab CI/CD&#x57FA;&#x7840;&#x6559;&#x7A0B;&#x300B;</a>&#x3002;</p>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;</p>
+<ol>
+<li><p>&#x5173;&#x4E8E;&#x654F;&#x6377;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;&#x77E5;&#x4E4E;&#x4E0A;&#x7684;<a href="https://zhuanlan.zhihu.com/p/33472102" target="_blank">&#x300A;&#x8FD9;&#x624D;&#x662F;&#x654F;&#x6377;&#x5F00;&#x53D1;&#x300B;</a>&#x4E00;&#x6587;&#x3002;</p>
+</li>
+<li><p>&#x672C;&#x7AE0;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#x63D2;&#x56FE;&#x6765;&#x81EA;&#x4E8E;&#x7F51;&#x6613;&#x4E91;&#x8BFE;&#x5802;<a href="https://study.163.com/course/introduction/1003268008.htm" target="_blank">&#x300A;&#x4EBA;&#x4EBA;&#x90FD;&#x4F1A;&#x7528;Git&#x300B;</a>&#x8BFE;&#x7A0B;&#xFF08;&#x514D;&#x8D39;&#x54DF;&#xFF09;&#xFF0C;&#x5728;&#x6B64;&#x8868;&#x793A;&#x611F;&#x8C22;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="100.Python面试题实录.html" class="navigation navigation-prev " aria-label="Previous page: 100.Python面试题实录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="92.Docker容器技术详解.html" class="navigation navigation-next " aria-label="Next page: 92.Docker容器技术详解">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"91.团队项目开发的问题和解决方案","level":"1.11.2","depth":2,"next":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"path":"Day91-100/92.Docker容器技术详解.md","ref":"Day91-100/92.Docker容器技术详解.md","articles":[]},"previous":{"title":"100.Python面试题实录","level":"1.11.1","depth":2,"path":"Day91-100/100.Python面试题实录.md","ref":"Day91-100/100.Python面试题实录.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day91-100/91.团队项目开发的问题和解决方案.md","mtime":"2024-07-05T03:42:45.396Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

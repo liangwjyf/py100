@@ -1,0 +1,2444 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>68.NumPy的应用-1 · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="69.NumPy的应用-2.html" />
+    
+    
+    <link rel="prev" href="67.环境准备.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
+            
+                <a href="../Day36-45/37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
+            
+                <a href="../Day36-45/38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
+            
+                <a href="../Day36-45/39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
+            
+                <a href="../Day36-45/40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
+            
+                <a href="../Day36-45/41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
+            
+                <a href="../Day36-45/42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
+            
+                <a href="../Day36-45/43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                <a href="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
+            
+                <a href="../Day46-60/46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
+            
+                <a href="../Day46-60/47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                <a href="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
+            
+                <a href="../Day46-60/49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
+            
+                <a href="../Day46-60/50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
+            
+                <a href="../Day46-60/51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
+            
+                <a href="../Day46-60/52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
+            
+                <a href="../Day46-60/53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
+            
+                <a href="../Day46-60/56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
+            
+                <a href="../Day46-60/57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
+            
+                <a href="../Day46-60/58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
+            
+                <a href="../Day46-60/59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
+            
+                <a href="../Day46-60/60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="66.数据分析概述.html">
+            
+                <a href="66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="67.环境准备.html">
+            
+                <a href="67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.3" data-path="68.NumPy的应用-1.html">
+            
+                <a href="68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="69.NumPy的应用-2.html">
+            
+                <a href="69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="70.NumPy的应用-3.html">
+            
+                <a href="70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="71.NumPy的应用-4.html">
+            
+                <a href="71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="72.深入浅出pandas-1.html">
+            
+                <a href="72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="73.深入浅出pandas-2.html">
+            
+                <a href="73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="74.深入浅出pandas-3.html">
+            
+                <a href="74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="75.深入浅出pandas-4.html">
+            
+                <a href="75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="76.深入浅出pandas-5.html">
+            
+                <a href="76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="77.深入浅出pandas-6.html">
+            
+                <a href="77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="78.数据可视化-1.html">
+            
+                <a href="78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="79.数据可视化-2.html">
+            
+                <a href="79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="80.数据可视化-3.html">
+            
+                <a href="80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
+            
+                <a href="../Day91-100/100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
+            
+                <a href="../Day91-100/92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
+            
+                <a href="../Day91-100/93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
+            
+                <a href="../Day91-100/94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
+            
+                <a href="../Day91-100/95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
+            
+                <a href="../Day91-100/96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                <a href="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                <a href="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
+            
+                <a href="../Day91-100/99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >68.NumPy的应用-1</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="numpy&#x7684;&#x5E94;&#x7528;-1">NumPy&#x7684;&#x5E94;&#x7528;-1</h2>
+<p>Numpy &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684; Python &#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x5E93;&#xFF0C;<strong>&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x5904;&#x7406;&#x4EFB;&#x610F;&#x7EF4;&#x5EA6;&#x7684;&#x6570;&#x7EC4;</strong>&#x3002;Numpy <strong>&#x652F;&#x6301;&#x5E38;&#x89C1;&#x7684;&#x6570;&#x7EC4;&#x548C;&#x77E9;&#x9635;&#x64CD;&#x4F5C;</strong>&#xFF0C;&#x5BF9;&#x4E8E;&#x540C;&#x6837;&#x7684;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#x4EFB;&#x52A1;&#xFF0C;&#x4F7F;&#x7528; NumPy &#x4E0D;&#x4EC5;&#x4EE3;&#x7801;&#x8981;&#x7B80;&#x6D01;&#x7684;&#x591A;&#xFF0C;&#x800C;&#x4E14; NumPy &#x5728;&#x6027;&#x80FD;&#x4E0A;&#x4E5F;&#x8FDC;&#x8FDC;&#x4F18;&#x4E8E;&#x539F;&#x751F; Python&#xFF0C;&#x81F3;&#x5C11;&#x662F;&#x4E00;&#x5230;&#x4E24;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#x7684;&#x5DEE;&#x8DDD;&#xFF0C;&#x800C;&#x4E14;&#x6570;&#x636E;&#x91CF;&#x8D8A;&#x5927;&#xFF0C;NumPy &#x7684;&#x4F18;&#x52BF;&#x5C31;&#x8D8A;&#x660E;&#x663E;&#x3002;</p>
+<p>NumPy &#x6700;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;<code>ndarray</code>&#xFF0C;&#x4F7F;&#x7528;<code>ndarray</code>&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x4E00;&#x7EF4;&#x3001;&#x4E8C;&#x7EF4;&#x548C;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x800C;&#x7075;&#x6D3B;&#x7684;&#x5927;&#x6570;&#x636E;&#x5BB9;&#x5668;&#x3002;NumPy &#x5E95;&#x5C42;&#x4EE3;&#x7801;&#x4F7F;&#x7528; C &#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x89E3;&#x51B3;&#x4E86; GIL &#x7684;&#x9650;&#x5236;&#xFF0C;<code>ndarray</code>&#x5728;&#x5B58;&#x53D6;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x636E;&#x4E0E;&#x6570;&#x636E;&#x7684;&#x5730;&#x5740;&#x90FD;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#xFF0C;&#x8FD9;&#x786E;&#x4FDD;&#x4E86;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x9AD8;&#x6548;&#x7387;&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;&#xFF0C;&#x6027;&#x80FD;&#x4E0A;&#x8FDC;&#x8FDC;&#x4F18;&#x4E8E; Python &#x4E2D;&#x7684;<code>list</code>&#xFF1B;&#x53E6;&#x4E00;&#x65B9;&#x9762;<code>ndarray</code>&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x5C24;&#x5176;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x7279;&#x5F81;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E5F;&#x662F; Python &#x539F;&#x751F;&#x7684;<code>list</code>&#x6CA1;&#x6709;&#x7684;&#x3002;</p>
+<h3 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h3>
+<ol>
+<li><p>&#x542F;&#x52A8; JupyterLab</p>
+<pre><code class="lang-Bash"> jupyter lab
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5728;&#x542F;&#x52A8; JupyterLab &#x4E4B;&#x524D;&#xFF0C;&#x5EFA;&#x8BAE;&#x5148;&#x5B89;&#x88C5;&#x597D;&#x6570;&#x636E;&#x5206;&#x6790;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x9879;&#xFF0C;&#x5305;&#x62EC;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x7684;&#x4E09;&#x5927;&#x795E;&#x5668;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x9879;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528; Anaconda&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x5355;&#x72EC;&#x5B89;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Anaconda &#x7684; Navigator &#x6765;&#x542F;&#x52A8;&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x5BFC;&#x5165;</p>
+<pre><code class="lang-Python"> <span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+ <span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+ <span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x4E86; JupyterLab &#x4F46;&#x5C1A;&#x672A;&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x5E93;&#xFF0C;&#x4F8B;&#x5982;&#x5C1A;&#x672A;&#x5B89;&#x88C5;<code>numpy</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5355;&#x5143;&#x683C;&#x4E2D;&#x8F93;&#x5165;<code>%pip install numpy</code>&#x5E76;&#x8FD0;&#x884C;&#x8BE5;&#x5355;&#x5143;&#x683C;&#x6765;&#x5B89;&#x88C5; NumPy&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5355;&#x5143;&#x683C;&#x4E2D;&#x8F93;&#x5165;<code>%pip install numpy pandas matplotlib</code>&#x628A; Python &#x6570;&#x636E;&#x5206;&#x6790;&#x4E09;&#x4E2A;&#x6838;&#x5FC3;&#x7684;&#x4E09;&#x65B9;&#x5E93;&#x90FD;&#x5B89;&#x88C5;&#x4E0A;&#x3002;&#x6CE8;&#x610F;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x4EC5;&#x5BFC;&#x5165;&#x4E86; NumPy&#xFF0C;&#x8FD8;&#x5C06; pandas &#x548C; matplotlib &#x5E93;&#x4E00;&#x5E76;&#x5BFC;&#x5165;&#x4E86;&#x3002;</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</h3>
+<p>&#x521B;&#x5EFA;<code>ndarray</code>&#x5BF9;&#x8C61;&#x6709;&#x5F88;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;<code>array</code>&#x51FD;&#x6570;&#xFF0C;&#x901A;&#x8FC7;<code>list</code>&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array1 = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])
+array1
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([1, 2, 3, 4, 5])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array2 = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+array2
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[1, 2, 3],
+       [4, 5, 6]])
+</code></pre><p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;<code>arange</code>&#x51FD;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x548C;&#x8DE8;&#x5EA6;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array3 = np.arange(<span class="hljs-number">0</span>, <span class="hljs-number">20</span>, <span class="hljs-number">2</span>)
+array3
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
+</code></pre><p>&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;<code>linspace</code>&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x548C;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF0C;&#x751F;&#x6210;&#x7B49;&#x5DEE;&#x6570;&#x5217;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array4 = np.linspace(<span class="hljs-number">-1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">11</span>)
+array4
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([-1. , -0.8, -0.6, -0.4, -0.2,  0. ,  0.2,  0.4,  0.6,  0.8,  1. ])
+</code></pre><p>&#x65B9;&#x6CD5;&#x56DB;&#xFF1A;&#x4F7F;&#x7528;<code>logspace</code>&#x51FD;&#x6570;&#xFF0C;&#x751F;&#x6210;&#x7B49;&#x6BD4;&#x6570;&#x5217;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python">array5 = np.logspace(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>, num=<span class="hljs-number">10</span>, base=<span class="hljs-number">2</span>)
+array5
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x7B49;&#x6BD4;&#x6570;&#x5217;&#x7684;&#x8D77;&#x59CB;&#x503C;&#x662F;$2^1$&#xFF0C;&#x7B49;&#x6BD4;&#x6570;&#x5217;&#x7684;&#x7EC8;&#x6B62;&#x503C;&#x662F;$2^{10}$&#xFF0C;<code>num</code>&#x662F;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;&#xFF0C;<code>base</code>&#x5C31;&#x662F;&#x5E95;&#x6570;&#x3002;</p>
+</blockquote>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([   2.,    4.,    8.,   16.,   32.,   64.,  128.,  256.,  512., 1024.])
+</code></pre><p>&#x65B9;&#x6CD5;&#x4E94;&#xFF1A;&#x901A;&#x8FC7;<code>fromstring</code>&#x51FD;&#x6570;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array6 = np.fromstring(<span class="hljs-string">&apos;1, 2, 3, 4, 5&apos;</span>, sep=<span class="hljs-string">&apos;,&apos;</span>, dtype=<span class="hljs-string">&apos;i8&apos;</span>)
+array6
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([1, 2, 3, 4, 5])
+</code></pre><p>&#x65B9;&#x6CD5;&#x516D;&#xFF1A;&#x901A;&#x8FC7;<code>fromiter</code>&#x51FD;&#x6570;&#x4ECE;&#x751F;&#x6210;&#x5668;&#xFF08;&#x8FED;&#x4EE3;&#x5668;&#xFF09;&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fib</span><span class="hljs-params">(how_many)</span>:</span>
+    a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(how_many):
+        a, b = b, a + b
+        <span class="hljs-keyword">yield</span> a
+
+
+gen = fib(<span class="hljs-number">20</span>)
+array7 = np.fromiter(gen, dtype=<span class="hljs-string">&apos;i8&apos;</span>)
+array7
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([   1,    1,    2,    3,    5,    8,   13,   21,   34,   55,   89,
+        144,  233,  377,  610,  987, 1597, 2584, 4181, 6765])
+</code></pre><p>&#x65B9;&#x6CD5;&#x4E03;&#xFF1A;&#x4F7F;&#x7528;<code>numpy.random</code>&#x6A21;&#x5757;&#x7684;&#x51FD;&#x6570;&#x751F;&#x6210;&#x968F;&#x673A;&#x6570;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</p>
+<p>&#x4EA7;&#x751F;10&#x4E2A;$[0, 1)$&#x8303;&#x56F4;&#x7684;&#x968F;&#x673A;&#x5C0F;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array8 = np.random.rand(<span class="hljs-number">10</span>)
+array8
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([0.45556132, 0.67871326, 0.4552213 , 0.96671509, 0.44086463,
+       0.72650875, 0.79877188, 0.12153022, 0.24762739, 0.6669852 ])
+</code></pre><p>&#x4EA7;&#x751F;10&#x4E2A;$[1, 100)$&#x8303;&#x56F4;&#x7684;&#x968F;&#x673A;&#x6574;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array9 = np.random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">10</span>)
+array9
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([29, 97, 87, 47, 39, 19, 71, 32, 79, 34])
+</code></pre><p>&#x4EA7;&#x751F;20&#x4E2A;$\small{\mu=50}$&#xFF0C;$\small{\sigma=10}$&#x7684;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array10 = np.random.normal(<span class="hljs-number">50</span>, <span class="hljs-number">10</span>, <span class="hljs-number">20</span>)
+array10
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([55.04155586, 46.43510797, 20.28371158, 62.67884053, 61.23185964,
+       38.22682148, 53.17126151, 43.54741592, 36.11268017, 40.94086676,
+       63.27911699, 46.92688903, 37.1593374 , 67.06525656, 67.47269463,
+       23.37925889, 31.45312239, 48.34532466, 55.09180924, 47.95702787])
+</code></pre><p>&#x4EA7;&#x751F;$[0, 1)$&#x8303;&#x56F4;&#x7684;&#x968F;&#x673A;&#x5C0F;&#x6570;&#x6784;&#x6210;&#x7684;3&#x884C;4&#x5217;&#x7684;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array11 = np.random.rand(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+array11
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[0.54017809, 0.46797771, 0.78291445, 0.79501326],
+       [0.93973783, 0.21434806, 0.03592874, 0.88838892],
+       [0.84130479, 0.3566601 , 0.99935473, 0.26353598]])
+</code></pre><p>&#x4EA7;&#x751F;$[1, 100)$&#x8303;&#x56F4;&#x7684;&#x968F;&#x673A;&#x6574;&#x6570;&#x6784;&#x6210;&#x7684;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array12 = np.random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>))
+array12
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[[94, 26, 49, 24, 43],
+        [27, 27, 33, 98, 33],
+        [13, 73,  6,  1, 77],
+        [54, 32, 51, 86, 59]],
+
+       [[62, 75, 62, 29, 87],
+        [90, 26,  6, 79, 41],
+        [31, 15, 32, 56, 64],
+        [37, 84, 61, 71, 71]],
+
+       [[45, 24, 78, 77, 41],
+        [75, 37,  4, 74, 93],
+        [ 1, 36, 36, 60, 43],
+        [23, 84, 44, 89, 79]]])
+</code></pre><p>&#x65B9;&#x6CD5;&#x516B;&#xFF1A;&#x521B;&#x5EFA;&#x5168;0&#x3001;&#x5168;1&#x6216;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;</p>
+<p>&#x4F7F;&#x7528;<code>zeros</code>&#x51FD;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array13 = np.zeros((<span class="hljs-number">3</span>, <span class="hljs-number">4</span>))
+array13
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[0., 0., 0., 0.],
+       [0., 0., 0., 0.],
+       [0., 0., 0., 0.]])
+</code></pre><p>&#x4F7F;&#x7528;<code>ones</code>&#x51FD;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array14 = np.ones((<span class="hljs-number">3</span>, <span class="hljs-number">4</span>))
+array14
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[1., 1., 1., 1.],
+       [1., 1., 1., 1.],
+       [1., 1., 1., 1.]])
+</code></pre><p>&#x4F7F;&#x7528;<code>full</code>&#x51FD;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array15 = np.full((<span class="hljs-number">3</span>, <span class="hljs-number">4</span>), <span class="hljs-number">10</span>)
+array15
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[10, 10, 10, 10],
+       [10, 10, 10, 10],
+       [10, 10, 10, 10]])
+</code></pre><p>&#x65B9;&#x6CD5;&#x4E5D;&#xFF1A;&#x4F7F;&#x7528;<code>eye</code>&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x5355;&#x4F4D;&#x77E9;&#x9635;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">np.eye(<span class="hljs-number">4</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[1., 0., 0., 0.],
+       [0., 1., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 0., 0., 1.]])
+</code></pre><p>&#x65B9;&#x6CD5;&#x5341;&#xFF1A;&#x8BFB;&#x53D6;&#x56FE;&#x7247;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x7684;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array16 = plt.imread(<span class="hljs-string">&apos;res/guido.jpg&apos;</span>)
+array16
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[[ 36,  33,  28],
+        [ 36,  33,  28],
+        [ 36,  33,  28],
+        ...,
+        [ 32,  31,  29],
+        [ 32,  31,  27],
+        [ 31,  32,  26]],
+
+       [[ 37,  34,  29],
+        [ 38,  35,  30],
+        [ 38,  35,  30],
+        ...,
+        [ 31,  30,  28],
+        [ 31,  30,  26],
+        [ 30,  31,  25]],
+
+       [[ 38,  35,  30],
+        [ 38,  35,  30],
+        [ 38,  35,  30],
+        ...,
+        [ 30,  29,  27],
+        [ 30,  29,  25],
+        [ 29,  30,  25]],
+
+       ...,
+
+       [[239, 178, 123],
+        [237, 176, 121],
+        [235, 174, 119],
+        ...,
+        [ 78,  68,  56],
+        [ 75,  67,  54],
+        [ 73,  65,  52]],
+
+       [[238, 177, 120],
+        [236, 175, 118],
+        [234, 173, 116],
+        ...,
+        [ 82,  70,  58],
+        [ 78,  68,  56],
+        [ 75,  66,  51]],
+
+       [[238, 176, 119],
+        [236, 175, 118],
+        [234, 173, 116],
+        ...,
+        [ 84,  70,  61],
+        [ 81,  69,  57],
+        [ 79,  67,  53]]], dtype=uint8)
+</code></pre><blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x8BFB;&#x53D6;&#x4E86;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;<code>res</code>&#x76EE;&#x5F55;&#x4E2D;&#x540D;&#x4E3A;<code>guido.jpg</code> &#x7684;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#xFF0C;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x901A;&#x5E38;&#x7531;&#x82E5;&#x5E72;&#x884C;&#x82E5;&#x5E72;&#x5217;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#x6784;&#x6210;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x70B9;&#x53C8;&#x662F;&#x7531;&#x7EA2;&#x7EFF;&#x84DD;&#x4E09;&#x539F;&#x8272;&#x6784;&#x6210;&#x7684;&#xFF0C;&#x521A;&#x597D;&#x53EF;&#x4EE5;&#x7528;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x6765;&#x8868;&#x793A;&#x3002;&#x8BFB;&#x53D6;&#x56FE;&#x7247;&#x7528;&#x5230;&#x4E86;<code>matplotlib</code>&#x5E93;&#x7684;<code>imread</code>&#x51FD;&#x6570;&#x3002;</p>
+</blockquote>
+<h3 id="&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;">&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</h3>
+<p><code>size</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array17 = np.arange(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">2</span>)
+array18 = np.random.rand(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+print(array16.size)
+print(array17.size)
+print(array18.size)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>1125000
+50
+12
+</code></pre><p><code>shape</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x72B6;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array16.shape)
+print(array17.shape)
+print(array18.shape)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>(750, 500, 3)
+(50,)
+(3, 4)
+</code></pre><p><code>dtype</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array16.dtype)
+print(array17.dtype)
+print(array18.dtype)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>uint8
+int64
+float64
+</code></pre><p><code>ndarray</code>&#x5BF9;&#x8C61;&#x5143;&#x7D20;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x8868;&#x683C;&#x3002;</p>
+<p><img src="res/dtype.jpg" style="zoom:50%;"></p>
+<p><code>ndim</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x7684;&#x7EF4;&#x5EA6;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array16.ndim)
+print(array17.ndim)
+print(array18.ndim)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>3
+1
+2
+</code></pre><p><code>itemsize</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x5355;&#x4E2A;&#x5143;&#x7D20;&#x5360;&#x7528;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array16.itemsize)
+print(array17.itemsize)
+print(array18.itemsize)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>1
+8
+8
+</code></pre><p><code>nbytes</code>&#x5C5E;&#x6027;&#xFF1A;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x6240;&#x6709;&#x5143;&#x7D20;&#x5360;&#x7528;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array16.nbytes)
+print(array17.nbytes)
+print(array18.nbytes)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>1125000
+400
+96
+</code></pre><h3 id="&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x8FD0;&#x7B97;">&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x8FD0;&#x7B97;</h3>
+<p>&#x548C; Python &#x4E2D;&#x7684;&#x5217;&#x8868;&#x7C7B;&#x4F3C;&#xFF0C;NumPy &#x7684;<code>ndarray</code>&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#xFF0C;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6216;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x901A;&#x8FC7;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x53D6;&#x51FA;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x4E5F;&#x79F0;&#x4E3A;&#x5207;&#x7247;&#x7D22;&#x5F15;&#x3002;</p>
+<h4 id="&#x666E;&#x901A;&#x7D22;&#x5F15;">&#x666E;&#x901A;&#x7D22;&#x5F15;</h4>
+<p>&#x7C7B;&#x4F3C;&#x4E8E; Python &#x4E2D;<code>list</code>&#x7C7B;&#x578B;&#x7684;&#x7D22;&#x5F15;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19 = np.arange(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+print(array19[<span class="hljs-number">0</span>], array19[array19.size - <span class="hljs-number">1</span>])
+print(array19[-array20.size], array19[<span class="hljs-number">-1</span>])
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>1 9
+1 9
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20 = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]])
+array20[<span class="hljs-number">2</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([7, 8, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array20[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
+print(array20[<span class="hljs-number">-1</span>][<span class="hljs-number">-1</span>])
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>1
+9
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">print(array20[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>])
+print(array20[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>])
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>5
+5
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>] = <span class="hljs-number">10</span>
+array20
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[ 1,  2,  3],
+       [ 4, 10,  6],
+       [ 7,  8,  9]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[<span class="hljs-number">1</span>] = [<span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>]
+array20
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[ 1,  2,  3],
+       [10, 11, 12],
+       [ 7,  8,  9]])
+</code></pre><h4 id="&#x5207;&#x7247;&#x7D22;&#x5F15;">&#x5207;&#x7247;&#x7D22;&#x5F15;</h4>
+<p>&#x5207;&#x7247;&#x7D22;&#x5F15;&#x662F;&#x5F62;&#x5982;<code>[&#x5F00;&#x59CB;&#x7D22;&#x5F15;:&#x7ED3;&#x675F;&#x7D22;&#x5F15;:&#x8DE8;&#x5EA6;]</code>&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x6307;&#x5B9A;<strong>&#x5F00;&#x59CB;&#x7D22;&#x5F15;</strong>&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#x65E0;&#x7A77;&#x5C0F;&#xFF09;&#x3001;<strong>&#x7ED3;&#x675F;&#x7D22;&#x5F15;</strong>&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#x65E0;&#x7A77;&#x5927;&#xFF09;&#x548C;<strong>&#x8DE8;&#x5EA6;</strong>&#xFF08;&#x9ED8;&#x8BA4;&#x503C;1&#xFF09;&#xFF0C;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x53D6;&#x51FA;&#x6307;&#x5B9A;&#x90E8;&#x5206;&#x7684;&#x5143;&#x7D20;&#x5E76;&#x6784;&#x6210;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x56E0;&#x4E3A;&#x5F00;&#x59CB;&#x7D22;&#x5F15;&#x3001;&#x7ED3;&#x675F;&#x7D22;&#x5F15;&#x548C;&#x6B65;&#x957F;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x6B65;&#x957F;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5192;&#x53F7;&#x4E5F;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x3002;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x5207;&#x7247;&#x8FD0;&#x7B97;&#x8DDF; Python &#x4E2D;&#x7684;<code>list</code>&#x7C7B;&#x578B;&#x7684;&#x5207;&#x7247;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#xFF0C;&#x6B64;&#x5904;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#xFF0C;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x5207;&#x7247;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x76F8;&#x4FE1;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[ 2,  3],
+       [11, 12]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[<span class="hljs-number">2</span>, :]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([7, 8, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[<span class="hljs-number">2</span>:, :]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[7, 8, 9]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[:, :<span class="hljs-number">2</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[ 1,  2],
+       [10, 11],
+       [ 7,  8]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[::<span class="hljs-number">2</span>, ::<span class="hljs-number">2</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[1, 3],
+       [7, 9]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[::<span class="hljs-number">-2</span>, ::<span class="hljs-number">-2</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[9, 7],
+       [3, 1]])
+</code></pre><p>&#x5173;&#x4E8E;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x8FD0;&#x7B97;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x5F20;&#x56FE;&#x6765;&#x589E;&#x5F3A;&#x5370;&#x8C61;&#xFF0C;&#x8FD9;&#x4E24;&#x5F20;&#x56FE;&#x6765;&#x81EA;<a href="https://item.jd.com/12398725.html" target="_blank">&#x300A;&#x5229;&#x7528;Python&#x8FDB;&#x884C;&#x6570;&#x636E;&#x5206;&#x6790;&#x300B;</a>&#x4E00;&#x4E66;&#xFF0C;&#x5B83;&#x662F; pandas &#x5E93;&#x7684;&#x4F5C;&#x8005; Wes McKinney &#x64B0;&#x5199;&#x7684; Python &#x6570;&#x636E;&#x5206;&#x6790;&#x9886;&#x57DF;&#x7684;&#x7ECF;&#x5178;&#x6559;&#x79D1;&#x4E66;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x8D2D;&#x4E70;&#x548C;&#x9605;&#x8BFB;&#x539F;&#x4E66;&#x3002;</p>
+<p>&#x56FE;1&#xFF1A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x666E;&#x901A;&#x7D22;&#x5F15;</p>
+<p><img src="res/ndarray-index.png" style="zoom:60%;"></p>
+<p>&#x56FE;2&#xFF1A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x5207;&#x7247;&#x7D22;&#x5F15;</p>
+<p><img src="res/ndarray-slice.png" style="zoom:60%;"></p>
+<h4 id="&#x82B1;&#x5F0F;&#x7D22;&#x5F15;">&#x82B1;&#x5F0F;&#x7D22;&#x5F15;</h4>
+<p>&#x82B1;&#x5F0F;&#x7D22;&#x5F15;&#x662F;&#x7528;&#x4FDD;&#x5B58;&#x6574;&#x6570;&#x7684;&#x6570;&#x7EC4;&#x5145;&#x5F53;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x8FD9;&#x91CC;&#x6240;&#x8BF4;&#x7684;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x662F; NumPy &#x7684;<code>ndarray</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; Python &#x4E2D;<code>list</code>&#x3001;<code>tuple</code>&#x7B49;&#x53EF;&#x8FED;&#x4EE3;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B63;&#x5411;&#x6216;&#x8D1F;&#x5411;&#x7D22;&#x5F15;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">-1</span>]]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([1, 2, 2, 9, 5, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[[<span class="hljs-number">0</span>, <span class="hljs-number">2</span>]]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([[1, 2, 3],
+       [7, 8, 9]])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[[<span class="hljs-number">0</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([2, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[[<span class="hljs-number">0</span>, <span class="hljs-number">2</span>], <span class="hljs-number">1</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([2, 8])
+</code></pre><h4 id="&#x5E03;&#x5C14;&#x7D22;&#x5F15;">&#x5E03;&#x5C14;&#x7D22;&#x5F15;</h4>
+<p>&#x5E03;&#x5C14;&#x7D22;&#x5F15;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x4FDD;&#x5B58;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x6570;&#x7EC4;&#x5145;&#x5F53;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#x4E3A;<code>True</code>&#x7684;&#x5143;&#x7D20;&#x4FDD;&#x7559;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#x4E3A;<code>False</code>&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x4F1A;&#x88AB;&#x9009;&#x4E2D;&#x3002;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x6784;&#x9020;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x6765;&#x4EA7;&#x751F;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[[<span class="hljs-keyword">True</span>, <span class="hljs-keyword">True</span>, <span class="hljs-keyword">False</span>, <span class="hljs-keyword">False</span>, <span class="hljs-keyword">True</span>, <span class="hljs-keyword">False</span>, <span class="hljs-keyword">False</span>, <span class="hljs-keyword">True</span>, <span class="hljs-keyword">True</span>]]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([1, 2, 5, 8, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19 &gt; <span class="hljs-number">5</span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([False, False, False, False, False,  True,  True,  True,  True])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">~(array19 &gt; <span class="hljs-number">5</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([ True,  True,  True,  True,  True, False, False, False, False])
+</code></pre><blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>~</code>&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x5BF9;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x53D6;&#x53CD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x539F;&#x6765;&#x7684;<code>True</code>&#x4F1A;&#x53D8;&#x6210;<code>False</code>&#xFF0C;&#x539F;&#x6765;&#x7684;<code>False</code>&#x4F1A;&#x53D8;&#x6210;<code>True</code>&#x3002;</p>
+</blockquote>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[array20 &gt; <span class="hljs-number">5</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([6, 7, 8, 9])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([False,  True, False,  True, False,  True, False,  True, False])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[array20 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([2, 4, 6, 8])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">(array19 &gt; <span class="hljs-number">5</span>) &amp; (array19 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([False, False, False, False, False,  True, False,  True, False])
+</code></pre><blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>&amp;</code>&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x4E24;&#x4E2A;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x90FD;&#x662F;<code>True</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;<code>True</code>&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x662F;<code>False</code>&#xFF0C;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD0;&#x7B97;&#x89C4;&#x5219;&#x7C7B;&#x4F3C;&#x4E8E; Python &#x4E2D;&#x7684; <code>and</code> &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x4F5C;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x4E24;&#x4E2A;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#x3002;</p>
+</blockquote>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[(array19 &gt; <span class="hljs-number">5</span>) &amp; (array19 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([6, 8])
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array19[(array19 &gt; <span class="hljs-number">5</span>) | (array19 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([2, 4, 6, 7, 8, 9])
+</code></pre><blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>|</code>&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x4E24;&#x4E2A;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x90FD;&#x662F;<code>False</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;<code>False</code>&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x662F;<code>True</code>&#xFF0C;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD0;&#x7B97;&#x89C4;&#x5219;&#x7C7B;&#x4F3C;&#x4E8E; Python &#x4E2D;&#x7684; <code>or</code> &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x4F5C;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x4E24;&#x4E2A;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#x3002;</p>
+</blockquote>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Python">array20[array21 % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>]
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>array([1, 3, 5, 7, 9])
+</code></pre><p>&#x5173;&#x4E8E;&#x7D22;&#x5F15;&#x8FD0;&#x7B97;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;&#x5207;&#x7247;&#x7D22;&#x5F15;&#x867D;&#x7136;&#x521B;&#x5EFA;&#x4E86;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#x65B0;&#x6570;&#x7EC4;&#x548C;&#x539F;&#x6570;&#x7EC4;&#x5171;&#x4EAB;&#x4E86;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#xFF0C;&#x65E0;&#x8BBA;&#x4F60;&#x901A;&#x8FC7;&#x65B0;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x6216;&#x539F;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4FEE;&#x6539;&#x7684;&#x5176;&#x5B9E;&#x662F;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x540C;&#x4E00;&#x5757;&#x6570;&#x636E;&#x3002;&#x82B1;&#x5F0F;&#x7D22;&#x5F15;&#x548C;&#x5E03;&#x5C14;&#x7D22;&#x5F15;&#x4E5F;&#x4F1A;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E14;&#x65B0;&#x6570;&#x7EC4;&#x590D;&#x5236;&#x4E86;&#x539F;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x65B0;&#x6570;&#x7EC4;&#x548C;&#x539F;&#x6570;&#x7EC4;&#x5E76;&#x4E0D;&#x662F;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;<code>base</code>&#x5C5E;&#x6027;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x63A2;&#x7D22;&#x3002;</p>
+<h3 id="&#x6848;&#x4F8B;&#xFF1A;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x5207;&#x7247;&#x5904;&#x7406;&#x56FE;&#x50CF;">&#x6848;&#x4F8B;&#xFF1A;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x5207;&#x7247;&#x5904;&#x7406;&#x56FE;&#x50CF;</h3>
+<p>&#x5B66;&#x4E60;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x603B;&#x662F;&#x6BD4;&#x8F83;&#x67AF;&#x71E5;&#x4E14;&#x6CA1;&#x6709;&#x6210;&#x5C31;&#x611F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x6765;&#x4E2A;&#x6848;&#x4F8B;&#x4E3A;&#x5927;&#x5BB6;&#x6F14;&#x793A;&#x4E0B;&#x4E0A;&#x9762;&#x5B66;&#x4E60;&#x7684;&#x6570;&#x7EC4;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x5230;&#x5E95;&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x3002;&#x524D;&#x9762;&#x6211;&#x4EEC;&#x8BF4;&#x5230;&#x8FC7;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x6765;&#x8868;&#x793A;&#x56FE;&#x50CF;&#xFF0C;&#x90A3;&#x4E48;&#x901A;&#x8FC7;&#x56FE;&#x50CF;&#x5BF9;&#x5E94;&#x7684;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BF9;&#x56FE;&#x50CF;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<p>&#x8BFB;&#x5165;&#x56FE;&#x7247;&#x521B;&#x5EFA;&#x4E09;&#x7EF4;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-Python">guido_image = plt.imread(<span class="hljs-string">&apos;guido.jpg&apos;</span>)
+plt.imshow(guido_image)
+</code></pre>
+<p><img src="res/guido_slice_1.png" style="zoom:65%;"></p>
+<p>&#x5BF9;&#x6570;&#x7EC4;&#x7684;0&#x8F74;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x5207;&#x7247;&#xFF0C;&#x5B9E;&#x73B0;&#x56FE;&#x50CF;&#x7684;&#x5782;&#x76F4;&#x7FFB;&#x8F6C;&#x3002;</p>
+<pre><code class="lang-Python">plt.imshow(guido_image[::<span class="hljs-number">-1</span>])
+</code></pre>
+<p><img src="res/guido_slice_2.png" style="zoom:65%;"></p>
+<p>&#x5BF9;&#x6570;&#x7EC4;&#x7684;1&#x8F74;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x5207;&#x7247;&#xFF0C;&#x5B9E;&#x73B0;&#x56FE;&#x50CF;&#x7684;&#x6C34;&#x5E73;&#x7FFB;&#x8F6C;&#x3002;</p>
+<pre><code class="lang-Python">plt.imshow(guido_image[:,::<span class="hljs-number">-1</span>])
+</code></pre>
+<p><img src="res/guido_slice_3.png" style="zoom:65%;"></p>
+<p>&#x901A;&#x8FC7;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x5B9E;&#x73B0;&#x62A0;&#x56FE;&#xFF0C;&#x5C06;&#x5409;&#x591A;&#x5927;&#x53D4;&#x7684;&#x5934;&#x62A0;&#x51FA;&#x6765;&#x3002;</p>
+<pre><code class="lang-Python">plt.imshow(guido_image[<span class="hljs-number">30</span>:<span class="hljs-number">350</span>, <span class="hljs-number">90</span>:<span class="hljs-number">300</span>])
+</code></pre>
+<p><img src="res/guido_slice_4.png" style="zoom:65%;"></p>
+<p>&#x901A;&#x8FC7;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x5B9E;&#x73B0;&#x964D;&#x91C7;&#x6837;&#x3002;</p>
+<pre><code class="lang-Python">plt.imshow(guido_image[::<span class="hljs-number">10</span>, ::<span class="hljs-number">10</span>])
+</code></pre>
+<p><img src="res/guido_slice_5.png" style="zoom:65%;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="67.环境准备.html" class="navigation navigation-prev " aria-label="Previous page: 67.环境准备">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="69.NumPy的应用-2.html" class="navigation navigation-next " aria-label="Next page: 69.NumPy的应用-2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"68.NumPy的应用-1","level":"1.9.3","depth":2,"next":{"title":"69.NumPy的应用-2","level":"1.9.4","depth":2,"path":"Day66-80/69.NumPy的应用-2.md","ref":"Day66-80/69.NumPy的应用-2.md","articles":[]},"previous":{"title":"67.环境准备","level":"1.9.2","depth":2,"path":"Day66-80/67.环境准备.md","ref":"Day66-80/67.环境准备.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day66-80/68.NumPy的应用-1.md","mtime":"2024-07-05T03:42:45.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

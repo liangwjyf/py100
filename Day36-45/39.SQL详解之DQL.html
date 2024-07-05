@@ -1,0 +1,2389 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>39.SQL详解之DQL · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="40.SQL详解之DCL.html" />
+    
+    
+    <link rel="prev" href="38.SQL详解之DML.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="36.关系型数据库和MySQL概述.html">
+            
+                <a href="36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="37.SQL详解之DDL.html">
+            
+                <a href="37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="38.SQL详解之DML.html">
+            
+                <a href="38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4" data-path="39.SQL详解之DQL.html">
+            
+                <a href="39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="40.SQL详解之DCL.html">
+            
+                <a href="40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="41.MySQL新特性.html">
+            
+                <a href="41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="42.视图、函数和过程.html">
+            
+                <a href="42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="43.索引.html">
+            
+                <a href="43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="44.Python接入MySQL数据库.html">
+            
+                <a href="44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="45.大数据平台和HiveSQL.html">
+            
+                <a href="45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
+            
+                <a href="../Day46-60/46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
+            
+                <a href="../Day46-60/47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                <a href="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
+            
+                <a href="../Day46-60/49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
+            
+                <a href="../Day46-60/50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
+            
+                <a href="../Day46-60/51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
+            
+                <a href="../Day46-60/52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
+            
+                <a href="../Day46-60/53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
+            
+                <a href="../Day46-60/56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
+            
+                <a href="../Day46-60/57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
+            
+                <a href="../Day46-60/58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
+            
+                <a href="../Day46-60/59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
+            
+                <a href="../Day46-60/60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
+            
+                <a href="../Day91-100/100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
+            
+                <a href="../Day91-100/92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
+            
+                <a href="../Day91-100/93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
+            
+                <a href="../Day91-100/94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
+            
+                <a href="../Day91-100/95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
+            
+                <a href="../Day91-100/96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                <a href="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                <a href="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
+            
+                <a href="../Day91-100/99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >39.SQL详解之DQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="sql&#x8BE6;&#x89E3;&#x4E4B;dql">SQL&#x8BE6;&#x89E3;&#x4E4B;DQL</h2>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x5B66;&#x6821;&#x9009;&#x8BFE;&#x7CFB;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4E3A;&#x5927;&#x5BB6;&#x8BB2;&#x89E3; DML &#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x3002;&#x65E0;&#x8BBA;&#x5BF9;&#x4E8E;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x8FD8;&#x662F;&#x6570;&#x636E;&#x5206;&#x6790;&#x5E08;&#xFF0C;&#x67E5;&#x8BE2;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5B83;&#x5173;&#x7CFB;&#x7740;&#x6211;&#x4EEC;&#x80FD;&#x5426;&#x4ECE;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x628A;&#x4E0A;&#x4E0A;&#x4E00;&#x8282;&#x8BFE;&#x4E2D;&#x5EFA;&#x5E93;&#x5EFA;&#x8868;&#x7684; DDL &#x4EE5;&#x53CA; &#x4E0A;&#x4E00;&#x8282;&#x8BFE;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684; DML &#x91CD;&#x65B0;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x786E;&#x4FDD;&#x8868;&#x548C;&#x6570;&#x636E;&#x8DDF;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x518D;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">USE</span> school;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;</span>
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name,
+       stu_sex,
+       stu_birth,
+       stu_addr,
+       col_id
+  <span class="hljs-keyword">FROM</span> tb_student;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x548C;&#x7C4D;&#x8D2F;(&#x6295;&#x5F71;&#x548C;&#x522B;&#x540D;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id <span class="hljs-keyword">AS</span> &#x5B66;&#x53F7;,
+       stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;,
+       stu_addr <span class="hljs-keyword">AS</span> &#x7C4D;&#x8D2F;
+  <span class="hljs-keyword">FROM</span> tb_student;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x8BFE;&#x7A0B;&#x7684;&#x540D;&#x79F0;&#x53CA;&#x5B66;&#x5206;(&#x6295;&#x5F71;&#x548C;&#x522B;&#x540D;)</span>
+<span class="hljs-keyword">SELECT</span> cou_name <span class="hljs-keyword">AS</span> &#x8BFE;&#x7A0B;&#x540D;&#x79F0;,
+       cou_credit <span class="hljs-keyword">AS</span> &#x5B66;&#x5206;
+  <span class="hljs-keyword">FROM</span> tb_course;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5973;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x51FA;&#x751F;&#x65E5;&#x671F;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_sex = <span class="hljs-number">0</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x7C4D;&#x8D2F;&#x4E3A;&#x201C;&#x56DB;&#x5DDD;&#x6210;&#x90FD;&#x201D;&#x7684;&#x5973;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x51FA;&#x751F;&#x65E5;&#x671F;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_sex = <span class="hljs-number">0</span>
+       <span class="hljs-keyword">AND</span> stu_addr = <span class="hljs-string">&apos;&#x56DB;&#x5DDD;&#x6210;&#x90FD;&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x7C4D;&#x8D2F;&#x4E3A;&#x201C;&#x56DB;&#x5DDD;&#x6210;&#x90FD;&#x201D;&#x6216;&#x8005;&#x6027;&#x522B;&#x662F;&#x5973;&#x7684;&#x5B66;&#x751F;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_sex = <span class="hljs-number">0</span>
+       <span class="hljs-keyword">OR</span> stu_addr = <span class="hljs-string">&apos;&#x56DB;&#x5DDD;&#x6210;&#x90FD;&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6240;&#x6709;80&#x540E;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x6027;&#x522B;&#x548C;&#x51FA;&#x751F;&#x65E5;&#x671F;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_sex,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> <span class="hljs-string">&apos;1980-1-1&apos;</span> &lt;= stu_birth 
+       <span class="hljs-keyword">AND</span> stu_birth &lt;= <span class="hljs-string">&apos;1989-12-31&apos;</span>;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_sex,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_birth <span class="hljs-keyword">BETWEEN</span> <span class="hljs-string">&apos;1980-1-1&apos;</span> <span class="hljs-keyword">AND</span> <span class="hljs-string">&apos;1989-12-31&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x5206;&#x5927;&#x4E8E;2&#x7684;&#x8BFE;&#x7A0B;&#x7684;&#x540D;&#x79F0;&#x548C;&#x5B66;&#x5206;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> cou_name,
+       cou_credit
+  <span class="hljs-keyword">FROM</span> tb_course
+ <span class="hljs-keyword">WHERE</span> cou_credit &gt; <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x5206;&#x662F;&#x5947;&#x6570;&#x7684;&#x8BFE;&#x7A0B;&#x7684;&#x540D;&#x79F0;&#x548C;&#x5B66;&#x5206;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> cou_name,
+       cou_credit
+  <span class="hljs-keyword">FROM</span> tb_course
+ <span class="hljs-keyword">WHERE</span> cou_credit <span class="hljs-keyword">MOD</span> <span class="hljs-number">2</span> &lt;&gt; <span class="hljs-number">0</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x9009;&#x62E9;&#x9009;&#x4E86;1111&#x7684;&#x8BFE;&#x7A0B;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x5728;90&#x5206;&#x4EE5;&#x4E0A;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">WHERE</span> cou_id = <span class="hljs-number">1111</span>
+       <span class="hljs-keyword">AND</span> score &gt; <span class="hljs-number">90</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x53EB;&#x201C;&#x6768;&#x8FC7;&#x201D;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;(&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;, 
+       <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name = <span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>;
+
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;, 
+       <span class="hljs-keyword">IF</span>(stu_sex, <span class="hljs-string">&apos;&#x7537;&apos;</span>, <span class="hljs-string">&apos;&#x5973;&apos;</span>) <span class="hljs-keyword">AS</span> &#x6027;&#x522B;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name = <span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x59D3;&#x201C;&#x6768;&#x201D;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;(&#x6A21;&#x7CCA;&#x5339;&#x914D;)</span>
+<span class="hljs-comment">-- &#x901A;&#x914D;&#x7B26; % &#x5339;&#x914D;&#x96F6;&#x4E2A;&#x6216;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x5B57;&#x7B26;</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;, 
+       <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;&#x6768;%&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x59D3;&#x201C;&#x6768;&#x201D;&#x540D;&#x5B57;&#x4E24;&#x4E2A;&#x5B57;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;(&#x6A21;&#x7CCA;&#x5339;&#x914D;)</span>
+<span class="hljs-comment">-- &#x901A;&#x8FC7;&#x7B26; _ &#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;, 
+       <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;&#x6768;_&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x59D3;&#x201C;&#x6768;&#x201D;&#x540D;&#x5B57;&#x4E09;&#x4E2A;&#x5B57;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;(&#x6A21;&#x7CCA;&#x5339;&#x914D;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;, 
+       <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;&#x6768;__&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x53F7;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x662F;3&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;(&#x6A21;&#x7CCA;&#x5339;&#x914D;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_id <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;%3&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x4E2D;&#x6709;&#x201C;&#x4E0D;&#x201D;&#x5B57;&#x6216;&#x201C;&#x5AE3;&#x201D;&#x5B57;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;(&#x6A21;&#x7CCA;&#x5339;&#x914D;&#x548C;&#x5E76;&#x96C6;&#x8FD0;&#x7B97;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;%&#x4E0D;%&apos;</span>
+       <span class="hljs-keyword">OR</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;%&#x5AE3;%&apos;</span>;
+
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;%&#x4E0D;%&apos;</span>
+ <span class="hljs-keyword">UNION</span>
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;%&#x5AE3;%&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x59D3;&#x201C;&#x6768;&#x201D;&#x6216;&#x59D3;&#x201C;&#x6797;&#x201D;&#x540D;&#x5B57;&#x4E09;&#x4E2A;&#x5B57;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;(&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6A21;&#x7CCA;&#x5339;&#x914D;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id,
+       stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_name REGEXP <span class="hljs-string">&apos;[&#x6797;&#x6768;][\\u4e00-\\u9fa5]{2}&apos;</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x5F55;&#x5165;&#x7C4D;&#x8D2F;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;(&#x7A7A;&#x503C;&#x5904;&#x7406;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">TRIM</span>(stu_addr) = <span class="hljs-string">&apos;&apos;</span>
+       <span class="hljs-keyword">OR</span> stu_addr <span class="hljs-keyword">is</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5F55;&#x5165;&#x4E86;&#x7C4D;&#x8D2F;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;(&#x7A7A;&#x503C;&#x5904;&#x7406;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">TRIM</span>(stu_addr) &lt;&gt; <span class="hljs-string">&apos;&apos;</span>
+       <span class="hljs-keyword">AND</span> stu_addr <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x9009;&#x8BFE;&#x7684;&#x6240;&#x6709;&#x65E5;&#x671F;(&#x53BB;&#x91CD;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> sel_date
+  <span class="hljs-keyword">FROM</span> tb_record;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x7684;&#x7C4D;&#x8D2F;(&#x53BB;&#x91CD;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> stu_addr
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">TRIM</span>(stu_addr) &lt;&gt; <span class="hljs-string">&apos;&apos;</span>
+       <span class="hljs-keyword">AND</span> stu_addr <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x7537;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x751F;&#x65E5;&#x6309;&#x5E74;&#x9F84;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5217;(&#x6392;&#x5E8F;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_sex = <span class="hljs-number">1</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> stu_birth <span class="hljs-keyword">ASC</span>;
+
+<span class="hljs-comment">-- &#x8865;&#x5145;&#xFF1A;&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x751F;&#x65E5;&#x6362;&#x7B97;&#x6210;&#x5E74;&#x9F84;(&#x65E5;&#x671F;&#x51FD;&#x6570;&#x3001;&#x6570;&#x503C;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;,
+       <span class="hljs-keyword">FLOOR</span>(<span class="hljs-keyword">DATEDIFF</span>(<span class="hljs-keyword">CURDATE</span>(), stu_birth) / <span class="hljs-number">365</span>) <span class="hljs-keyword">AS</span> &#x5E74;&#x9F84;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_sex = <span class="hljs-number">1</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> &#x5E74;&#x9F84; <span class="hljs-keyword">DESC</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x6700;&#x5927;&#x7684;&#x5B66;&#x751F;&#x7684;&#x51FA;&#x751F;&#x65E5;&#x671F;(&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">MIN</span>(stu_birth)
+  <span class="hljs-keyword">FROM</span> tb_student;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x6700;&#x5C0F;&#x7684;&#x5B66;&#x751F;&#x7684;&#x51FA;&#x751F;&#x65E5;&#x671F;(&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">MAX</span>(stu_birth)
+  <span class="hljs-keyword">FROM</span> tb_student;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x7F16;&#x53F7;&#x4E3A;1111&#x7684;&#x8BFE;&#x7A0B;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x7684;&#x6700;&#x9AD8;&#x5206;(&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">MAX</span>(score)
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">WHERE</span> cou_id = <span class="hljs-number">1111</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x53F7;&#x4E3A;1001&#x7684;&#x5B66;&#x751F;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x7684;&#x6700;&#x4F4E;&#x5206;&#x3001;&#x6700;&#x9AD8;&#x5206;&#x3001;&#x5E73;&#x5747;&#x5206;&#x3001;&#x6807;&#x51C6;&#x5DEE;&#x3001;&#x65B9;&#x5DEE;(&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">MIN</span>(score) <span class="hljs-keyword">AS</span> &#x6700;&#x4F4E;&#x5206;,
+       <span class="hljs-keyword">MAX</span>(score) <span class="hljs-keyword">AS</span> &#x6700;&#x9AD8;&#x5206;,
+       <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">AVG</span>(score), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> &#x5E73;&#x5747;&#x5206;,
+       <span class="hljs-keyword">STDDEV</span>(score) <span class="hljs-keyword">AS</span> &#x6807;&#x51C6;&#x5DEE;,
+       <span class="hljs-keyword">VARIANCE</span>(score) <span class="hljs-keyword">AS</span> &#x65B9;&#x5DEE;
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">WHERE</span> stu_id = <span class="hljs-number">1001</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x53F7;&#x4E3A;1001&#x7684;&#x5B66;&#x751F;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x7684;&#x5E73;&#x5747;&#x5206;&#xFF0C;&#x5982;&#x679C;&#x6709;null&#x503C;&#xFF0C;null&#x503C;&#x7B97;0&#x5206;(&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">SUM</span>(score) / <span class="hljs-keyword">COUNT</span>(*), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> &#x5E73;&#x5747;&#x5206;
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">WHERE</span> stu_id = <span class="hljs-number">1001</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x7537;&#x5973;&#x5B66;&#x751F;&#x7684;&#x4EBA;&#x6570;(&#x5206;&#x7EC4;&#x548C;&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;,
+       <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> &#x4EBA;&#x6570;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_sex;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x9662;&#x5B66;&#x751F;&#x4EBA;&#x6570;(&#x5206;&#x7EC4;&#x548C;&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> col_id <span class="hljs-keyword">AS</span> &#x5B66;&#x9662;&#x7F16;&#x53F7;,
+       <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> &#x4EBA;&#x6570;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> col_id
+  <span class="hljs-keyword">WITH</span> <span class="hljs-keyword">ROLLUP</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x9662;&#x7537;&#x5973;&#x5B66;&#x751F;&#x4EBA;&#x6570;(&#x5206;&#x7EC4;&#x548C;&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> col_id <span class="hljs-keyword">AS</span> &#x5B66;&#x9662;&#x7F16;&#x53F7;,
+       <span class="hljs-keyword">CASE</span> stu_sex <span class="hljs-keyword">WHEN</span> <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span> <span class="hljs-string">&apos;&#x7537;&apos;</span> <span class="hljs-keyword">ELSE</span> <span class="hljs-string">&apos;&#x5973;&apos;</span> <span class="hljs-keyword">END</span> <span class="hljs-keyword">AS</span> &#x6027;&#x522B;,
+       <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> &#x4EBA;&#x6570;
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> col_id, stu_sex;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;(&#x5206;&#x7EC4;&#x548C;&#x805A;&#x5408;&#x51FD;&#x6570;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id <span class="hljs-keyword">AS</span> &#x5B66;&#x53F7;,
+       <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">AVG</span>(score), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> &#x5E73;&#x5747;&#x5206;
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5E73;&#x5747;&#x6210;&#x7EE9;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;90&#x5206;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;(&#x5206;&#x7EC4;&#x540E;&#x7684;&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id <span class="hljs-keyword">AS</span> &#x5B66;&#x53F7;,
+       <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">AVG</span>(score), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> &#x5E73;&#x5747;&#x5206;
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id
+<span class="hljs-keyword">HAVING</span> &#x5E73;&#x5747;&#x5206; &gt;= <span class="hljs-number">90</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;1111&#x3001;2222&#x3001;3333&#x4E09;&#x95E8;&#x8BFE;&#x7A0B;&#x5E73;&#x5747;&#x6210;&#x7EE9;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;90&#x5206;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;(&#x5206;&#x7EC4;&#x524D;&#x540E;&#x7684;&#x6570;&#x636E;&#x7B5B;&#x9009;)</span>
+<span class="hljs-keyword">SELECT</span> stu_id <span class="hljs-keyword">AS</span> &#x5B66;&#x53F7;,
+       <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">AVG</span>(score), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> &#x5E73;&#x5747;&#x5206;
+  <span class="hljs-keyword">FROM</span> tb_record
+ <span class="hljs-keyword">WHERE</span> cou_id <span class="hljs-keyword">in</span> (<span class="hljs-number">1111</span>, <span class="hljs-number">2222</span>, <span class="hljs-number">3333</span>)
+ <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id
+<span class="hljs-keyword">HAVING</span> &#x5E73;&#x5747;&#x5206; &gt;= <span class="hljs-number">90</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> &#x5E73;&#x5747;&#x5206; <span class="hljs-keyword">ASC</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x6700;&#x5927;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;(&#x5B50;&#x67E5;&#x8BE2;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_birth = (<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">MIN</span>(stu_birth)
+                      <span class="hljs-keyword">FROM</span> tb_student);
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x9009;&#x4E86;&#x4E24;&#x95E8;&#x4EE5;&#x4E0A;&#x7684;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;(&#x5B50;&#x67E5;&#x8BE2;&#x548C;&#x96C6;&#x5408;&#x8FD0;&#x7B97;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name
+  <span class="hljs-keyword">FROM</span> tb_student
+ <span class="hljs-keyword">WHERE</span> stu_id <span class="hljs-keyword">in</span> (<span class="hljs-keyword">SELECT</span> stu_id
+                    <span class="hljs-keyword">FROM</span> tb_record
+                   <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id
+                  <span class="hljs-keyword">HAVING</span> <span class="hljs-keyword">COUNT</span>(*) &gt; <span class="hljs-number">2</span>);
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x751F;&#x65E5;&#x548C;&#x6240;&#x5728;&#x5B66;&#x9662;&#x540D;&#x79F0;(&#x8868;&#x8FDE;&#x63A5;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth,
+       col_name
+  <span class="hljs-keyword">FROM</span> tb_student <span class="hljs-keyword">AS</span> t1, tb_college <span class="hljs-keyword">AS</span> t2
+ <span class="hljs-keyword">WHERE</span> t1.col_id = t2.col_id;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth,
+       col_name
+  <span class="hljs-keyword">FROM</span> tb_student <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> tb_college
+       <span class="hljs-keyword">ON</span> tb_student.col_id = tb_college.col_id;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth,
+       col_name
+  <span class="hljs-keyword">FROM</span> tb_student <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_college;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       stu_birth,
+       col_name
+  <span class="hljs-keyword">FROM</span> tb_student <span class="hljs-keyword">CROSS</span> <span class="hljs-keyword">JOIN</span> tb_college;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x3001;&#x8BFE;&#x7A0B;&#x540D;&#x79F0;&#x4EE5;&#x53CA;&#x6210;&#x7EE9;(&#x8868;&#x8FDE;&#x63A5;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student, tb_course, tb_record
+ <span class="hljs-keyword">WHERE</span> tb_student.stu_id = tb_record.stu_id
+       <span class="hljs-keyword">AND</span> tb_course.cou_id = tb_record.cou_id
+       <span class="hljs-keyword">AND</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student 
+       <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> tb_record
+           <span class="hljs-keyword">ON</span> tb_student.stu_id = tb_record.stu_id
+       <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> tb_course
+           <span class="hljs-keyword">ON</span> tb_course.cou_id = tb_record.cou_id
+ <span class="hljs-keyword">WHERE</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student 
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_record
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_course
+ <span class="hljs-keyword">WHERE</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">-- &#x8865;&#x5145;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x53D6;&#x524D;5&#x6761;&#x6570;&#x636E;(&#x5206;&#x9875;&#x67E5;&#x8BE2;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student 
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_record
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_course
+ <span class="hljs-keyword">WHERE</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> cou_id <span class="hljs-keyword">ASC</span>, score <span class="hljs-keyword">DESC</span>
+ <span class="hljs-keyword">LIMIT</span> <span class="hljs-number">5</span>;
+
+<span class="hljs-comment">-- &#x8865;&#x5145;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x53D6;&#x7B2C;6-10&#x6761;&#x6570;&#x636E;(&#x5206;&#x9875;&#x67E5;&#x8BE2;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student 
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_record
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_course
+ <span class="hljs-keyword">WHERE</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> cou_id <span class="hljs-keyword">ASC</span>, score <span class="hljs-keyword">DESC</span>
+ <span class="hljs-keyword">LIMIT</span> <span class="hljs-number">5</span>
+<span class="hljs-keyword">OFFSET</span> <span class="hljs-number">5</span>;
+
+<span class="hljs-comment">-- &#x8865;&#x5145;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x53D6;&#x7B2C;11-15&#x6761;&#x6570;&#x636E;(&#x5206;&#x9875;&#x67E5;&#x8BE2;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       cou_name,
+       score
+  <span class="hljs-keyword">FROM</span> tb_student 
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_record
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> tb_course
+ <span class="hljs-keyword">WHERE</span> score <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>
+ <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> cou_id <span class="hljs-keyword">ASC</span>, score <span class="hljs-keyword">DESC</span>
+ <span class="hljs-keyword">LIMIT</span> <span class="hljs-number">10</span>, <span class="hljs-number">5</span>;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x9009;&#x8BFE;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;(&#x5B50;&#x67E5;&#x8BE2;&#x548C;&#x8868;&#x8FDE;&#x63A5;)</span>
+<span class="hljs-comment">-- Error Code: 1248. Every derived table must have its own alias</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       avg_score
+  <span class="hljs-keyword">FROM</span> tb_student
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> (<span class="hljs-keyword">SELECT</span> stu_id,
+                            <span class="hljs-keyword">ROUND</span>(<span class="hljs-keyword">AVG</span>(score), <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> avg_score
+                       <span class="hljs-keyword">FROM</span> tb_record
+                      <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id) <span class="hljs-keyword">as</span> tmp;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x9009;&#x8BFE;&#x7684;&#x6570;&#x91CF;(&#x5B50;&#x67E5;&#x8BE2;&#x548C;&#x8868;&#x8FDE;&#x63A5;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name,
+       total
+  <span class="hljs-keyword">FROM</span> tb_student
+       <span class="hljs-keyword">NATURAL</span> <span class="hljs-keyword">JOIN</span> (<span class="hljs-keyword">SELECT</span> stu_id,
+                            <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> total
+                       <span class="hljs-keyword">FROM</span> tb_record
+                      <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id) <span class="hljs-keyword">as</span> tmp;
+
+<span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x9009;&#x8BFE;&#x6570;&#x91CF;(&#x5B50;&#x67E5;&#x8BE2;&#x548C;&#x5DE6;&#x5916;&#x8FDE;&#x63A5;)</span>
+<span class="hljs-keyword">SELECT</span> stu_name <span class="hljs-keyword">AS</span> &#x59D3;&#x540D;,
+       <span class="hljs-keyword">COALESCE</span>(total, <span class="hljs-number">0</span>) <span class="hljs-keyword">AS</span> &#x9009;&#x8BFE;&#x6570;&#x91CF;
+  <span class="hljs-keyword">FROM</span> tb_student <span class="hljs-keyword">AS</span> t1
+       <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> (<span class="hljs-keyword">SELECT</span> stu_id,
+                         <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> total
+                    <span class="hljs-keyword">FROM</span> tb_record
+                   <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> stu_id) <span class="hljs-keyword">AS</span> t2
+           <span class="hljs-keyword">ON</span> t1.stu_id = t2.stu_id;
+</code></pre>
+<p>&#x6709;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x9700;&#x8981;&#x52A0;&#x4EE5;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ol>
+<li><p>MySQL&#x76EE;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x5168;&#x5916;&#x8FDE;&#x63A5;&#xFF0C;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>union</code>&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x5DE6;&#x5916;&#x8FDE;&#x63A5;&#x548C;&#x53F3;&#x5916;&#x8FDE;&#x63A5;&#x7684;&#x7ED3;&#x679C;&#x6C42;&#x5E76;&#x96C6;&#x5B9E;&#x73B0;&#x5168;&#x5916;&#x8FDE;&#x63A5;&#x7684;&#x6548;&#x679C;&#x3002;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x56FE;&#x6765;&#x52A0;&#x6DF1;&#x5BF9;&#x8FDE;&#x8868;&#x64CD;&#x4F5C;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
+<p><img src="http://localhost/mypic/20211121135117.png" style="zoom:50%"></p>
+</li>
+<li><p>MySQL &#x4E2D;&#x652F;&#x6301;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;<code>+</code>&#x3001;<code>-</code>&#x3001;<code>*</code>&#x3001;<code>/</code>&#x3001;<code>%</code>&#xFF09;&#x3001;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;<code>=</code>&#x3001;<code>&lt;&gt;</code>&#x3001;<code>&lt;=&gt;</code>&#x3001;<code>&lt;</code>&#x3001;<code>&lt;=</code>&#x3001;<code>&gt;</code>&#x3001;<code>&gt;=</code>&#x3001;<code>BETWEEN...AND..</code>.&#x3001;<code>IN</code>&#x3001;<code>IS NULL</code>&#x3001;<code>IS NOT NULL</code>&#x3001;<code>LIKE</code>&#x3001;<code>RLIKE</code>&#x3001;<code>REGEXP</code>&#xFF09;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;<code>NOT</code>&#x3001;<code>AND</code>&#x3001;<code>OR</code>&#x3001;<code>XOR</code>&#xFF09;&#x548C;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;<code>&amp;</code>&#x3001;<code>|</code>&#x3001;<code>^</code>&#x3001;<code>~</code>&#x3001;<code>&gt;&gt;</code>&#x3001;<code>&lt;&lt;</code>&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; DML &#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002;</p>
+</li>
+<li><p>&#x5728;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>SELECT</code>&#x8BED;&#x53E5;&#x53CA;&#x5176;&#x5B50;&#x53E5;&#xFF08;&#x5982;<code>WHERE</code>&#x5B50;&#x53E5;&#x3001;<code>ORDER BY</code>&#x5B50;&#x53E5;&#x3001;<code>HAVING</code>&#x5B50;&#x53E5;&#x7B49;&#xFF09;&#x4E2D;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5305;&#x62EC;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;&#x3001;&#x6570;&#x503C;&#x51FD;&#x6570;&#x3001;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x51FD;&#x6570;&#x3001;&#x6D41;&#x7A0B;&#x51FD;&#x6570;&#x7B49;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x6240;&#x793A;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;&#x3002;</p>
+<p>| &#x51FD;&#x6570;                        | &#x529F;&#x80FD;                                                  |
+| --------------------------- | ----------------------------------------------------- |
+| <code>CONCAT</code>                    | &#x5C06;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;                          |
+| <code>FORMAT</code>                    | &#x5C06;&#x6570;&#x503C;&#x683C;&#x5F0F;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x6307;&#x5B9A;&#x4FDD;&#x7559;&#x51E0;&#x4F4D;&#x5C0F;&#x6570;                |
+| <code>FROM_BASE64</code> / <code>TO_BASE64</code> | BASE64&#x89E3;&#x7801;/&#x7F16;&#x7801;                                       |
+| <code>BIN</code> / <code>OCT</code> / <code>HEX</code>       | &#x5C06;&#x6570;&#x503C;&#x8F6C;&#x6362;&#x6210;&#x4E8C;&#x8FDB;&#x5236;/&#x516B;&#x8FDB;&#x5236;/&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;              |
+| <code>LOCATE</code>                    | &#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x5B50;&#x4E32;&#x7684;&#x4F4D;&#x7F6E;                          |
+| <code>LEFT</code> / <code>RIGHT</code>            | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5DE6;&#x8FB9;/&#x53F3;&#x8FB9;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x7B26;                 |
+| <code>LENGTH</code> / <code>CHAR_LENGTH</code>    | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x4EE5;&#x5B57;&#x8282;/&#x5B57;&#x7B26;&#x4E3A;&#x5355;&#x4F4D;                     |
+| <code>LOWER</code> / <code>UPPER</code>           | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5C0F;&#x5199;/&#x5927;&#x5199;&#x5F62;&#x5F0F;                             |
+| <code>LPAD</code> / <code>RPAD</code>             | &#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x8DB3;&#xFF0C;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5DE6;&#x8FB9;/&#x53F3;&#x8FB9;&#x586B;&#x5145;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26; |
+| <code>LTRIM</code> / <code>RTRIM</code>           | &#x53BB;&#x6389;&#x5B57;&#x7B26;&#x4E32;&#x524D;&#x9762;/&#x540E;&#x9762;&#x7684;&#x7A7A;&#x683C;                             |
+| <code>ORD</code> / <code>CHAR</code>              | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x7684;&#x7F16;&#x7801;/&#x8FD4;&#x56DE;&#x7F16;&#x7801;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x7B26;                 |
+| <code>STRCMP</code>                    | &#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD4;&#x56DE;-1&#x3001;0&#x3001;1&#x5206;&#x522B;&#x8868;&#x793A;&#x5C0F;&#x4E8E;&#x3001;&#x7B49;&#x4E8E;&#x3001;&#x5927;&#x4E8E;      |
+| <code>SUBSTRING</code>                 | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x7684;&#x5B50;&#x4E32;                              |</p>
+<p>&#x5E38;&#x7528;&#x6570;&#x503C;&#x51FD;&#x6570;&#x3002;</p>
+<p>| &#x51FD;&#x6570;                                                     | &#x529F;&#x80FD;                               |
+| -------------------------------------------------------- | ---------------------------------- |
+| <code>ABS</code>                                                    | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x7EDD;&#x5EA6;&#x503C;                 |
+| <code>CEILING</code> / <code>FLOOR</code>                                      | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x4E0A;&#x53D6;&#x6574;/&#x4E0B;&#x53D6;&#x6574;&#x7684;&#x7ED3;&#x679C;      |
+| <code>CONV</code>                                                   | &#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x4ECE;&#x4E00;&#x79CD;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x79CD;&#x8FDB;&#x5236; |
+| <code>CRC32</code>                                                  | &#x8BA1;&#x7B97;&#x5FAA;&#x73AF;&#x5197;&#x4F59;&#x6821;&#x9A8C;&#x7801;                 |
+| <code>EXP</code> / <code>LOG</code> / <code>LOG2</code> / <code>LOG10</code>                         | &#x8BA1;&#x7B97;&#x6307;&#x6570;/&#x5BF9;&#x6570;                      |
+| <code>POW</code>                                                    | &#x6C42;&#x5E42;                               |
+| <code>RAND</code>                                                   | &#x8FD4;&#x56DE;[0,1)&#x8303;&#x56F4;&#x7684;&#x968F;&#x673A;&#x6570;              |
+| <code>ROUND</code>                                                  | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x540E;&#x7684;&#x7ED3;&#x679C;         |
+| <code>SQRT</code>                                                   | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x5E73;&#x65B9;&#x6839;                 |
+| <code>TRUNCATE</code>                                               | &#x622A;&#x65AD;&#x4E00;&#x4E2A;&#x6570;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x7CBE;&#x5EA6;             |
+| <code>SIN</code> / <code>COS</code> / <code>TAN</code> / <code>COT</code> / <code>ASIN</code> / <code>ACOS</code> / <code>ATAN</code> | &#x4E09;&#x89D2;&#x51FD;&#x6570;                           |</p>
+<p>&#x5E38;&#x7528;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x51FD;&#x6570;&#x3002;</p>
+<p>| &#x51FD;&#x6570;                                      | &#x529F;&#x80FD;                                  |
+| ----------------------------------------- | ------------------------------------- |
+| <code>CURDATE</code> / <code>CURTIME</code> / <code>NOW</code>             | &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65E5;&#x671F;/&#x65F6;&#x95F4;/&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;          |
+| <code>ADDDATE</code> / <code>SUBDATE</code>                     | &#x5C06;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x52A0;/&#x76F8;&#x51CF;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;   |
+| <code>DATE</code> / <code>TIME</code>                           | &#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x83B7;&#x53D6;&#x65E5;&#x671F;/&#x65F6;&#x95F4;               |
+| <code>YEAR</code> / <code>MONTH</code> / <code>DAY</code>                  | &#x4ECE;&#x65E5;&#x671F;&#x4E2D;&#x83B7;&#x53D6;&#x5E74;/&#x6708;/&#x65E5;                  |
+| <code>HOUR</code> / <code>MINUTE</code> / <code>SECOND</code>              | &#x4ECE;&#x65F6;&#x95F4;&#x4E2D;&#x83B7;&#x53D6;&#x65F6;/&#x5206;/&#x79D2;                  |
+| <code>DATEDIFF</code> / <code>TIMEDIFF</code> / <code>TIMESTAMPDIFF</code> | &#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x5DEE;&#x591A;&#x5C11;&#x5929;/&#x5C0F;&#x65F6; |
+| <code>MAKEDATE</code> / <code>MAKETIME</code>                   | &#x5236;&#x9020;&#x4E00;&#x4E2A;&#x65E5;&#x671F;/&#x65F6;&#x95F4;                     |</p>
+<p>&#x5E38;&#x7528;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x51FD;&#x6570;&#x3002;</p>
+<p>| &#x51FD;&#x6570;     | &#x529F;&#x80FD;                                             |
+| -------- | ------------------------------------------------ |
+| <code>IF</code>     | &#x6839;&#x636E;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;                     |
+| <code>IFNULL</code> | &#x5982;&#x679C;&#x4E3A;NULL&#x5219;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x5426;&#x5219;&#x5C31;&#x8FD4;&#x56DE;&#x672C;&#x8EAB;           |
+| <code>NULLIF</code> | &#x4E24;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x7B49;&#x5C31;&#x8FD4;&#x56DE;NULL&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C; |</p>
+<p>&#x5176;&#x4ED6;&#x5E38;&#x7528;&#x51FD;&#x6570;&#x3002;</p>
+<p>| &#x51FD;&#x6570;                       | &#x529F;&#x80FD;                          |
+| -------------------------- | ----------------------------- |
+| <code>MD5</code> / <code>SHA1</code> / <code>SHA2</code>    | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x5E94;&#x7684;&#x54C8;&#x5E0C;&#x6458;&#x8981;      |
+| <code>CHARSET</code> / <code>COLLATION</code>    | &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x96C6;/&#x6821;&#x5BF9;&#x89C4;&#x5219;           |
+| <code>USER</code> / <code>CURRENT_USER</code>    | &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7528;&#x6237;                  |
+| <code>DATABASE</code>                 | &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x540D;              |
+| <code>VERSION</code>                  | &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;            |
+| <code>FOUND_ROWS</code> / <code>ROW_COUNT</code> | &#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x884C;&#x6570;/&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x884C;&#x6570; |
+| <code>LAST_INSERT_ID</code>           | &#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x7684;&#x503C;      |
+| <code>UUID</code> / <code>UUID_SHORT</code>      | &#x8FD4;&#x56DE;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;            |</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="38.SQL详解之DML.html" class="navigation navigation-prev " aria-label="Previous page: 38.SQL详解之DML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="40.SQL详解之DCL.html" class="navigation navigation-next " aria-label="Next page: 40.SQL详解之DCL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"39.SQL详解之DQL","level":"1.6.4","depth":2,"next":{"title":"40.SQL详解之DCL","level":"1.6.5","depth":2,"path":"Day36-45/40.SQL详解之DCL.md","ref":"Day36-45/40.SQL详解之DCL.md","articles":[]},"previous":{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day36-45/39.SQL详解之DQL.md","mtime":"2024-07-05T03:42:45.007Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

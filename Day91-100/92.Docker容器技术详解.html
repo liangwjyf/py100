@@ -1,0 +1,2552 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>92.Docker容器技术详解 · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="93.MySQL性能优化.html" />
+    
+    
+    <link rel="prev" href="91.团队项目开发的问题和解决方案.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
+            
+                <a href="../Day36-45/37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
+            
+                <a href="../Day36-45/38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
+            
+                <a href="../Day36-45/39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
+            
+                <a href="../Day36-45/40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
+            
+                <a href="../Day36-45/41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
+            
+                <a href="../Day36-45/42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
+            
+                <a href="../Day36-45/43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                <a href="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
+            
+                <a href="../Day46-60/46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
+            
+                <a href="../Day46-60/47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                <a href="../Day46-60/48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
+            
+                <a href="../Day46-60/49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
+            
+                <a href="../Day46-60/50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
+            
+                <a href="../Day46-60/51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
+            
+                <a href="../Day46-60/52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
+            
+                <a href="../Day46-60/53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
+            
+                <a href="../Day46-60/56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
+            
+                <a href="../Day46-60/57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
+            
+                <a href="../Day46-60/58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
+            
+                <a href="../Day46-60/59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
+            
+                <a href="../Day46-60/60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="100.Python面试题实录.html">
+            
+                <a href="100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="91.团队项目开发的问题和解决方案.html">
+            
+                <a href="91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.3" data-path="92.Docker容器技术详解.html">
+            
+                <a href="92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="93.MySQL性能优化.html">
+            
+                <a href="93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="94.网络API接口设计.html">
+            
+                <a href="94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="95.使用Django开发商业项目.html">
+            
+                <a href="95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="96.软件测试和自动化测试.html">
+            
+                <a href="96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="97.电商网站技术要点剖析.html">
+            
+                <a href="97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="98.项目部署上线和性能调优.html">
+            
+                <a href="98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="99.面试中的公共问题.html">
+            
+                <a href="99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >92.Docker容器技术详解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="docker&#x5BB9;&#x5668;&#x6280;&#x672F;&#x8BE6;&#x89E3;">Docker&#x5BB9;&#x5668;&#x6280;&#x672F;&#x8BE6;&#x89E3;</h2>
+<p>Docker&#x662F;&#x57FA;&#x4E8E;Go&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x5F00;&#x6E90;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x9075;&#x4ECE;Apache Licence 2.0&#x534F;&#x8BAE;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x6253;&#x5305;&#x5E94;&#x7528;&#x4EE5;&#x53CA;&#x5E94;&#x7528;&#x7684;&#x4F9D;&#x8D56;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x5E03;&#x5230;&#x5404;&#x79CD;&#x53D1;&#x884C;&#x7248;&#x672C;&#x7684;Linux&#x7CFB;&#x7EDF;&#x4E0A;&#x3002;</p>
+<h3 id="docker&#x7B80;&#x4ECB;">Docker&#x7B80;&#x4ECB;</h3>
+<p>&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x6700;&#x4E3A;&#x9EBB;&#x70E6;&#x7684;&#x4E8B;&#x60C5;&#x53EF;&#x80FD;&#x5C31;&#x662F;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x4E86;&#x3002;&#x7531;&#x4E8E;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5177;&#x6709;&#x591A;&#x6837;&#x6027;&#xFF0C;&#x5373;&#x4FBF;&#x4F7F;&#x7528;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#xFF08;&#x5982;Java&#x548C;Python&#xFF09;&#x90FD;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x80FD;&#x591F;&#x5728;&#x5404;&#x79CD;&#x5E73;&#x53F0;&#x4E0B;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x7684;&#x8FD0;&#x8F6C;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x7684;&#x8F6F;&#x4EF6;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x4E5F;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x95EE;&#x9898;&#x6765;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x628A;&#x8F6F;&#x4EF6;&#x8FD0;&#x884C;&#x7684;&#x73AF;&#x5883;&#x4E00;&#x5E76;&#x5B89;&#x88C5;&#xFF1F;&#x6211;&#x4EEC;&#x662F;&#x4E0D;&#x662F;&#x53EF;&#x4EE5;&#x628A;&#x539F;&#x59CB;&#x73AF;&#x5883;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x5730;&#x590D;&#x5236;&#x8FC7;&#x6765;&#x5462;&#xFF1F;</p>
+<p>&#x865A;&#x62DF;&#x673A;&#xFF08;virtual machine&#xFF09;&#x5C31;&#x662F;&#x5E26;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x7684;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x79CD;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x91CC;&#x9762;&#x8FD0;&#x884C;&#x53E6;&#x4E00;&#x79CD;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x6BD4;&#x5982;&#x5728;Windows&#x7CFB;&#x7EDF;&#x91CC;&#x9762;&#x8FD0;&#x884C;Linux&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;macOS&#x4E0A;&#x8FD0;&#x884C;Windows&#xFF0C;&#x800C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BF9;&#x6B64;&#x6BEB;&#x65E0;&#x611F;&#x77E5;&#x3002;&#x4F7F;&#x7528;&#x8FC7;&#x865A;&#x62DF;&#x673A;&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x7528;&#x8D77;&#x6765;&#x8DDF;&#x771F;&#x5B9E;&#x7CFB;&#x7EDF;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x865A;&#x62DF;&#x673A;&#x7684;&#x5BBF;&#x4E3B;&#x7CFB;&#x7EDF;&#x6765;&#x8BF4;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4E86;&#x5C31;&#x5220;&#x6389;&#xFF0C;&#x5BF9;&#x5BBF;&#x4E3B;&#x7CFB;&#x7EDF;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x7A0B;&#x5E8F;&#x5E76;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;&#x4F46;&#x662F;&#x865A;&#x62DF;&#x673A;&#x901A;&#x5E38;&#x4F1A;&#x5360;&#x7528;&#x8F83;&#x591A;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#xFF0C;&#x542F;&#x52A8;&#x548C;&#x5173;&#x95ED;&#x4E5F;&#x975E;&#x5E38;&#x7684;&#x7F13;&#x6162;&#xFF0C;&#x603B;&#x4E4B;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x5E76;&#x6CA1;&#x6709;&#x60F3;&#x8C61;&#x4E2D;&#x7684;&#x90A3;&#x4E48;&#x597D;&#x3002;</p>
+<p>Docker&#x5C5E;&#x4E8E;&#x5BF9;Linux&#x5BB9;&#x5668;&#x6280;&#x672F;&#xFF08;LXC&#xFF09;&#x7684;&#x4E00;&#x79CD;&#x5C01;&#x88C5;&#xFF08;&#x5229;&#x7528;&#x4E86;Linux&#x7684;namespace&#x548C;cgroup&#x6280;&#x672F;&#xFF09;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5355;&#x6613;&#x7528;&#x7684;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x662F;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684; Linux &#x5BB9;&#x5668;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;Docker&#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0E;&#x8BE5;&#x7A0B;&#x5E8F;&#x7684;&#x4F9D;&#x8D56;&#x6253;&#x5305;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#xFF0C;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x5BB9;&#x5668;&#x3002;&#x7A0B;&#x5E8F;&#x5728;&#x8FD9;&#x4E2A;&#x865A;&#x62DF;&#x5BB9;&#x5668;&#x91CC;&#x8FD0;&#x884C;&#xFF0C;&#x5C31;&#x597D;&#x50CF;&#x5728;&#x771F;&#x5B9E;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#x8FD0;&#x884C;&#x4E00;&#x6837;&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x865A;&#x62DF;&#x673A;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x5DE6;&#x8FB9;&#x662F;&#x4F20;&#x7EDF;&#x7684;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x53F3;&#x8FB9;&#x662F;Docker&#x3002;</p>
+<p><img src="res/docker_vs_vm.png" alt=""></p>
+<p>&#x76EE;&#x524D;&#xFF0C;Docker&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x51E0;&#x4E0B;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#xFF1A;</p>
+<ol>
+<li>&#x63D0;&#x4F9B;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x73AF;&#x5883;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x5F39;&#x6027;&#x7684;&#x4E91;&#x670D;&#x52A1;&#xFF08;&#x5229;&#x7528;Docker&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x6269;&#x5BB9;&#x548C;&#x6536;&#x7F29;&#xFF09;&#x3002;</li>
+<li>&#x5B9E;&#x8DF5;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#xFF08;&#x9694;&#x79BB;&#x771F;&#x5B9E;&#x73AF;&#x5883;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x8FD0;&#x884C;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#xFF09;&#x3002;</li>
+</ol>
+<h3 id="&#x5B89;&#x88C5;docker">&#x5B89;&#x88C5;Docker</h3>
+<p>&#x4E0B;&#x9762;&#x4EE5;CentOS&#x4E3A;&#x4F8B;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5B89;&#x88C5;Docker&#xFF0C;&#x4F7F;&#x7528;<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">Ubuntu</a>&#x3001;<a href="https://docs.docker.com/docker-for-mac/install/" target="_blank">macOS</a>&#x6216;<a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Windows</a>&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x5BF9;&#x5E94;&#x7684;&#x94FE;&#x63A5;&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x5E73;&#x53F0;&#x4E0B;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<ol>
+<li><p>&#x786E;&#x5B9A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7248;&#x672C;&#xFF08;CentOS 7&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;3.10+&#xFF1B;CentOS 6&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;2.6+&#xFF09;&#x3002;</p>
+<pre><code class="lang-Bash">uname -r
+</code></pre>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x5E95;&#x5C42;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#xFF08;&#x5EFA;&#x8BAE;&#x4E00;&#x5B9A;&#x8981;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5728;&#x4F7F;&#x7528;Docker&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x95EE;&#x9898;&#xFF09;&#x3002;</p>
+<pre><code class="lang-Bash">yum update
+</code></pre>
+</li>
+<li><p>&#x79FB;&#x9664;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x65E7;&#x7684;Docker&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-Bash">yum list installed | grep docker
+yum erase -y docker docker-common docker-engine
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;yum&#x5DE5;&#x5177;&#x5305;&#x548C;&#x4F9D;&#x8D56;&#x9879;&#x3002;</p>
+<pre><code class="lang-Bash">yum install -y yum-utils device-mapper-persistent-data lvm2
+</code></pre>
+</li>
+<li><p>&#x901A;&#x8FC7;yum&#x5DE5;&#x5177;&#x5305;&#x6DFB;&#x52A0;yum&#x6E90;&#xFF08;&#x5B89;&#x88C5;Docker-ce&#x7684;&#x6E90;&#xFF09;&#x3002;</p>
+<pre><code class="lang-Bash">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre>
+</li>
+<li><p>&#x5728;CentOS&#x4E0B;&#x4F7F;&#x7528;yum&#x5B89;&#x88C5;Docker-ce&#x5E76;&#x542F;&#x52A8;&#x3002;</p>
+<pre><code class="lang-Bash">yum -y install docker-ce
+systemctl start docker
+</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B;Docker&#x7684;&#x4FE1;&#x606F;&#x548C;&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-Shell">docker version
+docker info
+</code></pre>
+</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x8F7D;&#x955C;&#x50CF;&#x548C;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x6765;&#x770B;&#x770B;Docker&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FD0;&#x8F6C;&#x8D77;&#x6765;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4ECE;Docker&#x7684;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x4E0B;&#x8F7D;&#x540D;&#x4E3A;hello-world&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">docker pull hello-world
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6240;&#x6709;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">docker images
+</code></pre>
+<pre><code>REPOSITORY               TAG        IMAGE ID            CREATED             SIZE
+docker.io/hello-world    latest     fce289e99eb9        7 months ago        1.84 kB
+</code></pre><p>&#x901A;&#x8FC7;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x5E76;&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker container run --name mycontainer hello-world
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x5176;&#x4E2D;<code>mycontainer</code>&#x662F;&#x6211;&#x4EEC;&#x7ED9;&#x5BB9;&#x5668;&#x8D77;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x8DDF;&#x5728;<code>--name</code>&#x53C2;&#x6570;&#x4E4B;&#x540E;&#xFF1B;<code>hello-world</code>&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x4E0B;&#x8F7D;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<pre><code>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">docker container rm mycontainer
+</code></pre>
+<p>&#x5728;&#x5220;&#x9664;&#x5BB9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x521A;&#x624D;&#x4E0B;&#x8F7D;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">docker rmi hello-world
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x5982;&#x679C;&#x8981;&#x5728;Ubuntu&#xFF08;&#x5185;&#x6838;&#x7248;&#x672C;3.10+&#xFF09;&#x4E0B;&#x9762;&#x5B89;&#x88C5;&#x548C;&#x542F;&#x52A8;Docker&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x7684;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">apt update
+apt install docker-ce
+service docker start
+</code></pre>
+<p>&#x56FD;&#x5185;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x66F4;&#x6362;Ubuntu&#x8F6F;&#x4EF6;&#x4E0B;&#x8F7D;&#x6E90;&#x6765;&#x63D0;&#x5347;&#x4E0B;&#x8F7D;&#x901F;&#x5EA6;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x7167;&#x6E05;&#x534E;&#x5927;&#x5B66;&#x5F00;&#x6E90;&#x8F6F;&#x4EF6;&#x955C;&#x50CF;&#x7AD9;&#x4E0A;&#x7684;<a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank">&#x300A;Ubuntu&#x955C;&#x50CF;&#x4F7F;&#x7528;&#x5E2E;&#x52A9;&#x300B;</a>&#x3002;</p>
+</blockquote>
+<p>&#x5B89;&#x88C5;Docker&#x540E;&#xFF0C;&#x7531;&#x4E8E;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;<a href="https://hub.docker.com/" target="_blank">dockerhub</a>&#x4E0B;&#x8F7D;&#x955C;&#x50CF;&#x4F1A;&#x975E;&#x5E38;&#x7F13;&#x6162;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x670D;&#x52A1;&#x5668;&#x66F4;&#x6362;&#x4E3A;&#x56FD;&#x5185;&#x955C;&#x50CF;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539; <code>/etc/docker/daemon.json</code> &#x6587;&#x4EF6;&#x6765;&#x505A;&#x5230;&#x3002;&#x4E00;&#x822C;&#x7684;&#x4E91;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x6709;&#x81EA;&#x5DF1;&#x4E13;&#x5C5E;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x4FEE;&#x6539;&#x4E86;&#x3002;</p>
+<pre><code class="lang-JavaScript">{
+    <span class="hljs-string">&quot;registry-mirrors&quot;</span>: [
+        <span class="hljs-string">&quot;http://hub-mirror.c.163.com&quot;</span>,
+        <span class="hljs-string">&quot;https://registry.docker-cn.com&quot;</span>
+    ]
+}
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;docker">&#x4F7F;&#x7528;Docker</h3>
+<p>&#x60F3;&#x8981;&#x73A9;&#x8F6C;Docker&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x9A6C;&#x4E0A;&#x7528;Docker&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x81EA;&#x5DF1;&#x5B66;&#x4E60;&#x548C;&#x5DE5;&#x4F5C;&#x4E2D;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5E26;&#x7740;&#x5927;&#x5BB6;&#x4E00;&#x8D77;&#x6765;&#x521B;&#x5EFA;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x3002;</p>
+<h4 id="&#x8FD0;&#x884C;nginx">&#x8FD0;&#x884C;Nginx</h4>
+<p>Nginx&#x662F;&#x9AD8;&#x6027;&#x80FD;&#x7684;Web&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x505A;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E0A;&#x4F73;&#x9009;&#x62E9;&#x3002;&#x4F7F;&#x7528;Docker&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;Nginx&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">docker container run -d -p 80:80 --rm --name mynginx nginx
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x53C2;&#x6570;<code>-d</code>&#x8868;&#x793A;&#x5BB9;&#x5668;&#x5728;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#xFF08;&#x4E0D;&#x4EA7;&#x751F;&#x8F93;&#x51FA;&#x5230;Shell&#xFF09;&#x5E76;&#x663E;&#x793A;&#x5BB9;&#x5668;&#x7684;ID&#xFF1B;<code>-p</code>&#x662F;&#x7528;&#x6765;&#x6620;&#x5C04;&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x5230;&#x5BBF;&#x4E3B;&#x673A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5192;&#x53F7;&#x524D;&#x9762;&#x662F;&#x5BBF;&#x4E3B;&#x673A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5192;&#x53F7;&#x540E;&#x9762;&#x662F;&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#xFF1B;<code>--rm</code>&#x8868;&#x793A;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x540E;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x5BB9;&#x5668;&#xFF0C;&#x4F8B;&#x5982;&#x6267;&#x884C;&#x547D;&#x4EE4;<code>docker container stop mynginx</code>&#x540E;&#xFF0C;&#x5BB9;&#x5668;&#x5C31;&#x4E0D;&#x590D;&#x5B58;&#x5728;&#x4E86;&#xFF1B;<code>--name</code>&#x540E;&#x9762;&#x7684;mynginx&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5BB9;&#x5668;&#x540D;&#x5B57;&#xFF1B;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5230;nginx&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#xFF0C;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x7684;&#x4E0B;&#x8F7D;&#x662F;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF08;latest&#xFF09;&#x3002;</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5C06;&#x81EA;&#x5DF1;&#x7684;Web&#x9879;&#x76EE;&#xFF08;&#x9875;&#x9762;&#xFF09;&#x90E8;&#x7F72;&#x5230;Nginx&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#x62F7;&#x8D1D;&#x547D;&#x4EE4;&#x5C06;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x62F7;&#x8D1D;&#x5230;&#x5BB9;&#x5668;&#x7684;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-Shell">docker container cp /root/web/index.html mynginx:/usr/share/nginx/html
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E0D;&#x613F;&#x610F;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;<code>--volume</code>&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x7684;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;Web&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x76F4;&#x63A5;&#x6620;&#x5C04;&#x5230;<code>/usr/share/nginx/html</code>&#x76EE;&#x5F55;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8BA9;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">docker container stop mynginx
+</code></pre>
+<p>&#x7136;&#x540E;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker container run -d -p 80:80 --rm --name mynginx --volume /root/docker/nginx/html:/usr/share/nginx/html nginx
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x548C;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>container</code>&#x662F;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;<code>docker container run</code>&#x548C;<code>docker run</code>&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x800C;<code>docker container cp</code>&#x548C;<code>docker cp</code>&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x547D;&#x4EE4;&#x4E2D;&#x7684;<code>--volume</code>&#x4E5F;&#x53EF;&#x4EE5;&#x7F29;&#x5199;&#x4E3A;<code>-v</code>&#xFF0C;&#x5C31;&#x5982;&#x540C;<code>-d</code>&#x662F;<code>--detach</code>&#x7684;&#x7F29;&#x5199;&#xFF0C;<code>-p</code>&#x662F;<code>--publish</code>&#x7684;&#x7F29;&#x5199;&#x3002;<code>$PWD</code>&#x4EE3;&#x8868;&#x5BBF;&#x4E3B;&#x7CFB;&#x7EDF;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8FD9;&#x4E9B;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x8FC7;Unix&#x6216;&#x8005;Linux&#x7CFB;&#x7EDF;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x8981;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">docker ps
+</code></pre>
+<pre><code>CONTAINER ID    IMAGE    COMMAND                  CREATED            STATUS             PORTS                 NAMES
+3c38d2476384    nginx    &quot;nginx -g &apos;daemon ...&quot;   4 seconds ago      Up 4 seconds       0.0.0.0:80-&gt;80/tcp    mynginx
+</code></pre><p>&#x8981;&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">docker start mynginx
+docker stop mynginx
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x4F7F;&#x7528;&#x4E86;<code>--rm</code>&#x9009;&#x9879;&#xFF0C;&#x5BB9;&#x5668;&#x5728;&#x505C;&#x6B62;&#x65F6;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x6240;&#x6709;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x5DF2;&#x7ECF;&#x770B;&#x4E0D;&#x5230;&#x521A;&#x624D;&#x7684;<code>mynginx</code>&#x5BB9;&#x5668;&#x4E86;&#x3002;</p>
+<pre><code class="lang-Shell">docker container ls -a
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>--rm</code>&#x9009;&#x9879;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x5220;&#x9664;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker rm mynginx
+</code></pre>
+<p>&#x8981;&#x5220;&#x9664;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>-f</code>&#x9009;&#x9879;&#x3002;</p>
+<pre><code class="lang-Shell">docker rm -f mynginx
+</code></pre>
+<h4 id="&#x8FD0;&#x884C;mysql">&#x8FD0;&#x884C;MySQL</h4>
+<p>&#x6211;&#x4EEC;&#x518D;&#x6765;&#x5C1D;&#x8BD5;&#x7528;Docker&#x5B89;&#x88C5;&#x4E00;&#x53F0;MySQL&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x9996;&#x5148;&#x53EF;&#x4EE5;&#x5148;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x6709;&#x6CA1;&#x6709;MySQL&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">docker search mysql
+</code></pre>
+<pre><code>INDEX        NAME            DESCRIPTION        STARS        OFFICIAL        AUTOMATED
+docker.io    docker.io/mysql MySQL is a ...     8486         [OK]
+...
+</code></pre><blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0A;&#x9762;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x7684;&#x5217;&#x4F9D;&#x6B21;&#x4EE3;&#x8868;&#x7D22;&#x5F15;&#x3001;&#x955C;&#x50CF;&#x540D;&#x3001;&#x955C;&#x50CF;&#x63CF;&#x8FF0;&#x3001;&#x7528;&#x6237;&#x8BC4;&#x4EF7;&#x3001;&#x662F;&#x5426;&#x5B98;&#x65B9;&#x955C;&#x50CF;&#x3001;&#x81EA;&#x52A8;&#x6784;&#x5EFA;&#x3002;</p>
+</blockquote>
+<p>&#x4E0B;&#x8F7D;MySQL&#x955C;&#x50CF;&#x5E76;&#x6307;&#x5B9A;&#x955C;&#x50CF;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
+<pre><code class="lang-Shell">docker pull mysql:5.7
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x4E0B;&#x8F7D;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">docker images
+</code></pre>
+<pre><code>REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker.io/nginx     latest              e445ab08b2be        2 weeks ago         126 MB
+docker.io/mysql     5.7                 f6509bac4980        3 weeks ago         373 MB
+</code></pre><p>&#x521B;&#x5EFA;&#x5E76;&#x8FD0;&#x884C;MySQL&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker run -d -p 3306:3306 --name mysql57 -v /root/docker/mysql/conf:/etc/mysql/mysql.conf.d -v /root/docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x6211;&#x4EEC;&#x53C8;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x4E86;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#xFF0C;&#x90A3;&#x662F;&#x56E0;&#x4E3A;&#x901A;&#x5E38;&#x5BB9;&#x5668;&#x662F;&#x968F;&#x65F6;&#x521B;&#x5EFA;&#x968F;&#x65F6;&#x5220;&#x9664;&#x7684;&#xFF0C;&#x800C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5374;&#x662F;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#x4E00;&#x4E2A;&#x662F;&#x6620;&#x5C04;&#x4E86;MySQL&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6620;&#x5C04;&#x4E86;MySQL&#x6570;&#x636E;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;MySQL&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x653E;&#x5728;<code>$PWD/mysql/conf</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-INI"><span class="hljs-section">[mysqld]</span>
+<span class="hljs-attr">pid-file</span>=/var/run/mysqld/mysqld.pid
+<span class="hljs-attr">socket</span>=/var/run/mysqld/mysqld.sock
+<span class="hljs-attr">datadir</span>=/var/lib/mysql
+<span class="hljs-attr">log-error</span>=/var/log/mysql/error.log
+<span class="hljs-attr">server-id</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">log-bin</span>=/var/log/mysql/mysql-bin.log
+<span class="hljs-attr">expire_logs_days</span>=<span class="hljs-number">30</span>
+<span class="hljs-attr">max_binlog_size</span>=<span class="hljs-number">256</span>M
+<span class="hljs-attr">symbolic-links</span>=<span class="hljs-number">0</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5B89;&#x88C5;&#x4E86;MySQL 8.x&#x7248;&#x672C;&#xFF08;&#x76EE;&#x524D;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF09;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;<code>error 2059: Authentication plugin &apos;caching_sha2_password&apos; cannot be loaded</code>&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;MySQL 8.x&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4E86;&#x540D;&#x4E3A;&#x201C;caching_sha2_password&#x201D;&#x7684;&#x673A;&#x5236;&#x5BF9;&#x7528;&#x6237;&#x53E3;&#x4EE4;&#x8FDB;&#x884C;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x4FDD;&#x62A4;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x4E0D;&#x652F;&#x6301;&#x65B0;&#x7684;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#xFF0C;&#x8FDE;&#x63A5;&#x5C31;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;&#x4E00;&#x662F;&#x5347;&#x7EA7;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x6765;&#x652F;&#x6301;MySQL 8.x&#x7684;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#xFF1B;&#x4E8C;&#x662F;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#xFF0C;&#x4FEE;&#x6539;MySQL&#x7684;&#x7528;&#x6237;&#x53E3;&#x4EE4;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x5177;&#x4F53;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x7528;<code>docker exec</code>&#x547D;&#x4EE4;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x7684;&#x4EA4;&#x4E92;&#x5F0F;&#x73AF;&#x5883;&#xFF0C;&#x5047;&#x8BBE;&#x8FD0;&#x884C;MySQL 8.x&#x7684;&#x5BB9;&#x5668;&#x540D;&#x5B57;&#x53EB;<code>mysql8x</code>&#x3002;</p>
+<pre><code class="lang-Shell">docker exec -it mysql8x /bin/bash
+</code></pre>
+<p>&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x7684;&#x4EA4;&#x4E92;&#x5F0F;Shell&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x5229;&#x7528;MySQL&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x8FDE;&#x63A5;MySQL&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">mysql -u root -p
+Enter password:
+Your MySQL connection id is 16
+Server version: 8.0.12 MySQL Community Server - GPL
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.
+mysql&gt;
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;SQL&#x6765;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x53E3;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">user</span> <span class="hljs-string">&apos;root&apos;</span>@<span class="hljs-string">&apos;%&apos;</span> <span class="hljs-keyword">identified</span> <span class="hljs-keyword">with</span> mysql_native_password <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;123456&apos;</span> <span class="hljs-keyword">password</span> <span class="hljs-keyword">expire</span> <span class="hljs-keyword">never</span>;
+</code></pre>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x613F;&#x610F;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4E00;&#x4E0B;&#x7528;&#x6237;&#x8868;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x3002;</p>
+<pre><code class="lang-SQL">use mysql;
+select user, host, plugin, authentication_string from user where user=&apos;root&apos;;
++------+-----------+-----------------------+-------------------------------------------+
+| user | host      | plugin                | authentication_string                     |
++------+-----------+-----------------------+-------------------------------------------+
+| root | %         | mysql_native_password | *6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9 |
+| root | localhost | mysql_native_password | *6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9 |
++------+-----------+-----------------------+-------------------------------------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<p>&#x5728;&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#x540E;&#xFF0C;&#x73B0;&#x5728;&#x5373;&#x4FBF;&#x4E0D;&#x66F4;&#x65B0;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;MySQL 8.x&#x4E86;&#x3002;</p>
+<h4 id="&#x8FD0;&#x884C;redis">&#x8FD0;&#x884C;Redis</h4>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8BD5;&#x4E00;&#x8BD5;&#x8FD0;&#x884C;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x8BA9;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x3002;&#x6211;&#x4EEC;&#x521B;&#x5EFA;4&#x4E2A;Redis&#x5BB9;&#x5668;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E3B;&#x4E09;&#x4ECE;&#x7684;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-Shell">docker run -d -p 6379:6379 --name redis-master redis
+docker run -d -p 6380:6379 --name redis-slave-1 --link redis-master:redis-master redis redis-server --replicaof redis-master 6379
+docker run -d -p 6381:6379 --name redis-slave-2 --link redis-master:redis-master redis redis-server --replicaof redis-master 6379
+docker run -d -p 6382:6379 --name redis-slave-3 --link redis-master:redis-master redis redis-server --replicaof redis-master 6379
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>--link</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x7ED9;&#x5BB9;&#x5668;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x522B;&#x540D;&#xFF0C;&#x56E0;&#x4E3A;&#x4E09;&#x53F0;&#x4ECE;&#x673A;&#xFF08;slave&#xFF09;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x81EA;&#x5DF1;&#x7684;&#x4E3B;&#x673A;&#xFF08;master&#xFF09;&#x3002;&#x867D;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>docker inspect --format &apos;{{ .NetworkSettings.IPAddress }}&apos; &lt;container-ID&gt;</code>&#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x5230;&#x5BB9;&#x5668;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x5BB9;&#x5668;&#x7684;&#x5373;&#x88C5;&#x5373;&#x7528;&#x6027;&#xFF0C;&#x5BB9;&#x5668;&#x7684;IP&#x5730;&#x5740;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x91CD;&#x542F;&#x540E;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x56E0;&#x4E3A;IP&#x5730;&#x5740;&#x7684;&#x53D8;&#x5316;&#x5BFC;&#x81F4;&#x4ECE;&#x673A;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x673A;&#x3002;&#x4F7F;&#x7528;<code>--link</code>&#x53C2;&#x6570;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x522B;&#x540D;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x542F;&#x52A8;Redis&#x670D;&#x52A1;&#x5668;&#x65F6;&#x5728;<code>redis-server</code>&#x540E;&#x9762;&#x7684;<code>--replicaof</code>&#x53C2;&#x6570;&#x540E;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x522B;&#x540D;&#x800C;&#x4E0D;&#x662F;IP&#x5730;&#x5740;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8FDB;&#x5165;&#x540D;&#x4E3A;<code>redis-master</code>&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x770B;&#x770B;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x7684;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
+<pre><code class="lang-Shell">docker exec -it redis-master /bin/bash
+</code></pre>
+<p>&#x901A;&#x8FC7;<code>redis-cli</code>&#x542F;&#x52A8;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x3002;</p>
+<pre><code class="lang-Shell">redis-cli
+127.0.0.1:6379&gt; info replication
+# Replication
+role:master
+connected_slaves:3
+slave0:ip=172.17.0.4,port=6379,state=online,offset=1988,lag=0
+slave1:ip=172.17.0.5,port=6379,state=online,offset=1988,lag=1
+slave2:ip=172.17.0.6,port=6379,state=online,offset=1988,lag=1
+master_replid:94703cfa03c3ddc7decc74ca5b8dd13cb8b113ea
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:1988
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:1
+repl_backlog_histlen:1988
+</code></pre>
+<h4 id="&#x8FD0;&#x884C;gitlab">&#x8FD0;&#x884C;GitLab</h4>
+<p>GitLab&#x662F;&#x7531;GitLab Inc.&#x5F00;&#x53D1;&#x7684;Git&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x5177;&#x6709;wiki&#x3001;&#x95EE;&#x9898;&#x8DDF;&#x8E2A;&#x3001;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5206;&#x4E3A;&#x793E;&#x533A;&#x7248;&#x548C;&#x4F01;&#x4E1A;&#x7248;&#x3002;&#x901A;&#x8FC7;Docker&#x63D0;&#x4F9B;&#x7684;&#x865A;&#x62DF;&#x5316;&#x5BB9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x793E;&#x533A;&#x7248;&#x7684;Docker&#x3002;&#x56E0;&#x4E3A;GitLab&#x9700;&#x8981;&#x4F7F;&#x7528;SSH&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x66B4;&#x9732;&#x5BB9;&#x5668;&#x7684;22&#x7AEF;&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5148;&#x5C06;&#x5BBF;&#x4E3B;&#x673A;SSH&#x8FDE;&#x63A5;&#x7684;22&#x7AEF;&#x53E3;&#x4FEE;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x7AEF;&#x53E3;&#xFF08;&#x5982;&#xFF1A;12345&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Shell">vim /etc/ssh/sshd_config
+</code></pre>
+<p>&#x5C06;&#x5176;&#x4E2D;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#x7684;&#x90A3;&#x884C;&#x4EE3;&#x7801;&#x53BB;&#x6389;&#x6CE8;&#x91CA;&#x5E76;&#x5C06;&#x7AEF;&#x53E3;&#x4FEE;&#x6539;&#x4E3A;12345&#x3002;</p>
+<pre><code>Port 12345
+</code></pre><p>&#x91CD;&#x65B0;&#x542F;&#x52A8;<code>sshd</code>&#x670D;&#x52A1;&#x3002; </p>
+<pre><code class="lang-Shell">systemctl restart sshd
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x4FEE;&#x6539;&#x7AEF;&#x53E3;&#x540E;&#x5E94;&#x8BE5;&#x786E;&#x4FDD;&#x9632;&#x706B;&#x5899;&#x4E0A;&#x4E5F;&#x5F00;&#x542F;&#x5BF9;&#x5E94;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;SSH&#x8FDE;&#x63A5;&#x5230;Linux&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</blockquote>
+<p>&#x521B;&#x5EFA;&#x9700;&#x8981;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5377;&#x6620;&#x5C04;&#x64CD;&#x4F5C;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
+<pre><code class="lang-Shell">mkdir -p /root/gitlab/{config,logs,data}
+</code></pre>
+<p>&#x57FA;&#x4E8E;<code>gitlab/gitlab-ce</code>&#x955C;&#x50CF;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#xFF0C;&#x5E76;&#x66B4;&#x9732;80&#x7AEF;&#x53E3;&#xFF08;HTTP&#x8FDE;&#x63A5;&#xFF09;&#x548C;22&#x7AEF;&#x53E3;&#xFF08;SSH&#x8FDE;&#x63A5;&#xFF09;&#x3002;</p>
+<pre><code class="lang-Shell">docker run -d -p 80:80 -p 22:22 --name gitlab -v /root/gitlab/config:/etc/gitlab -v /root/gitlab/logs:/var/log/gitlab -v /root/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;GitLab&#x7684;&#x542F;&#x52A8;&#x6BD4;&#x8F83;&#x7F13;&#x6162;&#xFF0C;&#x521B;&#x5EFA;&#x597D;&#x5BB9;&#x5668;&#x540E;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x3002;</p>
+</blockquote>
+<p>&#x9996;&#x6B21;&#x8FDB;&#x5165;GitLab&#x8BBF;&#x95EE;&#x754C;&#x9762;&#x4F1A;&#x63D0;&#x793A;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#xFF0C;&#x8BBE;&#x7F6E;&#x597D;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x767B;&#x5F55;&#x754C;&#x9762;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;<code>root</code>&#x548C;&#x521A;&#x624D;&#x8BBE;&#x7F6E;&#x7684;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x5230;&#x7BA1;&#x7406;&#x5458;&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x4E0A;&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x548C;&#x4EBA;&#x6027;&#x5316;&#x7684;&#x3002;</p>
+<h3 id="&#x6784;&#x5EFA;&#x955C;&#x50CF;">&#x6784;&#x5EFA;&#x955C;&#x50CF;</h3>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x8BB2;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x638C;&#x63E1;&#x4E86;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x955C;&#x50CF;&#x6765;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x3002;&#x5F53;&#x7136;&#x5982;&#x679C;&#x613F;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x914D;&#x7F6E;&#x597D;&#x7684;&#x5BB9;&#x5668;&#x6765;&#x751F;&#x6210;&#x955C;&#x50CF;&#x3002;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;<strong>Docker&#x955C;&#x50CF;&#x662F;&#x7531;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x53E0;&#x52A0;&#x800C;&#x6210;&#x7684;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x5E95;&#x5C42;&#x662F;bootfs&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5C31;&#x662F;Linux&#x5185;&#x6838;&#x7684;&#x5F15;&#x5BFC;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF1B;&#x63A5;&#x4E0B;&#x6765;&#x7B2C;&#x4E8C;&#x5C42;&#x662F;rootfs&#xFF0C;&#x8FD9;&#x4E00;&#x5C42;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x79CD;&#x6216;&#x591A;&#x79CD;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF08;&#x5982;Debian&#x6216;Ubuntu&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF09;&#xFF0C;Docker&#x4E2D;&#x7684;rootfs&#x662F;&#x53EA;&#x8BFB;&#x72B6;&#x6001;&#x7684;&#xFF1B;Docker&#x5229;&#x7528;&#x8054;&#x5408;&#x6302;&#x8F7D;&#x6280;&#x672F;&#x5C06;&#x5404;&#x5C42;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x53E0;&#x52A0;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x6700;&#x7EC8;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4F1A;&#x5305;&#x542B;&#x6709;&#x5E95;&#x5C42;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x955C;&#x50CF;</strong>&#x3002;</p>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8BB2;&#x8FC7;&#x4E86;&#x5982;&#x4F55;&#x67E5;&#x627E;&#x3001;&#x5217;&#x51FA;&#x955C;&#x50CF;&#x548C;&#x62C9;&#x53D6;&#xFF08;&#x4E0B;&#x8F7D;&#xFF09;&#x955C;&#x50CF;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x770B;&#x770B;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>&#x4F7F;&#x7528;<code>docker commit</code>&#x547D;&#x4EE4;&#x3002;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#xFF09;</li>
+<li>&#x4F7F;&#x7528;<code>docker build</code>&#x547D;&#x4EE4;&#x548C;Dockerfile&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<h4 id="&#x4F7F;&#x7528;commit&#x547D;&#x4EE4;&#x6784;&#x5EFA;&#x955C;&#x50CF;">&#x4F7F;&#x7528;commit&#x547D;&#x4EE4;&#x6784;&#x5EFA;&#x955C;&#x50CF;</h4>
+<p>&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4F7F;&#x7528;Ubuntu&#x955C;&#x50CF;&#x6765;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">docker run --name myubuntu -it ubuntu /bin/bash
+</code></pre>
+<p>&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5;Apache&#x670D;&#x52A1;&#x5668;&#x5E76;&#x9000;&#x51FA;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">apt -y upgrade
+apt -y install apache2
+exit
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5B9A;&#x5236;&#x7684;Web&#x670D;&#x52A1;&#x5668;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x5F53;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x4E00;&#x53F0;Web&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x5E76;&#x5B89;&#x88C5;Apache&#x4E86;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x7684;ID&#x3002;</p>
+<pre><code class="lang-Shell">docker container ls -a
+</code></pre>
+<pre><code>docker container ls -a
+CONTAINER ID    IMAGE    COMMAND        CREATED        STATUS        PORTS    NAMES
+014bdb321612    ubuntu   &quot;/bin/bash&quot;    5 minutes ago  Exited (0)             myubuntu
+</code></pre><p>&#x63D0;&#x4EA4;&#x5B9A;&#x5236;&#x7684;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker commit 014bdb321612 jackfrued/mywebserver
+</code></pre>
+<p>&#x67E5;&#x770B;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-Shell">docker images
+</code></pre>
+<pre><code>REPOSITORY              TAG       IMAGE ID        CREATED             SIZE
+jackfrued/mywebserver   latest    795b294d265a    14 seconds ago      189 MB
+</code></pre><p>&#x751F;&#x6210;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x540E;&#x9762;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x6765;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002;</p>
+<h4 id="&#x4F7F;&#x7528;dockerfile&#x6784;&#x5EFA;&#x955C;&#x50CF;">&#x4F7F;&#x7528;Dockerfile&#x6784;&#x5EFA;&#x955C;&#x50CF;</h4>
+<p>Dockerfile&#x4F7F;&#x7528;DSL&#xFF08;Domain Specific Language&#xFF09;&#x6765;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;Docker&#x955C;&#x50CF;&#xFF0C;&#x53EA;&#x8981;&#x7F16;&#x8F91;&#x597D;&#x4E86;Dockerfile&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>docker build</code>&#x547D;&#x4EE4;&#x6765;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;myapp&#x7684;&#x6587;&#x4EF6;&#x5939;&#x6765;&#x4FDD;&#x5B58;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x548C;Dockerfile&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Shell">[ECS-root temp]# tree myapp
+myapp
+&#x251C;&#x2500;&#x2500; api
+&#x2502;   &#x251C;&#x2500;&#x2500; app.py
+&#x2502;   &#x251C;&#x2500;&#x2500; requirements.txt
+&#x2502;   &#x2514;&#x2500;&#x2500; start.sh
+&#x2514;&#x2500;&#x2500; Dockerfile
+</code></pre>
+<p>&#x5176;&#x4E2D;api&#x662F;Flask&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x4E86;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x3001;&#x4F9D;&#x8D56;&#x9879;&#x4EE5;&#x53CA;&#x542F;&#x52A8;&#x811A;&#x672C;&#x7B49;&#x6587;&#x4EF6;&#xFF0C;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><code>app.py</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+<span class="hljs-keyword">from</span> flask_restful <span class="hljs-keyword">import</span> Resource, Api
+<span class="hljs-keyword">from</span> flask_cors <span class="hljs-keyword">import</span> CORS
+
+app = Flask(__name__)
+CORS(app, resources={<span class="hljs-string">r&apos;/api/*&apos;</span>: {<span class="hljs-string">&apos;origins&apos;</span>: <span class="hljs-string">&apos;*&apos;</span>}})
+api = Api(app)
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span><span class="hljs-params">(Resource)</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self)</span>:</span>
+        products = [<span class="hljs-string">&apos;Ice Cream&apos;</span>, <span class="hljs-string">&apos;Chocolate&apos;</span>, <span class="hljs-string">&apos;Coca Cola&apos;</span>, <span class="hljs-string">&apos;Hamburger&apos;</span>]
+        <span class="hljs-keyword">return</span> {<span class="hljs-string">&apos;products&apos;</span>: products}
+
+
+api.add_resource(Product, <span class="hljs-string">&apos;/api/products&apos;</span>)
+</code></pre>
+<p><code>requirements.txt</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-INI">flask
+flask-restful
+flask-cors
+gunicorn
+</code></pre>
+<p><code>start.sh</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-Shell">#!/bin/bash
+exec gunicorn -w 4 -b 0.0.0.0:8000 app:app
+</code></pre>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x9700;&#x8981;&#x7ED9;start.sh&#x6587;&#x4EF6;&#x4EE5;&#x6267;&#x884C;&#x6743;&#x9650;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>chmod 755 start.sh</code>&#x547D;&#x4EE4;&#x6765;&#x505A;&#x5230;&#x3002;</p>
+</blockquote>
+<p>Dockerfile&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-comment"># &#x6307;&#x5B9A;&#x57FA;&#x7840;&#x955C;&#x50CF;</span>
+<span class="hljs-keyword">FROM</span> python:<span class="hljs-number">3.7</span>
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x955C;&#x50CF;&#x7684;&#x7EF4;&#x62A4;&#x8005;</span>
+<span class="hljs-keyword">MAINTAINER</span> jackfrued <span class="hljs-string">&quot;jackfrued@126.com&quot;</span>
+<span class="hljs-comment"># &#x5C06;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;</span>
+ADD api/* /root/api/
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</span>
+<span class="hljs-keyword">WORKDIR</span> <span class="bash">/root/api
+</span><span class="hljs-comment"># &#x6267;&#x884C;&#x547D;&#x4EE4;(&#x5B89;&#x88C5;Flask&#x9879;&#x76EE;&#x7684;&#x4F9D;&#x8D56;&#x9879;)</span>
+<span class="hljs-keyword">RUN</span> <span class="bash">pip install -r requirements.txt -i https://pypi.doubanio.com/simple/
+</span><span class="hljs-comment"># &#x5BB9;&#x5668;&#x542F;&#x52A8;&#x65F6;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;</span>
+<span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">[<span class="hljs-string">&quot;./start.sh&quot;</span>]
+</span><span class="hljs-comment"># &#x66B4;&#x9732;&#x7AEF;&#x53E3;</span>
+<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">8000</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x6765;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x4E0A;&#x9762;&#x7684;Dockerfile&#x6587;&#x4EF6;&#x3002;Dockerfile&#x6587;&#x4EF6;&#x901A;&#x8FC7;&#x7279;&#x6B8A;&#x7684;&#x6307;&#x4EE4;&#x6765;&#x6307;&#x5B9A;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF08;FROM&#x6307;&#x4EE4;&#xFF09;&#x3001;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x540E;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#xFF08;RUN&#x6307;&#x4EE4;&#xFF09;&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x66B4;&#x9732;&#x7684;&#x7AEF;&#x53E3;&#xFF08;EXPOSE&#xFF09;&#x7B49;&#x4FE1;&#x606F;&#x3002;&#x6211;&#x4EEC;&#x7A0D;&#x540E;&#x4F1A;&#x4E13;&#x95E8;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E9B;Dockfile&#x4E2D;&#x7684;&#x6307;&#x4EE4;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>docker build</code>&#x547D;&#x4EE4;&#x6765;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">docker build -t &quot;jackfrued/myapp&quot; .
+</code></pre>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6700;&#x540E;&#x9762;&#x7684;<code>.</code> &#x5343;&#x4E07;&#x4E0D;&#x8981;&#x6F0F;&#x6389;&#x4E86;&#x54E6;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x4ECE;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;&#x5BFB;&#x627E;Dockerfile&#x3002;</p>
+</blockquote>
+<p>&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x521B;&#x5EFA;&#x597D;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<pre><code class="lang-Shell">docker images
+</code></pre>
+<pre><code>REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+jackfrued/myapp              latest              6d6f026a7896        5 seconds ago       930 MB
+</code></pre><p>&#x5982;&#x679C;&#x60F3;&#x77E5;&#x9053;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x662F;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Shell">docker history jackfrued/myapp
+</code></pre>
+<pre><code>IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+6d6f026a7896        31 seconds ago      /bin/sh -c #(nop)  EXPOSE 8000/tcp              0 B                 
+3f7739173a79        31 seconds ago      /bin/sh -c #(nop)  ENTRYPOINT [&quot;./start.sh&quot;]    0 B                 
+321e6bf09bf1        32 seconds ago      /bin/sh -c pip install -r requirements.txt...   13 MB               
+2f9bf2c89ac7        37 seconds ago      /bin/sh -c #(nop) WORKDIR /root/api             0 B                 
+86119afbe1f8        37 seconds ago      /bin/sh -c #(nop) ADD multi:4b76f9c9dfaee8...   870 B               
+08d465e90d4d        3 hours ago         /bin/sh -c #(nop)  MAINTAINER jackfrued &quot;j...   0 B                 
+fbf9f709ca9f        12 days ago         /bin/sh -c #(nop)  CMD [&quot;python3&quot;]              0 B
+</code></pre><p>&#x4F7F;&#x7528;&#x8BE5;&#x955C;&#x50CF;&#x6765;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x8FD0;&#x884C;Web&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-Shell">docker run -d -p 8000:8000 --name myapp jackfrued/myapp
+</code></pre>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5C06;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x653E;&#x5230;dockerhub&#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x767B;&#x5F55;&#x5230;dockerhub&#x3002;</p>
+<pre><code class="lang-Shell">docker login
+</code></pre>
+<p>&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x548C;&#x53E3;&#x4EE4;&#x8FDB;&#x884C;&#x767B;&#x5F55;&#x3002;</p>
+<pre><code>Login with your Docker ID to push and pull images from Docker Hub. If you don&apos;t have a Docker ID, head over to https://hub.docker.com to create one.
+Username: jackfrued
+Password: 
+Login Succeeded
+</code></pre><p>&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;&#x955C;&#x50CF;&#x63A8;&#x5230;&#x4ED3;&#x5E93;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-Shell">docker push jackfrued/webserver
+</code></pre>
+<p><img src="res/dockerhub-repo.png" alt=""></p>
+<h4 id="dockerfile&#x6307;&#x4EE4;">Dockerfile&#x6307;&#x4EE4;</h4>
+<p>&#x60F3;&#x4E86;&#x89E3;Dockerfile&#x7684;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;<a href="https://docs.docker.com/engine/reference/builder/" target="_blank">&#x53C2;&#x8003;&#x624B;&#x518C;</a>&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x3002;</p>
+<ol>
+<li><p><strong>FROM</strong>&#xFF1A;&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x5FC5;&#x987B;&#x662F;Dockerfile&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt; [AS &lt;&#x522B;&#x540D;&gt;]
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt;[:&lt;&#x6807;&#x7B7E;&gt;] [AS &lt;&#x522B;&#x540D;&gt;]
+</code></pre>
+</li>
+<li><p><strong>RUN</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">RUN</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+</span></code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">RUN</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+</span></code></pre>
+</li>
+<li><p><strong>CMD</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x540E;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">CMD</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+</span></code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">CMD</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+</span></code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;Docker&#x4E0D;&#x540C;&#x4E8E;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5BB9;&#x5668;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#x5E94;&#x8BE5;&#x4F4D;&#x4E8E;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#x3002;CMD&#x547D;&#x4EE4;&#x76F8;&#x5F53;&#x4E8E;&#x5C31;&#x662F;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5BB9;&#x5668;&#x4E3B;&#x8FDB;&#x7A0B;&#xFF08;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x540E;&#x8981;&#x5728;&#x524D;&#x53F0;&#x6267;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#xFF09;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x5BB9;&#x5668;&#x4E5F;&#x5C31;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x542F;&#x52A8;Nginx&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>service nginx start</code>&#x6216;&#x662F;<code>systemctl start nginx</code>&#x800C;&#x662F;&#x8981;&#x901A;&#x8FC7;<code>CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code>&#x8BA9;&#x5B83;&#x5728;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#x3002;</p>
+</blockquote>
+</li>
+<li><p><strong>ENTRYPOINT</strong>&#xFF1A;&#x548C;CMD&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x518D;&#x6B21;&#x4F20;&#x7ED9;ENTRYPOINT&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x5C31;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x901A;&#x8FC7;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E3A;&#x8BE5;&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x53EF;&#x8986;&#x76D6;&#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+</span></code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+</span></code></pre>
+</li>
+<li><p><strong>WORKDIR</strong>&#xFF1A;&#x5728;&#x901A;&#x8FC7;&#x955C;&#x50CF;&#x521B;&#x5EFA;&#x65B0;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF0C;ENTRYPOINT&#x548C;CMD&#x6307;&#x5B9A;&#x7684;&#x7A0B;&#x5E8F;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-w</code>&#x53C2;&#x6570;&#x6765;&#x8986;&#x76D6;&#x7531;WORKDIR&#x6307;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">WORKDIR</span> <span class="bash">/opt/webapp
+</span></code></pre>
+<pre><code class="lang-Shell">docker run -w /usr/share/webapp ...
+</code></pre>
+</li>
+<li><p><strong>ENV</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-e</code>&#x53C2;&#x6570;&#x6765;&#x4FEE;&#x6539;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENV</span> DEFAULT_PORT=<span class="hljs-number">8080</span>
+</code></pre>
+<pre><code class="lang-Shell">docker run -e &quot;DEFAULT_PORT=8000&quot; ...
+</code></pre>
+</li>
+<li><p><strong>USER</strong>&#xFF1A;&#x6307;&#x5B9A;&#x955C;&#x50CF;&#x4F1A;&#x4EE5;&#x4EC0;&#x4E48;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x53BB;&#x8FD0;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">USER</span> nginx
+</code></pre>
+</li>
+<li><p><strong>VOLUME</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x95F4;&#x6570;&#x636E;&#x7684;&#x5171;&#x4EAB;&#x548C;&#x91CD;&#x7528;&#xFF0C;&#x5BF9;&#x5377;&#x6240;&#x4F5C;&#x7684;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x9A6C;&#x4E0A;&#x751F;&#x6548;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x4F7F;&#x7528;<code>--volume</code>&#x53C2;&#x6570;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5377;&#x7684;&#x6620;&#x5C04;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">VOLUME</span> <span class="bash">[<span class="hljs-string">&quot;/&#x8DEF;&#x5F84;1&quot;</span>, <span class="hljs-string">&quot;/&#x8DEF;&#x5F84;2/&#x5B50;&#x8DEF;&#x5F84;2.1/&quot;</span>, ...]
+</span></code></pre>
+</li>
+<li><p><strong>ADD</strong>&#xFF1A;&#x5C06;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x590D;&#x5236;&#x5230;&#x955C;&#x50CF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x548C;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;ADD&#x547D;&#x4EE4;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x89E3;&#x538B;&#x7F29;&#x89E3;&#x5F52;&#x6863;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ADD</span> <span class="bash">[--chown=&lt;&#x7528;&#x6237;&gt;:&lt;&#x7528;&#x6237;&#x7EC4;&gt;] &lt;&#x6E90;&#x6587;&#x4EF6;&gt; &lt;&#x76EE;&#x6807;&#x6587;&#x4EF6;&gt;
+</span></code></pre>
+</li>
+<li><p><strong>COPY</strong>&#xFF1A;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x4E8E;ADD&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x4E3B;&#x52A8;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x63D0;&#x53D6;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p><strong>LABEL</strong>&#xFF1A;&#x4E3A;Docker&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x4F7F;&#x7528;<code>docker inspect</code>&#x547D;&#x4EE4;&#x65F6;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x5143;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">LABEL</span> <span class="bash">version=<span class="hljs-string">&quot;1.0.0&quot;</span> location=<span class="hljs-string">&quot;Chengdu&quot;</span>
+</span></code></pre>
+</li>
+<li><p><strong>ONBUILD</strong>&#xFF1A;&#x4E3A;&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x88AB;&#x7528;&#x4F5C;&#x5176;&#x4ED6;&#x955C;&#x50CF;&#x7684;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x5C06;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">ADD</span> <span class="bash">. /app/src
+</span><span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">RUN</span> <span class="bash"><span class="hljs-built_in">cd</span> /app/src &amp;&amp; make
+</span></code></pre>
+</li>
+</ol>
+<h3 id="&#x591A;&#x5BB9;&#x5668;&#x7BA1;&#x7406;">&#x591A;&#x5BB9;&#x5668;&#x7BA1;&#x7406;</h3>
+<p>&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x5BB9;&#x5668;&#x591A;&#x4E86;&#x4E4B;&#x540E;&#x7BA1;&#x7406;&#x5BB9;&#x5668;&#x7684;&#x5DE5;&#x4F5C;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x9EBB;&#x70E6;&#x3002;&#x5982;&#x679C;&#x8981;&#x5BF9;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x4F7F;&#x5F97;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x534F;&#x4F5C;&#x751A;&#x81F3;&#x5B9E;&#x73B0;&#x590D;&#x6742;&#x7684;&#x8C03;&#x5EA6;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x3002;Docker&#x539F;&#x751F;&#x5BF9;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x7684;&#x652F;&#x6301;&#x975E;&#x5E38;&#x5F31;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x793E;&#x533A;&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x6765;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x3002;</p>
+<h4 id="docker-compose">Docker Compose</h4>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;Docker Compose&#x5DE5;&#x5177;&#x6765;&#x5B9E;&#x73B0;&#x57FA;&#x4E8E;YAML&#x6587;&#x4EF6;&#x7684;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#xFF0C;YAML&#x6587;&#x4EF6;&#x4F1A;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5BB9;&#x5668;&#x4EE5;&#x53CA;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x5C5E;&#x6027;&#xFF0C;Docker Compose&#x4F1A;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x6765;&#x7BA1;&#x7406;&#x5BB9;&#x5668;&#x3002;</p>
+<ol>
+<li><p>&#x5B89;&#x88C5;Docker Compose&#x3002;</p>
+<pre><code class="lang-Shell">curl -L &quot;https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+</code></pre>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x5982;&#x679C;&#x6CA1;&#x6709;curl&#x5DE5;&#x5177;&#xFF0C;&#x5728;CentOS&#x4E0B;&#x53EF;&#x4EE5;&#x5148;&#x901A;&#x8FC7;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;yum&#x5B89;&#x88C5;curl&#x518D;&#x6267;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+</blockquote>
+<p>&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Python&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;pip&#x6765;&#x5B89;&#x88C5;Docker Compose&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">pip3 install -U docker-compose
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;Docker Compose&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x521A;&#x624D;&#x7684;Flask&#x9879;&#x76EE;&#x4E2D;&#x5F15;&#x5165;&#x7F13;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5229;&#x7528;Flask&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x636E;&#x63A5;&#x53E3;&#x4E3A;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;Vue.js&#x8FDB;&#x884C;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x5E76;&#x5C06;&#x9759;&#x6001;&#x9875;&#x9762;&#x90E8;&#x7F72;&#x5728;Nginx&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Shell">[ECS-root ~]# tree temp
+temp
+&#x251C;&#x2500;&#x2500; docker-compose.yml
+&#x251C;&#x2500;&#x2500; html
+&#x2502;   &#x2514;&#x2500;&#x2500; index.html
+&#x2514;&#x2500;&#x2500; myapp
+    &#x251C;&#x2500;&#x2500; api
+    &#x2502;   &#x251C;&#x2500;&#x2500; app.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; requirements.txt
+    &#x2502;   &#x2514;&#x2500;&#x2500; start.sh
+    &#x2514;&#x2500;&#x2500; Dockerfile
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x540E;&#x7684;app.py&#x6587;&#x4EF6;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>```Python
+from pickle import dumps, loads</p>
+<p>from flask import Flask
+from flask_restful import Resource, Api
+from flask_cors import CORS
+from redis import Redis</p>
+<p>app = Flask(<strong>name</strong>)
+CORS(app, resources={r&apos;/api/<em>&apos;: {&apos;origins&apos;: &apos;</em>&apos;}})
+api = Api(app)
+redis = Redis(host=&apos;redis-master&apos;, port=6379)</p>
+</li>
+</ol>
+<p>   class Product(Resource):</p>
+<pre><code>   def get(self):
+       data = redis.get(&apos;products&apos;)
+       if data:
+           products = loads(data)
+       else:
+           products = [&apos;Ice Cream&apos;, &apos;Chocolate&apos;, &apos;Coca Cola&apos;, &apos;Hamburger&apos;]
+           redis.set(&apos;products&apos;, dumps(products))
+       return {&apos;products&apos;: products}
+</code></pre><p>   api.add_resource(Product, &apos;/api/products&apos;)</p>
+<pre><code>
+   html&#x6587;&#x4EF6;&#x5939;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x901A;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;Nginx&#x7684;&#x5BB9;&#x5668;&#x6765;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x9875;&#x9762;&#x3002;index.html&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;
+
+   ```HTML
+   &lt;!DOCTYPE html&gt;
+   &lt;html lang=&quot;en&quot;&gt;
+   &lt;head&gt;
+       &lt;meta charset=&quot;utf-8&quot;&gt;
+       &lt;title&gt;&#x9996;&#x9875;&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+       &lt;div id=&quot;app&quot;&gt;
+           &lt;h2&gt;&#x4EA7;&#x54C1;&#x5217;&#x8868;&lt;/h2&gt;
+           &lt;ul&gt;
+               &lt;li v-for=&quot;product in products&quot;&gt;&lt;/li&gt;
+           &lt;/ul&gt;
+       &lt;/div&gt;
+       &lt;script src=&quot;https://cdn.bootcss.com/vue/2.6.10/vue.min.js&quot;&gt;&lt;/script&gt;
+       &lt;script&gt;
+           new Vue({
+               el: &apos;#app&apos;, 
+               data: {
+                   products: []
+               },
+               created() {
+                   fetch(&apos;http://1.2.3.4:8000/api/products&apos;)
+                       .then(resp =&gt; resp.json())
+                       .then(json =&gt; {this.products = json.products})
+               }
+           })
+       &lt;/script&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+</code></pre><p>   &#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x901A;&#x8FC7;docker-compose.yml&#x6587;&#x4EF6;&#x6765;&#x521B;&#x5EFA;&#x4E09;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x6307;&#x660E;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<pre><code class="lang-YAML"><span class="hljs-attr">   version:</span> <span class="hljs-string">&apos;3&apos;</span>
+<span class="hljs-attr">   services:</span>
+<span class="hljs-attr">     api-server:</span>
+<span class="hljs-attr">       build:</span> ./myapp
+<span class="hljs-attr">       ports:</span>
+<span class="hljs-bullet">         -</span> <span class="hljs-string">&apos;8000:8000&apos;</span>
+<span class="hljs-attr">       links:</span>
+<span class="hljs-bullet">         -</span> redis-master
+<span class="hljs-attr">     web-server:</span>
+<span class="hljs-attr">       image:</span> nginx
+<span class="hljs-attr">       ports:</span>
+<span class="hljs-bullet">         -</span> <span class="hljs-string">&apos;80:80&apos;</span>
+<span class="hljs-attr">       volumes:</span>
+<span class="hljs-bullet">         -</span> ./html:/usr/share/nginx/html
+<span class="hljs-attr">     redis-master:</span>
+<span class="hljs-attr">       image:</span> redis
+<span class="hljs-attr">       expose:</span>
+<span class="hljs-bullet">         -</span> <span class="hljs-string">&apos;6379&apos;</span>
+</code></pre>
+<p>   &#x6709;&#x4E86;&#x8FD9;&#x4E2A;YAML&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>docker-compose</code>&#x547D;&#x4EE4;&#x6765;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x5176;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Shell">   [ECS-root temp]# docker-compose up
+   Creating network &quot;temp_default&quot; with the default driver
+   Creating temp_web-server_1   ... done
+   Creating temp_redis-master_1 ... done
+   Creating temp_api-server_1   ... done
+   Attaching to temp_redis-master_1, temp_web-server_1, temp_api-server_1
+   redis-master_1  | 1:C 05 Dec 2019 11:57:26.828 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+   redis-master_1  | 1:C 05 Dec 2019 11:57:26.828 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=1, just started
+   redis-master_1  | 1:C 05 Dec 2019 11:57:26.828 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.830 * Running mode=standalone, port=6379.
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.831 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.831 # Server initialized
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.831 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add &apos;vm.overcommit_memory = 1&apos; to /etc/sysctl.conf and then reboot or run the command &apos;sysctl vm.overcommit_memory=1&apos; for this to take effect.
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.831 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command &apos;echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled&apos; as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+   redis-master_1  | 1:M 05 Dec 2019 11:57:26.831 * Ready to accept connections
+   api-server_1    | [2019-12-05 11:57:27 +0000] [1] [INFO] Starting gunicorn 20.0.4
+   api-server_1    | [2019-12-05 11:57:27 +0000] [1] [INFO] Listening at: http://0.0.0.0:8000 (1)
+   api-server_1    | [2019-12-05 11:57:27 +0000] [1] [INFO] Using worker: sync
+   api-server_1    | [2019-12-05 11:57:27 +0000] [8] [INFO] Booting worker with pid: 8
+   api-server_1    | [2019-12-05 11:57:27 +0000] [9] [INFO] Booting worker with pid: 9
+   api-server_1    | [2019-12-05 11:57:27 +0000] [10] [INFO] Booting worker with pid: 10
+   api-server_1    | [2019-12-05 11:57:27 +0000] [11] [INFO] Booting worker with pid: 11
+</code></pre>
+<pre><code>&#x8981;&#x505C;&#x6B62;&#x5BB9;&#x5668;&#x7684;&#x8FD0;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;
+</code></pre><pre><code class="lang-Shell">   docker-compose down
+</code></pre>
+<h4 id="kubernetes&#xFF08;k8s&#xFF09;">Kubernetes&#xFF08;K8S&#xFF09;</h4>
+<p>&#x5B9E;&#x9645;&#x7684;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x5E38;&#x5E38;&#x9700;&#x8981;&#x90E8;&#x7F72;&#x548C;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x7684;&#x5BB9;&#x5668;&#xFF0C;docker compose&#x89E3;&#x51B3;&#x4E86;&#x591A;&#x5BB9;&#x5668;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;Kubernetes&#xFF08;&#x4EE5;&#x4E0B;&#x90FD;&#x7B80;&#x79F0;&#x4E3A;K8S&#xFF09;&#x6765;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8DE8;&#x4E3B;&#x673A;&#x96C6;&#x7FA4;&#x7684;&#x5BB9;&#x5668;&#x8C03;&#x5EA6;&#x5E73;&#x53F0;&#x3002;K8S&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5316;&#x5BB9;&#x5668;&#x7684;&#x90E8;&#x7F72;&#x3001;&#x6269;&#x5C55;&#x548C;&#x64CD;&#x4F5C;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x4F9B;&#x4EE5;&#x5BB9;&#x5668;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x57FA;&#x7840;&#x67B6;&#x6784;&#x3002;&#x8BE5;&#x9879;&#x76EE;&#x662F;&#x8C37;&#x6B4C;&#x5728;2014&#x5E74;&#x542F;&#x52A8;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5EFA;&#x7ACB;&#x5728;&#x8C37;&#x6B4C;&#x516C;&#x53F8;&#x5341;&#x4F59;&#x5E74;&#x8FD0;&#x7EF4;&#x7ECF;&#x9A8C;&#x7684;&#x57FA;&#x7840;&#x4E4B;&#x4E0A;&#xFF0C;&#x800C;&#x4E14;&#x8C37;&#x6B4C;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;&#x4E5F;&#x662F;&#x8FD0;&#x884C;&#x5728;&#x5BB9;&#x5668;&#x4E0A;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="91.团队项目开发的问题和解决方案.html" class="navigation navigation-prev " aria-label="Previous page: 91.团队项目开发的问题和解决方案">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="93.MySQL性能优化.html" class="navigation navigation-next " aria-label="Next page: 93.MySQL性能优化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"next":{"title":"93.MySQL性能优化","level":"1.11.4","depth":2,"path":"Day91-100/93.MySQL性能优化.md","ref":"Day91-100/93.MySQL性能优化.md","articles":[]},"previous":{"title":"91.团队项目开发的问题和解决方案","level":"1.11.2","depth":2,"path":"Day91-100/91.团队项目开发的问题和解决方案.md","ref":"Day91-100/91.团队项目开发的问题和解决方案.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day91-100/92.Docker容器技术详解.md","mtime":"2024-07-05T04:10:58.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,2120 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>57.接入三方平台 · Python 100</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="58.异步任务和定时任务.html" />
+    
+    
+    <link rel="prev" href="56.使用缓存.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Day 01 15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
+            
+                <a href="../Day01-15/01.初识Python.html">
+            
+                    
+                    01.初识Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
+            
+                <a href="../Day01-15/02.语言元素.html">
+            
+                    
+                    02.语言元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
+            
+                <a href="../Day01-15/03.分支结构.html">
+            
+                    
+                    03.分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
+            
+                <a href="../Day01-15/04.循环结构.html">
+            
+                    
+                    04.循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
+            
+                <a href="../Day01-15/05.构造程序逻辑.html">
+            
+                    
+                    05.构造程序逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
+            
+                <a href="../Day01-15/06.函数和模块的使用.html">
+            
+                    
+                    06.函数和模块的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
+            
+                <a href="../Day01-15/07.字符串和常用数据结构.html">
+            
+                    
+                    07.字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
+            
+                <a href="../Day01-15/08.面向对象编程基础.html">
+            
+                    
+                    08.面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
+            
+                <a href="../Day01-15/09.面向对象进阶.html">
+            
+                    
+                    09.面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
+            
+                    
+                    10.图形用户界面和游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
+            
+                <a href="../Day01-15/11.文件和异常.html">
+            
+                    
+                    11.文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
+            
+                <a href="../Day01-15/12.字符串和正则表达式.html">
+            
+                    
+                    12.字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
+            
+                <a href="../Day01-15/13.进程和线程.html">
+            
+                    
+                    13.进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
+            
+                    
+                    14.网络编程入门和网络应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
+            
+                <a href="../Day01-15/15.图像和办公文档处理.html">
+            
+                    
+                    15.图像和办公文档处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Day 16 20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
+            
+                <a href="../Day16-20/16-20.Python语言进阶.html">
+            
+                    
+                    16-20.Python语言进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Day 21 30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
+            
+                <a href="../Day21-30/21-30.Web前端概述.html">
+            
+                    
+                    21-30.Web前端概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Day 31 35
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
+            
+                    
+                    31-35.玩转Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Day 36 45
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
+            
+                    
+                    36.关系型数据库和MySQL概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
+            
+                <a href="../Day36-45/37.SQL详解之DDL.html">
+            
+                    
+                    37.SQL详解之DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
+            
+                <a href="../Day36-45/38.SQL详解之DML.html">
+            
+                    
+                    38.SQL详解之DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
+            
+                <a href="../Day36-45/39.SQL详解之DQL.html">
+            
+                    
+                    39.SQL详解之DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
+            
+                <a href="../Day36-45/40.SQL详解之DCL.html">
+            
+                    
+                    40.SQL详解之DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
+            
+                <a href="../Day36-45/41.MySQL新特性.html">
+            
+                    
+                    41.MySQL新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
+            
+                <a href="../Day36-45/42.视图、函数和过程.html">
+            
+                    
+                    42.视图、函数和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
+            
+                <a href="../Day36-45/43.索引.html">
+            
+                    
+                    43.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                <a href="../Day36-45/44.Python接入MySQL数据库.html">
+            
+                    
+                    44.Python接入MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
+            
+                    
+                    45.大数据平台和HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Day 46 60
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="46.Django快速上手.html">
+            
+                <a href="46.Django快速上手.html">
+            
+                    
+                    46.Django快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="47.深入模型.html">
+            
+                <a href="47.深入模型.html">
+            
+                    
+                    47.深入模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="48.静态资源和Ajax请求.html">
+            
+                <a href="48.静态资源和Ajax请求.html">
+            
+                    
+                    48.静态资源和Ajax请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="49.Cookie和Session.html">
+            
+                <a href="49.Cookie和Session.html">
+            
+                    
+                    49.Cookie和Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="50.制作报表.html">
+            
+                <a href="50.制作报表.html">
+            
+                    
+                    50.制作报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="51.日志和调试工具栏.html">
+            
+                <a href="51.日志和调试工具栏.html">
+            
+                    
+                    51.日志和调试工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="52.中间件的应用.html">
+            
+                <a href="52.中间件的应用.html">
+            
+                    
+                    52.中间件的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="53.前后端分离开发入门.html">
+            
+                <a href="53.前后端分离开发入门.html">
+            
+                    
+                    53.前后端分离开发入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="54.RESTful架构和DRF入门.html">
+            
+                <a href="54.RESTful架构和DRF入门.html">
+            
+                    
+                    54.RESTful架构和DRF入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="55.RESTful架构和DRF进阶.html">
+            
+                <a href="55.RESTful架构和DRF进阶.html">
+            
+                    
+                    55.RESTful架构和DRF进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="56.使用缓存.html">
+            
+                <a href="56.使用缓存.html">
+            
+                    
+                    56.使用缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.12" data-path="57.接入三方平台.html">
+            
+                <a href="57.接入三方平台.html">
+            
+                    
+                    57.接入三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="58.异步任务和定时任务.html">
+            
+                <a href="58.异步任务和定时任务.html">
+            
+                    
+                    58.异步任务和定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="59.单元测试.html">
+            
+                <a href="59.单元测试.html">
+            
+                    
+                    59.单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="60.项目上线.html">
+            
+                <a href="60.项目上线.html">
+            
+                    
+                    60.项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Day 61 65
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
+            
+                <a href="../Day61-65/61.网络数据采集概述.html">
+            
+                    
+                    61.网络数据采集概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                <a href="../Day61-65/62.用Python获取网络资源-1.html">
+            
+                    
+                    62.用Python获取网络资源-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
+            
+                    
+                    62.用Python解析HTML页面-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-1.html">
+            
+                    
+                    63.Python中的并发编程-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-2.html">
+            
+                    
+                    63.Python中的并发编程-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
+            
+                <a href="../Day61-65/63.Python中的并发编程-3.html">
+            
+                    
+                    63.Python中的并发编程-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
+            
+                    
+                    63.并发编程在爬虫中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
+            
+                    
+                    64.使用Selenium抓取网页动态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
+            
+                    
+                    65.爬虫框架Scrapy简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Day 66 80
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Day66-80/66.数据分析概述.html">
+            
+                <a href="../Day66-80/66.数据分析概述.html">
+            
+                    
+                    66.数据分析概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Day66-80/67.环境准备.html">
+            
+                <a href="../Day66-80/67.环境准备.html">
+            
+                    
+                    67.环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Day66-80/68.NumPy的应用-1.html">
+            
+                <a href="../Day66-80/68.NumPy的应用-1.html">
+            
+                    
+                    68.NumPy的应用-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Day66-80/69.NumPy的应用-2.html">
+            
+                <a href="../Day66-80/69.NumPy的应用-2.html">
+            
+                    
+                    69.NumPy的应用-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Day66-80/70.NumPy的应用-3.html">
+            
+                <a href="../Day66-80/70.NumPy的应用-3.html">
+            
+                    
+                    70.NumPy的应用-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Day66-80/71.NumPy的应用-4.html">
+            
+                <a href="../Day66-80/71.NumPy的应用-4.html">
+            
+                    
+                    71.NumPy的应用-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Day66-80/72.深入浅出pandas-1.html">
+            
+                <a href="../Day66-80/72.深入浅出pandas-1.html">
+            
+                    
+                    72.深入浅出pandas-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Day66-80/73.深入浅出pandas-2.html">
+            
+                <a href="../Day66-80/73.深入浅出pandas-2.html">
+            
+                    
+                    73.深入浅出pandas-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Day66-80/74.深入浅出pandas-3.html">
+            
+                <a href="../Day66-80/74.深入浅出pandas-3.html">
+            
+                    
+                    74.深入浅出pandas-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Day66-80/75.深入浅出pandas-4.html">
+            
+                <a href="../Day66-80/75.深入浅出pandas-4.html">
+            
+                    
+                    75.深入浅出pandas-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Day66-80/76.深入浅出pandas-5.html">
+            
+                <a href="../Day66-80/76.深入浅出pandas-5.html">
+            
+                    
+                    76.深入浅出pandas-5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Day66-80/77.深入浅出pandas-6.html">
+            
+                <a href="../Day66-80/77.深入浅出pandas-6.html">
+            
+                    
+                    77.深入浅出pandas-6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../Day66-80/78.数据可视化-1.html">
+            
+                <a href="../Day66-80/78.数据可视化-1.html">
+            
+                    
+                    78.数据可视化-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../Day66-80/79.数据可视化-2.html">
+            
+                <a href="../Day66-80/79.数据可视化-2.html">
+            
+                    
+                    79.数据可视化-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../Day66-80/80.数据可视化-3.html">
+            
+                <a href="../Day66-80/80.数据可视化-3.html">
+            
+                    
+                    80.数据可视化-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Day 81 90
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                <a href="../Day81-90/81.人工智能和机器学习概述.html">
+            
+                    
+                    81.人工智能和机器学习概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
+            
+                <a href="../Day81-90/82.k最近邻分类.html">
+            
+                    
+                    82.k最近邻分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
+            
+                <a href="../Day81-90/83.决策树.html">
+            
+                    
+                    83.决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
+            
+                <a href="../Day81-90/83.推荐系统实战-1.html">
+            
+                    
+                    83.推荐系统实战-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
+            
+                <a href="../Day81-90/84.贝叶斯分类.html">
+            
+                    
+                    84.贝叶斯分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
+            
+                <a href="../Day81-90/85.支持向量机.html">
+            
+                    
+                    85.支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
+            
+                <a href="../Day81-90/86.K-均值聚类.html">
+            
+                    
+                    86.K-均值聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
+            
+                <a href="../Day81-90/87.回归分析.html">
+            
+                    
+                    87.回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
+            
+                <a href="../Day81-90/88.深度学习入门.html">
+            
+                    
+                    88.深度学习入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
+            
+                <a href="../Day81-90/89.PyTorch概述.html">
+            
+                    
+                    89.PyTorch概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
+            
+                <a href="../Day81-90/90.PyTorch实战.html">
+            
+                    
+                    90.PyTorch实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Day 91 100
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
+            
+                <a href="../Day91-100/100.Python面试题实录.html">
+            
+                    
+                    100.Python面试题实录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
+            
+                    
+                    91.团队项目开发的问题和解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
+            
+                <a href="../Day91-100/92.Docker容器技术详解.html">
+            
+                    
+                    92.Docker容器技术详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
+            
+                <a href="../Day91-100/93.MySQL性能优化.html">
+            
+                    
+                    93.MySQL性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
+            
+                <a href="../Day91-100/94.网络API接口设计.html">
+            
+                    
+                    94.网络API接口设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
+            
+                <a href="../Day91-100/95.使用Django开发商业项目.html">
+            
+                    
+                    95.使用Django开发商业项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
+            
+                <a href="../Day91-100/96.软件测试和自动化测试.html">
+            
+                    
+                    96.软件测试和自动化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                <a href="../Day91-100/97.电商网站技术要点剖析.html">
+            
+                    
+                    97.电商网站技术要点剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                <a href="../Day91-100/98.项目部署上线和性能调优.html">
+            
+                    
+                    98.项目部署上线和性能调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
+            
+                <a href="../Day91-100/99.面试中的公共问题.html">
+            
+                    
+                    99.面试中的公共问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    公开课
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
+            
+                    
+                    年薪50W+的Python程序员如何写代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" >
+            
+                <span>
+            
+                    
+                    第04次公开课-好玩的Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
+            
+                    
+                    好玩的Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.3" >
+            
+                <span>
+            
+                    
+                    第05次公开课-算法入门系列1-周而复始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
+            
+                    
+                    算法入门系列1-周而复始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.4" >
+            
+                <span>
+            
+                    
+                    第06次公开课-算法入门系列2-在水一方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
+            
+                <span>
+            
+                    
+                    算法入门系列2 - 在水一方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    番外篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
+            
+                <a href="../番外篇/PEP8风格指南.html">
+            
+                    
+                    PEP8风格指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
+            
+                <a href="../番外篇/Python之禅的最佳翻译.html">
+            
+                    
+                    Python之禅的最佳翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
+            
+                <a href="../番外篇/Python参考书籍.html">
+            
+                    
+                    Python参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
+            
+                <a href="../番外篇/Python容器使用小技巧.html">
+            
+                    
+                    Python容器使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
+            
+                <a href="../番外篇/Python数据分析师面试题.html">
+            
+                    
+                    Python数据分析师面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
+            
+                <a href="../番外篇/Python编程惯例.html">
+            
+                    
+                    Python编程惯例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                <a href="../番外篇/一个小例子助你彻底理解协程.html">
+            
+                    
+                    一个小例子助你彻底理解协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                <a href="../番外篇/使用Hexo搭建自己的博客.html">
+            
+                    
+                    使用Hexo搭建自己的博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
+            
+                <a href="../番外篇/常见反爬策略及应对方案.html">
+            
+                    
+                    常见反爬策略及应对方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
+            
+                <a href="../番外篇/我为什么选择了Python.html">
+            
+                    
+                    我为什么选择了Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
+            
+                <a href="../番外篇/接口文档参考示例.html">
+            
+                    
+                    接口文档参考示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
+            
+                <a href="../番外篇/玩转PyCharm.html">
+            
+                    
+                    玩转PyCharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
+            
+                <a href="../番外篇/用函数还是用复杂的表达式.html">
+            
+                    
+                    用函数还是用复杂的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
+            
+                <a href="../番外篇/知乎问题回答.html">
+            
+                    
+                    知乎问题回答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
+            
+                <a href="../番外篇/英语面试.html">
+            
+                    
+                    英语面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
+            
+                <a href="../番外篇/那些年我们踩过的那些坑.html">
+            
+                    
+                    那些年我们踩过的那些坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
+            
+                <a href="../更新日志.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >57.接入三方平台</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x63A5;&#x5165;&#x4E09;&#x65B9;&#x5E73;&#x53F0;">&#x63A5;&#x5165;&#x4E09;&#x65B9;&#x5E73;&#x53F0;</h2>
+<p>&#x5728;Web&#x5E94;&#x7528;&#x7684;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E9B;&#x4EFB;&#x52A1;&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x80FD;&#x591F;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x7684;Web&#x9879;&#x76EE;&#x4E2D;&#x9700;&#x8981;&#x505A;&#x4E2A;&#x4EBA;&#x6216;&#x4F01;&#x4E1A;&#x7684;&#x5B9E;&#x540D;&#x8BA4;&#x8BC1;&#xFF0C;&#x5F88;&#x663E;&#x7136;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x80FD;&#x529B;&#x5224;&#x65AD;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;&#x7684;&#x771F;&#x5B9E;&#x6027;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x501F;&#x52A9;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x6765;&#x5B8C;&#x6210;&#x8BE5;&#x9879;&#x64CD;&#x4F5C;&#x3002;&#x518D;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x5728;&#x7EBF;&#x652F;&#x4ED8;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x7C7B;&#x4E1A;&#x52A1;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x501F;&#x52A9;&#x652F;&#x4ED8;&#x7F51;&#x5173;&#x6765;&#x5B8C;&#x6210;&#x800C;&#x4E0D;&#x662F;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x63A5;&#x5165;&#x50CF;&#x5FAE;&#x4FE1;&#x3001;&#x652F;&#x4ED8;&#x5B9D;&#x3001;&#x94F6;&#x8054;&#x8FD9;&#x6837;&#x7684;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x63A5;&#x5165;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x57FA;&#x672C;&#x4E0A;&#x5C31;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;API&#x63A5;&#x5165;&#x548C;SDK&#x63A5;&#x5165;&#x3002;</p>
+<ol>
+<li>API&#x63A5;&#x5165;&#x6307;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;URL&#x6765;&#x5B8C;&#x6210;&#x64CD;&#x4F5C;&#x6216;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;&#x56FD;&#x5185;&#x6709;&#x5F88;&#x591A;&#x8FD9;&#x6837;&#x7684;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x5E38;&#x7528;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x4F8B;&#x5982;<a href="https://www.juhe.cn/" target="_blank">&#x805A;&#x5408;&#x6570;&#x636E;</a>&#x4E0A;&#x63D0;&#x4F9B;&#x4E86;&#x751F;&#x6D3B;&#x670D;&#x52A1;&#x7C7B;&#x3001;&#x91D1;&#x878D;&#x79D1;&#x6280;&#x7C7B;&#x3001;&#x4EA4;&#x901A;&#x5730;&#x7406;&#x7C7B;&#x3001;&#x5145;&#x503C;&#x7F34;&#x8D39;&#x7C7B;&#x7B49;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;API&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Python&#x7A0B;&#x5E8F;&#x53D1;&#x8D77;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;URL&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E9B;API&#x63A5;&#x53E3;&#x8DDF;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x636E;&#x63A5;&#x53E3;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x4E2D;&#x7684;API&#x662F;&#x4F9B;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x7C7B;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;API&#x662F;&#x5F00;&#x653E;&#x7684;&#x3002;&#x5F53;&#x7136;&#x5F00;&#x653E;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x514D;&#x8D39;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x6709;&#x5546;&#x4E1A;&#x4EF7;&#x503C;&#x7684;&#x6570;&#x636E;&#x7684;API&#x90FD;&#x662F;&#x9700;&#x8981;&#x4ED8;&#x8D39;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x3002;</li>
+<li>SDK&#x63A5;&#x5165;&#x6307;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x5B89;&#x88C5;&#x4E09;&#x65B9;&#x5E93;&#x5E76;&#x4F7F;&#x7528;&#x4E09;&#x65B9;&#x5E93;&#x5C01;&#x88C5;&#x7684;&#x7C7B;&#x3001;&#x51FD;&#x6570;&#x6765;&#x4F7F;&#x7528;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x8BF4;&#x5230;&#x7684;&#x63A5;&#x5165;&#x652F;&#x4ED8;&#x5B9D;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;&#x652F;&#x4ED8;&#x5B9D;&#x7684;SDK&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x652F;&#x4ED8;&#x5B9D;&#x5C01;&#x88C5;&#x7684;&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x5BF9;&#x652F;&#x4ED8;&#x670D;&#x52A1;&#x7684;&#x8C03;&#x7528;&#x3002;</li>
+</ol>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5177;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x63A5;&#x5165;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x3002;</p>
+<h3 id="&#x63A5;&#x5165;&#x77ED;&#x4FE1;&#x7F51;&#x5173;">&#x63A5;&#x5165;&#x77ED;&#x4FE1;&#x7F51;&#x5173;</h3>
+<p>&#x4E00;&#x4E2A;Web&#x9879;&#x76EE;&#x6709;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x5230;&#x77ED;&#x4FE1;&#x670D;&#x52A1;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x767B;&#x5F55;&#x3001;&#x91CD;&#x8981;&#x6D88;&#x606F;&#x63D0;&#x9192;&#x3001;&#x4EA7;&#x54C1;&#x8425;&#x9500;&#x77ED;&#x4FE1;&#x7B49;&#x3002;&#x8981;&#x5B9E;&#x73B0;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A5;&#x5165;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x56FD;&#x5185;&#x6BD4;&#x8F83;&#x6709;&#x540D;&#x7684;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#x5305;&#x62EC;&#xFF1A;&#x4E91;&#x7247;&#x77ED;&#x4FE1;&#x3001;&#x7F51;&#x6613;&#x4E91;&#x4FE1;&#x3001;&#x87BA;&#x4E1D;&#x5E3D;&#x3001;SendCloud&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#x4E00;&#x822C;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x514D;&#x8D39;&#x8BD5;&#x7528;&#x529F;&#x80FD;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4EE5;<a href="https://luosimao.com/" target="_blank">&#x87BA;&#x4E1D;&#x5E3D;</a>&#x5E73;&#x53F0;&#x4E3A;&#x4F8B;&#xFF0C;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x63A5;&#x5165;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x5E73;&#x53F0;&#x64CD;&#x4F5C;&#x57FA;&#x672C;&#x7C7B;&#x4F3C;&#x3002;</p>
+<ol>
+<li><p>&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#xFF0C;&#x65B0;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x514D;&#x8D39;&#x8BD5;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#x767B;&#x5F55;&#x5230;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#xFF0C;&#x8FDB;&#x5165;&#x77ED;&#x4FE1;&#x7248;&#x5757;&#x3002;</p>
+</li>
+<li><p>&#x70B9;&#x51FB;&#x201C;&#x89E6;&#x53D1;&#x53D1;&#x9001;&#x201D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x4E13;&#x5C5E;&#x7684;API Key&#xFF08;&#x8EAB;&#x4EFD;&#x6807;&#x8BC6;&#xFF09;&#x3002;</p>
+<p> <img src="res/luosimao-sms-apikey.png" alt=""></p>
+</li>
+<li><p>&#x70B9;&#x51FB;&#x201C;&#x7B7E;&#x540D;&#x7BA1;&#x7406;&#x201D;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x77ED;&#x4FE1;&#x7B7E;&#x540D;&#xFF0C;&#x77ED;&#x4FE1;&#x90FD;&#x5FC5;&#x987B;&#x643A;&#x5E26;&#x7B7E;&#x540D;&#xFF0C;&#x514D;&#x8D39;&#x8BD5;&#x7528;&#x7684;&#x77ED;&#x4FE1;&#x8981;&#x5728;&#x77ED;&#x4FE1;&#x4E2D;&#x6DFB;&#x52A0;&#x201C;&#x3010;&#x94C1;&#x58F3;&#x6D4B;&#x8BD5;&#x3011;&#x201D;&#x8FD9;&#x4E2A;&#x7B7E;&#x540D;&#xFF0C;&#x5426;&#x5219;&#x77ED;&#x4FE1;&#x65E0;&#x6CD5;&#x53D1;&#x9001;&#x3002;</p>
+<p> <img src="res/luosimao-sms-signature.png" alt=""></p>
+</li>
+<li><p>&#x70B9;&#x51FB;&#x201C;IP&#x767D;&#x540D;&#x5355;&#x201D;&#x5C06;&#x8FD0;&#x884C;Django&#x9879;&#x76EE;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF08;&#x516C;&#x7F51;IP&#x5730;&#x5740;&#xFF0C;&#x672C;&#x5730;&#x8FD0;&#x884C;&#x53EF;&#x4EE5;&#x6253;&#x5F00;<a href="">xxx</a>&#x7F51;&#x7AD9;&#x67E5;&#x770B;&#x81EA;&#x5DF1;&#x672C;&#x673A;&#x7684;&#x516C;&#x7F51;IP&#x5730;&#x5740;&#xFF09;&#x586B;&#x5199;&#x5230;&#x767D;&#x540D;&#x5355;&#x4E2D;&#xFF0C;&#x5426;&#x5219;&#x77ED;&#x4FE1;&#x65E0;&#x6CD5;&#x53D1;&#x9001;&#x3002;</p>
+<p> <img src="res/luosimao-sms-whitelist.png" alt=""></p>
+</li>
+<li><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5269;&#x4F59;&#x7684;&#x77ED;&#x4FE1;&#x6761;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5230;&#x201C;&#x5145;&#x503C;&#x201D;&#x9875;&#x9762;&#x9009;&#x62E9;&#x201C;&#x77ED;&#x4FE1;&#x670D;&#x52A1;&#x201D;&#x8FDB;&#x884C;&#x5145;&#x503C;&#x3002;</p>
+<p> <img src="res/luosimao-pay-onlinebuy.png" alt=""></p>
+</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x87BA;&#x4E1D;&#x5E3D;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#x5B9E;&#x73B0;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send_mobile_code</span><span class="hljs-params">(tel, code)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&quot;&quot;&quot;</span>
+    resp = requests.post(
+        url=<span class="hljs-string">&apos;http://sms-api.luosimao.com/v1/send.json&apos;</span>,
+        auth=(<span class="hljs-string">&apos;api&apos;</span>, <span class="hljs-string">&apos;key-&#x81EA;&#x5DF1;&#x7684;APIKey&apos;</span>),
+        data={
+            <span class="hljs-string">&apos;mobile&apos;</span>: tel,
+            <span class="hljs-string">&apos;message&apos;</span>: f<span class="hljs-string">&apos;&#x60A8;&#x7684;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x662F;{code}&#xFF0C;&#x6253;&#x6B7B;&#x4E5F;&#x4E0D;&#x80FD;&#x544A;&#x8BC9;&#x522B;&#x4EBA;&#x54DF;&#x3002;&#x3010;Python&#x5C0F;&#x8BFE;&#x3011;&apos;</span>
+        },
+        verify=<span class="hljs-keyword">False</span>
+    )
+    <span class="hljs-keyword">return</span> resp.json()
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;<code>requests</code>&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E09;&#x65B9;&#x5E93;&#x5C01;&#x88C5;&#x4E86;HTTP&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7684;&#x76F8;&#x5173;&#x529F;&#x80FD;&#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7684;&#x7B80;&#x5355;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x4E5F;&#x8BB2;&#x5230;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E09;&#x65B9;&#x5E93;&#x3002;<code>send_mobile_code</code>&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7B2C;5&#x884C;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x81EA;&#x5DF1;&#x7684;API Key&#xFF0C;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7B2C;2&#x6B65;&#x4E2D;&#x67E5;&#x770B;&#x5230;&#x7684;&#x81EA;&#x5DF1;&#x7684;API Key&#x3002;&#x8BF7;&#x6C42;&#x87BA;&#x4E1D;&#x5E3D;&#x7684;&#x77ED;&#x4FE1;&#x7F51;&#x5173;&#x4F1A;&#x8FD4;&#x56DE;JSON&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x679C;&#x8FD4;&#x56DE;<code>{&apos;err&apos;: 0, &apos;msg&apos;: &apos;ok&apos;}</code>&#xFF0C;&#x5219;&#x8868;&#x793A;&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x6210;&#x529F;&#xFF0C;&#x5982;&#x679C;<code>err</code>&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x4E0D;&#x4E3A;<code>0</code>&#x800C;&#x662F;&#x5176;&#x4ED6;&#x503C;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x5931;&#x8D25;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x87BA;&#x4E1D;&#x5E3D;&#x5B98;&#x65B9;&#x7684;<a href="https://luosimao.com/docs/api/" target="_blank">&#x5F00;&#x53D1;&#x6587;&#x6863;</a>&#x9875;&#x9762;&#x4E0A;&#x67E5;&#x770B;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x503C;&#x4EE3;&#x8868;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>-20</code>&#x8868;&#x793A;&#x4F59;&#x989D;&#x4E0D;&#x8DB3;&#xFF0C;<code>-32</code>&#x8868;&#x793A;&#x7F3A;&#x5C11;&#x77ED;&#x4FE1;&#x7B7E;&#x540D;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x4E0A;&#x9762;&#x7684;&#x51FD;&#x6570;&#x6765;&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x8DDF;&#x7528;&#x6237;&#x6CE8;&#x518C;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x3002;</p>
+<p>&#x751F;&#x6210;&#x968F;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x548C;&#x9A8C;&#x8BC1;&#x624B;&#x673A;&#x53F7;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> re
+
+TEL_PATTERN = re.compile(<span class="hljs-string">r&apos;1[3-9]\d{9}&apos;</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_tel</span><span class="hljs-params">(tel)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x68C0;&#x67E5;&#x624B;&#x673A;&#x53F7;&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> TEL_PATTERN.fullmatch(tel) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">random_code</span><span class="hljs-params">(length=<span class="hljs-number">6</span>)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x751F;&#x6210;&#x968F;&#x673A;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&apos;</span>.join(random.choices(<span class="hljs-string">&apos;0123456789&apos;</span>, k=length))
+</code></pre>
+<p>&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-meta">@api_view((&apos;GET&apos;, ))</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_mobilecode</span><span class="hljs-params">(request, tel)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x83B7;&#x53D6;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">if</span> check_tel(tel):
+        redis_cli = get_redis_connection()
+        <span class="hljs-keyword">if</span> redis_cli.exists(f<span class="hljs-string">&apos;vote:block-mobile:{tel}&apos;</span>):
+            data = {<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">30001</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x8BF7;&#x4E0D;&#x8981;&#x5728;60&#x79D2;&#x5185;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&apos;</span>}
+        <span class="hljs-keyword">else</span>:
+            code = random_code()
+            send_mobile_code(tel, code)
+            <span class="hljs-comment"># &#x901A;&#x8FC7;Redis&#x963B;&#x6B62;60&#x79D2;&#x5185;&#x5BB9;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;</span>
+            redis_cli.set(f<span class="hljs-string">&apos;vote:block-mobile:{tel}&apos;</span>, <span class="hljs-string">&apos;x&apos;</span>, ex=<span class="hljs-number">60</span>)
+            <span class="hljs-comment"># &#x5C06;&#x9A8C;&#x8BC1;&#x7801;&#x5728;Redis&#x4E2D;&#x4FDD;&#x7559;10&#x5206;&#x949F;&#xFF08;&#x6709;&#x6548;&#x671F;10&#x5206;&#x949F;&#xFF09;</span>
+            redis_cli.set(f<span class="hljs-string">&apos;vote2:valid-mobile:{tel}&apos;</span>, code, ex=<span class="hljs-number">600</span>)
+            data = {<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">30000</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x5DF2;&#x53D1;&#x9001;&#xFF0C;&#x8BF7;&#x6CE8;&#x610F;&#x67E5;&#x6536;&apos;</span>}
+    <span class="hljs-keyword">else</span>:
+        data = {<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">30002</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x6709;&#x6548;&#x7684;&#x624B;&#x673A;&#x53F7;&apos;</span>}
+    <span class="hljs-keyword">return</span> Response(data)
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5229;&#x7528;Redis&#x5B9E;&#x73B0;&#x4E86;&#x4E24;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x963B;&#x6B62;&#x7528;&#x6237;60&#x79D2;&#x5185;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5C06;&#x7528;&#x6237;&#x7684;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x4FDD;&#x7559;10&#x5206;&#x949F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x4E2A;&#x77ED;&#x4FE1;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x6709;&#x6548;&#x671F;&#x53EA;&#x6709;10&#x5206;&#x949F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8981;&#x6C42;&#x7528;&#x6237;&#x5728;&#x6CE8;&#x518C;&#x65F6;&#x63D0;&#x4F9B;&#x8BE5;&#x9A8C;&#x8BC1;&#x7801;&#x6765;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x624B;&#x673A;&#x53F7;&#x7684;&#x771F;&#x5B9E;&#x6027;&#x3002;</p>
+</blockquote>
+<h3 id="&#x63A5;&#x5165;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;">&#x63A5;&#x5165;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;</h3>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x63D0;&#x5230;<strong>&#x4E91;&#x5B58;&#x50A8;</strong>&#x8FD9;&#x4E2A;&#x8BCD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x6307;&#x628A;&#x6570;&#x636E;&#x5B58;&#x653E;&#x5728;&#x7531;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x865A;&#x62DF;&#x670D;&#x52A1;&#x5668;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x5C31;&#x662F;&#x5C06;&#x67D0;&#x4E9B;&#x6570;&#x636E;&#x6216;&#x8D44;&#x6E90;&#x901A;&#x8FC7;&#x7B2C;&#x4E09;&#x5E73;&#x53F0;&#x6258;&#x7BA1;&#x3002;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x63D0;&#x4F9B;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x7684;&#x516C;&#x53F8;&#x90FD;&#x8FD0;&#x8425;&#x7740;&#x5927;&#x578B;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#xFF0C;&#x9700;&#x8981;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x7684;&#x4E2A;&#x4EBA;&#x6216;&#x7EC4;&#x7EC7;&#x901A;&#x8FC7;&#x5411;&#x5176;&#x8D2D;&#x4E70;&#x6216;&#x79DF;&#x8D41;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x6765;&#x6EE1;&#x8DB3;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x9700;&#x6C42;&#x3002;&#x5728;&#x5F00;&#x53D1;Web&#x5E94;&#x7528;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x7528;&#x6237;&#x4E0A;&#x4F20;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76F4;&#x63A5;&#x7F6E;&#x4E8E;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x4E2D;&#xFF0C;&#x4E91;&#x5B58;&#x50A8;&#x901A;&#x5E38;&#x4F1A;&#x63D0;&#x4F9B;&#x5BF9;&#x5E94;&#x7684;URL&#x4F7F;&#x5F97;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;&#x56FD;&#x5185;&#x5916;&#x6BD4;&#x8F83;&#x6709;&#x540D;&#x7684;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF08;&#x5982;&#xFF1A;&#x4E9A;&#x9A6C;&#x900A;&#x7684;S3&#x3001;&#x963F;&#x91CC;&#x7684;OSS2&#x7B49;&#xFF09;&#x4E00;&#x822C;&#x90FD;&#x7269;&#x7F8E;&#x4EF7;&#x5EC9;&#xFF0C;&#x76F8;&#x6BD4;&#x81EA;&#x5DF1;&#x67B6;&#x8BBE;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x4EE3;&#x4EF7;&#x66F4;&#x5C0F;&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x822C;&#x7684;&#x4E91;&#x5B58;&#x50A8;&#x5E73;&#x53F0;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;CDN&#x670D;&#x52A1;&#xFF0C;&#x7528;&#x4E8E;&#x52A0;&#x901F;&#x5BF9;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7BA1;&#x4ECE;&#x54EA;&#x4E2A;&#x89D2;&#x5EA6;&#x51FA;&#x53D1;&#xFF0C;&#x4F7F;&#x7528;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;Web&#x5E94;&#x7528;&#x7684;&#x6570;&#x636E;&#x548C;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x6D89;&#x53CA;&#x5230;&#x4E2A;&#x4EBA;&#x6216;&#x5546;&#x4E1A;&#x9690;&#x79C1;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x53EF;&#x4EE5;&#x6258;&#x7BA1;&#x5230;&#x4E91;&#x5B58;&#x50A8;&#x4E2D;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4EE5;&#x63A5;&#x5165;<a href="https://www.qiniu.com/" target="_blank">&#x4E03;&#x725B;&#x4E91;</a>&#x4E3A;&#x4F8B;&#xFF0C;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5C06;&#x7528;&#x6237;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;&#x4E03;&#x725B;&#x4E91;&#x5B58;&#x50A8;&#x3002;&#x4E03;&#x725B;&#x4E91;&#x662F;&#x56FD;&#x5185;&#x77E5;&#x540D;&#x7684;&#x4E91;&#x8BA1;&#x7B97;&#x53CA;&#x6570;&#x636E;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x5546;&#xFF0C;&#x4E03;&#x725B;&#x4E91;&#x5728;&#x6D77;&#x91CF;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x3001;CDN&#x3001;&#x89C6;&#x9891;&#x70B9;&#x64AD;&#x3001;&#x4E92;&#x52A8;&#x76F4;&#x64AD;&#x4EE5;&#x53CA;&#x5927;&#x89C4;&#x6A21;&#x5F02;&#x6784;&#x6570;&#x636E;&#x7684;&#x667A;&#x80FD;&#x5206;&#x6790;&#x4E0E;&#x5904;&#x7406;&#x7B49;&#x9886;&#x57DF;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x800C;&#x4E14;&#x975E;&#x4ED8;&#x8D39;&#x7528;&#x6237;&#x4E5F;&#x53EF;&#x4EE5;&#x514D;&#x8D39;&#x63A5;&#x5165;&#xFF0C;&#x4F7F;&#x7528;&#x5176;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x63A5;&#x5165;&#x4E03;&#x725B;&#x4E91;&#x7684;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li><p>&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#xFF0C;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x63A7;&#x5236;&#x53F0;&#x3002;</p>
+<p> <img src="res/qiniu-manage-console.png" alt=""></p>
+</li>
+<li><p>&#x9009;&#x62E9;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x3002;</p>
+<p> <img src="res/qiniu-storage-service.png" alt=""></p>
+</li>
+<li><p>&#x5728;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;&#x4E2D;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x7A7A;&#x95F4;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;myvote&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A;&#x7A7A;&#x95F4;&#x540D;&#x79F0;&#x5DF2;&#x88AB;&#x5360;&#x7528;&#xFF0C;&#x66F4;&#x6362;&#x4E00;&#x4E2A;&#x518D;&#x5C1D;&#x8BD5;&#x5373;&#x53EF;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x521B;&#x5EFA;&#x7A7A;&#x95F4;&#x540E;&#x4F1A;&#x63D0;&#x793A;&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;&#xFF0C;&#x5982;&#x679C;&#x6682;&#x65F6;&#x8FD8;&#x6CA1;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E03;&#x725B;&#x4E91;&#x63D0;&#x4F9B;&#x7684;&#x4E34;&#x65F6;&#x57DF;&#x540D;&#xFF0C;&#x4F46;&#x662F;&#x4E34;&#x65F6;&#x57DF;&#x540D;&#x4F1A;&#x5728;30&#x5929;&#x540E;&#x88AB;&#x56DE;&#x6536;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x51C6;&#x5907;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;&#xFF08;&#x57DF;&#x540D;&#x9700;&#x8981;&#x5907;&#x6848;&#xFF0C;&#x4E0D;&#x6E05;&#x695A;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#x7684;&#x8BF7;&#x81EA;&#x884C;&#x67E5;&#x9605;&#x76F8;&#x5173;&#x8D44;&#x6599;&#xFF09;&#x3002;</p>
+<p> <img src="res/qiniu-storage-create.png" alt=""></p>
+</li>
+<li><p>&#x5728;&#x7F51;&#x9875;&#x7684;&#x53F3;&#x4E0A;&#x89D2;&#x70B9;&#x51FB;&#x4E2A;&#x4EBA;&#x5934;&#x50CF;&#x4E2D;&#x7684;&#x201C;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x201D;&#xFF0C;&#x67E5;&#x770B;&#x81EA;&#x5DF1;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x7A0D;&#x540E;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;AK&#xFF08;AccessKey&#xFF09;&#x548C;SK&#xFF08;SecretKey&#xFF09;&#x4E24;&#x4E2A;&#x5BC6;&#x94A5;&#x6765;&#x8BA4;&#x8BC1;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x3002;</p>
+<p> <img src="res/qiniu-secretkey-management.png" alt=""></p>
+</li>
+<li><p>&#x70B9;&#x51FB;&#x7F51;&#x9875;&#x4E0A;&#x65B9;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x201C;&#x6587;&#x6863;&#x201D;&#xFF0C;&#x8FDB;&#x5165;&#x5230;<a href="https://developer.qiniu.com/" target="_blank">&#x4E03;&#x725B;&#x5F00;&#x53D1;&#x8005;&#x4E2D;&#x5FC3;</a>&#xFF0C;&#x9009;&#x62E9;&#x5BFC;&#x822A;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x201C;SDK&amp;&#x5DE5;&#x5177;&#x201D;&#x5E76;&#x70B9;&#x51FB;&#x201C;&#x5B98;&#x65B9;SDK&#x201D;&#x5B50;&#x83DC;&#x5355;&#xFF0C;&#x627E;&#x5230;Python&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#xFF09;&#x5E76;&#x70B9;&#x51FB;&#x201C;&#x6587;&#x6863;&#x201D;&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x3002;</p>
+<p> <img src="res/qiniu-document-python.png" alt=""></p>
+</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x53EA;&#x8981;&#x5B89;&#x88C5;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x63D0;&#x4F9B;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x63A5;&#x5165;&#x4E03;&#x725B;&#x4E91;&#xFF0C;&#x4F7F;&#x7528;&#x4E03;&#x725B;&#x4E91;&#x63D0;&#x4F9B;&#x7684;&#x4E91;&#x5B58;&#x50A8;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x670D;&#x52A1;&#x3002;&#x9996;&#x5148;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x4E03;&#x725B;&#x4E91;&#x7684;&#x4E09;&#x65B9;&#x5E93;&#x3002;</p>
+<pre><code class="lang-Bash">pip install qiniu
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>qiniu</code>&#x6A21;&#x5757;&#x4E2D;&#x7684;<code>put_file</code>&#x548C;<code>put_stream</code>&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#xFF0C;&#x524D;&#x8005;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x540E;&#x8005;&#x53EF;&#x4EE5;&#x5C06;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x4E0A;&#x4F20;&#x81F3;&#x4E03;&#x725B;&#x4E91;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">import</span> qiniu
+
+AUTH = qiniu.Auth(<span class="hljs-string">&apos;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x4E2D;&#x7684;AccessKey&apos;</span>, <span class="hljs-string">&apos;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x4E2D;&#x7684;SecretKey&apos;</span>)
+BUCKET_NAME = <span class="hljs-string">&apos;myvote&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">upload_file_to_qiniu</span><span class="hljs-params">(key, file_path)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x4E0A;&#x4F20;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;&#x5230;&#x4E03;&#x725B;&#x4E91;&quot;&quot;&quot;</span>
+    token = AUTH.upload_token(BUCKET_NAME, key)
+    <span class="hljs-keyword">return</span> qiniu.put_file(token, key, file_path)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">upload_stream_to_qiniu</span><span class="hljs-params">(key, stream, size)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x4E0A;&#x4F20;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x6D41;&#x5230;&#x4E03;&#x725B;&#x4E91;&quot;&quot;&quot;</span>
+    token = AUTH.upload_token(BUCKET_NAME, key)
+    <span class="hljs-keyword">return</span> qiniu.put_stream(token, key, stream, <span class="hljs-keyword">None</span>, size)
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x7B80;&#x5355;&#x524D;&#x7AEF;&#x9875;&#x3002;</p>
+<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/upload/&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">&quot;multipart/form-data&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;photo&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x4E0A;&#x4F20;&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x524D;&#x7AEF;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x8868;&#x5355;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#xFF0C;&#x8868;&#x5355;&#x7684;method&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A;post&#xFF0C;enctype&#x5C5E;&#x6027;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A;multipart/form-data&#xFF0C;&#x8868;&#x5355;&#x4E2D;type&#x5C5E;&#x6027;&#x4E3A;file&#x7684;input&#x6807;&#x7B7E;&#xFF0C;&#x5C31;&#x662F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
+</blockquote>
+<p>&#x5B9E;&#x73B0;&#x4E0A;&#x4F20;&#x529F;&#x80FD;&#x7684;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">from</span> django.views.decorators.csrf <span class="hljs-keyword">import</span> csrf_exempt
+
+
+<span class="hljs-meta">@csrf_exempt</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">upload</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x5C0F;&#x4E8E;2.5M&#xFF0C;&#x5219;photo&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x4E3A;InMemoryUploadedFile&#xFF0C;&#x6587;&#x4EF6;&#x5728;&#x5185;&#x5B58;&#x4E2D;</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x8D85;&#x8FC7;2.5M&#xFF0C;&#x5219;photo&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x4E3A;TemporaryUploadedFile&#xFF0C;&#x6587;&#x4EF6;&#x5728;&#x4E34;&#x65F6;&#x8DEF;&#x5F84;&#x4E0B;</span>
+    photo = request.FILES.get(<span class="hljs-string">&apos;photo&apos;</span>)
+    _, ext = os.path.splitext(photo.name)
+    <span class="hljs-comment"># &#x901A;&#x8FC7;UUID&#x548C;&#x539F;&#x6765;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x751F;&#x6210;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x540D;</span>
+    filename = f<span class="hljs-string">&apos;{uuid.uuid1().hex}{ext}&apos;</span>
+    <span class="hljs-comment"># &#x5BF9;&#x4E8E;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x5C01;&#x88C5;&#x597D;&#x7684;&#x51FD;&#x6570;upload_stream_to_qiniu&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5230;&#x4E03;&#x725B;&#x4E91;</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x4E34;&#x65F6;&#x8DEF;&#x5F84;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;upload_file_to_qiniu&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;</span>
+    upload_stream_to_qiniu(filename, photo.file, photo.size)
+    <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/static/html/upload.html&apos;</span>)
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4E86;<code>csrf_exempt</code>&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x8BE5;&#x88C5;&#x9970;&#x5668;&#x80FD;&#x591F;&#x8BA9;&#x8868;&#x5355;&#x514D;&#x9664;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;CSRF&#x4EE4;&#x724C;&#x7684;&#x8981;&#x6C42;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x4EE3;&#x7801;&#x7B2C;11&#x884C;&#x4F7F;&#x7528;&#x4E86;<code>uuid</code>&#x6A21;&#x5757;&#x7684;<code>uuid1</code>&#x51FD;&#x6570;&#x6765;&#x751F;&#x6210;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+</blockquote>
+<p>&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x5C1D;&#x8BD5;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E03;&#x725B;&#x4E91;&#x201C;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;&#x201D;&#x4E2D;&#x70B9;&#x51FB;&#x81EA;&#x5DF1;&#x7A7A;&#x95F4;&#x5E76;&#x8FDB;&#x5165;&#x201C;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x201D;&#x754C;&#x9762;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E03;&#x725B;&#x4E91;&#x63D0;&#x4F9B;&#x7684;&#x57DF;&#x540D;&#x83B7;&#x53D6;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="res/qiniu-file-management.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="56.使用缓存.html" class="navigation navigation-prev " aria-label="Previous page: 56.使用缓存">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="58.异步任务和定时任务.html" class="navigation navigation-next " aria-label="Next page: 58.异步任务和定时任务">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"57.接入三方平台","level":"1.7.12","depth":2,"next":{"title":"58.异步任务和定时任务","level":"1.7.13","depth":2,"path":"Day46-60/58.异步任务和定时任务.md","ref":"Day46-60/58.异步任务和定时任务.md","articles":[]},"previous":{"title":"56.使用缓存","level":"1.7.11","depth":2,"path":"Day46-60/56.使用缓存.md","ref":"Day46-60/56.使用缓存.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day46-60/57.接入三方平台.md","mtime":"2024-07-05T03:42:45.156Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
