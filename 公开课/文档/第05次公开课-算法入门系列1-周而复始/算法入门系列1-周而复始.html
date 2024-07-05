@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../../../gitbook/style.css">
@@ -67,7 +67,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -78,7 +78,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1826,7 +1835,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1879,64 +1888,66 @@
 <p>&#x4F8B;&#x5B50;2&#xFF1A;&#x5927;&#x6559;&#x5BA4;&#x91CC;&#x5750;&#x4E86;&#x51E0;&#x767E;&#x540D;&#x5B66;&#x751F;&#x4E00;&#x8D77;&#x542C;&#x8BFE;&#xFF0C;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x7684;&#x7EDF;&#x8BA1;&#x5B66;&#x751F;&#x4EBA;&#x6570;&#xFF1F;</p>
 <p>&#x4F8B;&#x5B50;3&#xFF1A;&#x5411;&#x5217;&#x8868;&#x5BB9;&#x5668;&#x4E2D;<strong>&#x9006;&#x5411;</strong>&#x63D2;&#x5165;100000&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
 <ul>
-<li><p>&#x65B9;&#x6CD5;1&#xFF1A;</p>
-<pre><code class="lang-Python">nums = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100000</span>):
-    nums.append(i)
-nums.reverse()
-</code></pre>
-</li>
-<li><p>&#x65B9;&#x6CD5;2&#xFF1A;</p>
-<pre><code class="lang-Python">nums = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100000</span>):
-    nums.insert(<span class="hljs-number">0</span>, i)
-</code></pre>
-</li>
-</ul>
-<p>&#x4F8B;&#x5B50;3&#xFF1A;&#x751F;&#x6210;Fibonacci&#x6570;&#x5217;&#xFF08;&#x524D;100&#x4E2A;Fibonacci&#x6570;&#xFF09;&#x3002;</p>
-<ul>
-<li><p>&#x65B9;&#x6CD5;1 - &#x9012;&#x63A8;&#xFF1A;</p>
-<pre><code class="lang-Python">a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
-<span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">101</span>):
-    a, b = b, a + b
-    print(f<span class="hljs-string">&apos;{num}: {a}&apos;</span>)
-</code></pre>
-</li>
-<li><p>&#x65B9;&#x6CD5;2 - &#x9012;&#x5F52;&#xFF1A;</p>
-<p>```Python
-def fib(num):</p>
-<pre><code>if num in (1, 2):
-    return 1
-return fib(num - 1) + fib(num - 2)
-</code></pre></li>
+<li>&#x65B9;&#x6CD5;1&#xFF1A;</li>
 </ul>
 </li>
 </ol>
-<pre><code> for num in range(1, 101):
-     print(f&apos;{num}: {fib(num)}&apos;)
- ```
-</code></pre><ul>
-<li><p>&#x65B9;&#x6CD5;3 - &#x6539;&#x8FDB;&#x7684;&#x9012;&#x5F52;&#xFF1A;</p>
-<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fib</span><span class="hljs-params">(num, temp={})</span>:</span>
-    <span class="hljs-keyword">if</span> num <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>):
-        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
-    <span class="hljs-keyword">elif</span> num <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> temp:
-        temp[num] = fib(num - <span class="hljs-number">1</span>) + fib(num - <span class="hljs-number">2</span>)
-    <span class="hljs-keyword">return</span> temp[num]
+<pre><code class="lang-Python">     nums = []
+     <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100000</span>):
+         nums.append(i)
+     nums.reverse()
 </code></pre>
-</li>
-<li><p>&#x65B9;&#x6CD5;4  - &#x6539;&#x8FDB;&#x7684;&#x9012;&#x5F52;&#xFF1A;</p>
-<p>```Python
-from functools import lru_cache</p>
-</li>
+<ul>
+<li>&#x65B9;&#x6CD5;2&#xFF1A;</li>
 </ul>
-<pre><code> @lru_cache()
- def fib(num):
-     if num in (1, 2):
-         return 1
-     return fib(num - 1) + fib(num - 2)
- ```
-</code></pre><ol>
+<pre><code class="lang-Python">     nums = []
+     <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100000</span>):
+         nums.insert(<span class="hljs-number">0</span>, i)
+</code></pre>
+<p>   &#x4F8B;&#x5B50;3&#xFF1A;&#x751F;&#x6210;Fibonacci&#x6570;&#x5217;&#xFF08;&#x524D;100&#x4E2A;Fibonacci&#x6570;&#xFF09;&#x3002;</p>
+<ul>
+<li>&#x65B9;&#x6CD5;1 - &#x9012;&#x63A8;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-Python">     a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+     <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">101</span>):
+         a, b = b, a + b
+         print(f<span class="hljs-string">&apos;{num}: {a}&apos;</span>)
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5;2 - &#x9012;&#x5F52;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-Python">     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fib</span><span class="hljs-params">(num)</span>:</span>
+         <span class="hljs-keyword">if</span> num <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>):
+             <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+         <span class="hljs-keyword">return</span> fib(num - <span class="hljs-number">1</span>) + fib(num - <span class="hljs-number">2</span>)
+
+
+     <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">101</span>):
+         print(f<span class="hljs-string">&apos;{num}: {fib(num)}&apos;</span>)
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5;3 - &#x6539;&#x8FDB;&#x7684;&#x9012;&#x5F52;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-Python">     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fib</span><span class="hljs-params">(num, temp={})</span>:</span>
+         <span class="hljs-keyword">if</span> num <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>):
+             <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+         <span class="hljs-keyword">elif</span> num <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> temp:
+             temp[num] = fib(num - <span class="hljs-number">1</span>) + fib(num - <span class="hljs-number">2</span>)
+         <span class="hljs-keyword">return</span> temp[num]
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5;4  - &#x6539;&#x8FDB;&#x7684;&#x9012;&#x5F52;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-Python">     <span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> lru_cache
+
+
+<span class="hljs-meta">     @lru_cache()</span>
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fib</span><span class="hljs-params">(num)</span>:</span>
+         <span class="hljs-keyword">if</span> num <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>):
+             <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+         <span class="hljs-keyword">return</span> fib(num - <span class="hljs-number">1</span>) + fib(num - <span class="hljs-number">2</span>)
+</code></pre>
+<ol>
 <li><p>&#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x7B97;&#x6CD5;&#x7684;&#x597D;&#x574F;&#xFF1F;</p>
 <p><a href="https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6" target="_blank">&#x6E10;&#x8FD1;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</a>&#x548C;&#x6E10;&#x8FD1;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
 </li>
@@ -1959,48 +1970,49 @@ from functools import lru_cache</p>
 <p>&#x867D;&#x7136;&#x66B4;&#x529B;&#x641C;&#x7D22;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5B58;&#x5728;&#x5B83;&#x5C31;&#x4E00;&#x5B9A;&#x80FD;&#x591F;&#x627E;&#x5230;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x4EE3;&#x4EF7;&#x662F;&#x548C;&#x5019;&#x9009;&#x65B9;&#x6848;&#x7684;&#x6570;&#x91CF;&#x6210;&#x6BD4;&#x4F8B;&#x7684;&#xFF0C;&#x7531;&#x4E8E;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x5728;&#x5F88;&#x591A;&#x5B9E;&#x9645;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x6D88;&#x8017;&#x7684;&#x4EE3;&#x4EF7;&#x4F1A;&#x968F;&#x7740;&#x95EE;&#x9898;&#x89C4;&#x6A21;&#x7684;&#x589E;&#x52A0;&#x800C;&#x5FEB;&#x901F;&#x5730;&#x589E;&#x957F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x95EE;&#x9898;&#x89C4;&#x6A21;&#x6709;&#x9650;&#x6216;&#x5F53;&#x5B58;&#x5728;&#x53EF;&#x7528;&#x4E8E;&#x5C06;&#x5019;&#x9009;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x96C6;&#x5408;&#x51CF;&#x5C11;&#x5230;&#x53EF;&#x7BA1;&#x7406;&#x5927;&#x5C0F;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66B4;&#x529B;&#x641C;&#x7D22;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5F53;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#x7684;&#x7B80;&#x5355;&#x5EA6;&#x6BD4;&#x901F;&#x5EA6;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
 <h3 id="&#x7ECF;&#x5178;&#x4F8B;&#x5B50;">&#x7ECF;&#x5178;&#x4F8B;&#x5B50;</h3>
 <ol>
-<li><p><strong>&#x767E;&#x94B1;&#x767E;&#x9E21;</strong>&#x95EE;&#x9898;&#xFF1A;&#x516C;&#x9E21;5&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x6BCD;&#x9E21;3&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x5C0F;&#x9E21;1&#x5143;&#x4E09;&#x53EA;&#xFF0C;&#x7528;100&#x5143;&#x4E70;&#x4E00;&#x767E;&#x53EA;&#x9E21;&#xFF0C;&#x95EE;&#x516C;&#x9E21;&#x3001;&#x6BCD;&#x9E21;&#x3001;&#x5C0F;&#x9E21;&#x5404;&#x6709;&#x591A;&#x5C11;&#x53EA;&#xFF1F;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">21</span>):
-    <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(<span class="hljs-number">34</span>):
-        z = <span class="hljs-number">100</span> - x - y
-        <span class="hljs-keyword">if</span> z % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> <span class="hljs-number">5</span> * x + <span class="hljs-number">3</span> * y + z // <span class="hljs-number">3</span> == <span class="hljs-number">100</span>:
-            print(x, y, z)
-</code></pre>
-</li>
-<li><p><strong>&#x4E94;&#x4EBA;&#x5206;&#x9C7C;</strong>&#x95EE;&#x9898;&#xFF1A;ABCDE&#x4E94;&#x4EBA;&#x5728;&#x67D0;&#x5929;&#x591C;&#x91CC;&#x5408;&#x4F19;&#x6355;&#x9C7C;&#xFF0C;&#x6700;&#x540E;&#x75B2;&#x60EB;&#x4E0D;&#x582A;&#x5404;&#x81EA;&#x7761;&#x89C9;&#x3002;&#x7B2C;&#x4E8C;&#x5929;A&#x7B2C;&#x4E00;&#x4E2A;&#x9192;&#x6765;&#xFF0C;&#x4ED6;&#x5C06;&#x9C7C;&#x5206;&#x4E3A;5&#x4EFD;&#xFF0C;&#x6254;&#x6389;&#x591A;&#x4F59;&#x7684;1&#x6761;&#xFF0C;&#x62FF;&#x8D70;&#x4E86;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4EFD;&#xFF1B;B&#x7B2C;&#x4E8C;&#x4E2A;&#x9192;&#x6765;&#xFF0C;&#x4E5F;&#x5C06;&#x9C7C;&#x5206;&#x4E3A;5&#x4EFD;&#xFF0C;&#x6254;&#x6389;&#x591A;&#x4F59;&#x7684;1&#x6761;&#xFF0C;&#x62FF;&#x8D70;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4EFD;&#xFF1B;&#x7136;&#x540E;C&#x3001;D&#x3001;E&#x4F9D;&#x6B21;&#x9192;&#x6765;&#xFF0C;&#x4E5F;&#x6309;&#x540C;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x5206;&#x9C7C;&#xFF0C;&#x95EE;&#x4ED6;&#x4EEC;&#x81F3;&#x5C11;&#x6355;&#x4E86;&#x591A;&#x5C11;&#x6761;&#x9C7C;&#xFF1F;</p>
-<pre><code class="lang-Python">fish = <span class="hljs-number">6</span>
-<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
-    total = fish
-    enough = <span class="hljs-keyword">True</span>
-    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        <span class="hljs-keyword">if</span> (total - <span class="hljs-number">1</span>) % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>:
-            total = (total - <span class="hljs-number">1</span>) // <span class="hljs-number">5</span> * <span class="hljs-number">4</span>
-        <span class="hljs-keyword">else</span>:
-            enough = <span class="hljs-keyword">False</span>
-            <span class="hljs-keyword">break</span>
-    <span class="hljs-keyword">if</span> enough:
-        print(fish)
-        <span class="hljs-keyword">break</span>
-    fish += <span class="hljs-number">5</span>
-</code></pre>
-</li>
-<li><p><strong>&#x66B4;&#x529B;&#x7834;&#x89E3;&#x53E3;&#x4EE4;</strong>&#xFF1A;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> re
-
-<span class="hljs-keyword">import</span> PyPDF2
-
-<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;Python_Tricks_encrypted.pdf&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> pdf_file_stream:
-    reader = PyPDF2.PdfFileReader(pdf_file_stream)
-    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;dictionary.txt&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> txt_file_stream:
-        file_iter = iter(<span class="hljs-keyword">lambda</span>: txt_file_stream.readline(), <span class="hljs-string">&apos;&apos;</span>)
-        <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> file_iter:
-            word = re.sub(<span class="hljs-string">r&apos;\s&apos;</span>, <span class="hljs-string">&apos;&apos;</span>, word)
-            <span class="hljs-keyword">if</span> reader.decrypt(word):
-                print(word)
-                <span class="hljs-keyword">break</span>
-</code></pre>
-</li>
+<li><strong>&#x767E;&#x94B1;&#x767E;&#x9E21;</strong>&#x95EE;&#x9898;&#xFF1A;&#x516C;&#x9E21;5&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x6BCD;&#x9E21;3&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x5C0F;&#x9E21;1&#x5143;&#x4E09;&#x53EA;&#xFF0C;&#x7528;100&#x5143;&#x4E70;&#x4E00;&#x767E;&#x53EA;&#x9E21;&#xFF0C;&#x95EE;&#x516C;&#x9E21;&#x3001;&#x6BCD;&#x9E21;&#x3001;&#x5C0F;&#x9E21;&#x5404;&#x6709;&#x591A;&#x5C11;&#x53EA;&#xFF1F;</li>
 </ol>
+<pre><code class="lang-Python">   <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">21</span>):
+       <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(<span class="hljs-number">34</span>):
+           z = <span class="hljs-number">100</span> - x - y
+           <span class="hljs-keyword">if</span> z % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> <span class="hljs-number">5</span> * x + <span class="hljs-number">3</span> * y + z // <span class="hljs-number">3</span> == <span class="hljs-number">100</span>:
+               print(x, y, z)
+</code></pre>
+<ol>
+<li><strong>&#x4E94;&#x4EBA;&#x5206;&#x9C7C;</strong>&#x95EE;&#x9898;&#xFF1A;ABCDE&#x4E94;&#x4EBA;&#x5728;&#x67D0;&#x5929;&#x591C;&#x91CC;&#x5408;&#x4F19;&#x6355;&#x9C7C;&#xFF0C;&#x6700;&#x540E;&#x75B2;&#x60EB;&#x4E0D;&#x582A;&#x5404;&#x81EA;&#x7761;&#x89C9;&#x3002;&#x7B2C;&#x4E8C;&#x5929;A&#x7B2C;&#x4E00;&#x4E2A;&#x9192;&#x6765;&#xFF0C;&#x4ED6;&#x5C06;&#x9C7C;&#x5206;&#x4E3A;5&#x4EFD;&#xFF0C;&#x6254;&#x6389;&#x591A;&#x4F59;&#x7684;1&#x6761;&#xFF0C;&#x62FF;&#x8D70;&#x4E86;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4EFD;&#xFF1B;B&#x7B2C;&#x4E8C;&#x4E2A;&#x9192;&#x6765;&#xFF0C;&#x4E5F;&#x5C06;&#x9C7C;&#x5206;&#x4E3A;5&#x4EFD;&#xFF0C;&#x6254;&#x6389;&#x591A;&#x4F59;&#x7684;1&#x6761;&#xFF0C;&#x62FF;&#x8D70;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4EFD;&#xFF1B;&#x7136;&#x540E;C&#x3001;D&#x3001;E&#x4F9D;&#x6B21;&#x9192;&#x6765;&#xFF0C;&#x4E5F;&#x6309;&#x540C;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x5206;&#x9C7C;&#xFF0C;&#x95EE;&#x4ED6;&#x4EEC;&#x81F3;&#x5C11;&#x6355;&#x4E86;&#x591A;&#x5C11;&#x6761;&#x9C7C;&#xFF1F;</li>
+</ol>
+<pre><code class="lang-Python">   fish = <span class="hljs-number">6</span>
+   <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+       total = fish
+       enough = <span class="hljs-keyword">True</span>
+       <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+           <span class="hljs-keyword">if</span> (total - <span class="hljs-number">1</span>) % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>:
+               total = (total - <span class="hljs-number">1</span>) // <span class="hljs-number">5</span> * <span class="hljs-number">4</span>
+           <span class="hljs-keyword">else</span>:
+               enough = <span class="hljs-keyword">False</span>
+               <span class="hljs-keyword">break</span>
+       <span class="hljs-keyword">if</span> enough:
+           print(fish)
+           <span class="hljs-keyword">break</span>
+       fish += <span class="hljs-number">5</span>
+</code></pre>
+<ol>
+<li><strong>&#x66B4;&#x529B;&#x7834;&#x89E3;&#x53E3;&#x4EE4;</strong>&#xFF1A;</li>
+</ol>
+<pre><code class="lang-Python">   <span class="hljs-keyword">import</span> re
+
+   <span class="hljs-keyword">import</span> PyPDF2
+
+   <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;Python_Tricks_encrypted.pdf&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> pdf_file_stream:
+       reader = PyPDF2.PdfFileReader(pdf_file_stream)
+       <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;dictionary.txt&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> txt_file_stream:
+           file_iter = iter(<span class="hljs-keyword">lambda</span>: txt_file_stream.readline(), <span class="hljs-string">&apos;&apos;</span>)
+           <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> file_iter:
+               word = re.sub(<span class="hljs-string">r&apos;\s&apos;</span>, <span class="hljs-string">&apos;&apos;</span>, word)
+               <span class="hljs-keyword">if</span> reader.decrypt(word):
+                   print(word)
+                   <span class="hljs-keyword">break</span>
+</code></pre>
 
                                 
                                 </section>
@@ -2036,7 +2048,7 @@ from functools import lru_cache</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"算法入门系列1-周而复始","level":"1.12.1.3.1","depth":4,"next":{"title":"第06次公开课-算法入门系列2-在水一方","level":"1.12.1.4","depth":3,"ref":"","articles":[{"title":"算法入门系列2 - 在水一方","level":"1.12.1.4.1","depth":4,"path":"公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md","ref":"公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md","articles":[]}]},"previous":{"title":"第05次公开课-算法入门系列1-周而复始","level":"1.12.1.3","depth":3,"ref":"","articles":[{"title":"算法入门系列1-周而复始","level":"1.12.1.3.1","depth":4,"path":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","ref":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","mtime":"2024-07-05T03:42:45.614Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"算法入门系列1-周而复始","level":"1.12.1.3.1","depth":4,"next":{"title":"第06次公开课-算法入门系列2-在水一方","level":"1.12.1.4","depth":3,"ref":"","articles":[{"title":"算法入门系列2 - 在水一方","level":"1.12.1.4.1","depth":4,"path":"公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md","ref":"公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md","articles":[]}]},"previous":{"title":"第05次公开课-算法入门系列1-周而复始","level":"1.12.1.3","depth":3,"ref":"","articles":[{"title":"算法入门系列1-周而复始","level":"1.12.1.3.1","depth":4,"path":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","ref":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.md","mtime":"2024-07-05T07:21:41.678Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

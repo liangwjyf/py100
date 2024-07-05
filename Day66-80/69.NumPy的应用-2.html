@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -2015,65 +2024,74 @@ print(stats.kurtosis(array1))         <span class="hljs-comment"># &#x5CF0;&#x5E
 </li>
 <li><p><code>dump()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x4FDD;&#x5B58;&#x6570;&#x7EC4;&#x5230;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; NumPy &#x4E2D;&#x7684;<code>load()</code>&#x51FD;&#x6570;&#x4ECE;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x3002;</p>
 <p> &#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python"> array.dump(<span class="hljs-string">&apos;array1-data&apos;</span>)
- array3 = np.load(<span class="hljs-string">&apos;array1-data&apos;</span>, allow_pickle=<span class="hljs-keyword">True</span>)
- array3
-</code></pre>
-<p> &#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code> array([46, 51, 15, 42, 53, 71, 20, 62,  6, 94])
-</code></pre></li>
-<li><p><code>tofile()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-Python">array1.tofile(<span class="hljs-string">&apos;res/array.txt&apos;</span>, sep=<span class="hljs-string">&apos;,&apos;</span>)
-</code></pre>
 </li>
+</ol>
+<pre><code class="lang-Python">    array.dump(<span class="hljs-string">&apos;array1-data&apos;</span>)
+    array3 = np.load(<span class="hljs-string">&apos;array1-data&apos;</span>, allow_pickle=<span class="hljs-keyword">True</span>)
+    array3
+</code></pre>
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    array([46, 51, 15, 42, 53, 71, 20, 62,  6, 94])
+</code></pre><ol>
+<li><code>tofile()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</li>
+</ol>
+<pre><code class="lang-Python">   array1.tofile(<span class="hljs-string">&apos;res/array.txt&apos;</span>, sep=<span class="hljs-string">&apos;,&apos;</span>)
+</code></pre>
+<ol>
 <li><p><code>fill()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5411;&#x6570;&#x7EC4;&#x4E2D;&#x586B;&#x5145;&#x6307;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
 </li>
 <li><p><code>flatten()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;&#x4E3A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
 <p> &#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python"> array2.flatten()
+</li>
+</ol>
+<pre><code class="lang-Python">    array2.flatten()
 </code></pre>
-<p> &#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code> array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-</code></pre></li>
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+</code></pre><ol>
 <li><p><code>nonzero()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x8FD4;&#x56DE;&#x975E;0&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</p>
 </li>
 <li><p><code>round()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5BF9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x505A;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x64CD;&#x4F5C;&#x3002;</p>
 </li>
 <li><p><code>sort()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5BF9;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x5C31;&#x5730;&#x6392;&#x5E8F;&#x3002;</p>
 <p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">array1.sort()
-array1
+</li>
+</ol>
+<pre><code class="lang-Python">    array1.sort()
+    array1
 </code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>array([ 6, 15, 20, 42, 46, 51, 53, 62, 71, 94])
-</code></pre></li>
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    array([ 6, 15, 20, 42, 46, 51, 53, 62, 71, 94])
+</code></pre><ol>
 <li><p><code>swapaxes()</code>&#x548C;<code>transpose()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x4EA4;&#x6362;&#x6570;&#x7EC4;&#x6307;&#x5B9A;&#x7684;&#x8F74;&#x548C;&#x8F6C;&#x7F6E;&#x3002;</p>
 <p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">array2.swapaxes(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+</li>
+</ol>
+<pre><code class="lang-Python">    array2.swapaxes(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
 </code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>array([[1, 4, 7],
-       [2, 5, 8],
-       [3, 6, 9]])
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">array2.transpose()
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    array([[1, 4, 7],
+           [2, 5, 8],
+           [3, 6, 9]])
+</code></pre><pre><code>&#x4EE3;&#x7801;&#xFF1A;
+</code></pre><pre><code class="lang-Python">    array2.transpose()
 </code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>array([[1, 4, 7],
-       [2, 5, 8],
-       [3, 6, 9]])
-</code></pre></li>
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    array([[1, 4, 7],
+           [2, 5, 8],
+           [3, 6, 9]])
+</code></pre><ol>
 <li><p><code>tolist()</code>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x6570;&#x7EC4;&#x8F6C;&#x6210; Python &#x4E2D;&#x7684;<code>list</code>&#x3002;</p>
 <p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">print(array2.tolist())
-print(type(array2.tolist()))
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-&lt;class &apos;list&apos;&gt;
-</code></pre></li>
+</li>
 </ol>
-
+<pre><code class="lang-Python">    print(array2.tolist())
+    print(type(array2.tolist()))
+</code></pre>
+<pre><code>&#x8F93;&#x51FA;&#xFF1A;
+</code></pre><pre><code>    [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    &lt;class &apos;list&apos;&gt;
+</code></pre>
                                 
                                 </section>
                             
@@ -2116,7 +2134,7 @@ print(type(array2.tolist()))
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"69.NumPy的应用-2","level":"1.9.4","depth":2,"next":{"title":"70.NumPy的应用-3","level":"1.9.5","depth":2,"path":"Day66-80/70.NumPy的应用-3.md","ref":"Day66-80/70.NumPy的应用-3.md","articles":[]},"previous":{"title":"68.NumPy的应用-1","level":"1.9.3","depth":2,"path":"Day66-80/68.NumPy的应用-1.md","ref":"Day66-80/68.NumPy的应用-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day66-80/69.NumPy的应用-2.md","mtime":"2024-07-05T03:42:45.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"69.NumPy的应用-2","level":"1.9.4","depth":2,"next":{"title":"70.NumPy的应用-3","level":"1.9.5","depth":2,"path":"Day66-80/70.NumPy的应用-3.md","ref":"Day66-80/70.NumPy的应用-3.md","articles":[]},"previous":{"title":"68.NumPy的应用-1","level":"1.9.3","depth":2,"path":"Day66-80/68.NumPy的应用-1.md","ref":"Day66-80/68.NumPy的应用-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day66-80/69.NumPy的应用-2.md","mtime":"2024-07-05T07:21:41.897Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

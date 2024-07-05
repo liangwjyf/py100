@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1877,103 +1886,107 @@
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x6C34;&#x4ED9;&#x82B1;&#x6570;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x8D85;&#x5B8C;&#x5168;&#x6570;&#x5B57;&#x4E0D;&#x53D8;&#x6570;&#x3001;&#x81EA;&#x604B;&#x6570;&#x3001;&#x81EA;&#x5E42;&#x6570;&#x3001;&#x963F;&#x59C6;&#x65AF;&#x7279;&#x6717;&#x6570;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;3&#x4F4D;&#x6570;&#xFF0C;&#x8BE5;&#x6570;&#x5B57;&#x6BCF;&#x4E2A;&#x4F4D;&#x4E0A;&#x6570;&#x5B57;&#x7684;&#x7ACB;&#x65B9;&#x4E4B;&#x548C;&#x6B63;&#x597D;&#x7B49;&#x4E8E;&#x5B83;&#x672C;&#x8EAB;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;$1^3 + 5^3+ 3^3=153$&#x3002;</p>
 </blockquote>
-<pre><code class="lang-Python"><span class="hljs-string">&quot;&quot;&quot;
-&#x627E;&#x51FA;&#x6240;&#x6709;&#x6C34;&#x4ED9;&#x82B1;&#x6570;
-
-Version: 0.1
-Author: &#x9A86;&#x660A;
-&quot;&quot;&quot;</span>
-
-<span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>, <span class="hljs-number">1000</span>):
-    low = num % <span class="hljs-number">10</span>
-    mid = num // <span class="hljs-number">10</span> % <span class="hljs-number">10</span>
-    high = num // <span class="hljs-number">100</span>
-    <span class="hljs-keyword">if</span> num == low ** <span class="hljs-number">3</span> + mid ** <span class="hljs-number">3</span> + high ** <span class="hljs-number">3</span>:
-        print(num)
-</code></pre>
-<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6574;&#x9664;&#x548C;&#x6C42;&#x6A21;&#x8FD0;&#x7B97;&#x5206;&#x522B;&#x627E;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x4E09;&#x4F4D;&#x6570;&#x7684;&#x4E2A;&#x4F4D;&#x3001;&#x5341;&#x4F4D;&#x548C;&#x767E;&#x4F4D;&#xFF0C;&#x8FD9;&#x79CD;&#x5C0F;&#x6280;&#x5DE7;&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#x8FD8;&#x662F;&#x5E38;&#x7528;&#x7684;&#x3002;&#x7528;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5C06;&#x4E00;&#x4E2A;&#x6B63;&#x6574;&#x6570;&#x53CD;&#x8F6C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5C06;12345&#x53D8;&#x6210;54321&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<pre><code class="lang-Python"><span class="hljs-string">&quot;&quot;&quot;
-&#x6B63;&#x6574;&#x6570;&#x7684;&#x53CD;&#x8F6C;
-
-Version: 0.1
-Author: &#x9A86;&#x660A;
-&quot;&quot;&quot;</span>
-
-num = int(input(<span class="hljs-string">&apos;num = &apos;</span>))
-reversed_num = <span class="hljs-number">0</span>
-<span class="hljs-keyword">while</span> num &gt; <span class="hljs-number">0</span>:
-    reversed_num = reversed_num * <span class="hljs-number">10</span> + num % <span class="hljs-number">10</span>
-    num //= <span class="hljs-number">10</span>
-print(reversed_num)
-</code></pre>
 </li>
+</ol>
+<pre><code class="lang-Python">   <span class="hljs-string">&quot;&quot;&quot;
+   &#x627E;&#x51FA;&#x6240;&#x6709;&#x6C34;&#x4ED9;&#x82B1;&#x6570;
+
+   Version: 0.1
+   Author: &#x9A86;&#x660A;
+   &quot;&quot;&quot;</span>
+
+   <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>, <span class="hljs-number">1000</span>):
+       low = num % <span class="hljs-number">10</span>
+       mid = num // <span class="hljs-number">10</span> % <span class="hljs-number">10</span>
+       high = num // <span class="hljs-number">100</span>
+       <span class="hljs-keyword">if</span> num == low ** <span class="hljs-number">3</span> + mid ** <span class="hljs-number">3</span> + high ** <span class="hljs-number">3</span>:
+           print(num)
+</code></pre>
+<p>   &#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6574;&#x9664;&#x548C;&#x6C42;&#x6A21;&#x8FD0;&#x7B97;&#x5206;&#x522B;&#x627E;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x4E09;&#x4F4D;&#x6570;&#x7684;&#x4E2A;&#x4F4D;&#x3001;&#x5341;&#x4F4D;&#x548C;&#x767E;&#x4F4D;&#xFF0C;&#x8FD9;&#x79CD;&#x5C0F;&#x6280;&#x5DE7;&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#x8FD8;&#x662F;&#x5E38;&#x7528;&#x7684;&#x3002;&#x7528;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5C06;&#x4E00;&#x4E2A;&#x6B63;&#x6574;&#x6570;&#x53CD;&#x8F6C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5C06;12345&#x53D8;&#x6210;54321&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Python">   <span class="hljs-string">&quot;&quot;&quot;
+   &#x6B63;&#x6574;&#x6570;&#x7684;&#x53CD;&#x8F6C;
+
+   Version: 0.1
+   Author: &#x9A86;&#x660A;
+   &quot;&quot;&quot;</span>
+
+   num = int(input(<span class="hljs-string">&apos;num = &apos;</span>))
+   reversed_num = <span class="hljs-number">0</span>
+   <span class="hljs-keyword">while</span> num &gt; <span class="hljs-number">0</span>:
+       reversed_num = reversed_num * <span class="hljs-number">10</span> + num % <span class="hljs-number">10</span>
+       num //= <span class="hljs-number">10</span>
+   print(reversed_num)
+</code></pre>
+<ol>
 <li><p><strong>&#x767E;&#x94B1;&#x767E;&#x9E21;</strong>&#x95EE;&#x9898;&#x3002;</p>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x767E;&#x94B1;&#x767E;&#x9E21;&#x662F;&#x6211;&#x56FD;&#x53E4;&#x4EE3;&#x6570;&#x5B66;&#x5BB6;<a href="https://baike.baidu.com/item/%E5%BC%A0%E4%B8%98%E5%BB%BA/10246238" target="_blank">&#x5F20;&#x4E18;&#x5EFA;</a>&#x5728;&#x300A;&#x7B97;&#x7ECF;&#x300B;&#x4E00;&#x4E66;&#x4E2D;&#x63D0;&#x51FA;&#x7684;&#x6570;&#x5B66;&#x95EE;&#x9898;&#xFF1A;&#x9E21;&#x7FC1;&#x4E00;&#x503C;&#x94B1;&#x4E94;&#xFF0C;&#x9E21;&#x6BCD;&#x4E00;&#x503C;&#x94B1;&#x4E09;&#xFF0C;&#x9E21;&#x96CF;&#x4E09;&#x503C;&#x94B1;&#x4E00;&#x3002;&#x767E;&#x94B1;&#x4E70;&#x767E;&#x9E21;&#xFF0C;&#x95EE;&#x9E21;&#x7FC1;&#x3001;&#x9E21;&#x6BCD;&#x3001;&#x9E21;&#x96CF;&#x5404;&#x51E0;&#x4F55;&#xFF1F;&#x7FFB;&#x8BD1;&#x6210;&#x73B0;&#x4EE3;&#x6587;&#x662F;&#xFF1A;&#x516C;&#x9E21;5&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x6BCD;&#x9E21;3&#x5143;&#x4E00;&#x53EA;&#xFF0C;&#x5C0F;&#x9E21;1&#x5143;&#x4E09;&#x53EA;&#xFF0C;&#x7528;100&#x5757;&#x94B1;&#x4E70;&#x4E00;&#x767E;&#x53EA;&#x9E21;&#xFF0C;&#x95EE;&#x516C;&#x9E21;&#x3001;&#x6BCD;&#x9E21;&#x3001;&#x5C0F;&#x9E21;&#x5404;&#x6709;&#x591A;&#x5C11;&#x53EA;&#xFF1F;</p>
 </blockquote>
-<pre><code class="lang-Python"><span class="hljs-string">&quot;&quot;&quot;
-&#x300A;&#x767E;&#x94B1;&#x767E;&#x9E21;&#x300B;&#x95EE;&#x9898;
-
-Version: 0.1
-Author: &#x9A86;&#x660A;
-&quot;&quot;&quot;</span>
-
-<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">20</span>):
-    <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">33</span>):
-        z = <span class="hljs-number">100</span> - x - y
-        <span class="hljs-keyword">if</span> <span class="hljs-number">5</span> * x + <span class="hljs-number">3</span> * y + z / <span class="hljs-number">3</span> == <span class="hljs-number">100</span>:
-            print(<span class="hljs-string">&apos;&#x516C;&#x9E21;: %d&#x53EA;, &#x6BCD;&#x9E21;: %d&#x53EA;, &#x5C0F;&#x9E21;: %d&#x53EA;&apos;</span> % (x, y, z))
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53EB;&#x505A;<strong>&#x7A77;&#x4E3E;&#x6CD5;</strong>&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;<strong>&#x66B4;&#x529B;&#x641C;&#x7D22;&#x6CD5;</strong>&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x4E00;&#x9879;&#x4E00;&#x9879;&#x7684;&#x5217;&#x4E3E;&#x5907;&#x9009;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E2D;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x5019;&#x9009;&#x9879;&#x5E76;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;&#x5019;&#x9009;&#x9879;&#x662F;&#x5426;&#x7B26;&#x5408;&#x95EE;&#x9898;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x7B28;&#x62D9;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x8FD0;&#x7B97;&#x80FD;&#x529B;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6765;&#x8BF4;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x884C;&#x7684;&#x751A;&#x81F3;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x800C;&#x4E14;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E00;&#x5B9A;&#x80FD;&#x591F;&#x627E;&#x5230;&#x5B83;&#x3002;</p>
 </li>
+</ol>
+<pre><code class="lang-Python">   <span class="hljs-string">&quot;&quot;&quot;
+   &#x300A;&#x767E;&#x94B1;&#x767E;&#x9E21;&#x300B;&#x95EE;&#x9898;
+
+   Version: 0.1
+   Author: &#x9A86;&#x660A;
+   &quot;&quot;&quot;</span>
+
+   <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">20</span>):
+       <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">33</span>):
+           z = <span class="hljs-number">100</span> - x - y
+           <span class="hljs-keyword">if</span> <span class="hljs-number">5</span> * x + <span class="hljs-number">3</span> * y + z / <span class="hljs-number">3</span> == <span class="hljs-number">100</span>:
+               print(<span class="hljs-string">&apos;&#x516C;&#x9E21;: %d&#x53EA;, &#x6BCD;&#x9E21;: %d&#x53EA;, &#x5C0F;&#x9E21;: %d&#x53EA;&apos;</span> % (x, y, z))
+</code></pre>
+<p>   &#x4E0A;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53EB;&#x505A;<strong>&#x7A77;&#x4E3E;&#x6CD5;</strong>&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;<strong>&#x66B4;&#x529B;&#x641C;&#x7D22;&#x6CD5;</strong>&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x4E00;&#x9879;&#x4E00;&#x9879;&#x7684;&#x5217;&#x4E3E;&#x5907;&#x9009;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E2D;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x5019;&#x9009;&#x9879;&#x5E76;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;&#x5019;&#x9009;&#x9879;&#x662F;&#x5426;&#x7B26;&#x5408;&#x95EE;&#x9898;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x7B28;&#x62D9;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x8FD0;&#x7B97;&#x80FD;&#x529B;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6765;&#x8BF4;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x884C;&#x7684;&#x751A;&#x81F3;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x800C;&#x4E14;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E00;&#x5B9A;&#x80FD;&#x591F;&#x627E;&#x5230;&#x5B83;&#x3002;</p>
+<ol>
 <li><p><strong>CRAPS&#x8D4C;&#x535A;&#x6E38;&#x620F;</strong>&#x3002;</p>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;CRAPS&#x53C8;&#x79F0;&#x82B1;&#x65D7;&#x9AB0;&#xFF0C;&#x662F;&#x7F8E;&#x56FD;&#x62C9;&#x65AF;&#x7EF4;&#x52A0;&#x65AF;&#x975E;&#x5E38;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x4E00;&#x79CD;&#x7684;&#x684C;&#x4E0A;&#x8D4C;&#x535A;&#x6E38;&#x620F;&#x3002;&#x8BE5;&#x6E38;&#x620F;&#x4F7F;&#x7528;&#x4E24;&#x7C92;&#x9AB0;&#x5B50;&#xFF0C;&#x73A9;&#x5BB6;&#x901A;&#x8FC7;&#x6447;&#x4E24;&#x7C92;&#x9AB0;&#x5B50;&#x83B7;&#x5F97;&#x70B9;&#x6570;&#x8FDB;&#x884C;&#x6E38;&#x620F;&#x3002;&#x7B80;&#x5355;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF1A;&#x73A9;&#x5BB6;&#x7B2C;&#x4E00;&#x6B21;&#x6447;&#x9AB0;&#x5B50;&#x5982;&#x679C;&#x6447;&#x51FA;&#x4E86;7&#x70B9;&#x6216;11&#x70B9;&#xFF0C;&#x73A9;&#x5BB6;&#x80DC;&#xFF1B;&#x73A9;&#x5BB6;&#x7B2C;&#x4E00;&#x6B21;&#x5982;&#x679C;&#x6447;&#x51FA;2&#x70B9;&#x3001;3&#x70B9;&#x6216;12&#x70B9;&#xFF0C;&#x5E84;&#x5BB6;&#x80DC;&#xFF1B;&#x5176;&#x4ED6;&#x70B9;&#x6570;&#x73A9;&#x5BB6;&#x7EE7;&#x7EED;&#x6447;&#x9AB0;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;7&#x70B9;&#xFF0C;&#x5E84;&#x5BB6;&#x80DC;&#xFF1B;&#x5982;&#x679C;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;&#x7B2C;&#x4E00;&#x6B21;&#x6447;&#x7684;&#x70B9;&#x6570;&#xFF0C;&#x73A9;&#x5BB6;&#x80DC;&#xFF1B;&#x5176;&#x4ED6;&#x70B9;&#x6570;&#xFF0C;&#x73A9;&#x5BB6;&#x7EE7;&#x7EED;&#x8981;&#x9AB0;&#x5B50;&#xFF0C;&#x76F4;&#x5230;&#x5206;&#x51FA;&#x80DC;&#x8D1F;&#x3002;</p>
 </blockquote>
-<pre><code class="lang-Python"><span class="hljs-string">&quot;&quot;&quot;
-Craps&#x8D4C;&#x535A;&#x6E38;&#x620F;
-&#x6211;&#x4EEC;&#x8BBE;&#x5B9A;&#x73A9;&#x5BB6;&#x5F00;&#x59CB;&#x6E38;&#x620F;&#x65F6;&#x6709;1000&#x5143;&#x7684;&#x8D4C;&#x6CE8;
-&#x6E38;&#x620F;&#x7ED3;&#x675F;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x73A9;&#x5BB6;&#x8F93;&#x5149;&#x6240;&#x6709;&#x7684;&#x8D4C;&#x6CE8;
-
-Version: 0.1
-Author: &#x9A86;&#x660A;
-&quot;&quot;&quot;</span>
-<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
-
-money = <span class="hljs-number">1000</span>
-<span class="hljs-keyword">while</span> money &gt; <span class="hljs-number">0</span>:
-    print(<span class="hljs-string">&apos;&#x4F60;&#x7684;&#x603B;&#x8D44;&#x4EA7;&#x4E3A;:&apos;</span>, money)
-    needs_go_on = <span class="hljs-keyword">False</span>
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
-        debt = int(input(<span class="hljs-string">&apos;&#x8BF7;&#x4E0B;&#x6CE8;: &apos;</span>))
-        <span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt; debt &lt;= money:
-            <span class="hljs-keyword">break</span>
-    first = randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>) + randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
-    print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;%d&#x70B9;&apos;</span> % first)
-    <span class="hljs-keyword">if</span> first == <span class="hljs-number">7</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">11</span>:
-        print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x80DC;!&apos;</span>)
-        money += debt
-    <span class="hljs-keyword">elif</span> first == <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">3</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">12</span>:
-        print(<span class="hljs-string">&apos;&#x5E84;&#x5BB6;&#x80DC;!&apos;</span>)
-        money -= debt
-    <span class="hljs-keyword">else</span>:
-        needs_go_on = <span class="hljs-keyword">True</span>
-    <span class="hljs-keyword">while</span> needs_go_on:
-        needs_go_on = <span class="hljs-keyword">False</span>
-        current = randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>) + randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
-        print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;%d&#x70B9;&apos;</span> % current)
-        <span class="hljs-keyword">if</span> current == <span class="hljs-number">7</span>:
-            print(<span class="hljs-string">&apos;&#x5E84;&#x5BB6;&#x80DC;&apos;</span>)
-            money -= debt
-        <span class="hljs-keyword">elif</span> current == first:
-            print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x80DC;&apos;</span>)
-            money += debt
-        <span class="hljs-keyword">else</span>:
-            needs_go_on = <span class="hljs-keyword">True</span>
-print(<span class="hljs-string">&apos;&#x4F60;&#x7834;&#x4EA7;&#x4E86;, &#x6E38;&#x620F;&#x7ED3;&#x675F;!&apos;</span>)
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Python">   <span class="hljs-string">&quot;&quot;&quot;
+   Craps&#x8D4C;&#x535A;&#x6E38;&#x620F;
+   &#x6211;&#x4EEC;&#x8BBE;&#x5B9A;&#x73A9;&#x5BB6;&#x5F00;&#x59CB;&#x6E38;&#x620F;&#x65F6;&#x6709;1000&#x5143;&#x7684;&#x8D4C;&#x6CE8;
+   &#x6E38;&#x620F;&#x7ED3;&#x675F;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x73A9;&#x5BB6;&#x8F93;&#x5149;&#x6240;&#x6709;&#x7684;&#x8D4C;&#x6CE8;
+
+   Version: 0.1
+   Author: &#x9A86;&#x660A;
+   &quot;&quot;&quot;</span>
+   <span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+   money = <span class="hljs-number">1000</span>
+   <span class="hljs-keyword">while</span> money &gt; <span class="hljs-number">0</span>:
+       print(<span class="hljs-string">&apos;&#x4F60;&#x7684;&#x603B;&#x8D44;&#x4EA7;&#x4E3A;:&apos;</span>, money)
+       needs_go_on = <span class="hljs-keyword">False</span>
+       <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+           debt = int(input(<span class="hljs-string">&apos;&#x8BF7;&#x4E0B;&#x6CE8;: &apos;</span>))
+           <span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt; debt &lt;= money:
+               <span class="hljs-keyword">break</span>
+       first = randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>) + randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
+       print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;%d&#x70B9;&apos;</span> % first)
+       <span class="hljs-keyword">if</span> first == <span class="hljs-number">7</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">11</span>:
+           print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x80DC;!&apos;</span>)
+           money += debt
+       <span class="hljs-keyword">elif</span> first == <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">3</span> <span class="hljs-keyword">or</span> first == <span class="hljs-number">12</span>:
+           print(<span class="hljs-string">&apos;&#x5E84;&#x5BB6;&#x80DC;!&apos;</span>)
+           money -= debt
+       <span class="hljs-keyword">else</span>:
+           needs_go_on = <span class="hljs-keyword">True</span>
+       <span class="hljs-keyword">while</span> needs_go_on:
+           needs_go_on = <span class="hljs-keyword">False</span>
+           current = randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>) + randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
+           print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x6447;&#x51FA;&#x4E86;%d&#x70B9;&apos;</span> % current)
+           <span class="hljs-keyword">if</span> current == <span class="hljs-number">7</span>:
+               print(<span class="hljs-string">&apos;&#x5E84;&#x5BB6;&#x80DC;&apos;</span>)
+               money -= debt
+           <span class="hljs-keyword">elif</span> current == first:
+               print(<span class="hljs-string">&apos;&#x73A9;&#x5BB6;&#x80DC;&apos;</span>)
+               money += debt
+           <span class="hljs-keyword">else</span>:
+               needs_go_on = <span class="hljs-keyword">True</span>
+   print(<span class="hljs-string">&apos;&#x4F60;&#x7834;&#x4EA7;&#x4E86;, &#x6E38;&#x620F;&#x7ED3;&#x675F;!&apos;</span>)
+</code></pre>
 <h3 id="&#x6709;&#x7528;&#x7684;&#x7EC3;&#x4E60;">&#x6709;&#x7528;&#x7684;&#x7EC3;&#x4E60;</h3>
 <ol>
 <li><p>&#x751F;&#x6210;<strong>&#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;</strong>&#x7684;&#x524D;20&#x4E2A;&#x6570;&#x3002;</p>
@@ -2036,7 +2049,7 @@ print(<span class="hljs-string">&apos;&#x4F60;&#x7834;&#x4EA7;&#x4E86;, &#x6E38;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"05.构造程序逻辑","level":"1.2.5","depth":2,"next":{"title":"06.函数和模块的使用","level":"1.2.6","depth":2,"path":"Day01-15/06.函数和模块的使用.md","ref":"Day01-15/06.函数和模块的使用.md","articles":[]},"previous":{"title":"04.循环结构","level":"1.2.4","depth":2,"path":"Day01-15/04.循环结构.md","ref":"Day01-15/04.循环结构.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day01-15/05.构造程序逻辑.md","mtime":"2024-07-05T03:42:44.751Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05.构造程序逻辑","level":"1.2.5","depth":2,"next":{"title":"06.函数和模块的使用","level":"1.2.6","depth":2,"path":"Day01-15/06.函数和模块的使用.md","ref":"Day01-15/06.函数和模块的使用.md","articles":[]},"previous":{"title":"04.循环结构","level":"1.2.4","depth":2,"path":"Day01-15/04.循环结构.md","ref":"Day01-15/04.循环结构.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day01-15/05.构造程序逻辑.md","mtime":"2024-07-05T07:21:41.996Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

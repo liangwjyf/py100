@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1947,62 +1956,64 @@ primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`rec_id
 <li><p>&#x9996;&#x5148;&#xFF0C;&#x4E0A;&#x9762; SQL &#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#x3001;&#x8868;&#x540D;&#x3001;&#x5B57;&#x6BB5;&#x540D;&#x90FD;&#x88AB;&#x53CD;&#x5F15;&#x53F7;&#xFF08;`&#xFF09;&#x5305;&#x88F9;&#x8D77;&#x6765;&#xFF0C;&#x53CD;&#x5F15;&#x53F7;&#x5E76;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8868;&#x540D;&#x3001;&#x5B57;&#x6BB5;&#x540D;&#x7B49;&#x8DDF; SQL &#x5173;&#x952E;&#x5B57;&#xFF08;SQL &#x4E2D;&#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x7684;&#x5355;&#x8BCD;&#xFF09;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 </li>
 <li><p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>default character set utf8mb4</code>&#x6307;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x4E3A;<code>utf8mb4</code>&#xFF08;&#x6700;&#x5927;<code>4</code>&#x5B57;&#x8282;&#x7684;<code>utf-8</code>&#x7F16;&#x7801;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x5B83;&#x4E5F;&#x662F; MySQL 8.x &#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x591F;&#x652F;&#x6301;&#x56FD;&#x9645;&#x5316;&#x7F16;&#x7801;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5B58;&#x50A8; Emoji &#x5B57;&#x7B26;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x67E5;&#x770B; MySQL &#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x4EE5;&#x53CA;&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-built_in">character</span> <span class="hljs-keyword">set</span>;
+</li>
+</ul>
+<pre><code class="lang-SQL">  <span class="hljs-keyword">show</span> <span class="hljs-built_in">character</span> <span class="hljs-keyword">set</span>;
 </code></pre>
-<pre><code>+----------+---------------------------------+---------------------+--------+
-| Charset  | Description                     | Default collation   | Maxlen |
-+----------+---------------------------------+---------------------+--------+
-| big5     | Big5 Traditional Chinese        | big5_chinese_ci     |      2 |
-| dec8     | DEC West European               | dec8_swedish_ci     |      1 |
-| cp850    | DOS West European               | cp850_general_ci    |      1 |
-| hp8      | HP West European                | hp8_english_ci      |      1 |
-| koi8r    | KOI8-R Relcom Russian           | koi8r_general_ci    |      1 |
-| latin1   | cp1252 West European            | latin1_swedish_ci   |      1 |
-| latin2   | ISO 8859-2 Central European     | latin2_general_ci   |      1 |
-| swe7     | 7bit Swedish                    | swe7_swedish_ci     |      1 |
-| ascii    | US ASCII                        | ascii_general_ci    |      1 |
-| ujis     | EUC-JP Japanese                 | ujis_japanese_ci    |      3 |
-| sjis     | Shift-JIS Japanese              | sjis_japanese_ci    |      2 |
-| hebrew   | ISO 8859-8 Hebrew               | hebrew_general_ci   |      1 |
-| tis620   | TIS620 Thai                     | tis620_thai_ci      |      1 |
-| euckr    | EUC-KR Korean                   | euckr_korean_ci     |      2 |
-| koi8u    | KOI8-U Ukrainian                | koi8u_general_ci    |      1 |
-| gb2312   | GB2312 Simplified Chinese       | gb2312_chinese_ci   |      2 |
-| greek    | ISO 8859-7 Greek                | greek_general_ci    |      1 |
-| cp1250   | Windows Central European        | cp1250_general_ci   |      1 |
-| gbk      | GBK Simplified Chinese          | gbk_chinese_ci      |      2 |
-| latin5   | ISO 8859-9 Turkish              | latin5_turkish_ci   |      1 |
-| armscii8 | ARMSCII-8 Armenian              | armscii8_general_ci |      1 |
-| utf8     | UTF-8 Unicode                   | utf8_general_ci     |      3 |
-| ucs2     | UCS-2 Unicode                   | ucs2_general_ci     |      2 |
-| cp866    | DOS Russian                     | cp866_general_ci    |      1 |
-| keybcs2  | DOS Kamenicky Czech-Slovak      | keybcs2_general_ci  |      1 |
-| macce    | Mac Central European            | macce_general_ci    |      1 |
-| macroman | Mac West European               | macroman_general_ci |      1 |
-| cp852    | DOS Central European            | cp852_general_ci    |      1 |
-| latin7   | ISO 8859-13 Baltic              | latin7_general_ci   |      1 |
-| utf8mb4  | UTF-8 Unicode                   | utf8mb4_general_ci  |      4 |
-| cp1251   | Windows Cyrillic                | cp1251_general_ci   |      1 |
-| utf16    | UTF-16 Unicode                  | utf16_general_ci    |      4 |
-| utf16le  | UTF-16LE Unicode                | utf16le_general_ci  |      4 |
-| cp1256   | Windows Arabic                  | cp1256_general_ci   |      1 |
-| cp1257   | Windows Baltic                  | cp1257_general_ci   |      1 |
-| utf32    | UTF-32 Unicode                  | utf32_general_ci    |      4 |
-| binary   | Binary pseudo charset           | binary              |      1 |
-| geostd8  | GEOSTD8 Georgian                | geostd8_general_ci  |      1 |
-| cp932    | SJIS for Windows Japanese       | cp932_japanese_ci   |      2 |
-| eucjpms  | UJIS for Windows Japanese       | eucjpms_japanese_ci |      3 |
-| gb18030  | China National Standard GB18030 | gb18030_chinese_ci  |      4 |
-+----------+---------------------------------+---------------------+--------+
-41 rows in set (0.00 sec)
-</code></pre><p>&#x5982;&#x679C;&#x8981;&#x8BBE;&#x7F6E; MySQL &#x670D;&#x52A1;&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;MySQL&#x7684;&#x914D;&#x7F6E;&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
-<pre><code class="lang-INI"><span class="hljs-section">[mysqld]</span>
-<span class="hljs-attr">character-set-server</span>=utf8
+<pre><code>  +----------+---------------------------------+---------------------+--------+
+  | Charset  | Description                     | Default collation   | Maxlen |
+  +----------+---------------------------------+---------------------+--------+
+  | big5     | Big5 Traditional Chinese        | big5_chinese_ci     |      2 |
+  | dec8     | DEC West European               | dec8_swedish_ci     |      1 |
+  | cp850    | DOS West European               | cp850_general_ci    |      1 |
+  | hp8      | HP West European                | hp8_english_ci      |      1 |
+  | koi8r    | KOI8-R Relcom Russian           | koi8r_general_ci    |      1 |
+  | latin1   | cp1252 West European            | latin1_swedish_ci   |      1 |
+  | latin2   | ISO 8859-2 Central European     | latin2_general_ci   |      1 |
+  | swe7     | 7bit Swedish                    | swe7_swedish_ci     |      1 |
+  | ascii    | US ASCII                        | ascii_general_ci    |      1 |
+  | ujis     | EUC-JP Japanese                 | ujis_japanese_ci    |      3 |
+  | sjis     | Shift-JIS Japanese              | sjis_japanese_ci    |      2 |
+  | hebrew   | ISO 8859-8 Hebrew               | hebrew_general_ci   |      1 |
+  | tis620   | TIS620 Thai                     | tis620_thai_ci      |      1 |
+  | euckr    | EUC-KR Korean                   | euckr_korean_ci     |      2 |
+  | koi8u    | KOI8-U Ukrainian                | koi8u_general_ci    |      1 |
+  | gb2312   | GB2312 Simplified Chinese       | gb2312_chinese_ci   |      2 |
+  | greek    | ISO 8859-7 Greek                | greek_general_ci    |      1 |
+  | cp1250   | Windows Central European        | cp1250_general_ci   |      1 |
+  | gbk      | GBK Simplified Chinese          | gbk_chinese_ci      |      2 |
+  | latin5   | ISO 8859-9 Turkish              | latin5_turkish_ci   |      1 |
+  | armscii8 | ARMSCII-8 Armenian              | armscii8_general_ci |      1 |
+  | utf8     | UTF-8 Unicode                   | utf8_general_ci     |      3 |
+  | ucs2     | UCS-2 Unicode                   | ucs2_general_ci     |      2 |
+  | cp866    | DOS Russian                     | cp866_general_ci    |      1 |
+  | keybcs2  | DOS Kamenicky Czech-Slovak      | keybcs2_general_ci  |      1 |
+  | macce    | Mac Central European            | macce_general_ci    |      1 |
+  | macroman | Mac West European               | macroman_general_ci |      1 |
+  | cp852    | DOS Central European            | cp852_general_ci    |      1 |
+  | latin7   | ISO 8859-13 Baltic              | latin7_general_ci   |      1 |
+  | utf8mb4  | UTF-8 Unicode                   | utf8mb4_general_ci  |      4 |
+  | cp1251   | Windows Cyrillic                | cp1251_general_ci   |      1 |
+  | utf16    | UTF-16 Unicode                  | utf16_general_ci    |      4 |
+  | utf16le  | UTF-16LE Unicode                | utf16le_general_ci  |      4 |
+  | cp1256   | Windows Arabic                  | cp1256_general_ci   |      1 |
+  | cp1257   | Windows Baltic                  | cp1257_general_ci   |      1 |
+  | utf32    | UTF-32 Unicode                  | utf32_general_ci    |      4 |
+  | binary   | Binary pseudo charset           | binary              |      1 |
+  | geostd8  | GEOSTD8 Georgian                | geostd8_general_ci  |      1 |
+  | cp932    | SJIS for Windows Japanese       | cp932_japanese_ci   |      2 |
+  | eucjpms  | UJIS for Windows Japanese       | eucjpms_japanese_ci |      3 |
+  | gb18030  | China National Standard GB18030 | gb18030_chinese_ci  |      4 |
+  +----------+---------------------------------+---------------------+--------+
+  41 rows in set (0.00 sec)
+</code></pre><p>  &#x5982;&#x679C;&#x8981;&#x8BBE;&#x7F6E; MySQL &#x670D;&#x52A1;&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;MySQL&#x7684;&#x914D;&#x7F6E;&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-INI">  [mysqld]
+  character-set-server=utf8
 </code></pre>
 <blockquote>
 <p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x5982;&#x4F55;&#x4FEE;&#x6539; MySQL &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5C31;&#x5148;&#x4E0D;&#x8981;&#x7BA1;&#x5B83;&#x3002;</p>
 </blockquote>
-</li>
+<ul>
 <li><p>&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x65F6;&#xFF0C;&#x5173;&#x952E;&#x5B57;<code>database</code>&#x4E5F;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x4E3A;<code>schema</code>&#xFF0C;&#x4E8C;&#x8005;&#x4F5C;&#x7528;&#x76F8;&#x540C;&#x3002;</p>
 </li>
 <li><p>&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x4E2D;&#x7684;<code>not null</code>&#x662F;&#x975E;&#x7A7A;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x9650;&#x5B9A;&#x4E86;&#x5B57;&#x6BB5;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF1B;<code>default</code>&#x7528;&#x4E8E;&#x4E3A;&#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x7EA6;&#x675F;&#xFF1B;<code>primary key</code>&#x662F;&#x4E3B;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x8BBE;&#x5B9A;&#x4E86;&#x80FD;&#x591F;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x5217;&#xFF0C;&#x4E5F;&#x786E;&#x4FDD;&#x4E86;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x90FD;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E3B;&#x952E;&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#xFF1B;<code>foreign key</code>&#x662F;&#x5916;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x5B83;&#x7EF4;&#x6301;&#x4E86;&#x4E24;&#x5F20;&#x8868;&#x7684;&#x53C2;&#x7167;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x7531;&#x4E8E;&#x5B66;&#x751F;&#x8868;&#x4E2D;&#x4E3A; col_id &#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x4E86;&#x5916;&#x952E;&#x7EA6;&#x675F;&#xFF0C;&#x9650;&#x5B9A;&#x5176;&#x5FC5;&#x987B;&#x5F15;&#x7528;&#xFF08;<code>references</code>&#xFF09;&#x5B66;&#x9662;&#x8868;&#x4E2D;&#x7684; col_id&#xFF0C;&#x56E0;&#x6B64;&#x5B66;&#x751F;&#x8868;&#x4E2D;&#x7684;&#x5B66;&#x9662;&#x7F16;&#x53F7;&#x5FC5;&#x987B;&#x6765;&#x81EA;&#x4E8E;&#x5B66;&#x9662;&#x8868;&#x4E2D;&#x7684;&#x5B66;&#x9662;&#x7F16;&#x53F7;&#xFF0C;&#x4E0D;&#x80FD;&#x591F;&#x968F;&#x610F;&#x4E3A;&#x8BE5;&#x5B57;&#x6BB5;&#x8D4B;&#x503C;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x7ED9;&#x4E3B;&#x952E;&#x7EA6;&#x675F;&#x3001;&#x5916;&#x952E;&#x7EA6;&#x675F;&#x7B49;&#x8D77;&#x540D;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>constriant</code>&#x5173;&#x952E;&#x5B57;&#x5E76;&#x5728;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7EA6;&#x675F;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
@@ -2010,177 +2021,272 @@ primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`rec_id
 <li><p>&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x4E2D;&#x7684;<code>comment</code> &#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x7ED9;&#x5217;&#x548C;&#x8868;&#x6DFB;&#x52A0;&#x6CE8;&#x91CA;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x3002;</p>
 </li>
 <li><p>&#x5728;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x9009;&#x62E9;&#x5E95;&#x5C42;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;MySQL &#x652F;&#x6301;&#x591A;&#x79CD;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>show engines</code>&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x67E5;&#x770B;&#x3002;MySQL 5.5 &#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x662F; InnoDB&#xFF0C;&#x5B83;&#x662F;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF08;&#x56E0;&#x4E3A;&#x66F4;&#x9002;&#x5408;&#x5F53;&#x4E0B;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#x5BF9;&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x6027;&#x80FD;&#x4EE5;&#x53CA;&#x4E8B;&#x52A1;&#x652F;&#x6301;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x9700;&#x6C42;&#xFF09;&#xFF0C;&#x4E3A;&#x4E86; SQL &#x8BED;&#x53E5;&#x7684;&#x5411;&#x4E0B;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x5904;&#x53F3;&#x5706;&#x62EC;&#x53F7;&#x7684;&#x540E;&#x9762;&#x901A;&#x8FC7;<code>engine=innodb</code>&#x6765;&#x6307;&#x5B9A;&#x4F7F;&#x7528; InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">engines</span>\G
+</li>
+</ul>
+<pre><code class="lang-SQL">  <span class="hljs-keyword">show</span> <span class="hljs-keyword">engines</span>\G
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684; \G &#x662F;&#x4E3A;&#x4E86;&#x6362;&#x4E00;&#x79CD;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x5F88;&#x591A;&#x4E00;&#x884C;&#x663E;&#x793A;&#x4E0D;&#x5B8C;&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x4E0D;&#x8212;&#x670D;&#xFF0C;&#x4F7F;&#x7528; \G &#x53EF;&#x4EE5;&#x5C06;&#x8BB0;&#x5F55;&#x7684;&#x6BCF;&#x4E2A;&#x5217;&#x4EE5;&#x72EC;&#x5360;&#x6574;&#x884C;&#x7684;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&#xFF0C;&#x8FD9;&#x79CD;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x8212;&#x670D;&#x5F88;&#x591A;&#x3002;</p>
 </blockquote>
-<pre><code>*************************** 1. row ***************************
-      Engine: InnoDB
-     Support: DEFAULT
-     Comment: Supports transactions, row-level locking, and foreign keys
-Transactions: YES
-          XA: YES
-  Savepoints: YES
-*************************** 2. row ***************************
-      Engine: MRG_MYISAM
-     Support: YES
-     Comment: Collection of identical MyISAM tables
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 3. row ***************************
-      Engine: MEMORY
-     Support: YES
-     Comment: Hash based, stored in memory, useful for temporary tables
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 4. row ***************************
-      Engine: BLACKHOLE
-     Support: YES
-     Comment: /dev/null storage engine (anything you write to it disappears)
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 5. row ***************************
-      Engine: MyISAM
-     Support: YES
-     Comment: MyISAM storage engine
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 6. row ***************************
-      Engine: CSV
-     Support: YES
-     Comment: CSV storage engine
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 7. row ***************************
-      Engine: ARCHIVE
-     Support: YES
-     Comment: Archive storage engine
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 8. row ***************************
-      Engine: PERFORMANCE_SCHEMA
-     Support: YES
-     Comment: Performance Schema
-Transactions: NO
-          XA: NO
-  Savepoints: NO
-*************************** 9. row ***************************
-      Engine: FEDERATED
-     Support: NO
-     Comment: Federated MySQL storage engine
-Transactions: NULL
-          XA: NULL
-  Savepoints: NULL
-9 rows in set (0.00 sec)
-</code></pre><p>&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x5BF9;MySQL&#x51E0;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x6570;&#x636E;&#x5F15;&#x64CE;&#x8FDB;&#x884C;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x5BF9;&#x6BD4;&#x3002;</p>
-<p>| &#x7279;&#x6027;         | InnoDB       | MRG_MYISAM | MEMORY | MyISAM |
-| ------------ | ------------ | ---------- | ------ | ------ |
-| &#x5B58;&#x50A8;&#x9650;&#x5236;     | &#x6709;           | &#x6CA1;&#x6709;       | &#x6709;     | &#x6709;     |
-| &#x4E8B;&#x52A1;         | &#x652F;&#x6301;         |            |        |        |
-| &#x9501;&#x673A;&#x5236;       | &#x884C;&#x9501;         | &#x8868;&#x9501;       | &#x8868;&#x9501;   | &#x8868;&#x9501;   |
-| B&#x6811;&#x7D22;&#x5F15;      | &#x652F;&#x6301;         | &#x652F;&#x6301;       | &#x652F;&#x6301;   | &#x652F;&#x6301;   |
-| &#x54C8;&#x5E0C;&#x7D22;&#x5F15;     |              |            | &#x652F;&#x6301;   |        |
-| &#x5168;&#x6587;&#x68C0;&#x7D22;     | &#x652F;&#x6301;&#xFF08;5.6+&#xFF09; |            |        | &#x652F;&#x6301;   |
-| &#x96C6;&#x7FA4;&#x7D22;&#x5F15;     | &#x652F;&#x6301;         |            |        |        |
-| &#x6570;&#x636E;&#x7F13;&#x5B58;     | &#x652F;&#x6301;         |            | &#x652F;&#x6301;   |        |
-| &#x7D22;&#x5F15;&#x7F13;&#x5B58;     | &#x652F;&#x6301;         | &#x652F;&#x6301;       | &#x652F;&#x6301;   | &#x652F;&#x6301;   |
-| &#x6570;&#x636E;&#x53EF;&#x538B;&#x7F29;   |              |            |        | &#x652F;&#x6301;   |
-| &#x5185;&#x5B58;&#x4F7F;&#x7528;     | &#x9AD8;           | &#x4F4E;         | &#x4E2D;     | &#x4F4E;     |
-| &#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4F7F;&#x7528; | &#x9AD8;           | &#x4F4E;         |        | &#x4F4E;     |
-| &#x6279;&#x91CF;&#x63D2;&#x5165;&#x6027;&#x80FD; | &#x4F4E;           | &#x9AD8;         | &#x9AD8;     | &#x9AD8;     |
-| &#x662F;&#x5426;&#x652F;&#x6301;&#x5916;&#x952E; | &#x652F;&#x6301;         |            |        |        |</p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6BD4;&#x8F83;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#xFF0C;InnoDB &#x662F;&#x552F;&#x4E00;&#x80FD;&#x591F;&#x652F;&#x6301;&#x5916;&#x952E;&#x3001;&#x4E8B;&#x52A1;&#x4EE5;&#x53CA;&#x884C;&#x9501;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BF4;&#x5B83;&#x66F4;&#x9002;&#x5408;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x8F83;&#x65B0;&#x7248;&#x672C;&#x7684; MySQL &#x4E2D;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
-</li>
-<li><p>&#x5728;&#x5B9A;&#x4E49;&#x8868;&#x7ED3;&#x6784;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x9009;&#x62E9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x66F4;&#x5408;&#x9002;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; MySQL &#x7684;&#x5E2E;&#x52A9;&#x7CFB;&#x7EDF;&#x6765;&#x4E86;&#x89E3;&#x6BCF;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x6027;&#x3001;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x548C;&#x7CBE;&#x5EA6;&#x7B49;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;</p>
-<pre><code class="lang-SQL">? data types
+<pre><code>  *************************** 1. row ***************************
+        Engine: InnoDB
+       Support: DEFAULT
+       Comment: Supports transactions, row-level locking, and foreign keys
+  Transactions: YES
+            XA: YES
+    Savepoints: YES
+  *************************** 2. row ***************************
+        Engine: MRG_MYISAM
+       Support: YES
+       Comment: Collection of identical MyISAM tables
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 3. row ***************************
+        Engine: MEMORY
+       Support: YES
+       Comment: Hash based, stored in memory, useful for temporary tables
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 4. row ***************************
+        Engine: BLACKHOLE
+       Support: YES
+       Comment: /dev/null storage engine (anything you write to it disappears)
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 5. row ***************************
+        Engine: MyISAM
+       Support: YES
+       Comment: MyISAM storage engine
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 6. row ***************************
+        Engine: CSV
+       Support: YES
+       Comment: CSV storage engine
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 7. row ***************************
+        Engine: ARCHIVE
+       Support: YES
+       Comment: Archive storage engine
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 8. row ***************************
+        Engine: PERFORMANCE_SCHEMA
+       Support: YES
+       Comment: Performance Schema
+  Transactions: NO
+            XA: NO
+    Savepoints: NO
+  *************************** 9. row ***************************
+        Engine: FEDERATED
+       Support: NO
+       Comment: Federated MySQL storage engine
+  Transactions: NULL
+            XA: NULL
+    Savepoints: NULL
+  9 rows in set (0.00 sec)
+</code></pre><p>  &#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x5BF9;MySQL&#x51E0;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x6570;&#x636E;&#x5F15;&#x64CE;&#x8FDB;&#x884C;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x5BF9;&#x6BD4;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>InnoDB</th>
+<th>MRG_MYISAM</th>
+<th>MEMORY</th>
+<th>MyISAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B58;&#x50A8;&#x9650;&#x5236;</td>
+<td>&#x6709;</td>
+<td>&#x6CA1;&#x6709;</td>
+<td>&#x6709;</td>
+<td>&#x6709;</td>
+</tr>
+<tr>
+<td>&#x4E8B;&#x52A1;</td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x9501;&#x673A;&#x5236;</td>
+<td>&#x884C;&#x9501;</td>
+<td>&#x8868;&#x9501;</td>
+<td>&#x8868;&#x9501;</td>
+<td>&#x8868;&#x9501;</td>
+</tr>
+<tr>
+<td>B&#x6811;&#x7D22;&#x5F15;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td>&#x54C8;&#x5E0C;&#x7D22;&#x5F15;</td>
+<td></td>
+<td></td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x5168;&#x6587;&#x68C0;&#x7D22;</td>
+<td>&#x652F;&#x6301;&#xFF08;5.6+&#xFF09;</td>
+<td></td>
+<td></td>
+<td>&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td>&#x96C6;&#x7FA4;&#x7D22;&#x5F15;</td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x7F13;&#x5B58;</td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x7D22;&#x5F15;&#x7F13;&#x5B58;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+<td>&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x53EF;&#x538B;&#x7F29;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td>&#x5185;&#x5B58;&#x4F7F;&#x7528;</td>
+<td>&#x9AD8;</td>
+<td>&#x4F4E;</td>
+<td>&#x4E2D;</td>
+<td>&#x4F4E;</td>
+</tr>
+<tr>
+<td>&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4F7F;&#x7528;</td>
+<td>&#x9AD8;</td>
+<td>&#x4F4E;</td>
+<td></td>
+<td>&#x4F4E;</td>
+</tr>
+<tr>
+<td>&#x6279;&#x91CF;&#x63D2;&#x5165;&#x6027;&#x80FD;</td>
+<td>&#x4F4E;</td>
+<td>&#x9AD8;</td>
+<td>&#x9AD8;</td>
+<td>&#x9AD8;</td>
+</tr>
+<tr>
+<td>&#x662F;&#x5426;&#x652F;&#x6301;&#x5916;&#x952E;</td>
+<td>&#x652F;&#x6301;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>  &#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6BD4;&#x8F83;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#xFF0C;InnoDB &#x662F;&#x552F;&#x4E00;&#x80FD;&#x591F;&#x652F;&#x6301;&#x5916;&#x952E;&#x3001;&#x4E8B;&#x52A1;&#x4EE5;&#x53CA;&#x884C;&#x9501;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BF4;&#x5B83;&#x66F4;&#x9002;&#x5408;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x8F83;&#x65B0;&#x7248;&#x672C;&#x7684; MySQL &#x4E2D;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
+<ul>
+<li>&#x5728;&#x5B9A;&#x4E49;&#x8868;&#x7ED3;&#x6784;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x9009;&#x62E9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6E05;&#x695A;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x66F4;&#x5408;&#x9002;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; MySQL &#x7684;&#x5E2E;&#x52A9;&#x7CFB;&#x7EDF;&#x6765;&#x4E86;&#x89E3;&#x6BCF;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x6027;&#x3001;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x548C;&#x7CBE;&#x5EA6;&#x7B49;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<pre><code class="lang-SQL">  ? data types
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5728; MySQLWorkbench &#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>?</code>&#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#xFF0C;&#x8981;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4;<code>help</code>&#x3002;</p>
 </blockquote>
-<pre><code>You asked for help about help category: &quot;Data Types&quot;
-For more information, type &apos;help &lt;item&gt;&apos;, where &lt;item&gt; is one of the following
-topics:
-   AUTO_INCREMENT
-   BIGINT
-   BINARY
-   BIT
-   BLOB
-   BLOB DATA TYPE
-   BOOLEAN
-   CHAR
-   CHAR BYTE
-   DATE
-   DATETIME
-   DEC
-   DECIMAL
-   DOUBLE
-   DOUBLE PRECISION
-   ENUM
-   FLOAT
-   INT
-   INTEGER
-   LONGBLOB
-   LONGTEXT
-   MEDIUMBLOB
-   MEDIUMINT
-   MEDIUMTEXT
-   SET DATA TYPE
-   SMALLINT
-   TEXT
-   TIME
-   TIMESTAMP
-   TINYBLOB
-   TINYINT
-   TINYTEXT
-   VARBINARY
-   VARCHAR
-   YEAR DATA TYPE
-</code></pre><p>&#x83B7;&#x53D6; varchar &#x7C7B;&#x578B;&#x7684;&#x5E2E;&#x52A9;&#xFF1A;</p>
-<pre><code class="lang-SQL">? varchar
+<pre><code>  You asked for help about help category: &quot;Data Types&quot;
+  For more information, type &apos;help &lt;item&gt;&apos;, where &lt;item&gt; is one of the following
+  topics:
+     AUTO_INCREMENT
+     BIGINT
+     BINARY
+     BIT
+     BLOB
+     BLOB DATA TYPE
+     BOOLEAN
+     CHAR
+     CHAR BYTE
+     DATE
+     DATETIME
+     DEC
+     DECIMAL
+     DOUBLE
+     DOUBLE PRECISION
+     ENUM
+     FLOAT
+     INT
+     INTEGER
+     LONGBLOB
+     LONGTEXT
+     MEDIUMBLOB
+     MEDIUMINT
+     MEDIUMTEXT
+     SET DATA TYPE
+     SMALLINT
+     TEXT
+     TIME
+     TIMESTAMP
+     TINYBLOB
+     TINYINT
+     TINYTEXT
+     VARBINARY
+     VARCHAR
+     YEAR DATA TYPE
+</code></pre><p>  &#x83B7;&#x53D6; varchar &#x7C7B;&#x578B;&#x7684;&#x5E2E;&#x52A9;&#xFF1A;</p>
+<pre><code class="lang-SQL">  ? varchar
 </code></pre>
-<p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
-<pre><code>Name: &apos;VARCHAR&apos;
-Description:
-[NATIONAL] VARCHAR(M) [CHARACTER SET charset_name] [COLLATE
-collation_name]
+<p>  &#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>  Name: &apos;VARCHAR&apos;
+  Description:
+  [NATIONAL] VARCHAR(M) [CHARACTER SET charset_name] [COLLATE
+  collation_name]
 
-A variable-length string. M represents the maximum column length in
-characters. The range of M is 0 to 65,535. The effective maximum length
-of a VARCHAR is subject to the maximum row size (65,535 bytes, which is
-shared among all columns) and the character set used. For example, utf8
-characters can require up to three bytes per character, so a VARCHAR
-column that uses the utf8 character set can be declared to be a maximum
-of 21,844 characters. See
-http://dev.mysql.com/doc/refman/5.7/en/column-count-limit.html.
+  A variable-length string. M represents the maximum column length in
+  characters. The range of M is 0 to 65,535. The effective maximum length
+  of a VARCHAR is subject to the maximum row size (65,535 bytes, which is
+  shared among all columns) and the character set used. For example, utf8
+  characters can require up to three bytes per character, so a VARCHAR
+  column that uses the utf8 character set can be declared to be a maximum
+  of 21,844 characters. See
+  http://dev.mysql.com/doc/refman/5.7/en/column-count-limit.html.
 
-MySQL stores VARCHAR values as a 1-byte or 2-byte length prefix plus
-data. The length prefix indicates the number of bytes in the value. A
-VARCHAR column uses one length byte if values require no more than 255
-bytes, two length bytes if values may require more than 255 bytes.
+  MySQL stores VARCHAR values as a 1-byte or 2-byte length prefix plus
+  data. The length prefix indicates the number of bytes in the value. A
+  VARCHAR column uses one length byte if values require no more than 255
+  bytes, two length bytes if values may require more than 255 bytes.
 
-*Note*:
+  *Note*:
 
-MySQL follows the standard SQL specification, and does not remove
-trailing spaces from VARCHAR values.
+  MySQL follows the standard SQL specification, and does not remove
+  trailing spaces from VARCHAR values.
 
-VARCHAR is shorthand for CHARACTER VARYING. NATIONAL VARCHAR is the
-standard SQL way to define that a VARCHAR column should use some
-predefined character set. MySQL uses utf8 as this predefined character
-set. http://dev.mysql.com/doc/refman/5.7/en/charset-national.html.
-NVARCHAR is shorthand for NATIONAL VARCHAR.
+  VARCHAR is shorthand for CHARACTER VARYING. NATIONAL VARCHAR is the
+  standard SQL way to define that a VARCHAR column should use some
+  predefined character set. MySQL uses utf8 as this predefined character
+  set. http://dev.mysql.com/doc/refman/5.7/en/charset-national.html.
+  NVARCHAR is shorthand for NATIONAL VARCHAR.
 
-URL: http://dev.mysql.com/doc/refman/5.7/en/string-type-overview.html
-</code></pre><p>&#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x9009;&#x62E9;&#x4E0A;&#xFF0C;&#x4FDD;&#x5B58;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x901A;&#x5E38;&#x90FD;&#x4F7F;&#x7528; VARCHAR &#x548C; CHAR &#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x524D;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x540E;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x5B9A;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5BF9;&#x4E8E; InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x884C;&#x5B58;&#x50A8;&#x683C;&#x5F0F;&#x6CA1;&#x6709;&#x533A;&#x5206;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x548C;&#x53EF;&#x53D8;&#x957F;&#x5EA6;&#x5217;&#xFF0C;&#x56E0;&#x6B64; VARCHAR &#x7C7B;&#x578B;&#x548C; CHAR &#x7C7B;&#x578B;&#x6CA1;&#x6709;&#x672C;&#x8D28;&#x533A;&#x522B;&#xFF0C;&#x540E;&#x8005;&#x4E0D;&#x4E00;&#x5B9A;&#x6BD4;&#x524D;&#x8005;&#x6027;&#x80FD;&#x66F4;&#x597D;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x5F88;&#x5927;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; TEXT &#x7C7B;&#x578B;&#xFF1B;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x5F88;&#x5927;&#x7684;&#x5B57;&#x8282;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; BLOB&#xFF08;&#x4E8C;&#x8FDB;&#x5236;&#x5927;&#x5BF9;&#x8C61;&#xFF09;&#x7C7B;&#x578B;&#x3002;&#x5728; MySQL &#x4E2D;&#xFF0C;TEXT &#x548C; BLOB&#x53C8;&#x5206;&#x522B;&#x5305;&#x62EC; TEXT&#x3001;MEDIUMTEXT&#x3001;LONGTEXT &#x548C; BLOB&#x3001;MEDIUMBLOB&#x3001;LONGBLOB &#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3B;&#x8981;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x5927;&#x5C0F;&#x4E0D;&#x540C;&#x3002;&#x4FDD;&#x5B58;&#x6D6E;&#x70B9;&#x6570;&#x53EF;&#x4EE5;&#x7528; FLOAT &#x6216; DOUBLE &#x7C7B;&#x578B;&#xFF0C;FLOAT &#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x5728; MySQL &#x540E;&#x7EED;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#x6389;&#x3002;&#x800C;&#x4FDD;&#x5B58;&#x5B9A;&#x70B9;&#x6570;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; DECIMAL &#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5C0F;&#x6570;&#x70B9;&#x524D;&#x540E;&#x6709;&#x6548;&#x6570;&#x5B57;&#x7684;&#x4F4D;&#x6570;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#xFF0C;DATETIME &#x7C7B;&#x578B;&#x4F18;&#x4E8E; TIMESTAMP &#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x524D;&#x8005;&#x80FD;&#x8868;&#x793A;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x8303;&#x56F4;&#x66F4;&#x5927;&#xFF0C;&#x540E;&#x8005;&#x5E95;&#x5C42;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x548C; 1970-01-01 00:00:00 &#x76F8;&#x5DEE;&#x591A;&#x5C11;&#x4E2A;&#x6BEB;&#x79D2;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x5728; 2038-01-19 03:14:07 &#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x6EA2;&#x51FA;&#x3002;</p>
-<p>&#x5BF9;&#x4E8E;&#x81EA;&#x589E;&#x5B57;&#x6BB5; AUTO_INCREMENT&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528; MySQL 5.x &#x7248;&#x672C;&#x8981;&#x6CE8;&#x610F;&#x81EA;&#x589E;&#x5B57;&#x6BB5;&#x7684;&#x56DE;&#x6EAF;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5728; MySQL 8.x &#x4E2D;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;MySQL 8.x &#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x597D;&#x5904;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x529F;&#x80FD;&#x8FD8;&#x662F;&#x6027;&#x80FD;&#x4E0A;&#x90FD;&#x6709;&#x5F88;&#x591A;&#x7684;&#x4F18;&#x5316;&#x548C;&#x8C03;&#x6574;&#xFF0C;&#x56E0;&#x6B64;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528; MySQL 8.x &#x7248;&#x672C;&#x3002;&#x5BF9;&#x4E8E;&#x9AD8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x573A;&#x666F;&#xFF0C;AUTO_INCREMENT &#x4E0D;&#x4EC5;&#x5B58;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x5728;&#x591A;&#x673A;&#x7ED3;&#x6784;&#x4E0A;&#x4EA7;&#x751F;&#x91CD;&#x590D;&#x7684; ID &#x503C;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#x5F0F; ID &#x751F;&#x6210;&#x7B97;&#x6CD5;&#xFF08;SnowFlake&#x3001;TinyID&#x7B49;&#xFF09;&#x624D;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x7814;&#x7A76;&#x3002;</p>
-</li>
-</ul>
+  URL: http://dev.mysql.com/doc/refman/5.7/en/string-type-overview.html
+</code></pre><p>  &#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x9009;&#x62E9;&#x4E0A;&#xFF0C;&#x4FDD;&#x5B58;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x901A;&#x5E38;&#x90FD;&#x4F7F;&#x7528; VARCHAR &#x548C; CHAR &#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x524D;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x540E;&#x8005;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x5B9A;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5BF9;&#x4E8E; InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x884C;&#x5B58;&#x50A8;&#x683C;&#x5F0F;&#x6CA1;&#x6709;&#x533A;&#x5206;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x548C;&#x53EF;&#x53D8;&#x957F;&#x5EA6;&#x5217;&#xFF0C;&#x56E0;&#x6B64; VARCHAR &#x7C7B;&#x578B;&#x548C; CHAR &#x7C7B;&#x578B;&#x6CA1;&#x6709;&#x672C;&#x8D28;&#x533A;&#x522B;&#xFF0C;&#x540E;&#x8005;&#x4E0D;&#x4E00;&#x5B9A;&#x6BD4;&#x524D;&#x8005;&#x6027;&#x80FD;&#x66F4;&#x597D;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x5F88;&#x5927;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; TEXT &#x7C7B;&#x578B;&#xFF1B;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x5F88;&#x5927;&#x7684;&#x5B57;&#x8282;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; BLOB&#xFF08;&#x4E8C;&#x8FDB;&#x5236;&#x5927;&#x5BF9;&#x8C61;&#xFF09;&#x7C7B;&#x578B;&#x3002;&#x5728; MySQL &#x4E2D;&#xFF0C;TEXT &#x548C; BLOB&#x53C8;&#x5206;&#x522B;&#x5305;&#x62EC; TEXT&#x3001;MEDIUMTEXT&#x3001;LONGTEXT &#x548C; BLOB&#x3001;MEDIUMBLOB&#x3001;LONGBLOB &#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3B;&#x8981;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x5927;&#x5C0F;&#x4E0D;&#x540C;&#x3002;&#x4FDD;&#x5B58;&#x6D6E;&#x70B9;&#x6570;&#x53EF;&#x4EE5;&#x7528; FLOAT &#x6216; DOUBLE &#x7C7B;&#x578B;&#xFF0C;FLOAT &#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x5728; MySQL &#x540E;&#x7EED;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#x6389;&#x3002;&#x800C;&#x4FDD;&#x5B58;&#x5B9A;&#x70B9;&#x6570;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; DECIMAL &#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5C0F;&#x6570;&#x70B9;&#x524D;&#x540E;&#x6709;&#x6548;&#x6570;&#x5B57;&#x7684;&#x4F4D;&#x6570;&#x3002;&#x5982;&#x679C;&#x8981;&#x4FDD;&#x5B58;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#xFF0C;DATETIME &#x7C7B;&#x578B;&#x4F18;&#x4E8E; TIMESTAMP &#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x524D;&#x8005;&#x80FD;&#x8868;&#x793A;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x8303;&#x56F4;&#x66F4;&#x5927;&#xFF0C;&#x540E;&#x8005;&#x5E95;&#x5C42;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x548C; 1970-01-01 00:00:00 &#x76F8;&#x5DEE;&#x591A;&#x5C11;&#x4E2A;&#x6BEB;&#x79D2;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x5728; 2038-01-19 03:14:07 &#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x6EA2;&#x51FA;&#x3002;</p>
+<p>  &#x5BF9;&#x4E8E;&#x81EA;&#x589E;&#x5B57;&#x6BB5; AUTO_INCREMENT&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528; MySQL 5.x &#x7248;&#x672C;&#x8981;&#x6CE8;&#x610F;&#x81EA;&#x589E;&#x5B57;&#x6BB5;&#x7684;&#x56DE;&#x6EAF;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5728; MySQL 8.x &#x4E2D;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;MySQL 8.x &#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x597D;&#x5904;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x529F;&#x80FD;&#x8FD8;&#x662F;&#x6027;&#x80FD;&#x4E0A;&#x90FD;&#x6709;&#x5F88;&#x591A;&#x7684;&#x4F18;&#x5316;&#x548C;&#x8C03;&#x6574;&#xFF0C;&#x56E0;&#x6B64;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528; MySQL 8.x &#x7248;&#x672C;&#x3002;&#x5BF9;&#x4E8E;&#x9AD8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x573A;&#x666F;&#xFF0C;AUTO_INCREMENT &#x4E0D;&#x4EC5;&#x5B58;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x5728;&#x591A;&#x673A;&#x7ED3;&#x6784;&#x4E0A;&#x4EA7;&#x751F;&#x91CD;&#x590D;&#x7684; ID &#x503C;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#x5F0F; ID &#x751F;&#x6210;&#x7B97;&#x6CD5;&#xFF08;SnowFlake&#x3001;TinyID&#x7B49;&#xFF09;&#x624D;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x7814;&#x7A76;&#x3002;</p>
 <h3 id="&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;">&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;</h3>
 <p>&#x4E0B;&#x9762;&#x4EE5;&#x5B66;&#x751F;&#x8868;&#x4E3A;&#x4F8B;&#xFF0C;&#x4E3A;&#x5927;&#x5BB6;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x5220;&#x9664;&#x8868;&#x548C;&#x4FEE;&#x6539;&#x8868;&#x3002;&#x5220;&#x9664;&#x8868;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>drop table</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
 <pre><code class="lang-SQL"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_student`</span>;
@@ -2266,7 +2372,7 @@ URL: http://dev.mysql.com/doc/refman/5.7/en/string-type-overview.html
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"37.SQL详解之DDL","level":"1.6.2","depth":2,"next":{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},"previous":{"title":"36.关系型数据库和MySQL概述","level":"1.6.1","depth":2,"path":"Day36-45/36.关系型数据库和MySQL概述.md","ref":"Day36-45/36.关系型数据库和MySQL概述.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day36-45/37.SQL详解之DDL.md","mtime":"2024-07-05T03:42:45.006Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"37.SQL详解之DDL","level":"1.6.2","depth":2,"next":{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},"previous":{"title":"36.关系型数据库和MySQL概述","level":"1.6.1","depth":2,"path":"Day36-45/36.关系型数据库和MySQL概述.md","ref":"Day36-45/36.关系型数据库和MySQL概述.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day36-45/37.SQL详解之DDL.md","mtime":"2024-07-05T07:21:41.904Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -69,7 +69,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -80,7 +80,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1828,7 +1837,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1928,33 +1937,36 @@
 <p> <img src="res/20220210080655.png" style="zoom:50%;"></p>
 </li>
 <li><p>&#x521B;&#x5EFA;&#x6587;&#x4EF6;Hadoop&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</p>
-<pre><code class="lang-Shell"> hdfs dfs -mkdir /user/root
-</code></pre>
-</li>
-<li><p>&#x5C06;&#x51C6;&#x5907;&#x597D;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;Hadoop&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-Shell"> hdfs dfs -put /home/ubuntu/data/* /user/root
-</code></pre>
-</li>
-<li><p>&#x8FDB;&#x5165; hive &#x547D;&#x4EE4;&#x884C;&#x3002;</p>
-<pre><code class="lang-Shell"> hive
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Shell">    hdfs dfs -mkdir /user/root
+</code></pre>
+<ol>
+<li>&#x5C06;&#x51C6;&#x5907;&#x597D;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;Hadoop&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    hdfs dfs -put /home/ubuntu/data/* /user/root
+</code></pre>
+<ol>
+<li>&#x8FDB;&#x5165; hive &#x547D;&#x4EE4;&#x884C;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    hive
+</code></pre>
 <h3 id="&#x5EFA;&#x5E93;&#x5EFA;&#x8868;">&#x5EFA;&#x5E93;&#x5EFA;&#x8868;</h3>
 <ol>
-<li><p>&#x521B;&#x5EFA;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> eshop;
-</code></pre>
-</li>
-<li><p>&#x5220;&#x9664;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> eshop <span class="hljs-keyword">cascade</span>;
-</code></pre>
-</li>
-<li><p>&#x5207;&#x6362;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">use</span> eshop;
-</code></pre>
-</li>
+<li>&#x521B;&#x5EFA;&#x3002;</li>
 </ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> eshop;
+</code></pre>
+<ol>
+<li>&#x5220;&#x9664;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> eshop <span class="hljs-keyword">cascade</span>;
+</code></pre>
+<ol>
+<li>&#x5207;&#x6362;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">use</span> eshop;
+</code></pre>
 <h4 id="&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x6570;&#x636E;&#x7C7B;&#x578B;</h4>
 <p>Hive&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
 <p><img src="res/hive_data_types.png" style="zoom:50%;"></p>
@@ -2068,63 +2080,67 @@
 </tbody>
 </table>
 <ol>
-<li><p>&#x521B;&#x5EFA;&#x5185;&#x90E8;&#x8868;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> dim_user_info 
- (
- user_id <span class="hljs-keyword">string</span>,
- user_name <span class="hljs-keyword">string</span>, 
- sex <span class="hljs-keyword">string</span>,
- age <span class="hljs-built_in">int</span>,
- city <span class="hljs-keyword">string</span>,
- firstactivetime <span class="hljs-keyword">string</span>,
- <span class="hljs-keyword">level</span> <span class="hljs-built_in">int</span>,
- extra1 <span class="hljs-keyword">string</span>,
- extra2 <span class="hljs-keyword">map</span>&lt;<span class="hljs-keyword">string</span>,<span class="hljs-keyword">string</span>&gt;
- )
- <span class="hljs-keyword">row</span> <span class="hljs-keyword">format</span> <span class="hljs-keyword">delimited</span> <span class="hljs-keyword">fields</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\t&apos;</span>
- collection items <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;,&apos;</span>
- <span class="hljs-keyword">map</span> <span class="hljs-keyword">keys</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;:&apos;</span>
- <span class="hljs-keyword">lines</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\n&apos;</span>
- <span class="hljs-keyword">stored</span> <span class="hljs-keyword">as</span> textfile;
-</code></pre>
-</li>
-<li><p>&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">load</span> <span class="hljs-keyword">data</span> <span class="hljs-keyword">local</span> inpath <span class="hljs-string">&apos;/home/ubuntu/data/user_info/user_info.txt&apos;</span> overwrite <span class="hljs-keyword">into</span> <span class="hljs-keyword">table</span> dim_user_info;
-</code></pre>
-<p> &#x6216;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">load</span> <span class="hljs-keyword">data</span> inpath <span class="hljs-string">&apos;/user/root/user_info.txt&apos;</span> overwrite <span class="hljs-keyword">into</span> <span class="hljs-keyword">table</span> dim_user_info;
-</code></pre>
-</li>
-<li><p>&#x521B;&#x5EFA;&#x5206;&#x533A;&#x8868;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> fact_user_trade 
- (
- user_name <span class="hljs-keyword">string</span>,
- piece <span class="hljs-built_in">int</span>,
- price <span class="hljs-keyword">double</span>,
- pay_amount <span class="hljs-keyword">double</span>,
- goods_category <span class="hljs-keyword">string</span>,
- pay_time <span class="hljs-built_in">bigint</span>
- )  
- partitioned <span class="hljs-keyword">by</span> (dt <span class="hljs-keyword">string</span>)
- <span class="hljs-keyword">row</span> <span class="hljs-keyword">format</span> <span class="hljs-keyword">delimited</span> <span class="hljs-keyword">fields</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\t&apos;</span>;
-</code></pre>
-</li>
-<li><p>&#x63D0;&#x4F9B;&#x5206;&#x533A;&#x6570;&#x636E;&#x3002;</p>
-<pre><code class="lang-Shell"> hdfs dfs -put /home/ubuntu/data/user_trade/* /user/hive/warehouse/eshop.db/fact_user_trade
-</code></pre>
-</li>
-<li><p>&#x8BBE;&#x7F6E;&#x52A8;&#x6001;&#x5206;&#x533A;&#x3002;</p>
-<pre><code class="lang-SQL"> <span class="hljs-keyword">set</span> hive.exec.dynamic.<span class="hljs-keyword">partition</span>=<span class="hljs-literal">true</span>;
- <span class="hljs-keyword">set</span> hive.exec.dynamic.<span class="hljs-keyword">partition</span>.<span class="hljs-keyword">mode</span>=nonstrict;
- <span class="hljs-keyword">set</span> hive.exec.<span class="hljs-keyword">max</span>.dynamic.<span class="hljs-keyword">partitions</span>=<span class="hljs-number">10000</span>;
- <span class="hljs-keyword">set</span> hive.exec.<span class="hljs-keyword">max</span>.dynamic.<span class="hljs-keyword">partitions</span>.pernode=<span class="hljs-number">10000</span>;
-</code></pre>
-</li>
-<li><p>&#x4FEE;&#x590D;&#x5206;&#x533A;&#x3002;</p>
-<pre><code class="lang-SQL"> msck <span class="hljs-keyword">repair</span> <span class="hljs-keyword">table</span> fact_user_trade;
-</code></pre>
-</li>
+<li>&#x521B;&#x5EFA;&#x5185;&#x90E8;&#x8868;&#x3002;</li>
 </ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> dim_user_info 
+    (
+    user_id <span class="hljs-keyword">string</span>,
+    user_name <span class="hljs-keyword">string</span>, 
+    sex <span class="hljs-keyword">string</span>,
+    age <span class="hljs-built_in">int</span>,
+    city <span class="hljs-keyword">string</span>,
+    firstactivetime <span class="hljs-keyword">string</span>,
+    <span class="hljs-keyword">level</span> <span class="hljs-built_in">int</span>,
+    extra1 <span class="hljs-keyword">string</span>,
+    extra2 <span class="hljs-keyword">map</span>&lt;<span class="hljs-keyword">string</span>,<span class="hljs-keyword">string</span>&gt;
+    )
+    <span class="hljs-keyword">row</span> <span class="hljs-keyword">format</span> <span class="hljs-keyword">delimited</span> <span class="hljs-keyword">fields</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\t&apos;</span>
+    collection items <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;,&apos;</span>
+    <span class="hljs-keyword">map</span> <span class="hljs-keyword">keys</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;:&apos;</span>
+    <span class="hljs-keyword">lines</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\n&apos;</span>
+    <span class="hljs-keyword">stored</span> <span class="hljs-keyword">as</span> textfile;
+</code></pre>
+<ol>
+<li>&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">load</span> <span class="hljs-keyword">data</span> <span class="hljs-keyword">local</span> inpath <span class="hljs-string">&apos;/home/ubuntu/data/user_info/user_info.txt&apos;</span> overwrite <span class="hljs-keyword">into</span> <span class="hljs-keyword">table</span> dim_user_info;
+</code></pre>
+<pre><code>&#x6216;
+</code></pre><pre><code class="lang-SQL">    <span class="hljs-keyword">load</span> <span class="hljs-keyword">data</span> inpath <span class="hljs-string">&apos;/user/root/user_info.txt&apos;</span> overwrite <span class="hljs-keyword">into</span> <span class="hljs-keyword">table</span> dim_user_info;
+</code></pre>
+<ol>
+<li>&#x521B;&#x5EFA;&#x5206;&#x533A;&#x8868;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> fact_user_trade 
+    (
+    user_name <span class="hljs-keyword">string</span>,
+    piece <span class="hljs-built_in">int</span>,
+    price <span class="hljs-keyword">double</span>,
+    pay_amount <span class="hljs-keyword">double</span>,
+    goods_category <span class="hljs-keyword">string</span>,
+    pay_time <span class="hljs-built_in">bigint</span>
+    )  
+    partitioned <span class="hljs-keyword">by</span> (dt <span class="hljs-keyword">string</span>)
+    <span class="hljs-keyword">row</span> <span class="hljs-keyword">format</span> <span class="hljs-keyword">delimited</span> <span class="hljs-keyword">fields</span> <span class="hljs-keyword">terminated</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;\t&apos;</span>;
+</code></pre>
+<ol>
+<li>&#x63D0;&#x4F9B;&#x5206;&#x533A;&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    hdfs dfs -put /home/ubuntu/data/user_trade/* /user/hive/warehouse/eshop.db/fact_user_trade
+</code></pre>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x52A8;&#x6001;&#x5206;&#x533A;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    <span class="hljs-keyword">set</span> hive.exec.dynamic.<span class="hljs-keyword">partition</span>=<span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">set</span> hive.exec.dynamic.<span class="hljs-keyword">partition</span>.<span class="hljs-keyword">mode</span>=nonstrict;
+    <span class="hljs-keyword">set</span> hive.exec.<span class="hljs-keyword">max</span>.dynamic.<span class="hljs-keyword">partitions</span>=<span class="hljs-number">10000</span>;
+    <span class="hljs-keyword">set</span> hive.exec.<span class="hljs-keyword">max</span>.dynamic.<span class="hljs-keyword">partitions</span>.pernode=<span class="hljs-number">10000</span>;
+</code></pre>
+<ol>
+<li>&#x4FEE;&#x590D;&#x5206;&#x533A;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">    msck <span class="hljs-keyword">repair</span> <span class="hljs-keyword">table</span> fact_user_trade;
+</code></pre>
 <h3 id="&#x67E5;&#x8BE2;">&#x67E5;&#x8BE2;</h3>
 <h4 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;">&#x57FA;&#x672C;&#x8BED;&#x6CD5;</h4>
 <pre><code class="lang-SQL"><span class="hljs-comment">-- &#x67E5;&#x8BE2;&#x5317;&#x4EAC;&#x5973;&#x7528;&#x6237;&#x7684;&#x59D3;&#x540D;&#x53D6;&#x524D;10&#x4E2A;</span>
@@ -2152,42 +2168,44 @@ select count(tmp.user_name) from (select user_name, count(distinct goods_categor
 </code></pre>
 <h4 id="&#x5E38;&#x7528;&#x51FD;&#x6570;">&#x5E38;&#x7528;&#x51FD;&#x6570;</h4>
 <ol>
-<li><p><code>from_unixtime</code>&#xFF1A;&#x5C06;&#x65F6;&#x95F4;&#x6233;&#x8F6C;&#x6362;&#x6210;&#x65E5;&#x671F;</p>
-<pre><code class="lang-hive"> select from_unixtime(pay_time, &apos;yyyy-MM-dd hh:mm:ss&apos;) from fact_user_trade limit 10;
+<li><code>from_unixtime</code>&#xFF1A;&#x5C06;&#x65F6;&#x95F4;&#x6233;&#x8F6C;&#x6362;&#x6210;&#x65E5;&#x671F;</li>
+</ol>
+<pre><code class="lang-hive">    select from_unixtime(pay_time, &apos;yyyy-MM-dd hh:mm:ss&apos;) from fact_user_trade limit 10;
 </code></pre>
-</li>
+<ol>
 <li><p><code>unix_timestamp</code>&#xFF1A;&#x5C06;&#x65E5;&#x671F;&#x8F6C;&#x6362;&#x6210;&#x65F6;&#x95F4;&#x6233;</p>
 </li>
 <li><p><code>datediff</code>&#xFF1A;&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x65F6;&#x95F4;&#x5DEE;</p>
-<pre><code class="lang-Hive"> -- &#x7528;&#x6237;&#x9996;&#x6B21;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;&#x4E0E;&#x8BBE;&#x5B9A;&#x53C2;&#x7167;&#x65F6;&#x95F4;&#x7684;&#x95F4;&#x9694;
- select user_name, datediff(&apos;2019-4-1&apos;, to_date(firstactivetime)) from dim_user_info limit 10;
-</code></pre>
-</li>
-<li><p><code>if</code>&#xFF1A;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;</p>
-<pre><code class="lang-Hive"> -- &#x7EDF;&#x8BA1;&#x4E0D;&#x540C;&#x5E74;&#x9F84;&#x6BB5;&#x7684;&#x7528;&#x6237;&#x6570;
- select case when age &lt; 20 then &apos;20&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 30 then &apos;30&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 40 then &apos;40&#x5C81;&#x4EE5;&#x4E0B;&apos; else &apos;40&#x5C81;&#x4EE5;&#x4E0A;&apos; end as age_seg, count(distinct user_id) as total from dim_user_info group by case when age &lt; 20 then &apos;20&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 30 then &apos;30&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 40 then &apos;40&#x5C81;&#x4EE5;&#x4E0B;&apos; else &apos;40&#x5C81;&#x4EE5;&#x4E0A;&apos; end;
-</code></pre>
-<pre><code class="lang-Hive"> -- &#x4E0D;&#x540C;&#x6027;&#x522B;&#x9AD8;&#x7EA7;&#x7B49;&#x7528;&#x6237;&#x6570;&#x91CF;
- select sex, if(level &gt; 5, &apos;&#x9AD8;&apos;, &apos;&#x4F4E;&apos;) as level_type, count(distinct user_id) as total from dim_user_info group by sex, if(level &gt; 5, &apos;&#x9AD8;&apos;, &apos;&#x4F4E;&apos;);
-</code></pre>
-</li>
-<li><p><code>substr</code>&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x53D6;&#x5B50;&#x4E32;</p>
-<pre><code class="lang-Hive"> -- &#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x6708;&#x6FC0;&#x6D3B;&#x7684;&#x65B0;&#x7528;&#x6237;&#x6570;
- select substr(firstactivetime, 1, 7) as month, count(distinct user_id) as total from dim_user_info group by substr(firstactivetime, 1, 7);
-</code></pre>
-</li>
-<li><p><code>get_json_object</code>&#xFF1A;&#x4ECE;JSON&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x53D6;&#x51FA;&#x6307;&#x5B9A;&#x7684;<code>key</code>&#x5BF9;&#x5E94;&#x7684;<code>value</code>&#xFF0C;&#x5982;&#xFF1A;<code>get_json_object(info, &apos;$.first_name&apos;)</code>&#x3002;</p>
-<pre><code class="lang-Hive"> -- &#x7EDF;&#x8BA1;&#x4E0D;&#x540C;&#x624B;&#x673A;&#x54C1;&#x724C;&#x7684;&#x7528;&#x6237;&#x6570;
- select get_json_object(extra1, &apos;$.phonebrand&apos;) as phone, count(distinct user_id) as total from user_info group by get_json_object(extra1, &apos;$.phonebrand&apos;);
-
- select extra2[&apos;phonebrand&apos;] as phone, count(distinct user_id) as total from user_info group by extra2[&apos;phonebrand&apos;];
-</code></pre>
-<blockquote>
-<p>&#x8BF4;&#x660E;&#xFF1A;MySQL&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x53EB;<code>json_extract</code>&#x3002;</p>
-</blockquote>
 </li>
 </ol>
+<pre><code class="lang-Hive">    -- &#x7528;&#x6237;&#x9996;&#x6B21;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;&#x4E0E;&#x8BBE;&#x5B9A;&#x53C2;&#x7167;&#x65F6;&#x95F4;&#x7684;&#x95F4;&#x9694;
+    select user_name, datediff(&apos;2019-4-1&apos;, to_date(firstactivetime)) from dim_user_info limit 10;
+</code></pre>
+<ol>
+<li><code>if</code>&#xFF1A;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;</li>
+</ol>
+<pre><code class="lang-Hive">    -- &#x7EDF;&#x8BA1;&#x4E0D;&#x540C;&#x5E74;&#x9F84;&#x6BB5;&#x7684;&#x7528;&#x6237;&#x6570;
+    select case when age &lt; 20 then &apos;20&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 30 then &apos;30&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 40 then &apos;40&#x5C81;&#x4EE5;&#x4E0B;&apos; else &apos;40&#x5C81;&#x4EE5;&#x4E0A;&apos; end as age_seg, count(distinct user_id) as total from dim_user_info group by case when age &lt; 20 then &apos;20&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 30 then &apos;30&#x5C81;&#x4EE5;&#x4E0B;&apos; when age &lt; 40 then &apos;40&#x5C81;&#x4EE5;&#x4E0B;&apos; else &apos;40&#x5C81;&#x4EE5;&#x4E0A;&apos; end;
+</code></pre>
+<pre><code class="lang-Hive">    -- &#x4E0D;&#x540C;&#x6027;&#x522B;&#x9AD8;&#x7EA7;&#x7B49;&#x7528;&#x6237;&#x6570;&#x91CF;
+    select sex, if(level &gt; 5, &apos;&#x9AD8;&apos;, &apos;&#x4F4E;&apos;) as level_type, count(distinct user_id) as total from dim_user_info group by sex, if(level &gt; 5, &apos;&#x9AD8;&apos;, &apos;&#x4F4E;&apos;);
+</code></pre>
+<ol>
+<li><code>substr</code>&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x53D6;&#x5B50;&#x4E32;</li>
+</ol>
+<pre><code class="lang-Hive">    -- &#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x6708;&#x6FC0;&#x6D3B;&#x7684;&#x65B0;&#x7528;&#x6237;&#x6570;
+    select substr(firstactivetime, 1, 7) as month, count(distinct user_id) as total from dim_user_info group by substr(firstactivetime, 1, 7);
+</code></pre>
+<ol>
+<li><code>get_json_object</code>&#xFF1A;&#x4ECE;JSON&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x53D6;&#x51FA;&#x6307;&#x5B9A;&#x7684;<code>key</code>&#x5BF9;&#x5E94;&#x7684;<code>value</code>&#xFF0C;&#x5982;&#xFF1A;<code>get_json_object(info, &apos;$.first_name&apos;)</code>&#x3002;</li>
+</ol>
+<pre><code class="lang-Hive">    -- &#x7EDF;&#x8BA1;&#x4E0D;&#x540C;&#x624B;&#x673A;&#x54C1;&#x724C;&#x7684;&#x7528;&#x6237;&#x6570;
+    select get_json_object(extra1, &apos;$.phonebrand&apos;) as phone, count(distinct user_id) as total from user_info group by get_json_object(extra1, &apos;$.phonebrand&apos;);
 
+    select extra2[&apos;phonebrand&apos;] as phone, count(distinct user_id) as total from user_info group by extra2[&apos;phonebrand&apos;];
+</code></pre>
+<pre><code>&gt; &#x8BF4;&#x660E;&#xFF1A;MySQL&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x53EB;`json_extract`&#x3002;
+</code></pre>
                                 
                                 </section>
                             
@@ -2226,7 +2244,7 @@ select count(tmp.user_name) from (select user_name, count(distinct goods_categor
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"45.大数据平台和HiveSQL","level":"1.6.10","depth":2,"next":{"title":"Day 46 60","level":"1.7","depth":1,"ref":"","articles":[{"title":"46.Django快速上手","level":"1.7.1","depth":2,"path":"Day46-60/46.Django快速上手.md","ref":"Day46-60/46.Django快速上手.md","articles":[]},{"title":"47.深入模型","level":"1.7.2","depth":2,"path":"Day46-60/47.深入模型.md","ref":"Day46-60/47.深入模型.md","articles":[]},{"title":"48.静态资源和Ajax请求","level":"1.7.3","depth":2,"path":"Day46-60/48.静态资源和Ajax请求.md","ref":"Day46-60/48.静态资源和Ajax请求.md","articles":[]},{"title":"49.Cookie和Session","level":"1.7.4","depth":2,"path":"Day46-60/49.Cookie和Session.md","ref":"Day46-60/49.Cookie和Session.md","articles":[]},{"title":"50.制作报表","level":"1.7.5","depth":2,"path":"Day46-60/50.制作报表.md","ref":"Day46-60/50.制作报表.md","articles":[]},{"title":"51.日志和调试工具栏","level":"1.7.6","depth":2,"path":"Day46-60/51.日志和调试工具栏.md","ref":"Day46-60/51.日志和调试工具栏.md","articles":[]},{"title":"52.中间件的应用","level":"1.7.7","depth":2,"path":"Day46-60/52.中间件的应用.md","ref":"Day46-60/52.中间件的应用.md","articles":[]},{"title":"53.前后端分离开发入门","level":"1.7.8","depth":2,"path":"Day46-60/53.前后端分离开发入门.md","ref":"Day46-60/53.前后端分离开发入门.md","articles":[]},{"title":"54.RESTful架构和DRF入门","level":"1.7.9","depth":2,"path":"Day46-60/54.RESTful架构和DRF入门.md","ref":"Day46-60/54.RESTful架构和DRF入门.md","articles":[]},{"title":"55.RESTful架构和DRF进阶","level":"1.7.10","depth":2,"path":"Day46-60/55.RESTful架构和DRF进阶.md","ref":"Day46-60/55.RESTful架构和DRF进阶.md","articles":[]},{"title":"56.使用缓存","level":"1.7.11","depth":2,"path":"Day46-60/56.使用缓存.md","ref":"Day46-60/56.使用缓存.md","articles":[]},{"title":"57.接入三方平台","level":"1.7.12","depth":2,"path":"Day46-60/57.接入三方平台.md","ref":"Day46-60/57.接入三方平台.md","articles":[]},{"title":"58.异步任务和定时任务","level":"1.7.13","depth":2,"path":"Day46-60/58.异步任务和定时任务.md","ref":"Day46-60/58.异步任务和定时任务.md","articles":[]},{"title":"59.单元测试","level":"1.7.14","depth":2,"path":"Day46-60/59.单元测试.md","ref":"Day46-60/59.单元测试.md","articles":[]},{"title":"60.项目上线","level":"1.7.15","depth":2,"path":"Day46-60/60.项目上线.md","ref":"Day46-60/60.项目上线.md","articles":[]}]},"previous":{"title":"44.Python接入MySQL数据库","level":"1.6.9","depth":2,"path":"Day36-45/44.Python接入MySQL数据库.md","ref":"Day36-45/44.Python接入MySQL数据库.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day36-45/45.大数据平台和HiveSQL.md","mtime":"2024-07-05T03:42:45.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"45.大数据平台和HiveSQL","level":"1.6.10","depth":2,"next":{"title":"Day 46 60","level":"1.7","depth":1,"ref":"","articles":[{"title":"46.Django快速上手","level":"1.7.1","depth":2,"path":"Day46-60/46.Django快速上手.md","ref":"Day46-60/46.Django快速上手.md","articles":[]},{"title":"47.深入模型","level":"1.7.2","depth":2,"path":"Day46-60/47.深入模型.md","ref":"Day46-60/47.深入模型.md","articles":[]},{"title":"48.静态资源和Ajax请求","level":"1.7.3","depth":2,"path":"Day46-60/48.静态资源和Ajax请求.md","ref":"Day46-60/48.静态资源和Ajax请求.md","articles":[]},{"title":"49.Cookie和Session","level":"1.7.4","depth":2,"path":"Day46-60/49.Cookie和Session.md","ref":"Day46-60/49.Cookie和Session.md","articles":[]},{"title":"50.制作报表","level":"1.7.5","depth":2,"path":"Day46-60/50.制作报表.md","ref":"Day46-60/50.制作报表.md","articles":[]},{"title":"51.日志和调试工具栏","level":"1.7.6","depth":2,"path":"Day46-60/51.日志和调试工具栏.md","ref":"Day46-60/51.日志和调试工具栏.md","articles":[]},{"title":"52.中间件的应用","level":"1.7.7","depth":2,"path":"Day46-60/52.中间件的应用.md","ref":"Day46-60/52.中间件的应用.md","articles":[]},{"title":"53.前后端分离开发入门","level":"1.7.8","depth":2,"path":"Day46-60/53.前后端分离开发入门.md","ref":"Day46-60/53.前后端分离开发入门.md","articles":[]},{"title":"54.RESTful架构和DRF入门","level":"1.7.9","depth":2,"path":"Day46-60/54.RESTful架构和DRF入门.md","ref":"Day46-60/54.RESTful架构和DRF入门.md","articles":[]},{"title":"55.RESTful架构和DRF进阶","level":"1.7.10","depth":2,"path":"Day46-60/55.RESTful架构和DRF进阶.md","ref":"Day46-60/55.RESTful架构和DRF进阶.md","articles":[]},{"title":"56.使用缓存","level":"1.7.11","depth":2,"path":"Day46-60/56.使用缓存.md","ref":"Day46-60/56.使用缓存.md","articles":[]},{"title":"57.接入三方平台","level":"1.7.12","depth":2,"path":"Day46-60/57.接入三方平台.md","ref":"Day46-60/57.接入三方平台.md","articles":[]},{"title":"58.异步任务和定时任务","level":"1.7.13","depth":2,"path":"Day46-60/58.异步任务和定时任务.md","ref":"Day46-60/58.异步任务和定时任务.md","articles":[]},{"title":"59.单元测试","level":"1.7.14","depth":2,"path":"Day46-60/59.单元测试.md","ref":"Day46-60/59.单元测试.md","articles":[]},{"title":"60.项目上线","level":"1.7.15","depth":2,"path":"Day46-60/60.项目上线.md","ref":"Day46-60/60.项目上线.md","articles":[]}]},"previous":{"title":"44.Python接入MySQL数据库","level":"1.6.9","depth":2,"path":"Day36-45/44.Python接入MySQL数据库.md","ref":"Day36-45/44.Python接入MySQL数据库.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day36-45/45.大数据平台和HiveSQL.md","mtime":"2024-07-05T07:21:41.901Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

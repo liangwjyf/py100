@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -67,7 +67,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -78,7 +78,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1826,7 +1835,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1930,52 +1939,56 @@
 <pre><code class="lang-Shell">&#x547D;&#x4EE4;&#x540D;&#x79F0; [&#x547D;&#x540D;&#x53C2;&#x6570;] [&#x547D;&#x4EE4;&#x5BF9;&#x8C61;]
 </code></pre>
 <ol>
-<li><p>&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x4FE1;&#x606F; - <strong>w</strong> / <strong>who</strong> / <strong>last</strong>/ <strong>lastb</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# w
- 23:31:16 up 12:16,  2 users,  load average: 0.00, 0.01, 0.05
-USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-root     pts/0    182.139.66.250   23:03    4.00s  0.02s  0.00s w
-jackfrue pts/1    182.139.66.250   23:26    3:56   0.00s  0.00s -bash
-[root ~]# who
-root     pts/0        2018-04-12 23:03 (182.139.66.250)
-jackfrued pts/1        2018-04-12 23:26 (182.139.66.250)
-[root ~]# who am i
-root     pts/0        2018-04-12 23:03 (182.139.66.250)
-[root ~]# who mom likes
-root     pts/0        2018-04-12 23:03 (182.139.66.250)
-[root ~]# last
-root     pts/0        117.136.63.184   Sun May 26 18:57   still logged in   
-reboot   system boot  3.10.0-957.10.1. Mon May 27 02:52 - 19:10  (-7:-42)   
-root     pts/4        117.136.63.184   Sun May 26 18:51 - crash  (08:01)    
-root     pts/4        117.136.63.184   Sun May 26 18:49 - 18:49  (00:00)    
-root     pts/3        117.136.63.183   Sun May 26 18:35 - crash  (08:17)    
-root     pts/2        117.136.63.183   Sun May 26 18:34 - crash  (08:17)    
-root     pts/0        117.136.63.183   Sun May 26 18:10 - crash  (08:42)
+<li>&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x4FE1;&#x606F; - <strong>w</strong> / <strong>who</strong> / <strong>last</strong>/ <strong>lastb</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# w
+    23:31:16 up 12:16,  2 users,  load average: 0.00, 0.01, 0.05
+   USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+   root     pts/0    182.139.66.250   23:03    4.00s  0.02s  0.00s w
+   jackfrue pts/1    182.139.66.250   23:26    3:56   0.00s  0.00s -bash
+   [root ~]# who
+   root     pts/0        2018-04-12 23:03 (182.139.66.250)
+   jackfrued pts/1        2018-04-12 23:26 (182.139.66.250)
+   [root ~]# who am i
+   root     pts/0        2018-04-12 23:03 (182.139.66.250)
+   [root ~]# who mom likes
+   root     pts/0        2018-04-12 23:03 (182.139.66.250)
+   [root ~]# last
+   root     pts/0        117.136.63.184   Sun May 26 18:57   still logged in   
+   reboot   system boot  3.10.0-957.10.1. Mon May 27 02:52 - 19:10  (-7:-42)   
+   root     pts/4        117.136.63.184   Sun May 26 18:51 - crash  (08:01)    
+   root     pts/4        117.136.63.184   Sun May 26 18:49 - 18:49  (00:00)    
+   root     pts/3        117.136.63.183   Sun May 26 18:35 - crash  (08:17)    
+   root     pts/2        117.136.63.183   Sun May 26 18:34 - crash  (08:17)    
+   root     pts/0        117.136.63.183   Sun May 26 18:10 - crash  (08:42)
 </code></pre>
-</li>
+<ol>
 <li><p>&#x67E5;&#x770B;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;Shell - <strong>ps</strong>&#x3002;</p>
 <p>Shell&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x58F3;&#x201D;&#x6216;&#x201C;&#x58F3;&#x7A0B;&#x5E8F;&#x201D;&#xFF0C;&#x5B83;&#x662F;&#x7528;&#x6237;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x4EA4;&#x6D41;&#x7684;&#x7FFB;&#x8BD1;&#x5B98;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x5C31;&#x662F;&#x4EBA;&#x4E0E;&#x8BA1;&#x7B97;&#x673A;&#x4EA4;&#x4E92;&#x7684;&#x754C;&#x9762;&#x548C;&#x63A5;&#x53E3;&#x3002;&#x76EE;&#x524D;&#x5F88;&#x591A;Linux&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;Shell&#x90FD;&#x662F;bash&#xFF08;<u>B</u>ourne <u>A</u>gain <u>SH</u>ell&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;tab&#x952E;&#x8FDB;&#x884C;&#x547D;&#x4EE4;&#x548C;&#x8DEF;&#x5F84;&#x8865;&#x5168;&#x3001;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x3001;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4EE5;&#x53CA;&#x6267;&#x884C;&#x6279;&#x5904;&#x7406;&#x64CD;&#x4F5C;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ps
-  PID TTY          TIME CMD
- 3531 pts/0    00:00:00 bash
- 3553 pts/0    00:00:00 ps
-</code></pre>
 </li>
-<li><p>&#x67E5;&#x770B;&#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x548C;&#x4F4D;&#x7F6E; - <strong>whatis</strong> / <strong>which</strong> / <strong>whereis</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# whatis ps
-ps (1)        - report a snapshot of the current processes.
-[root ~]# whatis python
-python (1)    - an interpreted, interactive, object-oriented programming language
-[root ~]# whereis ps
-ps: /usr/bin/ps /usr/share/man/man1/ps.1.gz
-[root ~]# whereis python
-python: /usr/bin/python /usr/bin/python2.7 /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/include/python2.7 /usr/share/man/man1/python.1.gz
-[root ~]# which ps
-/usr/bin/ps
-[root ~]# which python
-/usr/bin/python
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ps
+     PID TTY          TIME CMD
+    3531 pts/0    00:00:00 bash
+    3553 pts/0    00:00:00 ps
 </code></pre>
-</li>
+<ol>
+<li>&#x67E5;&#x770B;&#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x548C;&#x4F4D;&#x7F6E; - <strong>whatis</strong> / <strong>which</strong> / <strong>whereis</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# whatis ps
+   ps (1)        - report a snapshot of the current processes.
+   [root ~]# whatis python
+   python (1)    - an interpreted, interactive, object-oriented programming language
+   [root ~]# whereis ps
+   ps: /usr/bin/ps /usr/share/man/man1/ps.1.gz
+   [root ~]# whereis python
+   python: /usr/bin/python /usr/bin/python2.7 /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/include/python2.7 /usr/share/man/man1/python.1.gz
+   [root ~]# which ps
+   /usr/bin/ps
+   [root ~]# which python
+   /usr/bin/python
+</code></pre>
+<ol>
 <li><p>&#x6E05;&#x9664;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9; - <strong>clear</strong>&#x3002;</p>
 </li>
 <li><p>&#x67E5;&#x770B;&#x5E2E;&#x52A9;&#x6587;&#x6863; - <strong>man</strong> / <strong>info</strong> / <strong>--help</strong> / <strong>apropos</strong>&#x3002;</p>
@@ -1997,93 +2010,99 @@ DESCRIPTION
 </code></pre>
 </li>
 <li><p>&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x548C;&#x4E3B;&#x673A;&#x540D; - <strong>uname</strong> / <strong>hostname</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@izwz97tbgo9lkabnat2lo8z ~]# uname
-Linux
-[root@izwz97tbgo9lkabnat2lo8z ~]# hostname
-izwz97tbgo9lkabnat2lo8z
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# cat /etc/centos-release
-CentOS Linux release 7.6.1810 (Core)
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root@izwz97tbgo9lkabnat2lo8z ~]# uname
+   Linux
+   [root@izwz97tbgo9lkabnat2lo8z ~]# hostname
+   izwz97tbgo9lkabnat2lo8z
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# cat /etc/centos-release
+   CentOS Linux release 7.6.1810 (Core)
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;<code>cat</code>&#x662F;&#x8FDE;&#x63A5;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5E76;&#x6253;&#x5370;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x8BB2;&#x5230;&#x8BE5;&#x547D;&#x4EE4;&#xFF1B;<code>/etc</code>&#x662F;Linux&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x5B83;&#x4FDD;&#x5B58;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1B;<code>centos-release</code>&#x662F;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;Linux&#x53D1;&#x884C;&#x7248;&#x672C;&#x662F;CentOS 7.6&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x91CC;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x65F6;&#x95F4;&#x548C;&#x65E5;&#x671F; - <strong>date</strong> / <strong>cal</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# date
-Wed Jun 20 12:53:19 CST 2018
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# cal
-      June 2018
-Su Mo Tu We Th Fr Sa
-                1  2
- 3  4  5  6  7  8  9
-10 11 12 13 14 15 16
-17 18 19 20 21 22 23
-24 25 26 27 28 29 30
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# cal 5 2017
-      May 2017
-Su Mo Tu We Th Fr Sa
-    1  2  3  4  5  6
- 7  8  9 10 11 12 13
-14 15 16 17 18 19 20
-21 22 23 24 25 26 27
-28 29 30 31
+<ol>
+<li>&#x65F6;&#x95F4;&#x548C;&#x65E5;&#x671F; - <strong>date</strong> / <strong>cal</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# date
+   Wed Jun 20 12:53:19 CST 2018
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# cal
+         June 2018
+   Su Mo Tu We Th Fr Sa
+                   1  2
+    3  4  5  6  7  8  9
+   10 11 12 13 14 15 16
+   17 18 19 20 21 22 23
+   24 25 26 27 28 29 30
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# cal 5 2017
+         May 2017
+   Su Mo Tu We Th Fr Sa
+       1  2  3  4  5  6
+    7  8  9 10 11 12 13
+   14 15 16 17 18 19 20
+   21 22 23 24 25 26 27
+   28 29 30 31
 </code></pre>
-</li>
-<li><p>&#x91CD;&#x542F;&#x548C;&#x5173;&#x673A; - <strong>reboot</strong> / <strong>shutdown</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# shutdown -h +5
-Shutdown scheduled for Sun 2019-05-26 19:34:27 CST, use &apos;shutdown -c&apos; to cancel.
-[root ~]# 
-Broadcast message from root (Sun 2019-05-26 19:29:27 CST):
+<ol>
+<li>&#x91CD;&#x542F;&#x548C;&#x5173;&#x673A; - <strong>reboot</strong> / <strong>shutdown</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# shutdown -h +5
+   Shutdown scheduled for Sun 2019-05-26 19:34:27 CST, use &apos;shutdown -c&apos; to cancel.
+   [root ~]# 
+   Broadcast message from root (Sun 2019-05-26 19:29:27 CST):
 
-The system is going down for power-off at Sun 2019-05-26 19:34:27 CST!
-[root ~]# shutdown -c
+   The system is going down for power-off at Sun 2019-05-26 19:34:27 CST!
+   [root ~]# shutdown -c
 
-Broadcast message from root (Sun 2019-05-26 19:30:22 CST):
+   Broadcast message from root (Sun 2019-05-26 19:30:22 CST):
 
-The system shutdown has been cancelled at Sun 2019-05-26 19:31:22 CST!
-[root ~]# shutdown -r 23:58
-Shutdown scheduled for Sun 2019-05-26 23:58:00 CST, use &apos;shutdown -c&apos; to cancel.
-[root ~]# shutdown -c
+   The system shutdown has been cancelled at Sun 2019-05-26 19:31:22 CST!
+   [root ~]# shutdown -r 23:58
+   Shutdown scheduled for Sun 2019-05-26 23:58:00 CST, use &apos;shutdown -c&apos; to cancel.
+   [root ~]# shutdown -c
 
-Broadcast message from root (Sun 2019-05-26 19:31:06 CST):
+   Broadcast message from root (Sun 2019-05-26 19:31:06 CST):
 
-The system shutdown has been cancelled at Sun 2019-05-26 19:32:06 CST!
+   The system shutdown has been cancelled at Sun 2019-05-26 19:32:06 CST!
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x5728;&#x6267;&#x884C;<code>shutdown</code>&#x547D;&#x4EE4;&#x65F6;&#x4F1A;&#x5411;&#x767B;&#x5F55;&#x7CFB;&#x7EDF;&#x7684;&#x7528;&#x6237;&#x53D1;&#x51FA;&#x8B66;&#x544A;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x8B66;&#x544A;&#x6D88;&#x606F;&#x6765;&#x66FF;&#x6362;&#x9ED8;&#x8BA4;&#x7684;&#x8B66;&#x544A;&#x6D88;&#x606F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>-h</code>&#x53C2;&#x6570;&#x540E;&#x901A;&#x8FC7;<code>now</code>&#x6765;&#x8868;&#x793A;&#x7ACB;&#x523B;&#x5173;&#x673A;&#x3002;</p>
 </blockquote>
-</li>
+<ol>
 <li><p>&#x9000;&#x51FA;&#x767B;&#x5F55; -  <strong>exit</strong> / <strong>logout</strong>&#x3002;</p>
 </li>
 <li><p>&#x67E5;&#x770B;&#x5386;&#x53F2;&#x547D;&#x4EE4; - <strong>history</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# history
-...
-452  ls
-453  cd Python-3.6.5/
-454  clear
-455  history
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# !454
+</li>
+</ol>
+<pre><code class="lang-Shell">  [root@iZwz97tbgo9lkabnat2lo8Z ~]# history
+  ...
+  452  ls
+  453  cd Python-3.6.5/
+  454  clear
+  455  history
+  [root@iZwz97tbgo9lkabnat2lo8Z ~]# !454
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x67E5;&#x770B;&#x5230;&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<code>!&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x7F16;&#x53F7;</code>&#x6765;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#xFF1B;&#x901A;&#x8FC7;<code>history -c</code>&#x53EF;&#x4EE5;&#x6E05;&#x9664;&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x3002;</p>
 </blockquote>
-</li>
-</ol>
 <h3 id="&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;">&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;</h3>
 <h4 id="&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x64CD;&#x4F5C;">&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x64CD;&#x4F5C;</h4>
 <ol>
-<li><p>&#x521B;&#x5EFA;/&#x5220;&#x9664;&#x7A7A;&#x76EE;&#x5F55; - <strong>mkdir</strong> / <strong>rmdir</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# mkdir abc
-[root ~]# mkdir -p xyz/abc
-[root ~]# rmdir abc
+<li>&#x521B;&#x5EFA;/&#x5220;&#x9664;&#x7A7A;&#x76EE;&#x5F55; - <strong>mkdir</strong> / <strong>rmdir</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# mkdir abc
+   [root ~]# mkdir -p xyz/abc
+   [root ~]# rmdir abc
 </code></pre>
-</li>
-<li><p>&#x521B;&#x5EFA;/&#x5220;&#x9664;&#x6587;&#x4EF6; - <strong>touch</strong> / <strong>rm</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# touch readme.txt
-[root ~]# touch error.txt
-[root ~]# rm error.txt
-rm: remove regular empty file &#x2018;error.txt&#x2019;? y
-[root ~]# rm -rf xyz
+<ol>
+<li>&#x521B;&#x5EFA;/&#x5220;&#x9664;&#x6587;&#x4EF6; - <strong>touch</strong> / <strong>rm</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# touch readme.txt
+   [root ~]# touch error.txt
+   [root ~]# rm error.txt
+   rm: remove regular empty file &#x2018;error.txt&#x2019;? y
+   [root ~]# rm -rf xyz
 </code></pre>
 <ul>
 <li><code>touch</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#x6216;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x65F6;&#x95F4;&#x3002;&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6709;&#x4E09;&#x79CD;&#x65F6;&#x95F4;&#xFF1A;<ul>
@@ -2099,7 +2118,7 @@ rm: remove regular empty file &#x2018;error.txt&#x2019;? y
 </ul>
 </li>
 </ul>
-</li>
+<ol>
 <li><p>&#x5207;&#x6362;&#x548C;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55; - <strong>cd</strong> / <strong>pwd</strong>&#x3002;</p>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;<code>cd</code>&#x547D;&#x4EE4;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x8DDF;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF08;&#x4EE5;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4F5C;&#x4E3A;&#x53C2;&#x7167;&#xFF09;&#x6216;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF08;&#x4EE5;<code>/</code>&#x5F00;&#x5934;&#xFF09;&#x6765;&#x5207;&#x6362;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>cd ..</code>&#x6765;&#x8FD4;&#x56DE;&#x4E0A;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#x3002;&#x8BF7;&#x5927;&#x5BB6;&#x60F3;&#x4E00;&#x60F3;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x8FD4;&#x56DE;&#x5230;&#x4E0A;&#x4E0A;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#x5E94;&#x8BE5;&#x7ED9;<code>cd</code>&#x547D;&#x4EE4;&#x52A0;&#x4E0A;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x53C2;&#x6570;&#x5462;&#xFF1F;</p>
@@ -2115,147 +2134,157 @@ rm: remove regular empty file &#x2018;error.txt&#x2019;? y
 </ul>
 </li>
 <li><p>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x5185;&#x5BB9; - <strong>cat</strong> / <strong>tac</strong> / <strong>head</strong> / <strong>tail</strong> / <strong>more</strong> / <strong>less</strong> / <strong>rev</strong> / <strong>od</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# wget http://www.sohu.com/ -O sohu.html
---2018-06-20 18:42:34--  http://www.sohu.com/
-Resolving www.sohu.com (www.sohu.com)... 14.18.240.6
-Connecting to www.sohu.com (www.sohu.com)|14.18.240.6|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 212527 (208K) [text/html]
-Saving to: &#x2018;sohu.html&#x2019;
-100%[==================================================&gt;] 212,527     --.-K/s   in 0.03s
-2018-06-20 18:42:34 (7.48 MB/s) - &#x2018;sohu.html&#x2019; saved [212527/212527]
-[root ~]# cat sohu.html
-...
-[root ~]# head -10 sohu.html
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&#x641C;&#x72D0;&lt;/title&gt;
-&lt;meta name=&quot;Keywords&quot; content=&quot;&#x641C;&#x72D0;,&#x95E8;&#x6237;&#x7F51;&#x7AD9;,&#x65B0;&#x5A92;&#x4F53;,&#x7F51;&#x7EDC;&#x5A92;&#x4F53;,&#x65B0;&#x95FB;,&#x8D22;&#x7ECF;,&#x4F53;&#x80B2;,&#x5A31;&#x4E50;,&#x65F6;&#x5C1A;,&#x6C7D;&#x8F66;,&#x623F;&#x4EA7;,&#x79D1;&#x6280;,&#x56FE;&#x7247;,&#x8BBA;&#x575B;,&#x5FAE;&#x535A;,&#x535A;&#x5BA2;,&#x89C6;&#x9891;,&#x7535;&#x5F71;,&#x7535;&#x89C6;&#x5267;&quot;/&gt;
-&lt;meta name=&quot;Description&quot; content=&quot;&#x641C;&#x72D0;&#x7F51;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;24&#x5C0F;&#x65F6;&#x4E0D;&#x95F4;&#x65AD;&#x7684;&#x6700;&#x65B0;&#x8D44;&#x8BAF;&#xFF0C;&#x53CA;&#x641C;&#x7D22;&#x3001;&#x90AE;&#x4EF6;&#x7B49;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x3002;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#x5168;&#x7403;&#x70ED;&#x70B9;&#x4E8B;&#x4EF6;&#x3001;&#x7A81;&#x53D1;&#x65B0;&#x95FB;&#x3001;&#x65F6;&#x4E8B;&#x8BC4;&#x8BBA;&#x3001;&#x70ED;&#x64AD;&#x5F71;&#x89C6;&#x5267;&#x3001;&#x4F53;&#x80B2;&#x8D5B;&#x4E8B;&#x3001;&#x884C;&#x4E1A;&#x52A8;&#x6001;&#x3001;&#x751F;&#x6D3B;&#x670D;&#x52A1;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x8BBA;&#x575B;&#x3001;&#x535A;&#x5BA2;&#x3001;&#x5FAE;&#x535A;&#x3001;&#x6211;&#x7684;&#x641C;&#x72D0;&#x7B49;&#x4E92;&#x52A8;&#x7A7A;&#x95F4;&#x3002;&quot; /&gt;
-&lt;meta name=&quot;shenma-site-verification&quot; content=&quot;1237e4d02a3d8d73e96cbd97b699e9c3_1504254750&quot;&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge,chrome=1&quot;/&gt;
-[root ~]# tail -2 sohu.html
-&lt;/body&gt;
-&lt;/html&gt;
-[root ~]# less sohu.html
-...
-[root ~]# cat -n sohu.html | more
-...
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# wget http://www.sohu.com/ -O sohu.html
+   --2018-06-20 18:42:34--  http://www.sohu.com/
+   Resolving www.sohu.com (www.sohu.com)... 14.18.240.6
+   Connecting to www.sohu.com (www.sohu.com)|14.18.240.6|:80... connected.
+   HTTP request sent, awaiting response... 200 OK
+   Length: 212527 (208K) [text/html]
+   Saving to: &#x2018;sohu.html&#x2019;
+   100%[==================================================&gt;] 212,527     --.-K/s   in 0.03s
+   2018-06-20 18:42:34 (7.48 MB/s) - &#x2018;sohu.html&#x2019; saved [212527/212527]
+   [root ~]# cat sohu.html
+   ...
+   [root ~]# head -10 sohu.html
+   &lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+   &lt;head&gt;
+   &lt;title&gt;&#x641C;&#x72D0;&lt;/title&gt;
+   &lt;meta name=&quot;Keywords&quot; content=&quot;&#x641C;&#x72D0;,&#x95E8;&#x6237;&#x7F51;&#x7AD9;,&#x65B0;&#x5A92;&#x4F53;,&#x7F51;&#x7EDC;&#x5A92;&#x4F53;,&#x65B0;&#x95FB;,&#x8D22;&#x7ECF;,&#x4F53;&#x80B2;,&#x5A31;&#x4E50;,&#x65F6;&#x5C1A;,&#x6C7D;&#x8F66;,&#x623F;&#x4EA7;,&#x79D1;&#x6280;,&#x56FE;&#x7247;,&#x8BBA;&#x575B;,&#x5FAE;&#x535A;,&#x535A;&#x5BA2;,&#x89C6;&#x9891;,&#x7535;&#x5F71;,&#x7535;&#x89C6;&#x5267;&quot;/&gt;
+   &lt;meta name=&quot;Description&quot; content=&quot;&#x641C;&#x72D0;&#x7F51;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;24&#x5C0F;&#x65F6;&#x4E0D;&#x95F4;&#x65AD;&#x7684;&#x6700;&#x65B0;&#x8D44;&#x8BAF;&#xFF0C;&#x53CA;&#x641C;&#x7D22;&#x3001;&#x90AE;&#x4EF6;&#x7B49;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x3002;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#x5168;&#x7403;&#x70ED;&#x70B9;&#x4E8B;&#x4EF6;&#x3001;&#x7A81;&#x53D1;&#x65B0;&#x95FB;&#x3001;&#x65F6;&#x4E8B;&#x8BC4;&#x8BBA;&#x3001;&#x70ED;&#x64AD;&#x5F71;&#x89C6;&#x5267;&#x3001;&#x4F53;&#x80B2;&#x8D5B;&#x4E8B;&#x3001;&#x884C;&#x4E1A;&#x52A8;&#x6001;&#x3001;&#x751F;&#x6D3B;&#x670D;&#x52A1;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x8BBA;&#x575B;&#x3001;&#x535A;&#x5BA2;&#x3001;&#x5FAE;&#x535A;&#x3001;&#x6211;&#x7684;&#x641C;&#x72D0;&#x7B49;&#x4E92;&#x52A8;&#x7A7A;&#x95F4;&#x3002;&quot; /&gt;
+   &lt;meta name=&quot;shenma-site-verification&quot; content=&quot;1237e4d02a3d8d73e96cbd97b699e9c3_1504254750&quot;&gt;
+   &lt;meta charset=&quot;utf-8&quot;/&gt;
+   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge,chrome=1&quot;/&gt;
+   [root ~]# tail -2 sohu.html
+   &lt;/body&gt;
+   &lt;/html&gt;
+   [root ~]# less sohu.html
+   ...
+   [root ~]# cat -n sohu.html | more
+   ...
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7528;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>wget</code>&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x4E0B;&#x8F7D;&#x5668;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x6307;&#x5B9A;&#x7684;URL&#x4E0B;&#x8F7D;&#x8D44;&#x6E90;&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x62F7;&#x8D1D;/&#x79FB;&#x52A8;&#x6587;&#x4EF6; - <strong>cp</strong> / <strong>mv</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# mkdir backup
-[root ~]# cp sohu.html backup/
-[root ~]# cd backup
-[root backup]# ls
-sohu.html
-[root backup]# mv sohu.html sohu_index.html
-[root backup]# ls
-sohu_index.html
+<ol>
+<li>&#x62F7;&#x8D1D;/&#x79FB;&#x52A8;&#x6587;&#x4EF6; - <strong>cp</strong> / <strong>mv</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# mkdir backup
+   [root ~]# cp sohu.html backup/
+   [root ~]# cd backup
+   [root backup]# ls
+   sohu.html
+   [root backup]# mv sohu.html sohu_index.html
+   [root backup]# ls
+   sohu_index.html
 </code></pre>
-</li>
-<li><p>&#x6587;&#x4EF6;&#x91CD;&#x547D;&#x540D; - <strong>rename</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# rename .htm .html *.htm
+<ol>
+<li>&#x6587;&#x4EF6;&#x91CD;&#x547D;&#x540D; - <strong>rename</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">  [root@iZwz97tbgo9lkabnat2lo8Z ~]# rename .htm .html *.htm
 </code></pre>
-</li>
-<li><p>&#x67E5;&#x627E;&#x6587;&#x4EF6;&#x548C;&#x67E5;&#x627E;&#x5185;&#x5BB9; - <strong>find</strong> / <strong>grep</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# find / -name &quot;*.html&quot;
-/root/sohu.html
-/root/backup/sohu_index.html
-[root@izwz97tbgo9lkabnat2lo8z ~]# find . -atime 7 -type f -print
-[root@izwz97tbgo9lkabnat2lo8z ~]# find . -type f -size +2k
-[root@izwz97tbgo9lkabnat2lo8z ~]# find . -type f -name &quot;*.swp&quot; -delete
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# grep &quot;&lt;script&gt;&quot; sohu.html -n
-20:&lt;script&gt;
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# grep -E \&lt;\/?script.*\&gt; sohu.html -n
-20:&lt;script&gt;
-22:&lt;/script&gt;
-24:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/es5-shim-08e41cfc3e.min.js&quot;&gt;&lt;/script&gt;
-25:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/es5-sham-1d5fa1124b.min.js&quot;&gt;&lt;/script&gt;
-26:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/html5shiv-21fc8c2ba6.js&quot;&gt;&lt;/script&gt;
-29:&lt;script type=&quot;text/javascript&quot;&gt;
-52:&lt;/script&gt;
-...
+<ol>
+<li>&#x67E5;&#x627E;&#x6587;&#x4EF6;&#x548C;&#x67E5;&#x627E;&#x5185;&#x5BB9; - <strong>find</strong> / <strong>grep</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# find / -name &quot;*.html&quot;
+   /root/sohu.html
+   /root/backup/sohu_index.html
+   [root@izwz97tbgo9lkabnat2lo8z ~]# find . -atime 7 -type f -print
+   [root@izwz97tbgo9lkabnat2lo8z ~]# find . -type f -size +2k
+   [root@izwz97tbgo9lkabnat2lo8z ~]# find . -type f -name &quot;*.swp&quot; -delete
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# grep &quot;&lt;script&gt;&quot; sohu.html -n
+   20:&lt;script&gt;
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# grep -E \&lt;\/?script.*\&gt; sohu.html -n
+   20:&lt;script&gt;
+   22:&lt;/script&gt;
+   24:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/es5-shim-08e41cfc3e.min.js&quot;&gt;&lt;/script&gt;
+   25:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/es5-sham-1d5fa1124b.min.js&quot;&gt;&lt;/script&gt;
+   26:&lt;script src=&quot;//statics.itc.cn/web/v3/static/js/html5shiv-21fc8c2ba6.js&quot;&gt;&lt;/script&gt;
+   29:&lt;script type=&quot;text/javascript&quot;&gt;
+   52:&lt;/script&gt;
+   ...
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>grep</code>&#x5728;&#x641C;&#x7D22;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x7528;<code>grep -E</code>&#x6216;&#x8005;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>egrep</code>&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x521B;&#x5EFA;&#x94FE;&#x63A5;&#x548C;&#x67E5;&#x770B;&#x94FE;&#x63A5; - <strong>ln</strong> / <strong>readlink</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
--rw-r--r-- 1 root root 212131 Jun 20 19:15 sohu.html
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ln /root/sohu.html /root/backup/sohu_backup
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
--rw-r--r-- 2 root root 212131 Jun 20 19:15 sohu.html
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ln /root/sohu.html /root/backup/sohu_backup2
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
--rw-r--r-- 3 root root 212131 Jun 20 19:15 sohu.html
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ln -s /etc/centos-release sysinfo
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sysinfo
-lrwxrwxrwx 1 root root 19 Jun 20 19:21 sysinfo -&gt; /etc/centos-release
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# cat sysinfo
-CentOS Linux release 7.4.1708 (Core)
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# cat /etc/centos-release
-CentOS Linux release 7.4.1708 (Core)
+<ol>
+<li>&#x521B;&#x5EFA;&#x94FE;&#x63A5;&#x548C;&#x67E5;&#x770B;&#x94FE;&#x63A5; - <strong>ln</strong> / <strong>readlink</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
+   -rw-r--r-- 1 root root 212131 Jun 20 19:15 sohu.html
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ln /root/sohu.html /root/backup/sohu_backup
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
+   -rw-r--r-- 2 root root 212131 Jun 20 19:15 sohu.html
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ln /root/sohu.html /root/backup/sohu_backup2
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sohu.html
+   -rw-r--r-- 3 root root 212131 Jun 20 19:15 sohu.html
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ln -s /etc/centos-release sysinfo
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls -l sysinfo
+   lrwxrwxrwx 1 root root 19 Jun 20 19:21 sysinfo -&gt; /etc/centos-release
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# cat sysinfo
+   CentOS Linux release 7.4.1708 (Core)
+   [root@iZwz97tbgo9lkabnat2lo8Z ~]# cat /etc/centos-release
+   CentOS Linux release 7.4.1708 (Core)
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x94FE;&#x63A5;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x786C;&#x94FE;&#x63A5;&#x548C;&#x8F6F;&#x94FE;&#x63A5;&#xFF08;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF09;&#x3002;&#x786C;&#x94FE;&#x63A5;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x6587;&#x4EF6;&#x6570;&#x636E;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x5C31;&#x50CF;Python&#x4E2D;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#xFF0C;&#x6BCF;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x786C;&#x94FE;&#x63A5;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x5BF9;&#x5E94;&#x94FE;&#x63A5;&#x6570;&#x5C31;&#x589E;&#x52A0;1&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;&#x6570;&#x4E3A;0&#x65F6;&#xFF0C;&#x6587;&#x4EF6;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x624D;&#x6709;&#x53EF;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x8986;&#x76D6;&#x3002;&#x6211;&#x4EEC;&#x5E73;&#x5E38;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x65F6;&#x5176;&#x5B9E;&#x5E76;&#x6CA1;&#x6709;&#x5220;&#x9664;&#x786C;&#x76D8;&#x4E0A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x5220;&#x9664;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x6570;&#x636E;&#x7684;&#x4E00;&#x6761;&#x4F7F;&#x7528;&#x8BB0;&#x5F55;&#xFF0C;&#x6240;&#x4EE5;&#x7C7B;&#x4F3C;&#x4E8E;&#x201C;&#x6587;&#x4EF6;&#x7C89;&#x788E;&#x673A;&#x201D;&#x4E4B;&#x7C7B;&#x7684;&#x8F6F;&#x4EF6;&#x5728;&#x201C;&#x7C89;&#x788E;&#x201D;&#x6587;&#x4EF6;&#x65F6;&#x9664;&#x4E86;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x6307;&#x9488;&#xFF0C;&#x8FD8;&#x4F1A;&#x5728;&#x6587;&#x4EF6;&#x5BF9;&#x5E94;&#x7684;&#x5B58;&#x50A8;&#x533A;&#x57DF;&#x586B;&#x5165;&#x6570;&#x636E;&#x6765;&#x4FDD;&#x8BC1;&#x6587;&#x4EF6;&#x65E0;&#x6CD5;&#x518D;&#x6062;&#x590D;&#x3002;&#x8F6F;&#x94FE;&#x63A5;&#x7C7B;&#x4F3C;&#x4E8E;Windows&#x7CFB;&#x7EDF;&#x4E0B;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x5F53;&#x8F6F;&#x94FE;&#x63A5;&#x94FE;&#x63A5;&#x7684;&#x6587;&#x4EF6;&#x88AB;&#x5220;&#x9664;&#x65F6;&#xFF0C;&#x8F6F;&#x94FE;&#x63A5;&#x4E5F;&#x5C31;&#x5931;&#x6548;&#x4E86;&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x538B;&#x7F29;/&#x89E3;&#x538B;&#x7F29;&#x548C;&#x5F52;&#x6863;/&#x89E3;&#x5F52;&#x6863; - <strong>gzip</strong> / <strong>gunzip</strong> / <strong>xz</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-4.0.10.tar.gz
---2018-06-20 19:29:59--  http://download.redis.io/releases/redis-4.0.10.tar.gz
-Resolving download.redis.io (download.redis.io)... 109.74.203.151
-Connecting to download.redis.io (download.redis.io)|109.74.203.151|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1738465 (1.7M) [application/x-gzip]
-Saving to: &#x2018;redis-4.0.10.tar.gz&#x2019;
-100%[==================================================&gt;] 1,738,465   70.1KB/s   in 74s
-2018-06-20 19:31:14 (22.9 KB/s) - &#x2018;redis-4.0.10.tar.gz&#x2019; saved [1738465/1738465]
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls redis*
-redis-4.0.10.tar.gz
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-4.0.10.tar.gz
-[root@iZwz97tbgo9lkabnat2lo8Z ~]# ls redis*
-redis-4.0.10.tar
+<ol>
+<li>&#x538B;&#x7F29;/&#x89E3;&#x538B;&#x7F29;&#x548C;&#x5F52;&#x6863;/&#x89E3;&#x5F52;&#x6863; - <strong>gzip</strong> / <strong>gunzip</strong> / <strong>xz</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">  [root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-4.0.10.tar.gz
+  --2018-06-20 19:29:59--  http://download.redis.io/releases/redis-4.0.10.tar.gz
+  Resolving download.redis.io (download.redis.io)... 109.74.203.151
+  Connecting to download.redis.io (download.redis.io)|109.74.203.151|:80... connected.
+  HTTP request sent, awaiting response... 200 OK
+  Length: 1738465 (1.7M) [application/x-gzip]
+  Saving to: &#x2018;redis-4.0.10.tar.gz&#x2019;
+  100%[==================================================&gt;] 1,738,465   70.1KB/s   in 74s
+  2018-06-20 19:31:14 (22.9 KB/s) - &#x2018;redis-4.0.10.tar.gz&#x2019; saved [1738465/1738465]
+  [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls redis*
+  redis-4.0.10.tar.gz
+  [root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-4.0.10.tar.gz
+  [root@iZwz97tbgo9lkabnat2lo8Z ~]# ls redis*
+  redis-4.0.10.tar
 </code></pre>
-</li>
-<li><p>&#x5F52;&#x6863;&#x548C;&#x89E3;&#x5F52;&#x6863; - <strong>tar</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# tar -xvf redis-4.0.10.tar
-redis-4.0.10/
-redis-4.0.10/.gitignore
-redis-4.0.10/00-RELEASENOTES
-redis-4.0.10/BUGS
-redis-4.0.10/CONTRIBUTING
-redis-4.0.10/COPYING
-redis-4.0.10/INSTALL
-redis-4.0.10/MANIFESTO
-redis-4.0.10/Makefile
-redis-4.0.10/README.md
-redis-4.0.10/deps/
-redis-4.0.10/deps/Makefile
-redis-4.0.10/deps/README.md
-...
+<ol>
+<li>&#x5F52;&#x6863;&#x548C;&#x89E3;&#x5F52;&#x6863; - <strong>tar</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# tar -xvf redis-4.0.10.tar
+   redis-4.0.10/
+   redis-4.0.10/.gitignore
+   redis-4.0.10/00-RELEASENOTES
+   redis-4.0.10/BUGS
+   redis-4.0.10/CONTRIBUTING
+   redis-4.0.10/COPYING
+   redis-4.0.10/INSTALL
+   redis-4.0.10/MANIFESTO
+   redis-4.0.10/Makefile
+   redis-4.0.10/README.md
+   redis-4.0.10/deps/
+   redis-4.0.10/deps/Makefile
+   redis-4.0.10/deps/README.md
+   ...
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x5F52;&#x6863;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#xFF09;&#x548C;&#x89E3;&#x5F52;&#x6863;&#x90FD;&#x4F7F;&#x7528;<code>tar</code>&#x547D;&#x4EE4;&#xFF0C;&#x901A;&#x5E38;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#x9700;&#x8981;<code>-cvf</code>&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5176;&#x4E2D;<code>c</code>&#x8868;&#x793A;&#x521B;&#x5EFA;&#xFF08;create&#xFF09;&#xFF0C;<code>v</code>&#x8868;&#x793A;&#x663E;&#x793A;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#x8BE6;&#x60C5;&#xFF08;verbose&#xFF09;&#xFF0C;<code>f</code>&#x8868;&#x793A;&#x6307;&#x5B9A;&#x5F52;&#x6863;&#x7684;&#x6587;&#x4EF6;&#xFF08;file&#xFF09;&#xFF1B;&#x89E3;&#x5F52;&#x6863;&#x9700;&#x8981;&#x52A0;&#x4E0A;<code>-xvf</code>&#x53C2;&#x6570;&#xFF0C;&#x5176;&#x4E2D;<code>x</code>&#x8868;&#x793A;&#x62BD;&#x53D6;&#xFF08;extract&#xFF09;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x8DDF;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#x76F8;&#x540C;&#x3002;</p>
 </blockquote>
-</li>
+<ol>
 <li><p>&#x5C06;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8F6C;&#x6210;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570; - <strong>xargs</strong>&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4F1A;&#x5C06;&#x67E5;&#x627E;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;html&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;<code>xargs</code>&#x5C06;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x7ED9;<code>rm</code>&#x547D;&#x4EE4;&#xFF0C;&#x5B9E;&#x73B0;&#x67E5;&#x627E;&#x5E76;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# find . -type f -name &quot;*.html&quot; | xargs rm -f
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# find . -type f -name &quot;*.html&quot; | xargs rm -f
 </code></pre>
-<p>&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;a.txt&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x591A;&#x884C;&#x5185;&#x5BB9;&#x53D8;&#x6210;&#x4E00;&#x884C;&#x8F93;&#x51FA;&#x5230;b.txt&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;<code>&lt;</code>&#x8868;&#x793A;&#x4ECE;a.txt&#x4E2D;&#x8BFB;&#x53D6;&#x8F93;&#x5165;&#xFF0C;<code>&gt;</code>&#x8868;&#x793A;&#x5C06;&#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;b.txt&#x4E2D;&#x3002;</p>
-<pre><code class="lang-Shell">[root@iZwz97tbgo9lkabnat2lo8Z ~]# xargs &lt; a.txt &gt; b.txt
+<p>   &#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;a.txt&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x591A;&#x884C;&#x5185;&#x5BB9;&#x53D8;&#x6210;&#x4E00;&#x884C;&#x8F93;&#x51FA;&#x5230;b.txt&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;<code>&lt;</code>&#x8868;&#x793A;&#x4ECE;a.txt&#x4E2D;&#x8BFB;&#x53D6;&#x8F93;&#x5165;&#xFF0C;<code>&gt;</code>&#x8868;&#x793A;&#x5C06;&#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;b.txt&#x4E2D;&#x3002;</p>
+<pre><code class="lang-Shell">   [root@iZwz97tbgo9lkabnat2lo8Z ~]# xargs &lt; a.txt &gt; b.txt
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5C31;&#x50CF;&#x4E0A;&#x9762;&#x6F14;&#x793A;&#x7684;&#x90A3;&#x6837;&#x5E38;&#x5728;&#x7BA1;&#x9053;&#xFF08;&#x5B9E;&#x73B0;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF09;&#x548C;&#x91CD;&#x5B9A;&#x5411;&#xFF08;&#x91CD;&#x65B0;&#x6307;&#x5B9A;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7684;&#x4F4D;&#x7F6E;&#xFF09;&#x64CD;&#x4F5C;&#x4E2D;&#x7528;&#x5230;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x4F1A;&#x8BB2;&#x5230;&#x7BA1;&#x9053;&#x64CD;&#x4F5C;&#x548C;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x3002;</p>
 </blockquote>
-</li>
+<ol>
 <li><p>&#x663E;&#x793A;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55; - <strong>basename</strong> / <strong>dirname</strong>&#x3002;</p>
 </li>
 <li><p>&#x5176;&#x4ED6;&#x76F8;&#x5173;&#x5DE5;&#x5177;&#x3002; </p>
@@ -2269,243 +2298,252 @@ redis-4.0.10/deps/README.md
 <li><strong>wc</strong> - &#x7EDF;&#x8BA1;&#x6587;&#x4EF6;&#x884C;&#x6570;&#x3001;&#x5355;&#x8BCD;&#x6570;&#x3001;&#x5B57;&#x8282;&#x6570;</li>
 <li><strong>iconv</strong> - &#x7F16;&#x7801;&#x8F6C;&#x6362;</li>
 </ul>
-<pre><code class="lang-Shell">[root ~]# cat foo.txt
-grape
-apple
-pitaya
-[root ~]# cat bar.txt
-100
-200
-300
-400
-[root ~]# paste foo.txt bar.txt
-grape   100
-apple   200
-pitaya  300
-       400
-[root ~]# paste foo.txt bar.txt &gt; hello.txt
-[root ~]# cut -b 4-8 hello.txt
-pe      10
-le      20
-aya     3
-0
-[root ~]# cat hello.txt | tr &apos;\t&apos; &apos;,&apos;
-grape,100
-apple,200
-pitaya,300
-,400
-[root ~]# split -l 100 sohu.html hello
-[root ~]# wget https://www.baidu.com/img/bd_logo1.png
-[root ~]# file bd_logo1.png
-bd_logo1.png: PNG image data, 540 x 258, 8-bit colormap, non-interlaced
-[root ~]# wc sohu.html
- 2979   6355 212527 sohu.html
-[root ~]# wc -l sohu.html
-2979 sohu.html
-[root ~]# wget http://www.qq.com -O qq.html
-[root ~]# iconv -f gb2312 -t utf-8 qq.html
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# cat foo.txt
+   grape
+   apple
+   pitaya
+   [root ~]# cat bar.txt
+   100
+   200
+   300
+   400
+   [root ~]# paste foo.txt bar.txt
+   grape   100
+   apple   200
+   pitaya  300
+           400
+   [root ~]# paste foo.txt bar.txt &gt; hello.txt
+   [root ~]# cut -b 4-8 hello.txt
+   pe      10
+   le      20
+   aya     3
+   0
+   [root ~]# cat hello.txt | tr &apos;\t&apos; &apos;,&apos;
+   grape,100
+   apple,200
+   pitaya,300
+   ,400
+   [root ~]# split -l 100 sohu.html hello
+   [root ~]# wget https://www.baidu.com/img/bd_logo1.png
+   [root ~]# file bd_logo1.png
+   bd_logo1.png: PNG image data, 540 x 258, 8-bit colormap, non-interlaced
+   [root ~]# wc sohu.html
+     2979   6355 212527 sohu.html
+   [root ~]# wc -l sohu.html
+   2979 sohu.html
+   [root ~]# wget http://www.qq.com -O qq.html
+   [root ~]# iconv -f gb2312 -t utf-8 qq.html
+</code></pre>
 <h4 id="&#x7BA1;&#x9053;&#x548C;&#x91CD;&#x5B9A;&#x5411;">&#x7BA1;&#x9053;&#x548C;&#x91CD;&#x5B9A;&#x5411;</h4>
 <ol>
 <li><p>&#x7BA1;&#x9053;&#x7684;&#x4F7F;&#x7528; - <strong>|</strong>&#x3002;</p>
 <p>&#x4F8B;&#x5B50;&#xFF1A;&#x67E5;&#x627E;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;&#x4E2A;&#x6570;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# find ./ | wc -l
-6152
-</code></pre>
-<p>&#x4F8B;&#x5B50;&#xFF1A;&#x5217;&#x51FA;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7ED9;&#x6BCF;&#x4E00;&#x9879;&#x52A0;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ls | cat -n
-     1  dump.rdb
-     2  mongodb-3.6.5
-     3  Python-3.6.5
-     4  redis-3.2.11
-     5  redis.conf
-</code></pre>
-<p>&#x4F8B;&#x5B50;&#xFF1A;&#x67E5;&#x627E;record.log&#x4E2D;&#x5305;&#x542B;AAA&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x542B;BBB&#x7684;&#x8BB0;&#x5F55;&#x7684;&#x603B;&#x6570;</p>
-<pre><code class="lang-Shell">[root ~]# cat record.log | grep AAA | grep -v BBB | wc -l
-</code></pre>
 </li>
-<li><p>&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x548C;&#x9519;&#x8BEF;&#x91CD;&#x5B9A;&#x5411; - <strong>&gt;</strong> / <strong>&gt;&gt;</strong> / <strong>2&gt;</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# cat readme.txt
-banana
-apple
-grape
-apple
-grape
-watermelon
-pear
-pitaya
-[root ~]# cat readme.txt | sort | uniq &gt; result.txt
-[root ~]# cat result.txt
-apple
-banana
-grape
-pear
-pitaya
-watermelon
+</ol>
+<pre><code class="lang-Shell">   [root ~]# find ./ | wc -l
+   6152
 </code></pre>
-</li>
-<li><p>&#x8F93;&#x5165;&#x91CD;&#x5B9A;&#x5411; - <strong>\&lt;</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# echo &apos;hello, world!&apos; &gt; hello.txt
-[root ~]# wall &lt; hello.txt
-[root ~]#
-Broadcast message from root (Wed Jun 20 19:43:05 2018):
-hello, world!
-[root ~]# echo &apos;I will show you some code.&apos; &gt;&gt; hello.txt
-[root ~]# wall &lt; hello.txt
-[root ~]#
-Broadcast message from root (Wed Jun 20 19:43:55 2018):
-hello, world!
-I will show you some code.
+<p>   &#x4F8B;&#x5B50;&#xFF1A;&#x5217;&#x51FA;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7ED9;&#x6BCF;&#x4E00;&#x9879;&#x52A0;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# ls | cat -n
+        1  dump.rdb
+        2  mongodb-3.6.5
+        3  Python-3.6.5
+        4  redis-3.2.11
+        5  redis.conf
 </code></pre>
-</li>
+<p>   &#x4F8B;&#x5B50;&#xFF1A;&#x67E5;&#x627E;record.log&#x4E2D;&#x5305;&#x542B;AAA&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x542B;BBB&#x7684;&#x8BB0;&#x5F55;&#x7684;&#x603B;&#x6570;</p>
+<pre><code class="lang-Shell">   [root ~]# cat record.log | grep AAA | grep -v BBB | wc -l
+</code></pre>
+<ol>
+<li>&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x548C;&#x9519;&#x8BEF;&#x91CD;&#x5B9A;&#x5411; - <strong>&gt;</strong> / <strong>&gt;&gt;</strong> / <strong>2&gt;</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# cat readme.txt
+   banana
+   apple
+   grape
+   apple
+   grape
+   watermelon
+   pear
+   pitaya
+   [root ~]# cat readme.txt | sort | uniq &gt; result.txt
+   [root ~]# cat result.txt
+   apple
+   banana
+   grape
+   pear
+   pitaya
+   watermelon
+</code></pre>
+<ol>
+<li>&#x8F93;&#x5165;&#x91CD;&#x5B9A;&#x5411; - <strong>\&lt;</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# echo &apos;hello, world!&apos; &gt; hello.txt
+   [root ~]# wall &lt; hello.txt
+   [root ~]#
+   Broadcast message from root (Wed Jun 20 19:43:05 2018):
+   hello, world!
+   [root ~]# echo &apos;I will show you some code.&apos; &gt;&gt; hello.txt
+   [root ~]# wall &lt; hello.txt
+   [root ~]#
+   Broadcast message from root (Wed Jun 20 19:43:55 2018):
+   hello, world!
+   I will show you some code.
+</code></pre>
+<ol>
 <li><p>&#x591A;&#x91CD;&#x5B9A;&#x5411; - <strong>tee</strong>&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x9664;&#x4E86;&#x5728;&#x7EC8;&#x7AEF;&#x663E;&#x793A;&#x547D;&#x4EE4;<code>ls</code>&#x7684;&#x7ED3;&#x679C;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x4F1A;&#x8FFD;&#x52A0;&#x8F93;&#x51FA;&#x5230;<code>ls.txt</code>&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ls | tee -a ls.txt
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# ls | tee -a ls.txt
+</code></pre>
 <h4 id="&#x522B;&#x540D;">&#x522B;&#x540D;</h4>
 <ol>
-<li><p><strong>alias</strong></p>
-<pre><code class="lang-Shell">[root ~]# alias ll=&apos;ls -l&apos;
-[root ~]# alias frm=&apos;rm -rf&apos;
-[root ~]# ll
-...
-drwxr-xr-x  2 root       root   4096 Jun 20 12:52 abc
-...
-[root ~]# frm abc
-</code></pre>
-</li>
-<li><p><strong>unalias</strong></p>
-<pre><code class="lang-Shell">[root ~]# unalias frm
-[root ~]# frm sohu.html
--bash: frm: command not found
-</code></pre>
-</li>
+<li><strong>alias</strong></li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# alias ll=&apos;ls -l&apos;
+   [root ~]# alias frm=&apos;rm -rf&apos;
+   [root ~]# ll
+   ...
+   drwxr-xr-x  2 root       root   4096 Jun 20 12:52 abc
+   ...
+   [root ~]# frm abc
+</code></pre>
+<ol>
+<li><strong>unalias</strong></li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# unalias frm
+   [root ~]# frm sohu.html
+   -bash: frm: command not found
+</code></pre>
 <h4 id="&#x6587;&#x672C;&#x5904;&#x7406;">&#x6587;&#x672C;&#x5904;&#x7406;</h4>
 <ol>
 <li><p>&#x5B57;&#x7B26;&#x6D41;&#x7F16;&#x8F91;&#x5668; - <strong>sed</strong>&#x3002;</p>
 <p>sed&#x662F;&#x64CD;&#x4F5C;&#x3001;&#x8FC7;&#x6EE4;&#x548C;&#x8F6C;&#x6362;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;fruit.txt&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# cat -n fruit.txt 
-     1  banana
-     2  grape
-     3  apple
-     4  watermelon
-     5  orange
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# cat -n fruit.txt 
+        1  banana
+        2  grape
+        3  apple
+        4  watermelon
+        5  orange
 </code></pre>
-<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x7B2C;2&#x884C;&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;pitaya&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;2a pitaya&apos; fruit.txt 
-banana
-grape
-pitaya
-apple
-watermelon
-orange
+<p>   &#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x7B2C;2&#x884C;&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;pitaya&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;2a pitaya&apos; fruit.txt 
+   banana
+   grape
+   pitaya
+   apple
+   watermelon
+   orange
 </code></pre>
 <blockquote>
 <p>&#x6CE8;&#x610F;&#xFF1A;&#x521A;&#x624D;&#x7684;&#x547D;&#x4EE4;&#x548C;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8BB2;&#x8FC7;&#x7684;&#x5F88;&#x591A;&#x547D;&#x4EE4;&#x4E00;&#x6837;&#x5E76;&#x6CA1;&#x6709;&#x6539;&#x53D8;fruit.txt&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x662F;&#x5C06;&#x6DFB;&#x52A0;&#x4E86;&#x65B0;&#x884C;&#x7684;&#x5185;&#x5BB9;&#x8F93;&#x51FA;&#x5230;&#x7EC8;&#x7AEF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x5B58;&#x5230;fruit.txt&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x3002;</p>
 </blockquote>
-<p>&#x5728;&#x7B2C;2&#x884C;&#x524D;&#x9762;&#x63D2;&#x5165;&#x4E00;&#x4E2A;waxberry&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;2i waxberry&apos; fruit.txt
-banana
-waxberry
-grape
-apple
-watermelon
-orange
+<p>   &#x5728;&#x7B2C;2&#x884C;&#x524D;&#x9762;&#x63D2;&#x5165;&#x4E00;&#x4E2A;waxberry&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;2i waxberry&apos; fruit.txt
+   banana
+   waxberry
+   grape
+   apple
+   watermelon
+   orange
 </code></pre>
-<p>&#x5220;&#x9664;&#x7B2C;3&#x884C;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;3d&apos; fruit.txt
-banana
-grape
-watermelon
-orange
+<p>   &#x5220;&#x9664;&#x7B2C;3&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;3d&apos; fruit.txt
+   banana
+   grape
+   watermelon
+   orange
 </code></pre>
-<p>&#x5220;&#x9664;&#x7B2C;2&#x884C;&#x5230;&#x7B2C;4&#x884C;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;2,4d&apos; fruit.txt
-banana
-orange
+<p>   &#x5220;&#x9664;&#x7B2C;2&#x884C;&#x5230;&#x7B2C;4&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;2,4d&apos; fruit.txt
+   banana
+   orange
 </code></pre>
-<p>&#x5C06;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x5B57;&#x7B26;a&#x66FF;&#x6362;&#x4E3A;@&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;s#a#@#&apos; fruit.txt 
-b@nana
-gr@pe
-@pple
-w@termelon
-or@nge
+<p>   &#x5C06;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x5B57;&#x7B26;a&#x66FF;&#x6362;&#x4E3A;@&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;s#a#@#&apos; fruit.txt 
+   b@nana
+   gr@pe
+   @pple
+   w@termelon
+   or@nge
 </code></pre>
-<p>&#x5C06;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x5B57;&#x7B26;a&#x66FF;&#x6362;&#x4E3A;@&#xFF0C;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x6A21;&#x5F0F;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sed &apos;s#a#@#g&apos; fruit.txt 
-b@n@n@
-gr@pe
-@pple
-w@termelon
-or@nge
+<p>   &#x5C06;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x5B57;&#x7B26;a&#x66FF;&#x6362;&#x4E3A;@&#xFF0C;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# sed &apos;s#a#@#g&apos; fruit.txt 
+   b@n@n@
+   gr@pe
+   @pple
+   w@termelon
+   or@nge
 </code></pre>
-</li>
+<ol>
 <li><p>&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x548C;&#x5904;&#x7406;&#x8BED;&#x8A00; - <strong>awk</strong>&#x3002;</p>
 <p>awk&#x662F;&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x4E5F;&#x662F;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x5904;&#x7406;&#x6587;&#x672C;&#x6700;&#x4E3A;&#x5F3A;&#x5927;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x7684;&#x4F5C;&#x8005;&#x4E4B;&#x4E00;&#x548C;&#x73B0;&#x5728;&#x7684;&#x7EF4;&#x62A4;&#x8005;&#x5C31;&#x662F;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x8FC7;&#x7684;Brian Kernighan&#xFF08;ken&#x548C;dmr&#x6700;&#x4EB2;&#x5BC6;&#x7684;&#x4F19;&#x4F34;&#xFF09;&#x3002;&#x901A;&#x8FC7;&#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4ECE;&#x6587;&#x672C;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x6307;&#x5B9A;&#x7684;&#x5217;&#x3001;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4ECE;&#x6587;&#x672C;&#x4E2D;&#x53D6;&#x51FA;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x5185;&#x5BB9;&#x3001;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x7684;&#x884C;&#x4EE5;&#x53CA;&#x8FDB;&#x884C;&#x7EDF;&#x8BA1;&#x548C;&#x8FD0;&#x7B97;&#xFF0C;&#x603B;&#x4E4B;&#x5B83;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x3002;</p>
 <p>&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;fruit2.txt&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# cat fruit2.txt 
-1       banana      120
-2       grape       500
-3       apple       1230
-4       watermelon  80
-5       orange      400
-</code></pre>
-<p>&#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x7B2C;3&#x884C;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# awk &apos;NR==3&apos; fruit2.txt 
-3       apple       1230
-</code></pre>
-<p>&#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x7B2C;2&#x5217;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# awk &apos;{print $2}&apos; fruit2.txt 
-banana
-grape
-apple
-watermelon
-orange
-</code></pre>
-<p>&#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x5217;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# awk &apos;{print $NF}&apos; fruit2.txt 
-120
-500
-1230
-80
-400
-</code></pre>
-<p>&#x8F93;&#x51FA;&#x672B;&#x5C3E;&#x6570;&#x5B57;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;300&#x7684;&#x884C;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# awk &apos;{if($3 &gt;= 300) {print $0}}&apos; fruit2.txt 
-2       grape       500
-3       apple       1230
-5       orange      400
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x53EA;&#x662F;awk&#x547D;&#x4EE4;&#x7684;&#x51B0;&#x5C71;&#x4E00;&#x89D2;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x5185;&#x5BB9;&#x7559;&#x7ED9;&#x8BFB;&#x8005;&#x81EA;&#x5DF1;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x53BB;&#x63A2;&#x7D22;&#x3002;</p>
 </li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# cat fruit2.txt 
+   1       banana      120
+   2       grape       500
+   3       apple       1230
+   4       watermelon  80
+   5       orange      400
+</code></pre>
+<p>   &#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x7B2C;3&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# awk &apos;NR==3&apos; fruit2.txt 
+   3       apple       1230
+</code></pre>
+<p>   &#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x7B2C;2&#x5217;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# awk &apos;{print $2}&apos; fruit2.txt 
+   banana
+   grape
+   apple
+   watermelon
+   orange
+</code></pre>
+<p>   &#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x5217;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# awk &apos;{print $NF}&apos; fruit2.txt 
+   120
+   500
+   1230
+   80
+   400
+</code></pre>
+<p>   &#x8F93;&#x51FA;&#x672B;&#x5C3E;&#x6570;&#x5B57;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;300&#x7684;&#x884C;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# awk &apos;{if($3 &gt;= 300) {print $0}}&apos; fruit2.txt 
+   2       grape       500
+   3       apple       1230
+   5       orange      400
+</code></pre>
+<p>   &#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x53EA;&#x662F;awk&#x547D;&#x4EE4;&#x7684;&#x51B0;&#x5C71;&#x4E00;&#x89D2;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x5185;&#x5BB9;&#x7559;&#x7ED9;&#x8BFB;&#x8005;&#x81EA;&#x5DF1;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x53BB;&#x63A2;&#x7D22;&#x3002;</p>
 <h3 id="&#x7528;&#x6237;&#x7BA1;&#x7406;">&#x7528;&#x6237;&#x7BA1;&#x7406;</h3>
 <ol>
-<li><p>&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x7528;&#x6237; - <strong>useradd</strong> / <strong>userdel</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root home]# useradd hellokitty
-[root home]# userdel hellokitty
+<li>&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x7528;&#x6237; - <strong>useradd</strong> / <strong>userdel</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root home]# useradd hellokitty
+   [root home]# userdel hellokitty
 </code></pre>
 <ul>
 <li><code>-d</code> - &#x521B;&#x5EFA;&#x7528;&#x6237;&#x65F6;&#x4E3A;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;</li>
 <li><code>-g</code> - &#x521B;&#x5EFA;&#x7528;&#x6237;&#x65F6;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x6240;&#x5C5E;&#x7684;&#x7528;&#x6237;&#x7EC4;</li>
 </ul>
-</li>
+<ol>
 <li><p>&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x7528;&#x6237;&#x7EC4; - <strong>groupadd</strong> / <strong>groupdel</strong>&#x3002;</p>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x7528;&#x6237;&#x7EC4;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5BF9;&#x4E00;&#x4E2A;&#x7EC4;&#x91CC;&#x9762;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x7BA1;&#x7406;&#x3002;</p>
 </blockquote>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x5BC6;&#x7801; - <strong>passwd</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# passwd hellokitty
-New password: 
-Retype new password: 
-passwd: all authentication tokens updated successfully.
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# passwd hellokitty
+   New password: 
+   Retype new password: 
+   passwd: all authentication tokens updated successfully.
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x548C;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x6CA1;&#x6709;&#x56DE;&#x663E;&#x4E14;&#x5FC5;&#x987B;&#x4E00;&#x6C14;&#x5475;&#x6210;&#x7684;&#x8F93;&#x5165;&#x5B8C;&#x6210;&#xFF08;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x9000;&#x683C;&#x952E;&#xFF09;&#xFF0C;&#x5BC6;&#x7801;&#x548C;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9700;&#x8981;&#x4E00;&#x81F4;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;<code>passwd</code>&#x547D;&#x4EE4;&#x65F6;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x547D;&#x4EE4;&#x4F5C;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x8981;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x3002;&#x5982;&#x679C;&#x60F3;&#x6279;&#x91CF;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x5BC6;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>chpasswd</code>&#x547D;&#x4EE4;&#x3002;</p>
@@ -2516,73 +2554,80 @@ passwd: all authentication tokens updated successfully.
 <li><code>-e</code> - &#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x7ACB;&#x5373;&#x8FC7;&#x671F;&#xFF0C;&#x7528;&#x6237;&#x767B;&#x5F55;&#x65F6;&#x4F1A;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x3002;</li>
 <li><code>-i</code> - &#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8FC7;&#x671F;&#x591A;&#x5C11;&#x5929;&#x4EE5;&#x540E;&#x7981;&#x7528;&#x8BE5;&#x7528;&#x6237;&#x3002;</li>
 </ul>
-</li>
+<ol>
 <li><p>&#x67E5;&#x770B;&#x548C;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x6709;&#x6548;&#x671F; - <strong>chage</strong>&#x3002;</p>
 <p>&#x8BBE;&#x7F6E;hellokitty&#x7528;&#x6237;100&#x5929;&#x540E;&#x5FC5;&#x987B;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#xFF0C;&#x8FC7;&#x671F;&#x524D;15&#x5929;&#x901A;&#x77E5;&#x8BE5;&#x7528;&#x6237;&#xFF0C;&#x8FC7;&#x671F;&#x540E;7&#x5929;&#x7981;&#x7528;&#x8BE5;&#x7528;&#x6237;&#x3002;</p>
-<pre><code class="lang-Shell">chage -M 100 -W 15 -I 7 hellokitty
-</code></pre>
 </li>
-<li><p>&#x5207;&#x6362;&#x7528;&#x6237; - <strong>su</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# su hellokitty
-[hellokitty root]$
+</ol>
+<pre><code class="lang-Shell">   chage -M 100 -W 15 -I 7 hellokitty
 </code></pre>
-</li>
-<li><p>&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x6267;&#x884C;&#x547D;&#x4EE4; - <strong>sudo</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[hellokitty ~]$ ls /root
-ls: cannot open directory /root: Permission denied
-[hellokitty ~]$ sudo ls /root
-[sudo] password for hellokitty:
+<ol>
+<li>&#x5207;&#x6362;&#x7528;&#x6237; - <strong>su</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# su hellokitty
+   [hellokitty root]$
+</code></pre>
+<ol>
+<li>&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x6267;&#x884C;&#x547D;&#x4EE4; - <strong>sudo</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [hellokitty ~]$ ls /root
+   ls: cannot open directory /root: Permission denied
+   [hellokitty ~]$ sudo ls /root
+   [sudo] password for hellokitty:
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7528;&#x6237;&#x80FD;&#x591F;&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x8981;&#x51FA;&#x73B0;&#x5728;sudoers&#x540D;&#x5355;&#x4E2D;&#xFF0C;sudoers&#x6587;&#x4EF6;&#x5728; <code>/etc</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x76F4;&#x63A5;&#x7F16;&#x8F91;&#x8BE5;&#x6587;&#x4EF6;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
 </blockquote>
-</li>
+<ol>
 <li><p>&#x7F16;&#x8F91;sudoers&#x6587;&#x4EF6; - <strong>visudo</strong>&#x3002;</p>
 <p>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x662F;vi&#xFF0C;&#x5173;&#x4E8E;vi&#x7684;&#x77E5;&#x8BC6;&#x5728;&#x540E;&#x9762;&#x6709;&#x8BB2;&#x89E3;&#x3002;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code>## Allow root to run any commands anywhere 
-root    ALL=(ALL)   ALL
+</li>
+</ol>
+<pre><code>   ## Allow root to run any commands anywhere 
+   root    ALL=(ALL)   ALL
 
-## Allows members of the &apos;sys&apos; group to run networking, software, 
-## service management apps and more.
-# %sys ALL = NETWORKING, SOFTWARE, SERVICES, STORAGE, DELEGATING, PROCESSES, LOCATE, DRIVERS
-## Allows people in group wheel to run all commands
-%wheel  ALL=(ALL)   ALL
+   ## Allows members of the &apos;sys&apos; group to run networking, software, 
+   ## service management apps and more.
+   # %sys ALL = NETWORKING, SOFTWARE, SERVICES, STORAGE, DELEGATING, PROCESSES, LOCATE, DRIVERS
+   ## Allows people in group wheel to run all commands
+   %wheel  ALL=(ALL)   ALL
 
-## Same thing without a password
-# %wheel    ALL=(ALL)   NOPASSWD: ALL
+   ## Same thing without a password
+   # %wheel    ALL=(ALL)   NOPASSWD: ALL
 
-## Allows members of the users group to mount and unmount the
-## cdrom as root
-# %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
+   ## Allows members of the users group to mount and unmount the
+   ## cdrom as root
+   # %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
 
-## Allows members of the users group to shutdown this system
-# %users  localhost=/sbin/shutdown -h now
-</code></pre></li>
+   ## Allows members of the users group to shutdown this system
+   # %users  localhost=/sbin/shutdown -h now
+</code></pre><ol>
 <li><p>&#x663E;&#x793A;&#x7528;&#x6237;&#x4E0E;&#x7528;&#x6237;&#x7EC4;&#x7684;&#x4FE1;&#x606F; - <strong>id</strong>&#x3002;</p>
 </li>
 <li><p>&#x7ED9;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x53D1;&#x6D88;&#x606F; -<strong>write</strong> / <strong>wall</strong>&#x3002;</p>
 <p>&#x53D1;&#x9001;&#x65B9;&#xFF1A;</p>
-<pre><code class="lang-Shell">[root ~]# write hellokitty
-Dinner is on me.
-Call me at 6pm.
-</code></pre>
-<p>&#x63A5;&#x6536;&#x65B9;&#xFF1A;</p>
-<pre><code class="lang-Shell">[hellokitty ~]$ 
-Message from root on pts/0 at 17:41 ...
-Dinner is on me.
-Call me at 6pm.
-EOF
-</code></pre>
-</li>
-<li><p>&#x67E5;&#x770B;/&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x63A5;&#x6536;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F; - <strong>mesg</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[hellokitty ~]$ mesg
-is y
-[hellokitty ~]$ mesg n
-[hellokitty ~]$ mesg
-is n
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# write hellokitty
+   Dinner is on me.
+   Call me at 6pm.
+</code></pre>
+<p>   &#x63A5;&#x6536;&#x65B9;&#xFF1A;</p>
+<pre><code class="lang-Shell">   [hellokitty ~]$ 
+   Message from root on pts/0 at 17:41 ...
+   Dinner is on me.
+   Call me at 6pm.
+   EOF
+</code></pre>
+<ol>
+<li>&#x67E5;&#x770B;/&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x63A5;&#x6536;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F; - <strong>mesg</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [hellokitty ~]$ mesg
+   is y
+   [hellokitty ~]$ mesg n
+   [hellokitty ~]$ mesg
+   is n
+</code></pre>
 <h3 id="&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;">&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</h3>
 <h4 id="&#x6587;&#x4EF6;&#x548C;&#x8DEF;&#x5F84;">&#x6587;&#x4EF6;&#x548C;&#x8DEF;&#x5F84;</h4>
 <ol>
@@ -2614,83 +2659,88 @@ is n
 </ol>
 <h4 id="&#x8BBF;&#x95EE;&#x6743;&#x9650;">&#x8BBF;&#x95EE;&#x6743;&#x9650;</h4>
 <ol>
-<li><p><strong>chmod</strong> - &#x6539;&#x53D8;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#x6BD4;&#x7279;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ls -l
-...
--rw-r--r--  1 root       root 211878 Jun 19 16:06 sohu.html
-...
-[root ~]# chmod g+w,o+w sohu.html
-[root ~]# ls -l
-...
--rw-rw-rw-  1 root       root 211878 Jun 19 16:06 sohu.html
-...
-[root ~]# chmod 644 sohu.html
-[root ~]# ls -l
-...
--rw-r--r--  1 root       root 211878 Jun 19 16:06 sohu.html
-...
+<li><strong>chmod</strong> - &#x6539;&#x53D8;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#x6BD4;&#x7279;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ls -l
+   ...
+   -rw-r--r--  1 root       root 211878 Jun 19 16:06 sohu.html
+   ...
+   [root ~]# chmod g+w,o+w sohu.html
+   [root ~]# ls -l
+   ...
+   -rw-rw-rw-  1 root       root 211878 Jun 19 16:06 sohu.html
+   ...
+   [root ~]# chmod 644 sohu.html
+   [root ~]# ls -l
+   ...
+   -rw-r--r--  1 root       root 211878 Jun 19 16:06 sohu.html
+   ...
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x7528;<code>chmod</code>&#x6539;&#x53D8;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#x6BD4;&#x7279;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;&#x4E00;&#x79CD;&#x662F;&#x5B57;&#x7B26;&#x8BBE;&#x5B9A;&#x6CD5;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x6570;&#x5B57;&#x8BBE;&#x5B9A;&#x6CD5;&#x3002;&#x9664;&#x4E86;<code>chmod</code>&#x4E4B;&#x5916;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>umask</code>&#x6765;&#x8BBE;&#x5B9A;&#x54EA;&#x4E9B;&#x6743;&#x9650;&#x5C06;&#x5728;&#x65B0;&#x6587;&#x4EF6;&#x7684;&#x9ED8;&#x8BA4;&#x6743;&#x9650;&#x4E2D;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
 </blockquote>
-<p>&#x957F;&#x683C;&#x5F0F;&#x67E5;&#x770B;&#x76EE;&#x5F55;&#x6216;&#x6587;&#x4EF6;&#x65F6;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x6743;&#x9650;&#x7684;&#x6570;&#x503C;&#x5982;&#x4E0B;&#x8868;&#x6240;&#x793A;&#x3002;</p>
-<p><img src="res/file-mode.png" alt=""></p>
-</li>
-<li><p><strong>chown</strong> - &#x6539;&#x53D8;&#x6587;&#x4EF6;&#x6240;&#x6709;&#x8005;&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# ls -l
- ...
- -rw-r--r--  1 root root     54 Jun 20 10:06 readme.txt
- ...
- [root ~]# chown hellokitty readme.txt
- [root ~]# ls -l
- ...
- -rw-r--r--  1 hellokitty root     54 Jun 20 10:06 readme.txt
- ...
+<p>   &#x957F;&#x683C;&#x5F0F;&#x67E5;&#x770B;&#x76EE;&#x5F55;&#x6216;&#x6587;&#x4EF6;&#x65F6;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x6743;&#x9650;&#x7684;&#x6570;&#x503C;&#x5982;&#x4E0B;&#x8868;&#x6240;&#x793A;&#x3002;</p>
+<p>   <img src="res/file-mode.png" alt=""></p>
+<ol>
+<li><strong>chown</strong> - &#x6539;&#x53D8;&#x6587;&#x4EF6;&#x6240;&#x6709;&#x8005;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]# ls -l
+    ...
+    -rw-r--r--  1 root root     54 Jun 20 10:06 readme.txt
+    ...
+    [root ~]# chown hellokitty readme.txt
+    [root ~]# ls -l
+    ...
+    -rw-r--r--  1 hellokitty root     54 Jun 20 10:06 readme.txt
+    ...
 </code></pre>
-</li>
-<li><p><strong>chgrp</strong> - &#x6539;&#x53D8;&#x7528;&#x6237;&#x7EC4;&#x3002;</p>
-</li>
+<ol>
+<li><strong>chgrp</strong> - &#x6539;&#x53D8;&#x7528;&#x6237;&#x7EC4;&#x3002;</li>
 </ol>
 <h4 id="&#x78C1;&#x76D8;&#x7BA1;&#x7406;">&#x78C1;&#x76D8;&#x7BA1;&#x7406;</h4>
 <ol>
-<li><p>&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x78C1;&#x76D8;&#x4F7F;&#x7528;&#x72B6;&#x51B5; - <strong>df</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vda1        40G  5.0G   33G  14% /
-devtmpfs        486M     0  486M   0% /dev
-tmpfs           497M     0  497M   0% /dev/shm
-tmpfs           497M  356K  496M   1% /run
-tmpfs           497M     0  497M   0% /sys/fs/cgroup
-tmpfs           100M     0  100M   0% /run/user/0
+<li>&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x78C1;&#x76D8;&#x4F7F;&#x7528;&#x72B6;&#x51B5; - <strong>df</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# df -h
+   Filesystem      Size  Used Avail Use% Mounted on
+   /dev/vda1        40G  5.0G   33G  14% /
+   devtmpfs        486M     0  486M   0% /dev
+   tmpfs           497M     0  497M   0% /dev/shm
+   tmpfs           497M  356K  496M   1% /run
+   tmpfs           497M     0  497M   0% /sys/fs/cgroup
+   tmpfs           100M     0  100M   0% /run/user/0
 </code></pre>
-</li>
-<li><p>&#x78C1;&#x76D8;&#x5206;&#x533A;&#x8868;&#x64CD;&#x4F5C; - <strong>fdisk</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# fdisk -l
-Disk /dev/vda: 42.9 GB, 42949672960 bytes, 83886080 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disk label type: dos
-Disk identifier: 0x000a42f4
-   Device Boot      Start         End      Blocks   Id  System
-/dev/vda1   *        2048    83884031    41940992   83  Linux
-Disk /dev/vdb: 21.5 GB, 21474836480 bytes, 41943040 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
+<ol>
+<li>&#x78C1;&#x76D8;&#x5206;&#x533A;&#x8868;&#x64CD;&#x4F5C; - <strong>fdisk</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# fdisk -l
+   Disk /dev/vda: 42.9 GB, 42949672960 bytes, 83886080 sectors
+   Units = sectors of 1 * 512 = 512 bytes
+   Sector size (logical/physical): 512 bytes / 512 bytes
+   I/O size (minimum/optimal): 512 bytes / 512 bytes
+   Disk label type: dos
+   Disk identifier: 0x000a42f4
+      Device Boot      Start         End      Blocks   Id  System
+   /dev/vda1   *        2048    83884031    41940992   83  Linux
+   Disk /dev/vdb: 21.5 GB, 21474836480 bytes, 41943040 sectors
+   Units = sectors of 1 * 512 = 512 bytes
+   Sector size (logical/physical): 512 bytes / 512 bytes
+   I/O size (minimum/optimal): 512 bytes / 512 bytes
 </code></pre>
-</li>
+<ol>
 <li><p>&#x78C1;&#x76D8;&#x5206;&#x533A;&#x5DE5;&#x5177; - <strong>parted</strong>&#x3002;</p>
 </li>
 <li><p>&#x683C;&#x5F0F;&#x5316;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF; - <strong>mkfs</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# mkfs -t ext4 -v /dev/sdb
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# mkfs -t ext4 -v /dev/sdb
 </code></pre>
 <ul>
 <li><code>-t</code> - &#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x7C7B;&#x578B;&#x3002;</li>
 <li><code>-c</code> - &#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x65F6;&#x68C0;&#x67E5;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x60C5;&#x51B5;&#x3002;</li>
 <li><code>-v</code> - &#x663E;&#x793A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;</li>
 </ul>
-</li>
+<ol>
 <li><p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x68C0;&#x67E5; - <strong>fsck</strong>&#x3002;</p>
 </li>
 <li><p>&#x8F6C;&#x6362;&#x6216;&#x62F7;&#x8D1D;&#x6587;&#x4EF6; - <strong>dd</strong>&#x3002;</p>
@@ -2705,10 +2755,11 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 </blockquote>
 <h3 id="&#x7F16;&#x8F91;&#x5668;---vim">&#x7F16;&#x8F91;&#x5668; - vim</h3>
 <ol>
-<li><p>&#x542F;&#x52A8;vim&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>vi</code>&#x6216;<code>vim</code>&#x547D;&#x4EE4;&#x6765;&#x542F;&#x52A8;vim&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#x6765;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4FDD;&#x5B58;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# vim guess.py
+<li>&#x542F;&#x52A8;vim&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>vi</code>&#x6216;<code>vim</code>&#x547D;&#x4EE4;&#x6765;&#x542F;&#x52A8;vim&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#x6765;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4FDD;&#x5B58;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# vim guess.py
 </code></pre>
-</li>
+<ol>
 <li><p>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x3001;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x548C;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#xFF1A;&#x542F;&#x52A8;vim&#x8FDB;&#x5165;&#x7684;&#x662F;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;Normal&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;&#x82F1;&#x6587;&#x5B57;&#x6BCD;<code>i</code>&#x4F1A;&#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF08;Insert&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x5C4F;&#x5E55;&#x4E0B;&#x65B9;&#x51FA;&#x73B0;<code>-- INSERT --</code>&#x63D0;&#x793A;&#xFF1B;&#x5728;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x4E0B;&#x6309;&#x4E0B;<code>Esc</code>&#x4F1A;&#x56DE;&#x5230;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C;&#x8F93;&#x5165;&#x82F1;&#x6587;<code>:</code>&#x4F1A;&#x8FDB;&#x5165;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;<code>q!</code>&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5F3A;&#x884C;&#x9000;&#x51FA;vim&#xFF1B;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;<code>v</code>&#x4F1A;&#x8FDB;&#x5165;&#x53EF;&#x89C6;&#x6A21;&#x5F0F;&#xFF08;Visual&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5149;&#x6807;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x518D;&#x5B8C;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
 </li>
 <li><p>&#x4FDD;&#x5B58;&#x548C;&#x9000;&#x51FA;vim&#xFF1A;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;<code>:</code> &#x8FDB;&#x5165;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x8F93;&#x5165;<code>wq</code>&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#xFF1B;&#x5982;&#x679C;&#x60F3;&#x653E;&#x5F03;&#x7F16;&#x8F91;&#x7684;&#x5185;&#x5BB9;&#x8F93;&#x5165;<code>q!</code>&#x5F3A;&#x884C;&#x9000;&#x51FA;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x521A;&#x624D;&#x5DF2;&#x7ECF;&#x63D0;&#x5230;&#x8FC7;&#x4E86;&#xFF1B;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8F93;&#x5165;<code>ZZ</code>&#x5B9E;&#x73B0;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x3002;&#x5982;&#x679C;&#x53EA;&#x60F3;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x4E0D;&#x9000;&#x51FA;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;<code>w</code>&#xFF1B;&#x53EF;&#x4EE5;&#x5728;<code>w</code>&#x540E;&#x9762;&#x8F93;&#x5165;&#x7A7A;&#x683C;&#x518D;&#x6307;&#x5B9A;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
@@ -2759,16 +2810,20 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 </li>
 <li><p>&#x9AD8;&#x7EA7;&#x6280;&#x5DE7;</p>
 <ul>
-<li><p>&#x6BD4;&#x8F83;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# vim -d foo.txt bar.txt
-</code></pre>
-<p><img src="res/vim-diff.png" alt=""></p>
+<li>&#x6BD4;&#x8F83;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
 </li>
-<li><p>&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# vim foo.txt bar.txt hello.txt
+</ol>
+<pre><code class="lang-Shell">     [root ~]# vim -d foo.txt bar.txt
 </code></pre>
-<p>&#x542F;&#x52A8;vim&#x540E;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x663E;&#x793A;&#x7684;&#x662F;foo.txt&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x8F93;&#x5165;<code>ls</code>&#x67E5;&#x770B;&#x5230;&#x6253;&#x5F00;&#x7684;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x8F93;&#x5165;<code>b &lt;num&gt;</code>&#x6765;&#x663E;&#x793A;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x53EF;&#x4EE5;&#x7528;<code>:b 2</code>&#x5C06;bar.txt&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<code>:b 3</code>&#x5C06;hello.txt&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;</p>
-</li>
+<pre><code> ![](./res/vim-diff.png)
+</code></pre><ul>
+<li>&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<pre><code class="lang-Shell">     [root ~]# vim foo.txt bar.txt hello.txt
+</code></pre>
+<pre><code> &#x542F;&#x52A8;vim&#x540E;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x663E;&#x793A;&#x7684;&#x662F;foo.txt&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x8F93;&#x5165;`ls`&#x67E5;&#x770B;&#x5230;&#x6253;&#x5F00;&#x7684;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x8F93;&#x5165;`b &lt;num&gt;`&#x6765;&#x663E;&#x793A;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x53EF;&#x4EE5;&#x7528;`:b 2`&#x5C06;bar.txt&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;`:b 3`&#x5C06;hello.txt&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;
+</code></pre><ul>
 <li><p>&#x62C6;&#x5206;&#x548C;&#x5207;&#x6362;&#x7A97;&#x53E3;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x8F93;&#x5165;<code>sp</code>&#x6216;<code>vs</code>&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x7A97;&#x53E3;&#x7684;&#x6C34;&#x5E73;&#x6216;&#x5782;&#x76F4;&#x62C6;&#x5206;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x7F16;&#x8F91;&#x7A97;&#x53E3;&#xFF0C;&#x901A;&#x8FC7;&#x6309;&#x4E24;&#x6B21;<code>Ctrl+w</code>&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7F16;&#x8F91;&#x7A97;&#x53E3;&#x7684;&#x5207;&#x6362;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x4E2D;&#x6267;&#x884C;&#x9000;&#x51FA;&#x64CD;&#x4F5C;&#x53EA;&#x4F1A;&#x5173;&#x95ED;&#x5BF9;&#x5E94;&#x7684;&#x7A97;&#x53E3;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x7A97;&#x53E3;&#x7EE7;&#x7EED;&#x4FDD;&#x7559;&#x3002;</p>
 <p><img src="res/vim-multi-window.png" alt=""></p>
@@ -2801,8 +2856,6 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 <h3 id="&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;">&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;</h3>
 <h4 id="&#x4F7F;&#x7528;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;">&#x4F7F;&#x7528;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</h4>
 <ol>
@@ -2947,68 +3000,71 @@ build environment:
 </blockquote>
 <h4 id="&#x6E90;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x5B89;&#x88C5;">&#x6E90;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x5B89;&#x88C5;</h4>
 <ol>
-<li><p>&#x5B89;&#x88C5;Python 3.6&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# yum install gcc
-[root ~]# wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
-[root ~]# gunzip Python-3.6.5.tgz
-[root ~]# tar -xvf Python-3.6.5.tar
-[root ~]# cd Python-3.6.5
-[root ~]# ./configure --prefix=/usr/local/python36 --enable-optimizations
-[root ~]# yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
-[root ~]# make &amp;&amp; make install
-...
-[root ~]# ln -s /usr/local/python36/bin/python3.6 /usr/bin/python3
-[root ~]# python3 --version
-Python 3.6.5
-[root ~]# python3 -m pip install -U pip
-[root ~]# pip3 --version
+<li>&#x5B89;&#x88C5;Python 3.6&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# yum install gcc
+   [root ~]# wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+   [root ~]# gunzip Python-3.6.5.tgz
+   [root ~]# tar -xvf Python-3.6.5.tar
+   [root ~]# cd Python-3.6.5
+   [root ~]# ./configure --prefix=/usr/local/python36 --enable-optimizations
+   [root ~]# yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+   [root ~]# make &amp;&amp; make install
+   ...
+   [root ~]# ln -s /usr/local/python36/bin/python3.6 /usr/bin/python3
+   [root ~]# python3 --version
+   Python 3.6.5
+   [root ~]# python3 -m pip install -U pip
+   [root ~]# pip3 --version
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0A;&#x9762;&#x5728;&#x5B89;&#x88C5;&#x597D;Python&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x8981;&#x6CE8;&#x518C;PATH&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5C06;Python&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#x4E0B;bin&#x6587;&#x4EF6;&#x5939;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6CE8;&#x518C;&#x5230;PATH&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#x3002;&#x6CE8;&#x518C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x7684;.bash_profile&#x6216;&#x8005;/etc&#x76EE;&#x5F55;&#x4E0B;&#x7684;profile&#x6587;&#x4EF6;&#xFF0C;&#x4E8C;&#x8005;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x524D;&#x8005;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x7528;&#x6237;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x540E;&#x8005;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x5B89;&#x88C5;Redis-3.2.12&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz
-[root ~]# gunzip redis-3.2.12.tar.gz
-[root ~]# tar -xvf redis-3.2.12.tar
-[root ~]# cd redis-3.2.12
-[root ~]# make &amp;&amp; make install
-[root ~]# redis-server --version
-Redis server v=3.2.12 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=5bc5cd3c03d6ceb6
-[root ~]# redis-cli --version
-redis-cli 3.2.12
-</code></pre>
-</li>
+<ol>
+<li>&#x5B89;&#x88C5;Redis-3.2.12&#x3002;</li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz
+   [root ~]# gunzip redis-3.2.12.tar.gz
+   [root ~]# tar -xvf redis-3.2.12.tar
+   [root ~]# cd redis-3.2.12
+   [root ~]# make &amp;&amp; make install
+   [root ~]# redis-server --version
+   Redis server v=3.2.12 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=5bc5cd3c03d6ceb6
+   [root ~]# redis-cli --version
+   redis-cli 3.2.12
+</code></pre>
 <h3 id="&#x914D;&#x7F6E;&#x670D;&#x52A1;">&#x914D;&#x7F6E;&#x670D;&#x52A1;</h3>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#x5404;&#x79CD;&#x670D;&#x52A1;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;Linux&#x7CFB;&#x7EDF;&#x6253;&#x9020;&#x6210;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x3001;Web&#x670D;&#x52A1;&#x5668;&#x3001;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x3001;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x3001;&#x6D88;&#x606F;&#x961F;&#x5217;&#x670D;&#x52A1;&#x5668;&#x7B49;&#x7B49;&#x3002;Linux&#x4E0B;&#x7684;&#x5927;&#x591A;&#x6570;&#x670D;&#x52A1;&#x90FD;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF08;&#x9A7B;&#x7559;&#x5728;&#x7CFB;&#x7EDF;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x670D;&#x52A1;&#x8FD8;&#x5728;&#x8FD0;&#x884C;&#x800C;&#x5BFC;&#x81F4;Linux&#x65E0;&#x6CD5;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x7684;&#x670D;&#x52A1;&#x901A;&#x5E38;&#x540D;&#x5B57;&#x540E;&#x9762;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;<code>d</code>&#xFF0C;&#x5B83;&#x662F;&#x82F1;&#x6587;&#x5355;&#x8BCD;<code>daemon</code>&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x53EB;firewalld&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5B89;&#x88C5;&#x7684;MySQL&#x670D;&#x52A1;&#x53EB;mysqld&#xFF0C;Apache&#x670D;&#x52A1;&#x5668;&#x53EB;httpd&#x7B49;&#x3002;&#x5728;&#x5B89;&#x88C5;&#x597D;&#x670D;&#x52A1;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>systemctl</code>&#x547D;&#x4EE4;&#x6216;<code>service</code>&#x547D;&#x4EE4;&#x6765;&#x5B8C;&#x6210;&#x5BF9;&#x670D;&#x52A1;&#x7684;&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x7B49;&#x64CD;&#x4F5C;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
 <ol>
-<li><p>&#x542F;&#x52A8;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# systemctl start firewalld
-</code></pre>
-</li>
-<li><p>&#x7EC8;&#x6B62;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# systemctl stop firewalld
-</code></pre>
-</li>
-<li><p>&#x91CD;&#x542F;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# systemctl restart firewalld
-</code></pre>
-</li>
-<li><p>&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x72B6;&#x6001;&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# systemctl status firewalld
-</code></pre>
-</li>
-<li><p>&#x8BBE;&#x7F6E;/&#x7981;&#x7528;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# systemctl enable firewalld
-Created symlink from /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service to /usr/lib/systemd/system/firewalld.service.
-Created symlink from /etc/systemd/system/multi-user.target.wants/firewalld.service to /usr/lib/systemd/system/firewalld.service.
-[root ~]# systemctl disable firewalld
-Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
-Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
-</code></pre>
-</li>
+<li>&#x542F;&#x52A8;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# systemctl start firewalld
+</code></pre>
+<ol>
+<li>&#x7EC8;&#x6B62;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# systemctl stop firewalld
+</code></pre>
+<ol>
+<li>&#x91CD;&#x542F;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# systemctl restart firewalld
+</code></pre>
+<ol>
+<li>&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x72B6;&#x6001;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]# systemctl status firewalld
+</code></pre>
+<ol>
+<li>&#x8BBE;&#x7F6E;/&#x7981;&#x7528;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# systemctl enable firewalld
+   Created symlink from /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service to /usr/lib/systemd/system/firewalld.service.
+   Created symlink from /etc/systemd/system/multi-user.target.wants/firewalld.service to /usr/lib/systemd/system/firewalld.service.
+   [root ~]# systemctl disable firewalld
+   Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
+   Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+</code></pre>
 <h3 id="&#x8BA1;&#x5212;&#x4EFB;&#x52A1;">&#x8BA1;&#x5212;&#x4EFB;&#x52A1;</h3>
 <ol>
 <li><p>&#x5728;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
@@ -3018,68 +3074,70 @@ Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
 <li><strong>atrm</strong> - &#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;&#x5F85;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;</li>
 </ul>
 <p>&#x6307;&#x5B9A;3&#x5929;&#x4EE5;&#x540E;&#x4E0B;&#x5348;5&#x70B9;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# at 5pm+3days
-at&gt; rm -f /root/*.html
-at&gt; &lt;EOT&gt;
-job 9 at Wed Jun  5 17:00:00 2019
-</code></pre>
-<p>&#x67E5;&#x770B;&#x5F85;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# atq
-9       Wed Jun  5 17:00:00 2019 a root
-</code></pre>
-<p>&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]$ atrm 9
-</code></pre>
 </li>
-<li><p>&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x8868; - <strong>crontab</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# crontab -e
-* * * * * echo &quot;hello, world!&quot; &gt;&gt; /root/hello.txt
-59 23 * * * rm -f /root/*.log
+</ol>
+<pre><code class="lang-Shell">   [root ~]# at 5pm+3days
+   at&gt; rm -f /root/*.html
+   at&gt; &lt;EOT&gt;
+   job 9 at Wed Jun  5 17:00:00 2019
+</code></pre>
+<p>   &#x67E5;&#x770B;&#x5F85;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# atq
+   9       Wed Jun  5 17:00:00 2019 a root
+</code></pre>
+<p>   &#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]$ atrm 9
+</code></pre>
+<ol>
+<li>&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x8868; - <strong>crontab</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# crontab -e
+   * * * * * echo &quot;hello, world!&quot; &gt;&gt; /root/hello.txt
+   59 23 * * * rm -f /root/*.log
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x8F93;&#x5165;<code>crontab -e</code>&#x547D;&#x4EE4;&#x4F1A;&#x6253;&#x5F00;vim&#x6765;&#x7F16;&#x8F91;Cron&#x8868;&#x8FBE;&#x5F0F;&#x5E76;&#x6307;&#x5B9A;&#x89E6;&#x53D1;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x5B9A;&#x5236;&#x4E86;&#x4E24;&#x4E2A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6BCF;&#x5206;&#x949F;&#x5411;/root&#x76EE;&#x5F55;&#x4E0B;&#x7684;hello.txt&#x4E2D;&#x8FFD;&#x52A0;&#x8F93;&#x51FA;<code>hello, world!</code>&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x6BCF;&#x5929;23&#x65F6;59&#x5206;&#x6267;&#x884C;&#x5220;&#x9664;/root&#x76EE;&#x5F55;&#x4E0B;&#x4EE5;log&#x4E3A;&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x77E5;&#x9053;Cron&#x8868;&#x8FBE;&#x5F0F;&#x5982;&#x4F55;&#x4E66;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x7167;/etc/crontab&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x63D0;&#x793A;&#xFF08;&#x4E0B;&#x9762;&#x4F1A;&#x8BB2;&#x5230;&#xFF09;&#x6216;&#x8005;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x627E;&#x4E00;&#x4E0B;&#x201C;Cron&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x7EBF;&#x751F;&#x6210;&#x5668;&#x201D;&#x6765;&#x751F;&#x6210;Cron&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
 </blockquote>
-<p>&#x548C;crontab&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#x5728;<code>/etc</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7;&#x4FEE;&#x6539;<code>/etc</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;crontab&#x6587;&#x4EF6;&#x4E5F;&#x80FD;&#x591F;&#x5B9A;&#x5236;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# cd /etc
-[root etc]# ls -l | grep cron
--rw-------.  1 root root      541 Aug  3  2017 anacrontab
-drwxr-xr-x.  2 root root     4096 Mar 27 11:56 cron.d
-drwxr-xr-x.  2 root root     4096 Mar 27 11:51 cron.daily
--rw-------.  1 root root        0 Aug  3  2017 cron.deny
-drwxr-xr-x.  2 root root     4096 Mar 27 11:50 cron.hourly
-drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.monthly
--rw-r--r--   1 root root      493 Jun 23 15:09 crontab
-drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.weekly
-[root etc]# vim crontab
-  1 SHELL=/bin/bash
-  2 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-  3 MAILTO=root
-  4
-  5 # For details see man 4 crontabs
-  6
-  7 # Example of job definition:
-  8 # .---------------- minute (0 - 59)
-  9 # |  .------------- hour (0 - 23)
- 10 # |  |  .---------- day of month (1 - 31)
- 11 # |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
- 12 # |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
- 13 # |  |  |  |  |
- 14 # *  *  *  *  * user-name  command to be executed
+<p>   &#x548C;crontab&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#x5728;<code>/etc</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7;&#x4FEE;&#x6539;<code>/etc</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;crontab&#x6587;&#x4EF6;&#x4E5F;&#x80FD;&#x591F;&#x5B9A;&#x5236;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x3002;</p>
+<pre><code class="lang-Shell">   [root ~]# cd /etc
+   [root etc]# ls -l | grep cron
+   -rw-------.  1 root root      541 Aug  3  2017 anacrontab
+   drwxr-xr-x.  2 root root     4096 Mar 27 11:56 cron.d
+   drwxr-xr-x.  2 root root     4096 Mar 27 11:51 cron.daily
+   -rw-------.  1 root root        0 Aug  3  2017 cron.deny
+   drwxr-xr-x.  2 root root     4096 Mar 27 11:50 cron.hourly
+   drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.monthly
+   -rw-r--r--   1 root root      493 Jun 23 15:09 crontab
+   drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.weekly
+   [root etc]# vim crontab
+     1 SHELL=/bin/bash
+     2 PATH=/sbin:/bin:/usr/sbin:/usr/bin
+     3 MAILTO=root
+     4
+     5 # For details see man 4 crontabs
+     6
+     7 # Example of job definition:
+     8 # .---------------- minute (0 - 59)
+     9 # |  .------------- hour (0 - 23)
+    10 # |  |  .---------- day of month (1 - 31)
+    11 # |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+    12 # |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+    13 # |  |  |  |  |
+    14 # *  *  *  *  * user-name  command to be executed
 </code></pre>
-</li>
-</ol>
 <h3 id="&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x548C;&#x7BA1;&#x7406;">&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x548C;&#x7BA1;&#x7406;</h3>
 <ol>
-<li><p>&#x5B89;&#x5168;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; - <strong>ssh</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]$ ssh root@120.77.222.217
- The authenticity of host &apos;120.77.222.217 (120.77.222.217)&apos; can&apos;t be established.
- ECDSA key fingerprint is SHA256:BhUhykv+FvnIL03I9cLRpWpaCxI91m9n7zBWrcXRa8w.
- ECDSA key fingerprint is MD5:cc:85:e9:f0:d7:07:1a:26:41:92:77:6b:7f:a0:92:65.
- Are you sure you want to continue connecting (yes/no)? yes
- Warning: Permanently added &apos;120.77.222.217&apos; (ECDSA) to the list of known hosts.
- root@120.77.222.217&apos;s password:
+<li>&#x5B89;&#x5168;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; - <strong>ssh</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]$ ssh root@120.77.222.217
+    The authenticity of host &apos;120.77.222.217 (120.77.222.217)&apos; can&apos;t be established.
+    ECDSA key fingerprint is SHA256:BhUhykv+FvnIL03I9cLRpWpaCxI91m9n7zBWrcXRa8w.
+    ECDSA key fingerprint is MD5:cc:85:e9:f0:d7:07:1a:26:41:92:77:6b:7f:a0:92:65.
+    Are you sure you want to continue connecting (yes/no)? yes
+    Warning: Permanently added &apos;120.77.222.217&apos; (ECDSA) to the list of known hosts.
+    root@120.77.222.217&apos;s password:
 </code></pre>
-</li>
+<ol>
 <li><p>&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x83B7;&#x53D6;&#x8D44;&#x6E90; - <strong>wget</strong>&#x3002;</p>
 <ul>
 <li>-b &#x540E;&#x53F0;&#x4E0B;&#x8F7D;&#x6A21;&#x5F0F;</li>
@@ -3090,253 +3148,266 @@ drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.weekly
 <li><p>&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x90AE;&#x4EF6; - <strong>mail</strong>&#x3002;</p>
 </li>
 <li><p>&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#xFF08;&#x65E7;&#xFF09; - <strong>ifconfig</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ifconfig eth0
-eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
-        inet 172.18.61.250  netmask 255.255.240.0  broadcast 172.18.63.255
-        ether 00:16:3e:02:b6:46  txqueuelen 1000  (Ethernet)
-        RX packets 1067841  bytes 1296732947 (1.2 GiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 409912  bytes 43569163 (41.5 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions
-</code></pre>
 </li>
-<li><p>&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#xFF08;&#x65B0;&#xFF09; - <strong>ip</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ip address
-1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether 00:16:3e:02:b6:46 brd ff:ff:ff:ff:ff:ff
-    inet 172.18.61.250/20 brd 172.18.63.255 scope global eth0
-       valid_lft forever preferred_lft forever
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ifconfig eth0
+   eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+           inet 172.18.61.250  netmask 255.255.240.0  broadcast 172.18.63.255
+           ether 00:16:3e:02:b6:46  txqueuelen 1000  (Ethernet)
+           RX packets 1067841  bytes 1296732947 (1.2 GiB)
+           RX errors 0  dropped 0  overruns 0  frame 0
+           TX packets 409912  bytes 43569163 (41.5 MiB)
+           TX errors 0  dropped 0 overruns 0  carrier 0  collisions
 </code></pre>
-</li>
-<li><p>&#x7F51;&#x7EDC;&#x53EF;&#x8FBE;&#x6027;&#x68C0;&#x67E5; - <strong>ping</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ping www.baidu.com -c 3
-PING www.a.shifen.com (220.181.111.188) 56(84) bytes of data.
-64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=1 ttl=51 time=36.3 ms
-64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=2 ttl=51 time=36.4 ms
-64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=3 ttl=51 time=36.4 ms
---- www.a.shifen.com ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2002ms
-rtt min/avg/max/mdev = 36.392/36.406/36.427/0.156 ms
+<ol>
+<li>&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#xFF08;&#x65B0;&#xFF09; - <strong>ip</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ip address
+   1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1
+       link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+       inet 127.0.0.1/8 scope host lo
+          valid_lft forever preferred_lft forever
+   2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+       link/ether 00:16:3e:02:b6:46 brd ff:ff:ff:ff:ff:ff
+       inet 172.18.61.250/20 brd 172.18.63.255 scope global eth0
+          valid_lft forever preferred_lft forever
 </code></pre>
-</li>
+<ol>
+<li>&#x7F51;&#x7EDC;&#x53EF;&#x8FBE;&#x6027;&#x68C0;&#x67E5; - <strong>ping</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ping www.baidu.com -c 3
+   PING www.a.shifen.com (220.181.111.188) 56(84) bytes of data.
+   64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=1 ttl=51 time=36.3 ms
+   64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=2 ttl=51 time=36.4 ms
+   64 bytes from 220.181.111.188 (220.181.111.188): icmp_seq=3 ttl=51 time=36.4 ms
+   --- www.a.shifen.com ping statistics ---
+   3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+   rtt min/avg/max/mdev = 36.392/36.406/36.427/0.156 ms
+</code></pre>
+<ol>
 <li><p>&#x663E;&#x793A;&#x6216;&#x7BA1;&#x7406;&#x8DEF;&#x7531;&#x8868; - <strong>route</strong>&#x3002;</p>
 </li>
 <li><p>&#x67E5;&#x770B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x548C;&#x7AEF;&#x53E3; - <strong>netstat</strong> / <strong>ss</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# netstat -nap | grep nginx
-</code></pre>
 </li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# netstat -nap | grep nginx
+</code></pre>
+<ol>
 <li><p>&#x7F51;&#x7EDC;&#x76D1;&#x542C;&#x6293;&#x5305; - <strong>tcpdump</strong>&#x3002;</p>
 </li>
 <li><p>&#x5B89;&#x5168;&#x6587;&#x4EF6;&#x62F7;&#x8D1D; - <strong>scp</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# scp root@1.2.3.4:/root/guido.jpg hellokitty@4.3.2.1:/home/hellokitty/pic.jpg
-</code></pre>
 </li>
+</ol>
+<pre><code class="lang-Shell">  [root ~]# scp root@1.2.3.4:/root/guido.jpg hellokitty@4.3.2.1:/home/hellokitty/pic.jpg
+</code></pre>
+<ol>
 <li><p>&#x6587;&#x4EF6;&#x540C;&#x6B65;&#x5DE5;&#x5177; - <strong>rsync</strong>&#x3002;</p>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x4F7F;&#x7528;<code>rsync</code>&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x7684;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x6765;&#x8BF4;&#x76F8;&#x5F53;&#x91CD;&#x8981;&#x3002;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x540E;&#x9762;&#x8BB2;&#x9879;&#x76EE;&#x90E8;&#x7F72;&#x7684;&#x65F6;&#x5019;&#x4E3A;&#x5927;&#x5BB6;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x3002;</p>
 </blockquote>
 </li>
 <li><p>&#x5B89;&#x5168;&#x6587;&#x4EF6;&#x4F20;&#x8F93; - <strong>sftp</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sftp root@1.2.3.4
-root@1.2.3.4&apos;s password:
-Connected to 1.2.3.4.
-sftp&gt;
-</code></pre>
-<ul>
-<li><p><code>help</code>&#xFF1A;&#x663E;&#x793A;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;</p>
-</li>
-<li><p><code>ls</code>/<code>lls</code>&#xFF1A;&#x663E;&#x793A;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x3002;</p>
-</li>
-<li><p><code>cd</code>/<code>lcd</code>&#xFF1A;&#x5207;&#x6362;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x3002;</p>
-</li>
-<li><p><code>mkdir</code>/<code>lmkdir</code>&#xFF1A;&#x521B;&#x5EFA;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x76EE;&#x5F55;&#x3002;</p>
-</li>
-<li><p><code>pwd</code>/<code>lpwd</code>&#xFF1A;&#x663E;&#x793A;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;</p>
-</li>
-<li><p><code>get</code>&#xFF1A;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x3002;</p>
-</li>
-<li><p><code>put</code>&#xFF1A;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x3002;</p>
-</li>
-<li><p><code>rm</code>&#xFF1A;&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x6587;&#x4EF6;&#x3002;</p>
-</li>
-<li><p><code>bye</code>/<code>exit</code>/<code>quit</code>&#xFF1A;&#x9000;&#x51FA;sftp&#x3002;</p>
-</li>
-</ul>
 </li>
 </ol>
-<h3 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h3>
+<pre><code class="lang-Shell">    [root ~]# sftp root@1.2.3.4
+    root@1.2.3.4&apos;s password:
+    Connected to 1.2.3.4.
+    sftp&gt;
+</code></pre>
+<pre><code>- `help`&#xFF1A;&#x663E;&#x793A;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;
+
+- `ls`/`lls`&#xFF1A;&#x663E;&#x793A;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x3002;
+
+- `cd`/`lcd`&#xFF1A;&#x5207;&#x6362;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x3002;
+
+- `mkdir`/`lmkdir`&#xFF1A;&#x521B;&#x5EFA;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x76EE;&#x5F55;&#x3002;
+
+- `pwd`/`lpwd`&#xFF1A;&#x663E;&#x793A;&#x8FDC;&#x7AEF;/&#x672C;&#x5730;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;
+
+- `get`&#xFF1A;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x3002;
+
+- `put`&#xFF1A;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x3002;
+
+- `rm`&#xFF1A;&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x6587;&#x4EF6;&#x3002;
+
+- `bye`/`exit`/`quit`&#xFF1A;&#x9000;&#x51FA;sftp&#x3002;
+</code></pre><h3 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h3>
 <ol>
-<li><p>&#x67E5;&#x770B;&#x8FDB;&#x7A0B; - <strong>ps</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ps -ef
-UID        PID  PPID  C STIME TTY          TIME CMD
-root         1     0  0 Jun23 ?        00:00:05 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
-root         2     0  0 Jun23 ?        00:00:00 [kthreadd]
-...
-[root ~]# ps -ef | grep mysqld
-root      4943  4581  0 22:45 pts/0    00:00:00 grep --color=auto mysqld
-mysql    25257     1  0 Jun25 ?        00:00:39 /usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
+<li>&#x67E5;&#x770B;&#x8FDB;&#x7A0B; - <strong>ps</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ps -ef
+   UID        PID  PPID  C STIME TTY          TIME CMD
+   root         1     0  0 Jun23 ?        00:00:05 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+   root         2     0  0 Jun23 ?        00:00:00 [kthreadd]
+   ...
+   [root ~]# ps -ef | grep mysqld
+   root      4943  4581  0 22:45 pts/0    00:00:00 grep --color=auto mysqld
+   mysql    25257     1  0 Jun25 ?        00:00:39 /usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
 </code></pre>
-</li>
-<li><p>&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x6811; - <strong>pstree</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# pstree
- systemd&#x2500;&#x252C;&#x2500;AliYunDun&#x2500;&#x2500;&#x2500;18*[{AliYunDun}]
-         &#x251C;&#x2500;AliYunDunUpdate&#x2500;&#x2500;&#x2500;3*[{AliYunDunUpdate}]
-         &#x251C;&#x2500;2*[agetty]
-         &#x251C;&#x2500;aliyun-service&#x2500;&#x2500;&#x2500;2*[{aliyun-service}]
-         &#x251C;&#x2500;atd
-         &#x251C;&#x2500;auditd&#x2500;&#x2500;&#x2500;{auditd}
-         &#x251C;&#x2500;dbus-daemon
-         &#x251C;&#x2500;dhclient
-         &#x251C;&#x2500;irqbalance
-         &#x251C;&#x2500;lvmetad
-         &#x251C;&#x2500;mysqld&#x2500;&#x2500;&#x2500;28*[{mysqld}]
-         &#x251C;&#x2500;nginx&#x2500;&#x2500;&#x2500;2*[nginx]
-         &#x251C;&#x2500;ntpd
-         &#x251C;&#x2500;polkitd&#x2500;&#x2500;&#x2500;6*[{polkitd}]
-         &#x251C;&#x2500;rsyslogd&#x2500;&#x2500;&#x2500;2*[{rsyslogd}]
-         &#x251C;&#x2500;sshd&#x2500;&#x2500;&#x2500;sshd&#x2500;&#x2500;&#x2500;bash&#x2500;&#x2500;&#x2500;pstree
-         &#x251C;&#x2500;systemd-journal
-         &#x251C;&#x2500;systemd-logind
-         &#x251C;&#x2500;systemd-udevd
-         &#x2514;&#x2500;tuned&#x2500;&#x2500;&#x2500;4*[{tuned}]
+<ol>
+<li>&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x6811; - <strong>pstree</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]# pstree
+    systemd&#x2500;&#x252C;&#x2500;AliYunDun&#x2500;&#x2500;&#x2500;18*[{AliYunDun}]
+            &#x251C;&#x2500;AliYunDunUpdate&#x2500;&#x2500;&#x2500;3*[{AliYunDunUpdate}]
+            &#x251C;&#x2500;2*[agetty]
+            &#x251C;&#x2500;aliyun-service&#x2500;&#x2500;&#x2500;2*[{aliyun-service}]
+            &#x251C;&#x2500;atd
+            &#x251C;&#x2500;auditd&#x2500;&#x2500;&#x2500;{auditd}
+            &#x251C;&#x2500;dbus-daemon
+            &#x251C;&#x2500;dhclient
+            &#x251C;&#x2500;irqbalance
+            &#x251C;&#x2500;lvmetad
+            &#x251C;&#x2500;mysqld&#x2500;&#x2500;&#x2500;28*[{mysqld}]
+            &#x251C;&#x2500;nginx&#x2500;&#x2500;&#x2500;2*[nginx]
+            &#x251C;&#x2500;ntpd
+            &#x251C;&#x2500;polkitd&#x2500;&#x2500;&#x2500;6*[{polkitd}]
+            &#x251C;&#x2500;rsyslogd&#x2500;&#x2500;&#x2500;2*[{rsyslogd}]
+            &#x251C;&#x2500;sshd&#x2500;&#x2500;&#x2500;sshd&#x2500;&#x2500;&#x2500;bash&#x2500;&#x2500;&#x2500;pstree
+            &#x251C;&#x2500;systemd-journal
+            &#x251C;&#x2500;systemd-logind
+            &#x251C;&#x2500;systemd-udevd
+            &#x2514;&#x2500;tuned&#x2500;&#x2500;&#x2500;4*[{tuned}]
 </code></pre>
-</li>
-<li><p>&#x67E5;&#x627E;&#x4E0E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x5339;&#x914D;&#x7684;&#x8FDB;&#x7A0B; - <strong>pgrep</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]$ pgrep mysqld
-3584
+<ol>
+<li>&#x67E5;&#x627E;&#x4E0E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x5339;&#x914D;&#x7684;&#x8FDB;&#x7A0B; - <strong>pgrep</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]$ pgrep mysqld
+   3584
 </code></pre>
-</li>
-<li><p>&#x901A;&#x8FC7;&#x8FDB;&#x7A0B;&#x53F7;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B; - <strong>kill</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]$ kill -l
- 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
- 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
-11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
-16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
-21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
-26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
-31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
-38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
-43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
-48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
-53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
-58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
-63) SIGRTMAX-1  64) SIGRTMAX
-[root ~]# kill 1234
-[root ~]# kill -9 1234
+<ol>
+<li>&#x901A;&#x8FC7;&#x8FDB;&#x7A0B;&#x53F7;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B; - <strong>kill</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]$ kill -l
+    1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+    6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+   11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+   16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+   21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+   26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+   31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+   38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+   43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+   48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+   53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+   58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+   63) SIGRTMAX-1  64) SIGRTMAX
+   [root ~]# kill 1234
+   [root ~]# kill -9 1234
 </code></pre>
-</li>
+<ol>
 <li><p>&#x901A;&#x8FC7;&#x8FDB;&#x7A0B;&#x540D;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B; - <strong>killall</strong> / <strong>pkill</strong>&#x3002;</p>
 <p> &#x7ED3;&#x675F;&#x540D;&#x4E3A;mysqld&#x7684;&#x8FDB;&#x7A0B;&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# pkill mysqld
-</code></pre>
-<p> &#x7ED3;&#x675F;hellokitty&#x7528;&#x6237;&#x7684;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# pkill -u hellokitty
-</code></pre>
-<blockquote>
-<p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#x4F1A;&#x8BA9;hellokitty&#x7528;&#x6237;&#x548C;&#x670D;&#x52A1;&#x5668;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x3002;</p>
-</blockquote>
 </li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]# pkill mysqld
+</code></pre>
+<pre><code>&#x7ED3;&#x675F;hellokitty&#x7528;&#x6237;&#x7684;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x3002;
+</code></pre><pre><code class="lang-Shell">    [root ~]# pkill -u hellokitty
+</code></pre>
+<pre><code>&gt; &#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#x4F1A;&#x8BA9;hellokitty&#x7528;&#x6237;&#x548C;&#x670D;&#x52A1;&#x5668;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x3002;
+</code></pre><ol>
 <li><p>&#x5C06;&#x8FDB;&#x7A0B;&#x7F6E;&#x4E8E;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x3002;</p>
 <ul>
 <li><code>Ctrl+Z</code> - &#x5FEB;&#x6377;&#x952E;&#xFF0C;&#x7528;&#x4E8E;&#x505C;&#x6B62;&#x8FDB;&#x7A0B;&#x5E76;&#x7F6E;&#x4E8E;&#x540E;&#x53F0;&#x3002;</li>
 <li><code>&amp;</code> - &#x5C06;&#x8FDB;&#x7A0B;&#x7F6E;&#x4E8E;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x3002;</li>
 </ul>
-<pre><code class="lang-Shell">[root ~]# mongod &amp;
-[root ~]# redis-server
-...
-^Z
-[4]+  Stopped                 redis-server
-</code></pre>
 </li>
-<li><p>&#x67E5;&#x8BE2;&#x540E;&#x53F0;&#x8FDB;&#x7A0B; - <strong>jobs</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# jobs
-[2]   Running                 mongod &amp;
-[3]-  Stopped                 cat
-[4]+  Stopped                 redis-server
+</ol>
+<pre><code class="lang-Shell">   [root ~]# mongod &amp;
+   [root ~]# redis-server
+   ...
+   ^Z
+   [4]+  Stopped                 redis-server
 </code></pre>
-</li>
-<li><p>&#x8BA9;&#x8FDB;&#x7A0B;&#x5728;&#x540E;&#x53F0;&#x7EE7;&#x7EED;&#x8FD0;&#x884C; - <strong>bg</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# bg %4
-[4]+ redis-server &amp;
-[root ~]# jobs
-[2]   Running                 mongod &amp;
-[3]+  Stopped                 cat
-[4]-  Running                 redis-server &amp;
+<ol>
+<li>&#x67E5;&#x8BE2;&#x540E;&#x53F0;&#x8FDB;&#x7A0B; - <strong>jobs</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# jobs
+   [2]   Running                 mongod &amp;
+   [3]-  Stopped                 cat
+   [4]+  Stopped                 redis-server
 </code></pre>
-</li>
-<li><p>&#x5C06;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x7F6E;&#x4E8E;&#x524D;&#x53F0; - <strong>fg</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# fg %4
- redis-server
+<ol>
+<li>&#x8BA9;&#x8FDB;&#x7A0B;&#x5728;&#x540E;&#x53F0;&#x7EE7;&#x7EED;&#x8FD0;&#x884C; - <strong>bg</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# bg %4
+   [4]+ redis-server &amp;
+   [root ~]# jobs
+   [2]   Running                 mongod &amp;
+   [3]+  Stopped                 cat
+   [4]-  Running                 redis-server &amp;
 </code></pre>
-<blockquote>
-<p>&#x8BF4;&#x660E;&#xFF1A;&#x7F6E;&#x4E8E;&#x524D;&#x53F0;&#x7684;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>Ctrl+C</code>&#x6765;&#x7EC8;&#x6B62;&#x5B83;&#x3002;</p>
-</blockquote>
-</li>
+<ol>
+<li>&#x5C06;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x7F6E;&#x4E8E;&#x524D;&#x53F0; - <strong>fg</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">    [root ~]# fg %4
+    redis-server
+</code></pre>
+<pre><code>&gt; &#x8BF4;&#x660E;&#xFF1A;&#x7F6E;&#x4E8E;&#x524D;&#x53F0;&#x7684;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;`Ctrl+C`&#x6765;&#x7EC8;&#x6B62;&#x5B83;&#x3002;
+</code></pre><ol>
 <li><p>&#x8C03;&#x6574;&#x7A0B;&#x5E8F;/&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x65F6;&#x4F18;&#x5148;&#x7EA7; - <strong>nice</strong> / <strong>renice</strong>&#x3002;</p>
 </li>
 <li><p>&#x7528;&#x6237;&#x767B;&#x51FA;&#x540E;&#x8FDB;&#x7A0B;&#x7EE7;&#x7EED;&#x5DE5;&#x4F5C; - <strong>nohup</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# nohup ping www.baidu.com &gt; result.txt &amp;
-</code></pre>
-</li>
-<li><p>&#x8DDF;&#x8E2A;&#x8FDB;&#x7A0B;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x60C5;&#x51B5; - <strong>strace</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# pgrep mysqld
- 8803
- [root ~]# strace -c -p 8803
- strace: Process 8803 attached
- ^Cstrace: Process 8803 detached
- % time     seconds  usecs/call     calls    errors syscall
- ------ ----------- ----------- --------- --------- ----------------
-  99.18    0.005719        5719         1           restart_syscall
-   0.49    0.000028          28         1           mprotect
-   0.24    0.000014          14         1           clone
-   0.05    0.000003           3         1           mmap
-   0.03    0.000002           2         1           accept
- ------ ----------- ----------- --------- --------- ----------------
- 100.00    0.005766                     5           total
-</code></pre>
-<blockquote>
-<p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x7528;&#x6CD5;&#x548C;&#x53C2;&#x6570;&#x90FD;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x5728;&#x771F;&#x6B63;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#x518D;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E86;&#x89E3;&#x3002;</p>
-</blockquote>
-</li>
-<li><p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7EA7;&#x522B; - <strong>runlevel</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# runlevel
- N 3
-</code></pre>
-</li>
-<li><p>&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x8FDB;&#x7A0B;&#x5360;&#x7528;&#x8D44;&#x6E90;&#x72B6;&#x51B5; - <strong>top</strong>&#x3002;</p>
-<pre><code class="lang-Shell"> [root ~]# top
- top - 23:04:23 up 3 days, 14:10,  1 user,  load average: 0.00, 0.01, 0.05
- Tasks:  65 total,   1 running,  64 sleeping,   0 stopped,   0 zombie
- %Cpu(s):  0.3 us,  0.3 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
- KiB Mem :  1016168 total,   191060 free,   324700 used,   500408 buff/cache
- KiB Swap:        0 total,        0 free,        0 used.   530944 avail Mem
- ...
-</code></pre>
-<ul>
-<li><code>-c</code> - &#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x7684;&#x6574;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;</li>
-<li><code>-d</code> - &#x6307;&#x5B9A;&#x4E24;&#x6B21;&#x5237;&#x5C4F;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;</li>
-<li><code>-i</code> - &#x4E0D;&#x663E;&#x793A;&#x95F2;&#x7F6E;&#x8FDB;&#x7A0B;&#x6216;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x3002;</li>
-<li><code>-p</code> - &#x663E;&#x793A;&#x6307;&#x5B9A;&#x8FDB;&#x7A0B;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
-</ul>
 </li>
 </ol>
-<h3 id="&#x7CFB;&#x7EDF;&#x8BCA;&#x65AD;">&#x7CFB;&#x7EDF;&#x8BCA;&#x65AD;</h3>
+<pre><code class="lang-Shell">     [root ~]# nohup ping www.baidu.com &gt; result.txt &amp;
+</code></pre>
+<ol>
+<li>&#x8DDF;&#x8E2A;&#x8FDB;&#x7A0B;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x60C5;&#x51B5; - <strong>strace</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">     [root ~]# pgrep mysqld
+     8803
+     [root ~]# strace -c -p 8803
+     strace: Process 8803 attached
+     ^Cstrace: Process 8803 detached
+     % time     seconds  usecs/call     calls    errors syscall
+     ------ ----------- ----------- --------- --------- ----------------
+      99.18    0.005719        5719         1           restart_syscall
+       0.49    0.000028          28         1           mprotect
+       0.24    0.000014          14         1           clone
+       0.05    0.000003           3         1           mmap
+       0.03    0.000002           2         1           accept
+     ------ ----------- ----------- --------- --------- ----------------
+     100.00    0.005766                     5           total
+</code></pre>
+<pre><code> &gt; &#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x7528;&#x6CD5;&#x548C;&#x53C2;&#x6570;&#x90FD;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x5728;&#x771F;&#x6B63;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#x518D;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E86;&#x89E3;&#x3002;
+</code></pre><ol>
+<li>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7EA7;&#x522B; - <strong>runlevel</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">     [root ~]# runlevel
+     N 3
+</code></pre>
+<ol>
+<li>&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x8FDB;&#x7A0B;&#x5360;&#x7528;&#x8D44;&#x6E90;&#x72B6;&#x51B5; - <strong>top</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">     [root ~]# top
+     top - 23:04:23 up 3 days, 14:10,  1 user,  load average: 0.00, 0.01, 0.05
+     Tasks:  65 total,   1 running,  64 sleeping,   0 stopped,   0 zombie
+     %Cpu(s):  0.3 us,  0.3 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+     KiB Mem :  1016168 total,   191060 free,   324700 used,   500408 buff/cache
+     KiB Swap:        0 total,        0 free,        0 used.   530944 avail Mem
+     ...
+</code></pre>
+<pre><code> - `-c` - &#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x7684;&#x6574;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;
+ - `-d` - &#x6307;&#x5B9A;&#x4E24;&#x6B21;&#x5237;&#x5C4F;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;
+ - `-i` - &#x4E0D;&#x663E;&#x793A;&#x95F2;&#x7F6E;&#x8FDB;&#x7A0B;&#x6216;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x3002;
+ - `-p` - &#x663E;&#x793A;&#x6307;&#x5B9A;&#x8FDB;&#x7A0B;&#x7684;&#x4FE1;&#x606F;&#x3002;
+</code></pre><h3 id="&#x7CFB;&#x7EDF;&#x8BCA;&#x65AD;">&#x7CFB;&#x7EDF;&#x8BCA;&#x65AD;</h3>
 <ol>
 <li><p>&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x5F02;&#x5E38;&#x8BCA;&#x65AD; - <strong>dmesg</strong>&#x3002;</p>
 </li>
 <li><p>&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x6D3B;&#x52A8;&#x4FE1;&#x606F; - <strong>sar</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# sar -u -r 5 10
-Linux 3.10.0-957.10.1.el7.x86_64 (izwz97tbgo9lkabnat2lo8z)      06/02/2019      _x86_64_        (2 CPU)
+</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# sar -u -r 5 10
+   Linux 3.10.0-957.10.1.el7.x86_64 (izwz97tbgo9lkabnat2lo8z)      06/02/2019      _x86_64_        (2 CPU)
 
-06:48:30 PM     CPU     %user     %nice   %system   %iowait    %steal     %idle
-06:48:35 PM     all      0.10      0.00      0.10      0.00      0.00     99.80
+   06:48:30 PM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+   06:48:35 PM     all      0.10      0.00      0.10      0.00      0.00     99.80
 
-06:48:30 PM kbmemfree kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
-06:48:35 PM   1772012   2108392     54.33    102816   1634528    784940     20.23    793328   1164704         0
+   06:48:30 PM kbmemfree kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+   06:48:35 PM   1772012   2108392     54.33    102816   1634528    784940     20.23    793328   1164704         0
 </code></pre>
 <ul>
 <li><code>-A</code> - &#x663E;&#x793A;&#x6240;&#x6709;&#x8BBE;&#x5907;&#xFF08;CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;&#xFF09;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x51B5;&#x3002;</li>
@@ -3345,85 +3416,90 @@ Linux 3.10.0-957.10.1.el7.x86_64 (izwz97tbgo9lkabnat2lo8z)      06/02/2019      
 <li><code>-r</code> - &#x663E;&#x793A;&#x5185;&#x5B58;&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;</li>
 <li><code>-n</code> - &#x663E;&#x793A;&#x7F51;&#x7EDC;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x3002;</li>
 </ul>
-</li>
-<li><p>&#x67E5;&#x770B;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5; - <strong>free</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# free
-              total        used        free      shared  buff/cache   available
-Mem:        1016168      323924      190452         356      501792      531800
-Swap:             0           0           0
-</code></pre>
-</li>
-<li><p>&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7EDF;&#x8BA1; - <strong>vmstat</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# vmstat
-procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
- r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 2  0      0 204020  79036 667532    0    0     5    18  101   58  1  0 99  0  0
-</code></pre>
-</li>
-<li><p>CPU&#x4FE1;&#x606F;&#x7EDF;&#x8BA1; - <strong>mpstat</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# mpstat
-Linux 3.10.0-957.5.1.el7.x86_64 (iZ8vba0s66jjlfmo601w4xZ)       05/30/2019      _x86_64_        (1 CPU)
-
-01:51:54 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
-01:51:54 AM  all    0.71    0.00    0.17    0.04    0.00    0.00    0.00    0.00    0.00   99.07
-</code></pre>
-</li>
-<li><p>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x5185;&#x5B58;&#x72B6;&#x51B5; - <strong>pmap</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ps
-  PID TTY          TIME CMD
- 4581 pts/0    00:00:00 bash
- 5664 pts/0    00:00:00 ps
-[root ~]# pmap 4581
-4581:   -bash
-0000000000400000    884K r-x-- bash
-00000000006dc000      4K r---- bash
-00000000006dd000     36K rw--- bash
-00000000006e6000     24K rw---   [ anon ]
-0000000001de0000    400K rw---   [ anon ]
-00007f82fe805000     48K r-x-- libnss_files-2.17.so
-00007f82fe811000   2044K ----- libnss_files-2.17.so
-...
-</code></pre>
-</li>
-<li><p>&#x62A5;&#x544A;&#x8BBE;&#x5907;CPU&#x548C;I/O&#x7EDF;&#x8BA1;&#x4FE1;&#x606F; - <strong>iostat</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# iostat
-Linux 3.10.0-693.11.1.el7.x86_64 (iZwz97tbgo9lkabnat2lo8Z)      06/26/2018      _x86_64_       (1 CPU)
-avg-cpu:  %user   %nice %system %iowait  %steal   %idle
-           0.79    0.00    0.20    0.04    0.00   98.97
-Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               0.85         6.78        21.32    2106565    6623024
-vdb               0.00         0.01         0.00       2088          0
-</code></pre>
-</li>
-<li><p>&#x663E;&#x793A;&#x6240;&#x6709;PCI&#x8BBE;&#x5907; - <strong>lspci</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# lspci
-00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
-00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
-00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
-00:01.2 USB controller: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II] (rev 01)
-00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 03)
-00:02.0 VGA compatible controller: Cirrus Logic GD 5446
-00:03.0 Ethernet controller: Red Hat, Inc. Virtio network device
-00:04.0 Communication controller: Red Hat, Inc. Virtio console
-00:05.0 SCSI storage controller: Red Hat, Inc. Virtio block device
-00:06.0 SCSI storage controller: Red Hat, Inc. Virtio block device
-00:07.0 Unclassified device [00ff]: Red Hat, Inc. Virtio memory balloon
-</code></pre>
-</li>
-<li><p>&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x8BBE;&#x65BD;&#x7684;&#x72B6;&#x6001; - <strong>ipcs</strong>&#x3002;</p>
-<pre><code class="lang-Shell">[root ~]# ipcs
-
------- Message Queues --------
-key        msqid      owner      perms      used-bytes   messages    
-
------- Shared Memory Segments --------
-key        shmid      owner      perms      bytes      nattch     status      
-
------- Semaphore Arrays --------
-key        semid      owner      perms      nsems
-</code></pre>
-</li>
+<ol>
+<li>&#x67E5;&#x770B;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5; - <strong>free</strong>&#x3002;</li>
 </ol>
+<pre><code class="lang-Shell">   [root ~]# free
+                 total        used        free      shared  buff/cache   available
+   Mem:        1016168      323924      190452         356      501792      531800
+   Swap:             0           0           0
+</code></pre>
+<ol>
+<li>&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7EDF;&#x8BA1; - <strong>vmstat</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# vmstat
+   procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+    r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+    2  0      0 204020  79036 667532    0    0     5    18  101   58  1  0 99  0  0
+</code></pre>
+<ol>
+<li>CPU&#x4FE1;&#x606F;&#x7EDF;&#x8BA1; - <strong>mpstat</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# mpstat
+   Linux 3.10.0-957.5.1.el7.x86_64 (iZ8vba0s66jjlfmo601w4xZ)       05/30/2019      _x86_64_        (1 CPU)
+
+   01:51:54 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+   01:51:54 AM  all    0.71    0.00    0.17    0.04    0.00    0.00    0.00    0.00    0.00   99.07
+</code></pre>
+<ol>
+<li>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x5185;&#x5B58;&#x72B6;&#x51B5; - <strong>pmap</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ps
+     PID TTY          TIME CMD
+    4581 pts/0    00:00:00 bash
+    5664 pts/0    00:00:00 ps
+   [root ~]# pmap 4581
+   4581:   -bash
+   0000000000400000    884K r-x-- bash
+   00000000006dc000      4K r---- bash
+   00000000006dd000     36K rw--- bash
+   00000000006e6000     24K rw---   [ anon ]
+   0000000001de0000    400K rw---   [ anon ]
+   00007f82fe805000     48K r-x-- libnss_files-2.17.so
+   00007f82fe811000   2044K ----- libnss_files-2.17.so
+   ...
+</code></pre>
+<ol>
+<li>&#x62A5;&#x544A;&#x8BBE;&#x5907;CPU&#x548C;I/O&#x7EDF;&#x8BA1;&#x4FE1;&#x606F; - <strong>iostat</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# iostat
+   Linux 3.10.0-693.11.1.el7.x86_64 (iZwz97tbgo9lkabnat2lo8Z)      06/26/2018      _x86_64_       (1 CPU)
+   avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+              0.79    0.00    0.20    0.04    0.00   98.97
+   Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+   vda               0.85         6.78        21.32    2106565    6623024
+   vdb               0.00         0.01         0.00       2088          0
+</code></pre>
+<ol>
+<li>&#x663E;&#x793A;&#x6240;&#x6709;PCI&#x8BBE;&#x5907; - <strong>lspci</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# lspci
+   00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+   00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+   00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
+   00:01.2 USB controller: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II] (rev 01)
+   00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 03)
+   00:02.0 VGA compatible controller: Cirrus Logic GD 5446
+   00:03.0 Ethernet controller: Red Hat, Inc. Virtio network device
+   00:04.0 Communication controller: Red Hat, Inc. Virtio console
+   00:05.0 SCSI storage controller: Red Hat, Inc. Virtio block device
+   00:06.0 SCSI storage controller: Red Hat, Inc. Virtio block device
+   00:07.0 Unclassified device [00ff]: Red Hat, Inc. Virtio memory balloon
+</code></pre>
+<ol>
+<li>&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x8BBE;&#x65BD;&#x7684;&#x72B6;&#x6001; - <strong>ipcs</strong>&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   [root ~]# ipcs
+
+   ------ Message Queues --------
+   key        msqid      owner      perms      used-bytes   messages    
+
+   ------ Shared Memory Segments --------
+   key        shmid      owner      perms      bytes      nattch     status      
+
+   ------ Semaphore Arrays --------
+   key        semid      owner      perms      nsems
+</code></pre>
 <h3 id="shell&#x7F16;&#x7A0B;">Shell&#x7F16;&#x7A0B;</h3>
 <p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;Shell&#x662F;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x7528;&#x6237;&#x548C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4EBA;&#x673A;&#x4EA4;&#x4E92;&#x7684;&#x754C;&#x9762;&#xFF08;&#x63A5;&#x53E3;&#xFF09;&#xFF0C;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x754C;&#x9762;&#x8BBF;&#x95EE;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7684;&#x670D;&#x52A1;&#x3002;Shell&#x811A;&#x672C;&#x662F;&#x4E00;&#x79CD;&#x4E3A;Shell&#x7F16;&#x5199;&#x7684;&#x811A;&#x672C;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Shell&#x811A;&#x672C;&#x6765;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x3002;&#x603B;&#x4E4B;&#xFF0C;&#x7F16;&#x5199;Shell&#x811A;&#x672C;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;Linux&#x7CFB;&#x7EDF;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x9879;&#x6807;&#x914D;&#x6280;&#x80FD;&#x3002;</p>
 <p>&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x6709;&#x5927;&#x91CF;&#x5173;&#x4E8E;Shell&#x811A;&#x672C;&#x7684;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#xFF0C;&#x6211;&#x4E0D;&#x6253;&#x7B97;&#x518D;&#x6B64;&#x5BF9;Shell&#x811A;&#x672C;&#x505A;&#x4E00;&#x4E2A;&#x5168;&#x9762;&#x7CFB;&#x7EDF;&#x7684;&#x8BB2;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x611F;&#x6027;&#x7684;&#x8BA4;&#x8BC6;&#x4E0B;Shell&#x811A;&#x672C;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
@@ -3532,17 +3608,17 @@ install_redis &apos;http://download.redis.io/releases/&apos; $1
 | Esc+f      | &#x79FB;&#x52A8;&#x5230;&#x5F53;&#x524D;&#x5355;&#x8BCD;&#x7684;&#x7ED3;&#x5C3E;                         |</p>
 </li>
 <li><p>man&#x67E5;&#x9605;&#x547D;&#x4EE4;&#x624B;&#x518C;&#x7684;&#x5185;&#x5BB9;&#x8BF4;&#x660E;</p>
-<p>| &#x624B;&#x518C;&#x4E2D;&#x7684;&#x6807;&#x9898; | &#x529F;&#x80FD;&#x8BF4;&#x660E;                                                     |
-| ------------ | ------------------------------------------------------------ |
-| NAME         | &#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x548C;&#x4ECB;&#x7ECD;                                             |
-| SYNOPSIS     | &#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;                                         |
+<p>| &#x624B;&#x518C;&#x4E2D;&#x7684;&#x6807;&#x9898; | &#x529F;&#x80FD;&#x8BF4;&#x660E;                                                              |
+| ------------ | --------------------------------------------------------------------- |
+| NAME         | &#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x548C;&#x4ECB;&#x7ECD;                                                      |
+| SYNOPSIS     | &#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;                                                  |
 | DESCRIPTION  | &#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#xFF0C;&#x5404;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x4F1A;&#x51FA;&#x73B0;&#x5728;OPTIONS&#x4E2D; |
-| OPTIONS      | &#x547D;&#x4EE4;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x9009;&#x9879;&#x7684;&#x8BF4;&#x660E;                                       |
-| EXAMPLES     | &#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x8003;&#x4F8B;&#x5B50;                                         |
-| EXIT STATUS  | &#x547D;&#x4EE4;&#x7ED3;&#x675F;&#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x901A;&#x5E38;0&#x8868;&#x793A;&#x6210;&#x529F;&#x6267;&#x884C;                      |
-| SEE ALSO     | &#x548C;&#x547D;&#x4EE4;&#x76F8;&#x5173;&#x7684;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x6216;&#x4FE1;&#x606F;                                   |
-| BUGS         | &#x548C;&#x547D;&#x4EE4;&#x76F8;&#x5173;&#x7684;&#x7F3A;&#x9677;&#x7684;&#x63CF;&#x8FF0;                                       |
-| AUTHOR       | &#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x4F5C;&#x8005;&#x4ECB;&#x7ECD;                                             |</p>
+| OPTIONS      | &#x547D;&#x4EE4;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x9009;&#x9879;&#x7684;&#x8BF4;&#x660E;                                                |
+| EXAMPLES     | &#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x8003;&#x4F8B;&#x5B50;                                                  |
+| EXIT STATUS  | &#x547D;&#x4EE4;&#x7ED3;&#x675F;&#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x901A;&#x5E38;0&#x8868;&#x793A;&#x6210;&#x529F;&#x6267;&#x884C;                               |
+| SEE ALSO     | &#x548C;&#x547D;&#x4EE4;&#x76F8;&#x5173;&#x7684;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x6216;&#x4FE1;&#x606F;                                            |
+| BUGS         | &#x548C;&#x547D;&#x4EE4;&#x76F8;&#x5173;&#x7684;&#x7F3A;&#x9677;&#x7684;&#x63CF;&#x8FF0;                                                |
+| AUTHOR       | &#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x4F5C;&#x8005;&#x4ECB;&#x7ECD;                                                      |</p>
 </li>
 </ol>
 
@@ -3580,7 +3656,7 @@ install_redis &apos;http://download.redis.io/releases/&apos; $1
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"next":{"title":"Day 36 45","level":"1.6","depth":1,"ref":"","articles":[{"title":"36.关系型数据库和MySQL概述","level":"1.6.1","depth":2,"path":"Day36-45/36.关系型数据库和MySQL概述.md","ref":"Day36-45/36.关系型数据库和MySQL概述.md","articles":[]},{"title":"37.SQL详解之DDL","level":"1.6.2","depth":2,"path":"Day36-45/37.SQL详解之DDL.md","ref":"Day36-45/37.SQL详解之DDL.md","articles":[]},{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},{"title":"39.SQL详解之DQL","level":"1.6.4","depth":2,"path":"Day36-45/39.SQL详解之DQL.md","ref":"Day36-45/39.SQL详解之DQL.md","articles":[]},{"title":"40.SQL详解之DCL","level":"1.6.5","depth":2,"path":"Day36-45/40.SQL详解之DCL.md","ref":"Day36-45/40.SQL详解之DCL.md","articles":[]},{"title":"41.MySQL新特性","level":"1.6.6","depth":2,"path":"Day36-45/41.MySQL新特性.md","ref":"Day36-45/41.MySQL新特性.md","articles":[]},{"title":"42.视图、函数和过程","level":"1.6.7","depth":2,"path":"Day36-45/42.视图、函数和过程.md","ref":"Day36-45/42.视图、函数和过程.md","articles":[]},{"title":"43.索引","level":"1.6.8","depth":2,"path":"Day36-45/43.索引.md","ref":"Day36-45/43.索引.md","articles":[]},{"title":"44.Python接入MySQL数据库","level":"1.6.9","depth":2,"path":"Day36-45/44.Python接入MySQL数据库.md","ref":"Day36-45/44.Python接入MySQL数据库.md","articles":[]},{"title":"45.大数据平台和HiveSQL","level":"1.6.10","depth":2,"path":"Day36-45/45.大数据平台和HiveSQL.md","ref":"Day36-45/45.大数据平台和HiveSQL.md","articles":[]}]},"previous":{"title":"Day 31 35","level":"1.5","depth":1,"ref":"","articles":[{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"path":"Day31-35/31-35.玩转Linux操作系统.md","ref":"Day31-35/31-35.玩转Linux操作系统.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day31-35/31-35.玩转Linux操作系统.md","mtime":"2024-07-05T03:42:44.983Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"next":{"title":"Day 36 45","level":"1.6","depth":1,"ref":"","articles":[{"title":"36.关系型数据库和MySQL概述","level":"1.6.1","depth":2,"path":"Day36-45/36.关系型数据库和MySQL概述.md","ref":"Day36-45/36.关系型数据库和MySQL概述.md","articles":[]},{"title":"37.SQL详解之DDL","level":"1.6.2","depth":2,"path":"Day36-45/37.SQL详解之DDL.md","ref":"Day36-45/37.SQL详解之DDL.md","articles":[]},{"title":"38.SQL详解之DML","level":"1.6.3","depth":2,"path":"Day36-45/38.SQL详解之DML.md","ref":"Day36-45/38.SQL详解之DML.md","articles":[]},{"title":"39.SQL详解之DQL","level":"1.6.4","depth":2,"path":"Day36-45/39.SQL详解之DQL.md","ref":"Day36-45/39.SQL详解之DQL.md","articles":[]},{"title":"40.SQL详解之DCL","level":"1.6.5","depth":2,"path":"Day36-45/40.SQL详解之DCL.md","ref":"Day36-45/40.SQL详解之DCL.md","articles":[]},{"title":"41.MySQL新特性","level":"1.6.6","depth":2,"path":"Day36-45/41.MySQL新特性.md","ref":"Day36-45/41.MySQL新特性.md","articles":[]},{"title":"42.视图、函数和过程","level":"1.6.7","depth":2,"path":"Day36-45/42.视图、函数和过程.md","ref":"Day36-45/42.视图、函数和过程.md","articles":[]},{"title":"43.索引","level":"1.6.8","depth":2,"path":"Day36-45/43.索引.md","ref":"Day36-45/43.索引.md","articles":[]},{"title":"44.Python接入MySQL数据库","level":"1.6.9","depth":2,"path":"Day36-45/44.Python接入MySQL数据库.md","ref":"Day36-45/44.Python接入MySQL数据库.md","articles":[]},{"title":"45.大数据平台和HiveSQL","level":"1.6.10","depth":2,"path":"Day36-45/45.大数据平台和HiveSQL.md","ref":"Day36-45/45.大数据平台和HiveSQL.md","articles":[]}]},"previous":{"title":"Day 31 35","level":"1.5","depth":1,"ref":"","articles":[{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"path":"Day31-35/31-35.玩转Linux操作系统.md","ref":"Day31-35/31-35.玩转Linux操作系统.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day31-35/31-35.玩转Linux操作系统.md","mtime":"2024-07-05T07:21:41.996Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

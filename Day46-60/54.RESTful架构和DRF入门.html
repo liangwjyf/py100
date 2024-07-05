@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -2127,14 +2136,15 @@ REST_FRAMEWORK = {
 <p>JSON Web Token&#x901A;&#x5E38;&#x7B80;&#x79F0;&#x4E3A;JWT&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x5F00;&#x653E;&#x6807;&#x51C6;&#xFF08;RFC 7519&#xFF09;&#x3002;&#x968F;&#x7740;RESTful&#x67B6;&#x6784;&#x7684;&#x6D41;&#x884C;&#xFF0C;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x9879;&#x76EE;&#x4F7F;&#x7528;JWT&#x4F5C;&#x4E3A;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x7684;&#x65B9;&#x5F0F;&#x3002;JWT&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E09;&#x4E2A;JSON&#x5BF9;&#x8C61;&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x540E;&#xFF0C;&#x7528;<code>.</code>&#x5206;&#x9694;&#x5E76;&#x7EC4;&#x5408;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;JSON&#x5BF9;&#x8C61;&#x5206;&#x522B;&#x662F;&#x5934;&#x90E8;&#xFF08;header&#xFF09;&#x3001;&#x8F7D;&#x8377;&#xFF08;payload&#xFF09;&#x548C;&#x7B7E;&#x540D;&#xFF08;signature&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
 <p><img src="res/json-web-token.png" alt=""></p>
 <ol>
-<li><p>&#x5934;&#x90E8;</p>
-<pre><code class="lang-JSON"> {
-   <span class="hljs-string">&quot;alg&quot;</span>: <span class="hljs-string">&quot;HS256&quot;</span>,
-   <span class="hljs-string">&quot;typ&quot;</span>: <span class="hljs-string">&quot;JWT&quot;</span>
- }
+<li>&#x5934;&#x90E8;</li>
+</ol>
+<pre><code class="lang-JSON">    {
+      <span class="hljs-string">&quot;alg&quot;</span>: <span class="hljs-string">&quot;HS256&quot;</span>,
+      <span class="hljs-string">&quot;typ&quot;</span>: <span class="hljs-string">&quot;JWT&quot;</span>
+    }
 </code></pre>
-<p> &#x5176;&#x4E2D;&#xFF0C;<code>alg</code>&#x5C5E;&#x6027;&#x8868;&#x793A;&#x7B7E;&#x540D;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;HMAC SHA256&#xFF08;&#x7B80;&#x5199;&#x6210;<code>HS256</code>&#xFF09;&#xFF1B;<code>typ</code>&#x5C5E;&#x6027;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x4EE4;&#x724C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;JWT&#x4E2D;&#x90FD;&#x7EDF;&#x4E00;&#x4E66;&#x5199;&#x4E3A;<code>JWT</code>&#x3002;</p>
-</li>
+<pre><code>&#x5176;&#x4E2D;&#xFF0C;`alg`&#x5C5E;&#x6027;&#x8868;&#x793A;&#x7B7E;&#x540D;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;HMAC SHA256&#xFF08;&#x7B80;&#x5199;&#x6210;`HS256`&#xFF09;&#xFF1B;`typ`&#x5C5E;&#x6027;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x4EE4;&#x724C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;JWT&#x4E2D;&#x90FD;&#x7EDF;&#x4E00;&#x4E66;&#x5199;&#x4E3A;`JWT`&#x3002;
+</code></pre><ol>
 <li><p>&#x8F7D;&#x8377;</p>
 <p> &#x8F7D;&#x8377;&#x90E8;&#x5206;&#x7528;&#x6765;&#x5B58;&#x653E;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#x3002;JWT&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x89C4;&#x5B9A;&#x4E86;7&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x5B57;&#x6BB5;&#xFF1A;</p>
 <ul>
@@ -2146,23 +2156,25 @@ REST_FRAMEWORK = {
 <li>iat&#xFF1A;&#x7B7E;&#x53D1;&#x65F6;&#x95F4;</li>
 <li><p>jti&#xFF1A;&#x7F16;&#x53F7;</p>
 <p>&#x9664;&#x4E86;&#x5B98;&#x65B9;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5E94;&#x7528;&#x7684;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<pre><code class="lang-JSON">{
-<span class="hljs-string">&quot;sub&quot;</span>: <span class="hljs-string">&quot;1234567890&quot;</span>,
-<span class="hljs-string">&quot;nickname&quot;</span>: <span class="hljs-string">&quot;jackfrued&quot;</span>,
-<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;admin&quot;</span>
-}
-</code></pre>
 </li>
 </ul>
 </li>
+</ol>
+<pre><code class="lang-JSON">    {
+      <span class="hljs-string">&quot;sub&quot;</span>: <span class="hljs-string">&quot;1234567890&quot;</span>,
+      <span class="hljs-string">&quot;nickname&quot;</span>: <span class="hljs-string">&quot;jackfrued&quot;</span>,
+      <span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;admin&quot;</span>
+    }
+</code></pre>
+<ol>
 <li><p>&#x7B7E;&#x540D;</p>
 <p> &#x7B7E;&#x540D;&#x90E8;&#x5206;&#x662F;&#x5BF9;&#x524D;&#x9762;&#x4E24;&#x90E8;&#x5206;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6307;&#x7EB9;&#xFF0C;&#x9632;&#x6B62;&#x6570;&#x636E;&#x4F2A;&#x9020;&#x548C;&#x7BE1;&#x6539;&#x3002;&#x5B9E;&#x73B0;&#x7B7E;&#x540D;&#x9996;&#x5148;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;&#x3002;&#x8FD9;&#x4E2A;&#x5BC6;&#x94A5;&#x53EA;&#x6709;&#x670D;&#x52A1;&#x5668;&#x624D;&#x77E5;&#x9053;&#xFF0C;&#x4E0D;&#x80FD;&#x6CC4;&#x9732;&#x7ED9;&#x7528;&#x6237;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x5934;&#x90E8;&#x6307;&#x5B9A;&#x7684;&#x7B7E;&#x540D;&#x7B97;&#x6CD5;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;<code>HS256</code>&#xFF09;&#xFF0C;&#x6309;&#x7167;&#x4E0B;&#x9762;&#x7684;&#x516C;&#x5F0F;&#x4EA7;&#x751F;&#x7B7E;&#x540D;&#x3002;</p>
-<pre><code class="lang-Python"> HS256(base64Encode(header) + <span class="hljs-string">&apos;.&apos;</span> + base64Encode(payload), secret)
-</code></pre>
-<p> &#x7B97;&#x51FA;&#x7B7E;&#x540D;&#x4EE5;&#x540E;&#xFF0C;&#x628A;&#x5934;&#x90E8;&#x3001;&#x8F7D;&#x8377;&#x3001;&#x7B7E;&#x540D;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#x62FC;&#x63A5;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x7528;<code>.</code>&#x8FDB;&#x884C;&#x5206;&#x9694;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;JWT&#x5C31;&#x751F;&#x6210;&#x597D;&#x4E86;&#x3002;</p>
 </li>
 </ol>
-<h4 id="jwt&#x7684;&#x4F18;&#x7F3A;&#x70B9;">JWT&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h4>
+<pre><code class="lang-Python">    HS256(base64Encode(header) + <span class="hljs-string">&apos;.&apos;</span> + base64Encode(payload), secret)
+</code></pre>
+<pre><code>&#x7B97;&#x51FA;&#x7B7E;&#x540D;&#x4EE5;&#x540E;&#xFF0C;&#x628A;&#x5934;&#x90E8;&#x3001;&#x8F7D;&#x8377;&#x3001;&#x7B7E;&#x540D;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#x62FC;&#x63A5;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x7528;`.`&#x8FDB;&#x884C;&#x5206;&#x9694;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;JWT&#x5C31;&#x751F;&#x6210;&#x597D;&#x4E86;&#x3002;
+</code></pre><h4 id="jwt&#x7684;&#x4F18;&#x7F3A;&#x70B9;">JWT&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h4>
 <p>&#x4F7F;&#x7528;JWT&#x7684;&#x4F18;&#x70B9;&#x975E;&#x5E38;&#x660E;&#x663E;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
 <ol>
 <li>&#x66F4;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x6C34;&#x5E73;&#x6269;&#x5C55;&#xFF0C;&#x56E0;&#x4E3A;&#x4EE4;&#x724C;&#x4FDD;&#x5B58;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;</li>
@@ -2237,7 +2249,7 @@ token = jwt.encode(payload, settings.SECRET_KEY).decode()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"54.RESTful架构和DRF入门","level":"1.7.9","depth":2,"next":{"title":"55.RESTful架构和DRF进阶","level":"1.7.10","depth":2,"path":"Day46-60/55.RESTful架构和DRF进阶.md","ref":"Day46-60/55.RESTful架构和DRF进阶.md","articles":[]},"previous":{"title":"53.前后端分离开发入门","level":"1.7.8","depth":2,"path":"Day46-60/53.前后端分离开发入门.md","ref":"Day46-60/53.前后端分离开发入门.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day46-60/54.RESTful架构和DRF入门.md","mtime":"2024-07-05T04:10:10.398Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"54.RESTful架构和DRF入门","level":"1.7.9","depth":2,"next":{"title":"55.RESTful架构和DRF进阶","level":"1.7.10","depth":2,"path":"Day46-60/55.RESTful架构和DRF进阶.md","ref":"Day46-60/55.RESTful架构和DRF进阶.md","articles":[]},"previous":{"title":"53.前后端分离开发入门","level":"1.7.8","depth":2,"path":"Day46-60/53.前后端分离开发入门.md","ref":"Day46-60/53.前后端分离开发入门.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day46-60/54.RESTful架构和DRF入门.md","mtime":"2024-07-05T07:21:41.905Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

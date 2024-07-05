@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1876,44 +1885,47 @@
 <p>&#x6839;&#x636E;&#x4E0A;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x9879;&#x76EE;&#x9700;&#x6C42;&#xFF0C;&#x6211;&#x4EEC;&#x51C6;&#x5907;&#x4E86;&#x56DB;&#x4E2A;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x5C55;&#x793A;&#x5B66;&#x79D1;&#x7684;&#x9875;&#x9762;<code>subjects.html</code>&#xFF0C;&#x663E;&#x793A;&#x5B66;&#x79D1;&#x8001;&#x5E08;&#x7684;&#x9875;&#x9762;<code>teachers.html</code>&#xFF0C;&#x767B;&#x5F55;&#x9875;&#x9762;<code>login.html</code>&#xFF0C;&#x6CE8;&#x518C;&#x9875;&#x9762;<code>register.html</code>&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x5C06;&#x9759;&#x6001;&#x9875;&#x4FEE;&#x6539;&#x4E3A;Django&#x9879;&#x76EE;&#x6240;&#x9700;&#x7684;&#x6A21;&#x677F;&#x9875;&#x3002;</p>
 <h3 id="&#x914D;&#x7F6E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;mysql">&#x914D;&#x7F6E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;MySQL</h3>
 <ol>
-<li><p>&#x5728;MySQL&#x4E2D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x521B;&#x5EFA;&#x7528;&#x6237;&#xFF0C;&#x6388;&#x6743;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> vote <span class="hljs-keyword">default</span> <span class="hljs-keyword">charset</span> utf8;
-<span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> <span class="hljs-string">&apos;hellokitty&apos;</span>@<span class="hljs-string">&apos;%&apos;</span> <span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;Hellokitty.618&apos;</span>;
-<span class="hljs-keyword">grant</span> all <span class="hljs-keyword">privileges</span> <span class="hljs-keyword">on</span> vote.* <span class="hljs-keyword">to</span> <span class="hljs-string">&apos;hellokitty&apos;</span>@<span class="hljs-string">&apos;%&apos;</span>;
-<span class="hljs-keyword">flush</span> <span class="hljs-keyword">privileges</span>;
+<li>&#x5728;MySQL&#x4E2D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x521B;&#x5EFA;&#x7528;&#x6237;&#xFF0C;&#x6388;&#x6743;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> vote <span class="hljs-keyword">default</span> <span class="hljs-keyword">charset</span> utf8;
+   <span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> <span class="hljs-string">&apos;hellokitty&apos;</span>@<span class="hljs-string">&apos;%&apos;</span> <span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;Hellokitty.618&apos;</span>;
+   <span class="hljs-keyword">grant</span> all <span class="hljs-keyword">privileges</span> <span class="hljs-keyword">on</span> vote.* <span class="hljs-keyword">to</span> <span class="hljs-string">&apos;hellokitty&apos;</span>@<span class="hljs-string">&apos;%&apos;</span>;
+   <span class="hljs-keyword">flush</span> <span class="hljs-keyword">privileges</span>;
 </code></pre>
-</li>
-<li><p>&#x5728;MySQL&#x4E2D;&#x521B;&#x5EFA;&#x4FDD;&#x5B58;&#x5B66;&#x79D1;&#x548C;&#x8001;&#x5E08;&#x4FE1;&#x606F;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#xFF08;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x8868;&#x7A0D;&#x540E;&#x5904;&#x7406;&#xFF09;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">use</span> vote;
+<ol>
+<li>&#x5728;MySQL&#x4E2D;&#x521B;&#x5EFA;&#x4FDD;&#x5B58;&#x5B66;&#x79D1;&#x548C;&#x8001;&#x5E08;&#x4FE1;&#x606F;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#xFF08;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x8868;&#x7A0D;&#x540E;&#x5904;&#x7406;&#xFF09;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">use</span> vote;
 
-<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x5B66;&#x79D1;&#x8868;</span>
-<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_subject`</span>
-(
-    <span class="hljs-string">`no`</span> <span class="hljs-built_in">integer</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x7F16;&#x53F7;&apos;</span>,
-    <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x540D;&#x79F0;&apos;</span>,
-    <span class="hljs-string">`intro`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1000</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x4ECB;&#x7ECD;&apos;</span>,
-    <span class="hljs-string">`is_hot`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x662F;&#x4E0D;&#x662F;&#x70ED;&#x95E8;&#x5B66;&#x79D1;&apos;</span>,
-    primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`no`</span>)
-);
-<span class="hljs-comment">-- &#x521B;&#x5EFA;&#x8001;&#x5E08;&#x8868;</span>
-<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_teacher`</span>
-(
-    <span class="hljs-string">`no`</span> <span class="hljs-built_in">integer</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x7F16;&#x53F7;&apos;</span>,
-    <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x59D3;&#x540D;&apos;</span>,
-    <span class="hljs-string">`sex`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">1</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x6027;&#x522B;&apos;</span>,
-    <span class="hljs-string">`birth`</span> <span class="hljs-built_in">date</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x51FA;&#x751F;&#x65E5;&#x671F;&apos;</span>,
-    <span class="hljs-string">`intro`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1000</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x4ECB;&#x7ECD;&apos;</span>,
-    <span class="hljs-string">`photo`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x7167;&#x7247;&apos;</span>,
-    <span class="hljs-string">`gcount`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x597D;&#x8BC4;&#x6570;&apos;</span>,
-    <span class="hljs-string">`bcount`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5DEE;&#x8BC4;&#x6570;&apos;</span>,
-    <span class="hljs-string">`sno`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6240;&#x5C5E;&#x5B66;&#x79D1;&apos;</span>,
-    primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`no`</span>),
-    foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`sno`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_subject`</span> (<span class="hljs-string">`no`</span>)
-);
+   <span class="hljs-comment">-- &#x521B;&#x5EFA;&#x5B66;&#x79D1;&#x8868;</span>
+   <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_subject`</span>
+   (
+       <span class="hljs-string">`no`</span> <span class="hljs-built_in">integer</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x7F16;&#x53F7;&apos;</span>,
+       <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x540D;&#x79F0;&apos;</span>,
+       <span class="hljs-string">`intro`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1000</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5B66;&#x79D1;&#x4ECB;&#x7ECD;&apos;</span>,
+       <span class="hljs-string">`is_hot`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x662F;&#x4E0D;&#x662F;&#x70ED;&#x95E8;&#x5B66;&#x79D1;&apos;</span>,
+       primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`no`</span>)
+   );
+   <span class="hljs-comment">-- &#x521B;&#x5EFA;&#x8001;&#x5E08;&#x8868;</span>
+   <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-string">`tb_teacher`</span>
+   (
+       <span class="hljs-string">`no`</span> <span class="hljs-built_in">integer</span> auto_increment <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x7F16;&#x53F7;&apos;</span>,
+       <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x59D3;&#x540D;&apos;</span>,
+       <span class="hljs-string">`sex`</span> <span class="hljs-built_in">boolean</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">1</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x6027;&#x522B;&apos;</span>,
+       <span class="hljs-string">`birth`</span> <span class="hljs-built_in">date</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x51FA;&#x751F;&#x65E5;&#x671F;&apos;</span>,
+       <span class="hljs-string">`intro`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1000</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x4ECB;&#x7ECD;&apos;</span>,
+       <span class="hljs-string">`photo`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x8001;&#x5E08;&#x7167;&#x7247;&apos;</span>,
+       <span class="hljs-string">`gcount`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x597D;&#x8BC4;&#x6570;&apos;</span>,
+       <span class="hljs-string">`bcount`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x5DEE;&#x8BC4;&#x6570;&apos;</span>,
+       <span class="hljs-string">`sno`</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> <span class="hljs-keyword">comment</span> <span class="hljs-string">&apos;&#x6240;&#x5C5E;&#x5B66;&#x79D1;&apos;</span>,
+       primary <span class="hljs-keyword">key</span> (<span class="hljs-string">`no`</span>),
+       foreign <span class="hljs-keyword">key</span> (<span class="hljs-string">`sno`</span>) <span class="hljs-keyword">references</span> <span class="hljs-string">`tb_subject`</span> (<span class="hljs-string">`no`</span>)
+   );
 </code></pre>
-</li>
-<li><p>&#x5728;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x4E2D;&#x5B89;&#x88C5;&#x8FDE;&#x63A5;MySQL&#x6570;&#x636E;&#x5E93;&#x6240;&#x9700;&#x7684;&#x4F9D;&#x8D56;&#x9879;&#x3002;</p>
-<pre><code class="lang-Bash">pip install mysqlclient
+<ol>
+<li>&#x5728;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x4E2D;&#x5B89;&#x88C5;&#x8FDE;&#x63A5;MySQL&#x6570;&#x636E;&#x5E93;&#x6240;&#x9700;&#x7684;&#x4F9D;&#x8D56;&#x9879;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   pip install mysqlclient
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5982;&#x679C;&#x56E0;&#x4E3A;&#x67D0;&#x4E9B;&#x539F;&#x56E0;&#x65E0;&#x6CD5;&#x5B89;&#x88C5;<code>mysqlclient</code>&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x66FF;&#x4EE3;&#x54C1;<code>pymysql</code>&#xFF0C;<code>pymysql</code>&#x662F;&#x7528;&#x7EAF;Python&#x5F00;&#x53D1;&#x7684;&#x8FDE;&#x63A5;MySQL&#x7684;Python&#x5E93;&#xFF0C;&#x5B89;&#x88C5;&#x66F4;&#x5BB9;&#x6613;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x5728;Django&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x7684;<code>__init__.py</code>&#x4E2D;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
@@ -1923,86 +1935,91 @@ pymysql.install_as_MySQLdb()
 </code></pre>
 <p>&#x5982;&#x679C;&#x4F7F;&#x7528;Django 2.2&#x53CA;&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#xFF0C;&#x8FD8;&#x4F1A;&#x9047;&#x5230;PyMySQL&#x8DDF;Django&#x6846;&#x67B6;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#x4F1A;&#x5BFC;&#x81F4;&#x9879;&#x76EE;&#x65E0;&#x6CD5;&#x8FD0;&#x884C;&#xFF0C;&#x9700;&#x8981;&#x6309;&#x7167;GitHub&#x4E0A;PyMySQL&#x4ED3;&#x5E93;<a href="https://github.com/PyMySQL/PyMySQL/issues/790" target="_blank">Issues</a>&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x603B;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;<code>pymysql</code>&#x4F1A;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x9996;&#x9009;&#x5B89;&#x88C5;<code>mysqlclient</code>&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x4FEE;&#x6539;&#x9879;&#x76EE;&#x7684;settings.py&#x6587;&#x4EF6;&#xFF0C;&#x9996;&#x5148;&#x5C06;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;<code>polls</code>&#x6DFB;&#x52A0;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x9879;&#x76EE;&#xFF08;<code>INSTALLED_APPS</code>&#xFF09;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x914D;&#x7F6E;MySQL&#x4F5C;&#x4E3A;&#x6301;&#x4E45;&#x5316;&#x65B9;&#x6848;&#x3002;</p>
-<pre><code class="lang-Python">INSTALLED_APPS = [
-    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
-    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
-    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
-    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
-    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
-    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
-    <span class="hljs-string">&apos;polls&apos;</span>,
-]
+<ol>
+<li>&#x4FEE;&#x6539;&#x9879;&#x76EE;&#x7684;settings.py&#x6587;&#x4EF6;&#xFF0C;&#x9996;&#x5148;&#x5C06;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;<code>polls</code>&#x6DFB;&#x52A0;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x9879;&#x76EE;&#xFF08;<code>INSTALLED_APPS</code>&#xFF09;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x914D;&#x7F6E;MySQL&#x4F5C;&#x4E3A;&#x6301;&#x4E45;&#x5316;&#x65B9;&#x6848;&#x3002;</li>
+</ol>
+<pre><code class="lang-Python">   INSTALLED_APPS = [
+       <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+       <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+       <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+       <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+       <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+       <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+       <span class="hljs-string">&apos;polls&apos;</span>,
+   ]
 
-DATABASES = {
-    <span class="hljs-string">&apos;default&apos;</span>: {
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x914D;&#x7F6E;</span>
-        <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.mysql&apos;</span>,
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x7684;&#x540D;&#x5B57;</span>
-        <span class="hljs-string">&apos;NAME&apos;</span>: <span class="hljs-string">&apos;vote&apos;</span>,
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;&#xFF08;&#x672C;&#x673A;&#x53EF;&#x4EE5;&#x5199;localhost&#x6216;127.0.0.1&#xFF09;</span>
-        <span class="hljs-string">&apos;HOST&apos;</span>: <span class="hljs-string">&apos;localhost&apos;</span>,
-        <span class="hljs-comment"># &#x542F;&#x52A8;MySQL&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</span>
-        <span class="hljs-string">&apos;PORT&apos;</span>: <span class="hljs-number">3306</span>,
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;&#x548C;&#x53E3;&#x4EE4;</span>
-        <span class="hljs-string">&apos;USER&apos;</span>: <span class="hljs-string">&apos;hellokitty&apos;</span>,
-        <span class="hljs-string">&apos;PASSWORD&apos;</span>: <span class="hljs-string">&apos;Hellokitty.618&apos;</span>,
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;</span>
-        <span class="hljs-string">&apos;CHARSET&apos;</span>: <span class="hljs-string">&apos;utf8&apos;</span>,
-        <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x7684;&#x65F6;&#x533A;&#x8BBE;&#x5B9A;</span>
-        <span class="hljs-string">&apos;TIME_ZONE&apos;</span>: <span class="hljs-string">&apos;Asia/Chongqing&apos;</span>,
-    }
-}
+   DATABASES = {
+       <span class="hljs-string">&apos;default&apos;</span>: {
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x914D;&#x7F6E;</span>
+           <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.mysql&apos;</span>,
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x7684;&#x540D;&#x5B57;</span>
+           <span class="hljs-string">&apos;NAME&apos;</span>: <span class="hljs-string">&apos;vote&apos;</span>,
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;&#xFF08;&#x672C;&#x673A;&#x53EF;&#x4EE5;&#x5199;localhost&#x6216;127.0.0.1&#xFF09;</span>
+           <span class="hljs-string">&apos;HOST&apos;</span>: <span class="hljs-string">&apos;localhost&apos;</span>,
+           <span class="hljs-comment"># &#x542F;&#x52A8;MySQL&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</span>
+           <span class="hljs-string">&apos;PORT&apos;</span>: <span class="hljs-number">3306</span>,
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;&#x548C;&#x53E3;&#x4EE4;</span>
+           <span class="hljs-string">&apos;USER&apos;</span>: <span class="hljs-string">&apos;hellokitty&apos;</span>,
+           <span class="hljs-string">&apos;PASSWORD&apos;</span>: <span class="hljs-string">&apos;Hellokitty.618&apos;</span>,
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;</span>
+           <span class="hljs-string">&apos;CHARSET&apos;</span>: <span class="hljs-string">&apos;utf8&apos;</span>,
+           <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x7684;&#x65F6;&#x533A;&#x8BBE;&#x5B9A;</span>
+           <span class="hljs-string">&apos;TIME_ZONE&apos;</span>: <span class="hljs-string">&apos;Asia/Chongqing&apos;</span>,
+       }
+   }
 </code></pre>
-<p>&#x5728;&#x914D;&#x7F6E;ENGINE&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x53EF;&#x9009;&#x503C;&#x5305;&#x62EC;&#xFF1A;</p>
+<p>   &#x5728;&#x914D;&#x7F6E;ENGINE&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x53EF;&#x9009;&#x503C;&#x5305;&#x62EC;&#xFF1A;</p>
 <ul>
 <li><code>&apos;django.db.backends.sqlite3&apos;</code>&#xFF1A;SQLite&#x5D4C;&#x5165;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x3002;</li>
 <li><code>&apos;django.db.backends.postgresql&apos;</code>&#xFF1A;BSD&#x8BB8;&#x53EF;&#x8BC1;&#x4E0B;&#x53D1;&#x884C;&#x7684;&#x5F00;&#x6E90;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4EA7;&#x54C1;&#x3002;</li>
 <li><code>&apos;django.db.backends.mysql&apos;</code>&#xFF1A;&#x7532;&#x9AA8;&#x6587;&#x516C;&#x53F8;&#x7ECF;&#x6D4E;&#x9AD8;&#x6548;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4EA7;&#x54C1;&#x3002;</li>
-<li><code>&apos;django.db.backends.oracle&apos;</code>&#xFF1A;&#x7532;&#x9AA8;&#x6587;&#x516C;&#x53F8;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x65D7;&#x8230;&#x4EA7;&#x54C1;&#x3002;</li>
-</ul>
+<li><p><code>&apos;django.db.backends.oracle&apos;</code>&#xFF1A;&#x7532;&#x9AA8;&#x6587;&#x516C;&#x53F8;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x65D7;&#x8230;&#x4EA7;&#x54C1;&#x3002;</p>
 <p>&#x5176;&#x4ED6;&#x7684;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;<a href="https://docs.djangoproject.com/zh-hans/2.0/ref/databases/#third-party-notes" target="_blank">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;</a>&#x7684;&#x90E8;&#x5206;&#x3002;</p>
 </li>
-<li><p>Django&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;ORM&#x6765;&#x89E3;&#x51B3;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x95EE;&#x9898;&#xFF0C;ORM&#x7FFB;&#x8BD1;&#x6210;&#x4E2D;&#x6587;&#x53EB;&#x201C;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x201D;&#x3002;&#x56E0;&#x4E3A;Python&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x6211;&#x4EEC;&#x5728;Python&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#xFF0C;&#x7528;&#x4E8C;&#x7EF4;&#x8868;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x6A21;&#x578B;&#x5E76;&#x4E0D;&#x5339;&#x914D;&#x3002;&#x4F7F;&#x7528;ORM&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#x5230;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x7684;<strong>&#x53CC;&#x5411;&#x8F6C;&#x6362;</strong>&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x7528;&#x5728;Python&#x4EE3;&#x7801;&#x4E2D;&#x4E66;&#x5199;SQL&#x8BED;&#x53E5;&#x548C;&#x6E38;&#x6807;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x90FD;&#x4F1A;&#x7531;ORM&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x3002;&#x5229;&#x7528;Django&#x7684;ORM&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x5B66;&#x79D1;&#x8868;&#x548C;&#x8001;&#x5E08;&#x8868;&#x53D8;&#x6210;Django&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x3002;</p>
-<pre><code class="lang-Bash">python manage.py inspectdb &gt; polls/models.py
-</code></pre>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x7A0D;&#x4F5C;&#x8C03;&#x6574;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>```Python
-from django.db import models</p>
-</li>
+</ul>
+<ol>
+<li>Django&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;ORM&#x6765;&#x89E3;&#x51B3;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x95EE;&#x9898;&#xFF0C;ORM&#x7FFB;&#x8BD1;&#x6210;&#x4E2D;&#x6587;&#x53EB;&#x201C;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x201D;&#x3002;&#x56E0;&#x4E3A;Python&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x6211;&#x4EEC;&#x5728;Python&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#xFF0C;&#x7528;&#x4E8C;&#x7EF4;&#x8868;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x6A21;&#x578B;&#x5E76;&#x4E0D;&#x5339;&#x914D;&#x3002;&#x4F7F;&#x7528;ORM&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#x5230;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x7684;<strong>&#x53CC;&#x5411;&#x8F6C;&#x6362;</strong>&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x7528;&#x5728;Python&#x4EE3;&#x7801;&#x4E2D;&#x4E66;&#x5199;SQL&#x8BED;&#x53E5;&#x548C;&#x6E38;&#x6807;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x90FD;&#x4F1A;&#x7531;ORM&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x3002;&#x5229;&#x7528;Django&#x7684;ORM&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x5B66;&#x79D1;&#x8868;&#x548C;&#x8001;&#x5E08;&#x8868;&#x53D8;&#x6210;Django&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x3002;</li>
 </ol>
-<p>   class Subject(models.Model):
-       no = models.AutoField(primary_key=True, verbose_name=&apos;&#x7F16;&#x53F7;&apos;)
-       name = models.CharField(max_length=50, verbose_name=&apos;&#x540D;&#x79F0;&apos;)
-       intro = models.CharField(max_length=1000, verbose_name=&apos;&#x4ECB;&#x7ECD;&apos;)
-       is_hot = models.BooleanField(verbose_name=&apos;&#x662F;&#x5426;&#x70ED;&#x95E8;&apos;)</p>
-<pre><code>   class Meta:
-       managed = False
-       db_table = &apos;tb_subject&apos;
-</code></pre><p>   class Teacher(models.Model):
-       no = models.AutoField(primary_key=True, verbose_name=&apos;&#x7F16;&#x53F7;&apos;)
-       name = models.CharField(max_length=20, verbose_name=&apos;&#x59D3;&#x540D;&apos;)
-       sex = models.BooleanField(default=True, verbose_name=&apos;&#x6027;&#x522B;&apos;)
-       birth = models.DateField(verbose_name=&apos;&#x51FA;&#x751F;&#x65E5;&#x671F;&apos;)
-       intro = models.CharField(max_length=1000, verbose_name=&apos;&#x4E2A;&#x4EBA;&#x4ECB;&#x7ECD;&apos;)
-       photo = models.ImageField(max_length=255, verbose_name=&apos;&#x7167;&#x7247;&apos;)
-       good_count = models.IntegerField(default=0, db_column=&apos;gcount&apos;, verbose_name=&apos;&#x597D;&#x8BC4;&#x6570;&apos;)
-       bad_count = models.IntegerField(default=0, db_column=&apos;bcount&apos;, verbose_name=&apos;&#x5DEE;&#x8BC4;&#x6570;&apos;)
-       subject = models.ForeignKey(Subject, models.DO_NOTHING, db_column=&apos;sno&apos;)</p>
-<pre><code>   class Meta:
-       managed = False
-       db_table = &apos;tb_teacher&apos;
-</code></pre><pre><code>
-   &gt; **&#x8BF4;&#x660E;**&#xFF1A;&#x6A21;&#x578B;&#x7C7B;&#x90FD;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#x81EA;`Model`&#x7C7B;&#xFF0C;&#x6A21;&#x578B;&#x7C7B;&#x8DDF;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#x5BF9;&#x5E94;&#xFF0C;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x8DDF;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x5BF9;&#x5E94;&#xFF0C;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8DDF;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x3002;&#x5982;&#x679C;&#x5BF9;&#x4E0A;&#x9762;&#x6A21;&#x578B;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x7406;&#x89E3;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x672C;&#x6587;&#x540E;&#x9762;&#x63D0;&#x4F9B;&#x7684;&#x201C;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x53C2;&#x8003;&#x201D;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#x3002;
+<pre><code class="lang-Bash">   python manage.py inspectdb &gt; polls/models.py
+</code></pre>
+<p>   &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x7A0D;&#x4F5C;&#x8C03;&#x6574;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Python">   <span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
 
-### &#x4F7F;&#x7528;ORM&#x5B8C;&#x6210;&#x6A21;&#x578B;&#x7684;CRUD&#x64CD;&#x4F5C;
 
-&#x6709;&#x4E86;Django&#x6846;&#x67B6;&#x7684;ORM&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x6570;&#x636E;&#x7684;CRUD&#xFF08;&#x589E;&#x5220;&#x6539;&#x67E5;&#xFF09;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;PyCharm&#x7684;&#x7EC8;&#x7AEF;&#x4E2D;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FDB;&#x5165;&#x5230;Django&#x9879;&#x76EE;&#x7684;&#x4EA4;&#x4E92;&#x5F0F;&#x73AF;&#x5883;&#xFF0C;&#x7136;&#x540E;&#x5C1D;&#x8BD5;&#x5BF9;&#x6A21;&#x578B;&#x7684;&#x64CD;&#x4F5C;&#x3002;
+   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span><span class="hljs-params">(models.Model)</span>:</span>
+       no = models.AutoField(primary_key=<span class="hljs-keyword">True</span>, verbose_name=<span class="hljs-string">&apos;&#x7F16;&#x53F7;&apos;</span>)
+       name = models.CharField(max_length=<span class="hljs-number">50</span>, verbose_name=<span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>)
+       intro = models.CharField(max_length=<span class="hljs-number">1000</span>, verbose_name=<span class="hljs-string">&apos;&#x4ECB;&#x7ECD;&apos;</span>)
+       is_hot = models.BooleanField(verbose_name=<span class="hljs-string">&apos;&#x662F;&#x5426;&#x70ED;&#x95E8;&apos;</span>)
 
-```Bash
-python manage.py shell
-</code></pre><h4 id="&#x65B0;&#x589E;">&#x65B0;&#x589E;</h4>
+       <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+           managed = <span class="hljs-keyword">False</span>
+           db_table = <span class="hljs-string">&apos;tb_subject&apos;</span>
+
+
+   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(models.Model)</span>:</span>
+       no = models.AutoField(primary_key=<span class="hljs-keyword">True</span>, verbose_name=<span class="hljs-string">&apos;&#x7F16;&#x53F7;&apos;</span>)
+       name = models.CharField(max_length=<span class="hljs-number">20</span>, verbose_name=<span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>)
+       sex = models.BooleanField(default=<span class="hljs-keyword">True</span>, verbose_name=<span class="hljs-string">&apos;&#x6027;&#x522B;&apos;</span>)
+       birth = models.DateField(verbose_name=<span class="hljs-string">&apos;&#x51FA;&#x751F;&#x65E5;&#x671F;&apos;</span>)
+       intro = models.CharField(max_length=<span class="hljs-number">1000</span>, verbose_name=<span class="hljs-string">&apos;&#x4E2A;&#x4EBA;&#x4ECB;&#x7ECD;&apos;</span>)
+       photo = models.ImageField(max_length=<span class="hljs-number">255</span>, verbose_name=<span class="hljs-string">&apos;&#x7167;&#x7247;&apos;</span>)
+       good_count = models.IntegerField(default=<span class="hljs-number">0</span>, db_column=<span class="hljs-string">&apos;gcount&apos;</span>, verbose_name=<span class="hljs-string">&apos;&#x597D;&#x8BC4;&#x6570;&apos;</span>)
+       bad_count = models.IntegerField(default=<span class="hljs-number">0</span>, db_column=<span class="hljs-string">&apos;bcount&apos;</span>, verbose_name=<span class="hljs-string">&apos;&#x5DEE;&#x8BC4;&#x6570;&apos;</span>)
+       subject = models.ForeignKey(Subject, models.DO_NOTHING, db_column=<span class="hljs-string">&apos;sno&apos;</span>)
+
+       <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+           managed = <span class="hljs-keyword">False</span>
+           db_table = <span class="hljs-string">&apos;tb_teacher&apos;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x6A21;&#x578B;&#x7C7B;&#x90FD;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#x81EA;<code>Model</code>&#x7C7B;&#xFF0C;&#x6A21;&#x578B;&#x7C7B;&#x8DDF;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#x5BF9;&#x5E94;&#xFF0C;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x8DDF;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x5BF9;&#x5E94;&#xFF0C;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8DDF;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x3002;&#x5982;&#x679C;&#x5BF9;&#x4E0A;&#x9762;&#x6A21;&#x578B;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x7406;&#x89E3;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x672C;&#x6587;&#x540E;&#x9762;&#x63D0;&#x4F9B;&#x7684;&#x201C;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x53C2;&#x8003;&#x201D;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4F7F;&#x7528;orm&#x5B8C;&#x6210;&#x6A21;&#x578B;&#x7684;crud&#x64CD;&#x4F5C;">&#x4F7F;&#x7528;ORM&#x5B8C;&#x6210;&#x6A21;&#x578B;&#x7684;CRUD&#x64CD;&#x4F5C;</h3>
+<p>&#x6709;&#x4E86;Django&#x6846;&#x67B6;&#x7684;ORM&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x6570;&#x636E;&#x7684;CRUD&#xFF08;&#x589E;&#x5220;&#x6539;&#x67E5;&#xFF09;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;PyCharm&#x7684;&#x7EC8;&#x7AEF;&#x4E2D;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FDB;&#x5165;&#x5230;Django&#x9879;&#x76EE;&#x7684;&#x4EA4;&#x4E92;&#x5F0F;&#x73AF;&#x5883;&#xFF0C;&#x7136;&#x540E;&#x5C1D;&#x8BD5;&#x5BF9;&#x6A21;&#x578B;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-Bash">python manage.py shell
+</code></pre>
+<h4 id="&#x65B0;&#x589E;">&#x65B0;&#x589E;</h4>
 <pre><code class="lang-Python"><span class="hljs-keyword">from</span> polls.models <span class="hljs-keyword">import</span> Subject
 
 subject1 = Subject(name=<span class="hljs-string">&apos;Python&#x5168;&#x6808;&#x5F00;&#x53D1;&apos;</span>, intro=<span class="hljs-string">&apos;&#x5F53;&#x4E0B;&#x6700;&#x70ED;&#x95E8;&#x7684;&#x5B66;&#x79D1;&apos;</span>, is_hot=<span class="hljs-keyword">True</span>)
@@ -2095,17 +2112,19 @@ Teacher.objects.filter(subject__name__contains=&apos;&#x5168;&#x6808;&apos;)
 <h3 id="&#x5229;&#x7528;django&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x6A21;&#x578B;">&#x5229;&#x7528;Django&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x6A21;&#x578B;</h3>
 <p>&#x5728;&#x521B;&#x5EFA;&#x597D;&#x6A21;&#x578B;&#x7C7B;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Django&#x6846;&#x67B6;&#x81EA;&#x5E26;&#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5E94;&#x7528;&#xFF08;<code>admin</code>&#x5E94;&#x7528;&#xFF09;&#x5B9E;&#x73B0;&#x5BF9;&#x6A21;&#x578B;&#x7684;&#x7BA1;&#x7406;&#x3002;&#x867D;&#x7136;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x540E;&#x53F0;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5B66;&#x4E60;Django&#x6846;&#x67B6;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;<code>admin</code>&#x5E94;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x901A;&#x8FC7;&#x5B83;&#x6765;&#x4E86;&#x89E3;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x54EA;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x4F7F;&#x7528;Django&#x81EA;&#x5E26;&#x7684;<code>admin</code>&#x5E94;&#x7528;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
 <ol>
-<li><p>&#x5C06;<code>admin</code>&#x5E94;&#x7528;&#x6240;&#x9700;&#x7684;&#x8868;&#x8FC1;&#x79FB;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;<code>admin</code>&#x5E94;&#x7528;&#x672C;&#x8EAB;&#x4E5F;&#x9700;&#x8981;&#x6570;&#x636E;&#x5E93;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x800C;&#x4E14;&#x5728;<code>admin</code>&#x5E94;&#x7528;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x6A21;&#x578B;&#x8FC1;&#x79FB;&#x64CD;&#x4F5C;&#x5C31;&#x80FD;&#x81EA;&#x52A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x751F;&#x6210;&#x6240;&#x9700;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#x3002;</p>
-<pre><code class="lang-Bash">python manage.py migrate
+<li>&#x5C06;<code>admin</code>&#x5E94;&#x7528;&#x6240;&#x9700;&#x7684;&#x8868;&#x8FC1;&#x79FB;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;<code>admin</code>&#x5E94;&#x7528;&#x672C;&#x8EAB;&#x4E5F;&#x9700;&#x8981;&#x6570;&#x636E;&#x5E93;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x800C;&#x4E14;&#x5728;<code>admin</code>&#x5E94;&#x7528;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x6A21;&#x578B;&#x8FC1;&#x79FB;&#x64CD;&#x4F5C;&#x5C31;&#x80FD;&#x81EA;&#x52A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x751F;&#x6210;&#x6240;&#x9700;&#x7684;&#x4E8C;&#x7EF4;&#x8868;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   python manage.py migrate
 </code></pre>
-</li>
-<li><p>&#x521B;&#x5EFA;&#x8BBF;&#x95EE;<code>admin</code>&#x5E94;&#x7528;&#x7684;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x8D26;&#x53F7;&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x3001;&#x90AE;&#x7BB1;&#x548C;&#x53E3;&#x4EE4;&#x3002;</p>
-<pre><code class="lang-Shell">python manage.py createsuperuser
+<ol>
+<li>&#x521B;&#x5EFA;&#x8BBF;&#x95EE;<code>admin</code>&#x5E94;&#x7528;&#x7684;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x8D26;&#x53F7;&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x3001;&#x90AE;&#x7BB1;&#x548C;&#x53E3;&#x4EE4;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   python manage.py createsuperuser
 </code></pre>
 <blockquote>
 <p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x8F93;&#x5165;&#x53E3;&#x4EE4;&#x65F6;&#x6CA1;&#x6709;&#x56DE;&#x663E;&#x4E5F;&#x4E0D;&#x80FD;&#x9000;&#x683C;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x6C14;&#x5475;&#x6210;&#x5B8C;&#x6210;&#x8F93;&#x5165;&#x3002;</p>
 </blockquote>
-</li>
+<ol>
 <li><p>&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8BBF;&#x95EE;<code>http://127.0.0.1:8000/admin</code>&#xFF0C;&#x8F93;&#x5165;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x767B;&#x5F55;&#x3002;</p>
 <p><img src="../Users/Hao/Desktop/Python-100-Days/Day41-55/res/django-admin-login.png" alt=""></p>
 <p>&#x767B;&#x5F55;&#x540E;&#x8FDB;&#x5165;&#x7BA1;&#x7406;&#x5458;&#x64CD;&#x4F5C;&#x5E73;&#x53F0;&#x3002;</p>
@@ -2113,16 +2132,18 @@ Teacher.objects.filter(subject__name__contains=&apos;&#x5168;&#x6808;&apos;)
 <p>&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x6682;&#x65F6;&#x8FD8;&#x6CA1;&#x80FD;&#x5728;<code>admin</code>&#x5E94;&#x7528;&#x4E2D;&#x770B;&#x5230;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x4E3A;&#x6B64;&#x9700;&#x8981;&#x5728;<code>polls</code>&#x5E94;&#x7528;&#x7684;<code>admin.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x5BF9;&#x9700;&#x8981;&#x7BA1;&#x7406;&#x7684;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#x3002;</p>
 </li>
 <li><p>&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;&#x3002;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
-
-<span class="hljs-keyword">from</span> polls.models <span class="hljs-keyword">import</span> Subject, Teacher
-
-admin.site.register(Subject)
-admin.site.register(Teacher)
-</code></pre>
-<p>&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4E2D;&#x770B;&#x5230;&#x5B83;&#x4EEC;&#x3002;</p>
-<p><img src="res/django-admin-models.png" alt=""></p>
 </li>
+</ol>
+<pre><code class="lang-Python">   <span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+
+   <span class="hljs-keyword">from</span> polls.models <span class="hljs-keyword">import</span> Subject, Teacher
+
+   admin.site.register(Subject)
+   admin.site.register(Teacher)
+</code></pre>
+<p>   &#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7C7B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4E2D;&#x770B;&#x5230;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>   <img src="res/django-admin-models.png" alt=""></p>
+<ol>
 <li><p>&#x5BF9;&#x6A21;&#x578B;&#x8FDB;&#x884C;CRUD&#x64CD;&#x4F5C;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x5728;&#x7BA1;&#x7406;&#x5458;&#x5E73;&#x53F0;&#x5BF9;&#x6A21;&#x578B;&#x8FDB;&#x884C;C&#xFF08;&#x65B0;&#x589E;&#xFF09;&#x3001;R&#xFF08;&#x67E5;&#x770B;&#xFF09;&#x3001;U&#xFF08;&#x66F4;&#x65B0;&#xFF09;&#x3001;D&#xFF08;&#x5220;&#x9664;&#xFF09;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
 <ul>
@@ -2139,177 +2160,180 @@ admin.site.register(Teacher)
 </li>
 <li><p>&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7BA1;&#x7406;&#x7C7B;&#x3002;</p>
 <p>&#x53EF;&#x80FD;&#x5927;&#x5BB6;&#x5DF2;&#x7ECF;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#xFF0C;&#x521A;&#x624D;&#x5728;&#x540E;&#x53F0;&#x67E5;&#x770B;&#x90E8;&#x95E8;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x663E;&#x793A;&#x7684;&#x90E8;&#x95E8;&#x4FE1;&#x606F;&#x5E76;&#x4E0D;&#x76F4;&#x89C2;&#xFF0C;&#x4E3A;&#x6B64;&#x6211;&#x4EEC;&#x518D;&#x4FEE;&#x6539;<code>admin.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x6CE8;&#x518C;&#x6A21;&#x578B;&#x7BA1;&#x7406;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4E2D;&#x66F4;&#x597D;&#x7684;&#x7BA1;&#x7406;&#x6A21;&#x578B;&#x3002;</p>
-<p>```Python
-from django.contrib import admin</p>
-<p>from polls.models import Subject, Teacher</p>
 </li>
 </ol>
-<p>   class SubjectModelAdmin(admin.ModelAdmin):
-       list_display = (&apos;no&apos;, &apos;name&apos;, &apos;intro&apos;, &apos;is_hot&apos;)
-       search_fields = (&apos;name&apos;, )
-       ordering = (&apos;no&apos;, )</p>
-<p>   class TeacherModelAdmin(admin.ModelAdmin):
-       list_display = (&apos;no&apos;, &apos;name&apos;, &apos;sex&apos;, &apos;birth&apos;, &apos;good_count&apos;, &apos;bad_count&apos;, &apos;subject&apos;)
-       search_fields = (&apos;name&apos;, )
-       ordering = (&apos;no&apos;, )</p>
-<p>   admin.site.register(Subject, SubjectModelAdmin)
-   admin.site.register(Teacher, TeacherModelAdmin)</p>
-<pre><code>
-   ![](res/django-admin-view-models-subject.png)
+<pre><code class="lang-Python">    <span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
 
-   ![](res/django-admin-view-models-teacher.png)
-
-   &#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x67E5;&#x770B;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A;`Subject`&#x7C7B;&#x6DFB;&#x52A0;`__str__`&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#x8FD4;&#x56DE;&#x5B66;&#x79D1;&#x540D;&#x5B57;&#x3002;&#x8FD9;&#x6837;&#x5728;&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#x7684;&#x67E5;&#x770B;&#x8001;&#x5E08;&#x7684;&#x9875;&#x9762;&#x4E0A;&#x663E;&#x793A;&#x8001;&#x5E08;&#x6240;&#x5C5E;&#x5B66;&#x79D1;&#x65F6;&#xFF0C;&#x5C31;&#x4E0D;&#x518D;&#x662F;`Subject object(1)`&#x8FD9;&#x6837;&#x6666;&#x6DA9;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x662F;&#x5B66;&#x79D1;&#x7684;&#x540D;&#x79F0;&#x3002;
-
-### &#x5B9E;&#x73B0;&#x5B66;&#x79D1;&#x9875;&#x548C;&#x8001;&#x5E08;&#x9875;&#x6548;&#x679C;
-
-1. &#x4FEE;&#x6539;`polls/views.py`&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x5199;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x5BF9;&#x5B66;&#x79D1;&#x9875;&#x548C;&#x8001;&#x5E08;&#x9875;&#x7684;&#x6E32;&#x67D3;&#x3002;
-
-    ```Python
-    from django.shortcuts import render, redirect
-
-    from polls.models import Subject, Teacher
+    <span class="hljs-keyword">from</span> polls.models <span class="hljs-keyword">import</span> Subject, Teacher
 
 
-    def show_subjects(request):
-        subjects = Subject.objects.all().order_by(&apos;no&apos;)
-        return render(request, &apos;subjects.html&apos;, {&apos;subjects&apos;: subjects})
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SubjectModelAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+        list_display = (<span class="hljs-string">&apos;no&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;intro&apos;</span>, <span class="hljs-string">&apos;is_hot&apos;</span>)
+        search_fields = (<span class="hljs-string">&apos;name&apos;</span>, )
+        ordering = (<span class="hljs-string">&apos;no&apos;</span>, )
 
 
-    def show_teachers(request):
-        try:
-            sno = int(request.GET.get(&apos;sno&apos;))
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeacherModelAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+        list_display = (<span class="hljs-string">&apos;no&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;sex&apos;</span>, <span class="hljs-string">&apos;birth&apos;</span>, <span class="hljs-string">&apos;good_count&apos;</span>, <span class="hljs-string">&apos;bad_count&apos;</span>, <span class="hljs-string">&apos;subject&apos;</span>)
+        search_fields = (<span class="hljs-string">&apos;name&apos;</span>, )
+        ordering = (<span class="hljs-string">&apos;no&apos;</span>, )
+
+
+    admin.site.register(Subject, SubjectModelAdmin)
+    admin.site.register(Teacher, TeacherModelAdmin)
+</code></pre>
+<p>   <img src="res/django-admin-view-models-subject.png" alt=""></p>
+<p>   <img src="res/django-admin-view-models-teacher.png" alt=""></p>
+<p>   &#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x67E5;&#x770B;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A;<code>Subject</code>&#x7C7B;&#x6DFB;&#x52A0;<code>__str__</code>&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#x8FD4;&#x56DE;&#x5B66;&#x79D1;&#x540D;&#x5B57;&#x3002;&#x8FD9;&#x6837;&#x5728;&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#x7684;&#x67E5;&#x770B;&#x8001;&#x5E08;&#x7684;&#x9875;&#x9762;&#x4E0A;&#x663E;&#x793A;&#x8001;&#x5E08;&#x6240;&#x5C5E;&#x5B66;&#x79D1;&#x65F6;&#xFF0C;&#x5C31;&#x4E0D;&#x518D;&#x662F;<code>Subject object(1)</code>&#x8FD9;&#x6837;&#x6666;&#x6DA9;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x662F;&#x5B66;&#x79D1;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;&#x5B66;&#x79D1;&#x9875;&#x548C;&#x8001;&#x5E08;&#x9875;&#x6548;&#x679C;">&#x5B9E;&#x73B0;&#x5B66;&#x79D1;&#x9875;&#x548C;&#x8001;&#x5E08;&#x9875;&#x6548;&#x679C;</h3>
+<ol>
+<li>&#x4FEE;&#x6539;<code>polls/views.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x5199;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x5BF9;&#x5B66;&#x79D1;&#x9875;&#x548C;&#x8001;&#x5E08;&#x9875;&#x7684;&#x6E32;&#x67D3;&#x3002;</li>
+</ol>
+<pre><code class="lang-Python">    <span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render, redirect
+
+    <span class="hljs-keyword">from</span> polls.models <span class="hljs-keyword">import</span> Subject, Teacher
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_subjects</span><span class="hljs-params">(request)</span>:</span>
+        subjects = Subject.objects.all().order_by(<span class="hljs-string">&apos;no&apos;</span>)
+        <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;subjects.html&apos;</span>, {<span class="hljs-string">&apos;subjects&apos;</span>: subjects})
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_teachers</span><span class="hljs-params">(request)</span>:</span>
+        <span class="hljs-keyword">try</span>:
+            sno = int(request.GET.get(<span class="hljs-string">&apos;sno&apos;</span>))
             teachers = []
-            if sno:
-                subject = Subject.objects.only(&apos;name&apos;).get(no=sno)
-                teachers = Teacher.objects.filter(subject=subject).order_by(&apos;no&apos;)
-            return render(request, &apos;teachers.html&apos;, {
-                &apos;subject&apos;: subject,
-                &apos;teachers&apos;: teachers
+            <span class="hljs-keyword">if</span> sno:
+                subject = Subject.objects.only(<span class="hljs-string">&apos;name&apos;</span>).get(no=sno)
+                teachers = Teacher.objects.filter(subject=subject).order_by(<span class="hljs-string">&apos;no&apos;</span>)
+            <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;teachers.html&apos;</span>, {
+                <span class="hljs-string">&apos;subject&apos;</span>: subject,
+                <span class="hljs-string">&apos;teachers&apos;</span>: teachers
             })
-        except (ValueError, Subject.DoesNotExist):
-            return redirect(&apos;/&apos;)
-</code></pre><ol>
+        <span class="hljs-keyword">except</span> (ValueError, Subject.DoesNotExist):
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/&apos;</span>)
+</code></pre>
+<ol>
 <li><p>&#x4FEE;&#x6539;<code>templates/subjects.html</code>&#x548C;<code>templates/teachers.html</code>&#x6A21;&#x677F;&#x9875;&#x3002;</p>
 <p> <code>subjects.html</code></p>
-<pre><code class="lang-HTML"> <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
- <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
- <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x5B66;&#x79D1;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-         <span class="hljs-selector-id">#container</span> {
-             <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
-             <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
-         }
-         <span class="hljs-selector-class">.user</span> {
-             <span class="hljs-attribute">float</span>: right;
-             <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
-         }
-         <span class="hljs-selector-class">.user</span>&gt;<span class="hljs-selector-tag">a</span> {
-             <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
-         }
-         <span class="hljs-selector-id">#main</span>&gt;<span class="hljs-selector-tag">dl</span>&gt;<span class="hljs-selector-tag">dt</span> {
-             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5em</span>;
-             <span class="hljs-attribute">font-weight</span>: bold;
-         }
-         <span class="hljs-selector-id">#main</span>&gt;<span class="hljs-selector-tag">dl</span>&gt;<span class="hljs-selector-tag">dd</span> {
-             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
-         }
-         <span class="hljs-selector-tag">a</span> {
-             <span class="hljs-attribute">text-decoration</span>: none;
-             <span class="hljs-attribute">color</span>: darkcyan;
-         }
-     </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
- <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
- <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user&quot;</span>&gt;</span>
-             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;login.html&quot;</span>&gt;</span>&#x7528;&#x6237;&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;register.html&quot;</span>&gt;</span>&#x5FEB;&#x901F;&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x6263;&#x4E01;&#x5B66;&#x5802;&#x6240;&#x6709;&#x5B66;&#x79D1;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
-
-         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
- <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
- <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-<p> <code>teachers.html</code></p>
-<p> ```HTML
- &lt;!DOCTYPE html&gt;
- <html lang="en">
- <head></head></html></p>
-<pre><code> &lt;meta charset=&quot;UTF-8&quot;&gt;
- &lt;title&gt;&#x8001;&#x5E08;&#x4FE1;&#x606F;&lt;/title&gt;
- &lt;style&gt;
-     #container {
-         width: 80%;
-         margin: 10px auto;
-     }
-     .teacher {
-         width: 100%;
-         margin: 0 auto;
-         padding: 10px 0;
-         border-bottom: 1px dashed gray;
-         overflow: auto;
-     }
-     .teacher&gt;div {
-         float: left;
-     }
-     .photo {
-         height: 140px;
-         border-radius: 75px;
-         overflow: hidden;
-         margin-left: 20px;
-     }
-     .info {
-         width: 75%;
-         margin-left: 30px;
-     }
-     .info div {
-         clear: both;
-         margin: 5px 10px;
-     }
-     .info span {
-         margin-right: 25px;
-     }
-     .info a {
-         text-decoration: none;
-         color: darkcyan;
-     }
- &lt;/style&gt;
-</code></pre><p> &lt;/head&gt;
- <body></body></p>
-<pre><code> &lt;div id=&quot;container&quot;&gt;
-     &lt;h1&gt;&#x5B66;&#x79D1;&#x7684;&#x8001;&#x5E08;&#x4FE1;&#x606F;&lt;/h1&gt;
-     &lt;hr&gt;
-
-         &lt;h2&gt;&#x6682;&#x65E0;&#x8BE5;&#x5B66;&#x79D1;&#x8001;&#x5E08;&#x4FE1;&#x606F;&lt;/h2&gt;
-</code></pre></li>
-</ol>
-<pre><code>        &lt;a href=&quot;/&quot;&gt;&#x8FD4;&#x56DE;&#x9996;&#x9875;&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-```
-</code></pre><ol>
-<li><p>&#x4FEE;&#x6539;<code>vote/urls.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x5B9E;&#x73B0;&#x6620;&#x5C04;URL&#x3002;</p>
-<pre><code class="lang-Python"> <span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
- <span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
-
- <span class="hljs-keyword">from</span> polls.views <span class="hljs-keyword">import</span> show_subjects, show_teachers
-
- urlpatterns = [
-     path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
-     path(<span class="hljs-string">&apos;&apos;</span>, show_subjects),
-     path(<span class="hljs-string">&apos;teachers/&apos;</span>, show_teachers),
- ]
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-HTML">    <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x5B66;&#x79D1;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-id">#container</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+                <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
+            }
+            <span class="hljs-selector-class">.user</span> {
+                <span class="hljs-attribute">float</span>: right;
+                <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+            }
+            <span class="hljs-selector-class">.user</span>&gt;<span class="hljs-selector-tag">a</span> {
+                <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+            }
+            <span class="hljs-selector-id">#main</span>&gt;<span class="hljs-selector-tag">dl</span>&gt;<span class="hljs-selector-tag">dt</span> {
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5em</span>;
+                <span class="hljs-attribute">font-weight</span>: bold;
+            }
+            <span class="hljs-selector-id">#main</span>&gt;<span class="hljs-selector-tag">dl</span>&gt;<span class="hljs-selector-tag">dd</span> {
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
+            }
+            <span class="hljs-selector-tag">a</span> {
+                <span class="hljs-attribute">text-decoration</span>: none;
+                <span class="hljs-attribute">color</span>: darkcyan;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;login.html&quot;</span>&gt;</span>&#x7528;&#x6237;&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;register.html&quot;</span>&gt;</span>&#x5FEB;&#x901F;&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x6263;&#x4E01;&#x5B66;&#x5802;&#x6240;&#x6709;&#x5B66;&#x79D1;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code>`teachers.html`
+</code></pre><pre><code class="lang-HTML">    <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-id">#container</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+                <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
+            }
+            <span class="hljs-selector-class">.teacher</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+                <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> dashed gray;
+                <span class="hljs-attribute">overflow</span>: auto;
+            }
+            <span class="hljs-selector-class">.teacher</span>&gt;<span class="hljs-selector-tag">div</span> {
+                <span class="hljs-attribute">float</span>: left;
+            }
+            <span class="hljs-selector-class">.photo</span> {
+                <span class="hljs-attribute">height</span>: <span class="hljs-number">140px</span>;
+                <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">75px</span>;
+                <span class="hljs-attribute">overflow</span>: hidden;
+                <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">20px</span>;
+            }
+            <span class="hljs-selector-class">.info</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+                <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">30px</span>;
+            }
+            <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">div</span> {
+                <span class="hljs-attribute">clear</span>: both;
+                <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+            }
+            <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">span</span> {
+                <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">25px</span>;
+            }
+            <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">a</span> {
+                <span class="hljs-attribute">text-decoration</span>: none;
+                <span class="hljs-attribute">color</span>: darkcyan;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5B66;&#x79D1;&#x7684;&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x6682;&#x65E0;&#x8BE5;&#x5B66;&#x79D1;&#x8001;&#x5E08;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>&#x8FD4;&#x56DE;&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x4FEE;&#x6539;<code>vote/urls.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x5B9E;&#x73B0;&#x6620;&#x5C04;URL&#x3002;</li>
+</ol>
+<pre><code class="lang-Python">    <span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+    <span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+
+    <span class="hljs-keyword">from</span> polls.views <span class="hljs-keyword">import</span> show_subjects, show_teachers
+
+    urlpatterns = [
+        path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
+        path(<span class="hljs-string">&apos;&apos;</span>, show_subjects),
+        path(<span class="hljs-string">&apos;teachers/&apos;</span>, show_teachers),
+    ]
+</code></pre>
 <p>&#x5230;&#x6B64;&#x4E3A;&#x6B62;&#xFF0C;&#x9875;&#x9762;&#x4E0A;&#x9700;&#x8981;&#x7684;&#x56FE;&#x7247;&#xFF08;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF09;&#x8FD8;&#x6CA1;&#x6709;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x5C55;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x8282;&#x4E2D;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5904;&#x7406;&#x6A21;&#x677F;&#x9875;&#x4E0A;&#x7684;&#x9700;&#x8981;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;</p>
 <h3 id="&#x8865;&#x5145;&#x5185;&#x5BB9;">&#x8865;&#x5145;&#x5185;&#x5BB9;</h3>
 <h4 id="django&#x6A21;&#x578B;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">Django&#x6A21;&#x578B;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h4>
@@ -2654,7 +2678,7 @@ from django.contrib import admin</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"47.深入模型","level":"1.7.2","depth":2,"next":{"title":"48.静态资源和Ajax请求","level":"1.7.3","depth":2,"path":"Day46-60/48.静态资源和Ajax请求.md","ref":"Day46-60/48.静态资源和Ajax请求.md","articles":[]},"previous":{"title":"46.Django快速上手","level":"1.7.1","depth":2,"path":"Day46-60/46.Django快速上手.md","ref":"Day46-60/46.Django快速上手.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day46-60/47.深入模型.md","mtime":"2024-07-05T04:07:26.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"47.深入模型","level":"1.7.2","depth":2,"next":{"title":"48.静态资源和Ajax请求","level":"1.7.3","depth":2,"path":"Day46-60/48.静态资源和Ajax请求.md","ref":"Day46-60/48.静态资源和Ajax请求.md","articles":[]},"previous":{"title":"46.Django快速上手","level":"1.7.1","depth":2,"path":"Day46-60/46.Django快速上手.md","ref":"Day46-60/46.Django快速上手.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day46-60/47.深入模型.md","mtime":"2024-07-05T07:16:34.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

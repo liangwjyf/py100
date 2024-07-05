@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -69,7 +69,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -80,7 +80,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1828,7 +1837,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1961,49 +1970,53 @@ Disallow: /j/
 </li>
 <li><p>HTTPie&#xFF1A;&#x547D;&#x4EE4;&#x884C;HTTP&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
 <p>&#x5B89;&#x88C5;&#x3002;</p>
-<pre><code class="lang-Bash">pip install httpie
-</code></pre>
-<p>&#x4F7F;&#x7528;&#x3002;</p>
-<pre><code class="lang-Bash">http --header http --header https://movie.douban.com/
-
-HTTP/1.1 200 OK
-Connection: keep-alive
-Content-Encoding: gzip
-Content-Type: text/html; charset=utf-8
-Date: Tue, 24 Aug 2021 16:48:00 GMT
-Keep-Alive: timeout=30
-Server: dae
-Set-Cookie: bid=58h4BdKC9lM; Expires=Wed, 24-Aug-22 16:48:00 GMT; Domain=.douban.com; Path=/
-Strict-Transport-Security: max-age=15552000
-Transfer-Encoding: chunked
-X-Content-Type-Options: nosniff
-X-DOUBAN-NEWBID: 58h4BdKC9lM
-</code></pre>
-</li>
-<li><p><code>builtwith</code>&#x5E93;&#xFF1A;&#x8BC6;&#x522B;&#x7F51;&#x7AD9;&#x6240;&#x7528;&#x6280;&#x672F;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
-<p>&#x5B89;&#x88C5;&#x3002;</p>
-<pre><code class="lang-Bash">pip install builtwith
-</code></pre>
-<p>&#x4F7F;&#x7528;&#x3002;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> ssl
-
-<span class="hljs-keyword">import</span> builtwith
-
-ssl._create_default_https_context = ssl._create_unverified_context
-print(builtwith.parse(<span class="hljs-string">&apos;http://www.bootcss.com/&apos;</span>))
-</code></pre>
-</li>
-<li><p><code>python-whois</code>&#x5E93;&#xFF1A;&#x67E5;&#x8BE2;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x8005;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
-<p>&#x5B89;&#x88C5;&#x3002;</p>
-<pre><code class="lang-Bash">pip3 install python-whois
-</code></pre>
-<p>&#x4F7F;&#x7528;&#x3002;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> whois
-
-print(whois.whois(<span class="hljs-string">&apos;https://www.bootcss.com&apos;</span>))
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-Bash">   pip install httpie
+</code></pre>
+<p>   &#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-Bash">   http --header http --header https://movie.douban.com/
+
+   HTTP/1.1 200 OK
+   Connection: keep-alive
+   Content-Encoding: gzip
+   Content-Type: text/html; charset=utf-8
+   Date: Tue, 24 Aug 2021 16:48:00 GMT
+   Keep-Alive: timeout=30
+   Server: dae
+   Set-Cookie: bid=58h4BdKC9lM; Expires=Wed, 24-Aug-22 16:48:00 GMT; Domain=.douban.com; Path=/
+   Strict-Transport-Security: max-age=15552000
+   Transfer-Encoding: chunked
+   X-Content-Type-Options: nosniff
+   X-DOUBAN-NEWBID: 58h4BdKC9lM
+</code></pre>
+<ol>
+<li><p><code>builtwith</code>&#x5E93;&#xFF1A;&#x8BC6;&#x522B;&#x7F51;&#x7AD9;&#x6240;&#x7528;&#x6280;&#x672F;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x3002;</p>
+</li>
+</ol>
+<pre><code class="lang-Bash">   pip install builtwith
+</code></pre>
+<p>   &#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-Python">   <span class="hljs-keyword">import</span> ssl
+
+   <span class="hljs-keyword">import</span> builtwith
+
+   ssl._create_default_https_context = ssl._create_unverified_context
+   print(builtwith.parse(<span class="hljs-string">&apos;http://www.bootcss.com/&apos;</span>))
+</code></pre>
+<ol>
+<li><p><code>python-whois</code>&#x5E93;&#xFF1A;&#x67E5;&#x8BE2;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x8005;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x3002;</p>
+</li>
+</ol>
+<pre><code class="lang-Bash">   pip3 install python-whois
+</code></pre>
+<p>   &#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-Python">   <span class="hljs-keyword">import</span> whois
+
+   print(whois.whois(<span class="hljs-string">&apos;https://www.bootcss.com&apos;</span>))
+</code></pre>
 <h3 id="&#x722C;&#x866B;&#x7684;&#x57FA;&#x672C;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;">&#x722C;&#x866B;&#x7684;&#x57FA;&#x672C;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</h3>
 <p>&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x722C;&#x866B;&#x901A;&#x5E38;&#x5206;&#x4E3A;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF08;&#x7F51;&#x9875;&#x4E0B;&#x8F7D;&#xFF09;&#x3001;&#x6570;&#x636E;&#x5904;&#x7406;&#xFF08;&#x7F51;&#x9875;&#x89E3;&#x6790;&#xFF09;&#x548C;&#x6570;&#x636E;&#x5B58;&#x50A8;&#xFF08;&#x5C06;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x6301;&#x4E45;&#x5316;&#xFF09;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5F53;&#x7136;&#x66F4;&#x4E3A;&#x9AD8;&#x7EA7;&#x7684;&#x722C;&#x866B;&#x5728;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x548C;&#x5904;&#x7406;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x6216;&#x5206;&#x5E03;&#x5F0F;&#x6280;&#x672F;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x6709;&#x8C03;&#x5EA6;&#x5668;&#xFF08;&#x5B89;&#x6392;&#x7EBF;&#x7A0B;&#x6216;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;&#xFF09;&#x3001;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#xFF08;&#x76D1;&#x63A7;&#x722C;&#x866B;&#x7684;&#x5DE5;&#x4F5C;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x68C0;&#x67E5;&#x6570;&#x636E;&#x6293;&#x53D6;&#x7684;&#x7ED3;&#x679C;&#xFF09;&#x7B49;&#x7684;&#x53C2;&#x4E0E;&#x3002;</p>
 <p><img src="https://gitee.com/jackfrued/mypic/raw/master/20210824004107.png" alt="crawler-workflow"></p>
@@ -2056,7 +2069,7 @@ print(whois.whois(<span class="hljs-string">&apos;https://www.bootcss.com&apos;<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"61.网络数据采集概述","level":"1.8.1","depth":2,"next":{"title":"62.用Python获取网络资源-1","level":"1.8.2","depth":2,"path":"Day61-65/62.用Python获取网络资源-1.md","ref":"Day61-65/62.用Python获取网络资源-1.md","articles":[]},"previous":{"title":"Day 61 65","level":"1.8","depth":1,"ref":"","articles":[{"title":"61.网络数据采集概述","level":"1.8.1","depth":2,"path":"Day61-65/61.网络数据采集概述.md","ref":"Day61-65/61.网络数据采集概述.md","articles":[]},{"title":"62.用Python获取网络资源-1","level":"1.8.2","depth":2,"path":"Day61-65/62.用Python获取网络资源-1.md","ref":"Day61-65/62.用Python获取网络资源-1.md","articles":[]},{"title":"62.用Python解析HTML页面-2","level":"1.8.3","depth":2,"path":"Day61-65/62.用Python解析HTML页面-2.md","ref":"Day61-65/62.用Python解析HTML页面-2.md","articles":[]},{"title":"63.Python中的并发编程-1","level":"1.8.4","depth":2,"path":"Day61-65/63.Python中的并发编程-1.md","ref":"Day61-65/63.Python中的并发编程-1.md","articles":[]},{"title":"63.Python中的并发编程-2","level":"1.8.5","depth":2,"path":"Day61-65/63.Python中的并发编程-2.md","ref":"Day61-65/63.Python中的并发编程-2.md","articles":[]},{"title":"63.Python中的并发编程-3","level":"1.8.6","depth":2,"path":"Day61-65/63.Python中的并发编程-3.md","ref":"Day61-65/63.Python中的并发编程-3.md","articles":[]},{"title":"63.并发编程在爬虫中的应用","level":"1.8.7","depth":2,"path":"Day61-65/63.并发编程在爬虫中的应用.md","ref":"Day61-65/63.并发编程在爬虫中的应用.md","articles":[]},{"title":"64.使用Selenium抓取网页动态内容","level":"1.8.8","depth":2,"path":"Day61-65/64.使用Selenium抓取网页动态内容.md","ref":"Day61-65/64.使用Selenium抓取网页动态内容.md","articles":[]},{"title":"65.爬虫框架Scrapy简介","level":"1.8.9","depth":2,"path":"Day61-65/65.爬虫框架Scrapy简介.md","ref":"Day61-65/65.爬虫框架Scrapy简介.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day61-65/61.网络数据采集概述.md","mtime":"2024-07-05T03:42:45.209Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"61.网络数据采集概述","level":"1.8.1","depth":2,"next":{"title":"62.用Python获取网络资源-1","level":"1.8.2","depth":2,"path":"Day61-65/62.用Python获取网络资源-1.md","ref":"Day61-65/62.用Python获取网络资源-1.md","articles":[]},"previous":{"title":"Day 61 65","level":"1.8","depth":1,"ref":"","articles":[{"title":"61.网络数据采集概述","level":"1.8.1","depth":2,"path":"Day61-65/61.网络数据采集概述.md","ref":"Day61-65/61.网络数据采集概述.md","articles":[]},{"title":"62.用Python获取网络资源-1","level":"1.8.2","depth":2,"path":"Day61-65/62.用Python获取网络资源-1.md","ref":"Day61-65/62.用Python获取网络资源-1.md","articles":[]},{"title":"62.用Python解析HTML页面-2","level":"1.8.3","depth":2,"path":"Day61-65/62.用Python解析HTML页面-2.md","ref":"Day61-65/62.用Python解析HTML页面-2.md","articles":[]},{"title":"63.Python中的并发编程-1","level":"1.8.4","depth":2,"path":"Day61-65/63.Python中的并发编程-1.md","ref":"Day61-65/63.Python中的并发编程-1.md","articles":[]},{"title":"63.Python中的并发编程-2","level":"1.8.5","depth":2,"path":"Day61-65/63.Python中的并发编程-2.md","ref":"Day61-65/63.Python中的并发编程-2.md","articles":[]},{"title":"63.Python中的并发编程-3","level":"1.8.6","depth":2,"path":"Day61-65/63.Python中的并发编程-3.md","ref":"Day61-65/63.Python中的并发编程-3.md","articles":[]},{"title":"63.并发编程在爬虫中的应用","level":"1.8.7","depth":2,"path":"Day61-65/63.并发编程在爬虫中的应用.md","ref":"Day61-65/63.并发编程在爬虫中的应用.md","articles":[]},{"title":"64.使用Selenium抓取网页动态内容","level":"1.8.8","depth":2,"path":"Day61-65/64.使用Selenium抓取网页动态内容.md","ref":"Day61-65/64.使用Selenium抓取网页动态内容.md","articles":[]},{"title":"65.爬虫框架Scrapy简介","level":"1.8.9","depth":2,"path":"Day61-65/65.爬虫框架Scrapy简介.md","ref":"Day61-65/65.爬虫框架Scrapy简介.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day61-65/61.网络数据采集概述.md","mtime":"2024-07-05T07:21:41.897Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

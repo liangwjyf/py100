@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -2216,31 +2225,34 @@ hexo server -p 8000 -o
 <p><img src="res/create-new-repo.png" alt=""></p>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x535A;&#x5BA2;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>_config.yml</code>&#xFF0C;&#x914D;&#x7F6E;&#x4F7F;&#x7528;GitHub&#x6765;&#x90E8;&#x7F72;&#x8BE5;&#x535A;&#x5BA2;&#x9879;&#x76EE;&#x3002;</p>
-<pre><code class="lang-Shell">vim _config.yml
-</code></pre>
-<pre><code class="lang-YAML"><span class="hljs-comment"># &#x7701;&#x7565;&#x4E0A;&#x9762;&#x7684;&#x5185;&#x5BB9;</span>
-<span class="hljs-comment"># Deployment</span>
-<span class="hljs-comment">## Docs: https://hexo.io/docs/deployment.html</span>
-<span class="hljs-attr">deploy:</span>
-<span class="hljs-attr">  type:</span> git
-<span class="hljs-attr">  repo:</span> https://github.com/jackfrued/jackfrued.github.io.git
-<span class="hljs-attr">  branch:</span> master
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;type&#x6307;&#x5B9A;&#x4E86;&#x4F7F;&#x7528;git&#x8FDB;&#x884C;&#x9879;&#x76EE;&#x90E8;&#x7F72;&#xFF0C;repo&#x6307;&#x5B9A;&#x4E86;&#x90E8;&#x7F72;&#x9879;&#x76EE;&#x7684;git&#x4ED3;&#x5E93;&#x7684;URL&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;HTTPS&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x914D;&#x7F6E;&#x8FC7;&#x5BC6;&#x94A5;&#x5BF9;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SSH&#x7684;&#x5730;&#x5740;&#xFF0C;branch&#x6307;&#x5B9A;&#x4E86;&#x5C06;&#x4EE3;&#x7801;&#x540C;&#x6B65;&#x5230;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x54EA;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x901A;&#x5E38;master&#x5206;&#x652F;&#x5C31;&#x662F;&#x53D1;&#x5E03;&#x9879;&#x76EE;&#x6700;&#x7EC8;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x9879;&#x76EE;&#x7684;&#x4E3B;&#x5206;&#x652F;&#x3002;</p>
 </li>
-<li><p>&#x5B89;&#x88C5;&#x540D;&#x4E3A;<code>hexo-deployer-git</code>&#x7684;&#x90E8;&#x7F72;&#x5668;&#x63D2;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x63D2;&#x4EF6;&#x5C31;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x952E;&#x90E8;&#x7F72;&#x3002;</p>
-<pre><code class="lang-Shell">npm install hexo-deployer-git --save
+</ol>
+<pre><code class="lang-Shell">   vim _config.yml
 </code></pre>
-</li>
-<li><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x952E;&#x90E8;&#x7F72;&#x5230;GitHub&#x3002;</p>
-<pre><code class="lang-Shell">hexo deploy -g
+<pre><code class="lang-YAML">   <span class="hljs-comment"># &#x7701;&#x7565;&#x4E0A;&#x9762;&#x7684;&#x5185;&#x5BB9;</span>
+   <span class="hljs-comment"># Deployment</span>
+   <span class="hljs-comment">## Docs: https://hexo.io/docs/deployment.html</span>
+<span class="hljs-attr">   deploy:</span>
+<span class="hljs-attr">     type:</span> git
+<span class="hljs-attr">     repo:</span> https://github.com/jackfrued/jackfrued.github.io.git
+<span class="hljs-attr">     branch:</span> master
 </code></pre>
-<p>&#x6216;&#x8005;</p>
-<pre><code class="lang-Shell">hexo generate -d
+<p>   &#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;type&#x6307;&#x5B9A;&#x4E86;&#x4F7F;&#x7528;git&#x8FDB;&#x884C;&#x9879;&#x76EE;&#x90E8;&#x7F72;&#xFF0C;repo&#x6307;&#x5B9A;&#x4E86;&#x90E8;&#x7F72;&#x9879;&#x76EE;&#x7684;git&#x4ED3;&#x5E93;&#x7684;URL&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;HTTPS&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x914D;&#x7F6E;&#x8FC7;&#x5BC6;&#x94A5;&#x5BF9;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SSH&#x7684;&#x5730;&#x5740;&#xFF0C;branch&#x6307;&#x5B9A;&#x4E86;&#x5C06;&#x4EE3;&#x7801;&#x540C;&#x6B65;&#x5230;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x54EA;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x901A;&#x5E38;master&#x5206;&#x652F;&#x5C31;&#x662F;&#x53D1;&#x5E03;&#x9879;&#x76EE;&#x6700;&#x7EC8;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x9879;&#x76EE;&#x7684;&#x4E3B;&#x5206;&#x652F;&#x3002;</p>
+<ol>
+<li>&#x5B89;&#x88C5;&#x540D;&#x4E3A;<code>hexo-deployer-git</code>&#x7684;&#x90E8;&#x7F72;&#x5668;&#x63D2;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x63D2;&#x4EF6;&#x5C31;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x952E;&#x90E8;&#x7F72;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   npm install hexo-deployer-git --save
 </code></pre>
-</li>
-<li><p>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;<a href="https://jackfrued.github.io" target="_blank">jackfrued.github.io</a>&#x5C31;&#x80FD;&#x591F;&#x770B;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x73B0;&#x5728;&#x5168;&#x4E16;&#x754C;&#x7684;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;URL&#x6765;&#x8BBF;&#x95EE;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#x3002;&#x5927;&#x5BB6;&#x662F;&#x5426;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x8BBF;&#x95EE;&#x4F60;&#x535A;&#x5BA2;&#x7684;&#x8FD9;&#x4E2A;URL&#x5C31;&#x662F;&#x521A;&#x624D;&#x6211;&#x4EEC;&#x7ED9;&#x4ED3;&#x5E93;&#x8D77;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x5728;GitHub&#x4E0A;&#x6CE8;&#x518C;&#x7684;&#x7528;&#x6237;&#x540D;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x57DF;&#x540D;&#x4E5F;&#x662F;&#x5168;&#x4E16;&#x754C;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x3002;</p>
-</li>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x952E;&#x90E8;&#x7F72;&#x5230;GitHub&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   hexo deploy -g
+</code></pre>
+<p>   &#x6216;&#x8005;</p>
+<pre><code class="lang-Shell">   hexo generate -d
+</code></pre>
+<ol>
+<li>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;<a href="https://jackfrued.github.io" target="_blank">jackfrued.github.io</a>&#x5C31;&#x80FD;&#x591F;&#x770B;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x73B0;&#x5728;&#x5168;&#x4E16;&#x754C;&#x7684;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;URL&#x6765;&#x8BBF;&#x95EE;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#x3002;&#x5927;&#x5BB6;&#x662F;&#x5426;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x8BBF;&#x95EE;&#x4F60;&#x535A;&#x5BA2;&#x7684;&#x8FD9;&#x4E2A;URL&#x5C31;&#x662F;&#x521A;&#x624D;&#x6211;&#x4EEC;&#x7ED9;&#x4ED3;&#x5E93;&#x8D77;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x5728;GitHub&#x4E0A;&#x6CE8;&#x518C;&#x7684;&#x7528;&#x6237;&#x540D;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x57DF;&#x540D;&#x4E5F;&#x662F;&#x5168;&#x4E16;&#x754C;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x3002;</li>
 </ol>
 <h3 id="&#x5C06;&#x535A;&#x5BA2;&#x7ED1;&#x5B9A;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;">&#x5C06;&#x535A;&#x5BA2;&#x7ED1;&#x5B9A;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;</h3>
 <p>&#x867D;&#x7136;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;GitHub&#x63D0;&#x4F9B;&#x7684;&#x57DF;&#x540D;&#x8BBF;&#x95EE;&#x5230;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x613F;&#x610F;&#x201C;&#x5BC4;&#x4EBA;&#x7BF1;&#x4E0B;&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5229;&#x7528;GitHub Pages&#x63D0;&#x4F9B;&#x7684;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x535A;&#x5BA2;&#x7ED1;&#x5B9A;&#x5230;&#x81EA;&#x5DF1;&#x4E13;&#x5C5E;&#x7684;&#x57DF;&#x540D;&#x3002;&#x5982;&#x679C;&#x6682;&#x65F6;&#x8FD8;&#x6CA1;&#x6709;&#x8D2D;&#x4E70;&#x57DF;&#x540D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x63D0;&#x4F9B;&#x57DF;&#x540D;&#x8D2D;&#x4E70;&#x670D;&#x52A1;&#x7684;&#x7F51;&#x7AD9;&#xFF08;&#x5982;&#xFF1A;<a href="https://www.hichina.com/" target="_blank">&#x4E07;&#x7F51;</a>&#x3001;<a href="https://www.godaddy.com/" target="_blank">GoDaddy</a>&#xFF09;&#x4E0A;&#x8FDB;&#x884C;&#x8D2D;&#x4E70;&#x3002;</p>
@@ -2299,7 +2311,7 @@ hexo server -p 8000 -o
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"使用Hexo搭建自己的博客","level":"1.13.8","depth":2,"next":{"title":"常见反爬策略及应对方案","level":"1.13.9","depth":2,"path":"番外篇/常见反爬策略及应对方案.md","ref":"番外篇/常见反爬策略及应对方案.md","articles":[]},"previous":{"title":"一个小例子助你彻底理解协程","level":"1.13.7","depth":2,"path":"番外篇/一个小例子助你彻底理解协程.md","ref":"番外篇/一个小例子助你彻底理解协程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"番外篇/使用Hexo搭建自己的博客.md","mtime":"2024-07-05T03:42:45.680Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"使用Hexo搭建自己的博客","level":"1.13.8","depth":2,"next":{"title":"常见反爬策略及应对方案","level":"1.13.9","depth":2,"path":"番外篇/常见反爬策略及应对方案.md","ref":"番外篇/常见反爬策略及应对方案.md","articles":[]},"previous":{"title":"一个小例子助你彻底理解协程","level":"1.13.7","depth":2,"path":"番外篇/一个小例子助你彻底理解协程.md","ref":"番外篇/一个小例子助你彻底理解协程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"番外篇/使用Hexo搭建自己的博客.md","mtime":"2024-07-05T07:21:41.672Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

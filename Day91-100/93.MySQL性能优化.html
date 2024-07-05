@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1919,96 +1928,102 @@
 <h3 id="&#x6570;&#x636E;&#x5206;&#x533A;">&#x6570;&#x636E;&#x5206;&#x533A;</h3>
 <p>MySQL&#x652F;&#x6301;&#x505A;&#x6570;&#x636E;&#x5206;&#x533A;&#xFF0C;&#x901A;&#x8FC7;&#x5206;&#x533A;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x66F4;&#x591A;&#x7684;&#x6570;&#x636E;&#x3001;&#x4F18;&#x5316;&#x67E5;&#x8BE2;&#xFF0C;&#x83B7;&#x5F97;&#x66F4;&#x5927;&#x7684;&#x541E;&#x5410;&#x91CF;&#x5E76;&#x5FEB;&#x901F;&#x5220;&#x9664;&#x8FC7;&#x671F;&#x7684;&#x6570;&#x636E;&#x3002;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x770B;&#x770B;MySQL&#x7684;<a href="https://dev.mysql.com/doc/refman/5.7/en/partitioning-overview.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;&#x6570;&#x636E;&#x5206;&#x533A;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</p>
 <ol>
-<li><p>RANGE&#x5206;&#x533A;&#xFF1A;&#x57FA;&#x4E8E;&#x8FDE;&#x7EED;&#x533A;&#x95F4;&#x8303;&#x56F4;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> tb_emp (
-    eno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    ename <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    job <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    hiredate <span class="hljs-built_in">DATE</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    dno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>
-)
-<span class="hljs-keyword">PARTITION</span> <span class="hljs-keyword">BY</span> <span class="hljs-keyword">RANGE</span>( <span class="hljs-keyword">YEAR</span>(hiredate) ) (
-    <span class="hljs-keyword">PARTITION</span> p0 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1960</span>),
-    <span class="hljs-keyword">PARTITION</span> p1 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1970</span>),
-    <span class="hljs-keyword">PARTITION</span> p2 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1980</span>),
-    <span class="hljs-keyword">PARTITION</span> p3 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1990</span>),
-    <span class="hljs-keyword">PARTITION</span> p4 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> MAXVALUE
-);
+<li>RANGE&#x5206;&#x533A;&#xFF1A;&#x57FA;&#x4E8E;&#x8FDE;&#x7EED;&#x533A;&#x95F4;&#x8303;&#x56F4;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</li>
+</ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> tb_emp (
+       eno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       ename <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       job <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       hiredate <span class="hljs-built_in">DATE</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       dno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>
+   )
+   <span class="hljs-keyword">PARTITION</span> <span class="hljs-keyword">BY</span> <span class="hljs-keyword">RANGE</span>( <span class="hljs-keyword">YEAR</span>(hiredate) ) (
+       <span class="hljs-keyword">PARTITION</span> p0 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1960</span>),
+       <span class="hljs-keyword">PARTITION</span> p1 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1970</span>),
+       <span class="hljs-keyword">PARTITION</span> p2 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1980</span>),
+       <span class="hljs-keyword">PARTITION</span> p3 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> (<span class="hljs-number">1990</span>),
+       <span class="hljs-keyword">PARTITION</span> p4 <span class="hljs-keyword">VALUES</span> <span class="hljs-keyword">LESS</span> <span class="hljs-keyword">THAN</span> MAXVALUE
+   );
 </code></pre>
-</li>
+<ol>
 <li><p>LIST&#x5206;&#x533A;&#xFF1A;&#x57FA;&#x4E8E;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</p>
 </li>
 <li><p>HASH&#x5206;&#x533A; / KEY&#x5206;&#x533A;&#xFF1A;&#x57FA;&#x4E8E;&#x5206;&#x533A;&#x4E2A;&#x6570;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> tb_emp (
-    eno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    ename <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    job <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    hiredate <span class="hljs-built_in">DATE</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-    dno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>
-)
-<span class="hljs-keyword">PARTITION</span> <span class="hljs-keyword">BY</span> <span class="hljs-keyword">HASH</span>(dno)
-<span class="hljs-keyword">PARTITIONS</span> <span class="hljs-number">4</span>;
-</code></pre>
 </li>
 </ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> tb_emp (
+       eno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       ename <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       job <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       hiredate <span class="hljs-built_in">DATE</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+       dno <span class="hljs-built_in">INT</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>
+   )
+   <span class="hljs-keyword">PARTITION</span> <span class="hljs-keyword">BY</span> <span class="hljs-keyword">HASH</span>(dno)
+   <span class="hljs-keyword">PARTITIONS</span> <span class="hljs-number">4</span>;
+</code></pre>
 <h3 id="sql&#x4F18;&#x5316;">SQL&#x4F18;&#x5316;</h3>
 <ol>
 <li><p>&#x5B9A;&#x4F4D;&#x4F4E;&#x6548;&#x7387;&#x7684;SQL&#x8BED;&#x53E5; - &#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x3002;</p>
 <ul>
-<li><p>&#x67E5;&#x770B;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x76F8;&#x5173;&#x914D;&#x7F6E;</p>
-<pre><code class="lang-SQL"> mysql&gt; show variables like &apos;slow_query%&apos;;
- +---------------------------+----------------------------------+
- | Variable_name             | Value                            |
- +---------------------------+----------------------------------+
- | slow_query_log            | OFF                              |
- | slow_query_log_file       | /mysql/data/localhost-slow.log   |
- +---------------------------+----------------------------------+
-
- mysql&gt; show variables like &apos;long_query_time&apos;;
- +-----------------+-----------+
- | Variable_name   | Value     |
- +-----------------+-----------+
- | long_query_time | 10.000000 |
- +-----------------+-----------+
-</code></pre>
-</li>
-<li><p>&#x521B;&#x5EFA;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5E76;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x8005;&#x3002;</p>
-<pre><code class="lang-Bash"> touch /var/<span class="hljs-built_in">log</span>/mysqld-slow.log
- chown mysql /var/<span class="hljs-built_in">log</span>/mysqld-slow.log
-</code></pre>
-</li>
-<li><p>&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#x3002;</p>
-<pre><code class="lang-SQL"> mysql&gt; set global slow_query_log_file=&apos;/var/log/mysqld-slow.log&apos;
- mysql&gt; set global slow_query_log=&apos;ON&apos;; 
- mysql&gt; set global long_query_time=1;
-</code></pre>
-</li>
-<li><p>&#x6216;&#x8005;&#x76F4;&#x63A5;&#x4FEE;&#x6539;MySQL&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x542F;&#x7528;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x3002;</p>
-<pre><code class="lang-INI"> [mysqld]
- slow_query_log=ON
- slow_query_log_file=/var/log/mysqld-slow.log
- long_query_time=1
-</code></pre>
-</li>
+<li>&#x67E5;&#x770B;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x76F8;&#x5173;&#x914D;&#x7F6E;</li>
 </ul>
+</li>
+</ol>
+<pre><code class="lang-SQL">      mysql&gt; show variables like &apos;slow_query%&apos;;
+      +---------------------------+----------------------------------+
+      | Variable_name             | Value                            |
+      +---------------------------+----------------------------------+
+      | slow_query_log            | OFF                              |
+      | slow_query_log_file       | /mysql/data/localhost-slow.log   |
+      +---------------------------+----------------------------------+
+
+      mysql&gt; show variables like &apos;long_query_time&apos;;
+      +-----------------+-----------+
+      | Variable_name   | Value     |
+      +-----------------+-----------+
+      | long_query_time | 10.000000 |
+      +-----------------+-----------+
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5E76;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x8005;&#x3002;</li>
+</ul>
+<pre><code class="lang-Bash">      touch /var/<span class="hljs-built_in">log</span>/mysqld-slow.log
+      chown mysql /var/<span class="hljs-built_in">log</span>/mysqld-slow.log
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#x3002;</li>
+</ul>
+<pre><code class="lang-SQL">      mysql&gt; set global slow_query_log_file=&apos;/var/log/mysqld-slow.log&apos;
+      mysql&gt; set global slow_query_log=&apos;ON&apos;; 
+      mysql&gt; set global long_query_time=1;
+</code></pre>
+<ul>
+<li>&#x6216;&#x8005;&#x76F4;&#x63A5;&#x4FEE;&#x6539;MySQL&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x542F;&#x7528;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x3002;</li>
+</ul>
+<pre><code class="lang-INI">      [mysqld]
+      slow_query_log=ON
+      slow_query_log_file=/var/log/mysqld-slow.log
+      long_query_time=1
+</code></pre>
 <blockquote>
 <p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4FEE;&#x6539;&#x4E86;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x91CD;&#x542F;MySQL&#xFF0C;CentOS&#x4E0A;&#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4;&#x662F;<code>systemctl restart mysqld</code>&#x3002;</p>
 </blockquote>
-</li>
-<li><p>&#x901A;&#x8FC7;<code>explain</code>&#x4E86;&#x89E3;SQL&#x7684;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">explain</span> <span class="hljs-keyword">select</span> ename, job, sal <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">where</span> dno=<span class="hljs-number">20</span>\G
-*************************** <span class="hljs-number">1.</span> <span class="hljs-keyword">row</span> ***************************
-           <span class="hljs-keyword">id</span>: <span class="hljs-number">1</span>
-  select_type: SIMPLE
-        <span class="hljs-keyword">table</span>: tb_emp
-         <span class="hljs-keyword">type</span>: <span class="hljs-keyword">ref</span>
-possible_keys: fk_emp_dno
-          <span class="hljs-keyword">key</span>: fk_emp_dno
-      key_len: <span class="hljs-number">5</span>
-          <span class="hljs-keyword">ref</span>: const
-         <span class="hljs-keyword">rows</span>: <span class="hljs-number">7</span>
-        Extra: <span class="hljs-literal">NULL</span>
-<span class="hljs-number">1</span> <span class="hljs-keyword">row</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">set</span> (<span class="hljs-number">0.00</span> sec)
+<ol>
+<li>&#x901A;&#x8FC7;<code>explain</code>&#x4E86;&#x89E3;SQL&#x7684;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">explain</span> <span class="hljs-keyword">select</span> ename, job, sal <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">where</span> dno=<span class="hljs-number">20</span>\G
+   *************************** <span class="hljs-number">1.</span> <span class="hljs-keyword">row</span> ***************************
+              <span class="hljs-keyword">id</span>: <span class="hljs-number">1</span>
+     select_type: SIMPLE
+           <span class="hljs-keyword">table</span>: tb_emp
+            <span class="hljs-keyword">type</span>: <span class="hljs-keyword">ref</span>
+   possible_keys: fk_emp_dno
+             <span class="hljs-keyword">key</span>: fk_emp_dno
+         key_len: <span class="hljs-number">5</span>
+             <span class="hljs-keyword">ref</span>: const
+            <span class="hljs-keyword">rows</span>: <span class="hljs-number">7</span>
+           Extra: <span class="hljs-literal">NULL</span>
+   <span class="hljs-number">1</span> <span class="hljs-keyword">row</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">set</span> (<span class="hljs-number">0.00</span> sec)
 </code></pre>
 <ul>
 <li><code>select_type</code>&#xFF1A;&#x67E5;&#x8BE2;&#x7C7B;&#x578B;&#xFF08;SIMPLE - &#x7B80;&#x5355;&#x67E5;&#x8BE2;&#x3001;PRIMARY - &#x4E3B;&#x67E5;&#x8BE2;&#x3001;UNION - &#x5E76;&#x96C6;&#x3001;SUBQUERY - &#x5B50;&#x67E5;&#x8BE2;&#xFF09;&#x3002;</li>
@@ -2020,55 +2035,57 @@ possible_keys: fk_emp_dno
 <li><code>rows</code>&#xFF1A;&#x626B;&#x63CF;&#x7684;&#x884C;&#x6570;&#xFF0C;&#x884C;&#x6570;&#x8D8A;&#x5C11;&#x80AF;&#x5B9A;&#x6027;&#x80FD;&#x8D8A;&#x597D;&#x3002;</li>
 <li><code>extra</code>&#xFF1A;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x3002;</li>
 </ul>
-</li>
+<ol>
 <li><p>&#x901A;&#x8FC7;<code>show profiles</code>&#x548C;<code>show profile for query</code>&#x5206;&#x6790;SQL&#x3002;</p>
 <p>MySQL&#x4ECE;5.0.37&#x5F00;&#x59CB;&#x652F;&#x6301;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#x6765;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x4E86;&#x89E3;SQL&#x6267;&#x884C;&#x6027;&#x80FD;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x652F;&#x6301;&#x548C;&#x5F00;&#x542F;&#x4E86;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">select</span> @@have_profiling;
-<span class="hljs-keyword">select</span> @@profiling;
-</code></pre>
-<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;SQL&#x6765;&#x6253;&#x5F00;&#x5B83;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">set</span> profiling=<span class="hljs-number">1</span>;
-</code></pre>
-<p>&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#x6765;&#x4E86;&#x89E3;SQL&#x7684;&#x6267;&#x884C;&#x6027;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-SQL">mysql&gt; select count(*) from tb_emp;
-+----------+
-| count(*) |
-+----------+
-|       14 |
-+----------+
-1 row in set (0.00 sec)
-
-mysql&gt; show profiles;
-+----------+------------+-----------------------------+
-| Query_ID | Duration   | Query                       |
-+----------+------------+-----------------------------+
-|        1 | 0.00029600 | select count(*) from tb_emp |
-+----------+------------+-----------------------------+
-1 row in set, 1 warning (0.00 sec)
-
-mysql&gt; show profile for query 1;
-+----------------------+----------+
-| Status               | Duration |
-+----------------------+----------+
-| starting             | 0.000076 |
-| checking permissions | 0.000007 |
-| Opening tables       | 0.000016 |
-| init                 | 0.000013 |
-| System lock          | 0.000007 |
-| optimizing           | 0.000005 |
-| statistics           | 0.000012 |
-| preparing            | 0.000010 |
-| executing            | 0.000003 |
-| Sending data         | 0.000070 |
-| end                  | 0.000012 |
-| query end            | 0.000008 |
-| closing tables       | 0.000012 |
-| freeing items        | 0.000032 |
-| cleaning up          | 0.000013 |
-+----------------------+----------+
-15 rows in set, 1 warning (0.00 sec)
-</code></pre>
 </li>
+</ol>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">select</span> @@have_profiling;
+   <span class="hljs-keyword">select</span> @@profiling;
+</code></pre>
+<p>   &#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;SQL&#x6765;&#x6253;&#x5F00;&#x5B83;&#x3002;</p>
+<pre><code class="lang-SQL">   <span class="hljs-keyword">set</span> profiling=<span class="hljs-number">1</span>;
+</code></pre>
+<p>   &#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5256;&#x9762;&#x7CFB;&#x7EDF;&#x6765;&#x4E86;&#x89E3;SQL&#x7684;&#x6267;&#x884C;&#x6027;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-SQL">   mysql&gt; select count(*) from tb_emp;
+   +----------+
+   | count(*) |
+   +----------+
+   |       14 |
+   +----------+
+   1 row in set (0.00 sec)
+
+   mysql&gt; show profiles;
+   +----------+------------+-----------------------------+
+   | Query_ID | Duration   | Query                       |
+   +----------+------------+-----------------------------+
+   |        1 | 0.00029600 | select count(*) from tb_emp |
+   +----------+------------+-----------------------------+
+   1 row in set, 1 warning (0.00 sec)
+
+   mysql&gt; show profile for query 1;
+   +----------------------+----------+
+   | Status               | Duration |
+   +----------------------+----------+
+   | starting             | 0.000076 |
+   | checking permissions | 0.000007 |
+   | Opening tables       | 0.000016 |
+   | init                 | 0.000013 |
+   | System lock          | 0.000007 |
+   | optimizing           | 0.000005 |
+   | statistics           | 0.000012 |
+   | preparing            | 0.000010 |
+   | executing            | 0.000003 |
+   | Sending data         | 0.000070 |
+   | end                  | 0.000012 |
+   | query end            | 0.000008 |
+   | closing tables       | 0.000012 |
+   | freeing items        | 0.000032 |
+   | cleaning up          | 0.000013 |
+   +----------------------+----------+
+   15 rows in set, 1 warning (0.00 sec)
+</code></pre>
+<ol>
 <li><p>&#x4F18;&#x5316;CRUD&#x64CD;&#x4F5C;&#x3002;</p>
 <ul>
 <li><p>&#x4F18;&#x5316;<code>insert</code>&#x8BED;&#x53E5;</p>
@@ -2100,24 +2117,24 @@ mysql&gt; show profile for query 1;
 </li>
 <li><p>&#x4F18;&#x5316;&#x5206;&#x9875;&#x67E5;&#x8BE2;</p>
 <ul>
-<li><p>&#x5206;&#x9875;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x5934;&#x75BC;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x5982;&#x540C;<code>limit 1000, 20</code>&#xFF0C;&#x6B64;&#x65F6;MySQL&#x5DF2;&#x7ECF;&#x6392;&#x5E8F;&#x51FA;&#x524D;1020&#x6761;&#x8BB0;&#x5F55;&#x4F46;&#x662F;&#x4EC5;&#x4EC5;&#x8FD4;&#x56DE;&#x7B2C;1001&#x5230;1020&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x524D;1000&#x6761;&#x5B9E;&#x9645;&#x90FD;&#x7528;&#x4E0D;&#x4E0A;&#xFF0C;&#x67E5;&#x8BE2;&#x548C;&#x6392;&#x5E8F;&#x7684;&#x4EE3;&#x4EF7;&#x975E;&#x5E38;&#x9AD8;&#x3002;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x4F18;&#x5316;&#x601D;&#x8DEF;&#x662F;&#x5728;&#x7D22;&#x5F15;&#x4E0A;&#x5B8C;&#x6210;&#x6392;&#x5E8F;&#x548C;&#x5206;&#x9875;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x8868;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x6765;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x5168;&#x8868;&#x67E5;&#x8BE2;&#xFF0C;&#x4E5F;&#x907F;&#x514D;&#x4E86;&#x5916;&#x90E8;&#x6392;&#x5E8F;&#x3002;</p>
-<pre><code class="lang-SQL"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> ename <span class="hljs-keyword">limit</span> <span class="hljs-number">10000</span>, <span class="hljs-number">20</span>;
-<span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> tb_emp t1 <span class="hljs-keyword">inner</span> <span class="hljs-keyword">join</span> (<span class="hljs-keyword">select</span> eno <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> ename <span class="hljs-keyword">limit</span> <span class="hljs-number">10000</span>, <span class="hljs-number">20</span>) t2 <span class="hljs-keyword">on</span> t1.eno=t2.eno;
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;2&#x884C;SQL&#x662F;&#x4F18;&#x4E8E;&#x7B2C;1&#x884C;SQL&#x7684;&#xFF0C;&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x7684;&#x524D;&#x63D0;&#x662F;&#x5DF2;&#x7ECF;&#x5728;<code>ename</code>&#x5B57;&#x6BB5;&#x4E0A;&#x521B;&#x5EFA;&#x4E86;&#x7D22;&#x5F15;&#x3002;</p>
+<li>&#x5206;&#x9875;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x5934;&#x75BC;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x5982;&#x540C;<code>limit 1000, 20</code>&#xFF0C;&#x6B64;&#x65F6;MySQL&#x5DF2;&#x7ECF;&#x6392;&#x5E8F;&#x51FA;&#x524D;1020&#x6761;&#x8BB0;&#x5F55;&#x4F46;&#x662F;&#x4EC5;&#x4EC5;&#x8FD4;&#x56DE;&#x7B2C;1001&#x5230;1020&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x524D;1000&#x6761;&#x5B9E;&#x9645;&#x90FD;&#x7528;&#x4E0D;&#x4E0A;&#xFF0C;&#x67E5;&#x8BE2;&#x548C;&#x6392;&#x5E8F;&#x7684;&#x4EE3;&#x4EF7;&#x975E;&#x5E38;&#x9AD8;&#x3002;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x4F18;&#x5316;&#x601D;&#x8DEF;&#x662F;&#x5728;&#x7D22;&#x5F15;&#x4E0A;&#x5B8C;&#x6210;&#x6392;&#x5E8F;&#x548C;&#x5206;&#x9875;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x8868;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x6765;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x5168;&#x8868;&#x67E5;&#x8BE2;&#xFF0C;&#x4E5F;&#x907F;&#x514D;&#x4E86;&#x5916;&#x90E8;&#x6392;&#x5E8F;&#x3002;</li>
+</ul>
 </li>
 </ul>
 </li>
-<li><p>&#x4F7F;&#x7528;SQL&#x63D0;&#x793A;</p>
-<ul>
+</ol>
+<pre><code class="lang-SQL">       <span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> ename <span class="hljs-keyword">limit</span> <span class="hljs-number">10000</span>, <span class="hljs-number">20</span>;
+       <span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> tb_emp t1 <span class="hljs-keyword">inner</span> <span class="hljs-keyword">join</span> (<span class="hljs-keyword">select</span> eno <span class="hljs-keyword">from</span> tb_emp <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> ename <span class="hljs-keyword">limit</span> <span class="hljs-number">10000</span>, <span class="hljs-number">20</span>) t2 <span class="hljs-keyword">on</span> t1.eno=t2.eno;
+</code></pre>
+<pre><code>   &#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;2&#x884C;SQL&#x662F;&#x4F18;&#x4E8E;&#x7B2C;1&#x884C;SQL&#x7684;&#xFF0C;&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x7684;&#x524D;&#x63D0;&#x662F;&#x5DF2;&#x7ECF;&#x5728;`ename`&#x5B57;&#x6BB5;&#x4E0A;&#x521B;&#x5EFA;&#x4E86;&#x7D22;&#x5F15;&#x3002;
+</code></pre><ul>
+<li>&#x4F7F;&#x7528;SQL&#x63D0;&#x793A;<ul>
 <li>USE INDEX&#xFF1A;&#x5EFA;&#x8BAE;MySQL&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x3002;</li>
 <li>IGNORE INDEX&#xFF1A;&#x5EFA;&#x8BAE;MySQL&#x5FFD;&#x7565;&#x6389;&#x6307;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x3002;</li>
 <li>FORCE INDEX&#xFF1A;&#x5F3A;&#x5236;MySQL&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x3002;</li>
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 <h3 id="&#x914D;&#x7F6E;&#x4F18;&#x5316;">&#x914D;&#x7F6E;&#x4F18;&#x5316;</h3>
 <p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;MySQL&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
 <pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">variables</span>;
@@ -2209,7 +2226,7 @@ mysql&gt; show profile for query 1;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"93.MySQL性能优化","level":"1.11.4","depth":2,"next":{"title":"94.网络API接口设计","level":"1.11.5","depth":2,"path":"Day91-100/94.网络API接口设计.md","ref":"Day91-100/94.网络API接口设计.md","articles":[]},"previous":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"path":"Day91-100/92.Docker容器技术详解.md","ref":"Day91-100/92.Docker容器技术详解.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day91-100/93.MySQL性能优化.md","mtime":"2024-07-05T03:42:45.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"93.MySQL性能优化","level":"1.11.4","depth":2,"next":{"title":"94.网络API接口设计","level":"1.11.5","depth":2,"path":"Day91-100/94.网络API接口设计.md","ref":"Day91-100/94.网络API接口设计.md","articles":[]},"previous":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"path":"Day91-100/92.Docker容器技术详解.md","ref":"Day91-100/92.Docker容器技术详解.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day91-100/93.MySQL性能优化.md","mtime":"2024-07-05T07:21:41.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

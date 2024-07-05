@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -82,7 +82,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1830,7 +1839,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -1885,38 +1894,43 @@
 <h3 id="&#x5B89;&#x88C5;docker">&#x5B89;&#x88C5;Docker</h3>
 <p>&#x4E0B;&#x9762;&#x4EE5;CentOS&#x4E3A;&#x4F8B;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5B89;&#x88C5;Docker&#xFF0C;&#x4F7F;&#x7528;<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">Ubuntu</a>&#x3001;<a href="https://docs.docker.com/docker-for-mac/install/" target="_blank">macOS</a>&#x6216;<a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Windows</a>&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x5BF9;&#x5E94;&#x7684;&#x94FE;&#x63A5;&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x5E73;&#x53F0;&#x4E0B;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
 <ol>
-<li><p>&#x786E;&#x5B9A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7248;&#x672C;&#xFF08;CentOS 7&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;3.10+&#xFF1B;CentOS 6&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;2.6+&#xFF09;&#x3002;</p>
-<pre><code class="lang-Bash">uname -r
-</code></pre>
-</li>
-<li><p>&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x5E95;&#x5C42;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#xFF08;&#x5EFA;&#x8BAE;&#x4E00;&#x5B9A;&#x8981;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5728;&#x4F7F;&#x7528;Docker&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x95EE;&#x9898;&#xFF09;&#x3002;</p>
-<pre><code class="lang-Bash">yum update
-</code></pre>
-</li>
-<li><p>&#x79FB;&#x9664;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x65E7;&#x7684;Docker&#x7248;&#x672C;&#x3002;</p>
-<pre><code class="lang-Bash">yum list installed | grep docker
-yum erase -y docker docker-common docker-engine
-</code></pre>
-</li>
-<li><p>&#x5B89;&#x88C5;yum&#x5DE5;&#x5177;&#x5305;&#x548C;&#x4F9D;&#x8D56;&#x9879;&#x3002;</p>
-<pre><code class="lang-Bash">yum install -y yum-utils device-mapper-persistent-data lvm2
-</code></pre>
-</li>
-<li><p>&#x901A;&#x8FC7;yum&#x5DE5;&#x5177;&#x5305;&#x6DFB;&#x52A0;yum&#x6E90;&#xFF08;&#x5B89;&#x88C5;Docker-ce&#x7684;&#x6E90;&#xFF09;&#x3002;</p>
-<pre><code class="lang-Bash">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-</code></pre>
-</li>
-<li><p>&#x5728;CentOS&#x4E0B;&#x4F7F;&#x7528;yum&#x5B89;&#x88C5;Docker-ce&#x5E76;&#x542F;&#x52A8;&#x3002;</p>
-<pre><code class="lang-Bash">yum -y install docker-ce
-systemctl start docker
-</code></pre>
-</li>
-<li><p>&#x67E5;&#x770B;Docker&#x7684;&#x4FE1;&#x606F;&#x548C;&#x7248;&#x672C;&#x3002;</p>
-<pre><code class="lang-Shell">docker version
-docker info
-</code></pre>
-</li>
+<li>&#x786E;&#x5B9A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7248;&#x672C;&#xFF08;CentOS 7&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;3.10+&#xFF1B;CentOS 6&#x8981;&#x6C42;64&#x4F4D;&#xFF0C;&#x5185;&#x6838;&#x7248;&#x672C;2.6+&#xFF09;&#x3002;</li>
 </ol>
+<pre><code class="lang-Bash">   uname -r
+</code></pre>
+<ol>
+<li>&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x5E95;&#x5C42;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#xFF08;&#x5EFA;&#x8BAE;&#x4E00;&#x5B9A;&#x8981;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5728;&#x4F7F;&#x7528;Docker&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x95EE;&#x9898;&#xFF09;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   yum update
+</code></pre>
+<ol>
+<li>&#x79FB;&#x9664;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x65E7;&#x7684;Docker&#x7248;&#x672C;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   yum list installed | grep docker
+   yum erase -y docker docker-common docker-engine
+</code></pre>
+<ol>
+<li>&#x5B89;&#x88C5;yum&#x5DE5;&#x5177;&#x5305;&#x548C;&#x4F9D;&#x8D56;&#x9879;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   yum install -y yum-utils device-mapper-persistent-data lvm2
+</code></pre>
+<ol>
+<li>&#x901A;&#x8FC7;yum&#x5DE5;&#x5177;&#x5305;&#x6DFB;&#x52A0;yum&#x6E90;&#xFF08;&#x5B89;&#x88C5;Docker-ce&#x7684;&#x6E90;&#xFF09;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre>
+<ol>
+<li>&#x5728;CentOS&#x4E0B;&#x4F7F;&#x7528;yum&#x5B89;&#x88C5;Docker-ce&#x5E76;&#x542F;&#x52A8;&#x3002;</li>
+</ol>
+<pre><code class="lang-Bash">   yum -y install docker-ce
+   systemctl start docker
+</code></pre>
+<ol>
+<li>&#x67E5;&#x770B;Docker&#x7684;&#x4FE1;&#x606F;&#x548C;&#x7248;&#x672C;&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   docker version
+   docker info
+</code></pre>
 <p>&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x8F7D;&#x955C;&#x50CF;&#x548C;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x6765;&#x770B;&#x770B;Docker&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FD0;&#x8F6C;&#x8D77;&#x6765;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4ECE;Docker&#x7684;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x4E0B;&#x8F7D;&#x540D;&#x4E3A;hello-world&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;</p>
 <pre><code class="lang-Shell">docker pull hello-world
 </code></pre>
@@ -2264,160 +2278,176 @@ Login Succeeded
 <h4 id="dockerfile&#x6307;&#x4EE4;">Dockerfile&#x6307;&#x4EE4;</h4>
 <p>&#x60F3;&#x4E86;&#x89E3;Dockerfile&#x7684;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;<a href="https://docs.docker.com/engine/reference/builder/" target="_blank">&#x53C2;&#x8003;&#x624B;&#x518C;</a>&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x3002;</p>
 <ol>
-<li><p><strong>FROM</strong>&#xFF1A;&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x5FC5;&#x987B;&#x662F;Dockerfile&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt; [AS &lt;&#x522B;&#x540D;&gt;]
+<li><strong>FROM</strong>&#xFF1A;&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x5FC5;&#x987B;&#x662F;Dockerfile&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt; [AS &lt;&#x522B;&#x540D;&gt;]
 </code></pre>
-<p>&#x6216;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt;[:&lt;&#x6807;&#x7B7E;&gt;] [AS &lt;&#x522B;&#x540D;&gt;]
+<p>   &#x6216;</p>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">FROM</span> &lt;&#x955C;&#x50CF;&#x540D;&gt;[:&lt;&#x6807;&#x7B7E;&gt;] [AS &lt;&#x522B;&#x540D;&gt;]
 </code></pre>
-</li>
-<li><p><strong>RUN</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">RUN</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+<ol>
+<li><strong>RUN</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">RUN</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
 </span></code></pre>
-<p>&#x6216;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">RUN</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+<p>   &#x6216;</p>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">RUN</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
 </span></code></pre>
-</li>
-<li><p><strong>CMD</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x540E;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">CMD</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+<ol>
+<li><strong>CMD</strong>&#xFF1A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#x540E;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">CMD</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
 </span></code></pre>
-<p>&#x6216;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">CMD</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+<p>   &#x6216;</p>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">CMD</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
 </span></code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;Docker&#x4E0D;&#x540C;&#x4E8E;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5BB9;&#x5668;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#x5E94;&#x8BE5;&#x4F4D;&#x4E8E;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#x3002;CMD&#x547D;&#x4EE4;&#x76F8;&#x5F53;&#x4E8E;&#x5C31;&#x662F;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5BB9;&#x5668;&#x4E3B;&#x8FDB;&#x7A0B;&#xFF08;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x540E;&#x8981;&#x5728;&#x524D;&#x53F0;&#x6267;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#xFF09;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x5BB9;&#x5668;&#x4E5F;&#x5C31;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x542F;&#x52A8;Nginx&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>service nginx start</code>&#x6216;&#x662F;<code>systemctl start nginx</code>&#x800C;&#x662F;&#x8981;&#x901A;&#x8FC7;<code>CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code>&#x8BA9;&#x5B83;&#x5728;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#x3002;</p>
 </blockquote>
-</li>
-<li><p><strong>ENTRYPOINT</strong>&#xFF1A;&#x548C;CMD&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x518D;&#x6B21;&#x4F20;&#x7ED9;ENTRYPOINT&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x5C31;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x901A;&#x8FC7;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E3A;&#x8BE5;&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x53EF;&#x8986;&#x76D6;&#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
+<ol>
+<li><strong>ENTRYPOINT</strong>&#xFF1A;&#x548C;CMD&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x518D;&#x6B21;&#x4F20;&#x7ED9;ENTRYPOINT&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x5C31;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x901A;&#x8FC7;<code>docker run</code>&#x547D;&#x4EE4;&#x884C;&#x4E3A;&#x8BE5;&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x53EF;&#x8986;&#x76D6;&#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">&lt;&#x547D;&#x4EE4;&gt; [&#x53C2;&#x6570;1], [&#x53C2;&#x6570;2], ...
 </span></code></pre>
-<p>&#x6216;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
+<p>   &#x6216;</p>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">ENTRYPOINT</span> <span class="bash">[<span class="hljs-string">&quot;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;1&quot;</span>, <span class="hljs-string">&quot;&#x53C2;&#x6570;2&quot;</span>, ...]
 </span></code></pre>
-</li>
-<li><p><strong>WORKDIR</strong>&#xFF1A;&#x5728;&#x901A;&#x8FC7;&#x955C;&#x50CF;&#x521B;&#x5EFA;&#x65B0;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF0C;ENTRYPOINT&#x548C;CMD&#x6307;&#x5B9A;&#x7684;&#x7A0B;&#x5E8F;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-w</code>&#x53C2;&#x6570;&#x6765;&#x8986;&#x76D6;&#x7531;WORKDIR&#x6307;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">WORKDIR</span> <span class="bash">/opt/webapp
+<ol>
+<li><strong>WORKDIR</strong>&#xFF1A;&#x5728;&#x901A;&#x8FC7;&#x955C;&#x50CF;&#x521B;&#x5EFA;&#x65B0;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF0C;ENTRYPOINT&#x548C;CMD&#x6307;&#x5B9A;&#x7684;&#x7A0B;&#x5E8F;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-w</code>&#x53C2;&#x6570;&#x6765;&#x8986;&#x76D6;&#x7531;WORKDIR&#x6307;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">WORKDIR</span> <span class="bash">/opt/webapp
 </span></code></pre>
-<pre><code class="lang-Shell">docker run -w /usr/share/webapp ...
+<pre><code class="lang-Shell">   docker run -w /usr/share/webapp ...
 </code></pre>
-</li>
-<li><p><strong>ENV</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-e</code>&#x53C2;&#x6570;&#x6765;&#x4FEE;&#x6539;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ENV</span> DEFAULT_PORT=<span class="hljs-number">8080</span>
+<ol>
+<li><strong>ENV</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x65F6;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x4F7F;&#x7528;<code>docker run</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-e</code>&#x53C2;&#x6570;&#x6765;&#x4FEE;&#x6539;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">ENV</span> DEFAULT_PORT=<span class="hljs-number">8080</span>
 </code></pre>
-<pre><code class="lang-Shell">docker run -e &quot;DEFAULT_PORT=8000&quot; ...
+<pre><code class="lang-Shell">   docker run -e &quot;DEFAULT_PORT=8000&quot; ...
 </code></pre>
-</li>
-<li><p><strong>USER</strong>&#xFF1A;&#x6307;&#x5B9A;&#x955C;&#x50CF;&#x4F1A;&#x4EE5;&#x4EC0;&#x4E48;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x53BB;&#x8FD0;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">USER</span> nginx
+<ol>
+<li><strong>USER</strong>&#xFF1A;&#x6307;&#x5B9A;&#x955C;&#x50CF;&#x4F1A;&#x4EE5;&#x4EC0;&#x4E48;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x53BB;&#x8FD0;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">USER</span> nginx
 </code></pre>
-</li>
-<li><p><strong>VOLUME</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x95F4;&#x6570;&#x636E;&#x7684;&#x5171;&#x4EAB;&#x548C;&#x91CD;&#x7528;&#xFF0C;&#x5BF9;&#x5377;&#x6240;&#x4F5C;&#x7684;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x9A6C;&#x4E0A;&#x751F;&#x6548;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x4F7F;&#x7528;<code>--volume</code>&#x53C2;&#x6570;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5377;&#x7684;&#x6620;&#x5C04;&#x64CD;&#x4F5C;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">VOLUME</span> <span class="bash">[<span class="hljs-string">&quot;/&#x8DEF;&#x5F84;1&quot;</span>, <span class="hljs-string">&quot;/&#x8DEF;&#x5F84;2/&#x5B50;&#x8DEF;&#x5F84;2.1/&quot;</span>, ...]
+<ol>
+<li><strong>VOLUME</strong>&#xFF1A;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x95F4;&#x6570;&#x636E;&#x7684;&#x5171;&#x4EAB;&#x548C;&#x91CD;&#x7528;&#xFF0C;&#x5BF9;&#x5377;&#x6240;&#x4F5C;&#x7684;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x9A6C;&#x4E0A;&#x751F;&#x6548;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x4F7F;&#x7528;<code>--volume</code>&#x53C2;&#x6570;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5377;&#x7684;&#x6620;&#x5C04;&#x64CD;&#x4F5C;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">VOLUME</span> <span class="bash">[<span class="hljs-string">&quot;/&#x8DEF;&#x5F84;1&quot;</span>, <span class="hljs-string">&quot;/&#x8DEF;&#x5F84;2/&#x5B50;&#x8DEF;&#x5F84;2.1/&quot;</span>, ...]
 </span></code></pre>
-</li>
-<li><p><strong>ADD</strong>&#xFF1A;&#x5C06;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x590D;&#x5236;&#x5230;&#x955C;&#x50CF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x548C;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;ADD&#x547D;&#x4EE4;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x89E3;&#x538B;&#x7F29;&#x89E3;&#x5F52;&#x6863;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ADD</span> <span class="bash">[--chown=&lt;&#x7528;&#x6237;&gt;:&lt;&#x7528;&#x6237;&#x7EC4;&gt;] &lt;&#x6E90;&#x6587;&#x4EF6;&gt; &lt;&#x76EE;&#x6807;&#x6587;&#x4EF6;&gt;
+<ol>
+<li><strong>ADD</strong>&#xFF1A;&#x5C06;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x590D;&#x5236;&#x5230;&#x955C;&#x50CF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x548C;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;ADD&#x547D;&#x4EE4;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x89E3;&#x538B;&#x7F29;&#x89E3;&#x5F52;&#x6863;&#x7684;&#x64CD;&#x4F5C;&#x3002;</li>
+</ol>
+<pre><code class="lang-Dockerfile">   <span class="hljs-keyword">ADD</span> <span class="bash">[--chown=&lt;&#x7528;&#x6237;&gt;:&lt;&#x7528;&#x6237;&#x7EC4;&gt;] &lt;&#x6E90;&#x6587;&#x4EF6;&gt; &lt;&#x76EE;&#x6807;&#x6587;&#x4EF6;&gt;
 </span></code></pre>
-</li>
+<ol>
 <li><p><strong>COPY</strong>&#xFF1A;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x4E8E;ADD&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x4E3B;&#x52A8;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x63D0;&#x53D6;&#x64CD;&#x4F5C;&#x3002;</p>
 </li>
 <li><p><strong>LABEL</strong>&#xFF1A;&#x4E3A;Docker&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x4F7F;&#x7528;<code>docker inspect</code>&#x547D;&#x4EE4;&#x65F6;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x5143;&#x6570;&#x636E;&#x3002;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">LABEL</span> <span class="bash">version=<span class="hljs-string">&quot;1.0.0&quot;</span> location=<span class="hljs-string">&quot;Chengdu&quot;</span>
-</span></code></pre>
-</li>
-<li><p><strong>ONBUILD</strong>&#xFF1A;&#x4E3A;&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x88AB;&#x7528;&#x4F5C;&#x5176;&#x4ED6;&#x955C;&#x50CF;&#x7684;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x5C06;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-Dockerfile"><span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">ADD</span> <span class="bash">. /app/src
-</span><span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">RUN</span> <span class="bash"><span class="hljs-built_in">cd</span> /app/src &amp;&amp; make
-</span></code></pre>
 </li>
 </ol>
+<pre><code class="lang-Dockerfile">    <span class="hljs-keyword">LABEL</span> <span class="bash">version=<span class="hljs-string">&quot;1.0.0&quot;</span> location=<span class="hljs-string">&quot;Chengdu&quot;</span>
+</span></code></pre>
+<ol>
+<li><strong>ONBUILD</strong>&#xFF1A;&#x4E3A;&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x88AB;&#x7528;&#x4F5C;&#x5176;&#x4ED6;&#x955C;&#x50CF;&#x7684;&#x57FA;&#x7840;&#x955C;&#x50CF;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x5C06;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-Dockerfile">    <span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">ADD</span> <span class="bash">. /app/src
+</span>    <span class="hljs-keyword">ONBUILD</span> <span class="hljs-keyword">RUN</span> <span class="bash"><span class="hljs-built_in">cd</span> /app/src &amp;&amp; make
+</span></code></pre>
 <h3 id="&#x591A;&#x5BB9;&#x5668;&#x7BA1;&#x7406;">&#x591A;&#x5BB9;&#x5668;&#x7BA1;&#x7406;</h3>
 <p>&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x5BB9;&#x5668;&#x591A;&#x4E86;&#x4E4B;&#x540E;&#x7BA1;&#x7406;&#x5BB9;&#x5668;&#x7684;&#x5DE5;&#x4F5C;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x9EBB;&#x70E6;&#x3002;&#x5982;&#x679C;&#x8981;&#x5BF9;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x4F7F;&#x5F97;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x534F;&#x4F5C;&#x751A;&#x81F3;&#x5B9E;&#x73B0;&#x590D;&#x6742;&#x7684;&#x8C03;&#x5EA6;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x3002;Docker&#x539F;&#x751F;&#x5BF9;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x7684;&#x652F;&#x6301;&#x975E;&#x5E38;&#x5F31;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x793E;&#x533A;&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x6765;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x3002;</p>
 <h4 id="docker-compose">Docker Compose</h4>
 <p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;Docker Compose&#x5DE5;&#x5177;&#x6765;&#x5B9E;&#x73B0;&#x57FA;&#x4E8E;YAML&#x6587;&#x4EF6;&#x7684;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#xFF0C;YAML&#x6587;&#x4EF6;&#x4F1A;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5BB9;&#x5668;&#x4EE5;&#x53CA;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x5C5E;&#x6027;&#xFF0C;Docker Compose&#x4F1A;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x6765;&#x7BA1;&#x7406;&#x5BB9;&#x5668;&#x3002;</p>
 <ol>
-<li><p>&#x5B89;&#x88C5;Docker Compose&#x3002;</p>
-<pre><code class="lang-Shell">curl -L &quot;https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+<li>&#x5B89;&#x88C5;Docker Compose&#x3002;</li>
+</ol>
+<pre><code class="lang-Shell">   curl -L &quot;https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+   chmod +x /usr/local/bin/docker-compose
 </code></pre>
 <blockquote>
 <p>&#x8BF4;&#x660E;&#xFF1A;&#x5982;&#x679C;&#x6CA1;&#x6709;curl&#x5DE5;&#x5177;&#xFF0C;&#x5728;CentOS&#x4E0B;&#x53EF;&#x4EE5;&#x5148;&#x901A;&#x8FC7;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;yum&#x5B89;&#x88C5;curl&#x518D;&#x6267;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
 </blockquote>
-<p>&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Python&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;pip&#x6765;&#x5B89;&#x88C5;Docker Compose&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<pre><code class="lang-Shell">pip3 install -U docker-compose
+<p>   &#x5F53;&#x7136;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Python&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;pip&#x6765;&#x5B89;&#x88C5;Docker Compose&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-Shell">   pip3 install -U docker-compose
 </code></pre>
-</li>
+<ol>
 <li><p>&#x4F7F;&#x7528;Docker Compose&#x3002;</p>
 <p>&#x6211;&#x4EEC;&#x5728;&#x521A;&#x624D;&#x7684;Flask&#x9879;&#x76EE;&#x4E2D;&#x5F15;&#x5165;&#x7F13;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5229;&#x7528;Flask&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x636E;&#x63A5;&#x53E3;&#x4E3A;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;Vue.js&#x8FDB;&#x884C;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x5E76;&#x5C06;&#x9759;&#x6001;&#x9875;&#x9762;&#x90E8;&#x7F72;&#x5728;Nginx&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-Shell">[ECS-root ~]# tree temp
-temp
-&#x251C;&#x2500;&#x2500; docker-compose.yml
-&#x251C;&#x2500;&#x2500; html
-&#x2502;   &#x2514;&#x2500;&#x2500; index.html
-&#x2514;&#x2500;&#x2500; myapp
-    &#x251C;&#x2500;&#x2500; api
-    &#x2502;   &#x251C;&#x2500;&#x2500; app.py
-    &#x2502;   &#x251C;&#x2500;&#x2500; requirements.txt
-    &#x2502;   &#x2514;&#x2500;&#x2500; start.sh
-    &#x2514;&#x2500;&#x2500; Dockerfile
-</code></pre>
-<p>&#x4FEE;&#x6539;&#x540E;&#x7684;app.py&#x6587;&#x4EF6;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<p>```Python
-from pickle import dumps, loads</p>
-<p>from flask import Flask
-from flask_restful import Resource, Api
-from flask_cors import CORS
-from redis import Redis</p>
-<p>app = Flask(<strong>name</strong>)
-CORS(app, resources={r&apos;/api/<em>&apos;: {&apos;origins&apos;: &apos;</em>&apos;}})
-api = Api(app)
-redis = Redis(host=&apos;redis-master&apos;, port=6379)</p>
 </li>
 </ol>
-<p>   class Product(Resource):</p>
-<pre><code>   def get(self):
-       data = redis.get(&apos;products&apos;)
-       if data:
-           products = loads(data)
-       else:
-           products = [&apos;Ice Cream&apos;, &apos;Chocolate&apos;, &apos;Coca Cola&apos;, &apos;Hamburger&apos;]
-           redis.set(&apos;products&apos;, dumps(products))
-       return {&apos;products&apos;: products}
-</code></pre><p>   api.add_resource(Product, &apos;/api/products&apos;)</p>
-<pre><code>
-   html&#x6587;&#x4EF6;&#x5939;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x901A;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;Nginx&#x7684;&#x5BB9;&#x5668;&#x6765;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x9875;&#x9762;&#x3002;index.html&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;
+<pre><code class="lang-Shell">   [ECS-root ~]# tree temp
+   temp
+   &#x251C;&#x2500;&#x2500; docker-compose.yml
+   &#x251C;&#x2500;&#x2500; html
+   &#x2502;   &#x2514;&#x2500;&#x2500; index.html
+   &#x2514;&#x2500;&#x2500; myapp
+       &#x251C;&#x2500;&#x2500; api
+       &#x2502;   &#x251C;&#x2500;&#x2500; app.py
+       &#x2502;   &#x251C;&#x2500;&#x2500; requirements.txt
+       &#x2502;   &#x2514;&#x2500;&#x2500; start.sh
+       &#x2514;&#x2500;&#x2500; Dockerfile
+</code></pre>
+<p>   &#x4FEE;&#x6539;&#x540E;&#x7684;app.py&#x6587;&#x4EF6;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Python">   <span class="hljs-keyword">from</span> pickle <span class="hljs-keyword">import</span> dumps, loads
 
-   ```HTML
-   &lt;!DOCTYPE html&gt;
-   &lt;html lang=&quot;en&quot;&gt;
-   &lt;head&gt;
-       &lt;meta charset=&quot;utf-8&quot;&gt;
-       &lt;title&gt;&#x9996;&#x9875;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-       &lt;div id=&quot;app&quot;&gt;
-           &lt;h2&gt;&#x4EA7;&#x54C1;&#x5217;&#x8868;&lt;/h2&gt;
-           &lt;ul&gt;
-               &lt;li v-for=&quot;product in products&quot;&gt;&lt;/li&gt;
-           &lt;/ul&gt;
-       &lt;/div&gt;
-       &lt;script src=&quot;https://cdn.bootcss.com/vue/2.6.10/vue.min.js&quot;&gt;&lt;/script&gt;
-       &lt;script&gt;
-           new Vue({
-               el: &apos;#app&apos;, 
+   <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+   <span class="hljs-keyword">from</span> flask_restful <span class="hljs-keyword">import</span> Resource, Api
+   <span class="hljs-keyword">from</span> flask_cors <span class="hljs-keyword">import</span> CORS
+   <span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> Redis
+
+   app = Flask(__name__)
+   CORS(app, resources={<span class="hljs-string">r&apos;/api/*&apos;</span>: {<span class="hljs-string">&apos;origins&apos;</span>: <span class="hljs-string">&apos;*&apos;</span>}})
+   api = Api(app)
+   redis = Redis(host=<span class="hljs-string">&apos;redis-master&apos;</span>, port=<span class="hljs-number">6379</span>)
+
+
+   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span><span class="hljs-params">(Resource)</span>:</span>
+
+       <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self)</span>:</span>
+           data = redis.get(<span class="hljs-string">&apos;products&apos;</span>)
+           <span class="hljs-keyword">if</span> data:
+               products = loads(data)
+           <span class="hljs-keyword">else</span>:
+               products = [<span class="hljs-string">&apos;Ice Cream&apos;</span>, <span class="hljs-string">&apos;Chocolate&apos;</span>, <span class="hljs-string">&apos;Coca Cola&apos;</span>, <span class="hljs-string">&apos;Hamburger&apos;</span>]
+               redis.set(<span class="hljs-string">&apos;products&apos;</span>, dumps(products))
+           <span class="hljs-keyword">return</span> {<span class="hljs-string">&apos;products&apos;</span>: products}
+
+
+   api.add_resource(Product, <span class="hljs-string">&apos;/api/products&apos;</span>)
+</code></pre>
+<p>   html&#x6587;&#x4EF6;&#x5939;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x901A;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;Nginx&#x7684;&#x5BB9;&#x5668;&#x6765;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x9875;&#x9762;&#x3002;index.html&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-HTML">   <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4EA7;&#x54C1;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/vue/2.6.10/vue.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+           <span class="hljs-keyword">new</span> Vue({
+               el: <span class="hljs-string">&apos;#app&apos;</span>, 
                data: {
                    products: []
                },
                created() {
-                   fetch(&apos;http://1.2.3.4:8000/api/products&apos;)
+                   fetch(<span class="hljs-string">&apos;http://1.2.3.4:8000/api/products&apos;</span>)
                        .then(resp =&gt; resp.json())
-                       .then(json =&gt; {this.products = json.products})
+                       .then(json =&gt; {<span class="hljs-keyword">this</span>.products = json.products})
                }
            })
-       &lt;/script&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
-</code></pre><p>   &#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x901A;&#x8FC7;docker-compose.yml&#x6587;&#x4EF6;&#x6765;&#x521B;&#x5EFA;&#x4E09;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x6307;&#x660E;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+       </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>   &#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x901A;&#x8FC7;docker-compose.yml&#x6587;&#x4EF6;&#x6765;&#x521B;&#x5EFA;&#x4E09;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x6307;&#x660E;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
 <pre><code class="lang-YAML"><span class="hljs-attr">   version:</span> <span class="hljs-string">&apos;3&apos;</span>
 <span class="hljs-attr">   services:</span>
 <span class="hljs-attr">     api-server:</span>
@@ -2509,7 +2539,7 @@ redis = Redis(host=&apos;redis-master&apos;, port=6379)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"next":{"title":"93.MySQL性能优化","level":"1.11.4","depth":2,"path":"Day91-100/93.MySQL性能优化.md","ref":"Day91-100/93.MySQL性能优化.md","articles":[]},"previous":{"title":"91.团队项目开发的问题和解决方案","level":"1.11.2","depth":2,"path":"Day91-100/91.团队项目开发的问题和解决方案.md","ref":"Day91-100/91.团队项目开发的问题和解决方案.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day91-100/92.Docker容器技术详解.md","mtime":"2024-07-05T04:10:58.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"92.Docker容器技术详解","level":"1.11.3","depth":2,"next":{"title":"93.MySQL性能优化","level":"1.11.4","depth":2,"path":"Day91-100/93.MySQL性能优化.md","ref":"Day91-100/93.MySQL性能优化.md","articles":[]},"previous":{"title":"91.团队项目开发的问题和解决方案","level":"1.11.2","depth":2,"path":"Day91-100/91.团队项目开发的问题和解决方案.md","ref":"Day91-100/91.团队项目开发的问题和解决方案.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day91-100/92.Docker容器技术详解.md","mtime":"2024-07-05T07:21:41.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

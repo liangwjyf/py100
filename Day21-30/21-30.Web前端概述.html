@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn" >
+<html lang="" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jayclang">
         
-        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
@@ -67,7 +67,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="Type to search" />
 </div>
 
             
@@ -78,7 +78,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1826,7 +1835,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            Published with GitBook
         </a>
     </li>
 </ul>
@@ -2003,18 +2012,20 @@
 </ul>
 <h4 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h4>
 <ul>
-<li><p>&#x6587;&#x6863;&#x7C7B;&#x578B;</p>
-<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<li>&#x6587;&#x6863;&#x7C7B;&#x578B;</li>
+</ul>
+<pre><code class="lang-HTML">  <span class="hljs-meta">&lt;!doctype html&gt;</span>
 </code></pre>
-<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
+<pre><code class="lang-HTML">  <span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
 </code></pre>
-<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span>
+<pre><code class="lang-HTML">  <span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span>
 </code></pre>
-</li>
-<li><p>&#x6CE8;&#x91CA;</p>
-<pre><code class="lang-HTML"><span class="hljs-comment">&lt;!-- &#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6CE8;&#x91CA;&#xFF0C;&#x6CE8;&#x91CA;&#x4E0D;&#x80FD;&#x591F;&#x5D4C;&#x5957; --&gt;</span>
+<ul>
+<li>&#x6CE8;&#x91CA;</li>
+</ul>
+<pre><code class="lang-HTML">  <span class="hljs-comment">&lt;!-- &#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6CE8;&#x91CA;&#xFF0C;&#x6CE8;&#x91CA;&#x4E0D;&#x80FD;&#x591F;&#x5D4C;&#x5957; --&gt;</span>
 </code></pre>
-</li>
+<ul>
 <li><p>&#x5C5E;&#x6027;</p>
 <ul>
 <li>id&#xFF1A;&#x552F;&#x4E00;&#x6807;&#x8BC6;</li>
@@ -2260,21 +2271,22 @@
 </ul>
 <h4 id="javascript-api">JavaScript API</h4>
 <ul>
-<li><p>&#x5BA2;&#x6237;&#x7AEF;&#x5B58;&#x50A8; - <code>localStorage</code>&#x548C;<code>sessionStorage</code></p>
-<pre><code class="lang-JavaScript">localStorage.colorSetting = <span class="hljs-string">&apos;#a4509b&apos;</span>;
-localStorage[<span class="hljs-string">&apos;colorSetting&apos;</span>] = <span class="hljs-string">&apos;#a4509b&apos;</span>;
-localStorage.setItem(<span class="hljs-string">&apos;colorSetting&apos;</span>, <span class="hljs-string">&apos;#a4509b&apos;</span>);
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x5B58;&#x50A8; - <code>localStorage</code>&#x548C;<code>sessionStorage</code></li>
+</ul>
+<pre><code class="lang-JavaScript">  localStorage.colorSetting = <span class="hljs-string">&apos;#a4509b&apos;</span>;
+  localStorage[<span class="hljs-string">&apos;colorSetting&apos;</span>] = <span class="hljs-string">&apos;#a4509b&apos;</span>;
+  localStorage.setItem(<span class="hljs-string">&apos;colorSetting&apos;</span>, <span class="hljs-string">&apos;#a4509b&apos;</span>);
 </code></pre>
-</li>
-<li><p>&#x83B7;&#x53D6;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F; - <code>geolocation</code></p>
-<pre><code class="lang-JavaScript">navigator.geolocation.getCurrentPosition(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pos</span>) </span>{           
-    <span class="hljs-built_in">console</span>.log(pos.coords.latitude)
-    <span class="hljs-built_in">console</span>.log(pos.coords.longitude)
-})
+<ul>
+<li>&#x83B7;&#x53D6;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F; - <code>geolocation</code></li>
+</ul>
+<pre><code class="lang-JavaScript">  navigator.geolocation.getCurrentPosition(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pos</span>) </span>{           
+      <span class="hljs-built_in">console</span>.log(pos.coords.latitude)
+      <span class="hljs-built_in">console</span>.log(pos.coords.longitude)
+  })
 </code></pre>
-</li>
-<li><p>&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x6570;&#x636E; - Fetch API</p>
-</li>
+<ul>
+<li>&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x6570;&#x636E; - Fetch API</li>
 <li>&#x7ED8;&#x5236;&#x56FE;&#x5F62; - <code>&lt;canvas&gt;</code>&#x7684;API</li>
 <li>&#x97F3;&#x89C6;&#x9891; - <code>&lt;audio&gt;</code>&#x548C;<code>&lt;video&gt;</code>&#x7684;API</li>
 </ul>
@@ -2403,205 +2415,210 @@ localStorage.setItem(<span class="hljs-string">&apos;colorSetting&apos;</span>, 
 <p>&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x5F00;&#x53D1;&#xFF08;&#x524D;&#x7AEF;&#x6E32;&#x67D3;&#xFF09;&#x5FC5;&#x9009;&#x6846;&#x67B6;&#x3002;</p>
 <h5 id="&#x5FEB;&#x901F;&#x4E0A;&#x624B;">&#x5FEB;&#x901F;&#x4E0A;&#x624B;</h5>
 <ol>
-<li><p>&#x5F15;&#x5165;Vue&#x7684;JavaScript&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x63A8;&#x8350;&#x4ECE;CDN&#x670D;&#x52A1;&#x5668;&#x52A0;&#x8F7D;&#x5B83;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF08;&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3; &#xFF09;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            product: <span class="hljs-string">&apos;iPhone X&apos;</span>
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x6761;&#x4EF6;&#x4E0E;&#x5FAA;&#x73AF;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
-             - 
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
-                &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            products: [
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
-            ]
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
-             - 
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
-                &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            products: [
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
-            ]
-        },
-        computed: {
-            totalQuantity() {
-                <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
-                    <span class="hljs-keyword">return</span> sum + product.quantity
-                }, <span class="hljs-number">0</span>);
-            }
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
-             - 
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
-                &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;product.quantity += 1&quot;</span>&gt;</span>
-                &#x589E;&#x52A0;&#x5E93;&#x5B58;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            products: [
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
-            ]
-        },
-        computed: {
-            totalQuantity() {
-                <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
-                    <span class="hljs-keyword">return</span> sum + product.quantity
-                }, <span class="hljs-number">0</span>);
-            }
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x7528;&#x6237;&#x8F93;&#x5165;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
-             - 
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">v-model.number</span>=<span class="hljs-string">&quot;product.quantity&quot;</span> <span class="hljs-attr">min</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
-                &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;product.quantity += 1&quot;</span>&gt;</span>
-                &#x589E;&#x52A0;&#x5E93;&#x5B58;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            products: [
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
-                {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
-            ]
-        },
-        computed: {
-            totalQuantity() {
-                <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
-                    <span class="hljs-keyword">return</span> sum + product.quantity
-                }, <span class="hljs-number">0</span>);
-            }
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x52A0;&#x8F7D;JSON&#x6570;&#x636E;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
-             - 
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
-                &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
-        el: <span class="hljs-string">&apos;#app&apos;</span>,
-        data: {
-            products: []
-        }&#xFF0C;
-        created() {
-            fetch(<span class="hljs-string">&apos;https://jackfrued.top/api/products&apos;</span>)
-                .then(response =&gt; response.json())
-                .then(json =&gt; {
-                    <span class="hljs-keyword">this</span>.products = json
-                });
-        }
-    });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
+<li>&#x5F15;&#x5165;Vue&#x7684;JavaScript&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x63A8;&#x8350;&#x4ECE;CDN&#x670D;&#x52A1;&#x5668;&#x52A0;&#x8F7D;&#x5B83;&#x3002;</li>
 </ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF08;&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3; &#xFF09;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               product: <span class="hljs-string">&apos;iPhone X&apos;</span>
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x6761;&#x4EF6;&#x4E0E;&#x5FAA;&#x73AF;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
+                - 
+               <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
+                   &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               products: [
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
+               ]
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
+                - 
+               <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
+                   &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               products: [
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
+               ]
+           },
+           computed: {
+               totalQuantity() {
+                   <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
+                       <span class="hljs-keyword">return</span> sum + product.quantity
+                   }, <span class="hljs-number">0</span>);
+               }
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
+                - 
+               <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
+                   &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;product.quantity += 1&quot;</span>&gt;</span>
+                   &#x589E;&#x52A0;&#x5E93;&#x5B58;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               products: [
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
+               ]
+           },
+           computed: {
+               totalQuantity() {
+                   <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
+                       <span class="hljs-keyword">return</span> sum + product.quantity
+                   }, <span class="hljs-number">0</span>);
+               }
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x7528;&#x6237;&#x8F93;&#x5165;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
+                - 
+               <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">v-model.number</span>=<span class="hljs-string">&quot;product.quantity&quot;</span> <span class="hljs-attr">min</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
+                   &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;product.quantity += 1&quot;</span>&gt;</span>
+                   &#x589E;&#x52A0;&#x5E93;&#x5B58;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x603B;&#x91CF;&#xFF1A;&#x53F0;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               products: [
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;iPhone X&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">20</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x4E3A; Mate20&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">0</span>},
+                   {<span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x7C73; Mix3&quot;</span>, <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">50</span>}
+               ]
+           },
+           computed: {
+               totalQuantity() {
+                   <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.products.reduce((sum, product) =&gt; {
+                       <span class="hljs-keyword">return</span> sum + product.quantity
+                   }, <span class="hljs-number">0</span>);
+               }
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x52A0;&#x8F7D;JSON&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5E93;&#x5B58;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;product in products&quot;</span>&gt;</span>
+                - 
+               <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;product.quantity === 0&quot;</span>&gt;</span>
+                   &#x5DF2;&#x7ECF;&#x552E;&#x7F44;
+               <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+       <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+           el: <span class="hljs-string">&apos;#app&apos;</span>,
+           data: {
+               products: []
+           }&#xFF0C;
+           created() {
+               fetch(<span class="hljs-string">&apos;https://jackfrued.top/api/products&apos;</span>)
+                   .then(response =&gt; response.json())
+                   .then(json =&gt; {
+                       <span class="hljs-keyword">this</span>.products = json
+                   });
+           }
+       });
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
 <h5 id="&#x4F7F;&#x7528;&#x811A;&#x624B;&#x67B6;---vue-cli">&#x4F7F;&#x7528;&#x811A;&#x624B;&#x67B6; - vue-cli</h5>
 <p>Vue&#x4E3A;&#x5546;&#x4E1A;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x4FBF;&#x6377;&#x7684;&#x811A;&#x624B;&#x67B6;&#x5DE5;&#x5177;vue-cli&#xFF0C;&#x901A;&#x8FC7;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x7701;&#x53BB;&#x624B;&#x5DE5;&#x914D;&#x7F6E;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x548C;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 <ol>
@@ -2613,95 +2630,96 @@ localStorage.setItem(<span class="hljs-string">&apos;colorSetting&apos;</span>, 
 <h4 id="ui&#x6846;&#x67B6;---element">UI&#x6846;&#x67B6; - <a href="http://element-cn.eleme.io/#/zh-CN" target="_blank">Element</a></h4>
 <p>&#x57FA;&#x4E8E;Vue 2.0&#x7684;&#x684C;&#x9762;&#x7AEF;&#x7EC4;&#x4EF6;&#x5E93;&#xFF0C;&#x7528;&#x4E8E;&#x6784;&#x9020;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x652F;&#x6301;&#x54CD;&#x5E94;&#x5F0F;&#x5E03;&#x5C40;&#x3002;</p>
 <ol>
-<li><p>&#x5F15;&#x5165;Element&#x7684;CSS&#x548C;JavaScript&#x6587;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-comment">&lt;!-- &#x5F15;&#x5165;&#x6837;&#x5F0F; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
-<span class="hljs-comment">&lt;!-- &#x5F15;&#x5165;&#x7EC4;&#x4EF6;&#x5E93; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">el-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;visible = true&quot;</span>&gt;</span>&#x70B9;&#x6211;<span class="hljs-tag">&lt;/<span class="hljs-name">el-button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">el-dialog</span> <span class="hljs-attr">:visible.sync</span>=<span class="hljs-string">&quot;visible&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Hello world&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5F00;&#x59CB;&#x4F7F;&#x7528;Element&#x5427;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">el-dialog</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-        <span class="hljs-keyword">new</span> Vue({
-            el: <span class="hljs-string">&apos;#app&apos;</span>,
-            data: {
-                visible: <span class="hljs-literal">false</span>,
-            }
-        })
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-</li>
-<li><p>&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-HTML"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">el-table</span> <span class="hljs-attr">:data</span>=<span class="hljs-string">&quot;tableData&quot;</span> <span class="hljs-attr">stripe</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;date&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x65E5;&#x671F;&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;180&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x59D3;&#x540D;&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;180&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;address&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x5730;&#x5740;&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">el-table</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-        <span class="hljs-keyword">new</span> Vue({
-            el: <span class="hljs-string">&apos;#app&apos;</span>,
-            data: {
-                tableData:  [
-                    {
-                        date: <span class="hljs-string">&apos;2016-05-02&apos;</span>,
-                        name: <span class="hljs-string">&apos;&#x738B;&#x4E00;&#x9738;&apos;</span>,
-                        address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1518 &#x5F04;&apos;</span>
-                    }, 
-                    {
-                        date: <span class="hljs-string">&apos;2016-05-04&apos;</span>,
-                        name: <span class="hljs-string">&apos;&#x5218;&#x4E8C;&#x72D7;&apos;</span>,
-                        address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1517 &#x5F04;&apos;</span>
-                    }, 
-                    {
-                        date: <span class="hljs-string">&apos;2016-05-01&apos;</span>,
-                        name: <span class="hljs-string">&apos;&#x6768;&#x4E09;&#x840C;&apos;</span>,
-                        address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1519 &#x5F04;&apos;</span>
-                    }, 
-                    {
-                        date: <span class="hljs-string">&apos;2016-05-03&apos;</span>,
-                        name: <span class="hljs-string">&apos;&#x9648;&#x56DB;&#x5439;&apos;</span>,
-                        address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1516 &#x5F04;&apos;</span>
-                    }
-                ]
-            }
-        })
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-</li>
+<li>&#x5F15;&#x5165;Element&#x7684;CSS&#x548C;JavaScript&#x6587;&#x4EF6;&#x3002;</li>
 </ol>
+<pre><code class="lang-HTML">   <span class="hljs-comment">&lt;!-- &#x5F15;&#x5165;&#x6837;&#x5F0F; --&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
+   <span class="hljs-comment">&lt;!-- &#x5F15;&#x5165;&#x7EC4;&#x4EF6;&#x5E93; --&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">el-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;visible = true&quot;</span>&gt;</span>&#x70B9;&#x6211;<span class="hljs-tag">&lt;/<span class="hljs-name">el-button</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">el-dialog</span> <span class="hljs-attr">:visible.sync</span>=<span class="hljs-string">&quot;visible&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Hello world&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5F00;&#x59CB;&#x4F7F;&#x7528;Element&#x5427;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">el-dialog</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+           <span class="hljs-keyword">new</span> Vue({
+               el: <span class="hljs-string">&apos;#app&apos;</span>,
+               data: {
+                   visible: <span class="hljs-literal">false</span>,
+               }
+           })
+       </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ol>
+<li>&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#x3002;</li>
+</ol>
+<pre><code class="lang-HTML">   <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/theme-chalk/index.css&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">el-table</span> <span class="hljs-attr">:data</span>=<span class="hljs-string">&quot;tableData&quot;</span> <span class="hljs-attr">stripe</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;date&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x65E5;&#x671F;&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;180&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x59D3;&#x540D;&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;180&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">el-table-column</span> <span class="hljs-attr">prop</span>=<span class="hljs-string">&quot;address&quot;</span> <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x5730;&#x5740;&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;/<span class="hljs-name">el-table-column</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">el-table</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/element-ui/lib/index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+           <span class="hljs-keyword">new</span> Vue({
+               el: <span class="hljs-string">&apos;#app&apos;</span>,
+               data: {
+                   tableData:  [
+                       {
+                           date: <span class="hljs-string">&apos;2016-05-02&apos;</span>,
+                           name: <span class="hljs-string">&apos;&#x738B;&#x4E00;&#x9738;&apos;</span>,
+                           address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1518 &#x5F04;&apos;</span>
+                       }, 
+                       {
+                           date: <span class="hljs-string">&apos;2016-05-04&apos;</span>,
+                           name: <span class="hljs-string">&apos;&#x5218;&#x4E8C;&#x72D7;&apos;</span>,
+                           address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1517 &#x5F04;&apos;</span>
+                       }, 
+                       {
+                           date: <span class="hljs-string">&apos;2016-05-01&apos;</span>,
+                           name: <span class="hljs-string">&apos;&#x6768;&#x4E09;&#x840C;&apos;</span>,
+                           address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1519 &#x5F04;&apos;</span>
+                       }, 
+                       {
+                           date: <span class="hljs-string">&apos;2016-05-03&apos;</span>,
+                           name: <span class="hljs-string">&apos;&#x9648;&#x56DB;&#x5439;&apos;</span>,
+                           address: <span class="hljs-string">&apos;&#x4E0A;&#x6D77;&#x5E02;&#x666E;&#x9640;&#x533A;&#x91D1;&#x6C99;&#x6C5F;&#x8DEF; 1516 &#x5F04;&apos;</span>
+                       }
+                   ]
+               }
+           })
+       </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
 <h4 id="&#x62A5;&#x8868;&#x6846;&#x67B6;---echarts">&#x62A5;&#x8868;&#x6846;&#x67B6; - <a href="https://echarts.baidu.com" target="_blank">ECharts</a></h4>
 <p>&#x767E;&#x5EA6;&#x51FA;&#x54C1;&#x7684;&#x5F00;&#x6E90;&#x53EF;&#x89C6;&#x5316;&#x5E93;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x62A5;&#x8868;&#x3002;</p>
 <p><img src="res/baidu_echarts.png" alt=""></p>
@@ -2824,7 +2842,7 @@ localStorage.setItem(<span class="hljs-string">&apos;colorSetting&apos;</span>, 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"21-30.Web前端概述","level":"1.4.1","depth":2,"next":{"title":"Day 31 35","level":"1.5","depth":1,"ref":"","articles":[{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"path":"Day31-35/31-35.玩转Linux操作系统.md","ref":"Day31-35/31-35.玩转Linux操作系统.md","articles":[]}]},"previous":{"title":"Day 21 30","level":"1.4","depth":1,"ref":"","articles":[{"title":"21-30.Web前端概述","level":"1.4.1","depth":2,"path":"Day21-30/21-30.Web前端概述.md","ref":"Day21-30/21-30.Web前端概述.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"Python 100","language":"zh-cn","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"Day21-30/21-30.Web前端概述.md","mtime":"2024-07-05T03:42:44.862Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T04:14:36.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"21-30.Web前端概述","level":"1.4.1","depth":2,"next":{"title":"Day 31 35","level":"1.5","depth":1,"ref":"","articles":[{"title":"31-35.玩转Linux操作系统","level":"1.5.1","depth":2,"path":"Day31-35/31-35.玩转Linux操作系统.md","ref":"Day31-35/31-35.玩转Linux操作系统.md","articles":[]}]},"previous":{"title":"Day 21 30","level":"1.4","depth":1,"ref":"","articles":[{"title":"21-30.Web前端概述","level":"1.4.1","depth":2,"path":"Day21-30/21-30.Web前端概述.md","ref":"Day21-30/21-30.Web前端概述.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day21-30/21-30.Web前端概述.md","mtime":"2024-07-05T07:21:41.996Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
