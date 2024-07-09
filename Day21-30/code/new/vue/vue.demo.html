@@ -1,26 +1,4 @@
-<link rel="stylesheet" type="text/css" href="bulma.css">
-
-<div id="app">
-	<h1>库存信息</h1>
-	<hr>
-	<ul>
-		<li v-for="product in products">
-			{{ product.name }} - 
-			<input type="number" v-model.number="product.quantity" min="0">
-			<span v-if="product.quantity === 0">
-				已经售罄
-			</span>
-			<button @click="product.quantity += 1">
-				增加库存
-			</button>
-		</li>
-	</ul>
-	<h2>库存总量：{{ totalQuantity }}台</h2>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script>
-	const app = new Vue({
+<link rel="stylesheet" type="text/css" href="bulma.css"><div id="app"><h1>库存信息</h1><hr><ul><li v-for="product in products">{{ product.name }} - <input type="number" v-model.number="product.quantity" min="0"> <span v-if="product.quantity === 0">已经售罄 </span><button @click="product.quantity += 1">增加库存</button></li></ul><h2>库存总量：{{ totalQuantity }}台</h2></div><script src="https://cdn.jsdelivr.net/npm/vue"></script><script>const app = new Vue({
 		el: '#app',
 		data: {
 			products: [
@@ -36,5 +14,4 @@
 				}, 0);
 			}
 		}
-	});
-</script>
+	});</script>

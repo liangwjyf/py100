@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ajax请求</title>
-	</head>
-	<body>
-		<button id="load">加载更多</button>
-		<div id="photos"></div>
-		<script src="js/jquery.min.js"></script>
-		<script>
-		$(() => {
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ajax请求</title></head><body><button id="load">加载更多</button><div id="photos"></div><script src="js/jquery.min.js"></script><script>$(() => {
 			const url = 'http://api.tianapi.com/meinv/'
 			var page = 0
 			$('#load').on('click', (evt) => {
@@ -39,7 +28,4 @@
 // 					})
 // 				})
 			})
-		})
-		</script>
-	</body>
-</html>
+		})</script></body></html>

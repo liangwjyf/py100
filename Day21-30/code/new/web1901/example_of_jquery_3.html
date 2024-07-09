@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ajax请求</title>
-	</head>
-	<body>
-		<button id="load">加载更多</button>
-		<div id="photos"></div>
-		<script>
-		(() => {
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ajax请求</title></head><body><button id="load">加载更多</button><div id="photos"></div><script>(() => {
 			const photos = document.querySelector('#photos')
 			const loadBtn = document.querySelector('#load')
 			const url = 'http://api.tianapi.com/meinv/?key=772a81a51ae5c780251b1f98ea431b84&page='
@@ -35,7 +25,4 @@
 				// 发送异步请求
 				xhr.send()
 			})
-		})()
-		</script>
-	</body>
-</html>
+		})()</script></body></html>

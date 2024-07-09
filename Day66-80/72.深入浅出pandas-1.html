@@ -1,2100 +1,89 @@
-
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>72.深入浅出pandas-1 · Python 100</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="Jayclang">
-        
-        
-    
-    <link rel="stylesheet" href="../gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="73.深入浅出pandas-2.html" />
-    
-    
-    <link rel="prev" href="71.NumPy的应用-4.html" />
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-    
-        
-        <li>
-            <a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a>
-        </li>
-    
-    
-
-    
-    <li class="divider"></li>
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../">
-            
-                <a href="../">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" >
-            
-                <span>
-            
-                    
-                    Day 01 15
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="../Day01-15/01.初识Python.html">
-            
-                <a href="../Day01-15/01.初识Python.html">
-            
-                    
-                    01.初识Python
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2" data-path="../Day01-15/02.语言元素.html">
-            
-                <a href="../Day01-15/02.语言元素.html">
-            
-                    
-                    02.语言元素
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="../Day01-15/03.分支结构.html">
-            
-                <a href="../Day01-15/03.分支结构.html">
-            
-                    
-                    03.分支结构
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4" data-path="../Day01-15/04.循环结构.html">
-            
-                <a href="../Day01-15/04.循环结构.html">
-            
-                    
-                    04.循环结构
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html">
-            
-                <a href="../Day01-15/05.构造程序逻辑.html">
-            
-                    
-                    05.构造程序逻辑
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html">
-            
-                <a href="../Day01-15/06.函数和模块的使用.html">
-            
-                    
-                    06.函数和模块的使用
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html">
-            
-                <a href="../Day01-15/07.字符串和常用数据结构.html">
-            
-                    
-                    07.字符串和常用数据结构
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html">
-            
-                <a href="../Day01-15/08.面向对象编程基础.html">
-            
-                    
-                    08.面向对象编程基础
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html">
-            
-                <a href="../Day01-15/09.面向对象进阶.html">
-            
-                    
-                    09.面向对象进阶
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html">
-            
-                <a href="../Day01-15/10.图形用户界面和游戏开发.html">
-            
-                    
-                    10.图形用户界面和游戏开发
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html">
-            
-                <a href="../Day01-15/11.文件和异常.html">
-            
-                    
-                    11.文件和异常
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html">
-            
-                <a href="../Day01-15/12.字符串和正则表达式.html">
-            
-                    
-                    12.字符串和正则表达式
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html">
-            
-                <a href="../Day01-15/13.进程和线程.html">
-            
-                    
-                    13.进程和线程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html">
-            
-                <a href="../Day01-15/14.网络编程入门和网络应用开发.html">
-            
-                    
-                    14.网络编程入门和网络应用开发
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html">
-            
-                <a href="../Day01-15/15.图像和办公文档处理.html">
-            
-                    
-                    15.图像和办公文档处理
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" >
-            
-                <span>
-            
-                    
-                    Day 16 20
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html">
-            
-                <a href="../Day16-20/16-20.Python语言进阶.html">
-            
-                    
-                    16-20.Python语言进阶
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    Day 21 30
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html">
-            
-                <a href="../Day21-30/21-30.Web前端概述.html">
-            
-                    
-                    21-30.Web前端概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    Day 31 35
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html">
-            
-                <a href="../Day31-35/31-35.玩转Linux操作系统.html">
-            
-                    
-                    31-35.玩转Linux操作系统
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" >
-            
-                <span>
-            
-                    
-                    Day 36 45
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html">
-            
-                <a href="../Day36-45/36.关系型数据库和MySQL概述.html">
-            
-                    
-                    36.关系型数据库和MySQL概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html">
-            
-                <a href="../Day36-45/37.SQL详解之DDL.html">
-            
-                    
-                    37.SQL详解之DDL
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html">
-            
-                <a href="../Day36-45/38.SQL详解之DML.html">
-            
-                    
-                    38.SQL详解之DML
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html">
-            
-                <a href="../Day36-45/39.SQL详解之DQL.html">
-            
-                    
-                    39.SQL详解之DQL
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html">
-            
-                <a href="../Day36-45/40.SQL详解之DCL.html">
-            
-                    
-                    40.SQL详解之DCL
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html">
-            
-                <a href="../Day36-45/41.MySQL新特性.html">
-            
-                    
-                    41.MySQL新特性
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html">
-            
-                <a href="../Day36-45/42.视图、函数和过程.html">
-            
-                    
-                    42.视图、函数和过程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.8" data-path="../Day36-45/43.索引.html">
-            
-                <a href="../Day36-45/43.索引.html">
-            
-                    
-                    43.索引
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html">
-            
-                <a href="../Day36-45/44.Python接入MySQL数据库.html">
-            
-                    
-                    44.Python接入MySQL数据库
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html">
-            
-                <a href="../Day36-45/45.大数据平台和HiveSQL.html">
-            
-                    
-                    45.大数据平台和HiveSQL
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" >
-            
-                <span>
-            
-                    
-                    Day 46 60
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html">
-            
-                <a href="../Day46-60/46.Django快速上手.html">
-            
-                    
-                    46.Django快速上手
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.2" data-path="../Day46-60/47.深入模型.html">
-            
-                <a href="../Day46-60/47.深入模型.html">
-            
-                    
-                    47.深入模型
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html">
-            
-                <a href="../Day46-60/48.静态资源和Ajax请求.html">
-            
-                    
-                    48.静态资源和Ajax请求
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html">
-            
-                <a href="../Day46-60/49.Cookie和Session.html">
-            
-                    
-                    49.Cookie和Session
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.5" data-path="../Day46-60/50.制作报表.html">
-            
-                <a href="../Day46-60/50.制作报表.html">
-            
-                    
-                    50.制作报表
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html">
-            
-                <a href="../Day46-60/51.日志和调试工具栏.html">
-            
-                    
-                    51.日志和调试工具栏
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html">
-            
-                <a href="../Day46-60/52.中间件的应用.html">
-            
-                    
-                    52.中间件的应用
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html">
-            
-                <a href="../Day46-60/53.前后端分离开发入门.html">
-            
-                    
-                    53.前后端分离开发入门
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html">
-            
-                <a href="../Day46-60/54.RESTful架构和DRF入门.html">
-            
-                    
-                    54.RESTful架构和DRF入门
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html">
-            
-                <a href="../Day46-60/55.RESTful架构和DRF进阶.html">
-            
-                    
-                    55.RESTful架构和DRF进阶
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html">
-            
-                <a href="../Day46-60/56.使用缓存.html">
-            
-                    
-                    56.使用缓存
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html">
-            
-                <a href="../Day46-60/57.接入三方平台.html">
-            
-                    
-                    57.接入三方平台
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html">
-            
-                <a href="../Day46-60/58.异步任务和定时任务.html">
-            
-                    
-                    58.异步任务和定时任务
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.14" data-path="../Day46-60/59.单元测试.html">
-            
-                <a href="../Day46-60/59.单元测试.html">
-            
-                    
-                    59.单元测试
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.15" data-path="../Day46-60/60.项目上线.html">
-            
-                <a href="../Day46-60/60.项目上线.html">
-            
-                    
-                    60.项目上线
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" >
-            
-                <span>
-            
-                    
-                    Day 61 65
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html">
-            
-                <a href="../Day61-65/61.网络数据采集概述.html">
-            
-                    
-                    61.网络数据采集概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html">
-            
-                <a href="../Day61-65/62.用Python获取网络资源-1.html">
-            
-                    
-                    62.用Python获取网络资源-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html">
-            
-                <a href="../Day61-65/62.用Python解析HTML页面-2.html">
-            
-                    
-                    62.用Python解析HTML页面-2
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html">
-            
-                <a href="../Day61-65/63.Python中的并发编程-1.html">
-            
-                    
-                    63.Python中的并发编程-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html">
-            
-                <a href="../Day61-65/63.Python中的并发编程-2.html">
-            
-                    
-                    63.Python中的并发编程-2
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html">
-            
-                <a href="../Day61-65/63.Python中的并发编程-3.html">
-            
-                    
-                    63.Python中的并发编程-3
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html">
-            
-                <a href="../Day61-65/63.并发编程在爬虫中的应用.html">
-            
-                    
-                    63.并发编程在爬虫中的应用
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html">
-            
-                <a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">
-            
-                    
-                    64.使用Selenium抓取网页动态内容
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html">
-            
-                <a href="../Day61-65/65.爬虫框架Scrapy简介.html">
-            
-                    
-                    65.爬虫框架Scrapy简介
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" >
-            
-                <span>
-            
-                    
-                    Day 66 80
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.1" data-path="66.数据分析概述.html">
-            
-                <a href="66.数据分析概述.html">
-            
-                    
-                    66.数据分析概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="67.环境准备.html">
-            
-                <a href="67.环境准备.html">
-            
-                    
-                    67.环境准备
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3" data-path="68.NumPy的应用-1.html">
-            
-                <a href="68.NumPy的应用-1.html">
-            
-                    
-                    68.NumPy的应用-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="69.NumPy的应用-2.html">
-            
-                <a href="69.NumPy的应用-2.html">
-            
-                    
-                    69.NumPy的应用-2
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.5" data-path="70.NumPy的应用-3.html">
-            
-                <a href="70.NumPy的应用-3.html">
-            
-                    
-                    70.NumPy的应用-3
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="71.NumPy的应用-4.html">
-            
-                <a href="71.NumPy的应用-4.html">
-            
-                    
-                    71.NumPy的应用-4
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.9.7" data-path="72.深入浅出pandas-1.html">
-            
-                <a href="72.深入浅出pandas-1.html">
-            
-                    
-                    72.深入浅出pandas-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.8" data-path="73.深入浅出pandas-2.html">
-            
-                <a href="73.深入浅出pandas-2.html">
-            
-                    
-                    73.深入浅出pandas-2
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.9" data-path="74.深入浅出pandas-3.html">
-            
-                <a href="74.深入浅出pandas-3.html">
-            
-                    
-                    74.深入浅出pandas-3
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.10" data-path="75.深入浅出pandas-4.html">
-            
-                <a href="75.深入浅出pandas-4.html">
-            
-                    
-                    75.深入浅出pandas-4
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.11" data-path="76.深入浅出pandas-5.html">
-            
-                <a href="76.深入浅出pandas-5.html">
-            
-                    
-                    76.深入浅出pandas-5
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.12" data-path="77.深入浅出pandas-6.html">
-            
-                <a href="77.深入浅出pandas-6.html">
-            
-                    
-                    77.深入浅出pandas-6
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.13" data-path="78.数据可视化-1.html">
-            
-                <a href="78.数据可视化-1.html">
-            
-                    
-                    78.数据可视化-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.14" data-path="79.数据可视化-2.html">
-            
-                <a href="79.数据可视化-2.html">
-            
-                    
-                    79.数据可视化-2
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.15" data-path="80.数据可视化-3.html">
-            
-                <a href="80.数据可视化-3.html">
-            
-                    
-                    80.数据可视化-3
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" >
-            
-                <span>
-            
-                    
-                    Day 81 90
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html">
-            
-                <a href="../Day81-90/81.人工智能和机器学习概述.html">
-            
-                    
-                    81.人工智能和机器学习概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html">
-            
-                <a href="../Day81-90/82.k最近邻分类.html">
-            
-                    
-                    82.k最近邻分类
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.3" data-path="../Day81-90/83.决策树.html">
-            
-                <a href="../Day81-90/83.决策树.html">
-            
-                    
-                    83.决策树
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html">
-            
-                <a href="../Day81-90/83.推荐系统实战-1.html">
-            
-                    
-                    83.推荐系统实战-1
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html">
-            
-                <a href="../Day81-90/84.贝叶斯分类.html">
-            
-                    
-                    84.贝叶斯分类
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html">
-            
-                <a href="../Day81-90/85.支持向量机.html">
-            
-                    
-                    85.支持向量机
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html">
-            
-                <a href="../Day81-90/86.K-均值聚类.html">
-            
-                    
-                    86.K-均值聚类
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.8" data-path="../Day81-90/87.回归分析.html">
-            
-                <a href="../Day81-90/87.回归分析.html">
-            
-                    
-                    87.回归分析
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html">
-            
-                <a href="../Day81-90/88.深度学习入门.html">
-            
-                    
-                    88.深度学习入门
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html">
-            
-                <a href="../Day81-90/89.PyTorch概述.html">
-            
-                    
-                    89.PyTorch概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html">
-            
-                <a href="../Day81-90/90.PyTorch实战.html">
-            
-                    
-                    90.PyTorch实战
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" >
-            
-                <span>
-            
-                    
-                    Day 91 100
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html">
-            
-                <a href="../Day91-100/100.Python面试题实录.html">
-            
-                    
-                    100.Python面试题实录
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html">
-            
-                <a href="../Day91-100/91.团队项目开发的问题和解决方案.html">
-            
-                    
-                    91.团队项目开发的问题和解决方案
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html">
-            
-                <a href="../Day91-100/92.Docker容器技术详解.html">
-            
-                    
-                    92.Docker容器技术详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html">
-            
-                <a href="../Day91-100/93.MySQL性能优化.html">
-            
-                    
-                    93.MySQL性能优化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html">
-            
-                <a href="../Day91-100/94.网络API接口设计.html">
-            
-                    
-                    94.网络API接口设计
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html">
-            
-                <a href="../Day91-100/95.使用Django开发商业项目.html">
-            
-                    
-                    95.使用Django开发商业项目
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html">
-            
-                <a href="../Day91-100/96.软件测试和自动化测试.html">
-            
-                    
-                    96.软件测试和自动化测试
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html">
-            
-                <a href="../Day91-100/97.电商网站技术要点剖析.html">
-            
-                    
-                    97.电商网站技术要点剖析
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html">
-            
-                <a href="../Day91-100/98.项目部署上线和性能调优.html">
-            
-                    
-                    98.项目部署上线和性能调优
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html">
-            
-                <a href="../Day91-100/99.面试中的公共问题.html">
-            
-                    
-                    99.面试中的公共问题
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12" >
-            
-                <span>
-            
-                    
-                    公开课
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.12.1" >
-            
-                <span>
-            
-                    
-                    文档
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
-            
-                <a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">
-            
-                    
-                    年薪50W+的Python程序员如何写代码
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12.1.2" >
-            
-                <span>
-            
-                    
-                    第04次公开课-好玩的Python
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
-            
-                <a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">
-            
-                    
-                    好玩的Python
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12.1.3" >
-            
-                <span>
-            
-                    
-                    第05次公开课-算法入门系列1-周而复始
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
-            
-                <a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">
-            
-                    
-                    算法入门系列1-周而复始
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12.1.4" >
-            
-                <span>
-            
-                    
-                    第06次公开课-算法入门系列2-在水一方
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md">
-            
-                <span>
-            
-                    
-                    算法入门系列2 - 在水一方
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13" >
-            
-                <span>
-            
-                    
-                    番外篇
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html">
-            
-                <a href="../番外篇/PEP8风格指南.html">
-            
-                    
-                    PEP8风格指南
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html">
-            
-                <a href="../番外篇/Python之禅的最佳翻译.html">
-            
-                    
-                    Python之禅的最佳翻译
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.3" data-path="../番外篇/Python参考书籍.html">
-            
-                <a href="../番外篇/Python参考书籍.html">
-            
-                    
-                    Python参考书籍
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html">
-            
-                <a href="../番外篇/Python容器使用小技巧.html">
-            
-                    
-                    Python容器使用小技巧
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html">
-            
-                <a href="../番外篇/Python数据分析师面试题.html">
-            
-                    
-                    Python数据分析师面试题
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.6" data-path="../番外篇/Python编程惯例.html">
-            
-                <a href="../番外篇/Python编程惯例.html">
-            
-                    
-                    Python编程惯例
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html">
-            
-                <a href="../番外篇/一个小例子助你彻底理解协程.html">
-            
-                    
-                    一个小例子助你彻底理解协程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html">
-            
-                <a href="../番外篇/使用Hexo搭建自己的博客.html">
-            
-                    
-                    使用Hexo搭建自己的博客
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html">
-            
-                <a href="../番外篇/常见反爬策略及应对方案.html">
-            
-                    
-                    常见反爬策略及应对方案
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html">
-            
-                <a href="../番外篇/我为什么选择了Python.html">
-            
-                    
-                    我为什么选择了Python
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html">
-            
-                <a href="../番外篇/接口文档参考示例.html">
-            
-                    
-                    接口文档参考示例
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html">
-            
-                <a href="../番外篇/玩转PyCharm.html">
-            
-                    
-                    玩转PyCharm
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html">
-            
-                <a href="../番外篇/用函数还是用复杂的表达式.html">
-            
-                    
-                    用函数还是用复杂的表达式
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.14" data-path="../番外篇/知乎问题回答.html">
-            
-                <a href="../番外篇/知乎问题回答.html">
-            
-                    
-                    知乎问题回答
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.15" data-path="../番外篇/英语面试.html">
-            
-                <a href="../番外篇/英语面试.html">
-            
-                    
-                    英语面试
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html">
-            
-                <a href="../番外篇/那些年我们踩过的那些坑.html">
-            
-                    
-                    那些年我们踩过的那些坑
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.14" data-path="../更新日志.html">
-            
-                <a href="../更新日志.html">
-            
-                    
-                    更新日志
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >72.深入浅出pandas-1</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h2 id="&#x6DF1;&#x5165;&#x6D45;&#x51FA;pandas-1">&#x6DF1;&#x5165;&#x6D45;&#x51FA;pandas-1</h2>
-<p>Pandas &#x662F; Wes McKinney &#x5728;2008&#x5E74;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;<strong>&#x5206;&#x6790;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;</strong>&#x7684;&#x5DE5;&#x5177;&#x96C6;&#x3002;Pandas &#x4EE5; NumPy &#x4E3A;&#x57FA;&#x7840;&#xFF08;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x8FD0;&#x7B97;&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5206;&#x6790;&#x7684;&#x7C7B;&#x578B;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x5206;&#x6790;&#x548C;&#x6570;&#x636E;&#x6316;&#x6398;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#xFF1B;&#x540C;&#x65F6; pandas &#x8FD8;&#x53EF;&#x4EE5;&#x8DDF;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177; matplotlib &#x5F88;&#x597D;&#x7684;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x975E;&#x5E38;&#x8F7B;&#x677E;&#x6109;&#x5FEB;&#x7684;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x5448;&#x73B0;&#x3002;</p>
-<p>Pandas &#x6838;&#x5FC3;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;<code>Series</code>&#xFF08;&#x6570;&#x636E;&#x7CFB;&#x5217;&#xFF09;&#x3001;<code>DataFrame</code>&#xFF08;&#x6570;&#x636E;&#x7A97;/&#x6570;&#x636E;&#x6846;&#xFF09;&#xFF0C;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4E00;&#x7EF4;&#x548C;&#x4E8C;&#x7EF4;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>Index</code>&#x7684;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x5B50;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3A;<code>Series</code>&#x548C;<code>DataFrame</code>&#x63D0;&#x4F9B;&#x4E86;&#x7D22;&#x5F15;&#x529F;&#x80FD;&#x3002;&#x65E5;&#x5E38;&#x5DE5;&#x4F5C;&#x4E2D;<code>DataFrame</code>&#x4F7F;&#x7528;&#x5F97;&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;&#xFF0C;&#x56E0;&#x4E3A;&#x4E8C;&#x7EF4;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x521A;&#x597D;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x6709;&#x884C;&#x6709;&#x5217;&#x7684;&#x8868;&#x683C;&#x3002;<code>Series</code>&#x548C;<code>DataFrame</code>&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6570;&#x636E;&#x5206;&#x6790;&#x5E08;&#x4EE5;&#x6B64;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x7B5B;&#x9009;&#x3001;&#x5408;&#x5E76;&#x3001;&#x62FC;&#x63A5;&#x3001;&#x6E05;&#x6D17;&#x3001;&#x9884;&#x5904;&#x7406;&#x3001;&#x805A;&#x5408;&#x3001;&#x900F;&#x89C6;&#x548C;&#x53EF;&#x89C6;&#x5316;&#x7B49;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x3002;</p>
-<h3 id="&#x521B;&#x5EFA;series&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;Series&#x5BF9;&#x8C61;</h3>
-<p>Pandas &#x5E93;&#x4E2D;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x4E00;&#x7EF4;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4F46;&#x662F;&#x591A;&#x4E86;&#x7D22;&#x5F15;&#x548C;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x3002;<code>Series</code>&#x7C7B;&#x578B;&#x7684;&#x5185;&#x90E8;&#x7ED3;&#x6784;&#x5305;&#x542B;&#x4E86;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5217;&#x8868;&#x6216;&#x6570;&#x7EC4;&#x521B;&#x5EFA;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<!DOCTYPE HTML><html lang=""><head><meta charset="UTF-8"><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>72.深入浅出pandas-1 · Python 100</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content=""><meta name="generator" content="GitBook 3.2.3"><meta name="author" content="Jayclang"><link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css"><link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css"><link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css"><meta name="HandheldFriendly" content="true"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png"><link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon"><link rel="next" href="73.深入浅出pandas-2.html"><link rel="prev" href="71.NumPy的应用-4.html"></head><body><div class="book"><div class="book-summary"><div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div><nav role="navigation"><ul class="summary"><li><a href="http://www.metoocat.cn" target="_blank" class="custom-link">liangwj's Blog</a></li><li class="divider"></li><li class="chapter" data-level="1.1" data-path="../"><a href="../">Introduction</a></li><li class="chapter" data-level="1.2"><span>Day 01 15</span><ul class="articles"><li class="chapter" data-level="1.2.1" data-path="../Day01-15/01.初识Python.html"><a href="../Day01-15/01.初识Python.html">01.初识Python</a></li><li class="chapter" data-level="1.2.2" data-path="../Day01-15/02.语言元素.html"><a href="../Day01-15/02.语言元素.html">02.语言元素</a></li><li class="chapter" data-level="1.2.3" data-path="../Day01-15/03.分支结构.html"><a href="../Day01-15/03.分支结构.html">03.分支结构</a></li><li class="chapter" data-level="1.2.4" data-path="../Day01-15/04.循环结构.html"><a href="../Day01-15/04.循环结构.html">04.循环结构</a></li><li class="chapter" data-level="1.2.5" data-path="../Day01-15/05.构造程序逻辑.html"><a href="../Day01-15/05.构造程序逻辑.html">05.构造程序逻辑</a></li><li class="chapter" data-level="1.2.6" data-path="../Day01-15/06.函数和模块的使用.html"><a href="../Day01-15/06.函数和模块的使用.html">06.函数和模块的使用</a></li><li class="chapter" data-level="1.2.7" data-path="../Day01-15/07.字符串和常用数据结构.html"><a href="../Day01-15/07.字符串和常用数据结构.html">07.字符串和常用数据结构</a></li><li class="chapter" data-level="1.2.8" data-path="../Day01-15/08.面向对象编程基础.html"><a href="../Day01-15/08.面向对象编程基础.html">08.面向对象编程基础</a></li><li class="chapter" data-level="1.2.9" data-path="../Day01-15/09.面向对象进阶.html"><a href="../Day01-15/09.面向对象进阶.html">09.面向对象进阶</a></li><li class="chapter" data-level="1.2.10" data-path="../Day01-15/10.图形用户界面和游戏开发.html"><a href="../Day01-15/10.图形用户界面和游戏开发.html">10.图形用户界面和游戏开发</a></li><li class="chapter" data-level="1.2.11" data-path="../Day01-15/11.文件和异常.html"><a href="../Day01-15/11.文件和异常.html">11.文件和异常</a></li><li class="chapter" data-level="1.2.12" data-path="../Day01-15/12.字符串和正则表达式.html"><a href="../Day01-15/12.字符串和正则表达式.html">12.字符串和正则表达式</a></li><li class="chapter" data-level="1.2.13" data-path="../Day01-15/13.进程和线程.html"><a href="../Day01-15/13.进程和线程.html">13.进程和线程</a></li><li class="chapter" data-level="1.2.14" data-path="../Day01-15/14.网络编程入门和网络应用开发.html"><a href="../Day01-15/14.网络编程入门和网络应用开发.html">14.网络编程入门和网络应用开发</a></li><li class="chapter" data-level="1.2.15" data-path="../Day01-15/15.图像和办公文档处理.html"><a href="../Day01-15/15.图像和办公文档处理.html">15.图像和办公文档处理</a></li></ul></li><li class="chapter" data-level="1.3"><span>Day 16 20</span><ul class="articles"><li class="chapter" data-level="1.3.1" data-path="../Day16-20/16-20.Python语言进阶.html"><a href="../Day16-20/16-20.Python语言进阶.html">16-20.Python语言进阶</a></li></ul></li><li class="chapter" data-level="1.4"><span>Day 21 30</span><ul class="articles"><li class="chapter" data-level="1.4.1" data-path="../Day21-30/21-30.Web前端概述.html"><a href="../Day21-30/21-30.Web前端概述.html">21-30.Web前端概述</a></li></ul></li><li class="chapter" data-level="1.5"><span>Day 31 35</span><ul class="articles"><li class="chapter" data-level="1.5.1" data-path="../Day31-35/31-35.玩转Linux操作系统.html"><a href="../Day31-35/31-35.玩转Linux操作系统.html">31-35.玩转Linux操作系统</a></li></ul></li><li class="chapter" data-level="1.6"><span>Day 36 45</span><ul class="articles"><li class="chapter" data-level="1.6.1" data-path="../Day36-45/36.关系型数据库和MySQL概述.html"><a href="../Day36-45/36.关系型数据库和MySQL概述.html">36.关系型数据库和MySQL概述</a></li><li class="chapter" data-level="1.6.2" data-path="../Day36-45/37.SQL详解之DDL.html"><a href="../Day36-45/37.SQL详解之DDL.html">37.SQL详解之DDL</a></li><li class="chapter" data-level="1.6.3" data-path="../Day36-45/38.SQL详解之DML.html"><a href="../Day36-45/38.SQL详解之DML.html">38.SQL详解之DML</a></li><li class="chapter" data-level="1.6.4" data-path="../Day36-45/39.SQL详解之DQL.html"><a href="../Day36-45/39.SQL详解之DQL.html">39.SQL详解之DQL</a></li><li class="chapter" data-level="1.6.5" data-path="../Day36-45/40.SQL详解之DCL.html"><a href="../Day36-45/40.SQL详解之DCL.html">40.SQL详解之DCL</a></li><li class="chapter" data-level="1.6.6" data-path="../Day36-45/41.MySQL新特性.html"><a href="../Day36-45/41.MySQL新特性.html">41.MySQL新特性</a></li><li class="chapter" data-level="1.6.7" data-path="../Day36-45/42.视图、函数和过程.html"><a href="../Day36-45/42.视图、函数和过程.html">42.视图、函数和过程</a></li><li class="chapter" data-level="1.6.8" data-path="../Day36-45/43.索引.html"><a href="../Day36-45/43.索引.html">43.索引</a></li><li class="chapter" data-level="1.6.9" data-path="../Day36-45/44.Python接入MySQL数据库.html"><a href="../Day36-45/44.Python接入MySQL数据库.html">44.Python接入MySQL数据库</a></li><li class="chapter" data-level="1.6.10" data-path="../Day36-45/45.大数据平台和HiveSQL.html"><a href="../Day36-45/45.大数据平台和HiveSQL.html">45.大数据平台和HiveSQL</a></li></ul></li><li class="chapter" data-level="1.7"><span>Day 46 60</span><ul class="articles"><li class="chapter" data-level="1.7.1" data-path="../Day46-60/46.Django快速上手.html"><a href="../Day46-60/46.Django快速上手.html">46.Django快速上手</a></li><li class="chapter" data-level="1.7.2" data-path="../Day46-60/47.深入模型.html"><a href="../Day46-60/47.深入模型.html">47.深入模型</a></li><li class="chapter" data-level="1.7.3" data-path="../Day46-60/48.静态资源和Ajax请求.html"><a href="../Day46-60/48.静态资源和Ajax请求.html">48.静态资源和Ajax请求</a></li><li class="chapter" data-level="1.7.4" data-path="../Day46-60/49.Cookie和Session.html"><a href="../Day46-60/49.Cookie和Session.html">49.Cookie和Session</a></li><li class="chapter" data-level="1.7.5" data-path="../Day46-60/50.制作报表.html"><a href="../Day46-60/50.制作报表.html">50.制作报表</a></li><li class="chapter" data-level="1.7.6" data-path="../Day46-60/51.日志和调试工具栏.html"><a href="../Day46-60/51.日志和调试工具栏.html">51.日志和调试工具栏</a></li><li class="chapter" data-level="1.7.7" data-path="../Day46-60/52.中间件的应用.html"><a href="../Day46-60/52.中间件的应用.html">52.中间件的应用</a></li><li class="chapter" data-level="1.7.8" data-path="../Day46-60/53.前后端分离开发入门.html"><a href="../Day46-60/53.前后端分离开发入门.html">53.前后端分离开发入门</a></li><li class="chapter" data-level="1.7.9" data-path="../Day46-60/54.RESTful架构和DRF入门.html"><a href="../Day46-60/54.RESTful架构和DRF入门.html">54.RESTful架构和DRF入门</a></li><li class="chapter" data-level="1.7.10" data-path="../Day46-60/55.RESTful架构和DRF进阶.html"><a href="../Day46-60/55.RESTful架构和DRF进阶.html">55.RESTful架构和DRF进阶</a></li><li class="chapter" data-level="1.7.11" data-path="../Day46-60/56.使用缓存.html"><a href="../Day46-60/56.使用缓存.html">56.使用缓存</a></li><li class="chapter" data-level="1.7.12" data-path="../Day46-60/57.接入三方平台.html"><a href="../Day46-60/57.接入三方平台.html">57.接入三方平台</a></li><li class="chapter" data-level="1.7.13" data-path="../Day46-60/58.异步任务和定时任务.html"><a href="../Day46-60/58.异步任务和定时任务.html">58.异步任务和定时任务</a></li><li class="chapter" data-level="1.7.14" data-path="../Day46-60/59.单元测试.html"><a href="../Day46-60/59.单元测试.html">59.单元测试</a></li><li class="chapter" data-level="1.7.15" data-path="../Day46-60/60.项目上线.html"><a href="../Day46-60/60.项目上线.html">60.项目上线</a></li></ul></li><li class="chapter" data-level="1.8"><span>Day 61 65</span><ul class="articles"><li class="chapter" data-level="1.8.1" data-path="../Day61-65/61.网络数据采集概述.html"><a href="../Day61-65/61.网络数据采集概述.html">61.网络数据采集概述</a></li><li class="chapter" data-level="1.8.2" data-path="../Day61-65/62.用Python获取网络资源-1.html"><a href="../Day61-65/62.用Python获取网络资源-1.html">62.用Python获取网络资源-1</a></li><li class="chapter" data-level="1.8.3" data-path="../Day61-65/62.用Python解析HTML页面-2.html"><a href="../Day61-65/62.用Python解析HTML页面-2.html">62.用Python解析HTML页面-2</a></li><li class="chapter" data-level="1.8.4" data-path="../Day61-65/63.Python中的并发编程-1.html"><a href="../Day61-65/63.Python中的并发编程-1.html">63.Python中的并发编程-1</a></li><li class="chapter" data-level="1.8.5" data-path="../Day61-65/63.Python中的并发编程-2.html"><a href="../Day61-65/63.Python中的并发编程-2.html">63.Python中的并发编程-2</a></li><li class="chapter" data-level="1.8.6" data-path="../Day61-65/63.Python中的并发编程-3.html"><a href="../Day61-65/63.Python中的并发编程-3.html">63.Python中的并发编程-3</a></li><li class="chapter" data-level="1.8.7" data-path="../Day61-65/63.并发编程在爬虫中的应用.html"><a href="../Day61-65/63.并发编程在爬虫中的应用.html">63.并发编程在爬虫中的应用</a></li><li class="chapter" data-level="1.8.8" data-path="../Day61-65/64.使用Selenium抓取网页动态内容.html"><a href="../Day61-65/64.使用Selenium抓取网页动态内容.html">64.使用Selenium抓取网页动态内容</a></li><li class="chapter" data-level="1.8.9" data-path="../Day61-65/65.爬虫框架Scrapy简介.html"><a href="../Day61-65/65.爬虫框架Scrapy简介.html">65.爬虫框架Scrapy简介</a></li></ul></li><li class="chapter" data-level="1.9"><span>Day 66 80</span><ul class="articles"><li class="chapter" data-level="1.9.1" data-path="66.数据分析概述.html"><a href="66.数据分析概述.html">66.数据分析概述</a></li><li class="chapter" data-level="1.9.2" data-path="67.环境准备.html"><a href="67.环境准备.html">67.环境准备</a></li><li class="chapter" data-level="1.9.3" data-path="68.NumPy的应用-1.html"><a href="68.NumPy的应用-1.html">68.NumPy的应用-1</a></li><li class="chapter" data-level="1.9.4" data-path="69.NumPy的应用-2.html"><a href="69.NumPy的应用-2.html">69.NumPy的应用-2</a></li><li class="chapter" data-level="1.9.5" data-path="70.NumPy的应用-3.html"><a href="70.NumPy的应用-3.html">70.NumPy的应用-3</a></li><li class="chapter" data-level="1.9.6" data-path="71.NumPy的应用-4.html"><a href="71.NumPy的应用-4.html">71.NumPy的应用-4</a></li><li class="chapter active" data-level="1.9.7" data-path="72.深入浅出pandas-1.html"><a href="72.深入浅出pandas-1.html">72.深入浅出pandas-1</a></li><li class="chapter" data-level="1.9.8" data-path="73.深入浅出pandas-2.html"><a href="73.深入浅出pandas-2.html">73.深入浅出pandas-2</a></li><li class="chapter" data-level="1.9.9" data-path="74.深入浅出pandas-3.html"><a href="74.深入浅出pandas-3.html">74.深入浅出pandas-3</a></li><li class="chapter" data-level="1.9.10" data-path="75.深入浅出pandas-4.html"><a href="75.深入浅出pandas-4.html">75.深入浅出pandas-4</a></li><li class="chapter" data-level="1.9.11" data-path="76.深入浅出pandas-5.html"><a href="76.深入浅出pandas-5.html">76.深入浅出pandas-5</a></li><li class="chapter" data-level="1.9.12" data-path="77.深入浅出pandas-6.html"><a href="77.深入浅出pandas-6.html">77.深入浅出pandas-6</a></li><li class="chapter" data-level="1.9.13" data-path="78.数据可视化-1.html"><a href="78.数据可视化-1.html">78.数据可视化-1</a></li><li class="chapter" data-level="1.9.14" data-path="79.数据可视化-2.html"><a href="79.数据可视化-2.html">79.数据可视化-2</a></li><li class="chapter" data-level="1.9.15" data-path="80.数据可视化-3.html"><a href="80.数据可视化-3.html">80.数据可视化-3</a></li></ul></li><li class="chapter" data-level="1.10"><span>Day 81 90</span><ul class="articles"><li class="chapter" data-level="1.10.1" data-path="../Day81-90/81.人工智能和机器学习概述.html"><a href="../Day81-90/81.人工智能和机器学习概述.html">81.人工智能和机器学习概述</a></li><li class="chapter" data-level="1.10.2" data-path="../Day81-90/82.k最近邻分类.html"><a href="../Day81-90/82.k最近邻分类.html">82.k最近邻分类</a></li><li class="chapter" data-level="1.10.3" data-path="../Day81-90/83.决策树.html"><a href="../Day81-90/83.决策树.html">83.决策树</a></li><li class="chapter" data-level="1.10.4" data-path="../Day81-90/83.推荐系统实战-1.html"><a href="../Day81-90/83.推荐系统实战-1.html">83.推荐系统实战-1</a></li><li class="chapter" data-level="1.10.5" data-path="../Day81-90/84.贝叶斯分类.html"><a href="../Day81-90/84.贝叶斯分类.html">84.贝叶斯分类</a></li><li class="chapter" data-level="1.10.6" data-path="../Day81-90/85.支持向量机.html"><a href="../Day81-90/85.支持向量机.html">85.支持向量机</a></li><li class="chapter" data-level="1.10.7" data-path="../Day81-90/86.K-均值聚类.html"><a href="../Day81-90/86.K-均值聚类.html">86.K-均值聚类</a></li><li class="chapter" data-level="1.10.8" data-path="../Day81-90/87.回归分析.html"><a href="../Day81-90/87.回归分析.html">87.回归分析</a></li><li class="chapter" data-level="1.10.9" data-path="../Day81-90/88.深度学习入门.html"><a href="../Day81-90/88.深度学习入门.html">88.深度学习入门</a></li><li class="chapter" data-level="1.10.10" data-path="../Day81-90/89.PyTorch概述.html"><a href="../Day81-90/89.PyTorch概述.html">89.PyTorch概述</a></li><li class="chapter" data-level="1.10.11" data-path="../Day81-90/90.PyTorch实战.html"><a href="../Day81-90/90.PyTorch实战.html">90.PyTorch实战</a></li></ul></li><li class="chapter" data-level="1.11"><span>Day 91 100</span><ul class="articles"><li class="chapter" data-level="1.11.1" data-path="../Day91-100/100.Python面试题实录.html"><a href="../Day91-100/100.Python面试题实录.html">100.Python面试题实录</a></li><li class="chapter" data-level="1.11.2" data-path="../Day91-100/91.团队项目开发的问题和解决方案.html"><a href="../Day91-100/91.团队项目开发的问题和解决方案.html">91.团队项目开发的问题和解决方案</a></li><li class="chapter" data-level="1.11.3" data-path="../Day91-100/92.Docker容器技术详解.html"><a href="../Day91-100/92.Docker容器技术详解.html">92.Docker容器技术详解</a></li><li class="chapter" data-level="1.11.4" data-path="../Day91-100/93.MySQL性能优化.html"><a href="../Day91-100/93.MySQL性能优化.html">93.MySQL性能优化</a></li><li class="chapter" data-level="1.11.5" data-path="../Day91-100/94.网络API接口设计.html"><a href="../Day91-100/94.网络API接口设计.html">94.网络API接口设计</a></li><li class="chapter" data-level="1.11.6" data-path="../Day91-100/95.使用Django开发商业项目.html"><a href="../Day91-100/95.使用Django开发商业项目.html">95.使用Django开发商业项目</a></li><li class="chapter" data-level="1.11.7" data-path="../Day91-100/96.软件测试和自动化测试.html"><a href="../Day91-100/96.软件测试和自动化测试.html">96.软件测试和自动化测试</a></li><li class="chapter" data-level="1.11.8" data-path="../Day91-100/97.电商网站技术要点剖析.html"><a href="../Day91-100/97.电商网站技术要点剖析.html">97.电商网站技术要点剖析</a></li><li class="chapter" data-level="1.11.9" data-path="../Day91-100/98.项目部署上线和性能调优.html"><a href="../Day91-100/98.项目部署上线和性能调优.html">98.项目部署上线和性能调优</a></li><li class="chapter" data-level="1.11.10" data-path="../Day91-100/99.面试中的公共问题.html"><a href="../Day91-100/99.面试中的公共问题.html">99.面试中的公共问题</a></li></ul></li><li class="chapter" data-level="1.12"><span>公开课</span><ul class="articles"><li class="chapter" data-level="1.12.1"><span>文档</span><ul class="articles"><li class="chapter" data-level="1.12.1.1" data-path="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html"><a href="../公开课/文档/年薪50W+的Python程序员如何写代码/年薪50W+的Python程序员如何写代码.html">年薪50W+的Python程序员如何写代码</a></li><li class="chapter" data-level="1.12.1.2"><span>第04次公开课-好玩的Python</span><ul class="articles"><li class="chapter" data-level="1.12.1.2.1" data-path="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html"><a href="../公开课/文档/第04次公开课-好玩的Python/好玩的Python.html">好玩的Python</a></li></ul></li><li class="chapter" data-level="1.12.1.3"><span>第05次公开课-算法入门系列1-周而复始</span><ul class="articles"><li class="chapter" data-level="1.12.1.3.1" data-path="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html"><a href="../公开课/文档/第05次公开课-算法入门系列1-周而复始/算法入门系列1-周而复始.html">算法入门系列1-周而复始</a></li></ul></li><li class="chapter" data-level="1.12.1.4"><span>第06次公开课-算法入门系列2-在水一方</span><ul class="articles"><li class="chapter" data-level="1.12.1.4.1" data-path="../公开课/文档/第06次公开课-算法入门系列2-在水一方/算法入门系列2%20- 在水一方.md"><span>算法入门系列2 - 在水一方</span></li></ul></li></ul></li></ul></li><li class="chapter" data-level="1.13"><span>番外篇</span><ul class="articles"><li class="chapter" data-level="1.13.1" data-path="../番外篇/PEP8风格指南.html"><a href="../番外篇/PEP8风格指南.html">PEP8风格指南</a></li><li class="chapter" data-level="1.13.2" data-path="../番外篇/Python之禅的最佳翻译.html"><a href="../番外篇/Python之禅的最佳翻译.html">Python之禅的最佳翻译</a></li><li class="chapter" data-level="1.13.3" data-path="../番外篇/Python参考书籍.html"><a href="../番外篇/Python参考书籍.html">Python参考书籍</a></li><li class="chapter" data-level="1.13.4" data-path="../番外篇/Python容器使用小技巧.html"><a href="../番外篇/Python容器使用小技巧.html">Python容器使用小技巧</a></li><li class="chapter" data-level="1.13.5" data-path="../番外篇/Python数据分析师面试题.html"><a href="../番外篇/Python数据分析师面试题.html">Python数据分析师面试题</a></li><li class="chapter" data-level="1.13.6" data-path="../番外篇/Python编程惯例.html"><a href="../番外篇/Python编程惯例.html">Python编程惯例</a></li><li class="chapter" data-level="1.13.7" data-path="../番外篇/一个小例子助你彻底理解协程.html"><a href="../番外篇/一个小例子助你彻底理解协程.html">一个小例子助你彻底理解协程</a></li><li class="chapter" data-level="1.13.8" data-path="../番外篇/使用Hexo搭建自己的博客.html"><a href="../番外篇/使用Hexo搭建自己的博客.html">使用Hexo搭建自己的博客</a></li><li class="chapter" data-level="1.13.9" data-path="../番外篇/常见反爬策略及应对方案.html"><a href="../番外篇/常见反爬策略及应对方案.html">常见反爬策略及应对方案</a></li><li class="chapter" data-level="1.13.10" data-path="../番外篇/我为什么选择了Python.html"><a href="../番外篇/我为什么选择了Python.html">我为什么选择了Python</a></li><li class="chapter" data-level="1.13.11" data-path="../番外篇/接口文档参考示例.html"><a href="../番外篇/接口文档参考示例.html">接口文档参考示例</a></li><li class="chapter" data-level="1.13.12" data-path="../番外篇/玩转PyCharm.html"><a href="../番外篇/玩转PyCharm.html">玩转PyCharm</a></li><li class="chapter" data-level="1.13.13" data-path="../番外篇/用函数还是用复杂的表达式.html"><a href="../番外篇/用函数还是用复杂的表达式.html">用函数还是用复杂的表达式</a></li><li class="chapter" data-level="1.13.14" data-path="../番外篇/知乎问题回答.html"><a href="../番外篇/知乎问题回答.html">知乎问题回答</a></li><li class="chapter" data-level="1.13.15" data-path="../番外篇/英语面试.html"><a href="../番外篇/英语面试.html">英语面试</a></li><li class="chapter" data-level="1.13.16" data-path="../番外篇/那些年我们踩过的那些坑.html"><a href="../番外篇/那些年我们踩过的那些坑.html">那些年我们踩过的那些坑</a></li></ul></li><li class="chapter" data-level="1.14" data-path="../更新日志.html"><a href="../更新日志.html">更新日志</a></li><li class="divider"></li><li><a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a></li></ul></nav></div><div class="book-body"><div class="body-inner"><div class="book-header" role="navigation"><h1><i class="fa fa-circle-o-notch fa-spin"></i> <a href="..">72.深入浅出pandas-1</a></h1></div><div class="page-wrapper" tabindex="-1" role="main"><div class="page-inner"><div id="book-search-results"><div class="search-noresults"><section class="normal markdown-section"><h2 id="&#x6DF1;&#x5165;&#x6D45;&#x51FA;pandas-1">&#x6DF1;&#x5165;&#x6D45;&#x51FA;pandas-1</h2><p>Pandas &#x662F; Wes McKinney &#x5728;2008&#x5E74;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;<strong>&#x5206;&#x6790;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;</strong>&#x7684;&#x5DE5;&#x5177;&#x96C6;&#x3002;Pandas &#x4EE5; NumPy &#x4E3A;&#x57FA;&#x7840;&#xFF08;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x8FD0;&#x7B97;&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5206;&#x6790;&#x7684;&#x7C7B;&#x578B;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x5206;&#x6790;&#x548C;&#x6570;&#x636E;&#x6316;&#x6398;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#xFF1B;&#x540C;&#x65F6; pandas &#x8FD8;&#x53EF;&#x4EE5;&#x8DDF;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177; matplotlib &#x5F88;&#x597D;&#x7684;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x975E;&#x5E38;&#x8F7B;&#x677E;&#x6109;&#x5FEB;&#x7684;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x5448;&#x73B0;&#x3002;</p><p>Pandas &#x6838;&#x5FC3;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;<code>Series</code>&#xFF08;&#x6570;&#x636E;&#x7CFB;&#x5217;&#xFF09;&#x3001;<code>DataFrame</code>&#xFF08;&#x6570;&#x636E;&#x7A97;/&#x6570;&#x636E;&#x6846;&#xFF09;&#xFF0C;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4E00;&#x7EF4;&#x548C;&#x4E8C;&#x7EF4;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>Index</code>&#x7684;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x5B50;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3A;<code>Series</code>&#x548C;<code>DataFrame</code>&#x63D0;&#x4F9B;&#x4E86;&#x7D22;&#x5F15;&#x529F;&#x80FD;&#x3002;&#x65E5;&#x5E38;&#x5DE5;&#x4F5C;&#x4E2D;<code>DataFrame</code>&#x4F7F;&#x7528;&#x5F97;&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;&#xFF0C;&#x56E0;&#x4E3A;&#x4E8C;&#x7EF4;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x521A;&#x597D;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x6709;&#x884C;&#x6709;&#x5217;&#x7684;&#x8868;&#x683C;&#x3002;<code>Series</code>&#x548C;<code>DataFrame</code>&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6570;&#x636E;&#x5206;&#x6790;&#x5E08;&#x4EE5;&#x6B64;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x7B5B;&#x9009;&#x3001;&#x5408;&#x5E76;&#x3001;&#x62FC;&#x63A5;&#x3001;&#x6E05;&#x6D17;&#x3001;&#x9884;&#x5904;&#x7406;&#x3001;&#x805A;&#x5408;&#x3001;&#x900F;&#x89C6;&#x548C;&#x53EF;&#x89C6;&#x5316;&#x7B49;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x3002;</p><h3 id="&#x521B;&#x5EFA;series&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;Series&#x5BF9;&#x8C61;</h3><p>Pandas &#x5E93;&#x4E2D;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x4E00;&#x7EF4;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4F46;&#x662F;&#x591A;&#x4E86;&#x7D22;&#x5F15;&#x548C;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x3002;<code>Series</code>&#x7C7B;&#x578B;&#x7684;&#x5185;&#x90E8;&#x7ED3;&#x6784;&#x5305;&#x542B;&#x4E86;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5217;&#x8868;&#x6216;&#x6570;&#x7EC4;&#x521B;&#x5EFA;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
 <span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
 
 ser1 = pd.Series(data=[<span class="hljs-number">120</span>, <span class="hljs-number">380</span>, <span class="hljs-number">250</span>, <span class="hljs-number">360</span>], index=[<span class="hljs-string">&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x4E09;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>])
 ser1
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>Series</code>&#x6784;&#x9020;&#x5668;&#x4E2D;&#x7684;<code>data</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x6570;&#x636E;&#xFF0C;<code>index</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x6807;&#x7B7E;&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    120
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>Series</code>&#x6784;&#x9020;&#x5668;&#x4E2D;&#x7684;<code>data</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x6570;&#x636E;&#xFF0C;<code>index</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x6807;&#x7B7E;&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    120
 &#x4E8C;&#x5B63;&#x5EA6;    380
 &#x4E09;&#x5B63;&#x5EA6;    250
 &#x56DB;&#x5B63;&#x5EA6;    360
 dtype: int64
-</code></pre><p>&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x521B;&#x5EFA;Series&#x5BF9;&#x8C61;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2 = pd.Series({<span class="hljs-string">&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">320</span>, <span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">180</span>, <span class="hljs-string">&apos;&#x4E09;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">300</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">405</span>})
+</code></pre><p>&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x521B;&#x5EFA;Series&#x5BF9;&#x8C61;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2 = pd.Series({<span class="hljs-string">&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">320</span>, <span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">180</span>, <span class="hljs-string">&apos;&#x4E09;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">300</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>: <span class="hljs-number">405</span>})
 ser2
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x521B;&#x5EFA;<code>Series</code>&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x5B57;&#x5178;&#x7684;&#x952E;&#x5C31;&#x662F;&#x6570;&#x636E;&#x7684;&#x6807;&#x7B7E;&#xFF08;&#x7D22;&#x5F15;&#xFF09;&#xFF0C;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x5C31;&#x662F;&#x6570;&#x636E;&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x521B;&#x5EFA;<code>Series</code>&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x5B57;&#x5178;&#x7684;&#x952E;&#x5C31;&#x662F;&#x6570;&#x636E;&#x7684;&#x6807;&#x7B7E;&#xFF08;&#x7D22;&#x5F15;&#xFF09;&#xFF0C;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x5C31;&#x662F;&#x6570;&#x636E;&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
 &#x4E8C;&#x5B63;&#x5EA6;    180
 &#x4E09;&#x5B63;&#x5EA6;    300
 &#x56DB;&#x5B63;&#x5EA6;    405
 dtype: int64
-</code></pre><h3 id="series&#x5BF9;&#x8C61;&#x7684;&#x8FD0;&#x7B97;">Series&#x5BF9;&#x8C61;&#x7684;&#x8FD0;&#x7B97;</h3>
-<h4 id="&#x6807;&#x91CF;&#x8FD0;&#x7B97;">&#x6807;&#x91CF;&#x8FD0;&#x7B97;</h4>
-<p>&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x7ED9;&#x521A;&#x624D;&#x7684;<code>ser1</code>&#x6BCF;&#x4E2A;&#x5B63;&#x5EA6;&#x52A0;&#x4E0A;<code>10</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-python">ser1 += <span class="hljs-number">10</span>
+</code></pre><h3 id="series&#x5BF9;&#x8C61;&#x7684;&#x8FD0;&#x7B97;">Series&#x5BF9;&#x8C61;&#x7684;&#x8FD0;&#x7B97;</h3><h4 id="&#x6807;&#x91CF;&#x8FD0;&#x7B97;">&#x6807;&#x91CF;&#x8FD0;&#x7B97;</h4><p>&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x7ED9;&#x521A;&#x624D;&#x7684;<code>ser1</code>&#x6BCF;&#x4E2A;&#x5B63;&#x5EA6;&#x52A0;&#x4E0A;<code>10</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-python">ser1 += <span class="hljs-number">10</span>
 ser1
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    130
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    130
 &#x4E8C;&#x5B63;&#x5EA6;    390
 &#x4E09;&#x5B63;&#x5EA6;    260
 &#x56DB;&#x5B63;&#x5EA6;    370
 dtype: int64
-</code></pre><h4 id="&#x77E2;&#x91CF;&#x8FD0;&#x7B97;">&#x77E2;&#x91CF;&#x8FD0;&#x7B97;</h4>
-<p>&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x628A;<code>ser1</code>&#x548C;<code>ser2</code>&#x5BF9;&#x5E94;&#x5B63;&#x5EA6;&#x7684;&#x6570;&#x636E;&#x52A0;&#x8D77;&#x6765;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-python">ser1 + ser2
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    450
+</code></pre><h4 id="&#x77E2;&#x91CF;&#x8FD0;&#x7B97;">&#x77E2;&#x91CF;&#x8FD0;&#x7B97;</h4><p>&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x628A;<code>ser1</code>&#x548C;<code>ser2</code>&#x5BF9;&#x5E94;&#x5B63;&#x5EA6;&#x7684;&#x6570;&#x636E;&#x52A0;&#x8D77;&#x6765;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-python">ser1 + ser2
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    450
 &#x4E8C;&#x5B63;&#x5EA6;    570
 &#x4E09;&#x5B63;&#x5EA6;    560
 &#x56DB;&#x5B63;&#x5EA6;    775
 dtype: int64
-</code></pre><h4 id="&#x7D22;&#x5F15;&#x8FD0;&#x7B97;">&#x7D22;&#x5F15;&#x8FD0;&#x7B97;</h4>
-<h5 id="&#x666E;&#x901A;&#x7D22;&#x5F15;">&#x666E;&#x901A;&#x7D22;&#x5F15;</h5>
-<p>&#x8DDF;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#xFF0C;<code>Series</code>&#x5BF9;&#x8C61;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;<code>Series</code>&#x5BF9;&#x8C61;&#x56E0;&#x4E3A;&#x5185;&#x90E8;&#x7EF4;&#x62A4;&#x4E86;&#x4E00;&#x4E2A;&#x4FDD;&#x5B58;&#x7D22;&#x5F15;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x68C0;&#x7D22;&#x6570;&#x636E;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x8BBE;&#x7F6E;&#x7684;&#x7D22;&#x5F15;&#xFF08;&#x6807;&#x7B7E;&#xFF09;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<p>&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser1[<span class="hljs-number">2</span>]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>260
-</code></pre><p>&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser1[<span class="hljs-string">&apos;&#x4E09;&#x5B63;&#x5EA6;&apos;</span>]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>260
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser1[<span class="hljs-string">&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;</span>] = <span class="hljs-number">380</span>
+</code></pre><h4 id="&#x7D22;&#x5F15;&#x8FD0;&#x7B97;">&#x7D22;&#x5F15;&#x8FD0;&#x7B97;</h4><h5 id="&#x666E;&#x901A;&#x7D22;&#x5F15;">&#x666E;&#x901A;&#x7D22;&#x5F15;</h5><p>&#x8DDF;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#xFF0C;<code>Series</code>&#x5BF9;&#x8C61;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;<code>Series</code>&#x5BF9;&#x8C61;&#x56E0;&#x4E3A;&#x5185;&#x90E8;&#x7EF4;&#x62A4;&#x4E86;&#x4E00;&#x4E2A;&#x4FDD;&#x5B58;&#x7D22;&#x5F15;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x68C0;&#x7D22;&#x6570;&#x636E;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x8BBE;&#x7F6E;&#x7684;&#x7D22;&#x5F15;&#xFF08;&#x6807;&#x7B7E;&#xFF09;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x3002;</p><p>&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser1[<span class="hljs-number">2</span>]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>260
+</code></pre><p>&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser1[<span class="hljs-string">&apos;&#x4E09;&#x5B63;&#x5EA6;&apos;</span>]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>260
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser1[<span class="hljs-string">&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;</span>] = <span class="hljs-number">380</span>
 ser1
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    380
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    380
 &#x4E8C;&#x5B63;&#x5EA6;    390
 &#x4E09;&#x5B63;&#x5EA6;    260
 &#x56DB;&#x5B63;&#x5EA6;    370
 dtype: int64
-</code></pre><h5 id="&#x5207;&#x7247;&#x7D22;&#x5F15;">&#x5207;&#x7247;&#x7D22;&#x5F15;</h5>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x8DDF;&#x5217;&#x8868;&#x3001;&#x6570;&#x7EC4;&#x7C7B;&#x4F3C;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x51FA;&#x8D77;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x7D22;&#x5F15;&#xFF0C;&#x4ECE;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x53D6;&#x51FA;&#x6216;&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E8C;&#x5B63;&#x5EA6;    180
+</code></pre><h5 id="&#x5207;&#x7247;&#x7D22;&#x5F15;">&#x5207;&#x7247;&#x7D22;&#x5F15;</h5><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x8DDF;&#x5217;&#x8868;&#x3001;&#x6570;&#x7EC4;&#x7C7B;&#x4F3C;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x51FA;&#x8D77;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x7D22;&#x5F15;&#xFF0C;&#x4ECE;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x53D6;&#x51FA;&#x6216;&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x7D22;&#x5F15;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E8C;&#x5B63;&#x5EA6;    180
 &#x4E09;&#x5B63;&#x5EA6;    300
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>:<span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E8C;&#x5B63;&#x5EA6;    180
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>:<span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E8C;&#x5B63;&#x5EA6;    180
 &#x4E09;&#x5B63;&#x5EA6;    300
 &#x56DB;&#x5B63;&#x5EA6;    405
 dtype: int64
-</code></pre><blockquote>
-<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5728;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x5207;&#x7247;&#x65F6;&#xFF0C;&#x7ED3;&#x675F;&#x7D22;&#x5F15;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x53D6;&#x5230;&#x7684;&#x3002;</p>
-</blockquote>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>] = <span class="hljs-number">400</span>, <span class="hljs-number">500</span>
+</code></pre><blockquote><p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x5728;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x5207;&#x7247;&#x65F6;&#xFF0C;&#x7ED3;&#x675F;&#x7D22;&#x5F15;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x53D6;&#x5230;&#x7684;&#x3002;</p></blockquote><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>] = <span class="hljs-number">400</span>, <span class="hljs-number">500</span>
 ser2
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
 &#x4E8C;&#x5B63;&#x5EA6;    400
 &#x4E09;&#x5B63;&#x5EA6;    500
 &#x56DB;&#x5B63;&#x5EA6;    405
 dtype: int64
-</code></pre><h5 id="&#x82B1;&#x5F0F;&#x7D22;&#x5F15;">&#x82B1;&#x5F0F;&#x7D22;&#x5F15;</h5>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E8C;&#x5B63;&#x5EA6;    400
+</code></pre><h5 id="&#x82B1;&#x5F0F;&#x7D22;&#x5F15;">&#x82B1;&#x5F0F;&#x7D22;&#x5F15;</h5><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E8C;&#x5B63;&#x5EA6;    400
 &#x56DB;&#x5B63;&#x5EA6;    405
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]] = <span class="hljs-number">600</span>, <span class="hljs-number">520</span>
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[[<span class="hljs-string">&apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;&#x56DB;&#x5B63;&#x5EA6;&apos;</span>]] = <span class="hljs-number">600</span>, <span class="hljs-number">520</span>
 ser2
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E00;&#x5B63;&#x5EA6;    320
 &#x4E8C;&#x5B63;&#x5EA6;    600
 &#x4E09;&#x5B63;&#x5EA6;    500
 &#x56DB;&#x5B63;&#x5EA6;    520
 dtype: int64
-</code></pre><h5 id="&#x5E03;&#x5C14;&#x7D22;&#x5F15;">&#x5E03;&#x5C14;&#x7D22;&#x5F15;</h5>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2[ser2 &gt;= <span class="hljs-number">500</span>]
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>&#x4E8C;&#x5B63;&#x5EA6;    600
+</code></pre><h5 id="&#x5E03;&#x5C14;&#x7D22;&#x5F15;">&#x5E03;&#x5C14;&#x7D22;&#x5F15;</h5><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2[ser2 &gt;= <span class="hljs-number">500</span>]
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>&#x4E8C;&#x5B63;&#x5EA6;    600
 &#x4E09;&#x5B63;&#x5EA6;    500
 &#x56DB;&#x5B63;&#x5EA6;    520
 dtype: int64
-</code></pre><h3 id="series&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">Series&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h3>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6361;&#x7740;&#x91CD;&#x8981;&#x7684;&#x8DDF;&#x5927;&#x5BB6;&#x8BB2;&#x5427;&#x3002;&#x5148;&#x770B;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#xFF0C;&#x5B83;&#x5C55;&#x793A;&#x4E86;<code>Series</code>&#x5BF9;&#x8C61;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th>&#x5C5E;&#x6027;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>dtype</code> / <code>dtypes</code></td>
-<td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td><code>hasnans</code></td>
-<td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x7A7A;&#x503C;</td>
-</tr>
-<tr>
-<td><code>at</code> / <code>iat</code></td>
-<td>&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x503C;</td>
-</tr>
-<tr>
-<td><code>loc</code> / <code>iloc</code></td>
-<td>&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x503C;&#x6216;&#x4E00;&#x7EC4;&#x503C;</td>
-</tr>
-<tr>
-<td><code>index</code></td>
-<td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#xFF08;<code>Index</code>&#x5BF9;&#x8C61;&#xFF09;</td>
-</tr>
-<tr>
-<td><code>is_monotonic</code></td>
-<td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;</td>
-</tr>
-<tr>
-<td><code>is_monotonic_increasing</code></td>
-<td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x589E;</td>
-</tr>
-<tr>
-<td><code>is_monotonic_decreasing</code></td>
-<td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x51CF;</td>
-</tr>
-<tr>
-<td><code>is_unique</code></td>
-<td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;</td>
-</tr>
-<tr>
-<td><code>size</code></td>
-<td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;</td>
-</tr>
-<tr>
-<td><code>values</code></td>
-<td>&#x4EE5;<code>ndarray</code>&#x7684;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x503C;&#xFF08;<code>ndarray</code>&#x5BF9;&#x8C61;&#xFF09;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x4E86;&#x89E3;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-python">print(ser2.dtype)                    <span class="hljs-comment"># &#x6570;&#x636E;&#x7C7B;&#x578B;</span>
+</code></pre><h3 id="series&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">Series&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h3><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6361;&#x7740;&#x91CD;&#x8981;&#x7684;&#x8DDF;&#x5927;&#x5BB6;&#x8BB2;&#x5427;&#x3002;&#x5148;&#x770B;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#xFF0C;&#x5B83;&#x5C55;&#x793A;&#x4E86;<code>Series</code>&#x5BF9;&#x8C61;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;&#x3002;</p><table><thead><tr><th>&#x5C5E;&#x6027;</th><th>&#x8BF4;&#x660E;</th></tr></thead><tbody><tr><td><code>dtype</code> / <code>dtypes</code></td><td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</td></tr><tr><td><code>hasnans</code></td><td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x7A7A;&#x503C;</td></tr><tr><td><code>at</code> / <code>iat</code></td><td>&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x503C;</td></tr><tr><td><code>loc</code> / <code>iloc</code></td><td>&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x503C;&#x6216;&#x4E00;&#x7EC4;&#x503C;</td></tr><tr><td><code>index</code></td><td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#xFF08;<code>Index</code>&#x5BF9;&#x8C61;&#xFF09;</td></tr><tr><td><code>is_monotonic</code></td><td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;</td></tr><tr><td><code>is_monotonic_increasing</code></td><td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x589E;</td></tr><tr><td><code>is_monotonic_decreasing</code></td><td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x51CF;</td></tr><tr><td><code>is_unique</code></td><td>&#x5224;&#x65AD;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;</td></tr><tr><td><code>size</code></td><td>&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;</td></tr><tr><td><code>values</code></td><td>&#x4EE5;<code>ndarray</code>&#x7684;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x503C;&#xFF08;<code>ndarray</code>&#x5BF9;&#x8C61;&#xFF09;</td></tr></tbody></table><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x4E86;&#x89E3;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-python">print(ser2.dtype)                    <span class="hljs-comment"># &#x6570;&#x636E;&#x7C7B;&#x578B;</span>
 print(ser2.hasnans)                  <span class="hljs-comment"># &#x6709;&#x6CA1;&#x6709;&#x7A7A;&#x503C;</span>
 print(ser2.index)                    <span class="hljs-comment"># &#x7D22;&#x5F15;</span>
 print(ser2.values)                   <span class="hljs-comment"># &#x503C;</span>
 print(ser2.is_monotonic_increasing)  <span class="hljs-comment"># &#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x589E;</span>
 print(ser2.is_unique)                <span class="hljs-comment"># &#x662F;&#x5426;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>int64
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>int64
 False
 Index([&apos;&#x4E00;&#x5B63;&#x5EA6;&apos;, &apos;&#x4E8C;&#x5B63;&#x5EA6;&apos;, &apos;&#x4E09;&#x5B63;&#x5EA6;&apos;, &apos;&#x56DB;&#x5B63;&#x5EA6;&apos;], dtype=&apos;object&apos;)
 [320 600 500 520]
 False
 True
-</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x5F88;&#x591A;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<h4 id="&#x7EDF;&#x8BA1;&#x76F8;&#x5173;">&#x7EDF;&#x8BA1;&#x76F8;&#x5173;</h4>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x652F;&#x6301;&#x5404;&#x79CD;&#x83B7;&#x53D6;&#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">print(ser2.count())   <span class="hljs-comment"># &#x8BA1;&#x6570;</span>
+</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x5F88;&#x591A;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x4E3A;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p><h4 id="&#x7EDF;&#x8BA1;&#x76F8;&#x5173;">&#x7EDF;&#x8BA1;&#x76F8;&#x5173;</h4><p><code>Series</code>&#x5BF9;&#x8C61;&#x652F;&#x6301;&#x5404;&#x79CD;&#x83B7;&#x53D6;&#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">print(ser2.count())   <span class="hljs-comment"># &#x8BA1;&#x6570;</span>
 print(ser2.sum())     <span class="hljs-comment"># &#x6C42;&#x548C;</span>
 print(ser2.mean())    <span class="hljs-comment"># &#x6C42;&#x5E73;&#x5747;</span>
 print(ser2.median())  <span class="hljs-comment"># &#x627E;&#x4E2D;&#x4F4D;&#x6570;</span>
@@ -2102,9 +91,7 @@ print(ser2.max())     <span class="hljs-comment"># &#x627E;&#x6700;&#x5927;</spa
 print(ser2.min())     <span class="hljs-comment"># &#x627E;&#x6700;&#x5C0F;</span>
 print(ser2.std())     <span class="hljs-comment"># &#x6C42;&#x6807;&#x51C6;&#x5DEE;</span>
 print(ser2.var())     <span class="hljs-comment"># &#x6C42;&#x65B9;&#x5DEE;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>4
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>4
 1940
 485.0
 510.0
@@ -2112,12 +99,8 @@ print(ser2.var())     <span class="hljs-comment"># &#x6C42;&#x65B9;&#x5DEE;</spa
 320
 118.18065267490557
 13966.666666666666
-</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>describe()</code>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E0A;&#x8FF0;&#x6240;&#x6709;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser2.describe()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>count      4.000000
+</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>describe()</code>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E0A;&#x8FF0;&#x6240;&#x6709;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser2.describe()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>count      4.000000
 mean     485.000000
 std      118.180653
 min      320.000000
@@ -2126,126 +109,76 @@ min      320.000000
 75%      540.000000
 max      600.000000
 dtype: float64
-</code></pre><blockquote>
-<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x56E0;&#x4E3A;<code>describe()</code>&#x8FD4;&#x56DE;&#x7684;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>ser2.describe()[&apos;mean&apos;]</code>&#x6765;&#x83B7;&#x53D6;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x7528;<code>ser2.describe()[[&apos;max&apos;, &apos;min&apos;]]</code>&#x6765;&#x83B7;&#x53D6;&#x6700;&#x5927;&#x503C;&#x548C;&#x6700;&#x5C0F;&#x503C;&#x3002;</p>
-</blockquote>
-<p>&#x5982;&#x679C;<code>Series</code>&#x5BF9;&#x8C61;&#x6709;&#x91CD;&#x590D;&#x7684;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>unique()</code>&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7531;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x503C;&#x6784;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF1B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>nunique()</code>&#x65B9;&#x6CD5;&#x7EDF;&#x8BA1;&#x4E0D;&#x91CD;&#x590D;&#x503C;&#x7684;&#x6570;&#x91CF;&#xFF1B;&#x5982;&#x679C;&#x60F3;&#x8981;&#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x503C;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>value_counts()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x7684;&#x7D22;&#x5F15;&#x5C31;&#x662F;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x503C;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x6309;&#x7167;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x505A;&#x964D;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser3 = pd.Series(data=[<span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;pitaya&apos;</span>, <span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;pitaya&apos;</span>, <span class="hljs-string">&apos;durian&apos;</span>])
+</code></pre><blockquote><p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x56E0;&#x4E3A;<code>describe()</code>&#x8FD4;&#x56DE;&#x7684;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>ser2.describe()[&apos;mean&apos;]</code>&#x6765;&#x83B7;&#x53D6;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x7528;<code>ser2.describe()[[&apos;max&apos;, &apos;min&apos;]]</code>&#x6765;&#x83B7;&#x53D6;&#x6700;&#x5927;&#x503C;&#x548C;&#x6700;&#x5C0F;&#x503C;&#x3002;</p></blockquote><p>&#x5982;&#x679C;<code>Series</code>&#x5BF9;&#x8C61;&#x6709;&#x91CD;&#x590D;&#x7684;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>unique()</code>&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7531;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x503C;&#x6784;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF1B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>nunique()</code>&#x65B9;&#x6CD5;&#x7EDF;&#x8BA1;&#x4E0D;&#x91CD;&#x590D;&#x503C;&#x7684;&#x6570;&#x91CF;&#xFF1B;&#x5982;&#x679C;&#x60F3;&#x8981;&#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x503C;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>value_counts()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x7684;&#x7D22;&#x5F15;&#x5C31;&#x662F;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x503C;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x6309;&#x7167;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x505A;&#x964D;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser3 = pd.Series(data=[<span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;pitaya&apos;</span>, <span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;pitaya&apos;</span>, <span class="hljs-string">&apos;durian&apos;</span>])
 ser3.value_counts()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>apple     3
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>apple     3
 pitaya    2
 durian    1
 banana    1
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser3.nunique()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>4
-</code></pre><p>&#x5BF9;&#x4E8E;<code>ser3</code>&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;<code>mode()</code>&#x65B9;&#x6CD5;&#x6765;&#x627E;&#x51FA;&#x6570;&#x636E;&#x7684;&#x4F17;&#x6570;&#xFF0C;&#x7531;&#x4E8E;&#x4F17;&#x6570;&#x53EF;&#x80FD;&#x4E0D;&#x552F;&#x4E00;&#xFF0C;&#x6240;&#x4EE5;<code>mode()</code>&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-python">ser3.mode()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    apple
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser3.nunique()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>4
+</code></pre><p>&#x5BF9;&#x4E8E;<code>ser3</code>&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;<code>mode()</code>&#x65B9;&#x6CD5;&#x6765;&#x627E;&#x51FA;&#x6570;&#x636E;&#x7684;&#x4F17;&#x6570;&#xFF0C;&#x7531;&#x4E8E;&#x4F17;&#x6570;&#x53EF;&#x80FD;&#x4E0D;&#x552F;&#x4E00;&#xFF0C;&#x6240;&#x4EE5;<code>mode()</code>&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-python">ser3.mode()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    apple
 dtype: object
-</code></pre><h4 id="&#x5904;&#x7406;&#x6570;&#x636E;">&#x5904;&#x7406;&#x6570;&#x636E;</h4>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>isna()</code>&#x548C;<code>isnull()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7A7A;&#x503C;&#x7684;&#x5224;&#x65AD;&#xFF0C;<code>notna()</code>&#x548C;<code>notnull()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x975E;&#x7A7A;&#x503C;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser4 = pd.Series(data=[<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, np.nan, <span class="hljs-number">30</span>, np.nan])
+</code></pre><h4 id="&#x5904;&#x7406;&#x6570;&#x636E;">&#x5904;&#x7406;&#x6570;&#x636E;</h4><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>isna()</code>&#x548C;<code>isnull()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7A7A;&#x503C;&#x7684;&#x5224;&#x65AD;&#xFF0C;<code>notna()</code>&#x548C;<code>notnull()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x975E;&#x7A7A;&#x503C;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser4 = pd.Series(data=[<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, np.nan, <span class="hljs-number">30</span>, np.nan])
 ser4.isna()
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>np.nan</code>&#x662F;&#x4E00;&#x4E2A;IEEE 754&#x6807;&#x51C6;&#x7684;&#x6D6E;&#x70B9;&#x5C0F;&#x6570;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x8868;&#x793A;&#x201C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x201D;&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x7528;&#x5B83;&#x6765;&#x4EE3;&#x8868;&#x7A7A;&#x503C;&#xFF1B;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; Python &#x4E2D;&#x7684;<code>None</code>&#x6765;&#x8868;&#x793A;&#x7A7A;&#x503C;&#xFF0C;&#x5728; pandas &#x4E2D;<code>None</code>&#x4E5F;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#x4E3A;<code>np.nan</code>&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    False
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;<code>np.nan</code>&#x662F;&#x4E00;&#x4E2A;IEEE 754&#x6807;&#x51C6;&#x7684;&#x6D6E;&#x70B9;&#x5C0F;&#x6570;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x8868;&#x793A;&#x201C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x201D;&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x7528;&#x5B83;&#x6765;&#x4EE3;&#x8868;&#x7A7A;&#x503C;&#xFF1B;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; Python &#x4E2D;&#x7684;<code>None</code>&#x6765;&#x8868;&#x793A;&#x7A7A;&#x503C;&#xFF0C;&#x5728; pandas &#x4E2D;<code>None</code>&#x4E5F;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#x4E3A;<code>np.nan</code>&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    False
 1    False
 2     True
 3    False
 4     True
 dtype: bool
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser4.notna()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0     True
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser4.notna()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0     True
 1     True
 2    False
 3     True
 4    False
 dtype: bool
-</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>dropna()</code>&#x548C;<code>fillna()</code>&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x7528;&#x6765;&#x5220;&#x9664;&#x7A7A;&#x503C;&#x548C;&#x586B;&#x5145;&#x7A7A;&#x503C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser4.dropna()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    10.0
+</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>dropna()</code>&#x548C;<code>fillna()</code>&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x7528;&#x6765;&#x5220;&#x9664;&#x7A7A;&#x503C;&#x548C;&#x586B;&#x5145;&#x7A7A;&#x503C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser4.dropna()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    10.0
 1    20.0
 3    30.0
 dtype: float64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser4.fillna(value=<span class="hljs-number">40</span>)  <span class="hljs-comment"># &#x5C06;&#x7A7A;&#x503C;&#x586B;&#x5145;&#x4E3A;40</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    10.0
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser4.fillna(value=<span class="hljs-number">40</span>)  <span class="hljs-comment"># &#x5C06;&#x7A7A;&#x503C;&#x586B;&#x5145;&#x4E3A;40</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    10.0
 1    20.0
 2    40.0
 3    30.0
 4    40.0
 dtype: float64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser4.fillna(method=<span class="hljs-string">&apos;ffill&apos;</span>)  <span class="hljs-comment"># &#x7528;&#x7A7A;&#x503C;&#x524D;&#x9762;&#x7684;&#x975E;&#x7A7A;&#x503C;&#x586B;&#x5145;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    10.0
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser4.fillna(method=<span class="hljs-string">&apos;ffill&apos;</span>)  <span class="hljs-comment"># &#x7528;&#x7A7A;&#x503C;&#x524D;&#x9762;&#x7684;&#x975E;&#x7A7A;&#x503C;&#x586B;&#x5145;</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    10.0
 1    20.0
 2    20.0
 3    30.0
 4    30.0
 dtype: float64
-</code></pre><p>&#x9700;&#x8981;&#x63D0;&#x9192;&#x5927;&#x5BB6;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>dropna()</code>&#x548C;<code>fillna()</code>&#x65B9;&#x6CD5;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>inplace</code>&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;<code>False</code>&#xFF0C;&#x8868;&#x793A;&#x5220;&#x9664;&#x7A7A;&#x503C;&#x6216;&#x586B;&#x5145;&#x7A7A;&#x503C;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x5C06;<code>inplace</code>&#x53C2;&#x6570;&#x7684;&#x503C;&#x4FEE;&#x6539;&#x4E3A;<code>True</code>&#xFF0C;&#x90A3;&#x4E48;&#x5220;&#x9664;&#x6216;&#x586B;&#x5145;&#x7A7A;&#x503C;&#x4F1A;&#x5C31;&#x5730;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6B64;&#x65F6;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>None</code>&#x3002;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x4F1A;&#x63A5;&#x89E6;&#x5230;&#x7684;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;<code>DataFrame</code>&#x5BF9;&#x8C61;&#x7684;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x610F;&#x4E49;&#x8DDF;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>mask()</code>&#x548C;<code>where()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5C06;&#x6EE1;&#x8DB3;&#x6216;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser5 = pd.Series(range(<span class="hljs-number">5</span>))
+</code></pre><p>&#x9700;&#x8981;&#x63D0;&#x9192;&#x5927;&#x5BB6;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>dropna()</code>&#x548C;<code>fillna()</code>&#x65B9;&#x6CD5;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>inplace</code>&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;<code>False</code>&#xFF0C;&#x8868;&#x793A;&#x5220;&#x9664;&#x7A7A;&#x503C;&#x6216;&#x586B;&#x5145;&#x7A7A;&#x503C;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x5C06;<code>inplace</code>&#x53C2;&#x6570;&#x7684;&#x503C;&#x4FEE;&#x6539;&#x4E3A;<code>True</code>&#xFF0C;&#x90A3;&#x4E48;&#x5220;&#x9664;&#x6216;&#x586B;&#x5145;&#x7A7A;&#x503C;&#x4F1A;&#x5C31;&#x5730;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6B64;&#x65F6;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>None</code>&#x3002;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x4F1A;&#x63A5;&#x89E6;&#x5230;&#x7684;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;<code>DataFrame</code>&#x5BF9;&#x8C61;&#x7684;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x610F;&#x4E49;&#x8DDF;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>mask()</code>&#x548C;<code>where()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5C06;&#x6EE1;&#x8DB3;&#x6216;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser5 = pd.Series(range(<span class="hljs-number">5</span>))
 ser5.where(ser5 &gt; <span class="hljs-number">0</span>)
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    NaN
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    NaN
 1    1.0
 2    2.0
 3    3.0
 4    4.0
 dtype: float64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser5.where(ser5 &gt; <span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    10
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser5.where(ser5 &gt; <span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    10
 1    10
 2     2
 3     3
 4     4
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser5.mask(ser5 &gt; <span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0     0
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser5.mask(ser5 &gt; <span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0     0
 1     1
 2    10
 3    10
 4    10
 dtype: int64
-</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>duplicated()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x627E;&#x51FA;&#x91CD;&#x590D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;<code>drop_duplicates()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x5220;&#x9664;&#x91CD;&#x590D;&#x6570;&#x636E;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser3.duplicated()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    False
+</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>duplicated()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x627E;&#x51FA;&#x91CD;&#x590D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;<code>drop_duplicates()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x5220;&#x9664;&#x91CD;&#x590D;&#x6570;&#x636E;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser3.duplicated()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    False
 1    False
 2     True
 3    False
@@ -2253,129 +186,77 @@ dtype: int64
 5     True
 6    False
 dtype: bool
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser3.drop_duplicates()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0     apple
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser3.drop_duplicates()
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0     apple
 1    banana
 3    pitaya
 6    durian
 dtype: object
-</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>apply()</code>&#x548C;<code>map()</code>&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x6216;&#x8005;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x6620;&#x5C04;&#x6216;&#x8F6C;&#x6362;&#x6210;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x6837;&#x5B50;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x6570;&#x636E;&#x51C6;&#x5907;&#x9636;&#x6BB5;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x8BD5;&#x4E00;&#x8BD5;&#x8FD9;&#x4E2A;&#x540D;&#x4E3A;<code>map</code>&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser6 = pd.Series([<span class="hljs-string">&apos;cat&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>, np.nan, <span class="hljs-string">&apos;rabbit&apos;</span>])
+</code></pre><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>apply()</code>&#x548C;<code>map()</code>&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x6216;&#x8005;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x6620;&#x5C04;&#x6216;&#x8F6C;&#x6362;&#x6210;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x6837;&#x5B50;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x6570;&#x636E;&#x51C6;&#x5907;&#x9636;&#x6BB5;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x8BD5;&#x4E00;&#x8BD5;&#x8FD9;&#x4E2A;&#x540D;&#x4E3A;<code>map</code>&#x7684;&#x65B9;&#x6CD5;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser6 = pd.Series([<span class="hljs-string">&apos;cat&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>, np.nan, <span class="hljs-string">&apos;rabbit&apos;</span>])
 ser6
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0       cat
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0       cat
 1       dog
 2       NaN
 3    rabbit
 dtype: object
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser6.map({<span class="hljs-string">&apos;cat&apos;</span>: <span class="hljs-string">&apos;kitten&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>: <span class="hljs-string">&apos;puppy&apos;</span>})
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x7ED9;&#x51FA;&#x7684;&#x6620;&#x5C04;&#x89C4;&#x5219;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0    kitten
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser6.map({<span class="hljs-string">&apos;cat&apos;</span>: <span class="hljs-string">&apos;kitten&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>: <span class="hljs-string">&apos;puppy&apos;</span>})
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5B57;&#x5178;&#x7ED9;&#x51FA;&#x7684;&#x6620;&#x5C04;&#x89C4;&#x5219;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0    kitten
 1     puppy
 2       NaN
 3       NaN
 dtype: object
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser6.map(<span class="hljs-string">&apos;I am a {}&apos;</span>.format, na_action=<span class="hljs-string">&apos;ignore&apos;</span>)
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5C06;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684;<code>format</code>&#x65B9;&#x6CD5;&#x4F5C;&#x7528;&#x5230;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x7684;&#x6570;&#x636E;&#x4E0A;&#xFF0C;&#x5FFD;&#x7565;&#x6389;&#x6240;&#x6709;&#x7684;&#x7A7A;&#x503C;&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>0       I am a cat
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser6.map(<span class="hljs-string">&apos;I am a {}&apos;</span>.format, na_action=<span class="hljs-string">&apos;ignore&apos;</span>)
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5C06;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684;<code>format</code>&#x65B9;&#x6CD5;&#x4F5C;&#x7528;&#x5230;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x7684;&#x6570;&#x636E;&#x4E0A;&#xFF0C;&#x5FFD;&#x7565;&#x6389;&#x6240;&#x6709;&#x7684;&#x7A7A;&#x503C;&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>0       I am a cat
 1       I am a dog
 2              NaN
 3    I am a rabbit
 dtype: object
-</code></pre><p>&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;</p>
-<pre><code class="lang-Python">ser7 = pd.Series([<span class="hljs-number">20</span>, <span class="hljs-number">21</span>, <span class="hljs-number">12</span>],  index=[<span class="hljs-string">&apos;London&apos;</span>, <span class="hljs-string">&apos;New York&apos;</span>, <span class="hljs-string">&apos;Helsinki&apos;</span>])
+</code></pre><p>&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Series</code>&#x5BF9;&#x8C61;&#xFF0C;</p><pre><code class="lang-Python">ser7 = pd.Series([<span class="hljs-number">20</span>, <span class="hljs-number">21</span>, <span class="hljs-number">12</span>],  index=[<span class="hljs-string">&apos;London&apos;</span>, <span class="hljs-string">&apos;New York&apos;</span>, <span class="hljs-string">&apos;Helsinki&apos;</span>])
 ser7
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>London      20
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>London      20
 New York    21
 Helsinki    12
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser7.apply(np.square)
-</code></pre>
-<blockquote>
-<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5C06;&#x6C42;&#x5E73;&#x65B9;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x5230;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x7684;&#x6570;&#x636E;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x53C2;&#x6570;<code>np.square</code>&#x66FF;&#x6362;&#x4E3A;<code>lambda x: x ** 2</code>&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>London      400
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser7.apply(np.square)
+</code></pre><blockquote><p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x5C06;&#x6C42;&#x5E73;&#x65B9;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x5230;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x7684;&#x6570;&#x636E;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x53C2;&#x6570;<code>np.square</code>&#x66FF;&#x6362;&#x4E3A;<code>lambda x: x ** 2</code>&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>London      400
 New York    441
 Helsinki    144
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser7.apply(<span class="hljs-keyword">lambda</span> x, value: x - value, args=(<span class="hljs-number">5</span>, ))
-</code></pre>
-<blockquote>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x9762;<code>apply</code>&#x65B9;&#x6CD5;&#x4E2D;&#x7684;<code>lambda</code>&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7ED9;<code>apply</code>&#x65B9;&#x6CD5;&#x589E;&#x52A0;&#x4E86;<code>args</code>&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x7ED9;<code>lambda</code>&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x503C;&#x3002;</p>
-</blockquote>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>London      15
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser7.apply(<span class="hljs-keyword">lambda</span> x, value: x - value, args=(<span class="hljs-number">5</span>, ))
+</code></pre><blockquote><p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x9762;<code>apply</code>&#x65B9;&#x6CD5;&#x4E2D;&#x7684;<code>lambda</code>&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6570;&#x636E;&#x7CFB;&#x5217;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7ED9;<code>apply</code>&#x65B9;&#x6CD5;&#x589E;&#x52A0;&#x4E86;<code>args</code>&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x7ED9;<code>lambda</code>&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x503C;&#x3002;</p></blockquote><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>London      15
 New York    16
 Helsinki     7
 dtype: int64
-</code></pre><h4 id="&#x53D6;&#x5934;&#x90E8;&#x503C;&#x548C;&#x6392;&#x5E8F;">&#x53D6;&#x5934;&#x90E8;&#x503C;&#x548C;&#x6392;&#x5E8F;</h4>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>sort_index()</code>&#x548C;<code>sort_values()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5BF9;&#x7D22;&#x5F15;&#x548C;&#x6570;&#x636E;&#x7684;&#x6392;&#x5E8F;&#xFF0C;&#x6392;&#x5E8F;&#x65B9;&#x6CD5;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>ascending</code>&#x7684;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6392;&#x5E8F;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5347;&#x5E8F;&#x8FD8;&#x662F;&#x964D;&#x5E8F;&#xFF1B;&#x800C;&#x540D;&#x4E3A;<code>kind</code>&#x7684;&#x53C2;&#x6570;&#x5219;&#x7528;&#x6765;&#x63A7;&#x5236;&#x6392;&#x5E8F;&#x4F7F;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4E86;<code>quicksort</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<code>mergesort</code>&#x6216;<code>heapsort</code>&#xFF1B;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7A7A;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x7528;<code>na_position</code>&#x53C2;&#x6570;&#x7A7A;&#x503C;&#x653E;&#x5728;&#x6700;&#x524D;&#x8FD8;&#x662F;&#x6700;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>last</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser8 = pd.Series(
+</code></pre><h4 id="&#x53D6;&#x5934;&#x90E8;&#x503C;&#x548C;&#x6392;&#x5E8F;">&#x53D6;&#x5934;&#x90E8;&#x503C;&#x548C;&#x6392;&#x5E8F;</h4><p><code>Series</code>&#x5BF9;&#x8C61;&#x7684;<code>sort_index()</code>&#x548C;<code>sort_values()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5BF9;&#x7D22;&#x5F15;&#x548C;&#x6570;&#x636E;&#x7684;&#x6392;&#x5E8F;&#xFF0C;&#x6392;&#x5E8F;&#x65B9;&#x6CD5;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>ascending</code>&#x7684;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6392;&#x5E8F;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5347;&#x5E8F;&#x8FD8;&#x662F;&#x964D;&#x5E8F;&#xFF1B;&#x800C;&#x540D;&#x4E3A;<code>kind</code>&#x7684;&#x53C2;&#x6570;&#x5219;&#x7528;&#x6765;&#x63A7;&#x5236;&#x6392;&#x5E8F;&#x4F7F;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4E86;<code>quicksort</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<code>mergesort</code>&#x6216;<code>heapsort</code>&#xFF1B;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7A7A;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x7528;<code>na_position</code>&#x53C2;&#x6570;&#x7A7A;&#x503C;&#x653E;&#x5728;&#x6700;&#x524D;&#x8FD8;&#x662F;&#x6700;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>last</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser8 = pd.Series(
     data=[<span class="hljs-number">35</span>, <span class="hljs-number">96</span>, <span class="hljs-number">12</span>, <span class="hljs-number">57</span>, <span class="hljs-number">25</span>, <span class="hljs-number">89</span>], 
     index=[<span class="hljs-string">&apos;grape&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-string">&apos;pitaya&apos;</span>, <span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;peach&apos;</span>, <span class="hljs-string">&apos;orange&apos;</span>]
 )
 ser8.sort_values()  <span class="hljs-comment"># &#x6309;&#x503C;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x6392;&#x5E8F;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>pitaya    12
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>pitaya    12
 peach     25
 grape     35
 apple     57
 orange    89
 banana    96
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser8.sort_index(ascending=<span class="hljs-keyword">False</span>)  <span class="hljs-comment"># &#x6309;&#x7D22;&#x5F15;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5E8F;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>pitaya    12
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser8.sort_index(ascending=<span class="hljs-keyword">False</span>)  <span class="hljs-comment"># &#x6309;&#x7D22;&#x5F15;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5E8F;</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>pitaya    12
 peach     25
 orange    89
 grape     35
 banana    96
 apple     57
 dtype: int64
-</code></pre><p>&#x5982;&#x679C;&#x8981;&#x4ECE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x627E;&#x51FA;&#x5143;&#x7D20;&#x4E2D;&#x6700;&#x5927;&#x6216;&#x6700;&#x5C0F;&#x7684;&#x201C;Top-N&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>nlargest()</code>&#x548C;<code>nsmallest()</code>&#x65B9;&#x6CD5;&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser8.nlargest(<span class="hljs-number">3</span>)  <span class="hljs-comment"># &#x503C;&#x6700;&#x5927;&#x7684;3&#x4E2A;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>banana    96
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x4ECE;<code>Series</code>&#x5BF9;&#x8C61;&#x4E2D;&#x627E;&#x51FA;&#x5143;&#x7D20;&#x4E2D;&#x6700;&#x5927;&#x6216;&#x6700;&#x5C0F;&#x7684;&#x201C;Top-N&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>nlargest()</code>&#x548C;<code>nsmallest()</code>&#x65B9;&#x6CD5;&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser8.nlargest(<span class="hljs-number">3</span>)  <span class="hljs-comment"># &#x503C;&#x6700;&#x5927;&#x7684;3&#x4E2A;</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>banana    96
 orange    89
 apple     57
 dtype: int64
-</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python">ser8.nsmallest(<span class="hljs-number">2</span>)  <span class="hljs-comment"># &#x503C;&#x6700;&#x5C0F;&#x7684;2&#x4E2A;</span>
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<pre><code>pitaya    12
+</code></pre><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python">ser8.nsmallest(<span class="hljs-number">2</span>)  <span class="hljs-comment"># &#x503C;&#x6700;&#x5C0F;&#x7684;2&#x4E2A;</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><pre><code>pitaya    12
 peach     25
 dtype: int64
-</code></pre><h4 id="&#x7ED8;&#x5236;&#x56FE;&#x8868;">&#x7ED8;&#x5236;&#x56FE;&#x8868;</h4>
-<p><code>Series</code>&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>plot</code>&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x751F;&#x6210;&#x56FE;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x9009;&#x62E9;&#x751F;&#x6210;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x997C;&#x56FE;&#x3001;&#x67F1;&#x72B6;&#x56FE;&#x7B49;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x4E3A;&#x6A2A;&#x5750;&#x6807;&#xFF0C;&#x4F7F;&#x7528;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x7EB5;&#x5750;&#x6807;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#x5E76;&#x57FA;&#x4E8E;&#x5B83;&#x7ED8;&#x5236;&#x67F1;&#x72B6;&#x56FE;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+</code></pre><h4 id="&#x7ED8;&#x5236;&#x56FE;&#x8868;">&#x7ED8;&#x5236;&#x56FE;&#x8868;</h4><p><code>Series</code>&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>plot</code>&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x751F;&#x6210;&#x56FE;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x9009;&#x62E9;&#x751F;&#x6210;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x997C;&#x56FE;&#x3001;&#x67F1;&#x72B6;&#x56FE;&#x7B49;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x4E3A;&#x6A2A;&#x5750;&#x6807;&#xFF0C;&#x4F7F;&#x7528;<code>Series</code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x7EB5;&#x5750;&#x6807;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Series</code>&#x5BF9;&#x8C61;&#x5E76;&#x57FA;&#x4E8E;&#x5B83;&#x7ED8;&#x5236;&#x67F1;&#x72B6;&#x56FE;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
 
 ser9 = pd.Series({<span class="hljs-string">&apos;Q1&apos;</span>: <span class="hljs-number">400</span>, <span class="hljs-string">&apos;Q2&apos;</span>: <span class="hljs-number">520</span>, <span class="hljs-string">&apos;Q3&apos;</span>: <span class="hljs-number">180</span>, <span class="hljs-string">&apos;Q4&apos;</span>: <span class="hljs-number">380</span>})
 <span class="hljs-comment"># &#x901A;&#x8FC7;plot&#x65B9;&#x6CD5;&#x7684;kind&#x6307;&#x5B9A;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x4E3A;&#x67F1;&#x72B6;&#x56FE;</span>
@@ -2388,100 +269,12 @@ plt.xticks(rotation=<span class="hljs-number">0</span>)
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(ser9.size):
     plt.text(i, ser9[i] + <span class="hljs-number">5</span>, ser9[i], ha=<span class="hljs-string">&apos;center&apos;</span>)
 plt.show()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<p><img src="res/ser_bar_graph.png" style="zoom:35%;"></p>
-<p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7ED8;&#x5236;&#x4E3A;&#x997C;&#x56FE;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-Python"><span class="hljs-comment"># plot&#x65B9;&#x6CD5;&#x7684;kind&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E86;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x4E3A;&#x997C;&#x56FE;</span>
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><p><img src="res/ser_bar_graph.png" style="zoom:35%"></p><p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7ED8;&#x5236;&#x4E3A;&#x997C;&#x56FE;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p><p>&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-Python"><span class="hljs-comment"># plot&#x65B9;&#x6CD5;&#x7684;kind&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E86;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x4E3A;&#x997C;&#x56FE;</span>
 <span class="hljs-comment"># autopct&#x4F1A;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#x5E76;&#x663E;&#x793A;&#x767E;&#x5206;&#x6BD4;</span>
 <span class="hljs-comment"># pctdistance&#x7528;&#x6765;&#x63A7;&#x5236;&#x767E;&#x5206;&#x6BD4;&#x5230;&#x5706;&#x5FC3;&#x7684;&#x8DDD;&#x79BB;</span>
 ser9.plot(kind=<span class="hljs-string">&apos;pie&apos;</span>, autopct=<span class="hljs-string">&apos;%.1f%%&apos;</span>, pctdistance=<span class="hljs-number">0.65</span>)
 plt.show()
-</code></pre>
-<p>&#x8F93;&#x51FA;&#xFF1A;</p>
-<p><img src="res/ser_pie_graph.png" style="zoom:35%;"></p>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                <a href="71.NumPy的应用-4.html" class="navigation navigation-prev " aria-label="Previous page: 71.NumPy的应用-4">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="73.深入浅出pandas-2.html" class="navigation navigation-next " aria-label="Next page: 73.深入浅出pandas-2">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p><p><img src="res/ser_pie_graph.png" style="zoom:35%"></p></section></div><div class="search-results"><div class="has-results"><h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1><ul class="search-results-list"></ul></div><div class="no-results"><h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1></div></div></div></div></div></div><a href="71.NumPy的应用-4.html" class="navigation navigation-prev" aria-label="Previous page: 71.NumPy的应用-4"><i class="fa fa-angle-left"></i> </a><a href="73.深入浅出pandas-2.html" class="navigation navigation-next" aria-label="Next page: 73.深入浅出pandas-2"><i class="fa fa-angle-right"></i></a></div><script>var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"72.深入浅出pandas-1","level":"1.9.7","depth":2,"next":{"title":"73.深入浅出pandas-2","level":"1.9.8","depth":2,"path":"Day66-80/73.深入浅出pandas-2.md","ref":"Day66-80/73.深入浅出pandas-2.md","articles":[]},"previous":{"title":"71.NumPy的应用-4","level":"1.9.6","depth":2,"path":"Day66-80/71.NumPy的应用-4.md","ref":"Day66-80/71.NumPy的应用-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day66-80/72.深入浅出pandas-1.md","mtime":"2024-07-05T03:42:45.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T07:22:22.718Z"},"basePath":"..","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
-</html>
-
+            gitbook.page.hasChanged({"page":{"title":"72.深入浅出pandas-1","level":"1.9.7","depth":2,"next":{"title":"73.深入浅出pandas-2","level":"1.9.8","depth":2,"path":"Day66-80/73.深入浅出pandas-2.md","ref":"Day66-80/73.深入浅出pandas-2.md","articles":[]},"previous":{"title":"71.NumPy的应用-4","level":"1.9.6","depth":2,"path":"Day66-80/71.NumPy的应用-4.md","ref":"Day66-80/71.NumPy的应用-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["minifier"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"minifier":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jayclang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Python 100","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"liangwj's Blog":"http://www.metoocat.cn"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"Day66-80/72.深入浅出pandas-1.md","mtime":"2024-07-05T03:42:45.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-09T00:49:42.503Z"},"basePath":"..","book":{"language":""}});
+        });</script></div><script src="../gitbook/gitbook.js"></script><script src="../gitbook/theme.js"></script><script src="../gitbook/gitbook-plugin-search/search-engine.js"></script><script src="../gitbook/gitbook-plugin-search/search.js"></script><script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script><script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script><script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script><script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script></body></html>

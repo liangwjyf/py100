@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ajax请求</title>
-		<style>
-			#emp {
-				border-collapse: collapse;
-			}
-			#emp td, #emp th {
-				border-bottom: 1px solid black;
-				width: 120px;
-				text-align: center;
-			}
-			#page {
-				width: 720px;
-				text-align: center;
-			}
-			#page a {
-				text-decoration: none;
-				color: darkcyan;
-			}
-		</style>
-	</head>
-	<body>
-		<table id="emp">
-			<thead>
-				<tr>
-					<th>编号</th>
-					<th>姓名</th>
-					<th>职位</th>
-					<th>工资</th>
-					<th>补贴</th>
-					<th>所在部门</th>
-				</tr>
-			</thead>
-			<tbody>
-			</tbody>
-		</table>
-		<div id="page">
-			<a id="prev" href="">上一页</a>&nbsp;&nbsp;
-			<a id="next" href="">下一页</a>
-		</div>
-		<script src="js/jquery.min.js"></script>
-		<script>
-		$(() => {
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ajax请求</title><style>#emp{border-collapse:collapse}#emp td,#emp th{border-bottom:1px solid #000;width:120px;text-align:center}#page{width:720px;text-align:center}#page a{text-decoration:none;color:#008b8b}</style></head><body><table id="emp"><thead><tr><th>编号</th><th>姓名</th><th>职位</th><th>工资</th><th>补贴</th><th>所在部门</th></tr></thead><tbody></tbody></table><div id="page"><a id="prev" href="">上一页</a>&nbsp;&nbsp; <a id="next" href="">下一页</a></div><script src="js/jquery.min.js"></script><script>$(() => {
 			function getEmpData(url) {
 				$.ajax({
 					url: url,
@@ -83,7 +38,4 @@
 			
 			$('#prev').on('click', changePage)
 			$('#next').on('click', changePage)
-		})
-		</script>
-	</body>
-</html>
+		})</script></body></html>
